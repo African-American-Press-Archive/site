@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Press Archive · Digital Collection 1910-1929</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main App Container -->
+    <div id="app" class="relative min-h-screen">
+
+        <!-- Filter Toggle Button (Collapsed State) -->
+        <button id="filter-toggle" aria-label="Toggle newspaper filters">
+            FILTER <span class="filter-badge">8</span>
+        </button>
+
+        <!-- Filter Overlay -->
+        <div id="filter-overlay"></div>
+
+        <!-- Header -->
+        <header id="main-header" class="glass py-6 px-4 md:px-6 transition-all duration-300">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <!-- Logo & Title -->
+                    <div class="text-center md:text-left">
+                        <h1 class="hero-title gradient-text transition-all duration-300">
+                            Black Press Archive
+                        </h1>
+                        <p class="text-sm mt-1 font-medium" style="color: var(--text-secondary);">Digital Collection · 1910-1929</p>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="w-full md:w-96">
+                        <div class="relative">
+                            <input
+                                type="text"
+                                id="search-input"
+                                placeholder="Search archive..."
+                                class="search-input w-full px-4 py-3 rounded-lg transition-all duration-300"
+                                style="background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-primary);"
+                                aria-label="Search archive"
+                            />
+                            <svg class="absolute right-3 top-3.5 w-5 h-5 transition-all" style="color: var(--text-muted);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-8">
+            <div class="flex flex-col lg:flex-row gap-6">
+
+                <!-- Collapsible Sidebar Filters -->
+                <aside id="filter-sidebar">
+                    <!-- Close Button -->
+                    <button class="close-filters" aria-label="Close filters">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <div class="mt-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h2 class="text-lg font-bold" style="color: var(--unc-longleaf-pine);">Filter Papers</h2>
+                            <span id="filter-count" class="text-xs px-2 py-1 rounded-full font-semibold" style="background: rgba(0, 165, 173, 0.15); color: var(--unc-tile-teal);">0</span>
+                        </div>
+
+                        <!-- Filter List -->
+                        <div id="filter-list" class="space-y-2 max-h-[60vh] overflow-y-auto pr-2">
+                            <!-- Filters will be populated by JavaScript -->
+                        </div>
+
+                        <!-- Reset Button -->
+                        <button
+                            id="reset-filters-btn"
+                            class="mt-4 w-full py-2 px-4 rounded-lg text-sm font-medium transition-all duration-300"
+                            style="background: var(--unc-basin-slate); color: white;"
+                            aria-label="Reset all filters"
+                        >
+                            Reset Filters
+                        </button>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <main class="flex-1 min-w-0">
+
+                    <!-- Timeline Section -->
+                    <section class="timeline-section glass-card rounded-xl p-6 mb-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold" style="color: var(--unc-longleaf-pine);">Browse by Year</h2>
+                            <button id="timeline-reset" class="text-sm transition-colors opacity-0 pointer-events-none" style="color: var(--unc-tile-teal);">
+                                Clear Selection
+                            </button>
+                        </div>
+
+                        <!-- Interactive Timeline Slider -->
+                        <div id="timeline-slider" class="timeline-slider-container">
+                            <div id="timeline-markers" class="timeline-year-pills" role="listbox" aria-label="Browse by year">
+                                <!-- Year markers will be populated here -->
+                            </div>
+                        </div>
+
+                        <!-- Year Label -->
+                        <div class="text-center mt-4">
+                            <span id="timeline-year-label" class="text-2xl font-bold gradient-text">All Years</span>
+                        </div>
+
+                        <!-- Month Selector -->
+                        <div id="timeline-months" class="timeline-months hidden mt-4" role="listbox" aria-live="polite" aria-label="Select month"></div>
+                    </section>
+
+                    <!-- Loading State -->
+                    <div id="loading-state" class="text-center py-20">
+                        <div class="inline-block">
+                            <div class="w-16 h-16 border-4 rounded-full animate-spin" style="border-color: var(--border-color); border-top-color: var(--unc-tile-teal);"></div>
+                            <p class="mt-4 loading-dots" style="color: var(--text-muted);">Loading archive</p>
+                        </div>
+                    </div>
+
+                    <!-- Error State -->
+                    <div id="error-state" class="hidden">
+                        <div class="glass-card rounded-xl p-8 text-center">
+                            <svg class="w-16 h-16 mx-auto mb-4" style="color: var(--unc-azalea-pink);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="text-xl font-bold mb-2" style="color: var(--unc-longleaf-pine);">Failed to Load Archive</h3>
+                            <p class="mb-4" style="color: var(--text-muted);">Could not load manifest.json. Please check the file exists in web_content/</p>
+                            <button id="retry-btn" class="btn-primary">
+                                Retry
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Grid Header -->
+                    <div id="grid-header" class="hidden mb-4 flex items-center justify-between">
+                        <h2 id="grid-title" class="text-2xl font-bold" style="color: var(--unc-longleaf-pine);">All Issues</h2>
+                        <select
+                            id="sort-select"
+                            class="px-4 py-2 rounded-lg text-sm transition-all"
+                            style="background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-primary);"
+                            aria-label="Sort issues"
+                        >
+                            <option value="date-asc" selected>Oldest First</option>
+                            <option value="date-desc">Newest First</option>
+                            <option value="title">By Title</option>
+                        </select>
+                    </div>
+
+                    <!-- Issue Grid with Infinite Scroll -->
+                    <div id="issue-grid-wrapper" class="hidden">
+                        <div id="issue-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Issue cards will be populated by JavaScript -->
+                        </div>
+
+                        <!-- Load More Trigger -->
+                        <div id="load-more-trigger" class="h-20 flex items-center justify-center">
+                            <div class="loading-spinner hidden">
+                                <div class="w-8 h-8 border-4 rounded-full animate-spin" style="border-color: var(--border-color); border-top-color: var(--unc-tile-teal);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Empty State -->
+                    <div id="empty-state" class="hidden">
+                        <div class="glass-card rounded-xl p-12 text-center">
+                            <svg class="w-16 h-16 mx-auto mb-4" style="color: var(--text-muted);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="text-xl font-bold mb-2" style="color: var(--unc-longleaf-pine);">No Issues Found</h3>
+                            <p style="color: var(--text-muted);">Try adjusting your filters or browse a different year</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page-Flipping Viewer Modal -->
+    <div id="viewer-modal" class="fixed inset-0 z-50 hidden">
+        <div class="modal-backdrop absolute inset-0 bg-black bg-opacity-95" id="viewer-backdrop"></div>
+
+        <div class="modal-content relative w-full h-full flex flex-col">
+            <!-- Modal Header -->
+            <div class="glass relative z-10 px-6 py-4 flex items-center justify-between">
+                <div class="flex-1 min-w-0">
+                    <h3 id="viewer-title" class="text-lg md:text-xl font-bold truncate" style="color: var(--unc-longleaf-pine);">
+                        <!-- Title will be populated -->
+                    </h3>
+                    <div class="flex items-center gap-4 mt-1">
+                        <p id="viewer-date" class="text-sm" style="color: var(--text-muted);">
+                            <!-- Date will be populated -->
+                        </p>
+                        <div id="page-indicator" class="text-sm font-medium hidden" style="color: var(--unc-tile-teal);">
+                            Page <span id="current-page">1</span> of <span id="total-pages">1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button
+                        id="help-btn"
+                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all"
+                        style="background: var(--unc-basin-slate); color: white;"
+                        data-tooltip="Keyboard shortcuts (?)"
+                        aria-label="Show keyboard shortcuts"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                    <button
+                        id="download-btn"
+                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all"
+                        style="background: var(--unc-basin-slate); color: white;"
+                        data-tooltip="Download page (D)"
+                        aria-label="Download current page"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </button>
+                    <button
+                        id="thumbnails-toggle"
+                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all hidden"
+                        style="background: var(--unc-basin-slate); color: white;"
+                        data-tooltip="Toggle thumbnails (T)"
+                        aria-label="Toggle thumbnails"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                        </svg>
+                    </button>
+                    <button
+                        id="close-viewer-btn"
+                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all"
+                        style="background: var(--unc-basin-slate); color: white;"
+                        aria-label="Close viewer"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Content Area with Page Container -->
+            <div class="flex-1 flex flex-col overflow-hidden">
+                <!-- Page Container with Reading Surface -->
+                <div class="flex-1 relative overflow-hidden">
+                    <!-- Reading Surface Background -->
+                    <div class="absolute inset-0 pointer-events-none">
+                        <div class="w-full h-full opacity-20" style="
+                            background: radial-gradient(circle at 50% 10%, rgba(245, 158, 11, 0.08), transparent 55%),
+                                        linear-gradient(to bottom, rgba(245, 158, 11, 0.06), transparent 30%),
+                                        linear-gradient(to top, rgba(239, 68, 68, 0.06), transparent 35%);
+                        "></div>
+                    </div>
+
+                    <!-- Page Image Wrapper -->
+                    <div id="image-wrapper" class="relative w-full h-full overflow-auto z-10 px-4 md:px-12 py-6 md:py-10">
+                        <img
+                            id="viewer-image"
+                            src=""
+                            alt="Newspaper page"
+                            class="w-full h-auto object-contain rounded-2xl shadow-2xl transition-transform duration-300 will-change-transform"
+                            style="cursor: zoom-in; opacity: 1;"
+                        />
+                        <!-- Loading indicator -->
+                        <div id="page-loading" class="absolute inset-0 flex items-center justify-center rounded-2xl hidden" style="background: rgba(0, 0, 0, 0.6);">
+                            <div class="w-12 h-12 border-4 rounded-full animate-spin" style="border-color: rgba(255, 255, 255, 0.2); border-top-color: var(--unc-tile-teal);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div id="progress-bar-container" class="hidden px-8 pb-2">
+                    <div class="w-full h-1 rounded-full overflow-hidden" style="background: rgba(79, 117, 139, 0.2);">
+                        <div id="progress-bar" class="h-full transition-all duration-300" style="background: var(--accent-gradient); width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Thumbnail Strip -->
+                <div id="thumbnail-strip" class="hidden glass-card mx-4 mb-4 rounded-lg p-3 overflow-x-auto">
+                    <div id="thumbnail-container" class="flex gap-2">
+                        <!-- Thumbnails will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Navigation Buttons -->
+            <button
+                id="prev-page-btn"
+                class="absolute left-4 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full glass hover:bg-gray-700 flex items-center justify-center transition-all group shadow-xl hover:shadow-2xl hidden"
+                data-tooltip="Previous page (←)"
+                aria-label="Previous page"
+            >
+                <svg class="w-7 h-7 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+
+            <button
+                id="next-page-btn"
+                class="absolute right-4 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full glass hover:bg-gray-700 flex items-center justify-center transition-all group shadow-xl hover:shadow-2xl hidden"
+                data-tooltip="Next page (→)"
+                aria-label="Next page"
+            >
+                <svg class="w-7 h-7 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+
+            <!-- Issue Navigation (smaller, bottom corners) -->
+            <button
+                id="prev-issue-btn"
+                class="absolute left-4 bottom-20 w-10 h-10 rounded-full glass hover:bg-gray-700 flex items-center justify-center transition-all group opacity-60 hover:opacity-100"
+                data-tooltip="Previous issue"
+                aria-label="Previous issue"
+            >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                </svg>
+            </button>
+
+            <button
+                id="next-issue-btn"
+                class="absolute right-4 bottom-20 w-10 h-10 rounded-full glass hover:bg-gray-700 flex items-center justify-center transition-all group opacity-60 hover:opacity-100"
+                data-tooltip="Next issue"
+                aria-label="Next issue"
+            >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                </svg>
+            </button>
+
+            <!-- Zoom Controls -->
+            <div class="absolute bottom-6 right-6 glass rounded-lg p-2 flex gap-2">
+                <button
+                    id="zoom-out-btn"
+                    class="w-10 h-10 rounded-lg hover:bg-gray-700 flex items-center justify-center transition-all"
+                    data-tooltip="Zoom out (-)"
+                    aria-label="Zoom out"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" />
+                    </svg>
+                </button>
+                <button
+                    id="zoom-reset-btn"
+                    class="w-10 h-10 rounded-lg hover:bg-gray-700 flex items-center justify-center transition-all text-xs font-bold"
+                    data-tooltip="Reset zoom (0)"
+                    aria-label="Reset zoom"
+                >
+                    1:1
+                </button>
+                <button
+                    id="zoom-in-btn"
+                    class="w-10 h-10 rounded-lg hover:bg-gray-700 flex items-center justify-center transition-all"
+                    data-tooltip="Zoom in (+)"
+                    aria-label="Zoom in"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Keyboard Shortcuts Help Overlay -->
+            <div id="help-overlay" class="hidden absolute inset-0 z-50 flex items-center justify-center">
+                <div class="glass-card rounded-xl p-8 max-w-md mx-4">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold" style="color: var(--unc-longleaf-pine);">Keyboard Shortcuts</h3>
+                        <button id="close-help-btn" class="transition-colors" style="color: var(--text-muted);">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Previous/Next Page</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">← →</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">First/Last Page</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">Home/End</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Zoom In/Out</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">+ / -</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Reset Zoom</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">0</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Toggle Thumbnails</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">T</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Fullscreen</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">F</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Download Page</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">D</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Close Viewer</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">Esc</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span style="color: var(--text-primary);">Double-click Image</span>
+                            <span class="text-xs" style="color: var(--unc-tile-teal);">Toggle Fullscreen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

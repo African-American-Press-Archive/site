@@ -1,0 +1,37 @@
+papers:
+  broad-ax:
+    title: "Broad Ax"
+    repo: "African-American-Press-Archive/broad-ax"
+    branch: "main"
+  chicago-defender:
+    title: "Chicago Defender"
+    repo: "African-American-Press-Archive/chicago-defender"
+    branch: "main"
+  cleveland-advocate:
+    title: "Cleveland Advocate"
+    repo: "African-American-Press-Archive/cleveland-advocate"
+    branch: "main"
+  cleveland-gazette:
+    title: "Cleveland Gazette"
+    repo: "African-American-Press-Archive/cleveland-gazette"
+    branch: "main"
+  kansas-city-sun:
+    title: "Kansas City Sun"
+    repo: "African-American-Press-Archive/kansas-city-sun"
+    branch: "main"
+  new-york-age:
+    title: "New York Age"
+    repo: "African-American-Press-Archive/new-york-age"
+    branch: "main"
+  richmond-planet:
+    title: "Richmond Planet"
+    repo: "African-American-Press-Archive/richmond-planet"
+    branch: "main"
+  tulsa-star:
+    title: "Tulsa Star"
+    repo: "African-American-Press-Archive/tulsa-star"
+    branch: "main"
+  washington-tribune:
+    title: "Washington Tribune"
+    repo: "African-American-Press-Archive/washington-tribune"
+    branch: "main"

@@ -1,0 +1,14 @@
+# Ignore local build artifacts and secrets
+.env
+*.pyc
+__pycache__/
+.web_cache/
+.DS_Store
+
+# Ignore local web_content assets - use remote repos instead
+web_content/*
+!web_content/manifest.json
+!web_content/manifests/
+
+# Scripts temp directories
+tmp/
