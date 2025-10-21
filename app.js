@@ -23,6 +23,8 @@ const MONTHS = [
     { value: '12', label: 'Dec', full: 'December' },
 ];
 
+const INTRO_STORAGE_KEY = 'bpa_intro_seen_v1';
+
 // ==================== STATE MANAGEMENT ====================
 const state = {
     allIssues: [],
@@ -105,6 +107,7 @@ async function loadManifest() {
         hideElement('loading-state');
         showElement('grid-header');
         showElement('issue-grid-wrapper');
+        maybeShowIntroOverlay();
 
     } catch (error) {
         console.error('Error loading manifest:', error);
@@ -115,103 +118,202 @@ async function loadManifest() {
 
 // ==================== TIMELINE CONTROLLER ====================
 function initializeTimeline() {
-    const markersContainer = document.getElementById('timeline-markers');
-    const slider = document.getElementById('timeline-slider');
-
-    if (!markersContainer || !slider) return;
-
-    markersContainer.innerHTML = '';
-
+    const slider = document.getElementById('year-slider');
+    const ticksContainer = document.getElementById('year-ticks');
     const years = state.availableYears;
 
-    if (!years.length) {
-        slider.classList.add('hidden');
+    if (!slider || !ticksContainer) {
         return;
     }
 
-    slider.classList.remove('hidden');
+    slider.removeEventListener('input', handleYearSliderInput);
+    slider.removeEventListener('change', handleYearSliderChange);
 
-    years.forEach(year => {
-        const count = state.yearCounts.get(year) || 0;
-        const marker = createTimelineMarker(year, count);
-        markersContainer.appendChild(marker);
+    ticksContainer.innerHTML = '';
+
+    if (!years.length) {
+        slider.disabled = true;
+        return;
+    }
+
+    slider.disabled = false;
+    slider.min = 0;
+    slider.max = years.length - 1;
+    slider.step = 1;
+
+    let selectedIndex = 0;
+    if (state.selectedYear) {
+        const idx = years.indexOf(Number(state.selectedYear));
+        if (idx >= 0) {
+            selectedIndex = idx;
+        }
+    }
+
+    slider.value = selectedIndex;
+
+    years.forEach((year, index) => {
+        const tick = document.createElement('span');
+        tick.className = 'year-tick';
+        tick.dataset.year = year;
+        tick.dataset.index = index;
+        tick.textContent = year;
+        tick.tabIndex = 0;
+        tick.setAttribute('role', 'option');
+        tick.setAttribute('aria-label', `${year}`);
+        tick.addEventListener('click', () => setYearFromIndex(index));
+        tick.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setYearFromIndex(index);
+            }
+        });
+        ticksContainer.appendChild(tick);
     });
+
+    slider.addEventListener('input', handleYearSliderInput);
+    slider.addEventListener('change', handleYearSliderChange);
 
     updateTimelineVisuals();
+    renderTimelineMonths(state.selectedYear);
+    updateTimelineLabel();
 }
 
-function createTimelineMarker(year, count) {
-    const yearStr = String(year);
-    const marker = document.createElement('button');
-    marker.type = 'button';
-    marker.className = 'timeline-year-pill';
-    marker.dataset.year = yearStr;
-    marker.dataset.count = count;
-    marker.setAttribute('role', 'option');
-    marker.setAttribute('aria-selected', state.selectedYear === yearStr ? 'true' : 'false');
-    marker.setAttribute('aria-label', `${year} (${count} issues)`);
-    marker.innerHTML = `
-        <span class="timeline-year-pill-year">${year}</span>
-        <span class="timeline-year-pill-count">${count}</span>
-    `;
+function setYearFromIndex(index, options = {}) {
+    const years = state.availableYears;
+    if (!years.length) return;
 
-    marker.addEventListener('click', (e) => {
-        e.stopPropagation();
-        selectYear(year);
-    });
+    const normalized = Math.max(0, Math.min(index, years.length - 1));
+    const year = years[normalized];
+    selectYear(year, { toggle: false, ...options });
+    highlightYearTick(normalized);
+    scrollYearIntoView(year);
+}
 
-    marker.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            selectYear(year);
+function handleYearSliderInput(event) {
+    const index = parseInt(event.target.value, 10);
+    if (Number.isNaN(index)) return;
+    setYearFromIndex(index, { fromSlider: true });
+}
+
+function handleYearSliderChange(event) {
+    const index = parseInt(event.target.value, 10);
+    if (Number.isNaN(index)) return;
+    setYearFromIndex(index, { fromSlider: true });
+}
+
+function highlightYearTick(index) {
+    const ticks = document.querySelectorAll('.year-tick');
+    ticks.forEach((tick, idx) => {
+        const isActive = state.selectedYear && Number(tick.dataset.year) === Number(state.selectedYear);
+        tick.classList.toggle('active', isActive);
+        tick.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        if (!state.selectedYear && idx === index) {
+            tick.classList.remove('active');
         }
     });
 
-    return marker;
+    const slider = document.getElementById('year-slider');
+    if (slider) {
+        if (state.selectedYear) {
+            const years = state.availableYears;
+            const activeIndex = years.indexOf(Number(state.selectedYear));
+            if (activeIndex >= 0) {
+                slider.value = activeIndex;
+            }
+        } else {
+            slider.value = 0;
+        }
+    }
 }
 
-function selectYear(year) {
-    const yearStr = String(year);
+function selectYear(year, options = {}) {
+    const { toggle = true } = options;
+    const yearStr = year !== null && year !== undefined ? String(year) : null;
+    const timelineReset = document.getElementById('timeline-reset');
+    let selectionChanged = false;
 
-    // Toggle selection
-    if (state.selectedYear === yearStr) {
+    if (yearStr === null) {
+        if (state.selectedYear !== null) {
+            state.selectedYear = null;
+            state.selectedMonth = null;
+            selectionChanged = true;
+        }
+    } else if (toggle && state.selectedYear === yearStr) {
         state.selectedYear = null;
         state.selectedMonth = null;
-        renderTimelineMonths(null);
-        updateTimelineLabel();
-        document.getElementById('timeline-reset').style.opacity = '0';
-        document.getElementById('timeline-reset').style.pointerEvents = 'none';
-    } else {
+        selectionChanged = true;
+    } else if (state.selectedYear !== yearStr) {
         state.selectedYear = yearStr;
         state.selectedMonth = null;
-        renderTimelineMonths(yearStr);
-        updateTimelineLabel();
-        document.getElementById('timeline-reset').style.opacity = '1';
-        document.getElementById('timeline-reset').style.pointerEvents = 'all';
+        selectionChanged = true;
     }
 
+    if (state.selectedYear) {
+        renderTimelineMonths(state.selectedYear);
+        if (timelineReset) {
+            timelineReset.style.opacity = '1';
+            timelineReset.style.pointerEvents = 'all';
+        }
+    } else {
+        renderTimelineMonths(null);
+        if (timelineReset) {
+            timelineReset.style.opacity = '0';
+            timelineReset.style.pointerEvents = 'none';
+        }
+        const wrapper = document.getElementById('year-ticks')?.parentElement;
+        if (wrapper) {
+            wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+    }
+
+    updateTimelineLabel();
     updateTimelineVisuals();
-    applyFilters();
+
+    if (selectionChanged) {
+        applyFilters();
+    }
 }
 
 function updateTimelineVisuals() {
-    const markers = document.querySelectorAll('.timeline-year-pill');
+    const ticks = document.querySelectorAll('.year-tick');
+    const selectedYear = state.selectedYear ? Number(state.selectedYear) : null;
+    let selectedIndex = -1;
 
-    markers.forEach(marker => {
-        const year = marker.dataset.year;
-        const isActive = state.selectedYear === year;
-        marker.classList.toggle('active', isActive);
-        marker.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    ticks.forEach((tick, index) => {
+        const tickYear = Number(tick.dataset.year);
+        const isActive = selectedYear !== null && tickYear === selectedYear;
+        tick.classList.toggle('active', isActive);
+        tick.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        if (isActive) {
+            selectedIndex = index;
+        }
     });
+
+    const slider = document.getElementById('year-slider');
+    if (slider) {
+        if (selectedIndex >= 0) {
+            slider.value = selectedIndex;
+        } else if (!state.selectedYear) {
+            slider.value = 0;
+        }
+    }
 }
 
 function renderTimelineMonths(yearStr) {
     const container = document.getElementById('timeline-months');
+    const monthCaption = document.getElementById('month-carousel-year');
+    const monthCarousel = document.querySelector('.month-carousel');
     if (!container) return;
 
+    container.innerHTML = '';
+
     if (!yearStr) {
-        container.classList.add('hidden');
-        container.innerHTML = '';
+        if (monthCaption) {
+            monthCaption.textContent = 'All Years';
+        }
+        if (monthCarousel) {
+            monthCarousel.classList.add('month-carousel--disabled');
+        }
         return;
     }
 
@@ -224,29 +326,31 @@ function renderTimelineMonths(yearStr) {
 
     const activeMonths = MONTHS.filter(({ value }) => monthCounts.get(value));
 
-    container.innerHTML = '';
+    if (monthCaption) {
+        monthCaption.textContent = yearStr;
+    }
+    if (monthCarousel) {
+        monthCarousel.classList.remove('month-carousel--disabled');
+    }
 
     if (!activeMonths.length) {
-        container.classList.add('hidden');
         return;
     }
 
-    const createMonthChip = ({ value, label, full }, count) => {
-        const chip = document.createElement('span');
-        chip.className = 'timeline-month';
-        chip.dataset.month = value;
-        chip.tabIndex = 0;
-        chip.setAttribute('role', 'option');
-        chip.setAttribute('aria-label', `${full} ${yearStr} (${count} issues)`);
-        chip.setAttribute('aria-selected', state.selectedMonth === value ? 'true' : 'false');
-        chip.innerHTML = `
-            <span class="timeline-month-label">${label}</span>
-            <span class="timeline-month-count">${count}</span>
-        `;
+    const totalIssues = issuesForYear.length;
 
-        if (state.selectedMonth === value) {
-            chip.classList.add('active');
-        }
+    const createMonthTile = ({ value, label, full }, count) => {
+        const tile = document.createElement('span');
+        tile.className = 'month-tile';
+        tile.dataset.month = value;
+        tile.dataset.count = count;
+        tile.textContent = label;
+        tile.tabIndex = 0;
+        tile.setAttribute('role', 'option');
+        tile.setAttribute('aria-label', `${full} ${yearStr} (${count} issues)`);
+        const isActive = state.selectedMonth === value;
+        tile.classList.toggle('active', isActive);
+        tile.setAttribute('aria-selected', isActive ? 'true' : 'false');
 
         const toggleSelection = () => {
             state.selectedMonth = state.selectedMonth === value ? null : value;
@@ -255,33 +359,35 @@ function renderTimelineMonths(yearStr) {
             applyFilters();
         };
 
-        chip.addEventListener('click', toggleSelection);
-        chip.addEventListener('keydown', (e) => {
+        tile.addEventListener('click', toggleSelection);
+        tile.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 toggleSelection();
             }
         });
 
-        return chip;
+        return tile;
     };
 
-    const allChip = document.createElement('span');
-    allChip.className = 'timeline-month timeline-month-all';
-    allChip.textContent = 'All months';
-    allChip.tabIndex = 0;
-    allChip.setAttribute('role', 'option');
-    allChip.setAttribute('aria-selected', state.selectedMonth ? 'false' : 'true');
-    if (!state.selectedMonth) {
-        allChip.classList.add('active');
-    }
-    allChip.addEventListener('click', () => {
+    const allTile = document.createElement('span');
+    allTile.className = 'month-tile';
+    allTile.dataset.month = 'all';
+    allTile.dataset.count = totalIssues;
+    allTile.textContent = 'All';
+    allTile.tabIndex = 0;
+    allTile.setAttribute('role', 'option');
+    const isAllActive = !state.selectedMonth;
+    allTile.classList.toggle('active', isAllActive);
+    allTile.setAttribute('aria-selected', isAllActive ? 'true' : 'false');
+    allTile.setAttribute('aria-label', `All months ${yearStr}`);
+    allTile.addEventListener('click', () => {
         state.selectedMonth = null;
         updateTimelineLabel();
         renderTimelineMonths(yearStr);
         applyFilters();
     });
-    allChip.addEventListener('keydown', (e) => {
+    allTile.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
             state.selectedMonth = null;
@@ -291,14 +397,29 @@ function renderTimelineMonths(yearStr) {
         }
     });
 
-    container.appendChild(allChip);
+    container.appendChild(allTile);
 
     activeMonths.forEach(monthInfo => {
         const count = monthCounts.get(monthInfo.value);
-        container.appendChild(createMonthChip(monthInfo, count));
+        container.appendChild(createMonthTile(monthInfo, count));
     });
 
-    container.classList.remove('hidden');
+    scrollMonthIntoView(state.selectedMonth || 'all');
+}
+
+function scrollMonthIntoView(monthValue) {
+    const container = document.getElementById('timeline-months');
+    if (!container) return;
+
+    const targetValue = monthValue && monthValue !== 'all' ? monthValue : 'all';
+    const tile = container.querySelector(`.month-tile[data-month="${targetValue}"]`);
+    if (!tile) return;
+
+    tile.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest'
+    });
 }
 
 function updateTimelineLabel() {
@@ -358,9 +479,188 @@ function initializeRandomDefaultView() {
 
     updateTimelineLabel();
     renderTimelineMonths(year);
+    updateTimelineVisuals();
+    scrollYearIntoView(year);
     applyFilters();
 
     return true;
+}
+
+function spinArchive() {
+    // Don't spin if there are no available years
+    if (!state.availableYears || state.availableYears.length === 0) {
+        return;
+    }
+
+    // Randomly select a year
+    const randomYear = state.availableYears[Math.floor(Math.random() * state.availableYears.length)];
+
+    // Get all issues for the selected year
+    const issuesForYear = state.allIssues.filter(issue => issue.date.startsWith(String(randomYear)));
+
+    // Get all available months for that year
+    const monthsWithIssues = new Set();
+    issuesForYear.forEach(issue => {
+        const month = issue.date.slice(5, 7);
+        monthsWithIssues.add(month);
+    });
+
+    // Convert to array and randomly select a month
+    const availableMonths = Array.from(monthsWithIssues);
+    const randomMonth = availableMonths[Math.floor(Math.random() * availableMonths.length)];
+
+    // Update state
+    state.selectedYear = String(randomYear);
+    state.selectedMonth = randomMonth;
+
+    // Show the reset button
+    const resetBtn = document.getElementById('timeline-reset');
+    if (resetBtn) {
+        resetBtn.style.opacity = '1';
+        resetBtn.style.pointerEvents = 'all';
+    }
+
+    // Add spinning animation to the button
+    const spinBtn = document.getElementById('spin-archive-btn');
+    if (spinBtn) {
+        spinBtn.classList.add('spinning');
+        setTimeout(() => {
+            spinBtn.classList.remove('spinning');
+        }, 600);
+    }
+
+    // Update UI
+    updateTimelineLabel();
+    renderTimelineMonths(String(randomYear));
+    updateTimelineVisuals();
+    applyFilters();
+    scrollYearIntoView(randomYear);
+}
+
+function scrollYearIntoView(year) {
+    const ticksContainer = document.getElementById('year-ticks');
+    if (!ticksContainer) return;
+
+    const wrapper = ticksContainer.parentElement;
+    if (!wrapper) return;
+
+    const tick = ticksContainer.querySelector(`.year-tick[data-year="${year}"]`);
+    if (!tick) return;
+
+    const scrollLeft = tick.offsetLeft - (wrapper.clientWidth / 2) + (tick.offsetWidth / 2);
+
+    wrapper.scrollTo({
+        left: Math.max(scrollLeft, 0),
+        behavior: 'smooth'
+    });
+}
+
+function getHeroPeriodLabel() {
+    if (state.selectedYear && state.selectedMonth) {
+        const monthInfo = MONTHS.find(m => m.value === state.selectedMonth);
+        const monthName = monthInfo ? monthInfo.full : state.selectedMonth;
+        return `${monthName} ${state.selectedYear}`;
+    }
+    if (state.selectedYear) {
+        return `${state.selectedYear}`;
+    }
+    return 'Archive Highlights';
+}
+
+function selectHeroIssues(sortedIssues) {
+    if (!sortedIssues || !sortedIssues.length) {
+        return [];
+    }
+
+    let pool = sortedIssues;
+
+    if (state.selectedYear && state.selectedMonth) {
+        const yearMonth = `${state.selectedYear}-${state.selectedMonth}`;
+        pool = sortedIssues.filter(issue => issue.date.startsWith(yearMonth));
+    } else if (state.selectedYear) {
+        const yearPrefix = `${state.selectedYear}-`;
+        pool = sortedIssues.filter(issue => issue.date.startsWith(yearPrefix));
+    }
+
+    if (!pool.length) {
+        pool = sortedIssues;
+    }
+
+    const maxItems = Math.min(6, pool.length);
+    const minItems = Math.min(3, pool.length);
+    const desired = Math.max(minItems, Math.min(5, maxItems));
+
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, desired);
+}
+
+function createHeroCard(issue) {
+    const figure = document.createElement('figure');
+    figure.className = 'hero-card';
+
+    const thumbPath = resolveAssetPath(issue.issue_thumb);
+    const date = new Date(issue.date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    figure.innerHTML = `
+        <img src="${thumbPath}" alt="${issue.title} - ${date}" loading="lazy" />
+        <figcaption>
+            <div class="hero-card-title">${issue.title}</div>
+            <div class="hero-card-meta">${date}</div>
+        </figcaption>
+    `;
+
+    figure.addEventListener('click', () => {
+        const issueIndex = state.displayedIssues.findIndex(item => item.id === issue.id);
+        if (issueIndex !== -1) {
+            openViewer(issueIndex);
+        }
+    });
+
+    return figure;
+}
+
+function updateHeroShowcase(sortedIssues, forceRefresh = false) {
+    const heroSection = document.getElementById('newsstand-hero');
+    const heroGrid = document.getElementById('hero-grid');
+    const heroLabel = document.getElementById('hero-period-label');
+    const heroClear = document.getElementById('hero-clear-btn');
+
+    if (!heroSection || !heroGrid || !heroLabel) {
+        return;
+    }
+
+    if (!forceRefresh && heroSection.dataset.initialized === 'true' && !state.selectedYear && !state.selectedMonth) {
+        // If nothing has changed and hero is already showing archive highlights, skip redundant re-render.
+        return;
+    }
+
+    const showcaseIssues = selectHeroIssues(sortedIssues);
+    heroGrid.innerHTML = '';
+
+    if (!showcaseIssues.length) {
+        heroSection.classList.add('hidden');
+        return;
+    }
+
+    heroSection.classList.remove('hidden');
+    heroSection.dataset.initialized = 'true';
+    heroLabel.textContent = getHeroPeriodLabel();
+
+    showcaseIssues.forEach(issue => {
+        heroGrid.appendChild(createHeroCard(issue));
+    });
+
+    if (heroClear) {
+        if (state.selectedYear || state.selectedMonth) {
+            heroClear.classList.remove('opacity-0', 'pointer-events-none');
+        } else {
+            heroClear.classList.add('opacity-0', 'pointer-events-none');
+        }
+    }
 }
 
 // ==================== FILTERS ====================
@@ -458,14 +758,13 @@ function resetFilters() {
     document.querySelectorAll('.filter-checkbox').forEach(cb => cb.checked = true);
 
     // Reset timeline
-    document.querySelectorAll('.timeline-year-pill').forEach(marker => {
-        marker.classList.remove('active');
-        marker.setAttribute('aria-selected', 'false');
-    });
+    const timelineReset = document.getElementById('timeline-reset');
+    if (timelineReset) {
+        timelineReset.style.opacity = '0';
+        timelineReset.style.pointerEvents = 'none';
+    }
 
-    document.getElementById('timeline-reset').style.opacity = '0';
-    document.getElementById('timeline-reset').style.pointerEvents = 'none';
-
+    highlightYearTick(0);
     renderTimelineMonths(null);
     updateTimelineLabel();
     updateTimelineVisuals();
@@ -544,6 +843,12 @@ function renderGrid(append = false) {
     emptyState.classList.add('hidden');
 
     const sorted = sortIssues(state.filteredIssues);
+    const shouldRefreshHero = !append;
+
+    if (!append) {
+        state.currentPage = 0;
+    }
+
     const startIndex = state.currentPage * CONFIG.ITEMS_PER_PAGE;
     const endIndex = startIndex + CONFIG.ITEMS_PER_PAGE;
     const itemsToRender = sorted.slice(startIndex, endIndex);
@@ -559,6 +864,10 @@ function renderGrid(append = false) {
         const card = createIssueCard(issue, globalIndex);
         grid.appendChild(card);
     });
+
+    if (shouldRefreshHero) {
+        updateHeroShowcase(sorted, true);
+    }
 
     // Show/hide load more trigger
     const loadMoreTrigger = document.getElementById('load-more-trigger');
@@ -582,7 +891,7 @@ function createIssueCard(issue, index) {
     });
 
     card.innerHTML = `
-        <div class="aspect-[3/4] skeleton overflow-hidden" style="background: rgba(79, 117, 139, 0.1);">
+        <div class="aspect-[3/4] skeleton newsstand-thumbnail overflow-hidden" style="background: rgba(79, 117, 139, 0.1);">
             <img
                 src="${thumbPath}"
                 alt="${issue.title} - ${date}"
@@ -591,14 +900,11 @@ function createIssueCard(issue, index) {
                 data-loaded="false"
             />
         </div>
-        <div class="p-4 space-y-1">
-            <span class="text-xs uppercase tracking-wide block" style="color: var(--unc-tile-teal);">
-                ${new Date(issue.date).getFullYear()}
-            </span>
-            <h3 class="font-semibold text-sm truncate transition-colors" style="color: var(--unc-longleaf-pine);">
+        <div class="p-4 space-y-2">
+            <h3 class="issue-card-title transition-colors" style="color: var(--unc-longleaf-pine);">
                 ${issue.title}
             </h3>
-            <p class="text-xs" style="color: var(--text-muted);">${date}</p>
+            <p class="issue-card-date" style="color: var(--text-muted);">${date}</p>
         </div>
     `;
 
@@ -1059,6 +1365,54 @@ function toggleElement(id, show) {
     if (el) el.classList.toggle('hidden', !show);
 }
 
+// ==================== INTRO OVERLAY ====================
+function showIntroOverlay() {
+    const overlay = document.getElementById('intro-overlay');
+    if (!overlay) return;
+
+    overlay.classList.remove('hidden');
+    requestAnimationFrame(() => {
+        overlay.classList.add('active');
+    });
+    document.body.style.overflow = 'hidden';
+}
+
+function hideIntroOverlay(persist = true) {
+    const overlay = document.getElementById('intro-overlay');
+    if (!overlay) return;
+
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+
+    setTimeout(() => {
+        overlay.classList.add('hidden');
+    }, 250);
+
+    if (persist) {
+        try {
+            localStorage.setItem(INTRO_STORAGE_KEY, '1');
+        } catch (error) {
+            console.warn('Unable to persist intro overlay state:', error);
+        }
+    }
+}
+
+function maybeShowIntroOverlay() {
+    const overlay = document.getElementById('intro-overlay');
+    if (!overlay) return;
+
+    try {
+        if (localStorage.getItem(INTRO_STORAGE_KEY)) {
+            overlay.classList.add('hidden');
+            return;
+        }
+    } catch (error) {
+        console.warn('Unable to access intro overlay preference:', error);
+    }
+
+    showIntroOverlay();
+}
+
 // Debounce utility
 function debounce(func, wait) {
     let timeout;
@@ -1150,6 +1504,12 @@ function setupEventListeners() {
         resetBtn.addEventListener('click', resetFilters);
     }
 
+    // Spin the Archive button
+    const spinArchiveBtn = document.getElementById('spin-archive-btn');
+    if (spinArchiveBtn) {
+        spinArchiveBtn.addEventListener('click', spinArchive);
+    }
+
     // Timeline reset button
     const timelineReset = document.getElementById('timeline-reset');
     if (timelineReset) {
@@ -1163,6 +1523,38 @@ function setupEventListeners() {
             timelineReset.style.opacity = '0';
             timelineReset.style.pointerEvents = 'none';
         });
+    }
+
+    const heroClearBtn = document.getElementById('hero-clear-btn');
+    if (heroClearBtn) {
+        heroClearBtn.addEventListener('click', () => {
+            state.selectedYear = null;
+            state.selectedMonth = null;
+            renderTimelineMonths(null);
+            updateTimelineVisuals();
+            updateTimelineLabel();
+            applyFilters();
+            heroClearBtn.classList.add('opacity-0', 'pointer-events-none');
+            if (timelineReset) {
+                timelineReset.style.opacity = '0';
+                timelineReset.style.pointerEvents = 'none';
+            }
+        });
+    }
+
+    const introStartBtn = document.getElementById('intro-start-btn');
+    if (introStartBtn) {
+        introStartBtn.addEventListener('click', () => hideIntroOverlay(true));
+    }
+
+    const introCloseBtn = document.getElementById('intro-close-btn');
+    if (introCloseBtn) {
+        introCloseBtn.addEventListener('click', () => hideIntroOverlay(true));
+    }
+
+    const introBackdrop = document.querySelector('#intro-overlay .intro-backdrop');
+    if (introBackdrop) {
+        introBackdrop.addEventListener('click', () => hideIntroOverlay(true));
     }
 
     // Retry button
@@ -1202,6 +1594,16 @@ function setupEventListeners() {
 
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
+        const introOverlay = document.getElementById('intro-overlay');
+        const overlayActive = introOverlay && introOverlay.classList.contains('active') && !introOverlay.classList.contains('hidden');
+        if (overlayActive) {
+            if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') {
+                hideIntroOverlay(true);
+            }
+            e.preventDefault();
+            return;
+        }
+
         const modal = document.getElementById('viewer-modal');
         if (!modal.classList.contains('hidden')) {
             if (e.key === 'Escape') {

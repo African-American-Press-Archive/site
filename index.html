@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Press Archive · Digital Collection 1910-1929</title>
+    <title>Making the News · Black Press Archive</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,11 +24,25 @@
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                     <!-- Logo & Title -->
-                    <div class="text-center md:text-left">
-                        <h1 class="hero-title gradient-text transition-all duration-300">
-                            Black Press Archive
-                        </h1>
-                        <p class="text-sm mt-1 font-medium" style="color: var(--text-secondary);">Digital Collection · 1910-1929</p>
+                    <div class="flex flex-col sm:flex-row items-center gap-4 md:gap-6 text-center md:text-left branding-lockup">
+                        <span class="brand-emblem" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="12" width="52" height="40" rx="4" fill="#F5F1E8" stroke="#8B7355" stroke-width="2"/>
+                                <path d="M12 20H52" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 28H44" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 36H40" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 44H36" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M50 24V48" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M45 24V48" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M16 48H32" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <h1 class="hero-title editorial-title transition-all duration-300">
+                                THE BLACK PRESS
+                            </h1>
+                            <p class="text-sm mt-1 font-medium subtitle-text" style="color: var(--text-secondary);">Making the News · 1910–1929</p>
+                        </div>
                     </div>
 
                     <!-- Search Bar -->
@@ -91,29 +105,70 @@
                 <!-- Main Content Area -->
                 <main class="flex-1 min-w-0">
 
+                    <!-- Newsstand Hero Showcase -->
+                    <section id="newsstand-hero" class="newsstand-hero glass-card rounded-2xl p-6 mb-6 hidden">
+                        <div class="flex flex-col md:flex-row justify-between gap-6 md:items-center">
+                            <div>
+                                <p class="hero-kicker uppercase tracking-[0.4em] text-xs font-semibold mb-2">Newsstand Highlights</p>
+                                <h2 id="hero-period-label" class="hero-period-title text-3xl font-black">Archive Highlights</h2>
+                                <p class="hero-period-subtitle text-sm mt-2 max-w-xl" style="color: var(--text-muted);">
+                                    A rotating wall of front pages drawn from the moment you’re exploring. Spin the archive to jump through time.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <button id="spin-archive-btn" class="spin-archive-btn" aria-label="Spin the Archive - Random month and year">
+                                    <svg class="spin-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                    </svg>
+                                    <span class="spin-text">Spin the Archive</span>
+                                </button>
+                                <button id="hero-clear-btn" class="hero-clear-btn text-sm transition-colors opacity-0 pointer-events-none" style="color: var(--unc-tile-teal);">
+                                    Clear Date Selection
+                                </button>
+                            </div>
+                        </div>
+                        <div id="hero-grid" class="hero-grid mt-6"></div>
+                    </section>
+
                     <!-- Timeline Section -->
                     <section class="timeline-section glass-card rounded-xl p-6 mb-6">
                         <div class="flex items-center justify-between mb-6">
-                            <h2 class="text-xl font-bold" style="color: var(--unc-longleaf-pine);">Browse by Year</h2>
-                            <button id="timeline-reset" class="text-sm transition-colors opacity-0 pointer-events-none" style="color: var(--unc-tile-teal);">
+                            <div>
+                                <h2 class="text-xl font-bold" style="color: var(--unc-longleaf-pine);">Browse the Archive</h2>
+                                <p class="text-xs tracking-[0.3em] uppercase mt-1" style="color: var(--text-muted); letter-spacing: 0.32em;">Year · Month Selector</p>
+                            </div>
+                            <button id="timeline-reset" class="text-sm transition-colors opacity-0 pointer-events-none deco-link" style="color: var(--unc-tile-teal);">
                                 Clear Selection
                             </button>
                         </div>
 
-                        <!-- Interactive Timeline Slider -->
-                        <div id="timeline-slider" class="timeline-slider-container">
-                            <div id="timeline-markers" class="timeline-year-pills" role="listbox" aria-label="Browse by year">
-                                <!-- Year markers will be populated here -->
+                        <div class="year-dial">
+                            <div class="year-dial-header">
+                                <span class="dial-label">Year</span>
+                                <span class="dial-caption">1910–1929</span>
+                            </div>
+                            <div class="year-dial-scale">
+                                <div class="year-dial-pointer" aria-hidden="true"></div>
+                                <input type="range" id="year-slider" class="year-slider" min="0" max="0" value="0" step="1" aria-label="Select year">
+                                <div class="year-ticks-wrapper">
+                                    <div id="year-ticks" class="year-ticks" role="listbox" aria-label="Select year"></div>
+                                </div>
+                            </div>
+                            <div class="year-dial-readout">
+                                <span class="dial-readout-prefix">Focused on</span>
+                                <span id="timeline-year-label" class="year-dial-readout-value gradient-text">All Years</span>
                             </div>
                         </div>
 
-                        <!-- Year Label -->
-                        <div class="text-center mt-4">
-                            <span id="timeline-year-label" class="text-2xl font-bold gradient-text">All Years</span>
+                        <div class="month-carousel glass-card mt-6">
+                            <div class="month-carousel-header">
+                                <span class="month-title">Month</span>
+                                <span id="month-carousel-year" class="month-caption">All Years</span>
+                            </div>
+                            <div class="month-scroll-viewport" role="presentation">
+                                <div id="timeline-months" class="month-scroll-track" role="listbox" aria-live="polite" aria-label="Select month"></div>
+                            </div>
                         </div>
-
-                        <!-- Month Selector -->
-                        <div id="timeline-months" class="timeline-months hidden mt-4" role="listbox" aria-live="polite" aria-label="Select month"></div>
                     </section>
 
                     <!-- Loading State -->
@@ -422,6 +477,26 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Intro Overlay -->
+    <div id="intro-overlay" class="intro-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="intro-overlay-title">
+        <div class="intro-backdrop" aria-hidden="true"></div>
+        <div class="intro-dialog glass-card">
+            <button id="intro-close-btn" class="intro-close-btn" aria-label="Dismiss introduction">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <p class="intro-kicker uppercase tracking-[0.4em] text-xs font-semibold">Making the news</p>
+            <h2 id="intro-overlay-title" class="intro-title hero-title text-center mt-2">Step up to the Archive</h2>
+            <p class="intro-body text-center mt-4" style="color: var(--text-muted);">
+                Discover a century of Black journalism — every front page, every week. Spin the archive to drop into a different moment in history, then browse the newsstand to see what was making headlines.
+            </p>
+            <button id="intro-start-btn" class="btn-primary mt-6" type="button">
+                Start Exploring
+            </button>
         </div>
     </div>
 
