@@ -118,112 +118,58 @@ async function loadManifest() {
 
 // ==================== TIMELINE CONTROLLER ====================
 function initializeTimeline() {
-    const slider = document.getElementById('year-slider');
-    const ticksContainer = document.getElementById('year-ticks');
+    const slider = document.getElementById('timeline-slider');
+    const markersContainer = document.getElementById('timeline-markers');
     const years = state.availableYears;
 
-    if (!slider || !ticksContainer) {
+    if (!slider || !markersContainer) {
         return;
     }
 
-    slider.removeEventListener('input', handleYearSliderInput);
-    slider.removeEventListener('change', handleYearSliderChange);
-
-    ticksContainer.innerHTML = '';
+    markersContainer.innerHTML = '';
 
     if (!years.length) {
-        slider.disabled = true;
+        slider.classList.add('hidden');
         return;
     }
 
-    slider.disabled = false;
-    slider.min = 0;
-    slider.max = years.length - 1;
-    slider.step = 1;
-
-    let selectedIndex = 0;
-    if (state.selectedYear) {
-        const idx = years.indexOf(Number(state.selectedYear));
-        if (idx >= 0) {
-            selectedIndex = idx;
-        }
-    }
-
-    slider.value = selectedIndex;
+    slider.classList.remove('hidden');
 
     years.forEach((year, index) => {
-        const tick = document.createElement('span');
-        tick.className = 'year-tick';
-        tick.dataset.year = year;
-        tick.dataset.index = index;
-        tick.textContent = year;
-        tick.tabIndex = 0;
-        tick.setAttribute('role', 'option');
-        tick.setAttribute('aria-label', `${year}`);
-        tick.addEventListener('click', () => setYearFromIndex(index));
-        tick.addEventListener('keydown', (e) => {
+        const marker = createTimelineMarker(year, state.yearCounts.get(year) || 0);
+        marker.addEventListener('click', () => selectYear(year));
+        marker.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
-                setYearFromIndex(index);
+                selectYear(year);
             }
         });
-        ticksContainer.appendChild(tick);
+        markersContainer.appendChild(marker);
     });
-
-    slider.addEventListener('input', handleYearSliderInput);
-    slider.addEventListener('change', handleYearSliderChange);
 
     updateTimelineVisuals();
     renderTimelineMonths(state.selectedYear);
     updateTimelineLabel();
-}
-
-function setYearFromIndex(index, options = {}) {
-    const years = state.availableYears;
-    if (!years.length) return;
-
-    const normalized = Math.max(0, Math.min(index, years.length - 1));
-    const year = years[normalized];
-    selectYear(year, { toggle: false, ...options });
-    highlightYearTick(normalized);
-    scrollYearIntoView(year);
-}
-
-function handleYearSliderInput(event) {
-    const index = parseInt(event.target.value, 10);
-    if (Number.isNaN(index)) return;
-    setYearFromIndex(index, { fromSlider: true });
-}
-
-function handleYearSliderChange(event) {
-    const index = parseInt(event.target.value, 10);
-    if (Number.isNaN(index)) return;
-    setYearFromIndex(index, { fromSlider: true });
-}
-
-function highlightYearTick(index) {
-    const ticks = document.querySelectorAll('.year-tick');
-    ticks.forEach((tick, idx) => {
-        const isActive = state.selectedYear && Number(tick.dataset.year) === Number(state.selectedYear);
-        tick.classList.toggle('active', isActive);
-        tick.setAttribute('aria-selected', isActive ? 'true' : 'false');
-        if (!state.selectedYear && idx === index) {
-            tick.classList.remove('active');
-        }
-    });
-
-    const slider = document.getElementById('year-slider');
-    if (slider) {
-        if (state.selectedYear) {
-            const years = state.availableYears;
-            const activeIndex = years.indexOf(Number(state.selectedYear));
-            if (activeIndex >= 0) {
-                slider.value = activeIndex;
-            }
-        } else {
-            slider.value = 0;
-        }
+    if (state.selectedYear) {
+        scrollYearIntoView(state.selectedYear);
     }
+}
+
+function createTimelineMarker(year, count) {
+    const yearStr = String(year);
+    const marker = document.createElement('button');
+    marker.type = 'button';
+    marker.className = 'timeline-year-pill';
+    marker.dataset.year = yearStr;
+    marker.dataset.count = count;
+    marker.tabIndex = 0;
+    marker.setAttribute('role', 'option');
+    marker.setAttribute('aria-label', `${year} (${count} issues)`);
+    const isActive = state.selectedYear === yearStr;
+    marker.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    marker.classList.toggle('active', isActive);
+    marker.textContent = yearStr;
+    return marker;
 }
 
 function selectYear(year, options = {}) {
@@ -260,9 +206,9 @@ function selectYear(year, options = {}) {
             timelineReset.style.opacity = '0';
             timelineReset.style.pointerEvents = 'none';
         }
-        const wrapper = document.getElementById('year-ticks')?.parentElement;
-        if (wrapper) {
-            wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+        const slider = document.getElementById('timeline-slider');
+        if (slider) {
+            slider.scrollTo({ left: 0, behavior: 'smooth' });
         }
     }
 
@@ -270,33 +216,23 @@ function selectYear(year, options = {}) {
     updateTimelineVisuals();
 
     if (selectionChanged) {
+        if (state.selectedYear) {
+            scrollYearIntoView(state.selectedYear);
+        }
         applyFilters();
     }
 }
 
 function updateTimelineVisuals() {
-    const ticks = document.querySelectorAll('.year-tick');
+    const ticks = document.querySelectorAll('.timeline-year-pill');
     const selectedYear = state.selectedYear ? Number(state.selectedYear) : null;
-    let selectedIndex = -1;
 
-    ticks.forEach((tick, index) => {
+    ticks.forEach((tick) => {
         const tickYear = Number(tick.dataset.year);
         const isActive = selectedYear !== null && tickYear === selectedYear;
         tick.classList.toggle('active', isActive);
         tick.setAttribute('aria-selected', isActive ? 'true' : 'false');
-        if (isActive) {
-            selectedIndex = index;
-        }
     });
-
-    const slider = document.getElementById('year-slider');
-    if (slider) {
-        if (selectedIndex >= 0) {
-            slider.value = selectedIndex;
-        } else if (!state.selectedYear) {
-            slider.value = 0;
-        }
-    }
 }
 
 function renderTimelineMonths(yearStr) {
@@ -334,6 +270,9 @@ function renderTimelineMonths(yearStr) {
     }
 
     if (!activeMonths.length) {
+        if (monthCarousel) {
+            monthCarousel.classList.add('month-carousel--disabled');
+        }
         return;
     }
 
@@ -415,11 +354,20 @@ function scrollMonthIntoView(monthValue) {
     const tile = container.querySelector(`.month-tile[data-month="${targetValue}"]`);
     if (!tile) return;
 
-    tile.scrollIntoView({
-        behavior: 'smooth',
-        inline: 'center',
-        block: 'nearest'
-    });
+    const viewport = tile.closest('.month-scroll-viewport');
+    if (viewport) {
+        const scrollLeft = tile.offsetLeft - (viewport.clientWidth / 2) + (tile.offsetWidth / 2);
+        viewport.scrollTo({
+            left: Math.max(scrollLeft, 0),
+            behavior: 'smooth'
+        });
+    } else {
+        tile.scrollIntoView({
+            behavior: 'smooth',
+            inline: 'center',
+            block: 'nearest'
+        });
+    }
 }
 
 function updateTimelineLabel() {
@@ -538,18 +486,15 @@ function spinArchive() {
 }
 
 function scrollYearIntoView(year) {
-    const ticksContainer = document.getElementById('year-ticks');
-    if (!ticksContainer) return;
+    const slider = document.getElementById('timeline-slider');
+    if (!slider) return;
 
-    const wrapper = ticksContainer.parentElement;
-    if (!wrapper) return;
+    const pill = slider.querySelector(`.timeline-year-pill[data-year="${year}"]`);
+    if (!pill) return;
 
-    const tick = ticksContainer.querySelector(`.year-tick[data-year="${year}"]`);
-    if (!tick) return;
+    const scrollLeft = pill.offsetLeft - (slider.clientWidth / 2) + (pill.offsetWidth / 2);
 
-    const scrollLeft = tick.offsetLeft - (wrapper.clientWidth / 2) + (tick.offsetWidth / 2);
-
-    wrapper.scrollTo({
+    slider.scrollTo({
         left: Math.max(scrollLeft, 0),
         behavior: 'smooth'
     });
@@ -764,7 +709,6 @@ function resetFilters() {
         timelineReset.style.pointerEvents = 'none';
     }
 
-    highlightYearTick(0);
     renderTimelineMonths(null);
     updateTimelineLabel();
     updateTimelineVisuals();
@@ -833,7 +777,10 @@ function renderGrid(append = false) {
 
     if (!grid || !wrapper) return;
 
+    const previousHeight = !append ? grid.offsetHeight : 0;
+
     if (state.filteredIssues.length === 0) {
+        grid.style.minHeight = '';
         wrapper.classList.add('hidden');
         emptyState.classList.remove('hidden');
         return;
@@ -855,6 +802,10 @@ function renderGrid(append = false) {
 
     state.displayedIssues = sorted;
 
+    if (!append && previousHeight > 0) {
+        grid.style.minHeight = `${previousHeight}px`;
+    }
+
     if (!append) {
         grid.innerHTML = '';
     }
@@ -867,6 +818,12 @@ function renderGrid(append = false) {
 
     if (shouldRefreshHero) {
         updateHeroShowcase(sorted, true);
+    }
+
+    if (!append) {
+        requestAnimationFrame(() => {
+            grid.style.minHeight = '';
+        });
     }
 
     // Show/hide load more trigger

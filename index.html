@@ -112,7 +112,7 @@
                                 <p class="hero-kicker uppercase tracking-[0.4em] text-xs font-semibold mb-2">Newsstand Highlights</p>
                                 <h2 id="hero-period-label" class="hero-period-title text-3xl font-black">Archive Highlights</h2>
                                 <p class="hero-period-subtitle text-sm mt-2 max-w-xl" style="color: var(--text-muted);">
-                                    A rotating wall of front pages drawn from the moment you’re exploring. Spin the archive to jump through time.
+                                    Curated front pages from 1910–1929. Spin the archive to drop into a moment in the early Black press and see what was making headlines.
                                 </p>
                             </div>
                             <div class="flex items-center gap-3">
@@ -142,25 +142,21 @@
                             </button>
                         </div>
 
-                        <div class="year-dial">
-                            <div class="year-dial-header">
-                                <span class="dial-label">Year</span>
-                                <span class="dial-caption">1910–1929</span>
+                        <div class="year-carousel glass-card">
+                            <div class="year-carousel-header">
+                                <span class="year-title">Year</span>
+                                <span class="year-range">1910–1929</span>
                             </div>
-                            <div class="year-dial-scale">
-                                <div class="year-dial-pointer" aria-hidden="true"></div>
-                                <input type="range" id="year-slider" class="year-slider" min="0" max="0" value="0" step="1" aria-label="Select year">
-                                <div class="year-ticks-wrapper">
-                                    <div id="year-ticks" class="year-ticks" role="listbox" aria-label="Select year"></div>
-                                </div>
+                            <div id="timeline-slider" class="timeline-slider-container" role="presentation">
+                                <div id="timeline-markers" class="timeline-year-pills" role="listbox" aria-label="Select year"></div>
                             </div>
-                            <div class="year-dial-readout">
+                            <div class="year-readout">
                                 <span class="dial-readout-prefix">Focused on</span>
-                                <span id="timeline-year-label" class="year-dial-readout-value gradient-text">All Years</span>
+                                <span id="timeline-year-label" class="year-readout-value gradient-text">All Years</span>
                             </div>
                         </div>
 
-                        <div class="month-carousel glass-card mt-6">
+                        <div class="month-carousel glass-card mt-6 month-carousel--disabled">
                             <div class="month-carousel-header">
                                 <span class="month-title">Month</span>
                                 <span id="month-carousel-year" class="month-caption">All Years</span>
@@ -492,7 +488,7 @@
             <p class="intro-kicker uppercase tracking-[0.4em] text-xs font-semibold">Making the news</p>
             <h2 id="intro-overlay-title" class="intro-title hero-title text-center mt-2">Step up to the Archive</h2>
             <p class="intro-body text-center mt-4" style="color: var(--text-muted);">
-                Discover a century of Black journalism — every front page, every week. Spin the archive to drop into a different moment in history, then browse the newsstand to see what was making headlines.
+                Explore a curated slice of early twentieth-century Black journalism. Spin the archive to land on a random issue between 1910 and 1929, then browse the newsstand to see which stories captured the moment.
             </p>
             <button id="intro-start-btn" class="btn-primary mt-6" type="button">
                 Start Exploring

@@ -301,185 +301,26 @@ header.scrolled h1 {
     opacity: 0.8;
 }
 
-.year-dial {
-    background: linear-gradient(180deg, rgba(245, 241, 232, 0.8), rgba(234, 228, 216, 0.9));
-    border: 1px solid rgba(139, 115, 85, 0.25);
+.year-carousel {
+    border: 1px solid rgba(139, 115, 85, 0.2);
     border-radius: 1rem;
-    padding: 1.5rem;
-    box-shadow: 0 14px 30px rgba(89, 67, 45, 0.12);
+    padding: 1.25rem 1.5rem;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), var(--shadow-sm);
 }
 
-.year-dial-header {
+.year-carousel-header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.26em;
+    font-size: 0.78rem;
     color: var(--accent-secondary);
-    font-size: 0.75rem;
-}
-
-.dial-label {
     font-weight: 700;
 }
 
-.dial-caption {
-    font-weight: 500;
-    opacity: 0.7;
-}
-
-.year-dial-scale {
-    position: relative;
-    margin-top: 1.25rem;
-    padding: 1.75rem 0 0.5rem;
-}
-
-.year-dial-pointer {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1.5rem;
-    height: 1.5rem;
-    background: var(--bg-card);
-    border: 2px solid var(--accent-secondary);
-    border-radius: 4px;
-    box-shadow: 0 6px 15px rgba(89, 67, 45, 0.18);
-    clip-path: polygon(50% 0%, 100% 65%, 50% 100%, 0% 65%);
-}
-
-.year-slider {
-    width: 100%;
-    appearance: none;
-    background: transparent;
-    position: relative;
-    z-index: 1;
-}
-
-.year-slider:focus {
-    outline: none;
-}
-
-.year-slider::-webkit-slider-runnable-track {
-    height: 6px;
-    border-radius: 999px;
-    border: 1px solid rgba(139, 115, 85, 0.3);
-    background: linear-gradient(90deg, rgba(184, 149, 106, 0.85), rgba(139, 115, 85, 0.75));
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-.year-slider::-moz-range-track {
-    height: 6px;
-    border-radius: 999px;
-    border: 1px solid rgba(139, 115, 85, 0.3);
-    background: linear-gradient(90deg, rgba(184, 149, 106, 0.85), rgba(139, 115, 85, 0.75));
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-.year-slider::-webkit-slider-thumb {
-    appearance: none;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.85);
-    background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.9), rgba(139, 115, 85, 0.9));
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-    margin-top: -9px;
-    transition: transform 0.2s ease;
-}
-
-.year-slider::-moz-range-thumb {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.85);
-    background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.9), rgba(139, 115, 85, 0.9));
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-    transition: transform 0.2s ease;
-}
-
-.year-slider::-webkit-slider-thumb:hover,
-.year-slider::-moz-range-thumb:hover {
-    transform: scale(1.1);
-}
-
-.year-ticks-wrapper {
-    margin-top: 1.75rem;
-    overflow-x: auto;
-    padding-bottom: 0.35rem;
-    scrollbar-width: thin;
-}
-
-.year-ticks-wrapper::-webkit-scrollbar {
-    height: 6px;
-}
-
-.year-ticks-wrapper::-webkit-scrollbar-thumb {
-    background: rgba(139, 115, 85, 0.3);
-    border-radius: 999px;
-}
-
-.year-ticks {
-    display: flex;
-    gap: 1.25rem;
-    min-width: max-content;
-    justify-content: center;
-}
-
-.year-tick {
-    position: relative;
-    padding: 0.45rem 0.6rem;
-    min-width: 3.2rem;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    cursor: pointer;
-    transition: var(--transition-base);
-    border-radius: 0.75rem;
-    border: 1px solid transparent;
-    background: transparent;
-}
-
-.year-tick::after {
-    content: '';
-    position: absolute;
-    bottom: -0.6rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 10px;
-    background: rgba(139, 115, 85, 0.35);
-    transition: var(--transition-base);
-}
-
-.year-tick:hover {
-    color: var(--accent-secondary);
-    border-color: rgba(184, 149, 106, 0.4);
-    box-shadow: 0 6px 14px rgba(89, 67, 45, 0.18);
-}
-
-.year-tick.active {
-    color: var(--unc-longleaf-pine);
-    border-color: rgba(0, 165, 173, 0.45);
-    background: rgba(0, 165, 173, 0.15);
-    box-shadow: 0 10px 24px rgba(0, 165, 173, 0.2);
-}
-
-.year-tick.active::after {
-    height: 16px;
-    background: var(--unc-tile-teal);
-}
-
-.year-tick:focus-visible {
-    outline: 2px solid var(--accent-secondary);
-    outline-offset: 4px;
-}
-
-.year-dial-readout {
+.year-readout {
     margin-top: 1.5rem;
     text-align: center;
     font-size: 0.95rem;
@@ -496,12 +337,96 @@ header.scrolled h1 {
     opacity: 0.7;
 }
 
-.year-dial-readout-value {
+.year-readout-value {
     display: block;
     font-size: clamp(1.4rem, 3vw, 2rem);
     font-weight: 800;
     letter-spacing: 0.12em;
     margin-top: 0.5rem;
+}
+
+.year-range {
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    color: rgba(45, 36, 32, 0.6);
+}
+
+.timeline-slider-container {
+    width: 100%;
+    padding: 1rem 0 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.timeline-slider-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.timeline-slider-container::-webkit-scrollbar-thumb {
+    background: rgba(139, 115, 85, 0.3);
+    border-radius: 999px;
+}
+
+.timeline-year-pills {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    min-width: max-content;
+}
+
+.timeline-year-pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3.4rem;
+    padding: 0.55rem 0.85rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(139, 115, 85, 0.35);
+    background: linear-gradient(180deg, rgba(245, 241, 232, 0.95), rgba(224, 215, 200, 0.92));
+    color: var(--text-secondary);
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition-base);
+    box-shadow: 0 10px 20px rgba(89, 67, 45, 0.12);
+}
+
+.timeline-year-pill::after {
+    content: attr(data-count);
+    position: absolute;
+    bottom: -0.85rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    color: rgba(26, 22, 20, 0.55);
+}
+
+.timeline-year-pill:hover {
+    transform: translateY(-6px);
+    border-color: rgba(184, 149, 106, 0.4);
+    box-shadow: 0 14px 30px rgba(89, 67, 45, 0.2);
+    color: var(--accent-secondary);
+}
+
+.timeline-year-pill.active {
+    background: linear-gradient(180deg, rgba(0, 165, 173, 0.22), rgba(0, 165, 173, 0.35));
+    border-color: rgba(0, 165, 173, 0.65);
+    color: var(--unc-longleaf-pine);
+    box-shadow: 0 18px 34px rgba(0, 165, 173, 0.24);
+}
+
+.timeline-year-pill.active::after {
+    color: rgba(26, 22, 20, 0.75);
+}
+
+.timeline-year-pill:focus-visible {
+    outline: 2px solid var(--accent-secondary);
+    outline-offset: 4px;
 }
 
 .month-carousel {
@@ -515,6 +440,12 @@ header.scrolled h1 {
 .month-carousel--disabled {
     opacity: 0.6;
     pointer-events: none;
+}
+
+.month-carousel--disabled .month-scroll-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .month-carousel--disabled .month-scroll-track::before {
@@ -1233,22 +1164,23 @@ a:focus-visible {
 
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
-    .year-dial {
+    .year-carousel {
         padding: 1.1rem;
     }
 
-    .year-ticks {
-        gap: 0.85rem;
+    .timeline-year-pills {
+        gap: 0.75rem;
     }
 
-    .year-tick {
-        min-width: 2.8rem;
-        font-size: 0.72rem;
+    .timeline-year-pill {
+        min-width: 2.9rem;
+        font-size: 0.75rem;
         letter-spacing: 0.1em;
+        padding: 0.45rem 0.65rem;
     }
 
     .month-tile {
-        min-width: 3.6rem;
+        min-width: 3.4rem;
         letter-spacing: 0.2em;
     }
 
@@ -1340,7 +1272,7 @@ a:focus-visible {
 /* ==================== PERFORMANCE OPTIMIZATIONS ==================== */
 /* Use GPU acceleration for smoother animations */
 .issue-card,
-.year-tick,
+.timeline-year-pill,
 .glass-card,
 #viewer-image {
     will-change: transform;
@@ -1348,7 +1280,7 @@ a:focus-visible {
 
 /* Prevent layout shift during animations */
 .issue-card,
-.year-tick {
+.timeline-year-pill {
     contain: layout style paint;
 }
 
@@ -1718,6 +1650,7 @@ a:focus-visible {
     text-shadow:
         0 1px 0 rgba(255, 255, 255, 0.4),
         0 8px 18px rgba(0, 0, 0, 0.15);
+    word-break: break-word;
 }
 
 .issue-card-date {
@@ -1766,13 +1699,13 @@ body::before {
 }
 
 /* ==================== ENHANCED TIMELINE PILLS ==================== */
-.year-tick {
+.timeline-year-pill {
     transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
     box-shadow: var(--shadow-sm),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
 }
 
-.year-tick:hover {
+.timeline-year-pill:hover {
     box-shadow: var(--shadow-md),
                 inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
 }
