@@ -147,8 +147,15 @@ def _slugify(title: str) -> str:
 
 
 def _compute_base_url(config_entry):
-    repo = config_entry.get('repo') if isinstance(config_entry, dict) else None
-    branch = config_entry.get('branch', 'main') if isinstance(config_entry, dict) else 'main'
+    if not isinstance(config_entry, dict):
+        return None
+
+    base_url = config_entry.get('base_url')
+    if base_url:
+        return base_url.rstrip('/')
+
+    repo = config_entry.get('repo')
+    branch = config_entry.get('branch', 'main')
     if not repo:
         return None
     base = f'https://raw.githubusercontent.com/{repo}/{branch}'

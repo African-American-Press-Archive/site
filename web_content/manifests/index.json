@@ -6,63 +6,63 @@
       "title": "Broad Ax",
       "issue_count": 417,
       "manifest_path": "manifests/broad-ax.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/broad-ax/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/broad-ax/manifests/paper-manifest.json"
     },
     {
       "slug": "chicago-defender",
       "title": "Chicago Defender",
       "issue_count": 324,
       "manifest_path": "manifests/chicago-defender.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/chicago-defender/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/chicago-defender/manifests/paper-manifest.json"
     },
     {
       "slug": "cleveland-advocate",
       "title": "Cleveland Advocate",
       "issue_count": 360,
       "manifest_path": "manifests/cleveland-advocate.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/cleveland-advocate/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/cleveland-advocate/manifests/paper-manifest.json"
     },
     {
       "slug": "cleveland-gazette",
       "title": "Cleveland Gazette",
       "issue_count": 834,
       "manifest_path": "manifests/cleveland-gazette.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/cleveland-gazette/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/cleveland-gazette/manifests/paper-manifest.json"
     },
     {
       "slug": "kansas-city-sun",
       "title": "Kansas City Sun",
       "issue_count": 309,
       "manifest_path": "manifests/kansas-city-sun.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/kansas-city-sun/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/kansas-city-sun/manifests/paper-manifest.json"
     },
     {
       "slug": "new-york-age",
       "title": "New York Age",
       "issue_count": 416,
       "manifest_path": "manifests/new-york-age.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/new-york-age/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/new-york-age/manifests/paper-manifest.json"
     },
     {
       "slug": "richmond-planet",
       "title": "Richmond Planet",
       "issue_count": 286,
       "manifest_path": "manifests/richmond-planet.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/richmond-planet/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/richmond-planet/manifests/paper-manifest.json"
     },
     {
       "slug": "tulsa-star",
       "title": "Tulsa Star",
       "issue_count": 139,
       "manifest_path": "manifests/tulsa-star.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/tulsa-star/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/tulsa-star/manifests/paper-manifest.json"
     },
     {
       "slug": "washington-tribune",
       "title": "Washington Tribune",
       "issue_count": 86,
       "manifest_path": "manifests/washington-tribune.json",
-      "remote_manifest": "https://raw.githubusercontent.com/African-American-Press-Archive/washington-tribune/main/manifests/paper-manifest.json"
+      "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/washington-tribune/manifests/paper-manifest.json"
     }
   ]
 }

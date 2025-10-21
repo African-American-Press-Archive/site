@@ -1,0 +1,43 @@
+papers:
+  broad-ax:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/broad-ax
+    path: broad-ax
+    title: Broad Ax
+  chicago-defender:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/chicago-defender
+    path: chicago-defender
+    title: Chicago Defender
+  cleveland-advocate:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/cleveland-advocate
+    path: cleveland-advocate
+    title: Cleveland Advocate
+  cleveland-gazette:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/cleveland-gazette
+    path: cleveland-gazette
+    title: Cleveland Gazette
+  kansas-city-sun:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/kansas-city-sun
+    path: kansas-city-sun
+    title: Kansas City Sun
+  new-york-age:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/new-york-age
+    path: new-york-age
+    title: New York Age
+  richmond-planet:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/richmond-planet
+    path: richmond-planet
+    title: Richmond Planet
+  tulsa-star:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/tulsa-star
+    path: tulsa-star
+    title: Tulsa Star
+  washington-tribune:
+    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/washington-tribune
+    path: washington-tribune
+    title: Washington Tribune
+storage:
+  provider: cloudflare-r2
+  bucket: african-american-press-archive
+  account_id: ae978df95b073e0e6a0d595c996900ca
+  endpoint: https://ae978df95b073e0e6a0d595c996900ca.r2.cloudflarestorage.com
+  public_base: https://pub-ccec707891b843259f01f3550ff24595.r2.dev
