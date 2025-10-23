@@ -1,0 +1,2021 @@
+{
+  "manifest_version": 1,
+  "title": "Indianapolis Freeman",
+  "issues": [
+    {
+      "id": "1915-01-02_sn82016211",
+      "date": "1915-01-02",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-01-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-01-02/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-01-02/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-01-02/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-01-02/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-01-02/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-01-02/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-01-02/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-01-02/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-01-09_sn82016211",
+      "date": "1915-01-09",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-01-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-01-09/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-01-09/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-01-09/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-01-09/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-01-09/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-01-09/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-01-09/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-01-09/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-01-16_sn82016211",
+      "date": "1915-01-16",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-01-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-01-16/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-01-16/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-01-16/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-01-16/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-01-16/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-01-16/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-01-16/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-01-16/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-01-23_sn82016211",
+      "date": "1915-01-23",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-01-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-01-23/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-01-23/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-01-23/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-01-23/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-01-23/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-01-23/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-01-23/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-01-23/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-01-30_sn82016211",
+      "date": "1915-01-30",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-01-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-01-30/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-01-30/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-01-30/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-01-30/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-01-30/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-01-30/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-01-30/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-01-30/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-02-06_sn82016211",
+      "date": "1915-02-06",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-02-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-02-06/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-02-06/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-02-06/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-02-06/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-02-06/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-02-06/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-02-06/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-02-06/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-02-13_sn82016211",
+      "date": "1915-02-13",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-02-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-02-13/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-02-13/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-02-13/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-02-13/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-02-13/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-02-13/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-02-13/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-02-13/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-02-20_sn82016211",
+      "date": "1915-02-20",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-02-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-02-20/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-02-20/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-02-20/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-02-20/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-02-20/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-02-20/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-02-20/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-02-20/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-02-27_sn82016211",
+      "date": "1915-02-27",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-02-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-02-27/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-02-27/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-02-27/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-02-27/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-02-27/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-02-27/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-02-27/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-02-27/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-03-06_sn82016211",
+      "date": "1915-03-06",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-03-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-03-06/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-03-06/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-03-06/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-03-06/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-03-06/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-03-06/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-03-06/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-03-06/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-03-13_sn82016211",
+      "date": "1915-03-13",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-03-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-03-13/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-03-13/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-03-13/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-03-13/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-03-13/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-03-13/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-03-13/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-03-13/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-03-20_sn82016211",
+      "date": "1915-03-20",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-03-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-03-20/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-03-20/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-03-20/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-03-20/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-03-20/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-03-20/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-03-20/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-03-20/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-03-27_sn82016211",
+      "date": "1915-03-27",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-03-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-03-27/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-03-27/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-03-27/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-03-27/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-03-27/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-03-27/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-03-27/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-03-27/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-04-03_sn82016211",
+      "date": "1915-04-03",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-04-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-04-03/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-04-03/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-04-03/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-04-03/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-04-03/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-04-03/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-04-03/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-04-03/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-04-10_sn82016211",
+      "date": "1915-04-10",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-04-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-04-10/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-04-10/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-04-10/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-04-10/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-04-10/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-04-10/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-04-10/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-04-10/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-04-17_sn82016211",
+      "date": "1915-04-17",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-04-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-04-17/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-04-17/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-04-17/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-04-17/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-04-17/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-04-17/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-04-17/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-04-17/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-04-24_sn82016211",
+      "date": "1915-04-24",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-04-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-04-24/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-04-24/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-04-24/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-04-24/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-04-24/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-04-24/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-04-24/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-04-24/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-05-01_sn82016211",
+      "date": "1915-05-01",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-05-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-05-01/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-05-01/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-05-01/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-05-01/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-05-01/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-05-01/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-05-01/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-05-01/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-05-08_sn82016211",
+      "date": "1915-05-08",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-05-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-05-08/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-05-08/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-05-08/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-05-08/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-05-08/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-05-08/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-05-08/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-05-08/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-05-15_sn82016211",
+      "date": "1915-05-15",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-05-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-05-15/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-05-15/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-05-15/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-05-15/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-05-15/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-05-15/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-05-15/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-05-15/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-05-22_sn82016211",
+      "date": "1915-05-22",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-05-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-05-22/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-05-22/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-05-22/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-05-22/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-05-22/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-05-22/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-05-22/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-05-22/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-05-29_sn82016211",
+      "date": "1915-05-29",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-05-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-05-29/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-05-29/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-05-29/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-05-29/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-05-29/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-05-29/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-05-29/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-05-29/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-06-05_sn82016211",
+      "date": "1915-06-05",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-06-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-06-05/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-06-05/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-06-05/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-06-05/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-06-05/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-06-05/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-06-05/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-06-05/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-06-12_sn82016211",
+      "date": "1915-06-12",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-06-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-06-12/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-06-12/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-06-12/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-06-12/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-06-12/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-06-12/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-06-12/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-06-12/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-06-19_sn82016211",
+      "date": "1915-06-19",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-06-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-06-19/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-06-19/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-06-19/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-06-19/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-06-19/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-06-19/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-06-19/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-06-19/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-06-26_sn82016211",
+      "date": "1915-06-26",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-06-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-06-26/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-06-26/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-06-26/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-06-26/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-06-26/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-06-26/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-06-26/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-06-26/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-07-03_sn82016211",
+      "date": "1915-07-03",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-07-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-07-03/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-07-03/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-07-03/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-07-03/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-07-03/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-07-03/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-07-03/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-07-03/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-07-10_sn82016211",
+      "date": "1915-07-10",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-07-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-07-10/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-07-10/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-07-10/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-07-10/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-07-10/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-07-10/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-07-10/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-07-10/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-07-17_sn82016211",
+      "date": "1915-07-17",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-07-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-07-17/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-07-17/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-07-17/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-07-17/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-07-17/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-07-17/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-07-17/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-07-17/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-07-24_sn82016211",
+      "date": "1915-07-24",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-07-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-07-24/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-07-24/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-07-24/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-07-24/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-07-24/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-07-24/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-07-24/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-07-24/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-07-31_sn82016211",
+      "date": "1915-07-31",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-07-31/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-07-31/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-07-31/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-07-31/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-07-31/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-07-31/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-07-31/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-07-31/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-07-31/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-08-07_sn82016211",
+      "date": "1915-08-07",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-08-07/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-08-07/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_08.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_09.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_10.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_11.jpg",
+        "/indianapolis-freeman/1915/1915-08-07/page_12.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-08-14_sn82016211",
+      "date": "1915-08-14",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-08-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-08-14/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-08-14/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-08-14/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-08-14/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-08-14/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-08-14/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-08-14/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-08-14/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-08-21_sn82016211",
+      "date": "1915-08-21",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-08-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-08-21/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-08-21/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-08-21/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-08-21/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-08-21/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-08-21/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-08-21/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-08-21/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-08-28_sn82016211",
+      "date": "1915-08-28",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-08-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-08-28/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-08-28/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-08-28/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-08-28/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-08-28/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-08-28/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-08-28/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-08-28/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-09-04_sn82016211",
+      "date": "1915-09-04",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-09-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-09-04/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-09-04/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-09-04/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-09-04/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-09-04/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-09-04/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-09-04/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-09-04/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-09-11_sn82016211",
+      "date": "1915-09-11",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-09-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-09-11/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-09-11/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-09-11/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-09-11/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-09-11/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-09-11/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-09-11/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-09-11/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-09-18_sn82016211",
+      "date": "1915-09-18",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-09-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-09-18/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-09-18/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-09-18/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-09-18/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-09-18/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-09-18/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-09-18/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-09-18/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-09-25_sn82016211",
+      "date": "1915-09-25",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-09-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-09-25/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-09-25/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-09-25/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-09-25/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-09-25/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-09-25/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-09-25/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-09-25/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-10-02_sn82016211",
+      "date": "1915-10-02",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-10-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-10-02/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-10-02/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-10-02/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-10-02/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-10-02/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-10-02/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-10-02/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-10-02/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-10-09_sn82016211",
+      "date": "1915-10-09",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-10-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-10-09/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-10-09/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-10-09/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-10-09/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-10-09/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-10-09/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-10-09/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-10-09/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-10-16_sn82016211",
+      "date": "1915-10-16",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-10-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-10-16/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-10-16/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-10-16/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-10-16/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-10-16/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-10-16/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-10-16/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-10-16/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-10-23_sn82016211",
+      "date": "1915-10-23",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-10-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-10-23/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-10-23/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-10-23/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-10-23/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-10-23/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-10-23/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-10-23/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-10-23/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-10-30_sn82016211",
+      "date": "1915-10-30",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-10-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-10-30/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-10-30/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-10-30/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-10-30/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-10-30/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-10-30/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-10-30/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-10-30/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-11-06_sn82016211",
+      "date": "1915-11-06",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-11-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-11-06/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-11-06/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-11-06/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-11-06/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-11-06/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-11-06/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-11-06/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-11-06/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-11-13_sn82016211",
+      "date": "1915-11-13",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-11-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-11-13/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-11-13/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-11-13/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-11-13/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-11-13/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-11-13/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-11-13/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-11-13/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-11-20_sn82016211",
+      "date": "1915-11-20",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-11-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-11-20/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-11-20/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-11-20/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-11-20/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-11-20/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-11-20/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-11-20/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-11-20/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-11-27_sn82016211",
+      "date": "1915-11-27",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-11-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-11-27/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-11-27/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-11-27/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-11-27/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-11-27/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-11-27/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-11-27/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-11-27/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-12-04_sn82016211",
+      "date": "1915-12-04",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-12-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-12-04/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-12-04/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-12-04/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-12-04/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-12-04/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-12-04/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-12-04/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-12-04/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-12-11_sn82016211",
+      "date": "1915-12-11",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-12-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-12-11/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-12-11/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-12-11/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-12-11/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-12-11/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-12-11/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-12-11/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-12-11/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-12-18_sn82016211",
+      "date": "1915-12-18",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-12-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-12-18/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-12-18/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-12-18/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-12-18/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-12-18/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-12-18/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-12-18/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-12-18/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1915-12-25_sn82016211",
+      "date": "1915-12-25",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1915/1915-12-25/thumb.jpg",
+      "pages": 20,
+      "page_paths": [
+        "/indianapolis-freeman/1915/1915-12-25/page_01.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_02.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_03.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_04.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_05.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_06.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_07.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_08.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_09.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_10.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_11.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_12.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_13.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_14.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_15.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_16.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_17.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_18.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_19.jpg",
+        "/indianapolis-freeman/1915/1915-12-25/page_20.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-01-01_sn82016211",
+      "date": "1916-01-01",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-01-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-01-01/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-01-01/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-01-01/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-01-01/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-01-01/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-01-01/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-01-01/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-01-01/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-01-08_sn82016211",
+      "date": "1916-01-08",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-01-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-01-08/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-01-08/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-01-08/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-01-08/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-01-08/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-01-08/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-01-08/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-01-08/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-01-15_sn82016211",
+      "date": "1916-01-15",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-01-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-01-15/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-01-15/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-01-15/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-01-15/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-01-15/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-01-15/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-01-15/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-01-15/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-01-22_sn82016211",
+      "date": "1916-01-22",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-01-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-01-22/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-01-22/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-01-22/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-01-22/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-01-22/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-01-22/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-01-22/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-01-22/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-01-29_sn82016211",
+      "date": "1916-01-29",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-01-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-01-29/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-01-29/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-01-29/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-01-29/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-01-29/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-01-29/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-01-29/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-01-29/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-02-05_sn82016211",
+      "date": "1916-02-05",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-02-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-02-05/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-02-05/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-02-05/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-02-05/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-02-05/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-02-05/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-02-05/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-02-05/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-02-12_sn82016211",
+      "date": "1916-02-12",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-02-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-02-12/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-02-12/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-02-12/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-02-12/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-02-12/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-02-12/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-02-12/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-02-12/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-02-19_sn82016211",
+      "date": "1916-02-19",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-02-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-02-19/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-02-19/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-02-19/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-02-19/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-02-19/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-02-19/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-02-19/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-02-19/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-02-26_sn82016211",
+      "date": "1916-02-26",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-02-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-02-26/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-02-26/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-02-26/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-02-26/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-02-26/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-02-26/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-02-26/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-02-26/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-03-04_sn82016211",
+      "date": "1916-03-04",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-03-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-03-04/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-03-04/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-03-04/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-03-04/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-03-04/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-03-04/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-03-04/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-03-04/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-03-11_sn82016211",
+      "date": "1916-03-11",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-03-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-03-11/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-03-11/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-03-11/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-03-11/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-03-11/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-03-11/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-03-11/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-03-11/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-03-18_sn82016211",
+      "date": "1916-03-18",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-03-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-03-18/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-03-18/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-03-18/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-03-18/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-03-18/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-03-18/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-03-18/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-03-18/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-03-25_sn82016211",
+      "date": "1916-03-25",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-03-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-03-25/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-03-25/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-03-25/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-03-25/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-03-25/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-03-25/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-03-25/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-03-25/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-04-01_sn82016211",
+      "date": "1916-04-01",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-04-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-04-01/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-04-01/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-04-01/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-04-01/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-04-01/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-04-01/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-04-01/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-04-01/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-04-08_sn82016211",
+      "date": "1916-04-08",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-04-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-04-08/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-04-08/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-04-08/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-04-08/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-04-08/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-04-08/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-04-08/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-04-08/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-04-15_sn82016211",
+      "date": "1916-04-15",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-04-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-04-15/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-04-15/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-04-15/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-04-15/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-04-15/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-04-15/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-04-15/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-04-15/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-04-22_sn82016211",
+      "date": "1916-04-22",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-04-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-04-22/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-04-22/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-04-22/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-04-22/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-04-22/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-04-22/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-04-22/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-04-22/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-04-29_sn82016211",
+      "date": "1916-04-29",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-04-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-04-29/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-04-29/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-04-29/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-04-29/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-04-29/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-04-29/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-04-29/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-04-29/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-05-06_sn82016211",
+      "date": "1916-05-06",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-05-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-05-06/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-05-06/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-05-06/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-05-06/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-05-06/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-05-06/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-05-06/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-05-06/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-05-13_sn82016211",
+      "date": "1916-05-13",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-05-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-05-13/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-05-13/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-05-13/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-05-13/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-05-13/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-05-13/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-05-13/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-05-13/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-05-20_sn82016211",
+      "date": "1916-05-20",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-05-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-05-20/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-05-20/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-05-20/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-05-20/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-05-20/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-05-20/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-05-20/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-05-20/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-05-27_sn82016211",
+      "date": "1916-05-27",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-05-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-05-27/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-05-27/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-05-27/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-05-27/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-05-27/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-05-27/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-05-27/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-05-27/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-06-03_sn82016211",
+      "date": "1916-06-03",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-06-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-06-03/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-06-03/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-06-03/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-06-03/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-06-03/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-06-03/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-06-03/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-06-03/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-06-10_sn82016211",
+      "date": "1916-06-10",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-06-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-06-10/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-06-10/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-06-10/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-06-10/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-06-10/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-06-10/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-06-10/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-06-10/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-06-17_sn82016211",
+      "date": "1916-06-17",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-06-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-06-17/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-06-17/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-06-17/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-06-17/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-06-17/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-06-17/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-06-17/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-06-17/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-06-24_sn82016211",
+      "date": "1916-06-24",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-06-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-06-24/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-06-24/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-06-24/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-06-24/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-06-24/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-06-24/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-06-24/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-06-24/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-07-01_sn82016211",
+      "date": "1916-07-01",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-07-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-07-01/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-07-01/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-07-01/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-07-01/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-07-01/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-07-01/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-07-01/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-07-01/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-07-08_sn82016211",
+      "date": "1916-07-08",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-07-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-07-08/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-07-08/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-07-08/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-07-08/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-07-08/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-07-08/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-07-08/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-07-08/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-07-15_sn82016211",
+      "date": "1916-07-15",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-07-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-07-15/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-07-15/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-07-15/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-07-15/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-07-15/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-07-15/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-07-15/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-07-15/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-07-22_sn82016211",
+      "date": "1916-07-22",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-07-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-07-22/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-07-22/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-07-22/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-07-22/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-07-22/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-07-22/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-07-22/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-07-22/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-07-29_sn82016211",
+      "date": "1916-07-29",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-07-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-07-29/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-07-29/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-07-29/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-07-29/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-07-29/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-07-29/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-07-29/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-07-29/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-08-05_sn82016211",
+      "date": "1916-08-05",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-08-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-08-05/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-08-05/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-08-05/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-08-05/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-08-05/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-08-05/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-08-05/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-08-05/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-08-12_sn82016211",
+      "date": "1916-08-12",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-08-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-08-12/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-08-12/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-08-12/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-08-12/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-08-12/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-08-12/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-08-12/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-08-12/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-08-19_sn82016211",
+      "date": "1916-08-19",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-08-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-08-19/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-08-19/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-08-19/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-08-19/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-08-19/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-08-19/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-08-19/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-08-19/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-08-26_sn82016211",
+      "date": "1916-08-26",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-08-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-08-26/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-08-26/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-08-26/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-08-26/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-08-26/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-08-26/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-08-26/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-08-26/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-09-02_sn82016211",
+      "date": "1916-09-02",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-09-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-09-02/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-09-02/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-09-02/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-09-02/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-09-02/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-09-02/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-09-02/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-09-02/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-09-09_sn82016211",
+      "date": "1916-09-09",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-09-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-09-09/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-09-09/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-09-09/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-09-09/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-09-09/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-09-09/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-09-09/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-09-09/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-09-16_sn82016211",
+      "date": "1916-09-16",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-09-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-09-16/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-09-16/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-09-16/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-09-16/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-09-16/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-09-16/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-09-16/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-09-16/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-09-23_sn82016211",
+      "date": "1916-09-23",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-09-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-09-23/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-09-23/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-09-23/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-09-23/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-09-23/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-09-23/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-09-23/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-09-23/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-09-30_sn82016211",
+      "date": "1916-09-30",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-09-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-09-30/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-09-30/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-09-30/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-09-30/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-09-30/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-09-30/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-09-30/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-09-30/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-10-07_sn82016211",
+      "date": "1916-10-07",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-10-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-10-07/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-10-07/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-10-07/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-10-07/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-10-07/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-10-07/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-10-07/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-10-07/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-10-14_sn82016211",
+      "date": "1916-10-14",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-10-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-10-14/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-10-14/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-10-14/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-10-14/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-10-14/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-10-14/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-10-14/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-10-14/page_08.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-10-21_sn82016211",
+      "date": "1916-10-21",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-10-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-10-21/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-10-21/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-10-21/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-10-21/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-10-21/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-10-21/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-10-21/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-10-21/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-10-28_sn82016211",
+      "date": "1916-10-28",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-10-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-10-28/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-10-28/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-10-28/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-10-28/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-10-28/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-10-28/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-10-28/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-10-28/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-11-04_sn82016211",
+      "date": "1916-11-04",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-11-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-11-04/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-11-04/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-11-04/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-11-04/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-11-04/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-11-04/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-11-04/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-11-04/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-11-11_sn82016211",
+      "date": "1916-11-11",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-11-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-11-11/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-11-11/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-11-11/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-11-11/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-11-11/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-11-11/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-11-11/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-11-11/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-11-18_sn82016211",
+      "date": "1916-11-18",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-11-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-11-18/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-11-18/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-11-18/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-11-18/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-11-18/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-11-18/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-11-18/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-11-18/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-11-25_sn82016211",
+      "date": "1916-11-25",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-11-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-11-25/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-11-25/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-11-25/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-11-25/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-11-25/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-11-25/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-11-25/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-11-25/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-12-02_sn82016211",
+      "date": "1916-12-02",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-12-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-12-02/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-12-02/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-12-02/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-12-02/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-12-02/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-12-02/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-12-02/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-12-02/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-12-09_sn82016211",
+      "date": "1916-12-09",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-12-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-12-09/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-12-09/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-12-09/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-12-09/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-12-09/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-12-09/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-12-09/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-12-09/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-12-16_sn82016211",
+      "date": "1916-12-16",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-12-16/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-12-16/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_08.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_09.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_10.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_11.jpg",
+        "/indianapolis-freeman/1916/1916-12-16/page_12.jpg"
+      ],
+      "has_ocr": false,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-12-23_sn82016211",
+      "date": "1916-12-23",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-12-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-12-23/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-12-23/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-12-23/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-12-23/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-12-23/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-12-23/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-12-23/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-12-23/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1916-12-30_sn82016211",
+      "date": "1916-12-30",
+      "title": "Indianapolis Freeman",
+      "issue_thumb": "/indianapolis-freeman/1916/1916-12-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "/indianapolis-freeman/1916/1916-12-30/page_01.jpg",
+        "/indianapolis-freeman/1916/1916-12-30/page_02.jpg",
+        "/indianapolis-freeman/1916/1916-12-30/page_03.jpg",
+        "/indianapolis-freeman/1916/1916-12-30/page_04.jpg",
+        "/indianapolis-freeman/1916/1916-12-30/page_05.jpg",
+        "/indianapolis-freeman/1916/1916-12-30/page_06.jpg",
+        "/indianapolis-freeman/1916/1916-12-30/page_07.jpg",
+        "/indianapolis-freeman/1916/1916-12-30/page_08.jpg"
+      ],
+      "has_ocr": true,
+      "source": "chronicling_america"
+    }
+  ]
+}

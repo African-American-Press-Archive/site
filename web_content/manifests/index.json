@@ -4,30 +4,58 @@
     {
       "slug": "broad-ax",
       "title": "Broad Ax",
-      "issue_count": 417,
+      "issue_count": 572,
       "manifest_path": "manifests/broad-ax.json",
       "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/broad-ax/manifests/paper-manifest.json"
     },
     {
       "slug": "chicago-defender",
       "title": "Chicago Defender",
-      "issue_count": 324,
+      "issue_count": 480,
       "manifest_path": "manifests/chicago-defender.json",
       "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/chicago-defender/manifests/paper-manifest.json"
     },
     {
+      "slug": "chicago-whip",
+      "title": "Chicago Whip",
+      "issue_count": 172,
+      "manifest_path": "manifests/chicago-whip.json",
+      "remote_manifest": null
+    },
+    {
       "slug": "cleveland-advocate",
       "title": "Cleveland Advocate",
-      "issue_count": 360,
+      "issue_count": 516,
       "manifest_path": "manifests/cleveland-advocate.json",
       "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/cleveland-advocate/manifests/paper-manifest.json"
     },
     {
       "slug": "cleveland-gazette",
       "title": "Cleveland Gazette",
-      "issue_count": 834,
+      "issue_count": 1146,
       "manifest_path": "manifests/cleveland-gazette.json",
       "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/cleveland-gazette/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "colorado-stateman",
+      "title": "Colorado Stateman",
+      "issue_count": 499,
+      "manifest_path": "manifests/colorado-stateman.json",
+      "remote_manifest": null
+    },
+    {
+      "slug": "denver-star",
+      "title": "Denver Star",
+      "issue_count": 198,
+      "manifest_path": "manifests/denver-star.json",
+      "remote_manifest": null
+    },
+    {
+      "slug": "indianapolis-freeman",
+      "title": "Indianapolis Freeman",
+      "issue_count": 105,
+      "manifest_path": "manifests/indianapolis-freeman.json",
+      "remote_manifest": null
     },
     {
       "slug": "kansas-city-sun",
@@ -39,16 +67,37 @@
     {
       "slug": "new-york-age",
       "title": "New York Age",
-      "issue_count": 416,
+      "issue_count": 568,
       "manifest_path": "manifests/new-york-age.json",
       "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/new-york-age/manifests/paper-manifest.json"
     },
     {
+      "slug": "omaha-monitor",
+      "title": "Omaha Monitor",
+      "issue_count": 536,
+      "manifest_path": "manifests/omaha-monitor.json",
+      "remote_manifest": null
+    },
+    {
+      "slug": "raleigh-independent",
+      "title": "Raleigh Independent",
+      "issue_count": 3,
+      "manifest_path": "manifests/raleigh-independent.json",
+      "remote_manifest": null
+    },
+    {
       "slug": "richmond-planet",
       "title": "Richmond Planet",
-      "issue_count": 286,
+      "issue_count": 440,
       "manifest_path": "manifests/richmond-planet.json",
       "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/richmond-planet/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "st-paul-appeal",
+      "title": "St. Paul Appeal",
+      "issue_count": 465,
+      "manifest_path": "manifests/st-paul-appeal.json",
+      "remote_manifest": null
     },
     {
       "slug": "tulsa-star",
@@ -60,7 +109,7 @@
     {
       "slug": "washington-tribune",
       "title": "Washington Tribune",
-      "issue_count": 86,
+      "issue_count": 240,
       "manifest_path": "manifests/washington-tribune.json",
       "remote_manifest": "https://pub-ccec707891b843259f01f3550ff24595.r2.dev/washington-tribune/manifests/paper-manifest.json"
     }

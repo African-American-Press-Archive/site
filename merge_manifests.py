@@ -10,7 +10,9 @@ from urllib.parse import quote
 
 import yaml
 
-CONFIG_PATH = Path('config/papers.yaml')
+SCRIPT_DIR = Path(__file__).resolve().parent
+WEB_CONTENT_DIR = SCRIPT_DIR / 'web_content'
+CONFIG_PATH = SCRIPT_DIR / 'config/papers.yaml'
 
 def load_paper_config():
     if CONFIG_PATH.exists():
@@ -22,7 +24,7 @@ def load_paper_config():
 def merge_manifests():
     """Merge manifest.json and manifest_jp2.json into single file."""
 
-    web_content = Path('web_content')
+    web_content = WEB_CONTENT_DIR
     manifest_pdf = web_content / 'manifest_pdf.json'
     manifest_jp2 = web_content / 'manifest_jp2.json'
 
@@ -36,7 +38,7 @@ def merge_manifests():
 
     # Load PDF manifest
     if pdf_manifest_path:
-        with open(pdf_manifest_path, 'r') as f:
+        with open(pdf_manifest_path, 'r', encoding='utf-8') as f:
             pdf_issues = json.load(f)
             print(f"Loaded {len(pdf_issues)} PDF issues")
             if pdf_manifest_path != manifest_pdf:
@@ -47,7 +49,7 @@ def merge_manifests():
 
     # Load JP2 manifest
     if manifest_jp2.exists():
-        with open(manifest_jp2, 'r') as f:
+        with open(manifest_jp2, 'r', encoding='utf-8') as f:
             jp2_issues = json.load(f)
             print(f"Loaded {len(jp2_issues)} JP2 issues")
             all_issues.extend(jp2_issues)
