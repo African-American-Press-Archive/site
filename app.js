@@ -92,10 +92,11 @@ async function loadManifest() {
         state.filteredIssues = [...state.allIssues];
 
         // Calculate year counts for timeline
-        calculateYearCounts();
+        calculateYearCounts(state.allIssues);
 
         // Initialize UI
         initializeFilters();
+        refreshTimelineAvailability();
 
         const initializedRandomView = initializeRandomDefaultView();
         if (!initializedRandomView) {
@@ -253,7 +254,8 @@ function renderTimelineMonths(yearStr) {
         return;
     }
 
-    const issuesForYear = state.allIssues.filter(issue => issue.date.startsWith(String(yearStr)));
+    const issuesPool = getIssuesForActivePapers();
+    const issuesForYear = issuesPool.filter(issue => issue.date.startsWith(String(yearStr)));
     const monthCounts = new Map();
     issuesForYear.forEach(issue => {
         const month = issue.date.slice(5, 7);
@@ -394,15 +396,47 @@ function updateTimelineLabel() {
     }
 }
 
-function calculateYearCounts() {
+function getIssuesForActivePapers() {
+    if (state.selectedPapers.size === 0) {
+        return state.allIssues;
+    }
+    return state.allIssues.filter(issue => state.selectedPapers.has(issue.title));
+}
+
+function calculateYearCounts(issues = state.allIssues) {
     state.yearCounts.clear();
 
-    state.allIssues.forEach(issue => {
+    issues.forEach(issue => {
         const year = parseInt(issue.date.slice(0, 4), 10);
-        state.yearCounts.set(year, (state.yearCounts.get(year) || 0) + 1);
+        if (!Number.isNaN(year)) {
+            state.yearCounts.set(year, (state.yearCounts.get(year) || 0) + 1);
+        }
     });
 
     state.availableYears = Array.from(state.yearCounts.keys()).sort((a, b) => a - b);
+}
+
+function refreshTimelineAvailability() {
+    const relevantIssues = getIssuesForActivePapers();
+    calculateYearCounts(relevantIssues);
+
+    const availableYearStrings = new Set(state.availableYears.map(year => String(year)));
+    if (state.selectedYear && !availableYearStrings.has(state.selectedYear)) {
+        state.selectedYear = null;
+        state.selectedMonth = null;
+    }
+
+    if (state.selectedYear) {
+        const months = new Set();
+        relevantIssues.forEach(issue => {
+            if (issue.date.startsWith(`${state.selectedYear}-`)) {
+                months.add(issue.date.slice(5, 7));
+            }
+        });
+        if (state.selectedMonth && !months.has(state.selectedMonth)) {
+            state.selectedMonth = null;
+        }
+    }
 }
 
 function initializeRandomDefaultView() {
@@ -440,11 +474,19 @@ function spinArchive() {
         return;
     }
 
+    const issuesPool = getIssuesForActivePapers();
+    if (!issuesPool.length) {
+        return;
+    }
+
     // Randomly select a year
     const randomYear = state.availableYears[Math.floor(Math.random() * state.availableYears.length)];
 
     // Get all issues for the selected year
-    const issuesForYear = state.allIssues.filter(issue => issue.date.startsWith(String(randomYear)));
+    const issuesForYear = issuesPool.filter(issue => issue.date.startsWith(String(randomYear)));
+    if (!issuesForYear.length) {
+        return;
+    }
 
     // Get all available months for that year
     const monthsWithIssues = new Set();
@@ -716,6 +758,8 @@ function resetFilters() {
 }
 
 function applyFilters() {
+    refreshTimelineAvailability();
+
     state.filteredIssues = state.allIssues.filter(issue => {
         const matchesPaper = state.selectedPapers.size === 0 || state.selectedPapers.has(issue.title);
         const matchesYear = !state.selectedYear || issue.date.startsWith(state.selectedYear);
@@ -729,6 +773,7 @@ function applyFilters() {
     });
 
     state.currentPage = 0;
+    initializeTimeline();
     updateStats();
     renderGrid();
 }

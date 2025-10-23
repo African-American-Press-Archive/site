@@ -1,38 +1,66 @@
 papers:
   broad-ax:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/broad-ax
+    base_url: https://pages.dangerouspress.org/broad-ax
     path: broad-ax
     title: Broad Ax
   chicago-defender:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/chicago-defender
+    base_url: https://pages.dangerouspress.org/chicago-defender
     path: chicago-defender
     title: Chicago Defender
+  chicago-whip:
+    base_url: https://pages.dangerouspress.org/chicago-whip
+    path: chicago-whip
+    title: Chicago Whip
   cleveland-advocate:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/cleveland-advocate
+    base_url: https://pages.dangerouspress.org/cleveland-advocate
     path: cleveland-advocate
     title: Cleveland Advocate
   cleveland-gazette:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/cleveland-gazette
+    base_url: https://pages.dangerouspress.org/cleveland-gazette
     path: cleveland-gazette
     title: Cleveland Gazette
+  colorado-stateman:
+    base_url: https://pages.dangerouspress.org/colorado-stateman
+    path: colorado-stateman
+    title: Colorado Statesman
+  denver-star:
+    base_url: https://pages.dangerouspress.org/denver-star
+    path: denver-star
+    title: Denver Star
   kansas-city-sun:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/kansas-city-sun
+    base_url: https://pages.dangerouspress.org/kansas-city-sun
     path: kansas-city-sun
     title: Kansas City Sun
   new-york-age:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/new-york-age
+    base_url: https://pages.dangerouspress.org/new-york-age
     path: new-york-age
     title: New York Age
+  indianapolis-freeman:
+    base_url: https://pages.dangerouspress.org/indianapolis-freeman
+    path: indianapolis-freeman
+    title: Indianapolis Freeman
+  omaha-monitor:
+    base_url: https://pages.dangerouspress.org/omaha-monitor
+    path: omaha-monitor
+    title: Omaha Monitor
   richmond-planet:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/richmond-planet
+    base_url: https://pages.dangerouspress.org/richmond-planet
     path: richmond-planet
     title: Richmond Planet
+  raleigh-independent:
+    base_url: https://pages.dangerouspress.org/raleigh-independent
+    path: raleigh-independent
+    title: Raleigh Independent
+  st.-paul-appeal:
+    base_url: https://pages.dangerouspress.org/st.-paul-appeal
+    path: st.-paul-appeal
+    title: St. Paul Appeal
   tulsa-star:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/tulsa-star
+    base_url: https://pages.dangerouspress.org/tulsa-star
     path: tulsa-star
     title: Tulsa Star
   washington-tribune:
-    base_url: https://pub-ccec707891b843259f01f3550ff24595.r2.dev/washington-tribune
+    base_url: https://pages.dangerouspress.org/washington-tribune
     path: washington-tribune
     title: Washington Tribune
 storage:
@@ -40,4 +68,4 @@ storage:
   bucket: african-american-press-archive
   account_id: ae978df95b073e0e6a0d595c996900ca
   endpoint: https://ae978df95b073e0e6a0d595c996900ca.r2.cloudflarestorage.com
-  public_base: https://pub-ccec707891b843259f01f3550ff24595.r2.dev
+  public_base: https://pages.dangerouspress.org
