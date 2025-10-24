@@ -2751,7 +2751,7 @@
       "uploaded": true,
       "has_ocr": true,
       "source": "chronicling_america",
-      "uploaded_at": "2025-10-24T12:27:25Z"
+      "uploaded_at": "2025-10-24T13:31:26Z"
     },
     {
       "id": "1922-03-11_sn86056950",
@@ -3636,44 +3636,96 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1927-11-05_sn86056950",
+      "date": "1927-11-05",
+      "title": "Chicago Whip",
+      "issue_thumb": "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_01.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_02.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_03.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_04.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_05.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_06.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_07.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_08.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_09.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_10.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_11.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-05/page_12.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-24T13:31:31Z"
+    },
+    {
+      "id": "1927-11-19_sn86056950",
+      "date": "1927-11-19",
+      "title": "Chicago Whip",
+      "issue_thumb": "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_01.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_02.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_03.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_04.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_05.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_06.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_07.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_08.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_09.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_10.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_11.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-19/page_12.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-24T13:31:31Z"
+    },
+    {
       "id": "1927-11-26_sn86056950",
       "date": "1927-11-26",
       "title": "Chicago Whip",
-      "issue_thumb": "chicago-whip/1927/1927-11-26/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-26/thumb.jpg",
       "pages": 4,
       "page_paths": [
-        "chicago-whip/1927/1927-11-26/page_01.jpg",
-        "chicago-whip/1927/1927-11-26/page_02.jpg",
-        "chicago-whip/1927/1927-11-26/page_03.jpg",
-        "chicago-whip/1927/1927-11-26/page_04.jpg"
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-26/page_01.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-26/page_02.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-26/page_03.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1927/1927-11-26/page_04.jpg"
       ],
-      "uploaded": false,
+      "uploaded": true,
       "has_ocr": true,
-      "source": "chronicling_america"
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-24T13:31:31Z"
     },
     {
       "id": "1928-06-23_sn86056950",
       "date": "1928-06-23",
       "title": "Chicago Whip",
-      "issue_thumb": "chicago-whip/1928/1928-06-23/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/thumb.jpg",
       "pages": 12,
       "page_paths": [
-        "chicago-whip/1928/1928-06-23/page_01.jpg",
-        "chicago-whip/1928/1928-06-23/page_02.jpg",
-        "chicago-whip/1928/1928-06-23/page_03.jpg",
-        "chicago-whip/1928/1928-06-23/page_04.jpg",
-        "chicago-whip/1928/1928-06-23/page_05.jpg",
-        "chicago-whip/1928/1928-06-23/page_06.jpg",
-        "chicago-whip/1928/1928-06-23/page_07.jpg",
-        "chicago-whip/1928/1928-06-23/page_08.jpg",
-        "chicago-whip/1928/1928-06-23/page_09.jpg",
-        "chicago-whip/1928/1928-06-23/page_10.jpg",
-        "chicago-whip/1928/1928-06-23/page_11.jpg",
-        "chicago-whip/1928/1928-06-23/page_12.jpg"
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_01.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_02.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_03.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_04.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_05.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_06.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_07.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_08.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_09.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_10.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_11.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1928/1928-06-23/page_12.jpg"
       ],
-      "uploaded": false,
+      "uploaded": true,
       "has_ocr": true,
-      "source": "chronicling_america"
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-24T13:31:34Z"
     }
   ]
 }
