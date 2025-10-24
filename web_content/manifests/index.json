@@ -4,8 +4,8 @@
     {
       "slug": "baltimore-afro-american",
       "title": "Baltimore Afro-American",
-      "issue_count": 184,
-      "uploaded_count": 184,
+      "issue_count": 225,
+      "uploaded_count": 225,
       "manifest_path": "manifests/baltimore-afro-american.json",
       "remote_manifest": "https://pages.dangerouspress.org/baltimore-afro-american/manifests/paper-manifest.json"
     },
@@ -58,12 +58,28 @@
       "remote_manifest": "https://pages.dangerouspress.org/colorado-statesman/manifests/paper-manifest.json"
     },
     {
+      "slug": "dallas-express",
+      "title": "Dallas Express",
+      "issue_count": 1215,
+      "uploaded_count": 0,
+      "manifest_path": "manifests/dallas-express.json",
+      "remote_manifest": "https://pages.dangerouspress.org/dallas-express/manifests/paper-manifest.json"
+    },
+    {
       "slug": "denver-star",
       "title": "Denver Star",
       "issue_count": 291,
       "uploaded_count": 291,
       "manifest_path": "manifests/denver-star.json",
       "remote_manifest": "https://pages.dangerouspress.org/denver-star/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "houston-informer",
+      "title": "Houston Informer",
+      "issue_count": 368,
+      "uploaded_count": 0,
+      "manifest_path": "manifests/houston-informer.json",
+      "remote_manifest": "https://pages.dangerouspress.org/houston-informer/manifests/paper-manifest.json"
     },
     {
       "slug": "indianapolis-freeman",
@@ -160,6 +176,14 @@
       "uploaded_count": 485,
       "manifest_path": "manifests/washington-tribune.json",
       "remote_manifest": "https://pages.dangerouspress.org/washington-tribune/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "western-outlook",
+      "title": "Western Outlook",
+      "issue_count": 22,
+      "uploaded_count": 0,
+      "manifest_path": "manifests/western-outlook.json",
+      "remote_manifest": "https://pages.dangerouspress.org/western-outlook/manifests/paper-manifest.json"
     },
     {
       "slug": "wichita-searchlight",

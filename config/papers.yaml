@@ -178,6 +178,27 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn87062236
+  houston-informer:
+    title: Houston Informer
+    path: houston-informer
+    base_url: https://pages.dangerouspress.org/houston-informer
+    sources:
+    - type: preoptimized_jpg
+      folder: /Volumes/Lightning/chronicling-america/houston-informer
+  dallas-express:
+    title: Dallas Express
+    path: dallas-express
+    base_url: https://pages.dangerouspress.org/dallas-express
+    sources:
+    - type: preoptimized_jpg
+      folder: /Volumes/Lightning/chronicling-america/dallas-express
+  western-outlook:
+    title: Western Outlook
+    path: western-outlook
+    base_url: https://pages.dangerouspress.org/western-outlook
+    sources:
+    - type: preoptimized_jpg
+      folder: /Volumes/Lightning/chronicling-america/western-outlook
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
