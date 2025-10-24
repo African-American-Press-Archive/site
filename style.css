@@ -1010,6 +1010,27 @@ header.scrolled h1 {
     }
 }
 
+/* ==================== VIEWER NAVIGATION CONTROLS ==================== */
+/* Ensure navigation buttons appear above the image wrapper (z-10) */
+#prev-page-btn,
+#next-page-btn,
+#prev-issue-btn,
+#next-issue-btn,
+#zoom-in-btn,
+#zoom-out-btn,
+#zoom-reset-btn {
+    z-index: 20;
+    position: relative;
+}
+
+/* Zoom controls container also needs z-index */
+#prev-page-btn,
+#next-page-btn,
+#prev-issue-btn,
+#next-issue-btn {
+    position: absolute;
+}
+
 /* ==================== PAGE TRANSITIONS ==================== */
 .page-transition-next {
     animation: slideInRight 0.4s var(--ease-out-expo);

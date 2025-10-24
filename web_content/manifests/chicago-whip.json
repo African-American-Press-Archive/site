@@ -2737,20 +2737,21 @@
       "id": "1922-03-04_sn86056950",
       "date": "1922-03-04",
       "title": "Chicago Whip",
-      "issue_thumb": "chicago-whip/1922/1922-03-04/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/chicago-whip/1922/1922-03-04/thumb.jpg",
       "pages": 7,
       "page_paths": [
-        "chicago-whip/1922/1922-03-04/page_01.jpg",
-        "chicago-whip/1922/1922-03-04/page_02.jpg",
-        "chicago-whip/1922/1922-03-04/page_03.jpg",
-        "chicago-whip/1922/1922-03-04/page_04.jpg",
-        "chicago-whip/1922/1922-03-04/page_05.jpg",
-        "chicago-whip/1922/1922-03-04/page_06.jpg",
-        "chicago-whip/1922/1922-03-04/page_07.jpg"
+        "https://pages.dangerouspress.org/chicago-whip/1922/1922-03-04/page_01.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1922/1922-03-04/page_02.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1922/1922-03-04/page_03.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1922/1922-03-04/page_04.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1922/1922-03-04/page_05.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1922/1922-03-04/page_06.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1922/1922-03-04/page_07.jpg"
       ],
-      "uploaded": false,
+      "uploaded": true,
       "has_ocr": true,
-      "source": "chronicling_america"
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-24T12:17:20Z"
     },
     {
       "id": "1922-03-11_sn86056950",
