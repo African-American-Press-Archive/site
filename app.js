@@ -607,11 +607,12 @@ function createHeroCard(issue) {
 
     const thumbPath = resolveAssetPath(issue.issue_thumb);
     const displayTitle = getDisplayTitle(issue.title);
-    const date = new Date(issue.date).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+
+    // Parse date string directly to avoid timezone issues
+    const [year, month, day] = issue.date.split('-');
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const date = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
 
     figure.innerHTML = `
         <img src="${thumbPath}" alt="${displayTitle} - ${date}" loading="lazy" />
@@ -910,11 +911,11 @@ function createIssueCard(issue, index) {
 
     const thumbPath = resolveAssetPath(issue.issue_thumb);
     const displayTitle = getDisplayTitle(issue.title);
-    const date = new Date(issue.date).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-    });
+
+    // Parse date string directly to avoid timezone issues
+    const [year, month, day] = issue.date.split('-');
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const date = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
 
     card.innerHTML = `
         <div class="aspect-[3/4] skeleton newsstand-thumbnail overflow-hidden" style="background: rgba(79, 117, 139, 0.1);">
@@ -1019,11 +1020,11 @@ async function openViewer(index) {
     const title = document.getElementById('viewer-title');
     const dateEl = document.getElementById('viewer-date');
 
-    const date = new Date(issue.date).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+    // Parse date string directly to avoid timezone issues
+    const [year, month, day] = issue.date.split('-');
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const date = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
 
     title.textContent = getDisplayTitle(issue.title);
     dateEl.textContent = date;
