@@ -25,6 +25,26 @@ const MONTHS = [
 
 const INTRO_STORAGE_KEY = 'bpa_intro_seen_v1';
 
+const PAPER_TITLE_OVERRIDES = Object.freeze({
+    'Broad Ax': 'Salt Lake City Broad Ax',
+});
+
+function getDisplayTitle(title) {
+    const override = PAPER_TITLE_OVERRIDES[title];
+    if (!override) {
+        return title;
+    }
+
+    const normalizedOverride = override.trim().toLowerCase();
+    const normalizedTitle = title.trim().toLowerCase();
+
+    if (normalizedTitle === normalizedOverride || normalizedTitle.startsWith(normalizedOverride)) {
+        return title;
+    }
+
+    return override;
+}
+
 // ==================== STATE MANAGEMENT ====================
 const state = {
     allIssues: [],
@@ -586,6 +606,7 @@ function createHeroCard(issue) {
     figure.className = 'hero-card';
 
     const thumbPath = resolveAssetPath(issue.issue_thumb);
+    const displayTitle = getDisplayTitle(issue.title);
     const date = new Date(issue.date).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
@@ -593,9 +614,9 @@ function createHeroCard(issue) {
     });
 
     figure.innerHTML = `
-        <img src="${thumbPath}" alt="${issue.title} - ${date}" loading="lazy" />
+        <img src="${thumbPath}" alt="${displayTitle} - ${date}" loading="lazy" />
         <figcaption>
-            <div class="hero-card-title">${issue.title}</div>
+            <div class="hero-card-title">${displayTitle}</div>
             <div class="hero-card-meta">${date}</div>
         </figcaption>
     `;
@@ -689,7 +710,7 @@ function initializeFilters() {
                 style="border-color: var(--unc-basin-slate); accent-color: var(--unc-tile-teal);"
                 data-title="${title}"
             />
-            <span class="flex-1 text-sm" style="color: var(--text-primary);">${title}</span>
+            <span class="flex-1 text-sm" style="color: var(--text-primary);">${getDisplayTitle(title)}</span>
             <span class="text-xs px-2 py-0.5 rounded-full" style="background: var(--bg-hover); color: var(--text-muted);">${count}</span>
         `;
         filterList.appendChild(filterEl);
@@ -765,7 +786,9 @@ function applyFilters() {
         const matchesYear = !state.selectedYear || issue.date.startsWith(state.selectedYear);
         const matchesMonth = !state.selectedMonth || !state.selectedYear ||
             issue.date.startsWith(`${state.selectedYear}-${state.selectedMonth}`);
+        const displayTitle = getDisplayTitle(issue.title);
         const matchesSearch = !state.searchQuery ||
+            displayTitle.toLowerCase().includes(state.searchQuery.toLowerCase()) ||
             issue.title.toLowerCase().includes(state.searchQuery.toLowerCase()) ||
             issue.date.includes(state.searchQuery);
 
@@ -807,7 +830,7 @@ function sortIssues(issues) {
             sorted.sort((a, b) => new Date(a.date) - new Date(b.date));
             break;
         case 'title':
-            sorted.sort((a, b) => a.title.localeCompare(b.title));
+            sorted.sort((a, b) => getDisplayTitle(a.title).localeCompare(getDisplayTitle(b.title)));
             break;
     }
 
@@ -886,6 +909,7 @@ function createIssueCard(issue, index) {
     card.style.animationDelay = `${(index % CONFIG.ITEMS_PER_PAGE) * 0.05}s`;
 
     const thumbPath = resolveAssetPath(issue.issue_thumb);
+    const displayTitle = getDisplayTitle(issue.title);
     const date = new Date(issue.date).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'short',
@@ -896,7 +920,7 @@ function createIssueCard(issue, index) {
         <div class="aspect-[3/4] skeleton newsstand-thumbnail overflow-hidden" style="background: rgba(79, 117, 139, 0.1);">
             <img
                 src="${thumbPath}"
-                alt="${issue.title} - ${date}"
+                alt="${displayTitle} - ${date}"
                 class="w-full h-full object-cover transition-transform duration-500"
                 loading="lazy"
                 data-loaded="false"
@@ -904,7 +928,7 @@ function createIssueCard(issue, index) {
         </div>
         <div class="p-4 space-y-2">
             <h3 class="issue-card-title transition-colors" style="color: var(--unc-longleaf-pine);">
-                ${issue.title}
+                ${displayTitle}
             </h3>
             <p class="issue-card-date" style="color: var(--text-muted);">${date}</p>
         </div>
@@ -1001,7 +1025,7 @@ async function openViewer(index) {
         day: 'numeric'
     });
 
-    title.textContent = issue.title;
+    title.textContent = getDisplayTitle(issue.title);
     dateEl.textContent = date;
 
     // Show loading

@@ -1,0 +1,66 @@
+{
+  "manifest_version": 1,
+  "title": "Wichita Searchlight",
+  "issues": [
+    {
+      "id": "1910-02-26_sn85032585",
+      "date": "1910-02-26",
+      "title": "Wichita Searchlight",
+      "issue_thumb": "wichita-searchlight/1910/1910-02-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "wichita-searchlight/1910/1910-02-26/page_01.jpg",
+        "wichita-searchlight/1910/1910-02-26/page_02.jpg",
+        "wichita-searchlight/1910/1910-02-26/page_03.jpg",
+        "wichita-searchlight/1910/1910-02-26/page_04.jpg",
+        "wichita-searchlight/1910/1910-02-26/page_05.jpg",
+        "wichita-searchlight/1910/1910-02-26/page_06.jpg",
+        "wichita-searchlight/1910/1910-02-26/page_07.jpg",
+        "wichita-searchlight/1910/1910-02-26/page_08.jpg"
+      ],
+      "uploaded": false,
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1910-08-27_sn85032585",
+      "date": "1910-08-27",
+      "title": "Wichita Searchlight",
+      "issue_thumb": "wichita-searchlight/1910/1910-08-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "wichita-searchlight/1910/1910-08-27/page_01.jpg",
+        "wichita-searchlight/1910/1910-08-27/page_02.jpg",
+        "wichita-searchlight/1910/1910-08-27/page_03.jpg",
+        "wichita-searchlight/1910/1910-08-27/page_04.jpg",
+        "wichita-searchlight/1910/1910-08-27/page_05.jpg",
+        "wichita-searchlight/1910/1910-08-27/page_06.jpg",
+        "wichita-searchlight/1910/1910-08-27/page_07.jpg",
+        "wichita-searchlight/1910/1910-08-27/page_08.jpg"
+      ],
+      "uploaded": false,
+      "has_ocr": true,
+      "source": "chronicling_america"
+    },
+    {
+      "id": "1910-12-03_sn85032585",
+      "date": "1910-12-03",
+      "title": "Wichita Searchlight",
+      "issue_thumb": "wichita-searchlight/1910/1910-12-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "wichita-searchlight/1910/1910-12-03/page_01.jpg",
+        "wichita-searchlight/1910/1910-12-03/page_02.jpg",
+        "wichita-searchlight/1910/1910-12-03/page_03.jpg",
+        "wichita-searchlight/1910/1910-12-03/page_04.jpg",
+        "wichita-searchlight/1910/1910-12-03/page_05.jpg",
+        "wichita-searchlight/1910/1910-12-03/page_06.jpg",
+        "wichita-searchlight/1910/1910-12-03/page_07.jpg",
+        "wichita-searchlight/1910/1910-12-03/page_08.jpg"
+      ],
+      "uploaded": false,
+      "has_ocr": true,
+      "source": "chronicling_america"
+    }
+  ]
+}

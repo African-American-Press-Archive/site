@@ -14,8 +14,10 @@
         "https://pages.dangerouspress.org/raleigh-independent/1918/1918-12-21/page_03.jpg",
         "https://pages.dangerouspress.org/raleigh-independent/1918/1918-12-21/page_04.jpg"
       ],
+      "uploaded": true,
       "has_ocr": true,
-      "source": "chronicling_america"
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-23T11:11:41Z"
     },
     {
       "id": "1920-09-04_sn92072995",
@@ -29,8 +31,10 @@
         "https://pages.dangerouspress.org/raleigh-independent/1920/1920-09-04/page_03.jpg",
         "https://pages.dangerouspress.org/raleigh-independent/1920/1920-09-04/page_04.jpg"
       ],
+      "uploaded": true,
       "has_ocr": true,
-      "source": "chronicling_america"
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-23T11:11:43Z"
     },
     {
       "id": "1920-12-28_sn92072995",
@@ -44,8 +48,10 @@
         "https://pages.dangerouspress.org/raleigh-independent/1920/1920-12-28/page_03.jpg",
         "https://pages.dangerouspress.org/raleigh-independent/1920/1920-12-28/page_04.jpg"
       ],
+      "uploaded": true,
       "has_ocr": true,
-      "source": "chronicling_america"
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-23T11:11:43Z"
     }
   ]
 }

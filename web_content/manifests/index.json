@@ -2,79 +2,106 @@
   "manifest_version": 1,
   "papers": [
     {
+      "slug": "baltimore-afro-american",
+      "title": "Baltimore Afro-American",
+      "issue_count": 176,
+      "uploaded_count": 0,
+      "manifest_path": "manifests/baltimore-afro-american.json",
+      "remote_manifest": "https://pages.dangerouspress.org/baltimore-afro-american/manifests/paper-manifest.json"
+    },
+    {
       "slug": "broad-ax",
       "title": "Broad Ax",
-      "issue_count": 572,
+      "issue_count": 884,
+      "uploaded_count": 401,
       "manifest_path": "manifests/broad-ax.json",
       "remote_manifest": "https://pages.dangerouspress.org/broad-ax/manifests/paper-manifest.json"
     },
     {
       "slug": "chicago-defender",
       "title": "Chicago Defender",
-      "issue_count": 480,
+      "issue_count": 755,
+      "uploaded_count": 610,
       "manifest_path": "manifests/chicago-defender.json",
       "remote_manifest": "https://pages.dangerouspress.org/chicago-defender/manifests/paper-manifest.json"
     },
     {
       "slug": "chicago-whip",
       "title": "Chicago Whip",
-      "issue_count": 172,
+      "issue_count": 174,
+      "uploaded_count": 171,
       "manifest_path": "manifests/chicago-whip.json",
       "remote_manifest": "https://pages.dangerouspress.org/chicago-whip/manifests/paper-manifest.json"
     },
     {
       "slug": "cleveland-advocate",
       "title": "Cleveland Advocate",
-      "issue_count": 516,
+      "issue_count": 532,
+      "uploaded_count": 516,
       "manifest_path": "manifests/cleveland-advocate.json",
       "remote_manifest": "https://pages.dangerouspress.org/cleveland-advocate/manifests/paper-manifest.json"
     },
     {
       "slug": "cleveland-gazette",
       "title": "Cleveland Gazette",
-      "issue_count": 1146,
+      "issue_count": 1815,
+      "uploaded_count": 1349,
       "manifest_path": "manifests/cleveland-gazette.json",
       "remote_manifest": "https://pages.dangerouspress.org/cleveland-gazette/manifests/paper-manifest.json"
     },
     {
       "slug": "colorado-stateman",
       "title": "Colorado Stateman",
-      "issue_count": 499,
+      "issue_count": 40,
+      "uploaded_count": 40,
       "manifest_path": "manifests/colorado-stateman.json",
-      "remote_manifest": "https://pages.dangerouspress.org/colorado-stateman/manifests/paper-manifest.json"
+      "remote_manifest": null
+    },
+    {
+      "slug": "colorado-statesman",
+      "title": "Colorado Statesman",
+      "issue_count": 697,
+      "uploaded_count": 562,
+      "manifest_path": "manifests/colorado-statesman.json",
+      "remote_manifest": "https://pages.dangerouspress.org/colorado-statesman/manifests/paper-manifest.json"
     },
     {
       "slug": "denver-star",
       "title": "Denver Star",
-      "issue_count": 198,
+      "issue_count": 286,
+      "uploaded_count": 250,
       "manifest_path": "manifests/denver-star.json",
       "remote_manifest": "https://pages.dangerouspress.org/denver-star/manifests/paper-manifest.json"
     },
     {
       "slug": "indianapolis-freeman",
       "title": "Indianapolis Freeman",
-      "issue_count": 105,
+      "issue_count": 347,
+      "uploaded_count": 207,
       "manifest_path": "manifests/indianapolis-freeman.json",
       "remote_manifest": "https://pages.dangerouspress.org/indianapolis-freeman/manifests/paper-manifest.json"
     },
     {
       "slug": "kansas-city-sun",
       "title": "Kansas City Sun",
-      "issue_count": 309,
+      "issue_count": 360,
+      "uploaded_count": 360,
       "manifest_path": "manifests/kansas-city-sun.json",
       "remote_manifest": "https://pages.dangerouspress.org/kansas-city-sun/manifests/paper-manifest.json"
     },
     {
       "slug": "new-york-age",
       "title": "New York Age",
-      "issue_count": 568,
+      "issue_count": 1040,
+      "uploaded_count": 672,
       "manifest_path": "manifests/new-york-age.json",
       "remote_manifest": "https://pages.dangerouspress.org/new-york-age/manifests/paper-manifest.json"
     },
     {
       "slug": "omaha-monitor",
       "title": "Omaha Monitor",
-      "issue_count": 536,
+      "issue_count": 656,
+      "uploaded_count": 536,
       "manifest_path": "manifests/omaha-monitor.json",
       "remote_manifest": "https://pages.dangerouspress.org/omaha-monitor/manifests/paper-manifest.json"
     },
@@ -82,36 +109,73 @@
       "slug": "raleigh-independent",
       "title": "Raleigh Independent",
       "issue_count": 3,
+      "uploaded_count": 3,
       "manifest_path": "manifests/raleigh-independent.json",
       "remote_manifest": "https://pages.dangerouspress.org/raleigh-independent/manifests/paper-manifest.json"
     },
     {
       "slug": "richmond-planet",
       "title": "Richmond Planet",
-      "issue_count": 440,
+      "issue_count": 657,
+      "uploaded_count": 484,
       "manifest_path": "manifests/richmond-planet.json",
       "remote_manifest": "https://pages.dangerouspress.org/richmond-planet/manifests/paper-manifest.json"
     },
     {
+      "slug": "st-louis-argus",
+      "title": "St. Louis Argus",
+      "issue_count": 359,
+      "uploaded_count": 141,
+      "manifest_path": "manifests/st-louis-argus.json",
+      "remote_manifest": "https://pages.dangerouspress.org/st-louis-argus/manifests/paper-manifest.json"
+    },
+    {
       "slug": "st-paul-appeal",
       "title": "St. Paul Appeal",
-      "issue_count": 465,
+      "issue_count": 655,
+      "uploaded_count": 425,
       "manifest_path": "manifests/st-paul-appeal.json",
+      "remote_manifest": "https://pages.dangerouspress.org/st-paul-appeal/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "st.-paul-appeal",
+      "title": "St. Paul Appeal",
+      "issue_count": 40,
+      "uploaded_count": 40,
+      "manifest_path": "manifests/st.-paul-appeal.json",
       "remote_manifest": null
     },
     {
       "slug": "tulsa-star",
       "title": "Tulsa Star",
-      "issue_count": 139,
+      "issue_count": 208,
+      "uploaded_count": 186,
       "manifest_path": "manifests/tulsa-star.json",
       "remote_manifest": "https://pages.dangerouspress.org/tulsa-star/manifests/paper-manifest.json"
     },
     {
+      "slug": "washington-bee",
+      "title": "Washington Bee",
+      "issue_count": 39,
+      "uploaded_count": 20,
+      "manifest_path": "manifests/washington-bee.json",
+      "remote_manifest": "https://pages.dangerouspress.org/washington-bee/manifests/paper-manifest.json"
+    },
+    {
       "slug": "washington-tribune",
       "title": "Washington Tribune",
-      "issue_count": 240,
+      "issue_count": 451,
+      "uploaded_count": 132,
       "manifest_path": "manifests/washington-tribune.json",
       "remote_manifest": "https://pages.dangerouspress.org/washington-tribune/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "wichita-searchlight",
+      "title": "Wichita Searchlight",
+      "issue_count": 3,
+      "uploaded_count": 0,
+      "manifest_path": "manifests/wichita-searchlight.json",
+      "remote_manifest": "https://pages.dangerouspress.org/wichita-searchlight/manifests/paper-manifest.json"
     }
   ]
 }

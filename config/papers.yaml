@@ -1,68 +1,167 @@
 papers:
+  wichita-searchlight:
+    title: Wichita Searchlight
+    path: wichita-searchlight
+    base_url: https://pages.dangerouspress.org/wichita-searchlight
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn85032585
+  baltimore-afro-american:
+    title: Baltimore Afro-American
+    path: baltimore-afro-american
+    base_url: https://pages.dangerouspress.org/baltimore-afro-american
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/Documents/black-press-downloads/baltimoreafroamerican_pdfs
+      sample_filename: 1910-01-01_01.pdf
   broad-ax:
-    base_url: https://pages.dangerouspress.org/broad-ax
-    path: broad-ax
     title: Broad Ax
+    path: broad-ax
+    base_url: https://pages.dangerouspress.org/broad-ax
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84024055
   chicago-defender:
-    base_url: https://pages.dangerouspress.org/chicago-defender
-    path: chicago-defender
     title: Chicago Defender
+    path: chicago-defender
+    base_url: https://pages.dangerouspress.org/chicago-defender
+    sources:
+    - type: pdf
+      folder: /Volumes/Lightning/chronicling-america/pq-defender/defender_pdfs/Defender_PDFs
+      sample_filename: Chicago-Defender_1909-07-31.pdf
   chicago-whip:
-    base_url: https://pages.dangerouspress.org/chicago-whip
-    path: chicago-whip
     title: Chicago Whip
+    path: chicago-whip
+    base_url: https://pages.dangerouspress.org/chicago-whip
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn86056950
   cleveland-advocate:
-    base_url: https://pages.dangerouspress.org/cleveland-advocate
-    path: cleveland-advocate
     title: Cleveland Advocate
+    path: cleveland-advocate
+    base_url: https://pages.dangerouspress.org/cleveland-advocate
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/cleveland-advoate_pdfs
+      sample_filename: advocate_1926-01-29.pdf
   cleveland-gazette:
-    base_url: https://pages.dangerouspress.org/cleveland-gazette
-    path: cleveland-gazette
     title: Cleveland Gazette
-  colorado-stateman:
-    base_url: https://pages.dangerouspress.org/colorado-stateman
-    path: colorado-stateman
+    path: cleveland-gazette
+    base_url: https://pages.dangerouspress.org/cleveland-gazette
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/cleveland-gazette_pdfs
+      sample_filename: cleveland+gazette_1910-03-19.pdf
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83035387
+  colorado-statesman:
     title: Colorado Statesman
+    path: colorado-statesman
+    base_url: https://pages.dangerouspress.org/colorado-statesman
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025514
   denver-star:
-    base_url: https://pages.dangerouspress.org/denver-star
-    path: denver-star
     title: Denver Star
-  kansas-city-sun:
-    base_url: https://pages.dangerouspress.org/kansas-city-sun
-    path: kansas-city-sun
-    title: Kansas City Sun
-  new-york-age:
-    base_url: https://pages.dangerouspress.org/new-york-age
-    path: new-york-age
-    title: New York Age
+    path: denver-star
+    base_url: https://pages.dangerouspress.org/denver-star
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84025887
   indianapolis-freeman:
-    base_url: https://pages.dangerouspress.org/indianapolis-freeman
-    path: indianapolis-freeman
     title: Indianapolis Freeman
+    path: indianapolis-freeman
+    base_url: https://pages.dangerouspress.org/indianapolis-freeman
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn82016211
+  kansas-city-sun:
+    title: Kansas City Sun
+    path: kansas-city-sun
+    base_url: https://pages.dangerouspress.org/kansas-city-sun
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn90061556
+  new-york-age:
+    title: New York Age
+    path: new-york-age
+    base_url: https://pages.dangerouspress.org/new-york-age
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/new-york-age_pdfs
+      sample_filename: new-york-age_1906-10-04.pdf
   omaha-monitor:
-    base_url: https://pages.dangerouspress.org/omaha-monitor
-    path: omaha-monitor
     title: Omaha Monitor
-  richmond-planet:
-    base_url: https://pages.dangerouspress.org/richmond-planet
-    path: richmond-planet
-    title: Richmond Planet
+    path: omaha-monitor
+    base_url: https://pages.dangerouspress.org/omaha-monitor
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: 00225879
   raleigh-independent:
-    base_url: https://pages.dangerouspress.org/raleigh-independent
-    path: raleigh-independent
     title: Raleigh Independent
-  st.-paul-appeal:
-    base_url: https://pages.dangerouspress.org/st.-paul-appeal
-    path: st.-paul-appeal
+    path: raleigh-independent
+    base_url: https://pages.dangerouspress.org/raleigh-independent
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn92072995
+  richmond-planet:
+    title: Richmond Planet
+    path: richmond-planet
+    base_url: https://pages.dangerouspress.org/richmond-planet
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84025841
+  st-louis-argus:
+    title: St. Louis Argus
+    path: st-louis-argus
+    base_url: https://pages.dangerouspress.org/st-louis-argus
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/argus/
+      lccn: argus_downloads
+  st-paul-appeal:
     title: St. Paul Appeal
+    path: st-paul-appeal
+    base_url: https://pages.dangerouspress.org/st-paul-appeal
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83016810
   tulsa-star:
-    base_url: https://pages.dangerouspress.org/tulsa-star
-    path: tulsa-star
     title: Tulsa Star
+    path: tulsa-star
+    base_url: https://pages.dangerouspress.org/tulsa-star
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn86064118
+  washington-bee:
+    title: Washington Bee
+    path: washington-bee
+    base_url: https://pages.dangerouspress.org/washington-bee
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/argus/
+      lccn: bee_downloads
   washington-tribune:
-    base_url: https://pages.dangerouspress.org/washington-tribune
-    path: washington-tribune
     title: Washington Tribune
+    path: washington-tribune
+    base_url: https://pages.dangerouspress.org/washington-tribune
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn87062236
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
