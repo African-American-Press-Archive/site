@@ -1,4 +1,20 @@
 papers:
+  omaha-monitor:
+    title: Omaha Monitor
+    path: omaha-monitor
+    base_url: https://pages.dangerouspress.org/omaha-monitor
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: 00225879
+  nashville-globe:
+    title: Nashville Globe
+    path: nashville-globe
+    base_url: https://pages.dangerouspress.org/nashville-globe
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn86064259
   wichita-searchlight:
     title: Wichita Searchlight
     path: wichita-searchlight

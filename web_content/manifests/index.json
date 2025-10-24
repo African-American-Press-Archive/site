@@ -4,8 +4,8 @@
     {
       "slug": "baltimore-afro-american",
       "title": "Baltimore Afro-American",
-      "issue_count": 176,
-      "uploaded_count": 176,
+      "issue_count": 184,
+      "uploaded_count": 184,
       "manifest_path": "manifests/baltimore-afro-american.json",
       "remote_manifest": "https://pages.dangerouspress.org/baltimore-afro-american/manifests/paper-manifest.json"
     },
@@ -80,6 +80,14 @@
       "uploaded_count": 360,
       "manifest_path": "manifests/kansas-city-sun.json",
       "remote_manifest": "https://pages.dangerouspress.org/kansas-city-sun/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "nashville-globe",
+      "title": "Nashville Globe",
+      "issue_count": 311,
+      "uploaded_count": 311,
+      "manifest_path": "manifests/nashville-globe.json",
+      "remote_manifest": "https://pages.dangerouspress.org/nashville-globe/manifests/paper-manifest.json"
     },
     {
       "slug": "new-york-age",
