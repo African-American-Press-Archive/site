@@ -11,14 +11,6 @@
     <!-- Main App Container -->
     <div id="app" class="relative min-h-screen">
 
-        <!-- Filter Toggle Button (Collapsed State) -->
-        <button id="filter-toggle" aria-label="Toggle newspaper filters">
-            PAPERS
-        </button>
-
-        <!-- Filter Overlay -->
-        <div id="filter-overlay"></div>
-
         <!-- Header -->
         <header id="main-header" class="glass py-6 px-4 md:px-6 transition-all duration-300">
             <div class="max-w-7xl mx-auto">
@@ -68,42 +60,8 @@
 
         <!-- Main Content -->
         <div class="max-w-7xl mx-auto px-4 md:px-6 py-8">
-            <div class="flex flex-col lg:flex-row gap-6">
-
-                <!-- Collapsible Sidebar Filters -->
-                <aside id="filter-sidebar">
-                    <!-- Close Button -->
-                    <button class="close-filters" aria-label="Close filters">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-
-                    <div class="mt-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <h2 class="text-lg font-bold" style="color: var(--unc-longleaf-pine);">Filter Papers</h2>
-                            <span id="filter-count" class="text-xs px-2 py-1 rounded-full font-semibold" style="background: rgba(0, 165, 173, 0.15); color: var(--unc-tile-teal);">0</span>
-                        </div>
-
-                        <!-- Filter List -->
-                        <div id="filter-list" class="space-y-2 max-h-[60vh] overflow-y-auto pr-2">
-                            <!-- Filters will be populated by JavaScript -->
-                        </div>
-
-                        <!-- Reset Button -->
-                        <button
-                            id="reset-filters-btn"
-                            class="mt-4 w-full py-2 px-4 rounded-lg text-sm font-medium transition-all duration-300"
-                            style="background: var(--unc-basin-slate); color: white;"
-                            aria-label="Reset all filters"
-                        >
-                            Reset Filters
-                        </button>
-                    </div>
-                </aside>
-
                 <!-- Main Content Area -->
-                <main class="flex-1 min-w-0">
+                <main class="min-w-0">
 
                     <!-- Newsstand Hero Showcase -->
                     <section id="newsstand-hero" class="newsstand-hero glass-card rounded-2xl p-6 mb-6 hidden">
@@ -130,39 +88,98 @@
                         <div id="hero-grid" class="hero-grid mt-6"></div>
                     </section>
 
-                    <!-- Timeline Section -->
-                    <section class="timeline-section glass-card rounded-xl p-6 mb-6">
-                        <div class="flex items-center justify-between mb-6">
-                            <div>
-                                <h2 class="text-xl font-bold" style="color: var(--unc-longleaf-pine);">Browse the Archive</h2>
-                                <p class="text-xs tracking-[0.3em] uppercase mt-1" style="color: var(--text-muted); letter-spacing: 0.32em;">Year · Month Selector</p>
-                            </div>
-                            <button id="timeline-reset" class="text-sm transition-colors opacity-0 pointer-events-none deco-link" style="color: var(--unc-tile-teal);">
-                                Clear Selection
+                    <!-- Filter Bar Section -->
+                    <section class="filter-bar-section glass-card rounded-xl p-6 mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h2 class="text-xl font-bold" style="color: var(--unc-longleaf-pine);">Browse the Archive</h2>
+                            <button id="filters-reset" class="text-sm transition-colors opacity-0 pointer-events-none deco-link" style="color: var(--unc-tile-teal);">
+                                Clear Filters
                             </button>
                         </div>
 
-                        <div class="year-carousel glass-card">
-                            <div class="year-carousel-header">
-                                <span class="year-title">Year</span>
-                                <span class="year-range">1910–1929</span>
-                            </div>
-                            <div id="timeline-slider" class="timeline-slider-container" role="presentation">
-                                <div id="timeline-markers" class="timeline-year-pills" role="listbox" aria-label="Select year"></div>
-                            </div>
-                            <div class="year-readout">
-                                <span class="dial-readout-prefix">Focused on</span>
-                                <span id="timeline-year-label" class="year-readout-value gradient-text">All Years</span>
-                            </div>
-                        </div>
+                        <div class="filter-toggles-container">
+                            <!-- Date Filter Toggle -->
+                            <div class="filter-toggle-group">
+                                <button
+                                    id="date-filter-toggle"
+                                    class="filter-toggle"
+                                    aria-expanded="false"
+                                    aria-controls="date-filter-panel"
+                                >
+                                    <span class="filter-toggle-label" id="date-filter-label">All Years</span>
+                                    <svg class="filter-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
 
-                        <div class="month-carousel glass-card mt-6 month-carousel--disabled">
-                            <div class="month-carousel-header">
-                                <span class="month-title">Month</span>
-                                <span id="month-carousel-year" class="month-caption">All Years</span>
+                                <!-- Date Filter Panel -->
+                                <div
+                                    id="date-filter-panel"
+                                    class="filter-panel hidden"
+                                    role="region"
+                                    aria-labelledby="date-filter-toggle"
+                                >
+                                    <div class="filter-panel-content">
+                                        <h3 class="filter-panel-title">Select Year</h3>
+                                        <div id="year-grid" class="year-grid" role="listbox" aria-label="Select year">
+                                            <!-- Year pills will be populated by JavaScript -->
+                                        </div>
+
+                                        <div id="month-selector" class="month-selector hidden">
+                                            <h3 class="filter-panel-title">Select Month (Optional)</h3>
+                                            <div id="month-grid" class="month-grid" role="listbox" aria-label="Select month">
+                                                <!-- Month pills will be populated by JavaScript -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="month-scroll-viewport" role="presentation">
-                                <div id="timeline-months" class="month-scroll-track" role="listbox" aria-live="polite" aria-label="Select month"></div>
+
+                            <!-- Paper Filter Toggle -->
+                            <div class="filter-toggle-group">
+                                <button
+                                    id="paper-filter-toggle"
+                                    class="filter-toggle"
+                                    aria-expanded="false"
+                                    aria-controls="paper-filter-panel"
+                                >
+                                    <span class="filter-toggle-label" id="paper-filter-label">All Papers</span>
+                                    <svg class="filter-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+
+                                <!-- Paper Filter Panel -->
+                                <div
+                                    id="paper-filter-panel"
+                                    class="filter-panel hidden"
+                                    role="region"
+                                    aria-labelledby="paper-filter-toggle"
+                                >
+                                    <div class="filter-panel-content">
+                                        <h3 class="filter-panel-title">Select Papers</h3>
+                                        <div class="filter-panel-search">
+                                            <input
+                                                type="text"
+                                                id="paper-search-input"
+                                                placeholder="Search papers..."
+                                                class="filter-search-input"
+                                                aria-label="Search papers"
+                                            />
+                                        </div>
+                                        <div id="paper-list" class="paper-list" role="listbox" aria-label="Select papers" aria-multiselectable="true">
+                                            <!-- Paper checkboxes will be populated by JavaScript -->
+                                        </div>
+                                        <div class="filter-panel-actions">
+                                            <button id="paper-select-all" class="filter-panel-btn filter-panel-btn-secondary">
+                                                Select All
+                                            </button>
+                                            <button id="paper-apply" class="filter-panel-btn filter-panel-btn-primary">
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -229,7 +246,6 @@
                         </div>
                     </div>
                 </main>
-            </div>
         </div>
     </div>
 
@@ -496,6 +512,7 @@
         </div>
     </div>
 
+    <script src="filters.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

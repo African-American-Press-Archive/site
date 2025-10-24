@@ -87,7 +87,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadManifest();
     setupEventListeners();
     initializeIntersectionObserver();
-    initializeTimeline();
+
+    // Initialize new filter system
+    if (window.FilterSystem) {
+        FilterSystem.init();
+    }
 });
 
 // ==================== DATA LOADING ====================
@@ -469,20 +473,16 @@ function initializeRandomDefaultView() {
         return false;
     }
 
+    // Update state
     const [year, month] = randomIssue.date.split('-');
     state.selectedYear = year;
     state.selectedMonth = month;
 
-    const resetBtn = document.getElementById('timeline-reset');
-    if (resetBtn) {
-        resetBtn.style.opacity = '1';
-        resetBtn.style.pointerEvents = 'all';
+    // Initialize new filter system with random issue
+    if (window.FilterSystem) {
+        FilterSystem.setInitialStateFromRandomIssue(randomIssue);
     }
 
-    updateTimelineLabel();
-    renderTimelineMonths(year);
-    updateTimelineVisuals();
-    scrollYearIntoView(year);
     applyFilters();
 
     return true;
@@ -1494,8 +1494,8 @@ function setupFilterToggle() {
 
 // ==================== EVENT LISTENERS ====================
 function setupEventListeners() {
-    // Setup collapsible filter toggle
-    setupFilterToggle();
+    // Old sidebar filter toggle (no longer needed with new filter system)
+    // setupFilterToggle();
 
     // Header shrink on scroll with parallax
     let lastScroll = 0;
