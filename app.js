@@ -104,16 +104,25 @@ async function loadManifest() {
     try {
         // Use relative path - works for both local dev and custom domain
         const manifestPath = 'web_content/manifest.json';
+        const fullUrl = new URL(manifestPath, window.location.href).href;
 
-        console.log(`Loading manifest from: ${manifestPath}`);
+        console.log(`[DEBUG] Current URL: ${window.location.href}`);
+        console.log(`[DEBUG] Manifest path: ${manifestPath}`);
+        console.log(`[DEBUG] Full manifest URL: ${fullUrl}`);
+        console.log(`[DEBUG] Fetching manifest...`);
+
         const response = await fetch(manifestPath);
+
+        console.log(`[DEBUG] Response status: ${response.status}`);
+        console.log(`[DEBUG] Response OK: ${response.ok}`);
 
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
 
+        console.log(`[DEBUG] Parsing JSON...`);
         const data = await response.json();
-        console.log(`Loaded ${data.length} issues from manifest`);
+        console.log(`✓ Loaded ${data.length} issues from manifest`);
 
         // Filter to only 1910-1929
         state.allIssues = data.filter(issue => {
