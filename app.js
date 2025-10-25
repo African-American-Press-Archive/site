@@ -26,7 +26,7 @@ const MONTHS = [
 const INTRO_STORAGE_KEY = 'bpa_intro_seen_v1';
 
 const PAPER_TITLE_OVERRIDES = Object.freeze({
-    'Broad Ax': 'Salt Lake City Broad Ax',
+    'Broad Ax': 'Chicago Broad Ax',
 });
 
 function getDisplayTitle(title) {
