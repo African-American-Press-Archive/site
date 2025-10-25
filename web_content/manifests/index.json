@@ -61,7 +61,7 @@
       "slug": "dallas-express",
       "title": "Dallas Express",
       "issue_count": 1215,
-      "uploaded_count": 0,
+      "uploaded_count": 466,
       "manifest_path": "manifests/dallas-express.json",
       "remote_manifest": "https://pages.dangerouspress.org/dallas-express/manifests/paper-manifest.json"
     },
@@ -77,7 +77,7 @@
       "slug": "houston-informer",
       "title": "Houston Informer",
       "issue_count": 368,
-      "uploaded_count": 0,
+      "uploaded_count": 327,
       "manifest_path": "manifests/houston-informer.json",
       "remote_manifest": "https://pages.dangerouspress.org/houston-informer/manifests/paper-manifest.json"
     },
@@ -181,7 +181,7 @@
       "slug": "western-outlook",
       "title": "Western Outlook",
       "issue_count": 22,
-      "uploaded_count": 0,
+      "uploaded_count": 22,
       "manifest_path": "manifests/western-outlook.json",
       "remote_manifest": "https://pages.dangerouspress.org/western-outlook/manifests/paper-manifest.json"
     },
