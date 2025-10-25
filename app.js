@@ -104,6 +104,7 @@ async function loadManifest() {
         }
 
         const data = await response.json();
+        console.log(`Loaded ${data.length} issues from manifest`);
 
         // Filter to only 1910-1929
         state.allIssues = data.filter(issue => {

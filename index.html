@@ -199,7 +199,15 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <h3 class="text-xl font-bold mb-2" style="color: var(--unc-longleaf-pine);">Failed to Load Archive</h3>
-                            <p class="mb-4" style="color: var(--text-muted);">Could not load manifest.json. Please check the file exists in web_content/</p>
+                            <p class="mb-4" style="color: var(--text-muted);">
+                                Could not load manifest.json.
+                                <br><br>
+                                <strong>If running locally:</strong> You need to run a web server (not open the HTML file directly).
+                                <br>
+                                Try: <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 3px;">python3 -m http.server 8000</code>
+                                <br><br>
+                                <strong>If this is the live site:</strong> The manifest file may not be deployed yet.
+                            </p>
                             <button id="retry-btn" class="btn-primary">
                                 Retry
                             </button>
