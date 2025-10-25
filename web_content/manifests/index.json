@@ -108,7 +108,7 @@
     {
       "slug": "new-york-age",
       "title": "New York Age",
-      "issue_count": 1040,
+      "issue_count": 1053,
       "uploaded_count": 1040,
       "manifest_path": "manifests/new-york-age.json",
       "remote_manifest": "https://pages.dangerouspress.org/new-york-age/manifests/paper-manifest.json"
@@ -120,6 +120,14 @@
       "uploaded_count": 683,
       "manifest_path": "manifests/omaha-monitor.json",
       "remote_manifest": "https://pages.dangerouspress.org/omaha-monitor/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "phoenix-tribune",
+      "title": "Phoenix Tribune",
+      "issue_count": 283,
+      "uploaded_count": 283,
+      "manifest_path": "manifests/phoenix-tribune.json",
+      "remote_manifest": "https://pages.dangerouspress.org/phoenix-tribune/manifests/paper-manifest.json"
     },
     {
       "slug": "raleigh-independent",

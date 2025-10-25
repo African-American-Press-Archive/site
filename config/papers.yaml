@@ -1,4 +1,20 @@
 papers:
+  phoenix-tribune:
+    title: Phoenix Tribune
+    path: phoenix-tribune
+    base_url: https://pages.dangerouspress.org/phoenix-tribune
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn96060881
+  denver-star:
+    title: Denver Star
+    path: denver-star
+    base_url: https://pages.dangerouspress.org/denver-star
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84025887
   omaha-monitor:
     title: Omaha Monitor
     path: omaha-monitor

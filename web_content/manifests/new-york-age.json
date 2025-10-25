@@ -3,6 +3,188 @@
   "title": "New York Age",
   "issues": [
     {
+      "id": "1887-10-15_new-york-age",
+      "date": "1887-10-15",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-10-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-10-15/page_01.jpg",
+        "new-york-age/1887/1887-10-15/page_02.jpg",
+        "new-york-age/1887/1887-10-15/page_03.jpg",
+        "new-york-age/1887/1887-10-15/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-10-22_new-york-age",
+      "date": "1887-10-22",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-10-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-10-22/page_01.jpg",
+        "new-york-age/1887/1887-10-22/page_02.jpg",
+        "new-york-age/1887/1887-10-22/page_03.jpg",
+        "new-york-age/1887/1887-10-22/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-10-29_new-york-age",
+      "date": "1887-10-29",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-10-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-10-29/page_01.jpg",
+        "new-york-age/1887/1887-10-29/page_02.jpg",
+        "new-york-age/1887/1887-10-29/page_03.jpg",
+        "new-york-age/1887/1887-10-29/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-11-05_new-york-age",
+      "date": "1887-11-05",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-11-05/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-11-05/page_01.jpg",
+        "new-york-age/1887/1887-11-05/page_02.jpg",
+        "new-york-age/1887/1887-11-05/page_03.jpg",
+        "new-york-age/1887/1887-11-05/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-11-12_new-york-age",
+      "date": "1887-11-12",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-11-12/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-11-12/page_01.jpg",
+        "new-york-age/1887/1887-11-12/page_02.jpg",
+        "new-york-age/1887/1887-11-12/page_03.jpg",
+        "new-york-age/1887/1887-11-12/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-11-19_new-york-age",
+      "date": "1887-11-19",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-11-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-11-19/page_01.jpg",
+        "new-york-age/1887/1887-11-19/page_02.jpg",
+        "new-york-age/1887/1887-11-19/page_03.jpg",
+        "new-york-age/1887/1887-11-19/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-11-26_new-york-age",
+      "date": "1887-11-26",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-11-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-11-26/page_01.jpg",
+        "new-york-age/1887/1887-11-26/page_02.jpg",
+        "new-york-age/1887/1887-11-26/page_03.jpg",
+        "new-york-age/1887/1887-11-26/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-12-03_new-york-age",
+      "date": "1887-12-03",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-12-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-12-03/page_01.jpg",
+        "new-york-age/1887/1887-12-03/page_02.jpg",
+        "new-york-age/1887/1887-12-03/page_03.jpg",
+        "new-york-age/1887/1887-12-03/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-12-10_new-york-age",
+      "date": "1887-12-10",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-12-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-12-10/page_01.jpg",
+        "new-york-age/1887/1887-12-10/page_02.jpg",
+        "new-york-age/1887/1887-12-10/page_03.jpg",
+        "new-york-age/1887/1887-12-10/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-12-17_new-york-age",
+      "date": "1887-12-17",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-12-17/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-12-17/page_01.jpg",
+        "new-york-age/1887/1887-12-17/page_02.jpg",
+        "new-york-age/1887/1887-12-17/page_03.jpg",
+        "new-york-age/1887/1887-12-17/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-12-24_new-york-age",
+      "date": "1887-12-24",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-12-24/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-12-24/page_01.jpg",
+        "new-york-age/1887/1887-12-24/page_02.jpg",
+        "new-york-age/1887/1887-12-24/page_03.jpg",
+        "new-york-age/1887/1887-12-24/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1887-12-31_new-york-age",
+      "date": "1887-12-31",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1887/1887-12-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1887/1887-12-31/page_01.jpg",
+        "new-york-age/1887/1887-12-31/page_02.jpg",
+        "new-york-age/1887/1887-12-31/page_03.jpg",
+        "new-york-age/1887/1887-12-31/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1888-01-07_new-york-age",
+      "date": "1888-01-07",
+      "title": "New York Age",
+      "issue_thumb": "new-york-age/1888/1888-01-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "new-york-age/1888/1888-01-07/page_01.jpg",
+        "new-york-age/1888/1888-01-07/page_02.jpg",
+        "new-york-age/1888/1888-01-07/page_03.jpg",
+        "new-york-age/1888/1888-01-07/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-01-06_new-york-age",
       "date": "1910-01-06",
       "title": "New York Age",
