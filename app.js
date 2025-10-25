@@ -73,13 +73,23 @@ const state = {
 
 function resolveAssetPath(input) {
     if (!input) return '';
+    // Already a full URL
     if (/^https?:\/\//i.test(input)) {
         return input;
     }
+
+    // Determine base path for GitHub Pages vs local
+    const basePath = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? ''
+        : '/site';
+
+    // Path starting with / is already absolute-ish
     if (input.startsWith('/')) {
-        return `web_content${input}`;
+        return `${basePath}/web_content${input}`;
     }
-    return `web_content/${input}`;
+
+    // Relative path - prepend web_content
+    return `${basePath}/web_content/${input}`;
 }
 
 // ==================== INITIALIZATION ====================
@@ -97,7 +107,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 // ==================== DATA LOADING ====================
 async function loadManifest() {
     try {
-        const response = await fetch('web_content/manifest.json');
+        // Handle both local dev and GitHub Pages deployment
+        const basePath = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? ''
+            : '/site';
+        const manifestPath = `${basePath}/web_content/manifest.json`;
+
+        console.log(`Loading manifest from: ${manifestPath}`);
+        const response = await fetch(manifestPath);
 
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
