@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · Dangerous Press Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div id="app" class="relative min-h-screen">
+
+        <!-- Header -->
+        <header id="main-header" class="glass py-6 px-4 md:px-6 transition-all duration-300">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <!-- Logo & Title -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 md:gap-6 text-center md:text-left branding-lockup">
+                        <span class="brand-emblem" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="12" width="52" height="40" rx="4" fill="#F5F1E8" stroke="#8B7355" stroke-width="2"/>
+                                <path d="M12 20H52" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 28H44" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 36H40" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 44H36" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M50 24V48" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M45 24V48" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M16 48H32" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <h1 class="hero-title editorial-title transition-all duration-300">
+                                <a href="index.html" class="hover:opacity-80 transition-opacity" style="text-decoration: none; color: inherit;">Dangerous Press</a>
+                            </h1>
+                            <p class="text-sm mt-1 font-medium subtitle-text" style="color: var(--text-secondary);">An Archive of African American Newspapers, 1910–1929</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <nav class="flex items-center gap-6">
+                        <a href="index.html" class="text-sm font-medium transition-colors deco-link" style="color: var(--text-secondary);">Browse Archive</a>
+                        <span class="text-sm font-medium" style="color: var(--unc-tile-teal);">About</span>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="max-w-5xl mx-auto px-4 md:px-6 py-8">
+            <main>
+                <!-- Introduction -->
+                <section class="glass-card rounded-2xl p-8 md:p-12 mb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: var(--unc-longleaf-pine);">About This Archive</h2>
+
+                    <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+                        <p class="text-lg leading-relaxed mb-4" style="color: var(--text-secondary);">
+                            The Dangerous Press archive brings together digitized issues of African American newspapers from the early twentieth century,
+                            spanning the years 1910 to 1929. This period witnessed the Great Migration, World War I, the Red Summer of 1919,
+                            the Harlem Renaissance, and the rise of the "New Negro" movement—all documented in real time by the Black press.
+                        </p>
+
+                        <p class="text-lg leading-relaxed mb-4" style="color: var(--text-secondary);">
+                            These newspapers served as vital organs of information, advocacy, and community building for African Americans during
+                            an era of segregation, disenfranchisement, and systemic violence. They reported on local and national news often ignored
+                            or misrepresented by white-owned media, championed civil rights causes, celebrated cultural achievements, and provided
+                            a platform for Black voices and perspectives.
+                        </p>
+
+                        <p class="text-lg leading-relaxed mb-6" style="color: var(--text-secondary);">
+                            This collection draws primarily from the Library of Congress's <a href="https://chroniclingamerica.loc.gov/"
+                            class="deco-link" style="color: var(--unc-tile-teal);" target="_blank" rel="noopener">Chronicling America</a>
+                            digital newspaper archive, supplemented with materials from other sources. The archive is a work in progress,
+                            with new issues and newspapers being added regularly.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Statistics Table -->
+                <section class="glass-card rounded-2xl p-8 md:p-12">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-2" style="color: var(--unc-longleaf-pine);">Collection Overview</h2>
+                    <p class="text-sm mb-6" style="color: var(--text-muted);">
+                        The archive currently includes issues from 25 newspapers published between 1910 and 1929.
+                    </p>
+
+                    <div class="overflow-x-auto">
+                        <table class="paper-stats w-full text-sm md:text-base">
+                            <thead>
+                                <tr class="border-b-2" style="border-color: var(--border-color);">
+                                    <th class="text-left py-3 px-2 font-bold" style="color: var(--unc-longleaf-pine);">Newspaper</th>
+                                    <th class="text-left py-3 px-2 font-bold" style="color: var(--unc-longleaf-pine);">Years</th>
+                                    <th class="text-right py-3 px-2 font-bold" style="color: var(--unc-longleaf-pine);">Issues</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Baltimore Afro-American</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1916</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">344</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Broad Ax</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1927</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">922</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Chicago Defender</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1925</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">755</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Chicago Whip</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1919-1922, 1927-1928</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">176</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Cleveland Advocate</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1916-1926</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">532</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Cleveland Gazette</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1929</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">1,876</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Colorado Statesman</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1924</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">756</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Dallas Express</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1919-1928</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">466</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Denver Star</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1913-1918</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">291</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Houston Informer</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1919-1929</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">327</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Indianapolis Freeman</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1916</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">365</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Kansas City Sun</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1914-1920</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">360</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Nashville Globe</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1913, 1917-1918</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">311</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">New York Age</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1929</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">1,040</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Omaha Monitor</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1915-1928</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">683</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Phoenix Tribune</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1918-1929</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">283</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Raleigh Independent</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1918, 1920</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">3</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Richmond Planet</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910, 1915, 1917-1929</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">701</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">St. Louis Argus</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1915-1922, 1925</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">394</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">St. Paul Appeal</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1923</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">725</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Tulsa Star</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1913-1921</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">209</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Washington Bee</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1912</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">52</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Washington Tribune</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1921-1929</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">485</td>
+                                </tr>
+                                <tr class="border-b transition-colors hover:bg-opacity-50" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Western Outlook</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1926-1928</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">22</td>
+                                </tr>
+                                <tr class="border-b-2" style="border-color: var(--border-color);">
+                                    <td class="py-3 px-2" style="color: var(--text-primary);">Wichita Searchlight</td>
+                                    <td class="py-3 px-2" style="color: var(--text-secondary);">1910-1912</td>
+                                    <td class="text-right py-3 px-2 font-medium" style="color: var(--text-primary);">114</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th class="text-left py-4 px-2 font-bold text-lg" style="color: var(--unc-longleaf-pine);">Total</th>
+                                    <th class="py-4 px-2"></th>
+                                    <th class="text-right py-4 px-2 font-bold text-lg" style="color: var(--unc-longleaf-pine);">12,192</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Footer Note -->
+                <div class="mt-8 text-center">
+                    <a href="index.html" class="inline-flex items-center gap-2 text-sm font-medium transition-colors deco-link" style="color: var(--unc-tile-teal);">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                        Return to Archive
+                    </a>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
