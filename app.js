@@ -696,7 +696,7 @@ function initializeFilters() {
     const paperTitles = [...new Set(state.allIssues.map(issue => issue.title))].sort();
     paperTitles.forEach(title => state.selectedPapers.add(title));
 
-    const filterList = document.getElementById('filter-list');
+    const filterList = document.getElementById('paper-list');
     document.getElementById('filter-count').textContent = paperTitles.length;
 
     // Add "All Papers" option

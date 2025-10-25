@@ -1329,6 +1329,13 @@ a:focus-visible {
 
 /* ==================== FILTER BAR: TOGGLE + PANEL SYSTEM ==================== */
 
+/* Allow dropdown panels to escape the card */
+.filter-bar-section {
+    position: relative;
+    overflow: visible;
+    z-index: 5;
+}
+
 /* Filter Toggles Container */
 .filter-toggles-container {
     display: flex;
@@ -1401,11 +1408,13 @@ a:focus-visible {
     top: calc(100% + 0.5rem);
     left: 0;
     right: 0;
-    background: var(--bg-card);
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--border-color);
     border-radius: 1rem;
     box-shadow: var(--shadow-lg);
-    z-index: 100;
+    z-index: 200;
     opacity: 0;
     transform: translateY(-10px);
     pointer-events: none;
@@ -1830,6 +1839,12 @@ a:focus-visible {
     border-radius: inherit;
     pointer-events: none;
     z-index: 2;
+}
+
+/* Allow specific glass cards to show dropdowns */
+.glass-card.filter-bar-section {
+    overflow: visible;
+    z-index: 5;
 }
 
 /* ==================== ENHANCED ISSUE CARD EFFECTS ==================== */
