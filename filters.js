@@ -329,6 +329,9 @@ const FilterSystem = {
             `;
         }).join('');
 
+        // Update Select All button text
+        this.updateSelectAllButtonText();
+
         // Add click handlers
         this.paperList.querySelectorAll('.paper-item').forEach(item => {
             item.addEventListener('click', () => {
@@ -371,7 +374,8 @@ const FilterSystem = {
         });
 
         // Select All button
-        document.getElementById('paper-select-all')?.addEventListener('click', () => {
+        const selectAllBtn = document.getElementById('paper-select-all');
+        selectAllBtn?.addEventListener('click', () => {
             const allVisible = Array.from(this.paperList?.querySelectorAll('.paper-item') || [])
                 .map(item => item.dataset.paper);
 
@@ -386,6 +390,7 @@ const FilterSystem = {
 
             this.renderPaperList(allVisible);
             this.updatePaperLabel();
+            this.updateSelectAllButtonText();
         });
 
         // Apply button
@@ -416,6 +421,20 @@ const FilterSystem = {
 
         // Show/hide clear button
         this.updateClearButtonVisibility();
+    },
+
+    /**
+     * Update Select All button text based on current state
+     */
+    updateSelectAllButtonText() {
+        const selectAllBtn = document.getElementById('paper-select-all');
+        if (!selectAllBtn) return;
+
+        const allVisible = Array.from(this.paperList?.querySelectorAll('.paper-item') || [])
+            .map(item => item.dataset.paper);
+        const allSelected = allVisible.every(paper => this.selectedPapers.has(paper));
+
+        selectAllBtn.textContent = allSelected ? 'Deselect All' : 'Select All';
     },
 
     /**

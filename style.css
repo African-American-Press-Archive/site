@@ -686,6 +686,7 @@ header.scrolled h1 {
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
     margin-bottom: 0.35rem;
+    color: var(--unc-tile-teal);
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 
@@ -1711,70 +1712,58 @@ a:focus-visible {
 .spin-archive-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.65rem 1.25rem;
-    border-radius: 999px;
-    border: 2px solid var(--unc-tile-teal);
-    background: linear-gradient(135deg, var(--unc-tile-teal) 0%, var(--unc-basin-slate) 100%);
-    color: white;
-    font-weight: 700;
-    font-size: 0.875rem;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--text-muted);
     cursor: pointer;
     transition: var(--transition-base);
-    box-shadow: 0 4px 15px rgba(0, 165, 173, 0.3);
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
 }
 
 .spin-archive-btn:hover {
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 6px 25px rgba(0, 165, 173, 0.5);
-    background: linear-gradient(135deg, var(--unc-tile-teal) 0%, var(--unc-azalea-pink) 100%);
-    border-color: var(--unc-azalea-pink);
+    background: var(--bg-hover);
+    color: var(--unc-tile-teal);
+    border-color: var(--unc-tile-teal);
 }
 
 .spin-archive-btn:active {
-    transform: translateY(0) scale(1);
+    transform: scale(0.95);
 }
 
 .spin-archive-btn .spin-icon {
-    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.3s ease;
 }
 
 .spin-archive-btn:hover .spin-icon {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 .spin-archive-btn.spinning .spin-icon {
-    animation: spinAnimation 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: spinAnimation 0.5s ease;
 }
 
 @keyframes spinAnimation {
     0% {
-        transform: rotate(0deg) scale(1);
-    }
-    50% {
-        transform: rotate(180deg) scale(1.2);
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg) scale(1);
+        transform: rotate(360deg);
     }
 }
 
-/* Make button more compact on mobile */
+/* Mobile adjustments */
 @media (max-width: 640px) {
     .spin-archive-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.75rem;
-    }
-
-    .spin-archive-btn .spin-text {
-        display: none;
+        width: 2.25rem;
+        height: 2.25rem;
     }
 
     .spin-archive-btn .spin-icon {
-        width: 1.25rem;
-        height: 1.25rem;
+        width: 1.125rem;
+        height: 1.125rem;
     }
 }
 
