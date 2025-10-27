@@ -90,12 +90,28 @@
       "remote_manifest": "https://pages.dangerouspress.org/indianapolis-freeman/manifests/paper-manifest.json"
     },
     {
+      "slug": "iowa-bystander",
+      "title": "Iowa Bystander",
+      "issue_count": 315,
+      "uploaded_count": 315,
+      "manifest_path": "manifests/iowa-bystander.json",
+      "remote_manifest": "https://pages.dangerouspress.org/iowa-bystander/manifests/paper-manifest.json"
+    },
+    {
       "slug": "kansas-city-sun",
       "title": "Kansas City Sun",
       "issue_count": 360,
       "uploaded_count": 360,
       "manifest_path": "manifests/kansas-city-sun.json",
       "remote_manifest": "https://pages.dangerouspress.org/kansas-city-sun/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "muskogee-cimeter",
+      "title": "Muskogee Cimeter",
+      "issue_count": 95,
+      "uploaded_count": 95,
+      "manifest_path": "manifests/muskogee-cimeter.json",
+      "remote_manifest": "https://pages.dangerouspress.org/muskogee-cimeter/manifests/paper-manifest.json"
     },
     {
       "slug": "nashville-globe",
@@ -168,6 +184,14 @@
       "uploaded_count": 209,
       "manifest_path": "manifests/tulsa-star.json",
       "remote_manifest": "https://pages.dangerouspress.org/tulsa-star/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "twin-city-star",
+      "title": "Twin City Star",
+      "issue_count": 399,
+      "uploaded_count": 399,
+      "manifest_path": "manifests/twin-city-star.json",
+      "remote_manifest": "https://pages.dangerouspress.org/twin-city-star/manifests/paper-manifest.json"
     },
     {
       "slug": "washington-bee",

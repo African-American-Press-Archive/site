@@ -215,6 +215,30 @@ papers:
     sources:
     - type: preoptimized_jpg
       folder: /Volumes/Lightning/chronicling-america/western-outlook
+  iowa-bystander:
+    title: Iowa Bystander
+    path: iowa-bystander
+    base_url: https://pages.dangerouspress.org/iowa-bystander
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025186
+  twin-city-star:
+    title: Twin City Star
+    path: twin-city-star
+    base_url: https://pages.dangerouspress.org/twin-city-star
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn90060427
+  muskogee-cimeter:
+    title: Muskogee Cimeter
+    path: muskogee-cimeter
+    base_url: https://pages.dangerouspress.org/muskogee-cimeter
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025060
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
