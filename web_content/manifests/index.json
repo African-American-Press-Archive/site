@@ -20,8 +20,8 @@
     {
       "slug": "chicago-defender",
       "title": "Chicago Defender",
-      "issue_count": 821,
-      "uploaded_count": 821,
+      "issue_count": 874,
+      "uploaded_count": 874,
       "manifest_path": "manifests/chicago-defender.json",
       "remote_manifest": "https://pages.dangerouspress.org/chicago-defender/manifests/paper-manifest.json"
     },
