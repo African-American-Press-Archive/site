@@ -4,8 +4,8 @@
     {
       "slug": "baltimore-afro-american",
       "title": "Baltimore Afro-American",
-      "issue_count": 394,
-      "uploaded_count": 394,
+      "issue_count": 425,
+      "uploaded_count": 425,
       "manifest_path": "manifests/baltimore-afro-american.json",
       "remote_manifest": "https://pages.dangerouspress.org/baltimore-afro-american/manifests/paper-manifest.json"
     },
@@ -20,8 +20,8 @@
     {
       "slug": "chicago-defender",
       "title": "Chicago Defender",
-      "issue_count": 953,
-      "uploaded_count": 953,
+      "issue_count": 979,
+      "uploaded_count": 979,
       "manifest_path": "manifests/chicago-defender.json",
       "remote_manifest": "https://pages.dangerouspress.org/chicago-defender/manifests/paper-manifest.json"
     },
