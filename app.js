@@ -1139,6 +1139,9 @@ function setupPageViewer() {
 async function loadPage(pageIndex, transition = 'next') {
     if (pageIndex < 0 || pageIndex >= state.currentPages.length) return;
 
+    // Reset zoom and pan when changing pages
+    resetZoom();
+
     state.currentPageIndex = pageIndex;
     const pagePath = state.currentPages[pageIndex];
     const fullPath = resolveAssetPath(pagePath);
@@ -1341,8 +1344,18 @@ function toggleThumbnails() {
 }
 
 // ==================== ZOOM CONTROLS ====================
+// Pan state
+const panState = {
+    isDragging: false,
+    startX: 0,
+    startY: 0,
+    translateX: 0,
+    translateY: 0
+};
+
 function zoomImage(direction) {
     const image = document.getElementById('viewer-image');
+    const wrapper = document.getElementById('image-wrapper');
 
     if (direction > 0) {
         state.zoomLevel = Math.min(state.zoomLevel * 1.25, 3);
@@ -1350,15 +1363,98 @@ function zoomImage(direction) {
         state.zoomLevel = Math.max(state.zoomLevel / 1.25, 1);
     }
 
-    image.style.transform = `scale(${state.zoomLevel})`;
-    image.style.cursor = state.zoomLevel > 1 ? 'zoom-out' : 'zoom-in';
+    // Reset pan when zooming out to 1x
+    if (state.zoomLevel === 1) {
+        panState.translateX = 0;
+        panState.translateY = 0;
+    }
+
+    updateImageTransform();
+
+    // Update cursor and enable/disable dragging
+    if (state.zoomLevel > 1) {
+        image.style.cursor = 'grab';
+        wrapper.style.overflow = 'hidden';
+    } else {
+        image.style.cursor = 'zoom-in';
+        wrapper.style.overflow = 'auto';
+    }
 }
 
 function resetZoom() {
     state.zoomLevel = 1;
+    panState.translateX = 0;
+    panState.translateY = 0;
+
     const image = document.getElementById('viewer-image');
-    image.style.transform = 'scale(1)';
+    const wrapper = document.getElementById('image-wrapper');
+
+    updateImageTransform();
     image.style.cursor = 'zoom-in';
+    wrapper.style.overflow = 'auto';
+}
+
+function updateImageTransform() {
+    const image = document.getElementById('viewer-image');
+    image.style.transform = `scale(${state.zoomLevel}) translate(${panState.translateX}px, ${panState.translateY}px)`;
+}
+
+// Pan handlers
+function initPanHandlers() {
+    const image = document.getElementById('viewer-image');
+    if (!image) return;
+
+    image.addEventListener('mousedown', (e) => {
+        if (state.zoomLevel <= 1) return;
+
+        panState.isDragging = true;
+        panState.startX = e.clientX - panState.translateX;
+        panState.startY = e.clientY - panState.translateY;
+        image.style.cursor = 'grabbing';
+        e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (!panState.isDragging || state.zoomLevel <= 1) return;
+
+        panState.translateX = e.clientX - panState.startX;
+        panState.translateY = e.clientY - panState.startY;
+        updateImageTransform();
+        e.preventDefault();
+    });
+
+    document.addEventListener('mouseup', () => {
+        if (panState.isDragging) {
+            panState.isDragging = false;
+            const image = document.getElementById('viewer-image');
+            if (image && state.zoomLevel > 1) {
+                image.style.cursor = 'grab';
+            }
+        }
+    });
+
+    // Touch support for mobile
+    image.addEventListener('touchstart', (e) => {
+        if (state.zoomLevel <= 1 || e.touches.length !== 1) return;
+
+        panState.isDragging = true;
+        panState.startX = e.touches[0].clientX - panState.translateX;
+        panState.startY = e.touches[0].clientY - panState.translateY;
+        e.preventDefault();
+    });
+
+    image.addEventListener('touchmove', (e) => {
+        if (!panState.isDragging || state.zoomLevel <= 1 || e.touches.length !== 1) return;
+
+        panState.translateX = e.touches[0].clientX - panState.startX;
+        panState.translateY = e.touches[0].clientY - panState.startY;
+        updateImageTransform();
+        e.preventDefault();
+    });
+
+    image.addEventListener('touchend', () => {
+        panState.isDragging = false;
+    });
 }
 
 // ==================== UTILITY FUNCTIONS ====================
@@ -1624,18 +1720,34 @@ function setupEventListeners() {
     document.getElementById('zoom-out-btn')?.addEventListener('click', () => zoomImage(-1));
     document.getElementById('zoom-reset-btn')?.addEventListener('click', resetZoom);
 
-    // Image click to zoom
+    // Image click to zoom (but not after dragging)
     const viewerImage = document.getElementById('viewer-image');
     if (viewerImage) {
-        viewerImage.addEventListener('click', () => {
-            if (state.zoomLevel === 1) {
-                zoomImage(1);
-            } else {
-                resetZoom();
+        let clickStartX, clickStartY;
+
+        viewerImage.addEventListener('mousedown', (e) => {
+            clickStartX = e.clientX;
+            clickStartY = e.clientY;
+        });
+
+        viewerImage.addEventListener('click', (e) => {
+            // Only trigger zoom if mouse didn't move much (wasn't a drag)
+            const deltaX = Math.abs(e.clientX - clickStartX);
+            const deltaY = Math.abs(e.clientY - clickStartY);
+
+            if (deltaX < 5 && deltaY < 5) {
+                if (state.zoomLevel === 1) {
+                    zoomImage(1);
+                } else {
+                    resetZoom();
+                }
             }
         });
 
         viewerImage.addEventListener('dblclick', toggleFullscreen);
+
+        // Initialize pan handlers
+        initPanHandlers();
     }
 
     // Keyboard navigation
