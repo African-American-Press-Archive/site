@@ -680,14 +680,16 @@ header.scrolled h1 {
     padding: 1.25rem 1.1rem 1.4rem;
     color: white;
     letter-spacing: 0.04em;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
 }
 
 .hero-card-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 800;
     margin-bottom: 0.35rem;
-    color: var(--unc-tile-teal);
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6);
 }
 
 .hero-card-meta {
