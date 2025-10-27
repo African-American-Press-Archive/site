@@ -612,11 +612,28 @@ function selectHeroIssues(sortedIssues) {
         pool = sortedIssues;
     }
 
-    const maxItems = Math.min(6, pool.length);
-    const minItems = Math.min(3, pool.length);
+    // Group issues by newspaper
+    const issuesByPaper = new Map();
+    for (const issue of pool) {
+        if (!issuesByPaper.has(issue.title)) {
+            issuesByPaper.set(issue.title, []);
+        }
+        issuesByPaper.get(issue.title).push(issue);
+    }
+
+    // Select one random issue from each newspaper
+    const selectedIssues = [];
+    for (const [title, issues] of issuesByPaper) {
+        const randomIndex = Math.floor(Math.random() * issues.length);
+        selectedIssues.push(issues[randomIndex]);
+    }
+
+    // Shuffle and limit to desired number
+    const maxItems = Math.min(6, selectedIssues.length);
+    const minItems = Math.min(3, selectedIssues.length);
     const desired = Math.max(minItems, Math.min(5, maxItems));
 
-    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    const shuffled = [...selectedIssues].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, desired);
 }
 
@@ -636,8 +653,8 @@ function createHeroCard(issue) {
     figure.innerHTML = `
         <img src="${thumbPath}" alt="${displayTitle} - ${date}" loading="lazy" />
         <figcaption>
-            <div class="hero-card-title">${displayTitle}</div>
             <div class="hero-card-meta">${date}</div>
+            <div class="hero-card-title">${displayTitle}</div>
         </figcaption>
     `;
 
