@@ -141,10 +141,68 @@ async function loadManifest() {
         initializeFilters();
         refreshTimelineAvailability();
 
-        const initializedRandomView = initializeRandomDefaultView();
-        if (!initializedRandomView) {
-            updateStats();
-            renderGrid();
+        // Check for URL parameters (e.g., from newspaper page links)
+        const urlParams = new URLSearchParams(window.location.search);
+        const paperParam = urlParams.get('paper');
+        const dateParam = urlParams.get('date');
+
+        let urlParamsHandled = false;
+
+        if (dateParam) {
+            // If we have a date, filter to that specific issue
+            const issue = state.allIssues.find(i => i.id.includes(dateParam));
+            if (issue) {
+                // Set filters to match the issue
+                if (paperParam) {
+                    // Clear other papers, select only this one
+                    state.selectedPapers.clear();
+                    state.selectedPapers.add(issue.title);
+                }
+
+                // Extract year and month from date
+                const [year, month] = dateParam.split('-');
+                state.selectedYear = year;
+                state.selectedMonth = month;
+
+                // Update UI
+                updateStats();
+                renderGrid();
+
+                // Find and open the viewer for this issue
+                const issueIndex = state.displayedIssues.findIndex(item => item.id.includes(dateParam));
+                if (issueIndex !== -1) {
+                    openViewer(issueIndex);
+                }
+
+                urlParamsHandled = true;
+            }
+        } else if (paperParam) {
+            // Just filter by paper
+            const paperTitle = paperParam.split('-').map(word =>
+                word.charAt(0).toUpperCase() + word.slice(1)
+            ).join(' ');
+
+            // Try to find matching paper
+            const matchingIssue = state.allIssues.find(i =>
+                i.title.toLowerCase().replace(/[.\s]/g, '-') === paperParam ||
+                i.title.toLowerCase().includes(paperParam.replace(/-/g, ' '))
+            );
+
+            if (matchingIssue) {
+                state.selectedPapers.clear();
+                state.selectedPapers.add(matchingIssue.title);
+                updateStats();
+                renderGrid();
+                urlParamsHandled = true;
+            }
+        }
+
+        if (!urlParamsHandled) {
+            const initializedRandomView = initializeRandomDefaultView();
+            if (!initializedRandomView) {
+                updateStats();
+                renderGrid();
+            }
         }
 
         // Hide loading, show content
