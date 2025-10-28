@@ -683,18 +683,18 @@ header.scrolled h1 {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
 }
 
+.hero-card-meta {
+    font-size: 0.8rem;
+    opacity: 0.85;
+    margin-bottom: 0.35rem;
+}
+
 .hero-card-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     font-weight: 800;
-    margin-bottom: 0.35rem;
     color: white;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6);
-}
-
-.hero-card-meta {
-    font-size: 0.8rem;
-    opacity: 0.85;
 }
 
 @media (max-width: 640px) {
