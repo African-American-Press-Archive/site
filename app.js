@@ -590,7 +590,8 @@ function getHeroPeriodLabel() {
     if (state.selectedYear) {
         return `${state.selectedYear}`;
     }
-    return 'Archive Highlights';
+    // When no filters applied, show "This Week in History"
+    return 'This Week in History';
 }
 
 function selectHeroIssues(sortedIssues) {
@@ -606,6 +607,28 @@ function selectHeroIssues(sortedIssues) {
     } else if (state.selectedYear) {
         const yearPrefix = `${state.selectedYear}-`;
         pool = sortedIssues.filter(issue => issue.date.startsWith(yearPrefix));
+    } else {
+        // When no filters: show "This Week in History" - issues from current week but different years
+        const today = new Date();
+        const currentMonth = String(today.getMonth() + 1).padStart(2, '0');
+        const currentDay = today.getDate();
+
+        // Get issues from approximately this week (within 7 days)
+        pool = sortedIssues.filter(issue => {
+            const [year, month, day] = issue.date.split('-');
+            if (month !== currentMonth) return false;
+
+            const issueDay = parseInt(day);
+            const dayDiff = Math.abs(issueDay - currentDay);
+
+            // Include issues within 7 days
+            return dayDiff <= 7;
+        });
+
+        // If no matches in exact week, expand to whole month
+        if (pool.length < 3) {
+            pool = sortedIssues.filter(issue => issue.date.substring(5, 7) === currentMonth);
+        }
     }
 
     if (!pool.length) {
