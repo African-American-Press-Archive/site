@@ -86,12 +86,32 @@
                     </div>
                 </div>
 
-                <!-- Issues by Year -->
+                <!-- Interactive Calendar Browser -->
                 <div class="glass-card rounded-2xl p-8">
-                    <h3 class="text-2xl font-bold mb-6" style="color: var(--unc-longleaf-pine);">Browse Issues by Year</h3>
+                    <h3 class="text-2xl font-bold mb-6" style="color: var(--unc-longleaf-pine);">Browse Issues</h3>
 
-                    <div class="space-y-6" id="issues-container">
-                        <!-- Issues will be loaded here -->
+                    <!-- Year Selector -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Select Year</label>
+                        <div class="grid grid-cols-5 sm:grid-cols-10 gap-2" id="year-selector">
+                            <!-- Years will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Month Selector -->
+                    <div class="mb-6" id="month-selector-container" style="display: none;">
+                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Select Month</label>
+                        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3" id="month-selector">
+                            <!-- Months will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Issues Display -->
+                    <div id="issues-container" style="display: none;">
+                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);" id="issues-label">Issues</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3" id="issues-grid">
+                            <!-- Issues will be loaded here -->
+                        </div>
                     </div>
                 </div>
             </main>
@@ -99,72 +119,167 @@
     </div>
 
     <script>
-        // Load and display issues
-        async function loadIssues() {
+        let allIssues = [];
+        let issuesByYearMonth = {};
+        let selectedYear = null;
+        let selectedMonth = null;
+
+        const MONTHS = [
+            { num: '01', name: 'January', short: 'Jan' },
+            { num: '02', name: 'February', short: 'Feb' },
+            { num: '03', name: 'March', short: 'Mar' },
+            { num: '04', name: 'April', short: 'Apr' },
+            { num: '05', name: 'May', short: 'May' },
+            { num: '06', name: 'June', short: 'Jun' },
+            { num: '07', name: 'July', short: 'Jul' },
+            { num: '08', name: 'August', short: 'Aug' },
+            { num: '09', name: 'September', short: 'Sep' },
+            { num: '10', name: 'October', short: 'Oct' },
+            { num: '11', name: 'November', short: 'Nov' },
+            { num: '12', name: 'December', short: 'Dec' }
+        ];
+
+        async function loadData() {
             try {
                 const response = await fetch('../web_content/manifest.json');
                 const manifest = await response.json();
 
                 // Filter to Chicago Defender 1910-1929
-                const issues = manifest.filter(issue =>
+                allIssues = manifest.filter(issue =>
                     issue.title === 'Chicago Defender' &&
                     issue.date >= '1910' && issue.date <= '1929'
                 );
 
-                // Group by year
-                const issuesByYear = {};
-                issues.forEach(issue => {
-                    const year = issue.date.substring(0, 4);
-                    if (!issuesByYear[year]) {
-                        issuesByYear[year] = [];
+                // Group by year and month
+                allIssues.forEach(issue => {
+                    const [year, month] = issue.date.split('-');
+                    const key = `${year}-${month}`;
+                    if (!issuesByYearMonth[key]) {
+                        issuesByYearMonth[key] = [];
                     }
-                    issuesByYear[year].push(issue);
+                    issuesByYearMonth[key].push(issue);
                 });
 
-                // Render
-                const container = document.getElementById('issues-container');
-                const years = Object.keys(issuesByYear).sort().reverse();
-
-                years.forEach(year => {
-                    const yearIssues = issuesByYear[year];
-
-                    const yearSection = document.createElement('div');
-                    yearSection.className = 'year-section';
-
-                    yearSection.innerHTML = `
-                        <h4 class="text-xl font-bold mb-3" style="color: var(--unc-tile-teal);">
-                            ${year} <span class="text-sm font-normal" style="color: var(--text-muted);">(${yearIssues.length} issues)</span>
-                        </h4>
-                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                            ${yearIssues.map(issue => {
-                                const date = new Date(issue.date + 'T00:00:00');
-                                const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-                                const dateStr = monthNames[date.getMonth()] + ' ' + date.getDate();
-
-                                return `
-                                    <a href="../?paper=chicago-defender&date=${issue.date}"
-                                       class="issue-link p-3 rounded-lg text-center transition-all hover:scale-105"
-                                       style="background: var(--bg-hover); border: 1px solid var(--border-color); text-decoration: none; display: block;">
-                                        <div class="font-semibold" style="color: var(--text-primary);">${dateStr}</div>
-                                        <div class="text-xs mt-1" style="color: var(--text-muted);">${issue.pages} pages</div>
-                                    </a>
-                                `;
-                            }).join('')}
-                        </div>
-                    `;
-
-                    container.appendChild(yearSection);
-                });
+                renderYears();
 
             } catch (error) {
-                console.error('Error loading issues:', error);
-                document.getElementById('issues-container').innerHTML =
-                    '<p style="color: var(--text-muted);">Error loading issues. Please try again later.</p>';
+                console.error('Error loading data:', error);
             }
         }
 
-        // Load issues on page load
-        loadIssues();
+        function renderYears() {
+            const yearSelector = document.getElementById('year-selector');
+            const years = [...new Set(allIssues.map(i => i.date.substring(0, 4)))].sort();
+
+            yearSelector.innerHTML = years.map(year => {
+                const issueCount = allIssues.filter(i => i.date.startsWith(year)).length;
+                return `
+                    <button onclick="selectYear('${year}')"
+                            class="year-btn px-4 py-3 rounded-lg font-semibold transition-all hover:scale-105"
+                            data-year="${year}"
+                            style="background: var(--bg-hover); border: 2px solid var(--border-color); color: var(--text-primary);">
+                        <div class="text-base">${year}</div>
+                        <div class="text-xs opacity-75">${issueCount}</div>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function selectYear(year) {
+            selectedYear = year;
+            selectedMonth = null;
+
+            // Update year button styling
+            document.querySelectorAll('.year-btn').forEach(btn => {
+                if (btn.dataset.year === year) {
+                    btn.style.background = 'var(--unc-tile-teal)';
+                    btn.style.borderColor = 'var(--unc-tile-teal)';
+                    btn.style.color = 'white';
+                } else {
+                    btn.style.background = 'var(--bg-hover)';
+                    btn.style.borderColor = 'var(--border-color)';
+                    btn.style.color = 'var(--text-primary)';
+                }
+            });
+
+            renderMonths(year);
+            document.getElementById('month-selector-container').style.display = 'block';
+            document.getElementById('issues-container').style.display = 'none';
+        }
+
+        function renderMonths(year) {
+            const monthSelector = document.getElementById('month-selector');
+
+            // Find which months have issues
+            const monthsWithIssues = new Set();
+            Object.keys(issuesByYearMonth).forEach(key => {
+                if (key.startsWith(year)) {
+                    const month = key.split('-')[1];
+                    monthsWithIssues.add(month);
+                }
+            });
+
+            monthSelector.innerHTML = MONTHS.map(month => {
+                const hasIssues = monthsWithIssues.has(month.num);
+                const issueCount = hasIssues ? issuesByYearMonth[`${year}-${month.num}`].length : 0;
+
+                return `
+                    <button onclick="${hasIssues ? `selectMonth('${month.num}')` : 'void(0)'}"
+                            class="month-btn p-4 rounded-lg transition-all ${hasIssues ? 'hover:scale-105 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
+                            data-month="${month.num}"
+                            style="background: var(--bg-hover); border: 2px solid var(--border-color); ${hasIssues ? '' : 'pointer-events: none;'}">
+                        <div class="font-semibold" style="color: var(--text-primary);">${month.short}</div>
+                        ${hasIssues ? `<div class="text-xs mt-1" style="color: var(--text-muted);">${issueCount} issues</div>` : ''}
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function selectMonth(month) {
+            selectedMonth = month;
+
+            // Update month button styling
+            document.querySelectorAll('.month-btn').forEach(btn => {
+                if (btn.dataset.month === month) {
+                    btn.style.background = 'var(--unc-tile-teal)';
+                    btn.style.borderColor = 'var(--unc-tile-teal)';
+                    btn.style.color = 'white';
+                } else {
+                    btn.style.background = 'var(--bg-hover)';
+                    btn.style.borderColor = 'var(--border-color)';
+                    btn.style.color = 'var(--text-primary)';
+                }
+            });
+
+            renderIssues(selectedYear, month);
+        }
+
+        function renderIssues(year, month) {
+            const key = `${year}-${month}`;
+            const issues = issuesByYearMonth[key] || [];
+
+            const monthName = MONTHS.find(m => m.num === month).name;
+            document.getElementById('issues-label').textContent = `${monthName} ${year}`;
+
+            const issuesGrid = document.getElementById('issues-grid');
+            issuesGrid.innerHTML = issues.map(issue => {
+                const day = issue.date.split('-')[2];
+
+                return `
+                    <a href="../?paper=chicago-defender&date=${issue.date}"
+                       class="issue-card p-4 rounded-lg text-center transition-all hover:scale-105 hover:shadow-lg"
+                       style="background: var(--bg-hover); border: 2px solid var(--border-color); text-decoration: none; display: block;">
+                        <div class="text-3xl font-bold mb-1" style="color: var(--unc-tile-teal);">${parseInt(day)}</div>
+                        <div class="text-xs" style="color: var(--text-muted);">${issue.pages} pages</div>
+                    </a>
+                `;
+            }).join('');
+
+            document.getElementById('issues-container').style.display = 'block';
+        }
+
+        // Load data on page load
+        loadData();
     </script>
 </body>
 </html>
