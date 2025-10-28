@@ -239,6 +239,15 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn83025060
+  pittsburgh-courier:
+    title: Pittsburgh Courier
+    path: pittsburgh-courier
+    base_url: https://pages.dangerouspress.org/pittsburgh-courier
+    sources:
+    - type: pdf
+      folder: /Volumes/Lightning/chronicling-america/pq-defender/courier_pdfs
+      sample_filename: Pittsburgh-Courier_1911-03-25.pdf
+      recursive: false  # Only scan root directory, ignore subdirectories with split pages
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive

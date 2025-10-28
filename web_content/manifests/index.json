@@ -146,6 +146,14 @@
       "remote_manifest": "https://pages.dangerouspress.org/phoenix-tribune/manifests/paper-manifest.json"
     },
     {
+      "slug": "pittsburgh-courier",
+      "title": "Pittsburgh Courier",
+      "issue_count": 36,
+      "uploaded_count": 16,
+      "manifest_path": "manifests/pittsburgh-courier.json",
+      "remote_manifest": "https://pages.dangerouspress.org/pittsburgh-courier/manifests/paper-manifest.json"
+    },
+    {
       "slug": "raleigh-independent",
       "title": "Raleigh Independent",
       "issue_count": 3,
