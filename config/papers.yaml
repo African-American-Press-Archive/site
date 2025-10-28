@@ -45,7 +45,7 @@ papers:
     base_url: https://pages.dangerouspress.org/baltimore-afro-american
     sources:
     - type: pdf
-      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/Documents/black-press-downloads/baltimoreafroamerican_pdfs
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/Documents/black-press-downloads/baltimoreafroamerican_pdfs_processed
       sample_filename: 1910-01-01_01.pdf
   broad-ax:
     title: Broad Ax
