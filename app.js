@@ -915,6 +915,7 @@ function applyFilters() {
 
     state.currentPage = 0;
     initializeTimeline();
+    updateTimelineLabel();  // Ensure heading reflects current selected date range
     updateStats();
     renderGrid();
 }

@@ -207,6 +207,36 @@ body::after {
     box-shadow: var(--shadow-md);
 }
 
+/* ==================== SORT DROPDOWN ==================== */
+#sort-select {
+    background: var(--bg-card) !important;
+    border: 2px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+    padding: 0.75rem 1.25rem !important;
+    border-radius: 999px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-sm) !important;
+}
+
+#sort-select:hover {
+    border-color: var(--unc-tile-teal) !important;
+    box-shadow: var(--shadow-md) !important;
+    transform: translateY(-1px);
+}
+
+#sort-select:active {
+    transform: translateY(0);
+}
+
+#sort-select:focus {
+    outline: none;
+    border-color: var(--unc-tile-teal) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
 /* ==================== HEADER ==================== */
 header {
     position: sticky;

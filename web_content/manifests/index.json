@@ -92,8 +92,8 @@
     {
       "slug": "iowa-bystander",
       "title": "Iowa Bystander",
-      "issue_count": 315,
-      "uploaded_count": 315,
+      "issue_count": 617,
+      "uploaded_count": 617,
       "manifest_path": "manifests/iowa-bystander.json",
       "remote_manifest": "https://pages.dangerouspress.org/iowa-bystander/manifests/paper-manifest.json"
     },
