@@ -148,8 +148,8 @@
     {
       "slug": "pittsburgh-courier",
       "title": "Pittsburgh Courier",
-      "issue_count": 36,
-      "uploaded_count": 16,
+      "issue_count": 61,
+      "uploaded_count": 41,
       "manifest_path": "manifests/pittsburgh-courier.json",
       "remote_manifest": "https://pages.dangerouspress.org/pittsburgh-courier/manifests/paper-manifest.json"
     },
@@ -232,6 +232,14 @@
       "uploaded_count": 114,
       "manifest_path": "manifests/wichita-searchlight.json",
       "remote_manifest": "https://pages.dangerouspress.org/wichita-searchlight/manifests/paper-manifest.json"
+    },
+    {
+      "slug": "wisconsin-weekly-blade",
+      "title": "Wisconsin Weekly Blade",
+      "issue_count": 143,
+      "uploaded_count": 143,
+      "manifest_path": "manifests/wisconsin-weekly-blade.json",
+      "remote_manifest": "https://pages.dangerouspress.org/wisconsin-weekly-blade/manifests/paper-manifest.json"
     }
   ]
 }

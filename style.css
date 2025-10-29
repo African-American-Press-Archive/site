@@ -263,7 +263,11 @@ header.scrolled h1 {
 
 /* ==================== SEARCH INPUT ==================== */
 .search-input {
-    transition: var(--transition-base);
+    display: none;
+}
+
+.search-input + svg {
+    display: none;
 }
 
 .search-input:focus {
@@ -280,12 +284,31 @@ header.scrolled h1 {
 /* ==================== DECO TIMELINE CONTROLS ==================== */
 .deco-link {
     position: relative;
+    letter-spacing: normal;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--text-primary) !important;
+    transition: var(--transition-base);
+}
+
+.deco-link:hover {
+    opacity: 0.8;
+}
+
+/* Navigation link styling - restore old aggressive style */
+nav .deco-link {
     letter-spacing: 0.35em;
     text-transform: uppercase;
     font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-variant: normal;
+    font-size: inherit;
+    color: var(--text-secondary) !important;
 }
 
-.deco-link::after {
+nav .deco-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -297,8 +320,12 @@ header.scrolled h1 {
     transition: var(--transition-base);
 }
 
-.deco-link:hover::after {
+nav .deco-link:hover::after {
     opacity: 0.8;
+}
+
+nav .deco-link:hover {
+    opacity: 1;
 }
 
 .year-carousel {

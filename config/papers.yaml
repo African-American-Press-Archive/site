@@ -1,4 +1,12 @@
 papers:
+  wisconsin-weekly-blade:
+    title: Wisconsin Weekly Blade
+    path: wisconsin-weekly-blade
+    base_url: https://pages.dangerouspress.org/wisconsin-weekly-blade
+    sources:
+    - type: jp2 
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84025842
   phoenix-tribune:
     title: Phoenix Tribune
     path: phoenix-tribune
@@ -223,6 +231,9 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn83025186
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn85049804
   twin-city-star:
     title: Twin City Star
     path: twin-city-star
