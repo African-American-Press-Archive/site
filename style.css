@@ -297,18 +297,18 @@ header.scrolled h1 {
     opacity: 0.8;
 }
 
-/* Navigation link styling - restore old aggressive style */
-nav .deco-link {
+/* Header link styling - restore old aggressive style */
+header .deco-link {
     letter-spacing: 0.35em;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
     font-variant: normal;
     font-size: inherit;
-    color: var(--text-secondary) !important;
+    color: inherit !important;
 }
 
-nav .deco-link::after {
+header .deco-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -320,11 +320,11 @@ nav .deco-link::after {
     transition: var(--transition-base);
 }
 
-nav .deco-link:hover::after {
+header .deco-link:hover::after {
     opacity: 0.8;
 }
 
-nav .deco-link:hover {
+header .deco-link:hover {
     opacity: 1;
 }
 
