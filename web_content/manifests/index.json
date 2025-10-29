@@ -148,8 +148,8 @@
     {
       "slug": "pittsburgh-courier",
       "title": "Pittsburgh Courier",
-      "issue_count": 79,
-      "uploaded_count": 59,
+      "issue_count": 115,
+      "uploaded_count": 95,
       "manifest_path": "manifests/pittsburgh-courier.json",
       "remote_manifest": "https://pages.dangerouspress.org/pittsburgh-courier/manifests/paper-manifest.json"
     },

@@ -561,6 +561,7 @@ function initializeRandomDefaultView() {
     }
 
     applyFilters();
+    updateTimelineLabel();  // Ensure heading shows selected month/year on initial load
 
     return true;
 }
