@@ -3,6 +3,21 @@
   "title": "Chicago Defender",
   "issues": [
     {
+      "id": "1909-07-31_chicago-defender",
+      "date": "1909-07-31",
+      "title": "Chicago Defender",
+      "issue_thumb": "https://pages.dangerouspress.org/chicago-defender/1909/1909-07-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/chicago-defender/1909/1909-07-31/page_01.jpg",
+        "https://pages.dangerouspress.org/chicago-defender/1909/1909-07-31/page_02.jpg",
+        "https://pages.dangerouspress.org/chicago-defender/1909/1909-07-31/page_03.jpg",
+        "https://pages.dangerouspress.org/chicago-defender/1909/1909-07-31/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2025-10-30T21:28:33Z"
+    },
+    {
       "id": "1910-01-01_chicago-defender",
       "date": "1910-01-01",
       "title": "Chicago Defender",

@@ -3,6 +3,2250 @@
   "title": "Cleveland Gazette",
   "issues": [
     {
+      "id": "1905-03-04_sn83035387",
+      "date": "1905-03-04",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-03-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-03-04/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-03-04/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-03-04/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-03-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-04-08_sn83035387",
+      "date": "1905-04-08",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-04-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-04-08/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-04-08/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-04-08/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-04-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-05-06_sn83035387",
+      "date": "1905-05-06",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-06/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-06/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-06/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-06/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-05-20_sn83035387",
+      "date": "1905-05-20",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-20/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-20/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-20/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-05-27_sn83035387",
+      "date": "1905-05-27",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-27/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-27/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-27/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-05-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-09-09_sn83035387",
+      "date": "1905-09-09",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-09/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-09/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-09/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-09/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-09-16_sn83035387",
+      "date": "1905-09-16",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-16/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-16/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-16/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-09-23_sn83035387",
+      "date": "1905-09-23",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-23/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-23/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-23/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-09-30_sn83035387",
+      "date": "1905-09-30",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-30/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-30/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-30/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-30/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-09-30/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-10-07_sn83035387",
+      "date": "1905-10-07",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-07/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-07/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-07/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-10-14_sn83035387",
+      "date": "1905-10-14",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-14/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-14/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-14/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-10-21_sn83035387",
+      "date": "1905-10-21",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-21/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-21/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-21/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-10-21/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-11-18_sn83035387",
+      "date": "1905-11-18",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-18/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-18/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-18/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-11-25_sn83035387",
+      "date": "1905-11-25",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-25/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-25/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-25/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-11-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-12-09_sn83035387",
+      "date": "1905-12-09",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-09/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-09/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-09/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-09/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1905-12-23_sn83035387",
+      "date": "1905-12-23",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-23/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-23/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-23/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1905/1905-12-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:28:46Z"
+    },
+    {
+      "id": "1906-01-13_sn83035387",
+      "date": "1906-01-13",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-01-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-01-13/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-01-13/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-01-13/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-01-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-02-03_sn83035387",
+      "date": "1906-02-03",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-03/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-03/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-03/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-03/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-02-24_sn83035387",
+      "date": "1906-02-24",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-24/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-24/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-24/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-24/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-02-24/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-03-10_sn83035387",
+      "date": "1906-03-10",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-10/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-10/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-10/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-10/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-03-17_sn83035387",
+      "date": "1906-03-17",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-17/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-17/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-17/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-17/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-17/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-03-31_sn83035387",
+      "date": "1906-03-31",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-31/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-31/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-31/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-03-31/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-04-07_sn83035387",
+      "date": "1906-04-07",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-07/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-07/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-07/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-04-14_sn83035387",
+      "date": "1906-04-14",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-14/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-14/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-14/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-04-28_sn83035387",
+      "date": "1906-04-28",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-28/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-28/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-28/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-04-28/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-05-26_sn83035387",
+      "date": "1906-05-26",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-05-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-05-26/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-05-26/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-05-26/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-05-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-06-16_sn83035387",
+      "date": "1906-06-16",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-16/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-16/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-16/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-06-23_sn83035387",
+      "date": "1906-06-23",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-23/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-23/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-23/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-06-30_sn83035387",
+      "date": "1906-06-30",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-30/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-30/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-30/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-30/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-06-30/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-07-07_sn83035387",
+      "date": "1906-07-07",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-07/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-07/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-07/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-07-14_sn83035387",
+      "date": "1906-07-14",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-14/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-14/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-14/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-07-21_sn83035387",
+      "date": "1906-07-21",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-21/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-21/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-21/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-21/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-07-28_sn83035387",
+      "date": "1906-07-28",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-28/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-28/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-28/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-07-28/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-08-11_sn83035387",
+      "date": "1906-08-11",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-11/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-11/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-11/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-11/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-08-18_sn83035387",
+      "date": "1906-08-18",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-18/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-18/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-18/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-08-25_sn83035387",
+      "date": "1906-08-25",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-25/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-25/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-25/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-08-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-09-01_sn83035387",
+      "date": "1906-09-01",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-01/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-01/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-01/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-01/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-01/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-09-22_sn83035387",
+      "date": "1906-09-22",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-22/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-22/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-22/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-09-29_sn83035387",
+      "date": "1906-09-29",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-29/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-29/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-29/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-09-29/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-10-06_sn83035387",
+      "date": "1906-10-06",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-06/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-06/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-06/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-06/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-10-20_sn83035387",
+      "date": "1906-10-20",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-20/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-20/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-20/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-10-27_sn83035387",
+      "date": "1906-10-27",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-27/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-27/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-27/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-10-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-11-03_sn83035387",
+      "date": "1906-11-03",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-11-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-11-03/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-11-03/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-11-03/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-11-03/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-12-08_sn83035387",
+      "date": "1906-12-08",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-08/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-08/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-08/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-12-15_sn83035387",
+      "date": "1906-12-15",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-15/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-15/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-15/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-15/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-12-22_sn83035387",
+      "date": "1906-12-22",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-22/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-22/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-22/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1906-12-29_sn83035387",
+      "date": "1906-12-29",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-29/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-29/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-29/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1906/1906-12-29/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:10Z"
+    },
+    {
+      "id": "1907-01-19_sn83035387",
+      "date": "1907-01-19",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-19/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-19/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-19/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-19/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-01-26_sn83035387",
+      "date": "1907-01-26",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-26/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-26/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-26/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-01-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-02-09_sn83035387",
+      "date": "1907-02-09",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-09/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-09/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-09/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-09/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-02-16_sn83035387",
+      "date": "1907-02-16",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-16/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-16/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-16/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-02-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-03-23_sn83035387",
+      "date": "1907-03-23",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-03-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-03-23/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-03-23/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-03-23/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-03-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-04-06_sn83035387",
+      "date": "1907-04-06",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-06/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-06/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-06/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-06/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-04-13_sn83035387",
+      "date": "1907-04-13",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-13/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-13/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-13/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-04-20_sn83035387",
+      "date": "1907-04-20",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-20/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-20/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-20/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-04-27_sn83035387",
+      "date": "1907-04-27",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-27/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-27/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-27/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-04-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-05-04_sn83035387",
+      "date": "1907-05-04",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-04/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-04/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-04/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-05-11_sn83035387",
+      "date": "1907-05-11",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-11/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-11/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-11/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-05-11/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-06-15_sn83035387",
+      "date": "1907-06-15",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-15/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-15/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-15/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-15/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-06-29_sn83035387",
+      "date": "1907-06-29",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-29/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-29/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-29/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-06-29/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-07-20_sn83035387",
+      "date": "1907-07-20",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-20/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-20/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-20/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-07-27_sn83035387",
+      "date": "1907-07-27",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-27/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-27/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-27/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-07-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-08-03_sn83035387",
+      "date": "1907-08-03",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-08-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-08-03/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-08-03/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-08-03/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-08-03/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-09-07_sn83035387",
+      "date": "1907-09-07",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-07/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-07/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-07/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-09-21_sn83035387",
+      "date": "1907-09-21",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-21/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-21/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-21/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-21/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-09-28_sn83035387",
+      "date": "1907-09-28",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-28/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-28/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-28/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-09-28/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-10-05_sn83035387",
+      "date": "1907-10-05",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-05/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-05/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-05/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-05/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-05/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-10-12_sn83035387",
+      "date": "1907-10-12",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-12/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-12/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-12/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-12/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-10-12/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-11-16_sn83035387",
+      "date": "1907-11-16",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-16/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-16/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-16/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-11-23_sn83035387",
+      "date": "1907-11-23",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-23/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-23/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-23/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-11-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1907-12-14_sn83035387",
+      "date": "1907-12-14",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-12-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-12-14/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-12-14/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-12-14/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1907/1907-12-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:32Z"
+    },
+    {
+      "id": "1908-01-04_sn83035387",
+      "date": "1908-01-04",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-04/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-04/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-04/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-01-18_sn83035387",
+      "date": "1908-01-18",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-18/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-18/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-18/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-01-25_sn83035387",
+      "date": "1908-01-25",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-25/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-25/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-25/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-01-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-02-01_sn83035387",
+      "date": "1908-02-01",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-01/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-01/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-01/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-01/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-01/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-02-08_sn83035387",
+      "date": "1908-02-08",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-08/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-08/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-08/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-02-15_sn83035387",
+      "date": "1908-02-15",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-15/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-15/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-15/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-15/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-02-29_sn83035387",
+      "date": "1908-02-29",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-29/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-29/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-29/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-02-29/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-03-07_sn83035387",
+      "date": "1908-03-07",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-07/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-07/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-07/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-03-14_sn83035387",
+      "date": "1908-03-14",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-14/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-14/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-14/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-03-28_sn83035387",
+      "date": "1908-03-28",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-28/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-28/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-28/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-03-28/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-04-11_sn83035387",
+      "date": "1908-04-11",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-11/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-11/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-11/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-11/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-04-18_sn83035387",
+      "date": "1908-04-18",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-18/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-18/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-18/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-04-25_sn83035387",
+      "date": "1908-04-25",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-25/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-25/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-25/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-04-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-05-02_sn83035387",
+      "date": "1908-05-02",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-02/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-02/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-02/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-02/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-02/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-05-09_sn83035387",
+      "date": "1908-05-09",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-09/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-09/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-09/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-09/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-05-16_sn83035387",
+      "date": "1908-05-16",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-16/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-16/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-16/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-05-23_sn83035387",
+      "date": "1908-05-23",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-23/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-23/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-23/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-05-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-06-06_sn83035387",
+      "date": "1908-06-06",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-06/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-06/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-06/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-06/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-06-13_sn83035387",
+      "date": "1908-06-13",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-13/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-13/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-13/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-06-27_sn83035387",
+      "date": "1908-06-27",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-27/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-27/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-27/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-06-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-07-04_sn83035387",
+      "date": "1908-07-04",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-04/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-04/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-04/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-07-11_sn83035387",
+      "date": "1908-07-11",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-11/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-11/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-11/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-11/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-07-18_sn83035387",
+      "date": "1908-07-18",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-18/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-18/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-18/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-07-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-08-01_sn83035387",
+      "date": "1908-08-01",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-01/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-01/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-01/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-01/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-01/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-08-08_sn83035387",
+      "date": "1908-08-08",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-08/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-08/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-08/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-08-15_sn83035387",
+      "date": "1908-08-15",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-15/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-15/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-15/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-15/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-08-22_sn83035387",
+      "date": "1908-08-22",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-22/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-22/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-22/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-08-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-09-05_sn83035387",
+      "date": "1908-09-05",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-05/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-05/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-05/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-05/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-05/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-09-19_sn83035387",
+      "date": "1908-09-19",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-19/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-19/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-19/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-09-19/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-10-03_sn83035387",
+      "date": "1908-10-03",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-03/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-03/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-03/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-03/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-10-31_sn83035387",
+      "date": "1908-10-31",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-31/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-31/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-31/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-10-31/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1908-11-14_sn83035387",
+      "date": "1908-11-14",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-11-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-11-14/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-11-14/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-11-14/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1908/1908-11-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:29:59Z"
+    },
+    {
+      "id": "1909-01-02_sn83035387",
+      "date": "1909-01-02",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-02/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-02/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-02/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-02/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-02/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-01-16_sn83035387",
+      "date": "1909-01-16",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-16/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-16/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-16/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-01-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-02-20_sn83035387",
+      "date": "1909-02-20",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-02-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-02-20/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-02-20/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-02-20/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-02-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-03-13_sn83035387",
+      "date": "1909-03-13",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-13/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-13/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-13/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-03-27_sn83035387",
+      "date": "1909-03-27",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-27/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-27/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-27/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-03-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-04-03_sn83035387",
+      "date": "1909-04-03",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-03/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-03/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-03/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-03/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-04-24_sn83035387",
+      "date": "1909-04-24",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-24/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-24/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-24/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-24/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-04-24/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-05-01_sn83035387",
+      "date": "1909-05-01",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-01/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-01/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-01/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-01/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-01/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-05-08_sn83035387",
+      "date": "1909-05-08",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-08/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-08/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-08/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-05-15_sn83035387",
+      "date": "1909-05-15",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-15/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-15/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-15/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-15/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-05-22_sn83035387",
+      "date": "1909-05-22",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-22/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-22/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-22/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-05-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-06-12_sn83035387",
+      "date": "1909-06-12",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-12/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-12/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-12/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-12/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-12/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-06-19_sn83035387",
+      "date": "1909-06-19",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-19/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-19/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-19/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-19/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-06-26_sn83035387",
+      "date": "1909-06-26",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-26/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-26/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-26/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-06-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-07-03_sn83035387",
+      "date": "1909-07-03",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-03/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-03/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-03/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-03/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-07-10_sn83035387",
+      "date": "1909-07-10",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-10/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-10/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-10/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-07-10/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-08-14_sn83035387",
+      "date": "1909-08-14",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-14/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-14/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-14/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-08-21_sn83035387",
+      "date": "1909-08-21",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-21/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-21/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-21/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-08-21/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-09-04_sn83035387",
+      "date": "1909-09-04",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-09-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-09-04/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-09-04/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-09-04/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-09-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-10-09_sn83035387",
+      "date": "1909-10-09",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-09/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-09/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-09/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-09/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-10-16_sn83035387",
+      "date": "1909-10-16",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-16/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-16/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-16/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-10-23_sn83035387",
+      "date": "1909-10-23",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-23/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-23/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-23/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-10-30_sn83035387",
+      "date": "1909-10-30",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-30/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-30/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-30/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-30/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-10-30/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-11-06_sn83035387",
+      "date": "1909-11-06",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-06/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-06/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-06/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-06/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-11-13_sn83035387",
+      "date": "1909-11-13",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-13/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-13/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-13/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-11-27_sn83035387",
+      "date": "1909-11-27",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-27/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-27/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-27/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-11-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-12-11_sn83035387",
+      "date": "1909-12-11",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-11/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-11/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-11/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-11/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-12-18_sn83035387",
+      "date": "1909-12-18",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-18/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-18/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-18/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
+      "id": "1909-12-25_sn83035387",
+      "date": "1909-12-25",
+      "title": "Cleveland Gazette",
+      "issue_thumb": "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-25/page_01.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-25/page_02.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-25/page_03.jpg",
+        "https://pages.dangerouspress.org/cleveland-gazette/1909/1909-12-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "has_ocr": true,
+      "source": "chronicling_america",
+      "uploaded_at": "2025-10-30T21:30:27Z"
+    },
+    {
       "id": "1910-01-01_cleveland-gazette",
       "date": "1910-01-01",
       "title": "Cleveland Gazette",

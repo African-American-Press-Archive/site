@@ -20,16 +20,16 @@
     {
       "slug": "broad-ax",
       "title": "Broad Ax",
-      "issue_count": 922,
-      "uploaded_count": 922,
+      "issue_count": 1031,
+      "uploaded_count": 1031,
       "manifest_path": "manifests/broad-ax.json",
       "remote_manifest": "https://pages.dangerouspress.org/broad-ax/manifests/paper-manifest.json"
     },
     {
       "slug": "chicago-defender",
       "title": "Chicago Defender",
-      "issue_count": 979,
-      "uploaded_count": 979,
+      "issue_count": 980,
+      "uploaded_count": 980,
       "manifest_path": "manifests/chicago-defender.json",
       "remote_manifest": "https://pages.dangerouspress.org/chicago-defender/manifests/paper-manifest.json"
     },
@@ -52,16 +52,16 @@
     {
       "slug": "cleveland-gazette",
       "title": "Cleveland Gazette",
-      "issue_count": 1876,
-      "uploaded_count": 1876,
+      "issue_count": 2008,
+      "uploaded_count": 2008,
       "manifest_path": "manifests/cleveland-gazette.json",
       "remote_manifest": "https://pages.dangerouspress.org/cleveland-gazette/manifests/paper-manifest.json"
     },
     {
       "slug": "colorado-statesman",
       "title": "Colorado Statesman",
-      "issue_count": 756,
-      "uploaded_count": 756,
+      "issue_count": 864,
+      "uploaded_count": 864,
       "manifest_path": "manifests/colorado-statesman.json",
       "remote_manifest": "https://pages.dangerouspress.org/colorado-statesman/manifests/paper-manifest.json"
     },
@@ -92,16 +92,16 @@
     {
       "slug": "indianapolis-freeman",
       "title": "Indianapolis Freeman",
-      "issue_count": 365,
-      "uploaded_count": 365,
+      "issue_count": 482,
+      "uploaded_count": 482,
       "manifest_path": "manifests/indianapolis-freeman.json",
       "remote_manifest": "https://pages.dangerouspress.org/indianapolis-freeman/manifests/paper-manifest.json"
     },
     {
       "slug": "iowa-bystander",
       "title": "Iowa Bystander",
-      "issue_count": 617,
-      "uploaded_count": 617,
+      "issue_count": 737,
+      "uploaded_count": 737,
       "manifest_path": "manifests/iowa-bystander.json",
       "remote_manifest": "https://pages.dangerouspress.org/iowa-bystander/manifests/paper-manifest.json"
     },
@@ -116,24 +116,24 @@
     {
       "slug": "muskogee-cimeter",
       "title": "Muskogee Cimeter",
-      "issue_count": 95,
-      "uploaded_count": 95,
+      "issue_count": 165,
+      "uploaded_count": 165,
       "manifest_path": "manifests/muskogee-cimeter.json",
       "remote_manifest": "https://pages.dangerouspress.org/muskogee-cimeter/manifests/paper-manifest.json"
     },
     {
       "slug": "nashville-globe",
       "title": "Nashville Globe",
-      "issue_count": 311,
-      "uploaded_count": 311,
+      "issue_count": 372,
+      "uploaded_count": 372,
       "manifest_path": "manifests/nashville-globe.json",
       "remote_manifest": "https://pages.dangerouspress.org/nashville-globe/manifests/paper-manifest.json"
     },
     {
       "slug": "new-york-age",
       "title": "New York Age",
-      "issue_count": 1063,
-      "uploaded_count": 1040,
+      "issue_count": 1303,
+      "uploaded_count": 1290,
       "manifest_path": "manifests/new-york-age.json",
       "remote_manifest": "https://pages.dangerouspress.org/new-york-age/manifests/paper-manifest.json"
     },
@@ -157,7 +157,7 @@
       "slug": "pittsburgh-courier",
       "title": "Pittsburgh Courier",
       "issue_count": 115,
-      "uploaded_count": 95,
+      "uploaded_count": 115,
       "manifest_path": "manifests/pittsburgh-courier.json",
       "remote_manifest": "https://pages.dangerouspress.org/pittsburgh-courier/manifests/paper-manifest.json"
     },
@@ -172,16 +172,16 @@
     {
       "slug": "richmond-planet",
       "title": "Richmond Planet",
-      "issue_count": 702,
-      "uploaded_count": 701,
+      "issue_count": 822,
+      "uploaded_count": 821,
       "manifest_path": "manifests/richmond-planet.json",
       "remote_manifest": "https://pages.dangerouspress.org/richmond-planet/manifests/paper-manifest.json"
     },
     {
       "slug": "springfield-forum",
       "title": "Springfield Forum",
-      "issue_count": 196,
-      "uploaded_count": 196,
+      "issue_count": 282,
+      "uploaded_count": 282,
       "manifest_path": "manifests/springfield-forum.json",
       "remote_manifest": "https://pages.dangerouspress.org/springfield-forum/manifests/paper-manifest.json"
     },
@@ -196,8 +196,8 @@
     {
       "slug": "st-paul-appeal",
       "title": "St. Paul Appeal",
-      "issue_count": 725,
-      "uploaded_count": 725,
+      "issue_count": 849,
+      "uploaded_count": 849,
       "manifest_path": "manifests/st-paul-appeal.json",
       "remote_manifest": "https://pages.dangerouspress.org/st-paul-appeal/manifests/paper-manifest.json"
     },
@@ -220,8 +220,8 @@
     {
       "slug": "washington-bee",
       "title": "Washington Bee",
-      "issue_count": 52,
-      "uploaded_count": 52,
+      "issue_count": 101,
+      "uploaded_count": 101,
       "manifest_path": "manifests/washington-bee.json",
       "remote_manifest": "https://pages.dangerouspress.org/washington-bee/manifests/paper-manifest.json"
     },
@@ -244,8 +244,8 @@
     {
       "slug": "wichita-searchlight",
       "title": "Wichita Searchlight",
-      "issue_count": 114,
-      "uploaded_count": 114,
+      "issue_count": 231,
+      "uploaded_count": 231,
       "manifest_path": "manifests/wichita-searchlight.json",
       "remote_manifest": "https://pages.dangerouspress.org/wichita-searchlight/manifests/paper-manifest.json"
     },
