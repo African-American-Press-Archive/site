@@ -198,11 +198,9 @@ async function loadManifest() {
         }
 
         if (!urlParamsHandled) {
-            const initializedRandomView = initializeRandomDefaultView();
-            if (!initializedRandomView) {
-                updateStats();
-                renderGrid();
-            }
+            updateStats();
+            renderGrid();
+            updateTimelineLabel();
         }
 
         // Hide loading, show content
@@ -474,25 +472,26 @@ function scrollMonthIntoView(monthValue) {
 }
 
 function updateTimelineLabel() {
-    const label = document.getElementById('timeline-year-label');
     const gridTitle = document.getElementById('grid-title');
-    if (!label || !gridTitle) {
+    if (!gridTitle) {
         return;
     }
 
     if (!state.selectedYear) {
-        label.textContent = 'All Years';
-        gridTitle.textContent = 'Issues';
+        // Show today's date for "Today in History" grid
+        const today = new Date();
+        const monthInfo = MONTHS.find(m => m.value === String(today.getMonth() + 1).padStart(2, '0'));
+        const monthName = monthInfo ? monthInfo.full : '';
+        const day = today.getDate();
+        gridTitle.textContent = `${monthName} ${day}`;
         return;
     }
 
     if (state.selectedMonth) {
         const monthInfo = MONTHS.find(m => m.value === state.selectedMonth);
         const monthName = monthInfo ? monthInfo.full : state.selectedMonth;
-        label.textContent = `${monthName} ${state.selectedYear}`;
         gridTitle.textContent = `Issues from ${monthName} ${state.selectedYear}`;
     } else {
-        label.textContent = state.selectedYear;
         gridTitle.textContent = `Issues from ${state.selectedYear}`;
     }
 }
@@ -564,6 +563,42 @@ function initializeRandomDefaultView() {
     updateTimelineLabel();  // Ensure heading shows selected month/year on initial load
 
     return true;
+}
+
+function initializeCurrentMonthRandomYear() {
+    // Initialize with a random year for the current month
+    const today = new Date();
+    const currentMonth = String(today.getMonth() + 1).padStart(2, '0');
+
+    // Find all issues in current month
+    const currentMonthIssues = state.allIssues.filter(issue =>
+        issue.date.substring(5, 7) === currentMonth
+    );
+
+    if (!currentMonthIssues.length) {
+        // No issues in current month, fall back to all issues
+        return;
+    }
+
+    // Get unique years for current month
+    const yearsInMonth = [...new Set(currentMonthIssues.map(issue => issue.date.substring(0, 4)))];
+
+    if (yearsInMonth.length === 0) {
+        return;
+    }
+
+    // Pick random year
+    const randomYear = yearsInMonth[Math.floor(Math.random() * yearsInMonth.length)];
+
+    // Set filter state
+    state.selectedYear = randomYear;
+    state.selectedMonth = currentMonth;
+
+    // Update filter system
+    if (window.FilterSystem) {
+        FilterSystem.selectYear(randomYear);
+        FilterSystem.selectMonth(currentMonth);
+    }
 }
 
 function spinArchive() {
@@ -649,8 +684,12 @@ function getHeroPeriodLabel() {
     if (state.selectedYear) {
         return `${state.selectedYear}`;
     }
-    // When no filters applied, show "This Week in History"
-    return 'This Week in History';
+    // When no filters applied, show today's month and day
+    const today = new Date();
+    const monthInfo = MONTHS.find(m => m.value === String(today.getMonth() + 1).padStart(2, '0'));
+    const monthName = monthInfo ? monthInfo.full : '';
+    const day = today.getDate();
+    return `${monthName} ${day}`;
 }
 
 function selectHeroIssues(sortedIssues) {
@@ -667,24 +706,19 @@ function selectHeroIssues(sortedIssues) {
         const yearPrefix = `${state.selectedYear}-`;
         pool = sortedIssues.filter(issue => issue.date.startsWith(yearPrefix));
     } else {
-        // When no filters: show "This Week in History" - issues from current week but different years
+        // When no filters: show "Today in History" - issues published on this exact date (month-day) across different years
         const today = new Date();
         const currentMonth = String(today.getMonth() + 1).padStart(2, '0');
-        const currentDay = today.getDate();
+        const currentDay = String(today.getDate()).padStart(2, '0');
+        const todayMonthDay = `${currentMonth}-${currentDay}`;
 
-        // Get issues from approximately this week (within 7 days)
+        // Get issues from today's date (any year)
         pool = sortedIssues.filter(issue => {
-            const [year, month, day] = issue.date.split('-');
-            if (month !== currentMonth) return false;
-
-            const issueDay = parseInt(day);
-            const dayDiff = Math.abs(issueDay - currentDay);
-
-            // Include issues within 7 days
-            return dayDiff <= 7;
+            const monthDay = issue.date.substring(5, 10); // Extract MM-DD from YYYY-MM-DD
+            return monthDay === todayMonthDay;
         });
 
-        // If no matches in exact week, expand to whole month
+        // If no exact matches for today, expand to whole month
         if (pool.length < 3) {
             pool = sortedIssues.filter(issue => issue.date.substring(5, 7) === currentMonth);
         }
@@ -754,6 +788,7 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
     const heroSection = document.getElementById('newsstand-hero');
     const heroGrid = document.getElementById('hero-grid');
     const heroLabel = document.getElementById('hero-period-label');
+    const heroKicker = document.getElementById('hero-kicker');
     const heroClear = document.getElementById('hero-clear-btn');
 
     if (!heroSection || !heroGrid || !heroLabel) {
@@ -776,6 +811,15 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
     heroSection.classList.remove('hidden');
     heroSection.dataset.initialized = 'true';
     heroLabel.textContent = getHeroPeriodLabel();
+
+    // Update kicker text based on whether we're showing "Today in History" or a filtered view
+    if (heroKicker) {
+        if (state.selectedYear || state.selectedMonth) {
+            heroKicker.textContent = 'Archive Highlights';
+        } else {
+            heroKicker.textContent = 'Today in History';
+        }
+    }
 
     showcaseIssues.forEach(issue => {
         heroGrid.appendChild(createHeroCard(issue));
