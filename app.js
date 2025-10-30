@@ -99,30 +99,185 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
+// ==================== INDEXEDDB MANIFEST CACHING ====================
+const DB_NAME = 'DangerousPressArchive';
+const DB_VERSION = 1;
+const STORE_NAME = 'manifest';
+const CACHE_KEY = 'manifest_data';
+const VERSION_KEY = 'manifest_version';
+
+async function initializeIndexedDB() {
+    return new Promise((resolve, reject) => {
+        const request = indexedDB.open(DB_NAME, DB_VERSION);
+
+        request.onerror = () => {
+            console.warn('IndexedDB error:', request.error);
+            resolve(null);
+        };
+
+        request.onsuccess = () => {
+            resolve(request.result);
+        };
+
+        request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            if (!db.objectStoreNames.contains(STORE_NAME)) {
+                db.createObjectStore(STORE_NAME);
+            }
+        };
+    });
+}
+
+async function getCachedManifest() {
+    try {
+        const db = await initializeIndexedDB();
+        if (!db) return null;
+
+        return new Promise((resolve) => {
+            const transaction = db.transaction([STORE_NAME], 'readonly');
+            const store = transaction.objectStore(STORE_NAME);
+            const request = store.get(CACHE_KEY);
+
+            request.onsuccess = () => {
+                resolve(request.result);
+            };
+
+            request.onerror = () => {
+                console.warn('Failed to read from IndexedDB');
+                resolve(null);
+            };
+        });
+    } catch (error) {
+        console.warn('IndexedDB cache read failed:', error);
+        return null;
+    }
+}
+
+async function setCachedManifest(data, version) {
+    try {
+        const db = await initializeIndexedDB();
+        if (!db) return false;
+
+        return new Promise((resolve) => {
+            const transaction = db.transaction([STORE_NAME], 'readwrite');
+            const store = transaction.objectStore(STORE_NAME);
+
+            store.put(data, CACHE_KEY);
+            store.put(version, VERSION_KEY);
+
+            transaction.oncomplete = () => {
+                console.log('✓ Manifest cached to IndexedDB');
+                resolve(true);
+            };
+
+            transaction.onerror = () => {
+                console.warn('Failed to cache manifest to IndexedDB');
+                resolve(false);
+            };
+        });
+    } catch (error) {
+        console.warn('IndexedDB cache write failed:', error);
+        return false;
+    }
+}
+
+async function getCachedManifestVersion() {
+    try {
+        const db = await initializeIndexedDB();
+        if (!db) return null;
+
+        return new Promise((resolve) => {
+            const transaction = db.transaction([STORE_NAME], 'readonly');
+            const store = transaction.objectStore(STORE_NAME);
+            const request = store.get(VERSION_KEY);
+
+            request.onsuccess = () => {
+                resolve(request.result || null);
+            };
+
+            request.onerror = () => {
+                resolve(null);
+            };
+        });
+    } catch (error) {
+        console.warn('Failed to read version from IndexedDB:', error);
+        return null;
+    }
+}
+
+// Background update check - doesn't block the UI
+async function checkForManifestUpdates(manifestPath, cachedVersion, currentData) {
+    try {
+        // Wait a bit to not compete with initial page load
+        await new Promise(resolve => setTimeout(resolve, 3000));
+
+        const response = await fetch(manifestPath, { cache: 'no-store' });
+        if (!response.ok) return;
+
+        const freshData = await response.json();
+        const freshVersion = new Date().toISOString();
+
+        // Check if content actually changed (simple length check)
+        if (freshData.length !== currentData.length) {
+            console.log(`✓ Manifest update available. New: ${freshData.length} issues (was ${currentData.length})`);
+            await setCachedManifest(freshData, freshVersion);
+            console.log('⟳ Cache silently updated. Refresh page to see new content.');
+        }
+    } catch (error) {
+        console.warn('Background manifest update check failed:', error);
+    }
+}
+
 // ==================== DATA LOADING ====================
 async function loadManifest() {
     try {
-        // Use relative path - works for both local dev and custom domain
         const manifestPath = 'web_content/manifest.json';
         const fullUrl = new URL(manifestPath, window.location.href).href;
 
         console.log(`[DEBUG] Current URL: ${window.location.href}`);
         console.log(`[DEBUG] Manifest path: ${manifestPath}`);
         console.log(`[DEBUG] Full manifest URL: ${fullUrl}`);
-        console.log(`[DEBUG] Fetching manifest...`);
 
-        const response = await fetch(manifestPath);
+        let data;
 
-        console.log(`[DEBUG] Response status: ${response.status}`);
-        console.log(`[DEBUG] Response OK: ${response.ok}`);
+        // Try to use cached manifest first
+        console.log(`[DEBUG] Checking IndexedDB cache...`);
+        const cachedManifest = await getCachedManifest();
+        const cachedVersion = await getCachedManifestVersion();
 
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        if (cachedManifest && Array.isArray(cachedManifest)) {
+            console.log(`✓ Loaded ${cachedManifest.length} issues from IndexedDB cache (version: ${cachedVersion})`);
+
+            // Still check for updates in the background, but use cache immediately
+            checkForManifestUpdates(manifestPath, cachedVersion, cachedManifest);
+
+            // Use cached data immediately
+            data = cachedManifest;
+        } else {
+            // No cache, fetch from network
+            console.log(`[DEBUG] No cache found. Fetching manifest from network...`);
+            const response = await fetch(manifestPath);
+
+            console.log(`[DEBUG] Response status: ${response.status}`);
+            console.log(`[DEBUG] Response OK: ${response.ok}`);
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            console.log(`[DEBUG] Parsing JSON...`);
+            data = await response.json();
+            console.log(`✓ Loaded ${data.length} issues from network`);
+
+            // Cache the manifest
+            const timestamp = new Date().toISOString();
+            await setCachedManifest(data, timestamp);
         }
 
-        console.log(`[DEBUG] Parsing JSON...`);
-        const data = await response.json();
-        console.log(`✓ Loaded ${data.length} issues from manifest`);
+        // Continue with the rest of the function using 'data'
+        if (!data) {
+            throw new Error('Failed to load manifest data');
+        }
 
         // Filter to only 1910-1929
         state.allIssues = data.filter(issue => {
@@ -813,17 +968,33 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
     heroSection.classList.remove('hidden');
     heroSection.dataset.initialized = 'true';
 
-    // Hero always shows Today in History (October 30 across different years)
-    const today = new Date();
-    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-                        'July', 'August', 'September', 'October', 'November', 'December'];
-    const monthName = monthNames[today.getMonth()];
-    const day = today.getDate();
-    heroLabel.textContent = `${monthName} ${day}`;
-
-    // Kicker always says "Today in History"
-    if (heroKicker) {
-        heroKicker.textContent = 'Today in History';
+    // Update hero label based on current filter state
+    if (state.selectedYear || state.selectedMonth) {
+        // User has selected a specific time period
+        if (state.selectedMonth && state.selectedYear) {
+            const monthInfo = MONTHS.find(m => m.value === state.selectedMonth);
+            const monthName = monthInfo ? monthInfo.full : state.selectedMonth;
+            heroLabel.textContent = `${monthName} ${state.selectedYear}`;
+            if (heroKicker) {
+                heroKicker.textContent = 'Selected Period';
+            }
+        } else if (state.selectedYear) {
+            heroLabel.textContent = `Year ${state.selectedYear}`;
+            if (heroKicker) {
+                heroKicker.textContent = 'Selected Period';
+            }
+        }
+    } else {
+        // No filters - show Today in History with today's date
+        const today = new Date();
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                            'July', 'August', 'September', 'October', 'November', 'December'];
+        const monthName = monthNames[today.getMonth()];
+        const day = today.getDate();
+        heroLabel.textContent = `${monthName} ${day}`;
+        if (heroKicker) {
+            heroKicker.textContent = 'Today in History';
+        }
     }
 
     showcaseIssues.forEach(issue => {

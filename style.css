@@ -1753,6 +1753,15 @@ a:focus-visible {
     background: var(--unc-tile-teal) !important;
 }
 
+/* Hide checkboxes when filter panel is collapsed (closed) */
+#paper-list .filter-checkbox {
+    display: none;
+}
+
+.filter-panel.hidden #paper-list {
+    display: none;
+}
+
 /* Hide default sidebar on mobile when collapsible is active */
 @media (max-width: 1023px) {
     .lg\:w-64 {

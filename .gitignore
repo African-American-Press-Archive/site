@@ -5,6 +5,10 @@ __pycache__/
 .web_cache/
 .DS_Store
 
+# Node/npm
+node_modules/
+package-lock.json
+
 # Ignore local web_content assets - use remote repos instead
 web_content/*
 !web_content/manifest.json
