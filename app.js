@@ -699,31 +699,22 @@ function selectHeroIssues(sortedIssues) {
         return [];
     }
 
-    let pool = sortedIssues;
+    // Hero section always shows "Today in History" - issues published on this exact date (month-day) across different years
+    // This is independent of the main grid filters (selectedYear, selectedMonth)
+    const today = new Date();
+    const currentMonth = String(today.getMonth() + 1).padStart(2, '0');
+    const currentDay = String(today.getDate()).padStart(2, '0');
+    const todayMonthDay = `${currentMonth}-${currentDay}`;
 
-    if (state.selectedYear && state.selectedMonth) {
-        const yearMonth = `${state.selectedYear}-${state.selectedMonth}`;
-        pool = sortedIssues.filter(issue => issue.date.startsWith(yearMonth));
-    } else if (state.selectedYear) {
-        const yearPrefix = `${state.selectedYear}-`;
-        pool = sortedIssues.filter(issue => issue.date.startsWith(yearPrefix));
-    } else {
-        // When no filters: show "Today in History" - issues published on this exact date (month-day) across different years
-        const today = new Date();
-        const currentMonth = String(today.getMonth() + 1).padStart(2, '0');
-        const currentDay = String(today.getDate()).padStart(2, '0');
-        const todayMonthDay = `${currentMonth}-${currentDay}`;
+    // Get issues from today's date (any year)
+    let pool = sortedIssues.filter(issue => {
+        const monthDay = issue.date.substring(5, 10); // Extract MM-DD from YYYY-MM-DD
+        return monthDay === todayMonthDay;
+    });
 
-        // Get issues from today's date (any year)
-        pool = sortedIssues.filter(issue => {
-            const monthDay = issue.date.substring(5, 10); // Extract MM-DD from YYYY-MM-DD
-            return monthDay === todayMonthDay;
-        });
-
-        // If no exact matches for today, expand to whole month
-        if (pool.length < 3) {
-            pool = sortedIssues.filter(issue => issue.date.substring(5, 7) === currentMonth);
-        }
+    // If no exact matches for today, expand to whole month
+    if (pool.length < 3) {
+        pool = sortedIssues.filter(issue => issue.date.substring(5, 7) === currentMonth);
     }
 
     if (!pool.length) {
@@ -812,27 +803,27 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
 
     heroSection.classList.remove('hidden');
     heroSection.dataset.initialized = 'true';
-    heroLabel.textContent = getHeroPeriodLabel();
 
-    // Update kicker text based on whether we're showing "Today in History" or a filtered view
+    // Hero always shows Today in History (October 30 across different years)
+    const today = new Date();
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const monthName = monthNames[today.getMonth()];
+    const day = today.getDate();
+    heroLabel.textContent = `${monthName} ${day}`;
+
+    // Kicker always says "Today in History"
     if (heroKicker) {
-        if (state.selectedYear || state.selectedMonth) {
-            heroKicker.textContent = 'Archive Highlights';
-        } else {
-            heroKicker.textContent = 'Today in History';
-        }
+        heroKicker.textContent = 'Today in History';
     }
 
     showcaseIssues.forEach(issue => {
         heroGrid.appendChild(createHeroCard(issue));
     });
 
+    // Hero is always Today in History, so never show the clear button
     if (heroClear) {
-        if (state.selectedYear || state.selectedMonth) {
-            heroClear.classList.remove('opacity-0', 'pointer-events-none');
-        } else {
-            heroClear.classList.add('opacity-0', 'pointer-events-none');
-        }
+        heroClear.classList.add('opacity-0', 'pointer-events-none');
     }
 }
 
