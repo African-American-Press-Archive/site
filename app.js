@@ -706,17 +706,13 @@ function selectHeroIssues(sortedIssues) {
     const currentDay = String(today.getDate()).padStart(2, '0');
     const todayMonthDay = `${currentMonth}-${currentDay}`;
 
-    // Get issues from today's date (any year)
+    // Get issues from today's date (any year) - strict matching, no fallback
     let pool = sortedIssues.filter(issue => {
         const monthDay = issue.date.substring(5, 10); // Extract MM-DD from YYYY-MM-DD
         return monthDay === todayMonthDay;
     });
 
-    // If no exact matches for today, expand to whole month
-    if (pool.length < 3) {
-        pool = sortedIssues.filter(issue => issue.date.substring(5, 7) === currentMonth);
-    }
-
+    // If still no matches, use all issues
     if (!pool.length) {
         pool = sortedIssues;
     }
