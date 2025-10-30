@@ -170,6 +170,14 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn84025841
+  springfield-forum:
+    title: Springfield Forum
+    path: springfield-forum
+    base_url: https://pages.dangerouspress.org/springfield-forum
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn86086415
   st-louis-argus:
     title: St. Louis Argus
     path: st-louis-argus

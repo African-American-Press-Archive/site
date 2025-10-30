@@ -178,6 +178,14 @@
       "remote_manifest": "https://pages.dangerouspress.org/richmond-planet/manifests/paper-manifest.json"
     },
     {
+      "slug": "springfield-forum",
+      "title": "Springfield Forum",
+      "issue_count": 196,
+      "uploaded_count": 196,
+      "manifest_path": "manifests/springfield-forum.json",
+      "remote_manifest": "https://pages.dangerouspress.org/springfield-forum/manifests/paper-manifest.json"
+    },
+    {
       "slug": "st-louis-argus",
       "title": "St. Louis Argus",
       "issue_count": 394,
