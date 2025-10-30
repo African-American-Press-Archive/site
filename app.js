@@ -1,6 +1,6 @@
 // ==================== CONFIG / CONSTANTS ====================
 const CONFIG = {
-    YEARS: { MIN: 1910, MAX: 1929 },
+    YEARS: { MIN: 1905, MAX: 1929 },
     ITEMS_PER_PAGE: 12,
     PRELOAD_PAGES: 2,
     DEBOUNCE_DELAY: 300,
