@@ -2,6 +2,14 @@
   "manifest_version": 1,
   "papers": [
     {
+      "slug": "athens-republique",
+      "title": "Athens Republique",
+      "issue_count": 19,
+      "uploaded_count": 19,
+      "manifest_path": "manifests/athens-republique.json",
+      "remote_manifest": "https://pages.dangerouspress.org/athens-republique/manifests/paper-manifest.json"
+    },
+    {
       "slug": "baltimore-afro-american",
       "title": "Baltimore Afro-American",
       "issue_count": 497,
@@ -124,7 +132,7 @@
     {
       "slug": "new-york-age",
       "title": "New York Age",
-      "issue_count": 1053,
+      "issue_count": 1063,
       "uploaded_count": 1040,
       "manifest_path": "manifests/new-york-age.json",
       "remote_manifest": "https://pages.dangerouspress.org/new-york-age/manifests/paper-manifest.json"

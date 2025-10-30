@@ -482,7 +482,7 @@ function updateTimelineLabel() {
 
     if (!state.selectedYear) {
         label.textContent = 'All Years';
-        gridTitle.textContent = 'All Issues';
+        gridTitle.textContent = 'Issues';
         return;
     }
 

@@ -55,6 +55,14 @@ papers:
     - type: pdf
       folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/Documents/black-press-downloads/baltimoreafroamerican_pdfs_processed
       sample_filename: 1910-01-01_01.pdf
+  athens-republique:
+    title: Athens Republique
+    path: athens-republique
+    base_url: https://pages.dangerouspress.org/athens-republique
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: "2012233098"
   broad-ax:
     title: Broad Ax
     path: broad-ax
