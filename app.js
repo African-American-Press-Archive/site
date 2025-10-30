@@ -198,6 +198,8 @@ async function loadManifest() {
         }
 
         if (!urlParamsHandled) {
+            // Initialize with random year for current month
+            initializeCurrentMonthRandomYear();
             updateStats();
             renderGrid();
             updateTimelineLabel();
