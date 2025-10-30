@@ -150,14 +150,27 @@ async function loadManifest() {
 
         if (dateParam) {
             // If we have a date, filter to that specific issue
-            const issue = state.allIssues.find(i => i.id.includes(dateParam));
+            // If paperParam is also provided, use it to find the correct paper
+            let issue;
+            if (paperParam) {
+                // Convert paper parameter to title format (e.g., "chicago-defender" -> "Chicago Defender")
+                const paperTitle = paperParam.split('-').map(word =>
+                    word.charAt(0).toUpperCase() + word.slice(1)
+                ).join(' ');
+
+                // Find issue matching both date and paper title
+                issue = state.allIssues.find(i =>
+                    i.id.includes(dateParam) && i.title === paperTitle
+                );
+            } else {
+                // No paper specified, find any issue with this date
+                issue = state.allIssues.find(i => i.id.includes(dateParam));
+            }
+
             if (issue) {
                 // Set filters to match the issue
-                if (paperParam) {
-                    // Clear other papers, select only this one
-                    state.selectedPapers.clear();
-                    state.selectedPapers.add(issue.title);
-                }
+                state.selectedPapers.clear();
+                state.selectedPapers.add(issue.title);
 
                 // Extract year and month from date
                 const [year, month] = dateParam.split('-');
@@ -169,7 +182,7 @@ async function loadManifest() {
                 renderGrid();
 
                 // Find and open the viewer for this issue
-                const issueIndex = state.displayedIssues.findIndex(item => item.id.includes(dateParam));
+                const issueIndex = state.displayedIssues.findIndex(item => item.id.includes(dateParam) && item.title === issue.title);
                 if (issueIndex !== -1) {
                     openViewer(issueIndex);
                 }
