@@ -955,18 +955,9 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
         return;
     }
 
-    // Check our new state flag
-    const isDefault = state.isDefaultLoad;
-    let showcaseIssues;
-
-    if (isDefault) {
-        // ON DEFAULT LOAD: Hero content is "Today in History" from *all* issues,
-        // ignoring the main grid's filter.
-        showcaseIssues = selectHeroIssues(state.allIssues);
-    } else {
-        // AFTER SPIN/FILTER: Hero content *matches* the main grid's filter.
-        showcaseIssues = selectHeroIssues(sortedIssues);
-    }
+    // Hero section always shows "Today in History" from ALL issues, independent of filters
+    // The isDefaultLoad flag only controls the LABEL, not the content
+    let showcaseIssues = selectHeroIssues(state.allIssues);
 
     heroGrid.innerHTML = '';
 
@@ -978,44 +969,16 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
     heroSection.classList.remove('hidden');
     heroSection.dataset.initialized = 'true';
 
-    // Now, set the label based on the same `isDefault` flag
-    if (isDefault) {
-        // On default load, *always* show Today in History
-        const today = new Date();
-        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-                            'July', 'August', 'September', 'October', 'November', 'December'];
-        const monthName = monthNames[today.getMonth()];
-        const day = today.getDate();
-        heroLabel.textContent = `${monthName} ${day}`;
-        if (heroKicker) {
-            heroKicker.textContent = 'Today in History';
-        }
-    } else if (state.selectedYear || state.selectedMonth) {
-        // User has selected a specific time period (post-spin/filter)
-        if (state.selectedMonth && state.selectedYear) {
-            const monthInfo = MONTHS.find(m => m.value === state.selectedMonth);
-            const monthName = monthInfo ? monthInfo.full : state.selectedMonth;
-            heroLabel.textContent = `${monthName} ${state.selectedYear}`;
-            if (heroKicker) {
-                heroKicker.textContent = 'Selected Period';
-            }
-        } else if (state.selectedYear) {
-            heroLabel.textContent = `Year ${state.selectedYear}`;
-            if (heroKicker) {
-                heroKicker.textContent = 'Selected Period';
-            }
-        }
-    } else {
-        // No filters (e.g., after reset) - show Today in History
-        const today = new Date();
-        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-                            'July', 'August', 'September', 'October', 'November', 'December'];
-        const monthName = monthNames[today.getMonth()];
-        const day = today.getDate();
-        heroLabel.textContent = `${monthName} ${day}`;
-        if (heroKicker) {
-            heroKicker.textContent = 'Today in History';
-        }
+    // Hero section always shows "Today in History" - independent of main grid filters
+    // The content always comes from all available issues for this exact date (month-day)
+    const today = new Date();
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const monthName = monthNames[today.getMonth()];
+    const day = today.getDate();
+    heroLabel.textContent = `${monthName} ${day}`;
+    if (heroKicker) {
+        heroKicker.textContent = 'Today in History';
     }
 
     showcaseIssues.forEach(issue => {
