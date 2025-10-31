@@ -66,6 +66,7 @@ const state = {
     pageCache: new Map(),
     thumbnailsVisible: false,
     zoomLevel: 1,
+    referrerUrl: null,  // Store the page we came from
 
     // Timeline state
     yearCounts: new Map(),
@@ -1340,6 +1341,9 @@ async function openViewer(index) {
 
     state.currentIssueIndex = index;
 
+    // Capture the referrer URL (where we came from)
+    state.referrerUrl = document.referrer || null;
+
     const modal = document.getElementById('viewer-modal');
     const title = document.getElementById('viewer-title');
     const dateEl = document.getElementById('viewer-date');
@@ -1563,6 +1567,14 @@ function closeViewer() {
     resetZoom();
     state.currentPages = [];
     state.currentPageIndex = 0;
+
+    // Navigate back to the referrer page if available
+    if (state.referrerUrl) {
+        window.location.href = state.referrerUrl;
+    } else {
+        // Fallback: use browser back button
+        window.history.back();
+    }
 }
 
 function navigateIssue(direction) {
