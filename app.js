@@ -57,6 +57,7 @@ const state = {
     currentPage: 0,
     isLoading: false,
     searchQuery: '',
+    isDefaultLoad: true,  // Track if we're in initial default state
 
     // Viewer state
     currentIssueIndex: 0,
@@ -486,6 +487,7 @@ function selectYear(year, options = {}) {
     updateTimelineVisuals();
 
     if (selectionChanged) {
+        state.isDefaultLoad = false;
         if (state.selectedYear) {
             scrollYearIntoView(state.selectedYear);
         }
@@ -805,6 +807,7 @@ function spinArchive() {
     // Update state
     state.selectedYear = String(randomYear);
     state.selectedMonth = randomMonth;
+    state.isDefaultLoad = false;
 
     // Show the reset button
     const resetBtn = document.getElementById('timeline-reset');
@@ -952,12 +955,19 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
         return;
     }
 
-    if (!forceRefresh && heroSection.dataset.initialized === 'true' && !state.selectedYear && !state.selectedMonth) {
-        // If nothing has changed and hero is already showing archive highlights, skip redundant re-render.
-        return;
+    // Check our new state flag
+    const isDefault = state.isDefaultLoad;
+    let showcaseIssues;
+
+    if (isDefault) {
+        // ON DEFAULT LOAD: Hero content is "Today in History" from *all* issues,
+        // ignoring the main grid's filter.
+        showcaseIssues = selectHeroIssues(state.allIssues);
+    } else {
+        // AFTER SPIN/FILTER: Hero content *matches* the main grid's filter.
+        showcaseIssues = selectHeroIssues(sortedIssues);
     }
 
-    const showcaseIssues = selectHeroIssues(sortedIssues);
     heroGrid.innerHTML = '';
 
     if (!showcaseIssues.length) {
@@ -968,9 +978,20 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
     heroSection.classList.remove('hidden');
     heroSection.dataset.initialized = 'true';
 
-    // Update hero label based on current filter state
-    if (state.selectedYear || state.selectedMonth) {
-        // User has selected a specific time period
+    // Now, set the label based on the same `isDefault` flag
+    if (isDefault) {
+        // On default load, *always* show Today in History
+        const today = new Date();
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                            'July', 'August', 'September', 'October', 'November', 'December'];
+        const monthName = monthNames[today.getMonth()];
+        const day = today.getDate();
+        heroLabel.textContent = `${monthName} ${day}`;
+        if (heroKicker) {
+            heroKicker.textContent = 'Today in History';
+        }
+    } else if (state.selectedYear || state.selectedMonth) {
+        // User has selected a specific time period (post-spin/filter)
         if (state.selectedMonth && state.selectedYear) {
             const monthInfo = MONTHS.find(m => m.value === state.selectedMonth);
             const monthName = monthInfo ? monthInfo.full : state.selectedMonth;
@@ -985,7 +1006,7 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
             }
         }
     } else {
-        // No filters - show Today in History with today's date
+        // No filters (e.g., after reset) - show Today in History
         const today = new Date();
         const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
                             'July', 'August', 'September', 'October', 'November', 'December'];
@@ -1001,7 +1022,7 @@ function updateHeroShowcase(sortedIssues, forceRefresh = false) {
         heroGrid.appendChild(createHeroCard(issue));
     });
 
-    // Hero is always Today in History, so never show the clear button
+    // Hero clear button never shown (hero is always independent of main grid filter)
     if (heroClear) {
         heroClear.classList.add('opacity-0', 'pointer-events-none');
     }
@@ -1083,6 +1104,8 @@ function togglePaperFilter(title) {
         state.selectedPapers.add(title);
     }
 
+    state.isDefaultLoad = false;
+
     // Update "All Papers" checkbox
     const allCheckbox = document.getElementById('all-papers-checkbox');
     const totalPapers = new Set(state.allIssues.map(issue => issue.title)).size;
@@ -1094,6 +1117,7 @@ function togglePaperFilter(title) {
 function resetFilters() {
     state.selectedYear = null;
     state.selectedMonth = null;
+    state.isDefaultLoad = true;  // Reset to default state
     const paperTitles = [...new Set(state.allIssues.map(issue => issue.title))];
     state.selectedPapers.clear();
     paperTitles.forEach(title => state.selectedPapers.add(title));
@@ -1143,6 +1167,7 @@ let searchTimeout = null;
 
 function handleSearch(query) {
     state.searchQuery = query.trim();
+    state.isDefaultLoad = false;
 
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(() => {

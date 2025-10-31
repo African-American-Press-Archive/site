@@ -258,6 +258,14 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn90060427
+  montana-plaindealer:
+    title: Montana Plaindealer
+    path: montana-plaindealer
+    base_url: https://pages.dangerouspress.org/montana-plaindealer
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84036199
   muskogee-cimeter:
     title: Muskogee Cimeter
     path: muskogee-cimeter
@@ -275,6 +283,14 @@ papers:
       folder: /Volumes/Lightning/chronicling-america/pq-defender/courier_pdfs
       sample_filename: Pittsburgh-Courier_1911-03-25.pdf
       recursive: false  # Only scan root directory, ignore subdirectories with split pages
+  portland-new-age:
+    title: Portland New Age
+    path: portland-new-age
+    base_url: https://pages.dangerouspress.org/portland-new-age
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025107
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive

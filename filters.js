@@ -178,6 +178,7 @@ const FilterSystem = {
     selectYear(year) {
         this.selectedYear = year;
         this.selectedMonth = null; // Reset month when year changes
+        state.isDefaultLoad = false;
 
         // Update visual state
         this.yearGrid?.querySelectorAll('.year-pill').forEach(pill => {
@@ -249,6 +250,8 @@ const FilterSystem = {
         } else {
             this.selectedMonth = month;
         }
+
+        state.isDefaultLoad = false;
 
         // Update visual state
         this.monthGrid?.querySelectorAll('.month-pill').forEach(pill => {
@@ -441,6 +444,8 @@ const FilterSystem = {
      * Apply paper filter
      */
     applyPaperFilter() {
+        state.isDefaultLoad = false;
+
         // Update main app state
         state.selectedPapers = new Set(this.selectedPapers);
 
@@ -463,6 +468,8 @@ const FilterSystem = {
      * Clear all filters
      */
     clearAllFilters() {
+        state.isDefaultLoad = true;  // Reset to default state
+
         // Clear date filters
         this.selectedYear = null;
         this.selectedMonth = null;
