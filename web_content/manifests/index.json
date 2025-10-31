@@ -114,6 +114,14 @@
       "remote_manifest": "https://pages.dangerouspress.org/kansas-city-sun/manifests/paper-manifest.json"
     },
     {
+      "slug": "metropolis-weekly-gazette",
+      "title": "Metropolis Weekly Gazette",
+      "issue_count": 426,
+      "uploaded_count": 426,
+      "manifest_path": "manifests/metropolis-weekly-gazette.json",
+      "remote_manifest": "https://pages.dangerouspress.org/metropolis-weekly-gazette/manifests/paper-manifest.json"
+    },
+    {
       "slug": "muskogee-cimeter",
       "title": "Muskogee Cimeter",
       "issue_count": 165,
