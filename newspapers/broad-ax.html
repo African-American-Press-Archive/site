@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broad Ax (1895-1931) · Dangerous Press Archive</title>
+    <meta name="description" content="Browse digitized issues of the Broad Ax from 1895-1931. Founded by Julius F. Taylor, this pioneering African American newspaper was published in Salt Lake City and Chicago, advocating for racial equality and Democratic principles.">
+    <meta name="keywords" content="Broad Ax, African American newspapers, Black press, historic newspapers, 1895-1931, digitized newspapers, Salt Lake City, Chicago">
+    <link rel="canonical" href="https://dangerouspress.org/newspapers/broad-ax.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dangerouspress.org/newspapers/broad-ax.html">
+    <meta property="og:title" content="Broad Ax (1895-1931) · Dangerous Press Archive">
+    <meta property="og:description" content="Browse digitized issues of the Broad Ax from 1895-1931.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://dangerouspress.org/newspapers/broad-ax.html">
+    <meta property="twitter:title" content="Broad Ax (1895-1931) · Dangerous Press Archive">
+    <meta property="twitter:description" content="Browse digitized issues of the Broad Ax from 1895-1931.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div id="app" class="relative min-h-screen">
+
+        <!-- Header -->
+        <header id="main-header" class="glass py-6 px-4 md:px-6 transition-all duration-300">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <!-- Logo & Title -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 md:gap-6 text-center md:text-left branding-lockup">
+                        <a href="../index.html" class="brand-emblem" aria-label="Return to archive home">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="12" width="52" height="40" rx="4" fill="#F5F1E8" stroke="#8B7355" stroke-width="2"/>
+                                <path d="M12 20H52" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 28H44" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 36H40" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M12 44H36" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M50 24V48" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M45 24V48" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M16 48H32" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <div>
+                            <h1 class="hero-title editorial-title transition-all duration-300">
+                                <a href="../index.html" class="hover:opacity-80 transition-opacity" style="color: inherit; text-decoration: none;">Dangerous Press</a>
+                            </h1>
+                            <p class="text-sm mt-1 font-medium subtitle-text" style="color: var(--text-secondary);">An Archive of African American Newspapers, 1905–1929</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="flex gap-4 text-sm">
+                        <a href="../index.html" class="font-medium transition-colors deco-link" style="color: var(--text-muted);">Browse Archive</a>
+                        <a href="../about.html" class="font-medium transition-colors deco-link" style="color: var(--text-muted);">About</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-8">
+            <main>
+                <!-- Newspaper Header -->
+                <div class="glass-card rounded-2xl p-8 mb-8">
+                    <h2 class="text-4xl md:text-5xl font-black mb-4" style="font-family: 'Playfair Display', serif; color: var(--unc-longleaf-pine);">
+                        Broad Ax
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        <div class="stat-card p-4 rounded-lg" style="background: var(--bg-hover); border: 1px solid var(--border-color);">
+                            <div class="text-sm font-semibold uppercase tracking-wider mb-1" style="color: var(--text-muted);">Years Covered</div>
+                            <div class="text-3xl font-bold" style="color: var(--unc-tile-teal);">1895–1931</div>
+                        </div>
+                        <div class="stat-card p-4 rounded-lg" style="background: var(--bg-hover); border: 1px solid var(--border-color);">
+                            <div class="text-sm font-semibold uppercase tracking-wider mb-1" style="color: var(--text-muted);">Total Issues</div>
+                            <div class="text-3xl font-bold" style="color: var(--unc-tile-teal);" id="issue-count">0</div>
+                        </div>
+                        <div class="stat-card p-4 rounded-lg" style="background: var(--bg-hover); border: 1px solid var(--border-color);">
+                            <div class="text-sm font-semibold uppercase tracking-wider mb-1" style="color: var(--text-muted);">Total Pages</div>
+                            <div class="text-3xl font-bold" style="color: var(--unc-tile-teal);" id="page-count">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About the Newspaper -->
+                <div class="glass-card rounded-2xl p-8 mb-8">
+                    <div class="mb-6 p-4 rounded-lg" style="background: var(--bg-hover); border-left: 4px solid var(--unc-tile-teal);">
+                        <p class="text-sm" style="color: var(--text-primary);"><strong>This description is from the <a href="https://idnc.library.illinois.edu/?a=cl&cl=CL1&sp=TBA&e=-------en-20--1--txt-txIN----------" target="_blank" rel="noopener" class="deco-link">Illinois Digital Newspaper Collection</a>.</strong></p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--unc-longleaf-pine);">About the Broad Ax</h3>
+                    <div class="prose max-w-none" style="color: var(--text-primary); line-height: 1.8;">
+                        <p>
+                            Throughout its history, the <em>Broad Ax</em> (Salt Lake City and Chicago) was issued weekly by its founder, publisher, and editor, Julius F. Taylor (1853-1934). Born into slavery near New Market, Virginia, Julius Taylor was the 13th of 14 children of Gilbert and Mary Ann Taylor. Taylor's parents and older siblings had earlier been sold to different owners but remained in relatively close proximity in the Shenandoah Valley. In the mid-1860s Taylor made his way to Philadelphia and settled successively in St. Paul, Minnesota; Fargo, North Dakota; and Chicago, before arriving in Salt Lake City in 1895. There Taylor founded the <em>Broad Ax</em>, which joined two other black newspapers published in Salt Lake City at a time when there were fewer than 1,000 African Americans in the state.
+                        </p>
+                        <p>
+                            The first issue, published on August 31, 1895, carries the motto that remained with the paper until it ceased in 1931: "Hew to the line." Taylor announced that his paper would be "Democratic in politics, advocating the immortal principles of Jefferson and Jackson." He advocated racial equality, religious tolerance, and support for Free Silver (and, later William Jennings Bryan). As one scholar observed, "a sharp-tongued, Democratic, atheistic, African American editor in Utah in the 1890s stood out as an anomaly."
+                        </p>
+                        <p>
+                            With tensions rising between the <em>Broad Ax</em> and the leaders of the Latter Day Saints in Salt Lake City, Taylor relocated to Chicago in 1899. The last issue of the <em>Broad Ax</em> published in Salt Lake City was vol. 4, no. 41, dated June 6, 1899. Taylor relaunched the paper in Chicago, continuing the same numbering, with the July 15 issue. Along with a description of his editorial platform (roughly identical to the description in the first issue in 1895), the Chicago debut issue carried an endorsement signed by the mayor of Chicago, Carter Henry Harrison II.
+                        </p>
+                        <p>
+                            Described as "the most controversial black newspaper in Chicago in the late nineteenth century," the <em>Broad Ax</em> was noted for its caustic, inflammatory language and criticism of Booker T. Washington. During World War I, Taylor provided extensive coverage of lynchings that took place on American soil while black soldiers fought for the United States in Europe.
+                        </p>
+                        <p>
+                            In 1912, Taylor joined with the publishers of three other black Chicago newspapers to form the Colored Press Association of Chicago (not to be confused with the Associated Negro Press founded by Claude Barnett in Chicago in 1919). Taylor was joined in this venture by Robert S. Abbott, founder, editor and publisher of the <em>Chicago Defender</em>; Sheadrick Bond Turner, state legislator and editor and publisher of the <em>Chicago Illinois Idea</em>; and William D. Neighbors, Chicago real estate developer and editor and publisher of the <em>Illinois Chronicle</em>. The purpose of the organization was to strengthen the mission of the black press in Chicago by establishing a local news gathering bureau, to highlight issues of particular interest to African Americans, and, more specifically, to endorse an African American candidate for county commissioner.
+                        </p>
+                        <p>
+                            Apparently, no issues of the <em>Broad Ax</em> published after 1927 survived, but the obituary for Taylor published in the <em>Defender</em> (May 19, 1934, p. 18) notes that he published the <em>Broad Ax</em> until 1931, when his health no longer permitted it.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interactive Calendar Browser -->
+                <div class="glass-card rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6" style="color: var(--unc-longleaf-pine);">Browse Issues</h3>
+                    <div class="mb-6 p-4 rounded-lg" style="background: var(--bg-hover); border-left: 4px solid var(--unc-tile-teal);">
+                        <p class="text-sm" style="color: var(--text-primary);"><strong>About these images:</strong> The digitized newspaper pages are provided by the <a href="https://idnc.library.illinois.edu/?a=cl&cl=CL1&sp=TBA&e=-------en-20--1--txt-txIN----------" target="_blank" rel="noopener" class="deco-link">Illinois Digital Newspaper Collection</a>, a project of the University of Illinois at Urbana-Champaign Library.</p>
+                    </div>
+
+                    <!-- Year Selector -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Select Year</label>
+                        <div class="grid grid-cols-5 sm:grid-cols-10 gap-2" id="year-selector">
+                            <!-- Years will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Month Selector -->
+                    <div class="mb-6" id="month-selector-container" style="display: none;">
+                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Select Month</label>
+                        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3" id="month-selector">
+                            <!-- Months will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Issues Display -->
+                    <div id="issues-container" style="display: none;">
+                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);" id="issues-label">Issues</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3" id="issues-grid">
+                            <!-- Issues will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        let allIssues = [];
+        let issuesByYearMonth = {};
+        let selectedYear = null;
+        let selectedMonth = null;
+
+        const MONTHS = [
+            { num: '01', name: 'January', short: 'Jan' },
+            { num: '02', name: 'February', short: 'Feb' },
+            { num: '03', name: 'March', short: 'Mar' },
+            { num: '04', name: 'April', short: 'Apr' },
+            { num: '05', name: 'May', short: 'May' },
+            { num: '06', name: 'June', short: 'Jun' },
+            { num: '07', name: 'July', short: 'Jul' },
+            { num: '08', name: 'August', short: 'Aug' },
+            { num: '09', name: 'September', short: 'Sep' },
+            { num: '10', name: 'October', short: 'Oct' },
+            { num: '11', name: 'November', short: 'Nov' },
+            { num: '12', name: 'December', short: 'Dec' }
+        ];
+
+        async function loadData() {
+            try {
+                const response = await fetch('../web_content/manifest.json');
+                const manifest = await response.json();
+
+                // Filter to Broad Ax
+                allIssues = manifest.filter(issue =>
+                    issue.title === 'Broad Ax'
+                );
+
+                // Group by year and month
+                allIssues.forEach(issue => {
+                    const [year, month] = issue.date.split('-');
+                    const key = `${year}-${month}`;
+                    if (!issuesByYearMonth[key]) {
+                        issuesByYearMonth[key] = [];
+                    }
+                    issuesByYearMonth[key].push(issue);
+                });
+
+                // Update stats
+                const totalPages = allIssues.reduce((sum, issue) => sum + issue.pages, 0);
+                document.getElementById('issue-count').textContent = allIssues.length;
+                document.getElementById('page-count').textContent = totalPages;
+
+                renderYears();
+
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function renderYears() {
+            const yearSelector = document.getElementById('year-selector');
+            const years = [...new Set(allIssues.map(i => i.date.substring(0, 4)))].sort();
+
+            yearSelector.innerHTML = years.map(year => {
+                const issueCount = allIssues.filter(i => i.date.startsWith(year)).length;
+                return `
+                    <button onclick="selectYear('${year}')"
+                            class="year-btn px-4 py-3 rounded-lg font-semibold transition-all hover:scale-105"
+                            data-year="${year}"
+                            style="background: var(--bg-hover); border: 2px solid var(--border-color); color: var(--text-primary);">
+                        <div class="text-base">${year}</div>
+                        <div class="text-xs opacity-75">${issueCount}</div>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function selectYear(year) {
+            selectedYear = year;
+            selectedMonth = null;
+
+            // Update year button styling
+            document.querySelectorAll('.year-btn').forEach(btn => {
+                if (btn.dataset.year === year) {
+                    btn.style.background = 'var(--unc-tile-teal)';
+                    btn.style.borderColor = 'var(--unc-tile-teal)';
+                    btn.style.color = 'white';
+                } else {
+                    btn.style.background = 'var(--bg-hover)';
+                    btn.style.borderColor = 'var(--border-color)';
+                    btn.style.color = 'var(--text-primary)';
+                }
+            });
+
+            renderMonths(year);
+            document.getElementById('month-selector-container').style.display = 'block';
+            document.getElementById('issues-container').style.display = 'none';
+        }
+
+        function renderMonths(year) {
+            const monthSelector = document.getElementById('month-selector');
+
+            // Find which months have issues
+            const monthsWithIssues = new Set();
+            Object.keys(issuesByYearMonth).forEach(key => {
+                if (key.startsWith(year)) {
+                    const month = key.split('-')[1];
+                    monthsWithIssues.add(month);
+                }
+            });
+
+            monthSelector.innerHTML = MONTHS.map(month => {
+                const hasIssues = monthsWithIssues.has(month.num);
+                const issueCount = hasIssues ? issuesByYearMonth[`${year}-${month.num}`].length : 0;
+
+                return `
+                    <button onclick="${hasIssues ? `selectMonth('${month.num}')` : 'void(0)'}"
+                            class="month-btn p-4 rounded-lg transition-all ${hasIssues ? 'hover:scale-105 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
+                            data-month="${month.num}"
+                            style="background: var(--bg-hover); border: 2px solid var(--border-color); ${hasIssues ? '' : 'pointer-events: none;'}">
+                        <div class="font-semibold" style="color: var(--text-primary);">${month.short}</div>
+                        ${hasIssues ? `<div class="text-xs mt-1" style="color: var(--text-muted);">${issueCount} issues</div>` : ''}
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function selectMonth(month) {
+            selectedMonth = month;
+
+            // Update month button styling
+            document.querySelectorAll('.month-btn').forEach(btn => {
+                if (btn.dataset.month === month) {
+                    btn.style.background = 'var(--unc-tile-teal)';
+                    btn.style.borderColor = 'var(--unc-tile-teal)';
+                    btn.style.color = 'white';
+                } else {
+                    btn.style.background = 'var(--bg-hover)';
+                    btn.style.borderColor = 'var(--border-color)';
+                    btn.style.color = 'var(--text-primary)';
+                }
+            });
+
+            renderIssues(selectedYear, month);
+        }
+
+        function renderIssues(year, month) {
+            const key = `${year}-${month}`;
+            const issues = issuesByYearMonth[key] || [];
+
+            const monthName = MONTHS.find(m => m.num === month).name;
+            document.getElementById('issues-label').textContent = `${monthName} ${year}`;
+
+            const issuesGrid = document.getElementById('issues-grid');
+            issuesGrid.innerHTML = issues.map(issue => {
+                const day = issue.date.split('-')[2];
+
+                return `
+                    <a href="../?paper=broad-ax&date=${issue.date}"
+                       class="issue-card p-4 rounded-lg text-center transition-all hover:scale-105 hover:shadow-lg"
+                       style="background: var(--bg-hover); border: 2px solid var(--border-color); text-decoration: none; display: block;">
+                        <div class="text-3xl font-bold mb-1" style="color: var(--unc-tile-teal);">${parseInt(day)}</div>
+                        <div class="text-xs" style="color: var(--text-muted);">${issue.pages} pages</div>
+                    </a>
+                `;
+            }).join('');
+
+            document.getElementById('issues-container').style.display = 'block';
+        }
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>
