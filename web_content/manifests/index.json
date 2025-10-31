@@ -52,8 +52,8 @@
     {
       "slug": "cleveland-gazette",
       "title": "Cleveland Gazette",
-      "issue_count": 2008,
-      "uploaded_count": 2008,
+      "issue_count": 1180,
+      "uploaded_count": 1180,
       "manifest_path": "manifests/cleveland-gazette.json",
       "remote_manifest": "https://pages.dangerouspress.org/cleveland-gazette/manifests/paper-manifest.json"
     },

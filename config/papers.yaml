@@ -100,9 +100,6 @@ papers:
     path: cleveland-gazette
     base_url: https://pages.dangerouspress.org/cleveland-gazette
     sources:
-    - type: pdf
-      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/cleveland-gazette_pdfs
-      sample_filename: cleveland+gazette_1910-03-19.pdf
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn83035387
@@ -266,6 +263,14 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn84036199
+  metropolis-weekly-gazette:
+    title: Metropolis Weekly Gazette
+    path: metropolis-weekly-gazette
+    base_url: https://pages.dangerouspress.org/metropolis-weekly-gazette
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn89080007
   muskogee-cimeter:
     title: Muskogee Cimeter
     path: muskogee-cimeter
