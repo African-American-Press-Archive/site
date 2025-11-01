@@ -167,6 +167,9 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn84025841
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/richmond-planet_pdfs
+      sample_filename: 1911-01-01.pdf
   springfield-forum:
     title: Springfield Forum
     path: springfield-forum
@@ -279,6 +282,14 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn83025060
+  negro-world:
+    title: Negro World
+    path: negro-world
+    base_url: https://pages.dangerouspress.org/negro-world
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/negro-world_pdfs
+      sample_filename: 1910-01-01.pdf
   pittsburgh-courier:
     title: Pittsburgh Courier
     path: pittsburgh-courier
