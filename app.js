@@ -936,7 +936,9 @@ function createHeroCard(issue) {
     `;
 
     figure.addEventListener('click', () => {
-        const issueIndex = state.displayedIssues.findIndex(item => item.id === issue.id);
+        // Hero cards can link to issues outside the current grid filters
+        // So search in filteredIssues (all sorted/filtered issues) instead of displayedIssues (current page only)
+        const issueIndex = state.filteredIssues.findIndex(item => item.id === issue.id);
         if (issueIndex !== -1) {
             openViewer(issueIndex);
         }
