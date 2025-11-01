@@ -3,6 +3,24 @@
   "title": "Chicago Whip",
   "issues": [
     {
+      "id": "1919-06-24_chicago-whip",
+      "date": "1919-06-24",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-06-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-06-24/page_01.jpg",
+        "chicago-whip/1919/1919-06-24/page_02.jpg",
+        "chicago-whip/1919/1919-06-24/page_03.jpg",
+        "chicago-whip/1919/1919-06-24/page_04.jpg",
+        "chicago-whip/1919/1919-06-24/page_05.jpg",
+        "chicago-whip/1919/1919-06-24/page_06.jpg",
+        "chicago-whip/1919/1919-06-24/page_07.jpg",
+        "chicago-whip/1919/1919-06-24/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-06-24_sn86056950",
       "date": "1919-06-24",
       "title": "Chicago Whip",
@@ -22,6 +40,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-07-03_chicago-whip",
+      "date": "1919-07-03",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-07-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-07-03/page_01.jpg",
+        "chicago-whip/1919/1919-07-03/page_02.jpg",
+        "chicago-whip/1919/1919-07-03/page_03.jpg",
+        "chicago-whip/1919/1919-07-03/page_04.jpg",
+        "chicago-whip/1919/1919-07-03/page_05.jpg",
+        "chicago-whip/1919/1919-07-03/page_06.jpg",
+        "chicago-whip/1919/1919-07-03/page_07.jpg",
+        "chicago-whip/1919/1919-07-03/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-07-03_sn86056950",
@@ -45,6 +81,24 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-07-09_chicago-whip",
+      "date": "1919-07-09",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-07-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-07-09/page_01.jpg",
+        "chicago-whip/1919/1919-07-09/page_02.jpg",
+        "chicago-whip/1919/1919-07-09/page_03.jpg",
+        "chicago-whip/1919/1919-07-09/page_04.jpg",
+        "chicago-whip/1919/1919-07-09/page_05.jpg",
+        "chicago-whip/1919/1919-07-09/page_06.jpg",
+        "chicago-whip/1919/1919-07-09/page_07.jpg",
+        "chicago-whip/1919/1919-07-09/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-07-09_sn86056950",
       "date": "1919-07-09",
       "title": "Chicago Whip",
@@ -64,6 +118,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-07-19_chicago-whip",
+      "date": "1919-07-19",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-07-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-07-19/page_01.jpg",
+        "chicago-whip/1919/1919-07-19/page_02.jpg",
+        "chicago-whip/1919/1919-07-19/page_03.jpg",
+        "chicago-whip/1919/1919-07-19/page_04.jpg",
+        "chicago-whip/1919/1919-07-19/page_05.jpg",
+        "chicago-whip/1919/1919-07-19/page_06.jpg",
+        "chicago-whip/1919/1919-07-19/page_07.jpg",
+        "chicago-whip/1919/1919-07-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-07-19_sn86056950",
@@ -87,6 +159,24 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-07-25_chicago-whip",
+      "date": "1919-07-25",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-07-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-07-25/page_01.jpg",
+        "chicago-whip/1919/1919-07-25/page_02.jpg",
+        "chicago-whip/1919/1919-07-25/page_03.jpg",
+        "chicago-whip/1919/1919-07-25/page_04.jpg",
+        "chicago-whip/1919/1919-07-25/page_05.jpg",
+        "chicago-whip/1919/1919-07-25/page_06.jpg",
+        "chicago-whip/1919/1919-07-25/page_07.jpg",
+        "chicago-whip/1919/1919-07-25/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-07-25_sn86056950",
       "date": "1919-07-25",
       "title": "Chicago Whip",
@@ -106,6 +196,26 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-08-09_chicago-whip",
+      "date": "1919-08-09",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-08-09/thumb.jpg",
+      "pages": 10,
+      "page_paths": [
+        "chicago-whip/1919/1919-08-09/page_01.jpg",
+        "chicago-whip/1919/1919-08-09/page_02.jpg",
+        "chicago-whip/1919/1919-08-09/page_03.jpg",
+        "chicago-whip/1919/1919-08-09/page_04.jpg",
+        "chicago-whip/1919/1919-08-09/page_05.jpg",
+        "chicago-whip/1919/1919-08-09/page_06.jpg",
+        "chicago-whip/1919/1919-08-09/page_07.jpg",
+        "chicago-whip/1919/1919-08-09/page_08.jpg",
+        "chicago-whip/1919/1919-08-09/page_09.jpg",
+        "chicago-whip/1919/1919-08-09/page_10.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-08-09_sn86056950",
@@ -131,6 +241,26 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-08-15_chicago-whip",
+      "date": "1919-08-15",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-08-15/thumb.jpg",
+      "pages": 10,
+      "page_paths": [
+        "chicago-whip/1919/1919-08-15/page_01.jpg",
+        "chicago-whip/1919/1919-08-15/page_02.jpg",
+        "chicago-whip/1919/1919-08-15/page_03.jpg",
+        "chicago-whip/1919/1919-08-15/page_04.jpg",
+        "chicago-whip/1919/1919-08-15/page_05.jpg",
+        "chicago-whip/1919/1919-08-15/page_06.jpg",
+        "chicago-whip/1919/1919-08-15/page_07.jpg",
+        "chicago-whip/1919/1919-08-15/page_08.jpg",
+        "chicago-whip/1919/1919-08-15/page_09.jpg",
+        "chicago-whip/1919/1919-08-15/page_10.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-08-15_sn86056950",
       "date": "1919-08-15",
       "title": "Chicago Whip",
@@ -152,6 +282,28 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-08-21_chicago-whip",
+      "date": "1919-08-21",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-08-21/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "chicago-whip/1919/1919-08-21/page_01.jpg",
+        "chicago-whip/1919/1919-08-21/page_02.jpg",
+        "chicago-whip/1919/1919-08-21/page_03.jpg",
+        "chicago-whip/1919/1919-08-21/page_04.jpg",
+        "chicago-whip/1919/1919-08-21/page_05.jpg",
+        "chicago-whip/1919/1919-08-21/page_06.jpg",
+        "chicago-whip/1919/1919-08-21/page_07.jpg",
+        "chicago-whip/1919/1919-08-21/page_08.jpg",
+        "chicago-whip/1919/1919-08-21/page_09.jpg",
+        "chicago-whip/1919/1919-08-21/page_10.jpg",
+        "chicago-whip/1919/1919-08-21/page_11.jpg",
+        "chicago-whip/1919/1919-08-21/page_12.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-08-21_sn86056950",
@@ -179,6 +331,26 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-09-13_chicago-whip",
+      "date": "1919-09-13",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-09-13/thumb.jpg",
+      "pages": 10,
+      "page_paths": [
+        "chicago-whip/1919/1919-09-13/page_01.jpg",
+        "chicago-whip/1919/1919-09-13/page_02.jpg",
+        "chicago-whip/1919/1919-09-13/page_03.jpg",
+        "chicago-whip/1919/1919-09-13/page_04.jpg",
+        "chicago-whip/1919/1919-09-13/page_05.jpg",
+        "chicago-whip/1919/1919-09-13/page_06.jpg",
+        "chicago-whip/1919/1919-09-13/page_07.jpg",
+        "chicago-whip/1919/1919-09-13/page_08.jpg",
+        "chicago-whip/1919/1919-09-13/page_09.jpg",
+        "chicago-whip/1919/1919-09-13/page_10.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-09-13_sn86056950",
       "date": "1919-09-13",
       "title": "Chicago Whip",
@@ -200,6 +372,28 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-09-20_chicago-whip",
+      "date": "1919-09-20",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-09-20/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "chicago-whip/1919/1919-09-20/page_01.jpg",
+        "chicago-whip/1919/1919-09-20/page_02.jpg",
+        "chicago-whip/1919/1919-09-20/page_03.jpg",
+        "chicago-whip/1919/1919-09-20/page_04.jpg",
+        "chicago-whip/1919/1919-09-20/page_05.jpg",
+        "chicago-whip/1919/1919-09-20/page_06.jpg",
+        "chicago-whip/1919/1919-09-20/page_07.jpg",
+        "chicago-whip/1919/1919-09-20/page_08.jpg",
+        "chicago-whip/1919/1919-09-20/page_09.jpg",
+        "chicago-whip/1919/1919-09-20/page_10.jpg",
+        "chicago-whip/1919/1919-09-20/page_11.jpg",
+        "chicago-whip/1919/1919-09-20/page_12.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-09-20_sn86056950",
@@ -227,6 +421,28 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-09-27_chicago-whip",
+      "date": "1919-09-27",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-09-27/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "chicago-whip/1919/1919-09-27/page_01.jpg",
+        "chicago-whip/1919/1919-09-27/page_02.jpg",
+        "chicago-whip/1919/1919-09-27/page_03.jpg",
+        "chicago-whip/1919/1919-09-27/page_04.jpg",
+        "chicago-whip/1919/1919-09-27/page_05.jpg",
+        "chicago-whip/1919/1919-09-27/page_06.jpg",
+        "chicago-whip/1919/1919-09-27/page_07.jpg",
+        "chicago-whip/1919/1919-09-27/page_08.jpg",
+        "chicago-whip/1919/1919-09-27/page_09.jpg",
+        "chicago-whip/1919/1919-09-27/page_10.jpg",
+        "chicago-whip/1919/1919-09-27/page_11.jpg",
+        "chicago-whip/1919/1919-09-27/page_12.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-09-27_sn86056950",
       "date": "1919-09-27",
       "title": "Chicago Whip",
@@ -250,6 +466,28 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-10-04_chicago-whip",
+      "date": "1919-10-04",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-10-04/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "chicago-whip/1919/1919-10-04/page_01.jpg",
+        "chicago-whip/1919/1919-10-04/page_02.jpg",
+        "chicago-whip/1919/1919-10-04/page_03.jpg",
+        "chicago-whip/1919/1919-10-04/page_04.jpg",
+        "chicago-whip/1919/1919-10-04/page_05.jpg",
+        "chicago-whip/1919/1919-10-04/page_06.jpg",
+        "chicago-whip/1919/1919-10-04/page_07.jpg",
+        "chicago-whip/1919/1919-10-04/page_08.jpg",
+        "chicago-whip/1919/1919-10-04/page_09.jpg",
+        "chicago-whip/1919/1919-10-04/page_10.jpg",
+        "chicago-whip/1919/1919-10-04/page_11.jpg",
+        "chicago-whip/1919/1919-10-04/page_12.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-10-04_sn86056950",
@@ -277,6 +515,28 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-10-11_chicago-whip",
+      "date": "1919-10-11",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-10-11/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "chicago-whip/1919/1919-10-11/page_01.jpg",
+        "chicago-whip/1919/1919-10-11/page_02.jpg",
+        "chicago-whip/1919/1919-10-11/page_03.jpg",
+        "chicago-whip/1919/1919-10-11/page_04.jpg",
+        "chicago-whip/1919/1919-10-11/page_05.jpg",
+        "chicago-whip/1919/1919-10-11/page_06.jpg",
+        "chicago-whip/1919/1919-10-11/page_07.jpg",
+        "chicago-whip/1919/1919-10-11/page_08.jpg",
+        "chicago-whip/1919/1919-10-11/page_09.jpg",
+        "chicago-whip/1919/1919-10-11/page_10.jpg",
+        "chicago-whip/1919/1919-10-11/page_11.jpg",
+        "chicago-whip/1919/1919-10-11/page_12.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-10-11_sn86056950",
       "date": "1919-10-11",
       "title": "Chicago Whip",
@@ -302,6 +562,24 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-11-01_chicago-whip",
+      "date": "1919-11-01",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-11-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-11-01/page_01.jpg",
+        "chicago-whip/1919/1919-11-01/page_02.jpg",
+        "chicago-whip/1919/1919-11-01/page_03.jpg",
+        "chicago-whip/1919/1919-11-01/page_04.jpg",
+        "chicago-whip/1919/1919-11-01/page_05.jpg",
+        "chicago-whip/1919/1919-11-01/page_06.jpg",
+        "chicago-whip/1919/1919-11-01/page_07.jpg",
+        "chicago-whip/1919/1919-11-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-11-01_sn86056950",
       "date": "1919-11-01",
       "title": "Chicago Whip",
@@ -321,6 +599,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-11-08_chicago-whip",
+      "date": "1919-11-08",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-11-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-11-08/page_01.jpg",
+        "chicago-whip/1919/1919-11-08/page_02.jpg",
+        "chicago-whip/1919/1919-11-08/page_03.jpg",
+        "chicago-whip/1919/1919-11-08/page_04.jpg",
+        "chicago-whip/1919/1919-11-08/page_05.jpg",
+        "chicago-whip/1919/1919-11-08/page_06.jpg",
+        "chicago-whip/1919/1919-11-08/page_07.jpg",
+        "chicago-whip/1919/1919-11-08/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-11-08_sn86056950",
@@ -344,6 +640,24 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-11-15_chicago-whip",
+      "date": "1919-11-15",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-11-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-11-15/page_01.jpg",
+        "chicago-whip/1919/1919-11-15/page_02.jpg",
+        "chicago-whip/1919/1919-11-15/page_03.jpg",
+        "chicago-whip/1919/1919-11-15/page_04.jpg",
+        "chicago-whip/1919/1919-11-15/page_05.jpg",
+        "chicago-whip/1919/1919-11-15/page_06.jpg",
+        "chicago-whip/1919/1919-11-15/page_07.jpg",
+        "chicago-whip/1919/1919-11-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-11-15_sn86056950",
       "date": "1919-11-15",
       "title": "Chicago Whip",
@@ -363,6 +677,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-11-22_chicago-whip",
+      "date": "1919-11-22",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-11-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-11-22/page_01.jpg",
+        "chicago-whip/1919/1919-11-22/page_02.jpg",
+        "chicago-whip/1919/1919-11-22/page_03.jpg",
+        "chicago-whip/1919/1919-11-22/page_04.jpg",
+        "chicago-whip/1919/1919-11-22/page_05.jpg",
+        "chicago-whip/1919/1919-11-22/page_06.jpg",
+        "chicago-whip/1919/1919-11-22/page_07.jpg",
+        "chicago-whip/1919/1919-11-22/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-11-22_sn86056950",
@@ -386,6 +718,24 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-11-29_chicago-whip",
+      "date": "1919-11-29",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-11-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-11-29/page_01.jpg",
+        "chicago-whip/1919/1919-11-29/page_02.jpg",
+        "chicago-whip/1919/1919-11-29/page_03.jpg",
+        "chicago-whip/1919/1919-11-29/page_04.jpg",
+        "chicago-whip/1919/1919-11-29/page_05.jpg",
+        "chicago-whip/1919/1919-11-29/page_06.jpg",
+        "chicago-whip/1919/1919-11-29/page_07.jpg",
+        "chicago-whip/1919/1919-11-29/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-11-29_sn86056950",
       "date": "1919-11-29",
       "title": "Chicago Whip",
@@ -405,6 +755,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-12-06_chicago-whip",
+      "date": "1919-12-06",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-12-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-12-06/page_01.jpg",
+        "chicago-whip/1919/1919-12-06/page_02.jpg",
+        "chicago-whip/1919/1919-12-06/page_03.jpg",
+        "chicago-whip/1919/1919-12-06/page_04.jpg",
+        "chicago-whip/1919/1919-12-06/page_05.jpg",
+        "chicago-whip/1919/1919-12-06/page_06.jpg",
+        "chicago-whip/1919/1919-12-06/page_07.jpg",
+        "chicago-whip/1919/1919-12-06/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-12-06_sn86056950",
@@ -428,6 +796,24 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-12-13_chicago-whip",
+      "date": "1919-12-13",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-12-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-12-13/page_01.jpg",
+        "chicago-whip/1919/1919-12-13/page_02.jpg",
+        "chicago-whip/1919/1919-12-13/page_03.jpg",
+        "chicago-whip/1919/1919-12-13/page_04.jpg",
+        "chicago-whip/1919/1919-12-13/page_05.jpg",
+        "chicago-whip/1919/1919-12-13/page_06.jpg",
+        "chicago-whip/1919/1919-12-13/page_07.jpg",
+        "chicago-whip/1919/1919-12-13/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-12-13_sn86056950",
       "date": "1919-12-13",
       "title": "Chicago Whip",
@@ -447,6 +833,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1919-12-20_chicago-whip",
+      "date": "1919-12-20",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-12-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-12-20/page_01.jpg",
+        "chicago-whip/1919/1919-12-20/page_02.jpg",
+        "chicago-whip/1919/1919-12-20/page_03.jpg",
+        "chicago-whip/1919/1919-12-20/page_04.jpg",
+        "chicago-whip/1919/1919-12-20/page_05.jpg",
+        "chicago-whip/1919/1919-12-20/page_06.jpg",
+        "chicago-whip/1919/1919-12-20/page_07.jpg",
+        "chicago-whip/1919/1919-12-20/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1919-12-20_sn86056950",
@@ -470,6 +874,24 @@
       "uploaded_at": "2025-10-23T10:52:08Z"
     },
     {
+      "id": "1919-12-27_chicago-whip",
+      "date": "1919-12-27",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1919/1919-12-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1919/1919-12-27/page_01.jpg",
+        "chicago-whip/1919/1919-12-27/page_02.jpg",
+        "chicago-whip/1919/1919-12-27/page_03.jpg",
+        "chicago-whip/1919/1919-12-27/page_04.jpg",
+        "chicago-whip/1919/1919-12-27/page_05.jpg",
+        "chicago-whip/1919/1919-12-27/page_06.jpg",
+        "chicago-whip/1919/1919-12-27/page_07.jpg",
+        "chicago-whip/1919/1919-12-27/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1919-12-27_sn86056950",
       "date": "1919-12-27",
       "title": "Chicago Whip",
@@ -489,6 +911,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:08Z"
+    },
+    {
+      "id": "1920-01-03_chicago-whip",
+      "date": "1920-01-03",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-01-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-01-03/page_01.jpg",
+        "chicago-whip/1920/1920-01-03/page_02.jpg",
+        "chicago-whip/1920/1920-01-03/page_03.jpg",
+        "chicago-whip/1920/1920-01-03/page_04.jpg",
+        "chicago-whip/1920/1920-01-03/page_05.jpg",
+        "chicago-whip/1920/1920-01-03/page_06.jpg",
+        "chicago-whip/1920/1920-01-03/page_07.jpg",
+        "chicago-whip/1920/1920-01-03/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-01-03_sn86056950",
@@ -512,6 +952,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-01-10_chicago-whip",
+      "date": "1920-01-10",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-01-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-01-10/page_01.jpg",
+        "chicago-whip/1920/1920-01-10/page_02.jpg",
+        "chicago-whip/1920/1920-01-10/page_03.jpg",
+        "chicago-whip/1920/1920-01-10/page_04.jpg",
+        "chicago-whip/1920/1920-01-10/page_05.jpg",
+        "chicago-whip/1920/1920-01-10/page_06.jpg",
+        "chicago-whip/1920/1920-01-10/page_07.jpg",
+        "chicago-whip/1920/1920-01-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-01-10_sn86056950",
       "date": "1920-01-10",
       "title": "Chicago Whip",
@@ -531,6 +989,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-01-17_chicago-whip",
+      "date": "1920-01-17",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-01-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-01-17/page_01.jpg",
+        "chicago-whip/1920/1920-01-17/page_02.jpg",
+        "chicago-whip/1920/1920-01-17/page_03.jpg",
+        "chicago-whip/1920/1920-01-17/page_04.jpg",
+        "chicago-whip/1920/1920-01-17/page_05.jpg",
+        "chicago-whip/1920/1920-01-17/page_06.jpg",
+        "chicago-whip/1920/1920-01-17/page_07.jpg",
+        "chicago-whip/1920/1920-01-17/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-01-17_sn86056950",
@@ -554,6 +1030,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-01-24_chicago-whip",
+      "date": "1920-01-24",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-01-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-01-24/page_01.jpg",
+        "chicago-whip/1920/1920-01-24/page_02.jpg",
+        "chicago-whip/1920/1920-01-24/page_03.jpg",
+        "chicago-whip/1920/1920-01-24/page_04.jpg",
+        "chicago-whip/1920/1920-01-24/page_05.jpg",
+        "chicago-whip/1920/1920-01-24/page_06.jpg",
+        "chicago-whip/1920/1920-01-24/page_07.jpg",
+        "chicago-whip/1920/1920-01-24/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-01-24_sn86056950",
       "date": "1920-01-24",
       "title": "Chicago Whip",
@@ -573,6 +1067,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-01-31_chicago-whip",
+      "date": "1920-01-31",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-01-31/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-01-31/page_01.jpg",
+        "chicago-whip/1920/1920-01-31/page_02.jpg",
+        "chicago-whip/1920/1920-01-31/page_03.jpg",
+        "chicago-whip/1920/1920-01-31/page_04.jpg",
+        "chicago-whip/1920/1920-01-31/page_05.jpg",
+        "chicago-whip/1920/1920-01-31/page_06.jpg",
+        "chicago-whip/1920/1920-01-31/page_07.jpg",
+        "chicago-whip/1920/1920-01-31/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-01-31_sn86056950",
@@ -596,6 +1108,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-02-07_chicago-whip",
+      "date": "1920-02-07",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-02-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-02-07/page_01.jpg",
+        "chicago-whip/1920/1920-02-07/page_02.jpg",
+        "chicago-whip/1920/1920-02-07/page_03.jpg",
+        "chicago-whip/1920/1920-02-07/page_04.jpg",
+        "chicago-whip/1920/1920-02-07/page_05.jpg",
+        "chicago-whip/1920/1920-02-07/page_06.jpg",
+        "chicago-whip/1920/1920-02-07/page_07.jpg",
+        "chicago-whip/1920/1920-02-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-02-07_sn86056950",
       "date": "1920-02-07",
       "title": "Chicago Whip",
@@ -615,6 +1145,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-02-14_chicago-whip",
+      "date": "1920-02-14",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-02-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-02-14/page_01.jpg",
+        "chicago-whip/1920/1920-02-14/page_02.jpg",
+        "chicago-whip/1920/1920-02-14/page_03.jpg",
+        "chicago-whip/1920/1920-02-14/page_04.jpg",
+        "chicago-whip/1920/1920-02-14/page_05.jpg",
+        "chicago-whip/1920/1920-02-14/page_06.jpg",
+        "chicago-whip/1920/1920-02-14/page_07.jpg",
+        "chicago-whip/1920/1920-02-14/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-02-14_sn86056950",
@@ -638,6 +1186,22 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-02-21_chicago-whip",
+      "date": "1920-02-21",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-02-21/thumb.jpg",
+      "pages": 6,
+      "page_paths": [
+        "chicago-whip/1920/1920-02-21/page_01.jpg",
+        "chicago-whip/1920/1920-02-21/page_02.jpg",
+        "chicago-whip/1920/1920-02-21/page_03.jpg",
+        "chicago-whip/1920/1920-02-21/page_04.jpg",
+        "chicago-whip/1920/1920-02-21/page_05.jpg",
+        "chicago-whip/1920/1920-02-21/page_06.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-02-21_sn86056950",
       "date": "1920-02-21",
       "title": "Chicago Whip",
@@ -655,6 +1219,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-02-28_chicago-whip",
+      "date": "1920-02-28",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-02-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-02-28/page_01.jpg",
+        "chicago-whip/1920/1920-02-28/page_02.jpg",
+        "chicago-whip/1920/1920-02-28/page_03.jpg",
+        "chicago-whip/1920/1920-02-28/page_04.jpg",
+        "chicago-whip/1920/1920-02-28/page_05.jpg",
+        "chicago-whip/1920/1920-02-28/page_06.jpg",
+        "chicago-whip/1920/1920-02-28/page_07.jpg",
+        "chicago-whip/1920/1920-02-28/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-02-28_sn86056950",
@@ -678,6 +1260,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-03-13_chicago-whip",
+      "date": "1920-03-13",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-03-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-03-13/page_01.jpg",
+        "chicago-whip/1920/1920-03-13/page_02.jpg",
+        "chicago-whip/1920/1920-03-13/page_03.jpg",
+        "chicago-whip/1920/1920-03-13/page_04.jpg",
+        "chicago-whip/1920/1920-03-13/page_05.jpg",
+        "chicago-whip/1920/1920-03-13/page_06.jpg",
+        "chicago-whip/1920/1920-03-13/page_07.jpg",
+        "chicago-whip/1920/1920-03-13/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-03-13_sn86056950",
       "date": "1920-03-13",
       "title": "Chicago Whip",
@@ -697,6 +1297,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-03-20_chicago-whip",
+      "date": "1920-03-20",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-03-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-03-20/page_01.jpg",
+        "chicago-whip/1920/1920-03-20/page_02.jpg",
+        "chicago-whip/1920/1920-03-20/page_03.jpg",
+        "chicago-whip/1920/1920-03-20/page_04.jpg",
+        "chicago-whip/1920/1920-03-20/page_05.jpg",
+        "chicago-whip/1920/1920-03-20/page_06.jpg",
+        "chicago-whip/1920/1920-03-20/page_07.jpg",
+        "chicago-whip/1920/1920-03-20/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-03-20_sn86056950",
@@ -720,6 +1338,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-03-27_chicago-whip",
+      "date": "1920-03-27",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-03-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-03-27/page_01.jpg",
+        "chicago-whip/1920/1920-03-27/page_02.jpg",
+        "chicago-whip/1920/1920-03-27/page_03.jpg",
+        "chicago-whip/1920/1920-03-27/page_04.jpg",
+        "chicago-whip/1920/1920-03-27/page_05.jpg",
+        "chicago-whip/1920/1920-03-27/page_06.jpg",
+        "chicago-whip/1920/1920-03-27/page_07.jpg",
+        "chicago-whip/1920/1920-03-27/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-03-27_sn86056950",
       "date": "1920-03-27",
       "title": "Chicago Whip",
@@ -739,6 +1375,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-04-03_chicago-whip",
+      "date": "1920-04-03",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-04-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-04-03/page_01.jpg",
+        "chicago-whip/1920/1920-04-03/page_02.jpg",
+        "chicago-whip/1920/1920-04-03/page_03.jpg",
+        "chicago-whip/1920/1920-04-03/page_04.jpg",
+        "chicago-whip/1920/1920-04-03/page_05.jpg",
+        "chicago-whip/1920/1920-04-03/page_06.jpg",
+        "chicago-whip/1920/1920-04-03/page_07.jpg",
+        "chicago-whip/1920/1920-04-03/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-04-03_sn86056950",
@@ -762,6 +1416,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-04-10_chicago-whip",
+      "date": "1920-04-10",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-04-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-04-10/page_01.jpg",
+        "chicago-whip/1920/1920-04-10/page_02.jpg",
+        "chicago-whip/1920/1920-04-10/page_03.jpg",
+        "chicago-whip/1920/1920-04-10/page_04.jpg",
+        "chicago-whip/1920/1920-04-10/page_05.jpg",
+        "chicago-whip/1920/1920-04-10/page_06.jpg",
+        "chicago-whip/1920/1920-04-10/page_07.jpg",
+        "chicago-whip/1920/1920-04-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-04-10_sn86056950",
       "date": "1920-04-10",
       "title": "Chicago Whip",
@@ -781,6 +1453,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-04-17_chicago-whip",
+      "date": "1920-04-17",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-04-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-04-17/page_01.jpg",
+        "chicago-whip/1920/1920-04-17/page_02.jpg",
+        "chicago-whip/1920/1920-04-17/page_03.jpg",
+        "chicago-whip/1920/1920-04-17/page_04.jpg",
+        "chicago-whip/1920/1920-04-17/page_05.jpg",
+        "chicago-whip/1920/1920-04-17/page_06.jpg",
+        "chicago-whip/1920/1920-04-17/page_07.jpg",
+        "chicago-whip/1920/1920-04-17/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-04-17_sn86056950",
@@ -804,6 +1494,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-04-24_chicago-whip",
+      "date": "1920-04-24",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-04-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-04-24/page_01.jpg",
+        "chicago-whip/1920/1920-04-24/page_02.jpg",
+        "chicago-whip/1920/1920-04-24/page_03.jpg",
+        "chicago-whip/1920/1920-04-24/page_04.jpg",
+        "chicago-whip/1920/1920-04-24/page_05.jpg",
+        "chicago-whip/1920/1920-04-24/page_06.jpg",
+        "chicago-whip/1920/1920-04-24/page_07.jpg",
+        "chicago-whip/1920/1920-04-24/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-04-24_sn86056950",
       "date": "1920-04-24",
       "title": "Chicago Whip",
@@ -823,6 +1531,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-05-01_chicago-whip",
+      "date": "1920-05-01",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-05-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-05-01/page_01.jpg",
+        "chicago-whip/1920/1920-05-01/page_02.jpg",
+        "chicago-whip/1920/1920-05-01/page_03.jpg",
+        "chicago-whip/1920/1920-05-01/page_04.jpg",
+        "chicago-whip/1920/1920-05-01/page_05.jpg",
+        "chicago-whip/1920/1920-05-01/page_06.jpg",
+        "chicago-whip/1920/1920-05-01/page_07.jpg",
+        "chicago-whip/1920/1920-05-01/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-05-01_sn86056950",
@@ -846,6 +1572,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-05-08_chicago-whip",
+      "date": "1920-05-08",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-05-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-05-08/page_01.jpg",
+        "chicago-whip/1920/1920-05-08/page_02.jpg",
+        "chicago-whip/1920/1920-05-08/page_03.jpg",
+        "chicago-whip/1920/1920-05-08/page_04.jpg",
+        "chicago-whip/1920/1920-05-08/page_05.jpg",
+        "chicago-whip/1920/1920-05-08/page_06.jpg",
+        "chicago-whip/1920/1920-05-08/page_07.jpg",
+        "chicago-whip/1920/1920-05-08/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-05-08_sn86056950",
       "date": "1920-05-08",
       "title": "Chicago Whip",
@@ -865,6 +1609,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-05-15_chicago-whip",
+      "date": "1920-05-15",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-05-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-05-15/page_01.jpg",
+        "chicago-whip/1920/1920-05-15/page_02.jpg",
+        "chicago-whip/1920/1920-05-15/page_03.jpg",
+        "chicago-whip/1920/1920-05-15/page_04.jpg",
+        "chicago-whip/1920/1920-05-15/page_05.jpg",
+        "chicago-whip/1920/1920-05-15/page_06.jpg",
+        "chicago-whip/1920/1920-05-15/page_07.jpg",
+        "chicago-whip/1920/1920-05-15/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-05-15_sn86056950",
@@ -888,6 +1650,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-05-22_chicago-whip",
+      "date": "1920-05-22",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-05-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-05-22/page_01.jpg",
+        "chicago-whip/1920/1920-05-22/page_02.jpg",
+        "chicago-whip/1920/1920-05-22/page_03.jpg",
+        "chicago-whip/1920/1920-05-22/page_04.jpg",
+        "chicago-whip/1920/1920-05-22/page_05.jpg",
+        "chicago-whip/1920/1920-05-22/page_06.jpg",
+        "chicago-whip/1920/1920-05-22/page_07.jpg",
+        "chicago-whip/1920/1920-05-22/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-05-22_sn86056950",
       "date": "1920-05-22",
       "title": "Chicago Whip",
@@ -907,6 +1687,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-05-29_chicago-whip",
+      "date": "1920-05-29",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-05-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-05-29/page_01.jpg",
+        "chicago-whip/1920/1920-05-29/page_02.jpg",
+        "chicago-whip/1920/1920-05-29/page_03.jpg",
+        "chicago-whip/1920/1920-05-29/page_04.jpg",
+        "chicago-whip/1920/1920-05-29/page_05.jpg",
+        "chicago-whip/1920/1920-05-29/page_06.jpg",
+        "chicago-whip/1920/1920-05-29/page_07.jpg",
+        "chicago-whip/1920/1920-05-29/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-05-29_sn86056950",
@@ -930,6 +1728,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-06-05_chicago-whip",
+      "date": "1920-06-05",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-06-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-06-05/page_01.jpg",
+        "chicago-whip/1920/1920-06-05/page_02.jpg",
+        "chicago-whip/1920/1920-06-05/page_03.jpg",
+        "chicago-whip/1920/1920-06-05/page_04.jpg",
+        "chicago-whip/1920/1920-06-05/page_05.jpg",
+        "chicago-whip/1920/1920-06-05/page_06.jpg",
+        "chicago-whip/1920/1920-06-05/page_07.jpg",
+        "chicago-whip/1920/1920-06-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-06-05_sn86056950",
       "date": "1920-06-05",
       "title": "Chicago Whip",
@@ -949,6 +1765,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-06-12_chicago-whip",
+      "date": "1920-06-12",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-06-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-06-12/page_01.jpg",
+        "chicago-whip/1920/1920-06-12/page_02.jpg",
+        "chicago-whip/1920/1920-06-12/page_03.jpg",
+        "chicago-whip/1920/1920-06-12/page_04.jpg",
+        "chicago-whip/1920/1920-06-12/page_05.jpg",
+        "chicago-whip/1920/1920-06-12/page_06.jpg",
+        "chicago-whip/1920/1920-06-12/page_07.jpg",
+        "chicago-whip/1920/1920-06-12/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-06-12_sn86056950",
@@ -972,6 +1806,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-06-26_chicago-whip",
+      "date": "1920-06-26",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-06-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-06-26/page_01.jpg",
+        "chicago-whip/1920/1920-06-26/page_02.jpg",
+        "chicago-whip/1920/1920-06-26/page_03.jpg",
+        "chicago-whip/1920/1920-06-26/page_04.jpg",
+        "chicago-whip/1920/1920-06-26/page_05.jpg",
+        "chicago-whip/1920/1920-06-26/page_06.jpg",
+        "chicago-whip/1920/1920-06-26/page_07.jpg",
+        "chicago-whip/1920/1920-06-26/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-06-26_sn86056950",
       "date": "1920-06-26",
       "title": "Chicago Whip",
@@ -991,6 +1843,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-07-03_chicago-whip",
+      "date": "1920-07-03",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-07-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-07-03/page_01.jpg",
+        "chicago-whip/1920/1920-07-03/page_02.jpg",
+        "chicago-whip/1920/1920-07-03/page_03.jpg",
+        "chicago-whip/1920/1920-07-03/page_04.jpg",
+        "chicago-whip/1920/1920-07-03/page_05.jpg",
+        "chicago-whip/1920/1920-07-03/page_06.jpg",
+        "chicago-whip/1920/1920-07-03/page_07.jpg",
+        "chicago-whip/1920/1920-07-03/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-07-03_sn86056950",
@@ -1014,6 +1884,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-07-10_chicago-whip",
+      "date": "1920-07-10",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-07-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-07-10/page_01.jpg",
+        "chicago-whip/1920/1920-07-10/page_02.jpg",
+        "chicago-whip/1920/1920-07-10/page_03.jpg",
+        "chicago-whip/1920/1920-07-10/page_04.jpg",
+        "chicago-whip/1920/1920-07-10/page_05.jpg",
+        "chicago-whip/1920/1920-07-10/page_06.jpg",
+        "chicago-whip/1920/1920-07-10/page_07.jpg",
+        "chicago-whip/1920/1920-07-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-07-10_sn86056950",
       "date": "1920-07-10",
       "title": "Chicago Whip",
@@ -1033,6 +1921,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-07-17_chicago-whip",
+      "date": "1920-07-17",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-07-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-07-17/page_01.jpg",
+        "chicago-whip/1920/1920-07-17/page_02.jpg",
+        "chicago-whip/1920/1920-07-17/page_03.jpg",
+        "chicago-whip/1920/1920-07-17/page_04.jpg",
+        "chicago-whip/1920/1920-07-17/page_05.jpg",
+        "chicago-whip/1920/1920-07-17/page_06.jpg",
+        "chicago-whip/1920/1920-07-17/page_07.jpg",
+        "chicago-whip/1920/1920-07-17/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-07-17_sn86056950",
@@ -1056,6 +1962,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-07-24_chicago-whip",
+      "date": "1920-07-24",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-07-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-07-24/page_01.jpg",
+        "chicago-whip/1920/1920-07-24/page_02.jpg",
+        "chicago-whip/1920/1920-07-24/page_03.jpg",
+        "chicago-whip/1920/1920-07-24/page_04.jpg",
+        "chicago-whip/1920/1920-07-24/page_05.jpg",
+        "chicago-whip/1920/1920-07-24/page_06.jpg",
+        "chicago-whip/1920/1920-07-24/page_07.jpg",
+        "chicago-whip/1920/1920-07-24/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-07-24_sn86056950",
       "date": "1920-07-24",
       "title": "Chicago Whip",
@@ -1075,6 +1999,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-07-31_chicago-whip",
+      "date": "1920-07-31",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-07-31/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-07-31/page_01.jpg",
+        "chicago-whip/1920/1920-07-31/page_02.jpg",
+        "chicago-whip/1920/1920-07-31/page_03.jpg",
+        "chicago-whip/1920/1920-07-31/page_04.jpg",
+        "chicago-whip/1920/1920-07-31/page_05.jpg",
+        "chicago-whip/1920/1920-07-31/page_06.jpg",
+        "chicago-whip/1920/1920-07-31/page_07.jpg",
+        "chicago-whip/1920/1920-07-31/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-07-31_sn86056950",
@@ -1098,6 +2040,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-08-07_chicago-whip",
+      "date": "1920-08-07",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-08-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-08-07/page_01.jpg",
+        "chicago-whip/1920/1920-08-07/page_02.jpg",
+        "chicago-whip/1920/1920-08-07/page_03.jpg",
+        "chicago-whip/1920/1920-08-07/page_04.jpg",
+        "chicago-whip/1920/1920-08-07/page_05.jpg",
+        "chicago-whip/1920/1920-08-07/page_06.jpg",
+        "chicago-whip/1920/1920-08-07/page_07.jpg",
+        "chicago-whip/1920/1920-08-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-08-07_sn86056950",
       "date": "1920-08-07",
       "title": "Chicago Whip",
@@ -1117,6 +2077,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-08-14_chicago-whip",
+      "date": "1920-08-14",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-08-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-08-14/page_01.jpg",
+        "chicago-whip/1920/1920-08-14/page_02.jpg",
+        "chicago-whip/1920/1920-08-14/page_03.jpg",
+        "chicago-whip/1920/1920-08-14/page_04.jpg",
+        "chicago-whip/1920/1920-08-14/page_05.jpg",
+        "chicago-whip/1920/1920-08-14/page_06.jpg",
+        "chicago-whip/1920/1920-08-14/page_07.jpg",
+        "chicago-whip/1920/1920-08-14/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-08-14_sn86056950",
@@ -1140,6 +2118,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-08-21_chicago-whip",
+      "date": "1920-08-21",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-08-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-08-21/page_01.jpg",
+        "chicago-whip/1920/1920-08-21/page_02.jpg",
+        "chicago-whip/1920/1920-08-21/page_03.jpg",
+        "chicago-whip/1920/1920-08-21/page_04.jpg",
+        "chicago-whip/1920/1920-08-21/page_05.jpg",
+        "chicago-whip/1920/1920-08-21/page_06.jpg",
+        "chicago-whip/1920/1920-08-21/page_07.jpg",
+        "chicago-whip/1920/1920-08-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-08-21_sn86056950",
       "date": "1920-08-21",
       "title": "Chicago Whip",
@@ -1159,6 +2155,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-08-28_chicago-whip",
+      "date": "1920-08-28",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-08-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-08-28/page_01.jpg",
+        "chicago-whip/1920/1920-08-28/page_02.jpg",
+        "chicago-whip/1920/1920-08-28/page_03.jpg",
+        "chicago-whip/1920/1920-08-28/page_04.jpg",
+        "chicago-whip/1920/1920-08-28/page_05.jpg",
+        "chicago-whip/1920/1920-08-28/page_06.jpg",
+        "chicago-whip/1920/1920-08-28/page_07.jpg",
+        "chicago-whip/1920/1920-08-28/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-08-28_sn86056950",
@@ -1182,6 +2196,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-09-04_chicago-whip",
+      "date": "1920-09-04",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-09-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-09-04/page_01.jpg",
+        "chicago-whip/1920/1920-09-04/page_02.jpg",
+        "chicago-whip/1920/1920-09-04/page_03.jpg",
+        "chicago-whip/1920/1920-09-04/page_04.jpg",
+        "chicago-whip/1920/1920-09-04/page_05.jpg",
+        "chicago-whip/1920/1920-09-04/page_06.jpg",
+        "chicago-whip/1920/1920-09-04/page_07.jpg",
+        "chicago-whip/1920/1920-09-04/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-09-04_sn86056950",
       "date": "1920-09-04",
       "title": "Chicago Whip",
@@ -1201,6 +2233,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-09-11_chicago-whip",
+      "date": "1920-09-11",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-09-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-09-11/page_01.jpg",
+        "chicago-whip/1920/1920-09-11/page_02.jpg",
+        "chicago-whip/1920/1920-09-11/page_03.jpg",
+        "chicago-whip/1920/1920-09-11/page_04.jpg",
+        "chicago-whip/1920/1920-09-11/page_05.jpg",
+        "chicago-whip/1920/1920-09-11/page_06.jpg",
+        "chicago-whip/1920/1920-09-11/page_07.jpg",
+        "chicago-whip/1920/1920-09-11/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-09-11_sn86056950",
@@ -1224,6 +2274,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-09-18_chicago-whip",
+      "date": "1920-09-18",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-09-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-09-18/page_01.jpg",
+        "chicago-whip/1920/1920-09-18/page_02.jpg",
+        "chicago-whip/1920/1920-09-18/page_03.jpg",
+        "chicago-whip/1920/1920-09-18/page_04.jpg",
+        "chicago-whip/1920/1920-09-18/page_05.jpg",
+        "chicago-whip/1920/1920-09-18/page_06.jpg",
+        "chicago-whip/1920/1920-09-18/page_07.jpg",
+        "chicago-whip/1920/1920-09-18/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-09-18_sn86056950",
       "date": "1920-09-18",
       "title": "Chicago Whip",
@@ -1243,6 +2311,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-09-25_chicago-whip",
+      "date": "1920-09-25",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-09-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-09-25/page_01.jpg",
+        "chicago-whip/1920/1920-09-25/page_02.jpg",
+        "chicago-whip/1920/1920-09-25/page_03.jpg",
+        "chicago-whip/1920/1920-09-25/page_04.jpg",
+        "chicago-whip/1920/1920-09-25/page_05.jpg",
+        "chicago-whip/1920/1920-09-25/page_06.jpg",
+        "chicago-whip/1920/1920-09-25/page_07.jpg",
+        "chicago-whip/1920/1920-09-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-09-25_sn86056950",
@@ -1266,6 +2352,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-10-02_chicago-whip",
+      "date": "1920-10-02",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-10-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-10-02/page_01.jpg",
+        "chicago-whip/1920/1920-10-02/page_02.jpg",
+        "chicago-whip/1920/1920-10-02/page_03.jpg",
+        "chicago-whip/1920/1920-10-02/page_04.jpg",
+        "chicago-whip/1920/1920-10-02/page_05.jpg",
+        "chicago-whip/1920/1920-10-02/page_06.jpg",
+        "chicago-whip/1920/1920-10-02/page_07.jpg",
+        "chicago-whip/1920/1920-10-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-10-02_sn86056950",
       "date": "1920-10-02",
       "title": "Chicago Whip",
@@ -1285,6 +2389,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-10-09_chicago-whip",
+      "date": "1920-10-09",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-10-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-10-09/page_01.jpg",
+        "chicago-whip/1920/1920-10-09/page_02.jpg",
+        "chicago-whip/1920/1920-10-09/page_03.jpg",
+        "chicago-whip/1920/1920-10-09/page_04.jpg",
+        "chicago-whip/1920/1920-10-09/page_05.jpg",
+        "chicago-whip/1920/1920-10-09/page_06.jpg",
+        "chicago-whip/1920/1920-10-09/page_07.jpg",
+        "chicago-whip/1920/1920-10-09/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-10-09_sn86056950",
@@ -1308,6 +2430,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-10-23_chicago-whip",
+      "date": "1920-10-23",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-10-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-10-23/page_01.jpg",
+        "chicago-whip/1920/1920-10-23/page_02.jpg",
+        "chicago-whip/1920/1920-10-23/page_03.jpg",
+        "chicago-whip/1920/1920-10-23/page_04.jpg",
+        "chicago-whip/1920/1920-10-23/page_05.jpg",
+        "chicago-whip/1920/1920-10-23/page_06.jpg",
+        "chicago-whip/1920/1920-10-23/page_07.jpg",
+        "chicago-whip/1920/1920-10-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-10-23_sn86056950",
       "date": "1920-10-23",
       "title": "Chicago Whip",
@@ -1327,6 +2467,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-11-06_chicago-whip",
+      "date": "1920-11-06",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-11-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-11-06/page_01.jpg",
+        "chicago-whip/1920/1920-11-06/page_02.jpg",
+        "chicago-whip/1920/1920-11-06/page_03.jpg",
+        "chicago-whip/1920/1920-11-06/page_04.jpg",
+        "chicago-whip/1920/1920-11-06/page_05.jpg",
+        "chicago-whip/1920/1920-11-06/page_06.jpg",
+        "chicago-whip/1920/1920-11-06/page_07.jpg",
+        "chicago-whip/1920/1920-11-06/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-11-06_sn86056950",
@@ -1350,6 +2508,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-11-13_chicago-whip",
+      "date": "1920-11-13",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-11-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-11-13/page_01.jpg",
+        "chicago-whip/1920/1920-11-13/page_02.jpg",
+        "chicago-whip/1920/1920-11-13/page_03.jpg",
+        "chicago-whip/1920/1920-11-13/page_04.jpg",
+        "chicago-whip/1920/1920-11-13/page_05.jpg",
+        "chicago-whip/1920/1920-11-13/page_06.jpg",
+        "chicago-whip/1920/1920-11-13/page_07.jpg",
+        "chicago-whip/1920/1920-11-13/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-11-13_sn86056950",
       "date": "1920-11-13",
       "title": "Chicago Whip",
@@ -1369,6 +2545,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-11-20_chicago-whip",
+      "date": "1920-11-20",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-11-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-11-20/page_01.jpg",
+        "chicago-whip/1920/1920-11-20/page_02.jpg",
+        "chicago-whip/1920/1920-11-20/page_03.jpg",
+        "chicago-whip/1920/1920-11-20/page_04.jpg",
+        "chicago-whip/1920/1920-11-20/page_05.jpg",
+        "chicago-whip/1920/1920-11-20/page_06.jpg",
+        "chicago-whip/1920/1920-11-20/page_07.jpg",
+        "chicago-whip/1920/1920-11-20/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-11-20_sn86056950",
@@ -1392,6 +2586,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-11-27_chicago-whip",
+      "date": "1920-11-27",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-11-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-11-27/page_01.jpg",
+        "chicago-whip/1920/1920-11-27/page_02.jpg",
+        "chicago-whip/1920/1920-11-27/page_03.jpg",
+        "chicago-whip/1920/1920-11-27/page_04.jpg",
+        "chicago-whip/1920/1920-11-27/page_05.jpg",
+        "chicago-whip/1920/1920-11-27/page_06.jpg",
+        "chicago-whip/1920/1920-11-27/page_07.jpg",
+        "chicago-whip/1920/1920-11-27/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-11-27_sn86056950",
       "date": "1920-11-27",
       "title": "Chicago Whip",
@@ -1411,6 +2623,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-12-04_chicago-whip",
+      "date": "1920-12-04",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-12-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-12-04/page_01.jpg",
+        "chicago-whip/1920/1920-12-04/page_02.jpg",
+        "chicago-whip/1920/1920-12-04/page_03.jpg",
+        "chicago-whip/1920/1920-12-04/page_04.jpg",
+        "chicago-whip/1920/1920-12-04/page_05.jpg",
+        "chicago-whip/1920/1920-12-04/page_06.jpg",
+        "chicago-whip/1920/1920-12-04/page_07.jpg",
+        "chicago-whip/1920/1920-12-04/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-12-04_sn86056950",
@@ -1434,6 +2664,24 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-12-11_chicago-whip",
+      "date": "1920-12-11",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-12-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1920/1920-12-11/page_01.jpg",
+        "chicago-whip/1920/1920-12-11/page_02.jpg",
+        "chicago-whip/1920/1920-12-11/page_03.jpg",
+        "chicago-whip/1920/1920-12-11/page_04.jpg",
+        "chicago-whip/1920/1920-12-11/page_05.jpg",
+        "chicago-whip/1920/1920-12-11/page_06.jpg",
+        "chicago-whip/1920/1920-12-11/page_07.jpg",
+        "chicago-whip/1920/1920-12-11/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-12-11_sn86056950",
       "date": "1920-12-11",
       "title": "Chicago Whip",
@@ -1453,6 +2701,23 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1920-12-18_chicago-whip",
+      "date": "1920-12-18",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-12-18/thumb.jpg",
+      "pages": 7,
+      "page_paths": [
+        "chicago-whip/1920/1920-12-18/page_01.jpg",
+        "chicago-whip/1920/1920-12-18/page_02.jpg",
+        "chicago-whip/1920/1920-12-18/page_03.jpg",
+        "chicago-whip/1920/1920-12-18/page_04.jpg",
+        "chicago-whip/1920/1920-12-18/page_05.jpg",
+        "chicago-whip/1920/1920-12-18/page_06.jpg",
+        "chicago-whip/1920/1920-12-18/page_07.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1920-12-18_sn86056950",
@@ -1475,6 +2740,23 @@
       "uploaded_at": "2025-10-23T10:52:45Z"
     },
     {
+      "id": "1920-12-25_chicago-whip",
+      "date": "1920-12-25",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1920/1920-12-25/thumb.jpg",
+      "pages": 7,
+      "page_paths": [
+        "chicago-whip/1920/1920-12-25/page_01.jpg",
+        "chicago-whip/1920/1920-12-25/page_02.jpg",
+        "chicago-whip/1920/1920-12-25/page_03.jpg",
+        "chicago-whip/1920/1920-12-25/page_04.jpg",
+        "chicago-whip/1920/1920-12-25/page_05.jpg",
+        "chicago-whip/1920/1920-12-25/page_06.jpg",
+        "chicago-whip/1920/1920-12-25/page_07.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1920-12-25_sn86056950",
       "date": "1920-12-25",
       "title": "Chicago Whip",
@@ -1493,6 +2775,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:52:45Z"
+    },
+    {
+      "id": "1921-01-01_chicago-whip",
+      "date": "1921-01-01",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-01-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-01-01/page_01.jpg",
+        "chicago-whip/1921/1921-01-01/page_02.jpg",
+        "chicago-whip/1921/1921-01-01/page_03.jpg",
+        "chicago-whip/1921/1921-01-01/page_04.jpg",
+        "chicago-whip/1921/1921-01-01/page_05.jpg",
+        "chicago-whip/1921/1921-01-01/page_06.jpg",
+        "chicago-whip/1921/1921-01-01/page_07.jpg",
+        "chicago-whip/1921/1921-01-01/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-01-01_sn86056950",
@@ -1516,6 +2816,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-01-08_chicago-whip",
+      "date": "1921-01-08",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-01-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-01-08/page_01.jpg",
+        "chicago-whip/1921/1921-01-08/page_02.jpg",
+        "chicago-whip/1921/1921-01-08/page_03.jpg",
+        "chicago-whip/1921/1921-01-08/page_04.jpg",
+        "chicago-whip/1921/1921-01-08/page_05.jpg",
+        "chicago-whip/1921/1921-01-08/page_06.jpg",
+        "chicago-whip/1921/1921-01-08/page_07.jpg",
+        "chicago-whip/1921/1921-01-08/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-01-08_sn86056950",
       "date": "1921-01-08",
       "title": "Chicago Whip",
@@ -1535,6 +2853,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-01-15_chicago-whip",
+      "date": "1921-01-15",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-01-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-01-15/page_01.jpg",
+        "chicago-whip/1921/1921-01-15/page_02.jpg",
+        "chicago-whip/1921/1921-01-15/page_03.jpg",
+        "chicago-whip/1921/1921-01-15/page_04.jpg",
+        "chicago-whip/1921/1921-01-15/page_05.jpg",
+        "chicago-whip/1921/1921-01-15/page_06.jpg",
+        "chicago-whip/1921/1921-01-15/page_07.jpg",
+        "chicago-whip/1921/1921-01-15/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-01-15_sn86056950",
@@ -1558,6 +2894,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-01-22_chicago-whip",
+      "date": "1921-01-22",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-01-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-01-22/page_01.jpg",
+        "chicago-whip/1921/1921-01-22/page_02.jpg",
+        "chicago-whip/1921/1921-01-22/page_03.jpg",
+        "chicago-whip/1921/1921-01-22/page_04.jpg",
+        "chicago-whip/1921/1921-01-22/page_05.jpg",
+        "chicago-whip/1921/1921-01-22/page_06.jpg",
+        "chicago-whip/1921/1921-01-22/page_07.jpg",
+        "chicago-whip/1921/1921-01-22/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-01-22_sn86056950",
       "date": "1921-01-22",
       "title": "Chicago Whip",
@@ -1577,6 +2931,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-01-29_chicago-whip",
+      "date": "1921-01-29",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-01-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-01-29/page_01.jpg",
+        "chicago-whip/1921/1921-01-29/page_02.jpg",
+        "chicago-whip/1921/1921-01-29/page_03.jpg",
+        "chicago-whip/1921/1921-01-29/page_04.jpg",
+        "chicago-whip/1921/1921-01-29/page_05.jpg",
+        "chicago-whip/1921/1921-01-29/page_06.jpg",
+        "chicago-whip/1921/1921-01-29/page_07.jpg",
+        "chicago-whip/1921/1921-01-29/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-01-29_sn86056950",
@@ -1600,6 +2972,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-02-05_chicago-whip",
+      "date": "1921-02-05",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-02-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-02-05/page_01.jpg",
+        "chicago-whip/1921/1921-02-05/page_02.jpg",
+        "chicago-whip/1921/1921-02-05/page_03.jpg",
+        "chicago-whip/1921/1921-02-05/page_04.jpg",
+        "chicago-whip/1921/1921-02-05/page_05.jpg",
+        "chicago-whip/1921/1921-02-05/page_06.jpg",
+        "chicago-whip/1921/1921-02-05/page_07.jpg",
+        "chicago-whip/1921/1921-02-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-02-05_sn86056950",
       "date": "1921-02-05",
       "title": "Chicago Whip",
@@ -1619,6 +3009,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-02-12_chicago-whip",
+      "date": "1921-02-12",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-02-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-02-12/page_01.jpg",
+        "chicago-whip/1921/1921-02-12/page_02.jpg",
+        "chicago-whip/1921/1921-02-12/page_03.jpg",
+        "chicago-whip/1921/1921-02-12/page_04.jpg",
+        "chicago-whip/1921/1921-02-12/page_05.jpg",
+        "chicago-whip/1921/1921-02-12/page_06.jpg",
+        "chicago-whip/1921/1921-02-12/page_07.jpg",
+        "chicago-whip/1921/1921-02-12/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-02-12_sn86056950",
@@ -1642,6 +3050,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-02-19_chicago-whip",
+      "date": "1921-02-19",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-02-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-02-19/page_01.jpg",
+        "chicago-whip/1921/1921-02-19/page_02.jpg",
+        "chicago-whip/1921/1921-02-19/page_03.jpg",
+        "chicago-whip/1921/1921-02-19/page_04.jpg",
+        "chicago-whip/1921/1921-02-19/page_05.jpg",
+        "chicago-whip/1921/1921-02-19/page_06.jpg",
+        "chicago-whip/1921/1921-02-19/page_07.jpg",
+        "chicago-whip/1921/1921-02-19/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-02-19_sn86056950",
       "date": "1921-02-19",
       "title": "Chicago Whip",
@@ -1661,6 +3087,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-03-05_chicago-whip",
+      "date": "1921-03-05",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-03-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-03-05/page_01.jpg",
+        "chicago-whip/1921/1921-03-05/page_02.jpg",
+        "chicago-whip/1921/1921-03-05/page_03.jpg",
+        "chicago-whip/1921/1921-03-05/page_04.jpg",
+        "chicago-whip/1921/1921-03-05/page_05.jpg",
+        "chicago-whip/1921/1921-03-05/page_06.jpg",
+        "chicago-whip/1921/1921-03-05/page_07.jpg",
+        "chicago-whip/1921/1921-03-05/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-03-05_sn86056950",
@@ -1684,6 +3128,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-03-12_chicago-whip",
+      "date": "1921-03-12",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-03-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-03-12/page_01.jpg",
+        "chicago-whip/1921/1921-03-12/page_02.jpg",
+        "chicago-whip/1921/1921-03-12/page_03.jpg",
+        "chicago-whip/1921/1921-03-12/page_04.jpg",
+        "chicago-whip/1921/1921-03-12/page_05.jpg",
+        "chicago-whip/1921/1921-03-12/page_06.jpg",
+        "chicago-whip/1921/1921-03-12/page_07.jpg",
+        "chicago-whip/1921/1921-03-12/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-03-12_sn86056950",
       "date": "1921-03-12",
       "title": "Chicago Whip",
@@ -1703,6 +3165,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-03-19_chicago-whip",
+      "date": "1921-03-19",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-03-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-03-19/page_01.jpg",
+        "chicago-whip/1921/1921-03-19/page_02.jpg",
+        "chicago-whip/1921/1921-03-19/page_03.jpg",
+        "chicago-whip/1921/1921-03-19/page_04.jpg",
+        "chicago-whip/1921/1921-03-19/page_05.jpg",
+        "chicago-whip/1921/1921-03-19/page_06.jpg",
+        "chicago-whip/1921/1921-03-19/page_07.jpg",
+        "chicago-whip/1921/1921-03-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-03-19_sn86056950",
@@ -1726,6 +3206,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-03-26_chicago-whip",
+      "date": "1921-03-26",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-03-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-03-26/page_01.jpg",
+        "chicago-whip/1921/1921-03-26/page_02.jpg",
+        "chicago-whip/1921/1921-03-26/page_03.jpg",
+        "chicago-whip/1921/1921-03-26/page_04.jpg",
+        "chicago-whip/1921/1921-03-26/page_05.jpg",
+        "chicago-whip/1921/1921-03-26/page_06.jpg",
+        "chicago-whip/1921/1921-03-26/page_07.jpg",
+        "chicago-whip/1921/1921-03-26/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-03-26_sn86056950",
       "date": "1921-03-26",
       "title": "Chicago Whip",
@@ -1745,6 +3243,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-04-02_chicago-whip",
+      "date": "1921-04-02",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-04-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-04-02/page_01.jpg",
+        "chicago-whip/1921/1921-04-02/page_02.jpg",
+        "chicago-whip/1921/1921-04-02/page_03.jpg",
+        "chicago-whip/1921/1921-04-02/page_04.jpg",
+        "chicago-whip/1921/1921-04-02/page_05.jpg",
+        "chicago-whip/1921/1921-04-02/page_06.jpg",
+        "chicago-whip/1921/1921-04-02/page_07.jpg",
+        "chicago-whip/1921/1921-04-02/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-04-02_sn86056950",
@@ -1768,6 +3284,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-04-09_chicago-whip",
+      "date": "1921-04-09",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-04-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-04-09/page_01.jpg",
+        "chicago-whip/1921/1921-04-09/page_02.jpg",
+        "chicago-whip/1921/1921-04-09/page_03.jpg",
+        "chicago-whip/1921/1921-04-09/page_04.jpg",
+        "chicago-whip/1921/1921-04-09/page_05.jpg",
+        "chicago-whip/1921/1921-04-09/page_06.jpg",
+        "chicago-whip/1921/1921-04-09/page_07.jpg",
+        "chicago-whip/1921/1921-04-09/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-04-09_sn86056950",
       "date": "1921-04-09",
       "title": "Chicago Whip",
@@ -1787,6 +3321,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-04-16_chicago-whip",
+      "date": "1921-04-16",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-04-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-04-16/page_01.jpg",
+        "chicago-whip/1921/1921-04-16/page_02.jpg",
+        "chicago-whip/1921/1921-04-16/page_03.jpg",
+        "chicago-whip/1921/1921-04-16/page_04.jpg",
+        "chicago-whip/1921/1921-04-16/page_05.jpg",
+        "chicago-whip/1921/1921-04-16/page_06.jpg",
+        "chicago-whip/1921/1921-04-16/page_07.jpg",
+        "chicago-whip/1921/1921-04-16/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-04-16_sn86056950",
@@ -1810,6 +3362,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-04-23_chicago-whip",
+      "date": "1921-04-23",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-04-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-04-23/page_01.jpg",
+        "chicago-whip/1921/1921-04-23/page_02.jpg",
+        "chicago-whip/1921/1921-04-23/page_03.jpg",
+        "chicago-whip/1921/1921-04-23/page_04.jpg",
+        "chicago-whip/1921/1921-04-23/page_05.jpg",
+        "chicago-whip/1921/1921-04-23/page_06.jpg",
+        "chicago-whip/1921/1921-04-23/page_07.jpg",
+        "chicago-whip/1921/1921-04-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-04-23_sn86056950",
       "date": "1921-04-23",
       "title": "Chicago Whip",
@@ -1829,6 +3399,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-04-30_chicago-whip",
+      "date": "1921-04-30",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-04-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-04-30/page_01.jpg",
+        "chicago-whip/1921/1921-04-30/page_02.jpg",
+        "chicago-whip/1921/1921-04-30/page_03.jpg",
+        "chicago-whip/1921/1921-04-30/page_04.jpg",
+        "chicago-whip/1921/1921-04-30/page_05.jpg",
+        "chicago-whip/1921/1921-04-30/page_06.jpg",
+        "chicago-whip/1921/1921-04-30/page_07.jpg",
+        "chicago-whip/1921/1921-04-30/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-04-30_sn86056950",
@@ -1852,6 +3440,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-05-07_chicago-whip",
+      "date": "1921-05-07",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-05-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-05-07/page_01.jpg",
+        "chicago-whip/1921/1921-05-07/page_02.jpg",
+        "chicago-whip/1921/1921-05-07/page_03.jpg",
+        "chicago-whip/1921/1921-05-07/page_04.jpg",
+        "chicago-whip/1921/1921-05-07/page_05.jpg",
+        "chicago-whip/1921/1921-05-07/page_06.jpg",
+        "chicago-whip/1921/1921-05-07/page_07.jpg",
+        "chicago-whip/1921/1921-05-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-05-07_sn86056950",
       "date": "1921-05-07",
       "title": "Chicago Whip",
@@ -1871,6 +3477,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-05-14_chicago-whip",
+      "date": "1921-05-14",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-05-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-05-14/page_01.jpg",
+        "chicago-whip/1921/1921-05-14/page_02.jpg",
+        "chicago-whip/1921/1921-05-14/page_03.jpg",
+        "chicago-whip/1921/1921-05-14/page_04.jpg",
+        "chicago-whip/1921/1921-05-14/page_05.jpg",
+        "chicago-whip/1921/1921-05-14/page_06.jpg",
+        "chicago-whip/1921/1921-05-14/page_07.jpg",
+        "chicago-whip/1921/1921-05-14/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-05-14_sn86056950",
@@ -1894,6 +3518,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-05-21_chicago-whip",
+      "date": "1921-05-21",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-05-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-05-21/page_01.jpg",
+        "chicago-whip/1921/1921-05-21/page_02.jpg",
+        "chicago-whip/1921/1921-05-21/page_03.jpg",
+        "chicago-whip/1921/1921-05-21/page_04.jpg",
+        "chicago-whip/1921/1921-05-21/page_05.jpg",
+        "chicago-whip/1921/1921-05-21/page_06.jpg",
+        "chicago-whip/1921/1921-05-21/page_07.jpg",
+        "chicago-whip/1921/1921-05-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-05-21_sn86056950",
       "date": "1921-05-21",
       "title": "Chicago Whip",
@@ -1913,6 +3555,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-05-28_chicago-whip",
+      "date": "1921-05-28",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-05-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-05-28/page_01.jpg",
+        "chicago-whip/1921/1921-05-28/page_02.jpg",
+        "chicago-whip/1921/1921-05-28/page_03.jpg",
+        "chicago-whip/1921/1921-05-28/page_04.jpg",
+        "chicago-whip/1921/1921-05-28/page_05.jpg",
+        "chicago-whip/1921/1921-05-28/page_06.jpg",
+        "chicago-whip/1921/1921-05-28/page_07.jpg",
+        "chicago-whip/1921/1921-05-28/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-05-28_sn86056950",
@@ -1936,6 +3596,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-06-04_chicago-whip",
+      "date": "1921-06-04",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-06-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-06-04/page_01.jpg",
+        "chicago-whip/1921/1921-06-04/page_02.jpg",
+        "chicago-whip/1921/1921-06-04/page_03.jpg",
+        "chicago-whip/1921/1921-06-04/page_04.jpg",
+        "chicago-whip/1921/1921-06-04/page_05.jpg",
+        "chicago-whip/1921/1921-06-04/page_06.jpg",
+        "chicago-whip/1921/1921-06-04/page_07.jpg",
+        "chicago-whip/1921/1921-06-04/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-06-04_sn86056950",
       "date": "1921-06-04",
       "title": "Chicago Whip",
@@ -1955,6 +3633,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-06-11_chicago-whip",
+      "date": "1921-06-11",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-06-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-06-11/page_01.jpg",
+        "chicago-whip/1921/1921-06-11/page_02.jpg",
+        "chicago-whip/1921/1921-06-11/page_03.jpg",
+        "chicago-whip/1921/1921-06-11/page_04.jpg",
+        "chicago-whip/1921/1921-06-11/page_05.jpg",
+        "chicago-whip/1921/1921-06-11/page_06.jpg",
+        "chicago-whip/1921/1921-06-11/page_07.jpg",
+        "chicago-whip/1921/1921-06-11/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-06-11_sn86056950",
@@ -1978,6 +3674,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-06-18_chicago-whip",
+      "date": "1921-06-18",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-06-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-06-18/page_01.jpg",
+        "chicago-whip/1921/1921-06-18/page_02.jpg",
+        "chicago-whip/1921/1921-06-18/page_03.jpg",
+        "chicago-whip/1921/1921-06-18/page_04.jpg",
+        "chicago-whip/1921/1921-06-18/page_05.jpg",
+        "chicago-whip/1921/1921-06-18/page_06.jpg",
+        "chicago-whip/1921/1921-06-18/page_07.jpg",
+        "chicago-whip/1921/1921-06-18/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-06-18_sn86056950",
       "date": "1921-06-18",
       "title": "Chicago Whip",
@@ -1997,6 +3711,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-06-25_chicago-whip",
+      "date": "1921-06-25",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-06-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-06-25/page_01.jpg",
+        "chicago-whip/1921/1921-06-25/page_02.jpg",
+        "chicago-whip/1921/1921-06-25/page_03.jpg",
+        "chicago-whip/1921/1921-06-25/page_04.jpg",
+        "chicago-whip/1921/1921-06-25/page_05.jpg",
+        "chicago-whip/1921/1921-06-25/page_06.jpg",
+        "chicago-whip/1921/1921-06-25/page_07.jpg",
+        "chicago-whip/1921/1921-06-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-06-25_sn86056950",
@@ -2020,6 +3752,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-07-02_chicago-whip",
+      "date": "1921-07-02",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-07-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-07-02/page_01.jpg",
+        "chicago-whip/1921/1921-07-02/page_02.jpg",
+        "chicago-whip/1921/1921-07-02/page_03.jpg",
+        "chicago-whip/1921/1921-07-02/page_04.jpg",
+        "chicago-whip/1921/1921-07-02/page_05.jpg",
+        "chicago-whip/1921/1921-07-02/page_06.jpg",
+        "chicago-whip/1921/1921-07-02/page_07.jpg",
+        "chicago-whip/1921/1921-07-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-07-02_sn86056950",
       "date": "1921-07-02",
       "title": "Chicago Whip",
@@ -2039,6 +3789,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-07-09_chicago-whip",
+      "date": "1921-07-09",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-07-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-07-09/page_01.jpg",
+        "chicago-whip/1921/1921-07-09/page_02.jpg",
+        "chicago-whip/1921/1921-07-09/page_03.jpg",
+        "chicago-whip/1921/1921-07-09/page_04.jpg",
+        "chicago-whip/1921/1921-07-09/page_05.jpg",
+        "chicago-whip/1921/1921-07-09/page_06.jpg",
+        "chicago-whip/1921/1921-07-09/page_07.jpg",
+        "chicago-whip/1921/1921-07-09/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-07-09_sn86056950",
@@ -2062,6 +3830,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-07-16_chicago-whip",
+      "date": "1921-07-16",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-07-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-07-16/page_01.jpg",
+        "chicago-whip/1921/1921-07-16/page_02.jpg",
+        "chicago-whip/1921/1921-07-16/page_03.jpg",
+        "chicago-whip/1921/1921-07-16/page_04.jpg",
+        "chicago-whip/1921/1921-07-16/page_05.jpg",
+        "chicago-whip/1921/1921-07-16/page_06.jpg",
+        "chicago-whip/1921/1921-07-16/page_07.jpg",
+        "chicago-whip/1921/1921-07-16/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-07-16_sn86056950",
       "date": "1921-07-16",
       "title": "Chicago Whip",
@@ -2081,6 +3867,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-07-23_chicago-whip",
+      "date": "1921-07-23",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-07-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-07-23/page_01.jpg",
+        "chicago-whip/1921/1921-07-23/page_02.jpg",
+        "chicago-whip/1921/1921-07-23/page_03.jpg",
+        "chicago-whip/1921/1921-07-23/page_04.jpg",
+        "chicago-whip/1921/1921-07-23/page_05.jpg",
+        "chicago-whip/1921/1921-07-23/page_06.jpg",
+        "chicago-whip/1921/1921-07-23/page_07.jpg",
+        "chicago-whip/1921/1921-07-23/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-07-23_sn86056950",
@@ -2104,6 +3908,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-07-30_chicago-whip",
+      "date": "1921-07-30",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-07-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-07-30/page_01.jpg",
+        "chicago-whip/1921/1921-07-30/page_02.jpg",
+        "chicago-whip/1921/1921-07-30/page_03.jpg",
+        "chicago-whip/1921/1921-07-30/page_04.jpg",
+        "chicago-whip/1921/1921-07-30/page_05.jpg",
+        "chicago-whip/1921/1921-07-30/page_06.jpg",
+        "chicago-whip/1921/1921-07-30/page_07.jpg",
+        "chicago-whip/1921/1921-07-30/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-07-30_sn86056950",
       "date": "1921-07-30",
       "title": "Chicago Whip",
@@ -2123,6 +3945,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-08-06_chicago-whip",
+      "date": "1921-08-06",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-08-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-08-06/page_01.jpg",
+        "chicago-whip/1921/1921-08-06/page_02.jpg",
+        "chicago-whip/1921/1921-08-06/page_03.jpg",
+        "chicago-whip/1921/1921-08-06/page_04.jpg",
+        "chicago-whip/1921/1921-08-06/page_05.jpg",
+        "chicago-whip/1921/1921-08-06/page_06.jpg",
+        "chicago-whip/1921/1921-08-06/page_07.jpg",
+        "chicago-whip/1921/1921-08-06/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-08-06_sn86056950",
@@ -2146,6 +3986,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-08-13_chicago-whip",
+      "date": "1921-08-13",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-08-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-08-13/page_01.jpg",
+        "chicago-whip/1921/1921-08-13/page_02.jpg",
+        "chicago-whip/1921/1921-08-13/page_03.jpg",
+        "chicago-whip/1921/1921-08-13/page_04.jpg",
+        "chicago-whip/1921/1921-08-13/page_05.jpg",
+        "chicago-whip/1921/1921-08-13/page_06.jpg",
+        "chicago-whip/1921/1921-08-13/page_07.jpg",
+        "chicago-whip/1921/1921-08-13/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-08-13_sn86056950",
       "date": "1921-08-13",
       "title": "Chicago Whip",
@@ -2165,6 +4023,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-08-20_chicago-whip",
+      "date": "1921-08-20",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-08-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-08-20/page_01.jpg",
+        "chicago-whip/1921/1921-08-20/page_02.jpg",
+        "chicago-whip/1921/1921-08-20/page_03.jpg",
+        "chicago-whip/1921/1921-08-20/page_04.jpg",
+        "chicago-whip/1921/1921-08-20/page_05.jpg",
+        "chicago-whip/1921/1921-08-20/page_06.jpg",
+        "chicago-whip/1921/1921-08-20/page_07.jpg",
+        "chicago-whip/1921/1921-08-20/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-08-20_sn86056950",
@@ -2188,6 +4064,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-08-27_chicago-whip",
+      "date": "1921-08-27",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-08-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-08-27/page_01.jpg",
+        "chicago-whip/1921/1921-08-27/page_02.jpg",
+        "chicago-whip/1921/1921-08-27/page_03.jpg",
+        "chicago-whip/1921/1921-08-27/page_04.jpg",
+        "chicago-whip/1921/1921-08-27/page_05.jpg",
+        "chicago-whip/1921/1921-08-27/page_06.jpg",
+        "chicago-whip/1921/1921-08-27/page_07.jpg",
+        "chicago-whip/1921/1921-08-27/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-08-27_sn86056950",
       "date": "1921-08-27",
       "title": "Chicago Whip",
@@ -2207,6 +4101,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-09-10_chicago-whip",
+      "date": "1921-09-10",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-09-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-09-10/page_01.jpg",
+        "chicago-whip/1921/1921-09-10/page_02.jpg",
+        "chicago-whip/1921/1921-09-10/page_03.jpg",
+        "chicago-whip/1921/1921-09-10/page_04.jpg",
+        "chicago-whip/1921/1921-09-10/page_05.jpg",
+        "chicago-whip/1921/1921-09-10/page_06.jpg",
+        "chicago-whip/1921/1921-09-10/page_07.jpg",
+        "chicago-whip/1921/1921-09-10/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-09-10_sn86056950",
@@ -2230,6 +4142,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-09-17_chicago-whip",
+      "date": "1921-09-17",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-09-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-09-17/page_01.jpg",
+        "chicago-whip/1921/1921-09-17/page_02.jpg",
+        "chicago-whip/1921/1921-09-17/page_03.jpg",
+        "chicago-whip/1921/1921-09-17/page_04.jpg",
+        "chicago-whip/1921/1921-09-17/page_05.jpg",
+        "chicago-whip/1921/1921-09-17/page_06.jpg",
+        "chicago-whip/1921/1921-09-17/page_07.jpg",
+        "chicago-whip/1921/1921-09-17/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-09-17_sn86056950",
       "date": "1921-09-17",
       "title": "Chicago Whip",
@@ -2249,6 +4179,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-09-24_chicago-whip",
+      "date": "1921-09-24",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-09-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-09-24/page_01.jpg",
+        "chicago-whip/1921/1921-09-24/page_02.jpg",
+        "chicago-whip/1921/1921-09-24/page_03.jpg",
+        "chicago-whip/1921/1921-09-24/page_04.jpg",
+        "chicago-whip/1921/1921-09-24/page_05.jpg",
+        "chicago-whip/1921/1921-09-24/page_06.jpg",
+        "chicago-whip/1921/1921-09-24/page_07.jpg",
+        "chicago-whip/1921/1921-09-24/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-09-24_sn86056950",
@@ -2272,6 +4220,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-10-01_chicago-whip",
+      "date": "1921-10-01",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-10-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-10-01/page_01.jpg",
+        "chicago-whip/1921/1921-10-01/page_02.jpg",
+        "chicago-whip/1921/1921-10-01/page_03.jpg",
+        "chicago-whip/1921/1921-10-01/page_04.jpg",
+        "chicago-whip/1921/1921-10-01/page_05.jpg",
+        "chicago-whip/1921/1921-10-01/page_06.jpg",
+        "chicago-whip/1921/1921-10-01/page_07.jpg",
+        "chicago-whip/1921/1921-10-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-10-01_sn86056950",
       "date": "1921-10-01",
       "title": "Chicago Whip",
@@ -2291,6 +4257,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-10-08_chicago-whip",
+      "date": "1921-10-08",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-10-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-10-08/page_01.jpg",
+        "chicago-whip/1921/1921-10-08/page_02.jpg",
+        "chicago-whip/1921/1921-10-08/page_03.jpg",
+        "chicago-whip/1921/1921-10-08/page_04.jpg",
+        "chicago-whip/1921/1921-10-08/page_05.jpg",
+        "chicago-whip/1921/1921-10-08/page_06.jpg",
+        "chicago-whip/1921/1921-10-08/page_07.jpg",
+        "chicago-whip/1921/1921-10-08/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-10-08_sn86056950",
@@ -2314,6 +4298,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-10-15_chicago-whip",
+      "date": "1921-10-15",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-10-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-10-15/page_01.jpg",
+        "chicago-whip/1921/1921-10-15/page_02.jpg",
+        "chicago-whip/1921/1921-10-15/page_03.jpg",
+        "chicago-whip/1921/1921-10-15/page_04.jpg",
+        "chicago-whip/1921/1921-10-15/page_05.jpg",
+        "chicago-whip/1921/1921-10-15/page_06.jpg",
+        "chicago-whip/1921/1921-10-15/page_07.jpg",
+        "chicago-whip/1921/1921-10-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-10-15_sn86056950",
       "date": "1921-10-15",
       "title": "Chicago Whip",
@@ -2333,6 +4335,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-10-22_chicago-whip",
+      "date": "1921-10-22",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-10-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-10-22/page_01.jpg",
+        "chicago-whip/1921/1921-10-22/page_02.jpg",
+        "chicago-whip/1921/1921-10-22/page_03.jpg",
+        "chicago-whip/1921/1921-10-22/page_04.jpg",
+        "chicago-whip/1921/1921-10-22/page_05.jpg",
+        "chicago-whip/1921/1921-10-22/page_06.jpg",
+        "chicago-whip/1921/1921-10-22/page_07.jpg",
+        "chicago-whip/1921/1921-10-22/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-10-22_sn86056950",
@@ -2356,6 +4376,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-10-29_chicago-whip",
+      "date": "1921-10-29",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-10-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-10-29/page_01.jpg",
+        "chicago-whip/1921/1921-10-29/page_02.jpg",
+        "chicago-whip/1921/1921-10-29/page_03.jpg",
+        "chicago-whip/1921/1921-10-29/page_04.jpg",
+        "chicago-whip/1921/1921-10-29/page_05.jpg",
+        "chicago-whip/1921/1921-10-29/page_06.jpg",
+        "chicago-whip/1921/1921-10-29/page_07.jpg",
+        "chicago-whip/1921/1921-10-29/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-10-29_sn86056950",
       "date": "1921-10-29",
       "title": "Chicago Whip",
@@ -2375,6 +4413,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-11-05_chicago-whip",
+      "date": "1921-11-05",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-11-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-11-05/page_01.jpg",
+        "chicago-whip/1921/1921-11-05/page_02.jpg",
+        "chicago-whip/1921/1921-11-05/page_03.jpg",
+        "chicago-whip/1921/1921-11-05/page_04.jpg",
+        "chicago-whip/1921/1921-11-05/page_05.jpg",
+        "chicago-whip/1921/1921-11-05/page_06.jpg",
+        "chicago-whip/1921/1921-11-05/page_07.jpg",
+        "chicago-whip/1921/1921-11-05/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-11-05_sn86056950",
@@ -2398,6 +4454,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-11-12_chicago-whip",
+      "date": "1921-11-12",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-11-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-11-12/page_01.jpg",
+        "chicago-whip/1921/1921-11-12/page_02.jpg",
+        "chicago-whip/1921/1921-11-12/page_03.jpg",
+        "chicago-whip/1921/1921-11-12/page_04.jpg",
+        "chicago-whip/1921/1921-11-12/page_05.jpg",
+        "chicago-whip/1921/1921-11-12/page_06.jpg",
+        "chicago-whip/1921/1921-11-12/page_07.jpg",
+        "chicago-whip/1921/1921-11-12/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-11-12_sn86056950",
       "date": "1921-11-12",
       "title": "Chicago Whip",
@@ -2417,6 +4491,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-11-19_chicago-whip",
+      "date": "1921-11-19",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-11-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-11-19/page_01.jpg",
+        "chicago-whip/1921/1921-11-19/page_02.jpg",
+        "chicago-whip/1921/1921-11-19/page_03.jpg",
+        "chicago-whip/1921/1921-11-19/page_04.jpg",
+        "chicago-whip/1921/1921-11-19/page_05.jpg",
+        "chicago-whip/1921/1921-11-19/page_06.jpg",
+        "chicago-whip/1921/1921-11-19/page_07.jpg",
+        "chicago-whip/1921/1921-11-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-11-19_sn86056950",
@@ -2440,6 +4532,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-11-26_chicago-whip",
+      "date": "1921-11-26",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-11-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-11-26/page_01.jpg",
+        "chicago-whip/1921/1921-11-26/page_02.jpg",
+        "chicago-whip/1921/1921-11-26/page_03.jpg",
+        "chicago-whip/1921/1921-11-26/page_04.jpg",
+        "chicago-whip/1921/1921-11-26/page_05.jpg",
+        "chicago-whip/1921/1921-11-26/page_06.jpg",
+        "chicago-whip/1921/1921-11-26/page_07.jpg",
+        "chicago-whip/1921/1921-11-26/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-11-26_sn86056950",
       "date": "1921-11-26",
       "title": "Chicago Whip",
@@ -2459,6 +4569,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-12-03_chicago-whip",
+      "date": "1921-12-03",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-12-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-12-03/page_01.jpg",
+        "chicago-whip/1921/1921-12-03/page_02.jpg",
+        "chicago-whip/1921/1921-12-03/page_03.jpg",
+        "chicago-whip/1921/1921-12-03/page_04.jpg",
+        "chicago-whip/1921/1921-12-03/page_05.jpg",
+        "chicago-whip/1921/1921-12-03/page_06.jpg",
+        "chicago-whip/1921/1921-12-03/page_07.jpg",
+        "chicago-whip/1921/1921-12-03/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-12-03_sn86056950",
@@ -2482,6 +4610,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-12-10_chicago-whip",
+      "date": "1921-12-10",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-12-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-12-10/page_01.jpg",
+        "chicago-whip/1921/1921-12-10/page_02.jpg",
+        "chicago-whip/1921/1921-12-10/page_03.jpg",
+        "chicago-whip/1921/1921-12-10/page_04.jpg",
+        "chicago-whip/1921/1921-12-10/page_05.jpg",
+        "chicago-whip/1921/1921-12-10/page_06.jpg",
+        "chicago-whip/1921/1921-12-10/page_07.jpg",
+        "chicago-whip/1921/1921-12-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-12-10_sn86056950",
       "date": "1921-12-10",
       "title": "Chicago Whip",
@@ -2501,6 +4647,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-12-17_chicago-whip",
+      "date": "1921-12-17",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-12-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-12-17/page_01.jpg",
+        "chicago-whip/1921/1921-12-17/page_02.jpg",
+        "chicago-whip/1921/1921-12-17/page_03.jpg",
+        "chicago-whip/1921/1921-12-17/page_04.jpg",
+        "chicago-whip/1921/1921-12-17/page_05.jpg",
+        "chicago-whip/1921/1921-12-17/page_06.jpg",
+        "chicago-whip/1921/1921-12-17/page_07.jpg",
+        "chicago-whip/1921/1921-12-17/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-12-17_sn86056950",
@@ -2524,6 +4688,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1921-12-24_chicago-whip",
+      "date": "1921-12-24",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-12-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-12-24/page_01.jpg",
+        "chicago-whip/1921/1921-12-24/page_02.jpg",
+        "chicago-whip/1921/1921-12-24/page_03.jpg",
+        "chicago-whip/1921/1921-12-24/page_04.jpg",
+        "chicago-whip/1921/1921-12-24/page_05.jpg",
+        "chicago-whip/1921/1921-12-24/page_06.jpg",
+        "chicago-whip/1921/1921-12-24/page_07.jpg",
+        "chicago-whip/1921/1921-12-24/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1921-12-24_sn86056950",
       "date": "1921-12-24",
       "title": "Chicago Whip",
@@ -2543,6 +4725,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:53:30Z"
+    },
+    {
+      "id": "1921-12-31_chicago-whip",
+      "date": "1921-12-31",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1921/1921-12-31/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1921/1921-12-31/page_01.jpg",
+        "chicago-whip/1921/1921-12-31/page_02.jpg",
+        "chicago-whip/1921/1921-12-31/page_03.jpg",
+        "chicago-whip/1921/1921-12-31/page_04.jpg",
+        "chicago-whip/1921/1921-12-31/page_05.jpg",
+        "chicago-whip/1921/1921-12-31/page_06.jpg",
+        "chicago-whip/1921/1921-12-31/page_07.jpg",
+        "chicago-whip/1921/1921-12-31/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1921-12-31_sn86056950",
@@ -2566,6 +4766,24 @@
       "uploaded_at": "2025-10-23T10:53:30Z"
     },
     {
+      "id": "1922-01-07_chicago-whip",
+      "date": "1922-01-07",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-01-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-01-07/page_01.jpg",
+        "chicago-whip/1922/1922-01-07/page_02.jpg",
+        "chicago-whip/1922/1922-01-07/page_03.jpg",
+        "chicago-whip/1922/1922-01-07/page_04.jpg",
+        "chicago-whip/1922/1922-01-07/page_05.jpg",
+        "chicago-whip/1922/1922-01-07/page_06.jpg",
+        "chicago-whip/1922/1922-01-07/page_07.jpg",
+        "chicago-whip/1922/1922-01-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-01-07_sn86056950",
       "date": "1922-01-07",
       "title": "Chicago Whip",
@@ -2585,6 +4803,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-01-14_chicago-whip",
+      "date": "1922-01-14",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-01-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-01-14/page_01.jpg",
+        "chicago-whip/1922/1922-01-14/page_02.jpg",
+        "chicago-whip/1922/1922-01-14/page_03.jpg",
+        "chicago-whip/1922/1922-01-14/page_04.jpg",
+        "chicago-whip/1922/1922-01-14/page_05.jpg",
+        "chicago-whip/1922/1922-01-14/page_06.jpg",
+        "chicago-whip/1922/1922-01-14/page_07.jpg",
+        "chicago-whip/1922/1922-01-14/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-01-14_sn86056950",
@@ -2608,6 +4844,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-01-21_chicago-whip",
+      "date": "1922-01-21",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-01-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-01-21/page_01.jpg",
+        "chicago-whip/1922/1922-01-21/page_02.jpg",
+        "chicago-whip/1922/1922-01-21/page_03.jpg",
+        "chicago-whip/1922/1922-01-21/page_04.jpg",
+        "chicago-whip/1922/1922-01-21/page_05.jpg",
+        "chicago-whip/1922/1922-01-21/page_06.jpg",
+        "chicago-whip/1922/1922-01-21/page_07.jpg",
+        "chicago-whip/1922/1922-01-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-01-21_sn86056950",
       "date": "1922-01-21",
       "title": "Chicago Whip",
@@ -2627,6 +4881,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-01-28_chicago-whip",
+      "date": "1922-01-28",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-01-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-01-28/page_01.jpg",
+        "chicago-whip/1922/1922-01-28/page_02.jpg",
+        "chicago-whip/1922/1922-01-28/page_03.jpg",
+        "chicago-whip/1922/1922-01-28/page_04.jpg",
+        "chicago-whip/1922/1922-01-28/page_05.jpg",
+        "chicago-whip/1922/1922-01-28/page_06.jpg",
+        "chicago-whip/1922/1922-01-28/page_07.jpg",
+        "chicago-whip/1922/1922-01-28/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-01-28_sn86056950",
@@ -2650,6 +4922,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-02-04_chicago-whip",
+      "date": "1922-02-04",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-02-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-02-04/page_01.jpg",
+        "chicago-whip/1922/1922-02-04/page_02.jpg",
+        "chicago-whip/1922/1922-02-04/page_03.jpg",
+        "chicago-whip/1922/1922-02-04/page_04.jpg",
+        "chicago-whip/1922/1922-02-04/page_05.jpg",
+        "chicago-whip/1922/1922-02-04/page_06.jpg",
+        "chicago-whip/1922/1922-02-04/page_07.jpg",
+        "chicago-whip/1922/1922-02-04/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-02-04_sn86056950",
       "date": "1922-02-04",
       "title": "Chicago Whip",
@@ -2669,6 +4959,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-02-11_chicago-whip",
+      "date": "1922-02-11",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-02-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-02-11/page_01.jpg",
+        "chicago-whip/1922/1922-02-11/page_02.jpg",
+        "chicago-whip/1922/1922-02-11/page_03.jpg",
+        "chicago-whip/1922/1922-02-11/page_04.jpg",
+        "chicago-whip/1922/1922-02-11/page_05.jpg",
+        "chicago-whip/1922/1922-02-11/page_06.jpg",
+        "chicago-whip/1922/1922-02-11/page_07.jpg",
+        "chicago-whip/1922/1922-02-11/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-02-11_sn86056950",
@@ -2692,6 +5000,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-02-18_chicago-whip",
+      "date": "1922-02-18",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-02-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-02-18/page_01.jpg",
+        "chicago-whip/1922/1922-02-18/page_02.jpg",
+        "chicago-whip/1922/1922-02-18/page_03.jpg",
+        "chicago-whip/1922/1922-02-18/page_04.jpg",
+        "chicago-whip/1922/1922-02-18/page_05.jpg",
+        "chicago-whip/1922/1922-02-18/page_06.jpg",
+        "chicago-whip/1922/1922-02-18/page_07.jpg",
+        "chicago-whip/1922/1922-02-18/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-02-18_sn86056950",
       "date": "1922-02-18",
       "title": "Chicago Whip",
@@ -2711,6 +5037,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-02-25_chicago-whip",
+      "date": "1922-02-25",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-02-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-02-25/page_01.jpg",
+        "chicago-whip/1922/1922-02-25/page_02.jpg",
+        "chicago-whip/1922/1922-02-25/page_03.jpg",
+        "chicago-whip/1922/1922-02-25/page_04.jpg",
+        "chicago-whip/1922/1922-02-25/page_05.jpg",
+        "chicago-whip/1922/1922-02-25/page_06.jpg",
+        "chicago-whip/1922/1922-02-25/page_07.jpg",
+        "chicago-whip/1922/1922-02-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-02-25_sn86056950",
@@ -2734,6 +5078,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-03-04_chicago-whip",
+      "date": "1922-03-04",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-03-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-03-04/page_01.jpg",
+        "chicago-whip/1922/1922-03-04/page_02.jpg",
+        "chicago-whip/1922/1922-03-04/page_03.jpg",
+        "chicago-whip/1922/1922-03-04/page_04.jpg",
+        "chicago-whip/1922/1922-03-04/page_05.jpg",
+        "chicago-whip/1922/1922-03-04/page_06.jpg",
+        "chicago-whip/1922/1922-03-04/page_07.jpg",
+        "chicago-whip/1922/1922-03-04/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-03-04_sn86056950",
       "date": "1922-03-04",
       "title": "Chicago Whip",
@@ -2753,6 +5115,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T12:56:02Z"
+    },
+    {
+      "id": "1922-03-11_chicago-whip",
+      "date": "1922-03-11",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-03-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-03-11/page_01.jpg",
+        "chicago-whip/1922/1922-03-11/page_02.jpg",
+        "chicago-whip/1922/1922-03-11/page_03.jpg",
+        "chicago-whip/1922/1922-03-11/page_04.jpg",
+        "chicago-whip/1922/1922-03-11/page_05.jpg",
+        "chicago-whip/1922/1922-03-11/page_06.jpg",
+        "chicago-whip/1922/1922-03-11/page_07.jpg",
+        "chicago-whip/1922/1922-03-11/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-03-11_sn86056950",
@@ -2776,6 +5156,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-03-18_chicago-whip",
+      "date": "1922-03-18",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-03-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-03-18/page_01.jpg",
+        "chicago-whip/1922/1922-03-18/page_02.jpg",
+        "chicago-whip/1922/1922-03-18/page_03.jpg",
+        "chicago-whip/1922/1922-03-18/page_04.jpg",
+        "chicago-whip/1922/1922-03-18/page_05.jpg",
+        "chicago-whip/1922/1922-03-18/page_06.jpg",
+        "chicago-whip/1922/1922-03-18/page_07.jpg",
+        "chicago-whip/1922/1922-03-18/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-03-18_sn86056950",
       "date": "1922-03-18",
       "title": "Chicago Whip",
@@ -2795,6 +5193,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-03-25_chicago-whip",
+      "date": "1922-03-25",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-03-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-03-25/page_01.jpg",
+        "chicago-whip/1922/1922-03-25/page_02.jpg",
+        "chicago-whip/1922/1922-03-25/page_03.jpg",
+        "chicago-whip/1922/1922-03-25/page_04.jpg",
+        "chicago-whip/1922/1922-03-25/page_05.jpg",
+        "chicago-whip/1922/1922-03-25/page_06.jpg",
+        "chicago-whip/1922/1922-03-25/page_07.jpg",
+        "chicago-whip/1922/1922-03-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-03-25_sn86056950",
@@ -2818,6 +5234,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-04-01_chicago-whip",
+      "date": "1922-04-01",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-04-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-04-01/page_01.jpg",
+        "chicago-whip/1922/1922-04-01/page_02.jpg",
+        "chicago-whip/1922/1922-04-01/page_03.jpg",
+        "chicago-whip/1922/1922-04-01/page_04.jpg",
+        "chicago-whip/1922/1922-04-01/page_05.jpg",
+        "chicago-whip/1922/1922-04-01/page_06.jpg",
+        "chicago-whip/1922/1922-04-01/page_07.jpg",
+        "chicago-whip/1922/1922-04-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-04-01_sn86056950",
       "date": "1922-04-01",
       "title": "Chicago Whip",
@@ -2837,6 +5271,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-04-08_chicago-whip",
+      "date": "1922-04-08",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-04-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-04-08/page_01.jpg",
+        "chicago-whip/1922/1922-04-08/page_02.jpg",
+        "chicago-whip/1922/1922-04-08/page_03.jpg",
+        "chicago-whip/1922/1922-04-08/page_04.jpg",
+        "chicago-whip/1922/1922-04-08/page_05.jpg",
+        "chicago-whip/1922/1922-04-08/page_06.jpg",
+        "chicago-whip/1922/1922-04-08/page_07.jpg",
+        "chicago-whip/1922/1922-04-08/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-04-08_sn86056950",
@@ -2860,6 +5312,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-04-15_chicago-whip",
+      "date": "1922-04-15",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-04-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-04-15/page_01.jpg",
+        "chicago-whip/1922/1922-04-15/page_02.jpg",
+        "chicago-whip/1922/1922-04-15/page_03.jpg",
+        "chicago-whip/1922/1922-04-15/page_04.jpg",
+        "chicago-whip/1922/1922-04-15/page_05.jpg",
+        "chicago-whip/1922/1922-04-15/page_06.jpg",
+        "chicago-whip/1922/1922-04-15/page_07.jpg",
+        "chicago-whip/1922/1922-04-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-04-15_sn86056950",
       "date": "1922-04-15",
       "title": "Chicago Whip",
@@ -2879,6 +5349,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-04-22_chicago-whip",
+      "date": "1922-04-22",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-04-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-04-22/page_01.jpg",
+        "chicago-whip/1922/1922-04-22/page_02.jpg",
+        "chicago-whip/1922/1922-04-22/page_03.jpg",
+        "chicago-whip/1922/1922-04-22/page_04.jpg",
+        "chicago-whip/1922/1922-04-22/page_05.jpg",
+        "chicago-whip/1922/1922-04-22/page_06.jpg",
+        "chicago-whip/1922/1922-04-22/page_07.jpg",
+        "chicago-whip/1922/1922-04-22/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-04-22_sn86056950",
@@ -2902,6 +5390,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-04-29_chicago-whip",
+      "date": "1922-04-29",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-04-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-04-29/page_01.jpg",
+        "chicago-whip/1922/1922-04-29/page_02.jpg",
+        "chicago-whip/1922/1922-04-29/page_03.jpg",
+        "chicago-whip/1922/1922-04-29/page_04.jpg",
+        "chicago-whip/1922/1922-04-29/page_05.jpg",
+        "chicago-whip/1922/1922-04-29/page_06.jpg",
+        "chicago-whip/1922/1922-04-29/page_07.jpg",
+        "chicago-whip/1922/1922-04-29/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-04-29_sn86056950",
       "date": "1922-04-29",
       "title": "Chicago Whip",
@@ -2921,6 +5427,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-05-06_chicago-whip",
+      "date": "1922-05-06",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-05-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-05-06/page_01.jpg",
+        "chicago-whip/1922/1922-05-06/page_02.jpg",
+        "chicago-whip/1922/1922-05-06/page_03.jpg",
+        "chicago-whip/1922/1922-05-06/page_04.jpg",
+        "chicago-whip/1922/1922-05-06/page_05.jpg",
+        "chicago-whip/1922/1922-05-06/page_06.jpg",
+        "chicago-whip/1922/1922-05-06/page_07.jpg",
+        "chicago-whip/1922/1922-05-06/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-05-06_sn86056950",
@@ -2944,6 +5468,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-05-13_chicago-whip",
+      "date": "1922-05-13",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-05-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-05-13/page_01.jpg",
+        "chicago-whip/1922/1922-05-13/page_02.jpg",
+        "chicago-whip/1922/1922-05-13/page_03.jpg",
+        "chicago-whip/1922/1922-05-13/page_04.jpg",
+        "chicago-whip/1922/1922-05-13/page_05.jpg",
+        "chicago-whip/1922/1922-05-13/page_06.jpg",
+        "chicago-whip/1922/1922-05-13/page_07.jpg",
+        "chicago-whip/1922/1922-05-13/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-05-13_sn86056950",
       "date": "1922-05-13",
       "title": "Chicago Whip",
@@ -2963,6 +5505,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-05-20_chicago-whip",
+      "date": "1922-05-20",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-05-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-05-20/page_01.jpg",
+        "chicago-whip/1922/1922-05-20/page_02.jpg",
+        "chicago-whip/1922/1922-05-20/page_03.jpg",
+        "chicago-whip/1922/1922-05-20/page_04.jpg",
+        "chicago-whip/1922/1922-05-20/page_05.jpg",
+        "chicago-whip/1922/1922-05-20/page_06.jpg",
+        "chicago-whip/1922/1922-05-20/page_07.jpg",
+        "chicago-whip/1922/1922-05-20/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-05-20_sn86056950",
@@ -2986,6 +5546,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-05-27_chicago-whip",
+      "date": "1922-05-27",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-05-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-05-27/page_01.jpg",
+        "chicago-whip/1922/1922-05-27/page_02.jpg",
+        "chicago-whip/1922/1922-05-27/page_03.jpg",
+        "chicago-whip/1922/1922-05-27/page_04.jpg",
+        "chicago-whip/1922/1922-05-27/page_05.jpg",
+        "chicago-whip/1922/1922-05-27/page_06.jpg",
+        "chicago-whip/1922/1922-05-27/page_07.jpg",
+        "chicago-whip/1922/1922-05-27/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-05-27_sn86056950",
       "date": "1922-05-27",
       "title": "Chicago Whip",
@@ -3005,6 +5583,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-06-03_chicago-whip",
+      "date": "1922-06-03",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-06-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-06-03/page_01.jpg",
+        "chicago-whip/1922/1922-06-03/page_02.jpg",
+        "chicago-whip/1922/1922-06-03/page_03.jpg",
+        "chicago-whip/1922/1922-06-03/page_04.jpg",
+        "chicago-whip/1922/1922-06-03/page_05.jpg",
+        "chicago-whip/1922/1922-06-03/page_06.jpg",
+        "chicago-whip/1922/1922-06-03/page_07.jpg",
+        "chicago-whip/1922/1922-06-03/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-06-03_sn86056950",
@@ -3028,6 +5624,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-06-10_chicago-whip",
+      "date": "1922-06-10",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-06-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-06-10/page_01.jpg",
+        "chicago-whip/1922/1922-06-10/page_02.jpg",
+        "chicago-whip/1922/1922-06-10/page_03.jpg",
+        "chicago-whip/1922/1922-06-10/page_04.jpg",
+        "chicago-whip/1922/1922-06-10/page_05.jpg",
+        "chicago-whip/1922/1922-06-10/page_06.jpg",
+        "chicago-whip/1922/1922-06-10/page_07.jpg",
+        "chicago-whip/1922/1922-06-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-06-10_sn86056950",
       "date": "1922-06-10",
       "title": "Chicago Whip",
@@ -3047,6 +5661,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-06-17_chicago-whip",
+      "date": "1922-06-17",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-06-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-06-17/page_01.jpg",
+        "chicago-whip/1922/1922-06-17/page_02.jpg",
+        "chicago-whip/1922/1922-06-17/page_03.jpg",
+        "chicago-whip/1922/1922-06-17/page_04.jpg",
+        "chicago-whip/1922/1922-06-17/page_05.jpg",
+        "chicago-whip/1922/1922-06-17/page_06.jpg",
+        "chicago-whip/1922/1922-06-17/page_07.jpg",
+        "chicago-whip/1922/1922-06-17/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-06-17_sn86056950",
@@ -3070,6 +5702,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-06-24_chicago-whip",
+      "date": "1922-06-24",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-06-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-06-24/page_01.jpg",
+        "chicago-whip/1922/1922-06-24/page_02.jpg",
+        "chicago-whip/1922/1922-06-24/page_03.jpg",
+        "chicago-whip/1922/1922-06-24/page_04.jpg",
+        "chicago-whip/1922/1922-06-24/page_05.jpg",
+        "chicago-whip/1922/1922-06-24/page_06.jpg",
+        "chicago-whip/1922/1922-06-24/page_07.jpg",
+        "chicago-whip/1922/1922-06-24/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-06-24_sn86056950",
       "date": "1922-06-24",
       "title": "Chicago Whip",
@@ -3089,6 +5739,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-07-01_chicago-whip",
+      "date": "1922-07-01",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-07-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-07-01/page_01.jpg",
+        "chicago-whip/1922/1922-07-01/page_02.jpg",
+        "chicago-whip/1922/1922-07-01/page_03.jpg",
+        "chicago-whip/1922/1922-07-01/page_04.jpg",
+        "chicago-whip/1922/1922-07-01/page_05.jpg",
+        "chicago-whip/1922/1922-07-01/page_06.jpg",
+        "chicago-whip/1922/1922-07-01/page_07.jpg",
+        "chicago-whip/1922/1922-07-01/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-07-01_sn86056950",
@@ -3112,6 +5780,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-07-08_chicago-whip",
+      "date": "1922-07-08",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-07-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-07-08/page_01.jpg",
+        "chicago-whip/1922/1922-07-08/page_02.jpg",
+        "chicago-whip/1922/1922-07-08/page_03.jpg",
+        "chicago-whip/1922/1922-07-08/page_04.jpg",
+        "chicago-whip/1922/1922-07-08/page_05.jpg",
+        "chicago-whip/1922/1922-07-08/page_06.jpg",
+        "chicago-whip/1922/1922-07-08/page_07.jpg",
+        "chicago-whip/1922/1922-07-08/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-07-08_sn86056950",
       "date": "1922-07-08",
       "title": "Chicago Whip",
@@ -3131,6 +5817,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-07-15_chicago-whip",
+      "date": "1922-07-15",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-07-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-07-15/page_01.jpg",
+        "chicago-whip/1922/1922-07-15/page_02.jpg",
+        "chicago-whip/1922/1922-07-15/page_03.jpg",
+        "chicago-whip/1922/1922-07-15/page_04.jpg",
+        "chicago-whip/1922/1922-07-15/page_05.jpg",
+        "chicago-whip/1922/1922-07-15/page_06.jpg",
+        "chicago-whip/1922/1922-07-15/page_07.jpg",
+        "chicago-whip/1922/1922-07-15/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-07-15_sn86056950",
@@ -3154,6 +5858,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-07-22_chicago-whip",
+      "date": "1922-07-22",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-07-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-07-22/page_01.jpg",
+        "chicago-whip/1922/1922-07-22/page_02.jpg",
+        "chicago-whip/1922/1922-07-22/page_03.jpg",
+        "chicago-whip/1922/1922-07-22/page_04.jpg",
+        "chicago-whip/1922/1922-07-22/page_05.jpg",
+        "chicago-whip/1922/1922-07-22/page_06.jpg",
+        "chicago-whip/1922/1922-07-22/page_07.jpg",
+        "chicago-whip/1922/1922-07-22/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-07-22_sn86056950",
       "date": "1922-07-22",
       "title": "Chicago Whip",
@@ -3173,6 +5895,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-07-29_chicago-whip",
+      "date": "1922-07-29",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-07-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-07-29/page_01.jpg",
+        "chicago-whip/1922/1922-07-29/page_02.jpg",
+        "chicago-whip/1922/1922-07-29/page_03.jpg",
+        "chicago-whip/1922/1922-07-29/page_04.jpg",
+        "chicago-whip/1922/1922-07-29/page_05.jpg",
+        "chicago-whip/1922/1922-07-29/page_06.jpg",
+        "chicago-whip/1922/1922-07-29/page_07.jpg",
+        "chicago-whip/1922/1922-07-29/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-07-29_sn86056950",
@@ -3196,6 +5936,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-08-05_chicago-whip",
+      "date": "1922-08-05",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-08-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-08-05/page_01.jpg",
+        "chicago-whip/1922/1922-08-05/page_02.jpg",
+        "chicago-whip/1922/1922-08-05/page_03.jpg",
+        "chicago-whip/1922/1922-08-05/page_04.jpg",
+        "chicago-whip/1922/1922-08-05/page_05.jpg",
+        "chicago-whip/1922/1922-08-05/page_06.jpg",
+        "chicago-whip/1922/1922-08-05/page_07.jpg",
+        "chicago-whip/1922/1922-08-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-08-05_sn86056950",
       "date": "1922-08-05",
       "title": "Chicago Whip",
@@ -3215,6 +5973,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-08-12_chicago-whip",
+      "date": "1922-08-12",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-08-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-08-12/page_01.jpg",
+        "chicago-whip/1922/1922-08-12/page_02.jpg",
+        "chicago-whip/1922/1922-08-12/page_03.jpg",
+        "chicago-whip/1922/1922-08-12/page_04.jpg",
+        "chicago-whip/1922/1922-08-12/page_05.jpg",
+        "chicago-whip/1922/1922-08-12/page_06.jpg",
+        "chicago-whip/1922/1922-08-12/page_07.jpg",
+        "chicago-whip/1922/1922-08-12/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-08-12_sn86056950",
@@ -3238,6 +6014,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-08-26_chicago-whip",
+      "date": "1922-08-26",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-08-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-08-26/page_01.jpg",
+        "chicago-whip/1922/1922-08-26/page_02.jpg",
+        "chicago-whip/1922/1922-08-26/page_03.jpg",
+        "chicago-whip/1922/1922-08-26/page_04.jpg",
+        "chicago-whip/1922/1922-08-26/page_05.jpg",
+        "chicago-whip/1922/1922-08-26/page_06.jpg",
+        "chicago-whip/1922/1922-08-26/page_07.jpg",
+        "chicago-whip/1922/1922-08-26/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-08-26_sn86056950",
       "date": "1922-08-26",
       "title": "Chicago Whip",
@@ -3257,6 +6051,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-09-02_chicago-whip",
+      "date": "1922-09-02",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-09-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-09-02/page_01.jpg",
+        "chicago-whip/1922/1922-09-02/page_02.jpg",
+        "chicago-whip/1922/1922-09-02/page_03.jpg",
+        "chicago-whip/1922/1922-09-02/page_04.jpg",
+        "chicago-whip/1922/1922-09-02/page_05.jpg",
+        "chicago-whip/1922/1922-09-02/page_06.jpg",
+        "chicago-whip/1922/1922-09-02/page_07.jpg",
+        "chicago-whip/1922/1922-09-02/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-09-02_sn86056950",
@@ -3280,6 +6092,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-09-09_chicago-whip",
+      "date": "1922-09-09",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-09-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-09-09/page_01.jpg",
+        "chicago-whip/1922/1922-09-09/page_02.jpg",
+        "chicago-whip/1922/1922-09-09/page_03.jpg",
+        "chicago-whip/1922/1922-09-09/page_04.jpg",
+        "chicago-whip/1922/1922-09-09/page_05.jpg",
+        "chicago-whip/1922/1922-09-09/page_06.jpg",
+        "chicago-whip/1922/1922-09-09/page_07.jpg",
+        "chicago-whip/1922/1922-09-09/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-09-09_sn86056950",
       "date": "1922-09-09",
       "title": "Chicago Whip",
@@ -3299,6 +6129,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-09-16_chicago-whip",
+      "date": "1922-09-16",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-09-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-09-16/page_01.jpg",
+        "chicago-whip/1922/1922-09-16/page_02.jpg",
+        "chicago-whip/1922/1922-09-16/page_03.jpg",
+        "chicago-whip/1922/1922-09-16/page_04.jpg",
+        "chicago-whip/1922/1922-09-16/page_05.jpg",
+        "chicago-whip/1922/1922-09-16/page_06.jpg",
+        "chicago-whip/1922/1922-09-16/page_07.jpg",
+        "chicago-whip/1922/1922-09-16/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-09-16_sn86056950",
@@ -3322,6 +6170,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-09-23_chicago-whip",
+      "date": "1922-09-23",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-09-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-09-23/page_01.jpg",
+        "chicago-whip/1922/1922-09-23/page_02.jpg",
+        "chicago-whip/1922/1922-09-23/page_03.jpg",
+        "chicago-whip/1922/1922-09-23/page_04.jpg",
+        "chicago-whip/1922/1922-09-23/page_05.jpg",
+        "chicago-whip/1922/1922-09-23/page_06.jpg",
+        "chicago-whip/1922/1922-09-23/page_07.jpg",
+        "chicago-whip/1922/1922-09-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-09-23_sn86056950",
       "date": "1922-09-23",
       "title": "Chicago Whip",
@@ -3341,6 +6207,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-09-30_chicago-whip",
+      "date": "1922-09-30",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-09-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-09-30/page_01.jpg",
+        "chicago-whip/1922/1922-09-30/page_02.jpg",
+        "chicago-whip/1922/1922-09-30/page_03.jpg",
+        "chicago-whip/1922/1922-09-30/page_04.jpg",
+        "chicago-whip/1922/1922-09-30/page_05.jpg",
+        "chicago-whip/1922/1922-09-30/page_06.jpg",
+        "chicago-whip/1922/1922-09-30/page_07.jpg",
+        "chicago-whip/1922/1922-09-30/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-09-30_sn86056950",
@@ -3364,6 +6248,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-10-07_chicago-whip",
+      "date": "1922-10-07",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-10-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-10-07/page_01.jpg",
+        "chicago-whip/1922/1922-10-07/page_02.jpg",
+        "chicago-whip/1922/1922-10-07/page_03.jpg",
+        "chicago-whip/1922/1922-10-07/page_04.jpg",
+        "chicago-whip/1922/1922-10-07/page_05.jpg",
+        "chicago-whip/1922/1922-10-07/page_06.jpg",
+        "chicago-whip/1922/1922-10-07/page_07.jpg",
+        "chicago-whip/1922/1922-10-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-10-07_sn86056950",
       "date": "1922-10-07",
       "title": "Chicago Whip",
@@ -3383,6 +6285,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-10-14_chicago-whip",
+      "date": "1922-10-14",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-10-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-10-14/page_01.jpg",
+        "chicago-whip/1922/1922-10-14/page_02.jpg",
+        "chicago-whip/1922/1922-10-14/page_03.jpg",
+        "chicago-whip/1922/1922-10-14/page_04.jpg",
+        "chicago-whip/1922/1922-10-14/page_05.jpg",
+        "chicago-whip/1922/1922-10-14/page_06.jpg",
+        "chicago-whip/1922/1922-10-14/page_07.jpg",
+        "chicago-whip/1922/1922-10-14/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-10-14_sn86056950",
@@ -3406,6 +6326,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-10-21_chicago-whip",
+      "date": "1922-10-21",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-10-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-10-21/page_01.jpg",
+        "chicago-whip/1922/1922-10-21/page_02.jpg",
+        "chicago-whip/1922/1922-10-21/page_03.jpg",
+        "chicago-whip/1922/1922-10-21/page_04.jpg",
+        "chicago-whip/1922/1922-10-21/page_05.jpg",
+        "chicago-whip/1922/1922-10-21/page_06.jpg",
+        "chicago-whip/1922/1922-10-21/page_07.jpg",
+        "chicago-whip/1922/1922-10-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-10-21_sn86056950",
       "date": "1922-10-21",
       "title": "Chicago Whip",
@@ -3425,6 +6363,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-10-28_chicago-whip",
+      "date": "1922-10-28",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-10-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-10-28/page_01.jpg",
+        "chicago-whip/1922/1922-10-28/page_02.jpg",
+        "chicago-whip/1922/1922-10-28/page_03.jpg",
+        "chicago-whip/1922/1922-10-28/page_04.jpg",
+        "chicago-whip/1922/1922-10-28/page_05.jpg",
+        "chicago-whip/1922/1922-10-28/page_06.jpg",
+        "chicago-whip/1922/1922-10-28/page_07.jpg",
+        "chicago-whip/1922/1922-10-28/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-10-28_sn86056950",
@@ -3448,6 +6404,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-11-04_chicago-whip",
+      "date": "1922-11-04",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-11-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-11-04/page_01.jpg",
+        "chicago-whip/1922/1922-11-04/page_02.jpg",
+        "chicago-whip/1922/1922-11-04/page_03.jpg",
+        "chicago-whip/1922/1922-11-04/page_04.jpg",
+        "chicago-whip/1922/1922-11-04/page_05.jpg",
+        "chicago-whip/1922/1922-11-04/page_06.jpg",
+        "chicago-whip/1922/1922-11-04/page_07.jpg",
+        "chicago-whip/1922/1922-11-04/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-11-04_sn86056950",
       "date": "1922-11-04",
       "title": "Chicago Whip",
@@ -3467,6 +6441,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-11-11_chicago-whip",
+      "date": "1922-11-11",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-11-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-11-11/page_01.jpg",
+        "chicago-whip/1922/1922-11-11/page_02.jpg",
+        "chicago-whip/1922/1922-11-11/page_03.jpg",
+        "chicago-whip/1922/1922-11-11/page_04.jpg",
+        "chicago-whip/1922/1922-11-11/page_05.jpg",
+        "chicago-whip/1922/1922-11-11/page_06.jpg",
+        "chicago-whip/1922/1922-11-11/page_07.jpg",
+        "chicago-whip/1922/1922-11-11/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-11-11_sn86056950",
@@ -3490,6 +6482,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-11-18_chicago-whip",
+      "date": "1922-11-18",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-11-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-11-18/page_01.jpg",
+        "chicago-whip/1922/1922-11-18/page_02.jpg",
+        "chicago-whip/1922/1922-11-18/page_03.jpg",
+        "chicago-whip/1922/1922-11-18/page_04.jpg",
+        "chicago-whip/1922/1922-11-18/page_05.jpg",
+        "chicago-whip/1922/1922-11-18/page_06.jpg",
+        "chicago-whip/1922/1922-11-18/page_07.jpg",
+        "chicago-whip/1922/1922-11-18/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-11-18_sn86056950",
       "date": "1922-11-18",
       "title": "Chicago Whip",
@@ -3509,6 +6519,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-11-25_chicago-whip",
+      "date": "1922-11-25",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-11-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-11-25/page_01.jpg",
+        "chicago-whip/1922/1922-11-25/page_02.jpg",
+        "chicago-whip/1922/1922-11-25/page_03.jpg",
+        "chicago-whip/1922/1922-11-25/page_04.jpg",
+        "chicago-whip/1922/1922-11-25/page_05.jpg",
+        "chicago-whip/1922/1922-11-25/page_06.jpg",
+        "chicago-whip/1922/1922-11-25/page_07.jpg",
+        "chicago-whip/1922/1922-11-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-11-25_sn86056950",
@@ -3532,6 +6560,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-12-02_chicago-whip",
+      "date": "1922-12-02",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-12-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-12-02/page_01.jpg",
+        "chicago-whip/1922/1922-12-02/page_02.jpg",
+        "chicago-whip/1922/1922-12-02/page_03.jpg",
+        "chicago-whip/1922/1922-12-02/page_04.jpg",
+        "chicago-whip/1922/1922-12-02/page_05.jpg",
+        "chicago-whip/1922/1922-12-02/page_06.jpg",
+        "chicago-whip/1922/1922-12-02/page_07.jpg",
+        "chicago-whip/1922/1922-12-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-12-02_sn86056950",
       "date": "1922-12-02",
       "title": "Chicago Whip",
@@ -3551,6 +6597,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-12-09_chicago-whip",
+      "date": "1922-12-09",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-12-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-12-09/page_01.jpg",
+        "chicago-whip/1922/1922-12-09/page_02.jpg",
+        "chicago-whip/1922/1922-12-09/page_03.jpg",
+        "chicago-whip/1922/1922-12-09/page_04.jpg",
+        "chicago-whip/1922/1922-12-09/page_05.jpg",
+        "chicago-whip/1922/1922-12-09/page_06.jpg",
+        "chicago-whip/1922/1922-12-09/page_07.jpg",
+        "chicago-whip/1922/1922-12-09/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-12-09_sn86056950",
@@ -3574,6 +6638,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-12-16_chicago-whip",
+      "date": "1922-12-16",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-12-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-12-16/page_01.jpg",
+        "chicago-whip/1922/1922-12-16/page_02.jpg",
+        "chicago-whip/1922/1922-12-16/page_03.jpg",
+        "chicago-whip/1922/1922-12-16/page_04.jpg",
+        "chicago-whip/1922/1922-12-16/page_05.jpg",
+        "chicago-whip/1922/1922-12-16/page_06.jpg",
+        "chicago-whip/1922/1922-12-16/page_07.jpg",
+        "chicago-whip/1922/1922-12-16/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-12-16_sn86056950",
       "date": "1922-12-16",
       "title": "Chicago Whip",
@@ -3593,6 +6675,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1922-12-23_chicago-whip",
+      "date": "1922-12-23",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-12-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-12-23/page_01.jpg",
+        "chicago-whip/1922/1922-12-23/page_02.jpg",
+        "chicago-whip/1922/1922-12-23/page_03.jpg",
+        "chicago-whip/1922/1922-12-23/page_04.jpg",
+        "chicago-whip/1922/1922-12-23/page_05.jpg",
+        "chicago-whip/1922/1922-12-23/page_06.jpg",
+        "chicago-whip/1922/1922-12-23/page_07.jpg",
+        "chicago-whip/1922/1922-12-23/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1922-12-23_sn86056950",
@@ -3616,6 +6716,24 @@
       "uploaded_at": "2025-10-23T10:54:11Z"
     },
     {
+      "id": "1922-12-30_chicago-whip",
+      "date": "1922-12-30",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1922/1922-12-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "chicago-whip/1922/1922-12-30/page_01.jpg",
+        "chicago-whip/1922/1922-12-30/page_02.jpg",
+        "chicago-whip/1922/1922-12-30/page_03.jpg",
+        "chicago-whip/1922/1922-12-30/page_04.jpg",
+        "chicago-whip/1922/1922-12-30/page_05.jpg",
+        "chicago-whip/1922/1922-12-30/page_06.jpg",
+        "chicago-whip/1922/1922-12-30/page_07.jpg",
+        "chicago-whip/1922/1922-12-30/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1922-12-30_sn86056950",
       "date": "1922-12-30",
       "title": "Chicago Whip",
@@ -3635,6 +6753,28 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-23T10:54:11Z"
+    },
+    {
+      "id": "1927-11-05_chicago-whip",
+      "date": "1927-11-05",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1927/1927-11-05/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "chicago-whip/1927/1927-11-05/page_01.jpg",
+        "chicago-whip/1927/1927-11-05/page_02.jpg",
+        "chicago-whip/1927/1927-11-05/page_03.jpg",
+        "chicago-whip/1927/1927-11-05/page_04.jpg",
+        "chicago-whip/1927/1927-11-05/page_05.jpg",
+        "chicago-whip/1927/1927-11-05/page_06.jpg",
+        "chicago-whip/1927/1927-11-05/page_07.jpg",
+        "chicago-whip/1927/1927-11-05/page_08.jpg",
+        "chicago-whip/1927/1927-11-05/page_09.jpg",
+        "chicago-whip/1927/1927-11-05/page_10.jpg",
+        "chicago-whip/1927/1927-11-05/page_11.jpg",
+        "chicago-whip/1927/1927-11-05/page_12.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1927-11-05_sn86056950",
@@ -3662,6 +6802,28 @@
       "uploaded_at": "2025-10-24T13:31:31Z"
     },
     {
+      "id": "1927-11-19_chicago-whip",
+      "date": "1927-11-19",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1927/1927-11-19/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "chicago-whip/1927/1927-11-19/page_01.jpg",
+        "chicago-whip/1927/1927-11-19/page_02.jpg",
+        "chicago-whip/1927/1927-11-19/page_03.jpg",
+        "chicago-whip/1927/1927-11-19/page_04.jpg",
+        "chicago-whip/1927/1927-11-19/page_05.jpg",
+        "chicago-whip/1927/1927-11-19/page_06.jpg",
+        "chicago-whip/1927/1927-11-19/page_07.jpg",
+        "chicago-whip/1927/1927-11-19/page_08.jpg",
+        "chicago-whip/1927/1927-11-19/page_09.jpg",
+        "chicago-whip/1927/1927-11-19/page_10.jpg",
+        "chicago-whip/1927/1927-11-19/page_11.jpg",
+        "chicago-whip/1927/1927-11-19/page_12.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1927-11-19_sn86056950",
       "date": "1927-11-19",
       "title": "Chicago Whip",
@@ -3687,6 +6849,20 @@
       "uploaded_at": "2025-10-24T13:31:31Z"
     },
     {
+      "id": "1927-11-26_chicago-whip",
+      "date": "1927-11-26",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1927/1927-11-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "chicago-whip/1927/1927-11-26/page_01.jpg",
+        "chicago-whip/1927/1927-11-26/page_02.jpg",
+        "chicago-whip/1927/1927-11-26/page_03.jpg",
+        "chicago-whip/1927/1927-11-26/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1927-11-26_sn86056950",
       "date": "1927-11-26",
       "title": "Chicago Whip",
@@ -3702,6 +6878,28 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T13:31:31Z"
+    },
+    {
+      "id": "1928-06-23_chicago-whip",
+      "date": "1928-06-23",
+      "title": "Chicago Whip",
+      "issue_thumb": "chicago-whip/1928/1928-06-23/thumb.jpg",
+      "pages": 12,
+      "page_paths": [
+        "chicago-whip/1928/1928-06-23/page_01.jpg",
+        "chicago-whip/1928/1928-06-23/page_02.jpg",
+        "chicago-whip/1928/1928-06-23/page_03.jpg",
+        "chicago-whip/1928/1928-06-23/page_04.jpg",
+        "chicago-whip/1928/1928-06-23/page_05.jpg",
+        "chicago-whip/1928/1928-06-23/page_06.jpg",
+        "chicago-whip/1928/1928-06-23/page_07.jpg",
+        "chicago-whip/1928/1928-06-23/page_08.jpg",
+        "chicago-whip/1928/1928-06-23/page_09.jpg",
+        "chicago-whip/1928/1928-06-23/page_10.jpg",
+        "chicago-whip/1928/1928-06-23/page_11.jpg",
+        "chicago-whip/1928/1928-06-23/page_12.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1928-06-23_sn86056950",

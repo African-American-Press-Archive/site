@@ -3,6 +3,60 @@
   "title": "Washington Bee",
   "issues": [
     {
+      "id": "1905-01-07_washington-bee",
+      "date": "1905-01-07",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-01-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-01-07/page_01.jpg",
+        "washington-bee/1905/1905-01-07/page_02.jpg",
+        "washington-bee/1905/1905-01-07/page_03.jpg",
+        "washington-bee/1905/1905-01-07/page_04.jpg",
+        "washington-bee/1905/1905-01-07/page_05.jpg",
+        "washington-bee/1905/1905-01-07/page_06.jpg",
+        "washington-bee/1905/1905-01-07/page_07.jpg",
+        "washington-bee/1905/1905-01-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-01-14_washington-bee",
+      "date": "1905-01-14",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-01-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-01-14/page_01.jpg",
+        "washington-bee/1905/1905-01-14/page_02.jpg",
+        "washington-bee/1905/1905-01-14/page_03.jpg",
+        "washington-bee/1905/1905-01-14/page_04.jpg",
+        "washington-bee/1905/1905-01-14/page_05.jpg",
+        "washington-bee/1905/1905-01-14/page_06.jpg",
+        "washington-bee/1905/1905-01-14/page_07.jpg",
+        "washington-bee/1905/1905-01-14/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-01-21_washington-bee",
+      "date": "1905-01-21",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-01-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-01-21/page_01.jpg",
+        "washington-bee/1905/1905-01-21/page_02.jpg",
+        "washington-bee/1905/1905-01-21/page_03.jpg",
+        "washington-bee/1905/1905-01-21/page_04.jpg",
+        "washington-bee/1905/1905-01-21/page_05.jpg",
+        "washington-bee/1905/1905-01-21/page_06.jpg",
+        "washington-bee/1905/1905-01-21/page_07.jpg",
+        "washington-bee/1905/1905-01-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1905-01-21_bee_downloads",
       "date": "1905-01-21",
       "title": "Washington Bee",
@@ -22,6 +76,42 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:33Z"
+    },
+    {
+      "id": "1905-01-28_washington-bee",
+      "date": "1905-01-28",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-01-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-01-28/page_01.jpg",
+        "washington-bee/1905/1905-01-28/page_02.jpg",
+        "washington-bee/1905/1905-01-28/page_03.jpg",
+        "washington-bee/1905/1905-01-28/page_04.jpg",
+        "washington-bee/1905/1905-01-28/page_05.jpg",
+        "washington-bee/1905/1905-01-28/page_06.jpg",
+        "washington-bee/1905/1905-01-28/page_07.jpg",
+        "washington-bee/1905/1905-01-28/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-04-01_washington-bee",
+      "date": "1905-04-01",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-04-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-04-01/page_01.jpg",
+        "washington-bee/1905/1905-04-01/page_02.jpg",
+        "washington-bee/1905/1905-04-01/page_03.jpg",
+        "washington-bee/1905/1905-04-01/page_04.jpg",
+        "washington-bee/1905/1905-04-01/page_05.jpg",
+        "washington-bee/1905/1905-04-01/page_06.jpg",
+        "washington-bee/1905/1905-04-01/page_07.jpg",
+        "washington-bee/1905/1905-04-01/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1905-04-01_bee_downloads",
@@ -45,6 +135,24 @@
       "uploaded_at": "2025-10-30T21:53:33Z"
     },
     {
+      "id": "1905-06-17_washington-bee",
+      "date": "1905-06-17",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-06-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-06-17/page_01.jpg",
+        "washington-bee/1905/1905-06-17/page_02.jpg",
+        "washington-bee/1905/1905-06-17/page_03.jpg",
+        "washington-bee/1905/1905-06-17/page_04.jpg",
+        "washington-bee/1905/1905-06-17/page_05.jpg",
+        "washington-bee/1905/1905-06-17/page_06.jpg",
+        "washington-bee/1905/1905-06-17/page_07.jpg",
+        "washington-bee/1905/1905-06-17/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1905-06-17_bee_downloads",
       "date": "1905-06-17",
       "title": "Washington Bee",
@@ -64,6 +172,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:33Z"
+    },
+    {
+      "id": "1905-07-08_washington-bee",
+      "date": "1905-07-08",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-07-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-07-08/page_01.jpg",
+        "washington-bee/1905/1905-07-08/page_02.jpg",
+        "washington-bee/1905/1905-07-08/page_03.jpg",
+        "washington-bee/1905/1905-07-08/page_04.jpg",
+        "washington-bee/1905/1905-07-08/page_05.jpg",
+        "washington-bee/1905/1905-07-08/page_06.jpg",
+        "washington-bee/1905/1905-07-08/page_07.jpg",
+        "washington-bee/1905/1905-07-08/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1905-07-08_bee_downloads",
@@ -87,6 +213,24 @@
       "uploaded_at": "2025-10-30T21:53:33Z"
     },
     {
+      "id": "1905-07-15_washington-bee",
+      "date": "1905-07-15",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-07-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-07-15/page_01.jpg",
+        "washington-bee/1905/1905-07-15/page_02.jpg",
+        "washington-bee/1905/1905-07-15/page_03.jpg",
+        "washington-bee/1905/1905-07-15/page_04.jpg",
+        "washington-bee/1905/1905-07-15/page_05.jpg",
+        "washington-bee/1905/1905-07-15/page_06.jpg",
+        "washington-bee/1905/1905-07-15/page_07.jpg",
+        "washington-bee/1905/1905-07-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1905-07-15_bee_downloads",
       "date": "1905-07-15",
       "title": "Washington Bee",
@@ -106,6 +250,60 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:33Z"
+    },
+    {
+      "id": "1905-07-29_washington-bee",
+      "date": "1905-07-29",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-07-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-07-29/page_01.jpg",
+        "washington-bee/1905/1905-07-29/page_02.jpg",
+        "washington-bee/1905/1905-07-29/page_03.jpg",
+        "washington-bee/1905/1905-07-29/page_04.jpg",
+        "washington-bee/1905/1905-07-29/page_05.jpg",
+        "washington-bee/1905/1905-07-29/page_06.jpg",
+        "washington-bee/1905/1905-07-29/page_07.jpg",
+        "washington-bee/1905/1905-07-29/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-08-05_washington-bee",
+      "date": "1905-08-05",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-08-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-08-05/page_01.jpg",
+        "washington-bee/1905/1905-08-05/page_02.jpg",
+        "washington-bee/1905/1905-08-05/page_03.jpg",
+        "washington-bee/1905/1905-08-05/page_04.jpg",
+        "washington-bee/1905/1905-08-05/page_05.jpg",
+        "washington-bee/1905/1905-08-05/page_06.jpg",
+        "washington-bee/1905/1905-08-05/page_07.jpg",
+        "washington-bee/1905/1905-08-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-08-19_washington-bee",
+      "date": "1905-08-19",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-08-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-08-19/page_01.jpg",
+        "washington-bee/1905/1905-08-19/page_02.jpg",
+        "washington-bee/1905/1905-08-19/page_03.jpg",
+        "washington-bee/1905/1905-08-19/page_04.jpg",
+        "washington-bee/1905/1905-08-19/page_05.jpg",
+        "washington-bee/1905/1905-08-19/page_06.jpg",
+        "washington-bee/1905/1905-08-19/page_07.jpg",
+        "washington-bee/1905/1905-08-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1905-08-19_bee_downloads",
@@ -129,6 +327,24 @@
       "uploaded_at": "2025-10-30T21:53:33Z"
     },
     {
+      "id": "1905-08-26_washington-bee",
+      "date": "1905-08-26",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-08-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-08-26/page_01.jpg",
+        "washington-bee/1905/1905-08-26/page_02.jpg",
+        "washington-bee/1905/1905-08-26/page_03.jpg",
+        "washington-bee/1905/1905-08-26/page_04.jpg",
+        "washington-bee/1905/1905-08-26/page_05.jpg",
+        "washington-bee/1905/1905-08-26/page_06.jpg",
+        "washington-bee/1905/1905-08-26/page_07.jpg",
+        "washington-bee/1905/1905-08-26/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1905-08-26_bee_downloads",
       "date": "1905-08-26",
       "title": "Washington Bee",
@@ -150,6 +366,24 @@
       "uploaded_at": "2025-10-30T21:53:33Z"
     },
     {
+      "id": "1905-09-02_washington-bee",
+      "date": "1905-09-02",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-09-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-09-02/page_01.jpg",
+        "washington-bee/1905/1905-09-02/page_02.jpg",
+        "washington-bee/1905/1905-09-02/page_03.jpg",
+        "washington-bee/1905/1905-09-02/page_04.jpg",
+        "washington-bee/1905/1905-09-02/page_05.jpg",
+        "washington-bee/1905/1905-09-02/page_06.jpg",
+        "washington-bee/1905/1905-09-02/page_07.jpg",
+        "washington-bee/1905/1905-09-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1905-09-02_bee_downloads",
       "date": "1905-09-02",
       "title": "Washington Bee",
@@ -169,6 +403,116 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:33Z"
+    },
+    {
+      "id": "1905-09-16_washington-bee",
+      "date": "1905-09-16",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-09-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-09-16/page_01.jpg",
+        "washington-bee/1905/1905-09-16/page_02.jpg",
+        "washington-bee/1905/1905-09-16/page_03.jpg",
+        "washington-bee/1905/1905-09-16/page_04.jpg",
+        "washington-bee/1905/1905-09-16/page_05.jpg",
+        "washington-bee/1905/1905-09-16/page_06.jpg",
+        "washington-bee/1905/1905-09-16/page_07.jpg",
+        "washington-bee/1905/1905-09-16/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-09-23_washington-bee",
+      "date": "1905-09-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-09-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-09-23/page_01.jpg",
+        "washington-bee/1905/1905-09-23/page_02.jpg",
+        "washington-bee/1905/1905-09-23/page_03.jpg",
+        "washington-bee/1905/1905-09-23/page_04.jpg",
+        "washington-bee/1905/1905-09-23/page_05.jpg",
+        "washington-bee/1905/1905-09-23/page_06.jpg",
+        "washington-bee/1905/1905-09-23/page_07.jpg",
+        "washington-bee/1905/1905-09-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-10-07_washington-bee",
+      "date": "1905-10-07",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-10-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-10-07/page_01.jpg",
+        "washington-bee/1905/1905-10-07/page_02.jpg",
+        "washington-bee/1905/1905-10-07/page_03.jpg",
+        "washington-bee/1905/1905-10-07/page_04.jpg",
+        "washington-bee/1905/1905-10-07/page_05.jpg",
+        "washington-bee/1905/1905-10-07/page_06.jpg",
+        "washington-bee/1905/1905-10-07/page_07.jpg",
+        "washington-bee/1905/1905-10-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-12-02_washington-bee",
+      "date": "1905-12-02",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-12-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-12-02/page_01.jpg",
+        "washington-bee/1905/1905-12-02/page_02.jpg",
+        "washington-bee/1905/1905-12-02/page_03.jpg",
+        "washington-bee/1905/1905-12-02/page_04.jpg",
+        "washington-bee/1905/1905-12-02/page_05.jpg",
+        "washington-bee/1905/1905-12-02/page_06.jpg",
+        "washington-bee/1905/1905-12-02/page_07.jpg",
+        "washington-bee/1905/1905-12-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-12-09_washington-bee",
+      "date": "1905-12-09",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-12-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1905/1905-12-09/page_01.jpg",
+        "washington-bee/1905/1905-12-09/page_02.jpg",
+        "washington-bee/1905/1905-12-09/page_03.jpg",
+        "washington-bee/1905/1905-12-09/page_04.jpg",
+        "washington-bee/1905/1905-12-09/page_05.jpg",
+        "washington-bee/1905/1905-12-09/page_06.jpg",
+        "washington-bee/1905/1905-12-09/page_07.jpg",
+        "washington-bee/1905/1905-12-09/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1905-12-23_washington-bee",
+      "date": "1905-12-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1905/1905-12-23/thumb.jpg",
+      "pages": 10,
+      "page_paths": [
+        "washington-bee/1905/1905-12-23/page_01.jpg",
+        "washington-bee/1905/1905-12-23/page_02.jpg",
+        "washington-bee/1905/1905-12-23/page_03.jpg",
+        "washington-bee/1905/1905-12-23/page_04.jpg",
+        "washington-bee/1905/1905-12-23/page_05.jpg",
+        "washington-bee/1905/1905-12-23/page_06.jpg",
+        "washington-bee/1905/1905-12-23/page_07.jpg",
+        "washington-bee/1905/1905-12-23/page_08.jpg",
+        "washington-bee/1905/1905-12-23/page_09.jpg",
+        "washington-bee/1905/1905-12-23/page_10.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1905-12-23_bee_downloads",
@@ -194,6 +538,60 @@
       "uploaded_at": "2025-10-30T21:53:33Z"
     },
     {
+      "id": "1906-01-06_washington-bee",
+      "date": "1906-01-06",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-01-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-01-06/page_01.jpg",
+        "washington-bee/1906/1906-01-06/page_02.jpg",
+        "washington-bee/1906/1906-01-06/page_03.jpg",
+        "washington-bee/1906/1906-01-06/page_04.jpg",
+        "washington-bee/1906/1906-01-06/page_05.jpg",
+        "washington-bee/1906/1906-01-06/page_06.jpg",
+        "washington-bee/1906/1906-01-06/page_07.jpg",
+        "washington-bee/1906/1906-01-06/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-01-13_washington-bee",
+      "date": "1906-01-13",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-01-13/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-01-13/page_01.jpg",
+        "washington-bee/1906/1906-01-13/page_02.jpg",
+        "washington-bee/1906/1906-01-13/page_03.jpg",
+        "washington-bee/1906/1906-01-13/page_04.jpg",
+        "washington-bee/1906/1906-01-13/page_05.jpg",
+        "washington-bee/1906/1906-01-13/page_06.jpg",
+        "washington-bee/1906/1906-01-13/page_07.jpg",
+        "washington-bee/1906/1906-01-13/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-02-10_washington-bee",
+      "date": "1906-02-10",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-02-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-02-10/page_01.jpg",
+        "washington-bee/1906/1906-02-10/page_02.jpg",
+        "washington-bee/1906/1906-02-10/page_03.jpg",
+        "washington-bee/1906/1906-02-10/page_04.jpg",
+        "washington-bee/1906/1906-02-10/page_05.jpg",
+        "washington-bee/1906/1906-02-10/page_06.jpg",
+        "washington-bee/1906/1906-02-10/page_07.jpg",
+        "washington-bee/1906/1906-02-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1906-02-10_bee_downloads",
       "date": "1906-02-10",
       "title": "Washington Bee",
@@ -213,6 +611,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:51Z"
+    },
+    {
+      "id": "1906-02-24_washington-bee",
+      "date": "1906-02-24",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-02-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-02-24/page_01.jpg",
+        "washington-bee/1906/1906-02-24/page_02.jpg",
+        "washington-bee/1906/1906-02-24/page_03.jpg",
+        "washington-bee/1906/1906-02-24/page_04.jpg",
+        "washington-bee/1906/1906-02-24/page_05.jpg",
+        "washington-bee/1906/1906-02-24/page_06.jpg",
+        "washington-bee/1906/1906-02-24/page_07.jpg",
+        "washington-bee/1906/1906-02-24/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1906-02-24_bee_downloads",
@@ -236,6 +652,24 @@
       "uploaded_at": "2025-10-30T21:53:51Z"
     },
     {
+      "id": "1906-03-10_washington-bee",
+      "date": "1906-03-10",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-03-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-03-10/page_01.jpg",
+        "washington-bee/1906/1906-03-10/page_02.jpg",
+        "washington-bee/1906/1906-03-10/page_03.jpg",
+        "washington-bee/1906/1906-03-10/page_04.jpg",
+        "washington-bee/1906/1906-03-10/page_05.jpg",
+        "washington-bee/1906/1906-03-10/page_06.jpg",
+        "washington-bee/1906/1906-03-10/page_07.jpg",
+        "washington-bee/1906/1906-03-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1906-03-10_bee_downloads",
       "date": "1906-03-10",
       "title": "Washington Bee",
@@ -255,6 +689,42 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:51Z"
+    },
+    {
+      "id": "1906-04-21_washington-bee",
+      "date": "1906-04-21",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-04-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-04-21/page_01.jpg",
+        "washington-bee/1906/1906-04-21/page_02.jpg",
+        "washington-bee/1906/1906-04-21/page_03.jpg",
+        "washington-bee/1906/1906-04-21/page_04.jpg",
+        "washington-bee/1906/1906-04-21/page_05.jpg",
+        "washington-bee/1906/1906-04-21/page_06.jpg",
+        "washington-bee/1906/1906-04-21/page_07.jpg",
+        "washington-bee/1906/1906-04-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-04-28_washington-bee",
+      "date": "1906-04-28",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-04-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-04-28/page_01.jpg",
+        "washington-bee/1906/1906-04-28/page_02.jpg",
+        "washington-bee/1906/1906-04-28/page_03.jpg",
+        "washington-bee/1906/1906-04-28/page_04.jpg",
+        "washington-bee/1906/1906-04-28/page_05.jpg",
+        "washington-bee/1906/1906-04-28/page_06.jpg",
+        "washington-bee/1906/1906-04-28/page_07.jpg",
+        "washington-bee/1906/1906-04-28/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1906-04-28_bee_downloads",
@@ -278,6 +748,24 @@
       "uploaded_at": "2025-10-30T21:53:51Z"
     },
     {
+      "id": "1906-05-05_washington-bee",
+      "date": "1906-05-05",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-05-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-05-05/page_01.jpg",
+        "washington-bee/1906/1906-05-05/page_02.jpg",
+        "washington-bee/1906/1906-05-05/page_03.jpg",
+        "washington-bee/1906/1906-05-05/page_04.jpg",
+        "washington-bee/1906/1906-05-05/page_05.jpg",
+        "washington-bee/1906/1906-05-05/page_06.jpg",
+        "washington-bee/1906/1906-05-05/page_07.jpg",
+        "washington-bee/1906/1906-05-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1906-05-05_bee_downloads",
       "date": "1906-05-05",
       "title": "Washington Bee",
@@ -297,6 +785,42 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:51Z"
+    },
+    {
+      "id": "1906-05-12_washington-bee",
+      "date": "1906-05-12",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-05-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-05-12/page_01.jpg",
+        "washington-bee/1906/1906-05-12/page_02.jpg",
+        "washington-bee/1906/1906-05-12/page_03.jpg",
+        "washington-bee/1906/1906-05-12/page_04.jpg",
+        "washington-bee/1906/1906-05-12/page_05.jpg",
+        "washington-bee/1906/1906-05-12/page_06.jpg",
+        "washington-bee/1906/1906-05-12/page_07.jpg",
+        "washington-bee/1906/1906-05-12/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-05-19_washington-bee",
+      "date": "1906-05-19",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-05-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-05-19/page_01.jpg",
+        "washington-bee/1906/1906-05-19/page_02.jpg",
+        "washington-bee/1906/1906-05-19/page_03.jpg",
+        "washington-bee/1906/1906-05-19/page_04.jpg",
+        "washington-bee/1906/1906-05-19/page_05.jpg",
+        "washington-bee/1906/1906-05-19/page_06.jpg",
+        "washington-bee/1906/1906-05-19/page_07.jpg",
+        "washington-bee/1906/1906-05-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1906-05-19_bee_downloads",
@@ -320,6 +844,24 @@
       "uploaded_at": "2025-10-30T21:53:51Z"
     },
     {
+      "id": "1906-05-26_washington-bee",
+      "date": "1906-05-26",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-05-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-05-26/page_01.jpg",
+        "washington-bee/1906/1906-05-26/page_02.jpg",
+        "washington-bee/1906/1906-05-26/page_03.jpg",
+        "washington-bee/1906/1906-05-26/page_04.jpg",
+        "washington-bee/1906/1906-05-26/page_05.jpg",
+        "washington-bee/1906/1906-05-26/page_06.jpg",
+        "washington-bee/1906/1906-05-26/page_07.jpg",
+        "washington-bee/1906/1906-05-26/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1906-05-26_bee_downloads",
       "date": "1906-05-26",
       "title": "Washington Bee",
@@ -339,6 +881,42 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:51Z"
+    },
+    {
+      "id": "1906-06-02_washington-bee",
+      "date": "1906-06-02",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-06-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-06-02/page_01.jpg",
+        "washington-bee/1906/1906-06-02/page_02.jpg",
+        "washington-bee/1906/1906-06-02/page_03.jpg",
+        "washington-bee/1906/1906-06-02/page_04.jpg",
+        "washington-bee/1906/1906-06-02/page_05.jpg",
+        "washington-bee/1906/1906-06-02/page_06.jpg",
+        "washington-bee/1906/1906-06-02/page_07.jpg",
+        "washington-bee/1906/1906-06-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-06-09_washington-bee",
+      "date": "1906-06-09",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-06-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-06-09/page_01.jpg",
+        "washington-bee/1906/1906-06-09/page_02.jpg",
+        "washington-bee/1906/1906-06-09/page_03.jpg",
+        "washington-bee/1906/1906-06-09/page_04.jpg",
+        "washington-bee/1906/1906-06-09/page_05.jpg",
+        "washington-bee/1906/1906-06-09/page_06.jpg",
+        "washington-bee/1906/1906-06-09/page_07.jpg",
+        "washington-bee/1906/1906-06-09/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1906-06-09_bee_downloads",
@@ -362,6 +940,42 @@
       "uploaded_at": "2025-10-30T21:53:51Z"
     },
     {
+      "id": "1906-06-23_washington-bee",
+      "date": "1906-06-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-06-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-06-23/page_01.jpg",
+        "washington-bee/1906/1906-06-23/page_02.jpg",
+        "washington-bee/1906/1906-06-23/page_03.jpg",
+        "washington-bee/1906/1906-06-23/page_04.jpg",
+        "washington-bee/1906/1906-06-23/page_05.jpg",
+        "washington-bee/1906/1906-06-23/page_06.jpg",
+        "washington-bee/1906/1906-06-23/page_07.jpg",
+        "washington-bee/1906/1906-06-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-07-07_washington-bee",
+      "date": "1906-07-07",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-07-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-07-07/page_01.jpg",
+        "washington-bee/1906/1906-07-07/page_02.jpg",
+        "washington-bee/1906/1906-07-07/page_03.jpg",
+        "washington-bee/1906/1906-07-07/page_04.jpg",
+        "washington-bee/1906/1906-07-07/page_05.jpg",
+        "washington-bee/1906/1906-07-07/page_06.jpg",
+        "washington-bee/1906/1906-07-07/page_07.jpg",
+        "washington-bee/1906/1906-07-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1906-07-07_bee_downloads",
       "date": "1906-07-07",
       "title": "Washington Bee",
@@ -381,6 +995,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:51Z"
+    },
+    {
+      "id": "1906-08-11_washington-bee",
+      "date": "1906-08-11",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-08-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-08-11/page_01.jpg",
+        "washington-bee/1906/1906-08-11/page_02.jpg",
+        "washington-bee/1906/1906-08-11/page_03.jpg",
+        "washington-bee/1906/1906-08-11/page_04.jpg",
+        "washington-bee/1906/1906-08-11/page_05.jpg",
+        "washington-bee/1906/1906-08-11/page_06.jpg",
+        "washington-bee/1906/1906-08-11/page_07.jpg",
+        "washington-bee/1906/1906-08-11/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1906-08-11_bee_downloads",
@@ -404,6 +1036,42 @@
       "uploaded_at": "2025-10-30T21:53:51Z"
     },
     {
+      "id": "1906-08-25_washington-bee",
+      "date": "1906-08-25",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-08-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-08-25/page_01.jpg",
+        "washington-bee/1906/1906-08-25/page_02.jpg",
+        "washington-bee/1906/1906-08-25/page_03.jpg",
+        "washington-bee/1906/1906-08-25/page_04.jpg",
+        "washington-bee/1906/1906-08-25/page_05.jpg",
+        "washington-bee/1906/1906-08-25/page_06.jpg",
+        "washington-bee/1906/1906-08-25/page_07.jpg",
+        "washington-bee/1906/1906-08-25/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-09-01_washington-bee",
+      "date": "1906-09-01",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-09-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-09-01/page_01.jpg",
+        "washington-bee/1906/1906-09-01/page_02.jpg",
+        "washington-bee/1906/1906-09-01/page_03.jpg",
+        "washington-bee/1906/1906-09-01/page_04.jpg",
+        "washington-bee/1906/1906-09-01/page_05.jpg",
+        "washington-bee/1906/1906-09-01/page_06.jpg",
+        "washington-bee/1906/1906-09-01/page_07.jpg",
+        "washington-bee/1906/1906-09-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1906-09-01_bee_downloads",
       "date": "1906-09-01",
       "title": "Washington Bee",
@@ -423,6 +1091,122 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:53:51Z"
+    },
+    {
+      "id": "1906-09-29_washington-bee",
+      "date": "1906-09-29",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-09-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-09-29/page_01.jpg",
+        "washington-bee/1906/1906-09-29/page_02.jpg",
+        "washington-bee/1906/1906-09-29/page_03.jpg",
+        "washington-bee/1906/1906-09-29/page_04.jpg",
+        "washington-bee/1906/1906-09-29/page_05.jpg",
+        "washington-bee/1906/1906-09-29/page_06.jpg",
+        "washington-bee/1906/1906-09-29/page_07.jpg",
+        "washington-bee/1906/1906-09-29/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-10-06_washington-bee",
+      "date": "1906-10-06",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-10-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-10-06/page_01.jpg",
+        "washington-bee/1906/1906-10-06/page_02.jpg",
+        "washington-bee/1906/1906-10-06/page_03.jpg",
+        "washington-bee/1906/1906-10-06/page_04.jpg",
+        "washington-bee/1906/1906-10-06/page_05.jpg",
+        "washington-bee/1906/1906-10-06/page_06.jpg",
+        "washington-bee/1906/1906-10-06/page_07.jpg",
+        "washington-bee/1906/1906-10-06/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-11-03_washington-bee",
+      "date": "1906-11-03",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-11-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-11-03/page_01.jpg",
+        "washington-bee/1906/1906-11-03/page_02.jpg",
+        "washington-bee/1906/1906-11-03/page_03.jpg",
+        "washington-bee/1906/1906-11-03/page_04.jpg",
+        "washington-bee/1906/1906-11-03/page_05.jpg",
+        "washington-bee/1906/1906-11-03/page_06.jpg",
+        "washington-bee/1906/1906-11-03/page_07.jpg",
+        "washington-bee/1906/1906-11-03/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-11-24_washington-bee",
+      "date": "1906-11-24",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-11-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-11-24/page_01.jpg",
+        "washington-bee/1906/1906-11-24/page_02.jpg",
+        "washington-bee/1906/1906-11-24/page_03.jpg",
+        "washington-bee/1906/1906-11-24/page_04.jpg",
+        "washington-bee/1906/1906-11-24/page_05.jpg",
+        "washington-bee/1906/1906-11-24/page_06.jpg",
+        "washington-bee/1906/1906-11-24/page_07.jpg",
+        "washington-bee/1906/1906-11-24/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-12-08_washington-bee",
+      "date": "1906-12-08",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-12-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1906/1906-12-08/page_01.jpg",
+        "washington-bee/1906/1906-12-08/page_02.jpg",
+        "washington-bee/1906/1906-12-08/page_03.jpg",
+        "washington-bee/1906/1906-12-08/page_04.jpg",
+        "washington-bee/1906/1906-12-08/page_05.jpg",
+        "washington-bee/1906/1906-12-08/page_06.jpg",
+        "washington-bee/1906/1906-12-08/page_07.jpg",
+        "washington-bee/1906/1906-12-08/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1906-12-15_washington-bee",
+      "date": "1906-12-15",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1906/1906-12-15/thumb.jpg",
+      "pages": 16,
+      "page_paths": [
+        "washington-bee/1906/1906-12-15/page_01.jpg",
+        "washington-bee/1906/1906-12-15/page_02.jpg",
+        "washington-bee/1906/1906-12-15/page_03.jpg",
+        "washington-bee/1906/1906-12-15/page_04.jpg",
+        "washington-bee/1906/1906-12-15/page_05.jpg",
+        "washington-bee/1906/1906-12-15/page_06.jpg",
+        "washington-bee/1906/1906-12-15/page_07.jpg",
+        "washington-bee/1906/1906-12-15/page_08.jpg",
+        "washington-bee/1906/1906-12-15/page_09.jpg",
+        "washington-bee/1906/1906-12-15/page_10.jpg",
+        "washington-bee/1906/1906-12-15/page_11.jpg",
+        "washington-bee/1906/1906-12-15/page_12.jpg",
+        "washington-bee/1906/1906-12-15/page_13.jpg",
+        "washington-bee/1906/1906-12-15/page_14.jpg",
+        "washington-bee/1906/1906-12-15/page_15.jpg",
+        "washington-bee/1906/1906-12-15/page_16.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1906-12-15_bee_downloads",
@@ -454,6 +1238,42 @@
       "uploaded_at": "2025-10-30T21:53:51Z"
     },
     {
+      "id": "1907-01-05_washington-bee",
+      "date": "1907-01-05",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-01-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-01-05/page_01.jpg",
+        "washington-bee/1907/1907-01-05/page_02.jpg",
+        "washington-bee/1907/1907-01-05/page_03.jpg",
+        "washington-bee/1907/1907-01-05/page_04.jpg",
+        "washington-bee/1907/1907-01-05/page_05.jpg",
+        "washington-bee/1907/1907-01-05/page_06.jpg",
+        "washington-bee/1907/1907-01-05/page_07.jpg",
+        "washington-bee/1907/1907-01-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-01-12_washington-bee",
+      "date": "1907-01-12",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-01-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-01-12/page_01.jpg",
+        "washington-bee/1907/1907-01-12/page_02.jpg",
+        "washington-bee/1907/1907-01-12/page_03.jpg",
+        "washington-bee/1907/1907-01-12/page_04.jpg",
+        "washington-bee/1907/1907-01-12/page_05.jpg",
+        "washington-bee/1907/1907-01-12/page_06.jpg",
+        "washington-bee/1907/1907-01-12/page_07.jpg",
+        "washington-bee/1907/1907-01-12/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1907-01-12_bee_downloads",
       "date": "1907-01-12",
       "title": "Washington Bee",
@@ -473,6 +1293,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:02Z"
+    },
+    {
+      "id": "1907-01-19_washington-bee",
+      "date": "1907-01-19",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-01-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-01-19/page_01.jpg",
+        "washington-bee/1907/1907-01-19/page_02.jpg",
+        "washington-bee/1907/1907-01-19/page_03.jpg",
+        "washington-bee/1907/1907-01-19/page_04.jpg",
+        "washington-bee/1907/1907-01-19/page_05.jpg",
+        "washington-bee/1907/1907-01-19/page_06.jpg",
+        "washington-bee/1907/1907-01-19/page_07.jpg",
+        "washington-bee/1907/1907-01-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1907-01-19_bee_downloads",
@@ -496,6 +1334,24 @@
       "uploaded_at": "2025-10-30T21:54:02Z"
     },
     {
+      "id": "1907-02-23_washington-bee",
+      "date": "1907-02-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-02-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-02-23/page_01.jpg",
+        "washington-bee/1907/1907-02-23/page_02.jpg",
+        "washington-bee/1907/1907-02-23/page_03.jpg",
+        "washington-bee/1907/1907-02-23/page_04.jpg",
+        "washington-bee/1907/1907-02-23/page_05.jpg",
+        "washington-bee/1907/1907-02-23/page_06.jpg",
+        "washington-bee/1907/1907-02-23/page_07.jpg",
+        "washington-bee/1907/1907-02-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1907-02-23_bee_downloads",
       "date": "1907-02-23",
       "title": "Washington Bee",
@@ -515,6 +1371,42 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:02Z"
+    },
+    {
+      "id": "1907-03-23_washington-bee",
+      "date": "1907-03-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-03-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-03-23/page_01.jpg",
+        "washington-bee/1907/1907-03-23/page_02.jpg",
+        "washington-bee/1907/1907-03-23/page_03.jpg",
+        "washington-bee/1907/1907-03-23/page_04.jpg",
+        "washington-bee/1907/1907-03-23/page_05.jpg",
+        "washington-bee/1907/1907-03-23/page_06.jpg",
+        "washington-bee/1907/1907-03-23/page_07.jpg",
+        "washington-bee/1907/1907-03-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-03-30_washington-bee",
+      "date": "1907-03-30",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-03-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-03-30/page_01.jpg",
+        "washington-bee/1907/1907-03-30/page_02.jpg",
+        "washington-bee/1907/1907-03-30/page_03.jpg",
+        "washington-bee/1907/1907-03-30/page_04.jpg",
+        "washington-bee/1907/1907-03-30/page_05.jpg",
+        "washington-bee/1907/1907-03-30/page_06.jpg",
+        "washington-bee/1907/1907-03-30/page_07.jpg",
+        "washington-bee/1907/1907-03-30/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1907-03-30_bee_downloads",
@@ -538,6 +1430,42 @@
       "uploaded_at": "2025-10-30T21:54:02Z"
     },
     {
+      "id": "1907-04-27_washington-bee",
+      "date": "1907-04-27",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-04-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-04-27/page_01.jpg",
+        "washington-bee/1907/1907-04-27/page_02.jpg",
+        "washington-bee/1907/1907-04-27/page_03.jpg",
+        "washington-bee/1907/1907-04-27/page_04.jpg",
+        "washington-bee/1907/1907-04-27/page_05.jpg",
+        "washington-bee/1907/1907-04-27/page_06.jpg",
+        "washington-bee/1907/1907-04-27/page_07.jpg",
+        "washington-bee/1907/1907-04-27/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-05-25_washington-bee",
+      "date": "1907-05-25",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-05-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-05-25/page_01.jpg",
+        "washington-bee/1907/1907-05-25/page_02.jpg",
+        "washington-bee/1907/1907-05-25/page_03.jpg",
+        "washington-bee/1907/1907-05-25/page_04.jpg",
+        "washington-bee/1907/1907-05-25/page_05.jpg",
+        "washington-bee/1907/1907-05-25/page_06.jpg",
+        "washington-bee/1907/1907-05-25/page_07.jpg",
+        "washington-bee/1907/1907-05-25/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1907-05-25_bee_downloads",
       "date": "1907-05-25",
       "title": "Washington Bee",
@@ -557,6 +1485,223 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:02Z"
+    },
+    {
+      "id": "1907-06-01_washington-bee",
+      "date": "1907-06-01",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-06-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-06-01/page_01.jpg",
+        "washington-bee/1907/1907-06-01/page_02.jpg",
+        "washington-bee/1907/1907-06-01/page_03.jpg",
+        "washington-bee/1907/1907-06-01/page_04.jpg",
+        "washington-bee/1907/1907-06-01/page_05.jpg",
+        "washington-bee/1907/1907-06-01/page_06.jpg",
+        "washington-bee/1907/1907-06-01/page_07.jpg",
+        "washington-bee/1907/1907-06-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-06-08_washington-bee",
+      "date": "1907-06-08",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-06-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-06-08/page_01.jpg",
+        "washington-bee/1907/1907-06-08/page_02.jpg",
+        "washington-bee/1907/1907-06-08/page_03.jpg",
+        "washington-bee/1907/1907-06-08/page_04.jpg",
+        "washington-bee/1907/1907-06-08/page_05.jpg",
+        "washington-bee/1907/1907-06-08/page_06.jpg",
+        "washington-bee/1907/1907-06-08/page_07.jpg",
+        "washington-bee/1907/1907-06-08/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-06-15_washington-bee",
+      "date": "1907-06-15",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-06-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-06-15/page_01.jpg",
+        "washington-bee/1907/1907-06-15/page_02.jpg",
+        "washington-bee/1907/1907-06-15/page_03.jpg",
+        "washington-bee/1907/1907-06-15/page_04.jpg",
+        "washington-bee/1907/1907-06-15/page_05.jpg",
+        "washington-bee/1907/1907-06-15/page_06.jpg",
+        "washington-bee/1907/1907-06-15/page_07.jpg",
+        "washington-bee/1907/1907-06-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-07-06_washington-bee",
+      "date": "1907-07-06",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-07-06/thumb.jpg",
+      "pages": 9,
+      "page_paths": [
+        "washington-bee/1907/1907-07-06/page_01.jpg",
+        "washington-bee/1907/1907-07-06/page_02.jpg",
+        "washington-bee/1907/1907-07-06/page_03.jpg",
+        "washington-bee/1907/1907-07-06/page_04.jpg",
+        "washington-bee/1907/1907-07-06/page_05.jpg",
+        "washington-bee/1907/1907-07-06/page_06.jpg",
+        "washington-bee/1907/1907-07-06/page_07.jpg",
+        "washington-bee/1907/1907-07-06/page_08.jpg",
+        "washington-bee/1907/1907-07-06/page_09.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-07-20_washington-bee",
+      "date": "1907-07-20",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-07-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-07-20/page_01.jpg",
+        "washington-bee/1907/1907-07-20/page_02.jpg",
+        "washington-bee/1907/1907-07-20/page_03.jpg",
+        "washington-bee/1907/1907-07-20/page_04.jpg",
+        "washington-bee/1907/1907-07-20/page_05.jpg",
+        "washington-bee/1907/1907-07-20/page_06.jpg",
+        "washington-bee/1907/1907-07-20/page_07.jpg",
+        "washington-bee/1907/1907-07-20/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-07-27_washington-bee",
+      "date": "1907-07-27",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-07-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-07-27/page_01.jpg",
+        "washington-bee/1907/1907-07-27/page_02.jpg",
+        "washington-bee/1907/1907-07-27/page_03.jpg",
+        "washington-bee/1907/1907-07-27/page_04.jpg",
+        "washington-bee/1907/1907-07-27/page_05.jpg",
+        "washington-bee/1907/1907-07-27/page_06.jpg",
+        "washington-bee/1907/1907-07-27/page_07.jpg",
+        "washington-bee/1907/1907-07-27/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-08-03_washington-bee",
+      "date": "1907-08-03",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-08-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-08-03/page_01.jpg",
+        "washington-bee/1907/1907-08-03/page_02.jpg",
+        "washington-bee/1907/1907-08-03/page_03.jpg",
+        "washington-bee/1907/1907-08-03/page_04.jpg",
+        "washington-bee/1907/1907-08-03/page_05.jpg",
+        "washington-bee/1907/1907-08-03/page_06.jpg",
+        "washington-bee/1907/1907-08-03/page_07.jpg",
+        "washington-bee/1907/1907-08-03/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-08-31_washington-bee",
+      "date": "1907-08-31",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-08-31/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-08-31/page_01.jpg",
+        "washington-bee/1907/1907-08-31/page_02.jpg",
+        "washington-bee/1907/1907-08-31/page_03.jpg",
+        "washington-bee/1907/1907-08-31/page_04.jpg",
+        "washington-bee/1907/1907-08-31/page_05.jpg",
+        "washington-bee/1907/1907-08-31/page_06.jpg",
+        "washington-bee/1907/1907-08-31/page_07.jpg",
+        "washington-bee/1907/1907-08-31/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-10-05_washington-bee",
+      "date": "1907-10-05",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-10-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-10-05/page_01.jpg",
+        "washington-bee/1907/1907-10-05/page_02.jpg",
+        "washington-bee/1907/1907-10-05/page_03.jpg",
+        "washington-bee/1907/1907-10-05/page_04.jpg",
+        "washington-bee/1907/1907-10-05/page_05.jpg",
+        "washington-bee/1907/1907-10-05/page_06.jpg",
+        "washington-bee/1907/1907-10-05/page_07.jpg",
+        "washington-bee/1907/1907-10-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-11-02_washington-bee",
+      "date": "1907-11-02",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-11-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-11-02/page_01.jpg",
+        "washington-bee/1907/1907-11-02/page_02.jpg",
+        "washington-bee/1907/1907-11-02/page_03.jpg",
+        "washington-bee/1907/1907-11-02/page_04.jpg",
+        "washington-bee/1907/1907-11-02/page_05.jpg",
+        "washington-bee/1907/1907-11-02/page_06.jpg",
+        "washington-bee/1907/1907-11-02/page_07.jpg",
+        "washington-bee/1907/1907-11-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-11-30_washington-bee",
+      "date": "1907-11-30",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-11-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-11-30/page_01.jpg",
+        "washington-bee/1907/1907-11-30/page_02.jpg",
+        "washington-bee/1907/1907-11-30/page_03.jpg",
+        "washington-bee/1907/1907-11-30/page_04.jpg",
+        "washington-bee/1907/1907-11-30/page_05.jpg",
+        "washington-bee/1907/1907-11-30/page_06.jpg",
+        "washington-bee/1907/1907-11-30/page_07.jpg",
+        "washington-bee/1907/1907-11-30/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1907-12-07_washington-bee",
+      "date": "1907-12-07",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-12-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-12-07/page_01.jpg",
+        "washington-bee/1907/1907-12-07/page_02.jpg",
+        "washington-bee/1907/1907-12-07/page_03.jpg",
+        "washington-bee/1907/1907-12-07/page_04.jpg",
+        "washington-bee/1907/1907-12-07/page_05.jpg",
+        "washington-bee/1907/1907-12-07/page_06.jpg",
+        "washington-bee/1907/1907-12-07/page_07.jpg",
+        "washington-bee/1907/1907-12-07/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1907-12-07_bee_downloads",
@@ -580,6 +1725,24 @@
       "uploaded_at": "2025-10-30T21:54:02Z"
     },
     {
+      "id": "1907-12-21_washington-bee",
+      "date": "1907-12-21",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1907/1907-12-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1907/1907-12-21/page_01.jpg",
+        "washington-bee/1907/1907-12-21/page_02.jpg",
+        "washington-bee/1907/1907-12-21/page_03.jpg",
+        "washington-bee/1907/1907-12-21/page_04.jpg",
+        "washington-bee/1907/1907-12-21/page_05.jpg",
+        "washington-bee/1907/1907-12-21/page_06.jpg",
+        "washington-bee/1907/1907-12-21/page_07.jpg",
+        "washington-bee/1907/1907-12-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1907-12-21_bee_downloads",
       "date": "1907-12-21",
       "title": "Washington Bee",
@@ -599,6 +1762,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:02Z"
+    },
+    {
+      "id": "1908-01-25_washington-bee",
+      "date": "1908-01-25",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-01-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-01-25/page_01.jpg",
+        "washington-bee/1908/1908-01-25/page_02.jpg",
+        "washington-bee/1908/1908-01-25/page_03.jpg",
+        "washington-bee/1908/1908-01-25/page_04.jpg",
+        "washington-bee/1908/1908-01-25/page_05.jpg",
+        "washington-bee/1908/1908-01-25/page_06.jpg",
+        "washington-bee/1908/1908-01-25/page_07.jpg",
+        "washington-bee/1908/1908-01-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1908-01-25_bee_downloads",
@@ -622,6 +1803,24 @@
       "uploaded_at": "2025-10-30T21:54:18Z"
     },
     {
+      "id": "1908-02-08_washington-bee",
+      "date": "1908-02-08",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-02-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-02-08/page_01.jpg",
+        "washington-bee/1908/1908-02-08/page_02.jpg",
+        "washington-bee/1908/1908-02-08/page_03.jpg",
+        "washington-bee/1908/1908-02-08/page_04.jpg",
+        "washington-bee/1908/1908-02-08/page_05.jpg",
+        "washington-bee/1908/1908-02-08/page_06.jpg",
+        "washington-bee/1908/1908-02-08/page_07.jpg",
+        "washington-bee/1908/1908-02-08/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1908-02-08_bee_downloads",
       "date": "1908-02-08",
       "title": "Washington Bee",
@@ -641,6 +1840,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:18Z"
+    },
+    {
+      "id": "1908-02-22_washington-bee",
+      "date": "1908-02-22",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-02-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-02-22/page_01.jpg",
+        "washington-bee/1908/1908-02-22/page_02.jpg",
+        "washington-bee/1908/1908-02-22/page_03.jpg",
+        "washington-bee/1908/1908-02-22/page_04.jpg",
+        "washington-bee/1908/1908-02-22/page_05.jpg",
+        "washington-bee/1908/1908-02-22/page_06.jpg",
+        "washington-bee/1908/1908-02-22/page_07.jpg",
+        "washington-bee/1908/1908-02-22/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1908-02-22_bee_downloads",
@@ -664,6 +1881,96 @@
       "uploaded_at": "2025-10-30T21:54:18Z"
     },
     {
+      "id": "1908-02-29_washington-bee",
+      "date": "1908-02-29",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-02-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-02-29/page_01.jpg",
+        "washington-bee/1908/1908-02-29/page_02.jpg",
+        "washington-bee/1908/1908-02-29/page_03.jpg",
+        "washington-bee/1908/1908-02-29/page_04.jpg",
+        "washington-bee/1908/1908-02-29/page_05.jpg",
+        "washington-bee/1908/1908-02-29/page_06.jpg",
+        "washington-bee/1908/1908-02-29/page_07.jpg",
+        "washington-bee/1908/1908-02-29/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-03-14_washington-bee",
+      "date": "1908-03-14",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-03-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-03-14/page_01.jpg",
+        "washington-bee/1908/1908-03-14/page_02.jpg",
+        "washington-bee/1908/1908-03-14/page_03.jpg",
+        "washington-bee/1908/1908-03-14/page_04.jpg",
+        "washington-bee/1908/1908-03-14/page_05.jpg",
+        "washington-bee/1908/1908-03-14/page_06.jpg",
+        "washington-bee/1908/1908-03-14/page_07.jpg",
+        "washington-bee/1908/1908-03-14/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-03-21_washington-bee",
+      "date": "1908-03-21",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-03-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-03-21/page_01.jpg",
+        "washington-bee/1908/1908-03-21/page_02.jpg",
+        "washington-bee/1908/1908-03-21/page_03.jpg",
+        "washington-bee/1908/1908-03-21/page_04.jpg",
+        "washington-bee/1908/1908-03-21/page_05.jpg",
+        "washington-bee/1908/1908-03-21/page_06.jpg",
+        "washington-bee/1908/1908-03-21/page_07.jpg",
+        "washington-bee/1908/1908-03-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-03-28_washington-bee",
+      "date": "1908-03-28",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-03-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-03-28/page_01.jpg",
+        "washington-bee/1908/1908-03-28/page_02.jpg",
+        "washington-bee/1908/1908-03-28/page_03.jpg",
+        "washington-bee/1908/1908-03-28/page_04.jpg",
+        "washington-bee/1908/1908-03-28/page_05.jpg",
+        "washington-bee/1908/1908-03-28/page_06.jpg",
+        "washington-bee/1908/1908-03-28/page_07.jpg",
+        "washington-bee/1908/1908-03-28/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-04-18_washington-bee",
+      "date": "1908-04-18",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-04-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-04-18/page_01.jpg",
+        "washington-bee/1908/1908-04-18/page_02.jpg",
+        "washington-bee/1908/1908-04-18/page_03.jpg",
+        "washington-bee/1908/1908-04-18/page_04.jpg",
+        "washington-bee/1908/1908-04-18/page_05.jpg",
+        "washington-bee/1908/1908-04-18/page_06.jpg",
+        "washington-bee/1908/1908-04-18/page_07.jpg",
+        "washington-bee/1908/1908-04-18/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1908-04-18_bee_downloads",
       "date": "1908-04-18",
       "title": "Washington Bee",
@@ -683,6 +1990,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:18Z"
+    },
+    {
+      "id": "1908-04-25_washington-bee",
+      "date": "1908-04-25",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-04-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-04-25/page_01.jpg",
+        "washington-bee/1908/1908-04-25/page_02.jpg",
+        "washington-bee/1908/1908-04-25/page_03.jpg",
+        "washington-bee/1908/1908-04-25/page_04.jpg",
+        "washington-bee/1908/1908-04-25/page_05.jpg",
+        "washington-bee/1908/1908-04-25/page_06.jpg",
+        "washington-bee/1908/1908-04-25/page_07.jpg",
+        "washington-bee/1908/1908-04-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1908-04-25_bee_downloads",
@@ -706,6 +2031,24 @@
       "uploaded_at": "2025-10-30T21:54:18Z"
     },
     {
+      "id": "1908-05-09_washington-bee",
+      "date": "1908-05-09",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-05-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-05-09/page_01.jpg",
+        "washington-bee/1908/1908-05-09/page_02.jpg",
+        "washington-bee/1908/1908-05-09/page_03.jpg",
+        "washington-bee/1908/1908-05-09/page_04.jpg",
+        "washington-bee/1908/1908-05-09/page_05.jpg",
+        "washington-bee/1908/1908-05-09/page_06.jpg",
+        "washington-bee/1908/1908-05-09/page_07.jpg",
+        "washington-bee/1908/1908-05-09/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1908-05-09_bee_downloads",
       "date": "1908-05-09",
       "title": "Washington Bee",
@@ -725,6 +2068,96 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:18Z"
+    },
+    {
+      "id": "1908-05-16_washington-bee",
+      "date": "1908-05-16",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-05-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-05-16/page_01.jpg",
+        "washington-bee/1908/1908-05-16/page_02.jpg",
+        "washington-bee/1908/1908-05-16/page_03.jpg",
+        "washington-bee/1908/1908-05-16/page_04.jpg",
+        "washington-bee/1908/1908-05-16/page_05.jpg",
+        "washington-bee/1908/1908-05-16/page_06.jpg",
+        "washington-bee/1908/1908-05-16/page_07.jpg",
+        "washington-bee/1908/1908-05-16/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-05-23_washington-bee",
+      "date": "1908-05-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-05-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-05-23/page_01.jpg",
+        "washington-bee/1908/1908-05-23/page_02.jpg",
+        "washington-bee/1908/1908-05-23/page_03.jpg",
+        "washington-bee/1908/1908-05-23/page_04.jpg",
+        "washington-bee/1908/1908-05-23/page_05.jpg",
+        "washington-bee/1908/1908-05-23/page_06.jpg",
+        "washington-bee/1908/1908-05-23/page_07.jpg",
+        "washington-bee/1908/1908-05-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-06-06_washington-bee",
+      "date": "1908-06-06",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-06-06/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-06-06/page_01.jpg",
+        "washington-bee/1908/1908-06-06/page_02.jpg",
+        "washington-bee/1908/1908-06-06/page_03.jpg",
+        "washington-bee/1908/1908-06-06/page_04.jpg",
+        "washington-bee/1908/1908-06-06/page_05.jpg",
+        "washington-bee/1908/1908-06-06/page_06.jpg",
+        "washington-bee/1908/1908-06-06/page_07.jpg",
+        "washington-bee/1908/1908-06-06/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-07-04_washington-bee",
+      "date": "1908-07-04",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-07-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-07-04/page_01.jpg",
+        "washington-bee/1908/1908-07-04/page_02.jpg",
+        "washington-bee/1908/1908-07-04/page_03.jpg",
+        "washington-bee/1908/1908-07-04/page_04.jpg",
+        "washington-bee/1908/1908-07-04/page_05.jpg",
+        "washington-bee/1908/1908-07-04/page_06.jpg",
+        "washington-bee/1908/1908-07-04/page_07.jpg",
+        "washington-bee/1908/1908-07-04/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-07-18_washington-bee",
+      "date": "1908-07-18",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-07-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-07-18/page_01.jpg",
+        "washington-bee/1908/1908-07-18/page_02.jpg",
+        "washington-bee/1908/1908-07-18/page_03.jpg",
+        "washington-bee/1908/1908-07-18/page_04.jpg",
+        "washington-bee/1908/1908-07-18/page_05.jpg",
+        "washington-bee/1908/1908-07-18/page_06.jpg",
+        "washington-bee/1908/1908-07-18/page_07.jpg",
+        "washington-bee/1908/1908-07-18/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1908-07-18_bee_downloads",
@@ -748,6 +2181,132 @@
       "uploaded_at": "2025-10-30T21:54:18Z"
     },
     {
+      "id": "1908-07-25_washington-bee",
+      "date": "1908-07-25",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-07-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-07-25/page_01.jpg",
+        "washington-bee/1908/1908-07-25/page_02.jpg",
+        "washington-bee/1908/1908-07-25/page_03.jpg",
+        "washington-bee/1908/1908-07-25/page_04.jpg",
+        "washington-bee/1908/1908-07-25/page_05.jpg",
+        "washington-bee/1908/1908-07-25/page_06.jpg",
+        "washington-bee/1908/1908-07-25/page_07.jpg",
+        "washington-bee/1908/1908-07-25/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-08-15_washington-bee",
+      "date": "1908-08-15",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-08-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-08-15/page_01.jpg",
+        "washington-bee/1908/1908-08-15/page_02.jpg",
+        "washington-bee/1908/1908-08-15/page_03.jpg",
+        "washington-bee/1908/1908-08-15/page_04.jpg",
+        "washington-bee/1908/1908-08-15/page_05.jpg",
+        "washington-bee/1908/1908-08-15/page_06.jpg",
+        "washington-bee/1908/1908-08-15/page_07.jpg",
+        "washington-bee/1908/1908-08-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-09-05_washington-bee",
+      "date": "1908-09-05",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-09-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-09-05/page_01.jpg",
+        "washington-bee/1908/1908-09-05/page_02.jpg",
+        "washington-bee/1908/1908-09-05/page_03.jpg",
+        "washington-bee/1908/1908-09-05/page_04.jpg",
+        "washington-bee/1908/1908-09-05/page_05.jpg",
+        "washington-bee/1908/1908-09-05/page_06.jpg",
+        "washington-bee/1908/1908-09-05/page_07.jpg",
+        "washington-bee/1908/1908-09-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-09-12_washington-bee",
+      "date": "1908-09-12",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-09-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-09-12/page_01.jpg",
+        "washington-bee/1908/1908-09-12/page_02.jpg",
+        "washington-bee/1908/1908-09-12/page_03.jpg",
+        "washington-bee/1908/1908-09-12/page_04.jpg",
+        "washington-bee/1908/1908-09-12/page_05.jpg",
+        "washington-bee/1908/1908-09-12/page_06.jpg",
+        "washington-bee/1908/1908-09-12/page_07.jpg",
+        "washington-bee/1908/1908-09-12/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-09-19_washington-bee",
+      "date": "1908-09-19",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-09-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-09-19/page_01.jpg",
+        "washington-bee/1908/1908-09-19/page_02.jpg",
+        "washington-bee/1908/1908-09-19/page_03.jpg",
+        "washington-bee/1908/1908-09-19/page_04.jpg",
+        "washington-bee/1908/1908-09-19/page_05.jpg",
+        "washington-bee/1908/1908-09-19/page_06.jpg",
+        "washington-bee/1908/1908-09-19/page_07.jpg",
+        "washington-bee/1908/1908-09-19/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-09-26_washington-bee",
+      "date": "1908-09-26",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-09-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-09-26/page_01.jpg",
+        "washington-bee/1908/1908-09-26/page_02.jpg",
+        "washington-bee/1908/1908-09-26/page_03.jpg",
+        "washington-bee/1908/1908-09-26/page_04.jpg",
+        "washington-bee/1908/1908-09-26/page_05.jpg",
+        "washington-bee/1908/1908-09-26/page_06.jpg",
+        "washington-bee/1908/1908-09-26/page_07.jpg",
+        "washington-bee/1908/1908-09-26/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-10-10_washington-bee",
+      "date": "1908-10-10",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-10-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-10-10/page_01.jpg",
+        "washington-bee/1908/1908-10-10/page_02.jpg",
+        "washington-bee/1908/1908-10-10/page_03.jpg",
+        "washington-bee/1908/1908-10-10/page_04.jpg",
+        "washington-bee/1908/1908-10-10/page_05.jpg",
+        "washington-bee/1908/1908-10-10/page_06.jpg",
+        "washington-bee/1908/1908-10-10/page_07.jpg",
+        "washington-bee/1908/1908-10-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1908-10-10_bee_downloads",
       "date": "1908-10-10",
       "title": "Washington Bee",
@@ -769,6 +2328,42 @@
       "uploaded_at": "2025-10-30T21:54:18Z"
     },
     {
+      "id": "1908-10-31_washington-bee",
+      "date": "1908-10-31",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-10-31/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-10-31/page_01.jpg",
+        "washington-bee/1908/1908-10-31/page_02.jpg",
+        "washington-bee/1908/1908-10-31/page_03.jpg",
+        "washington-bee/1908/1908-10-31/page_04.jpg",
+        "washington-bee/1908/1908-10-31/page_05.jpg",
+        "washington-bee/1908/1908-10-31/page_06.jpg",
+        "washington-bee/1908/1908-10-31/page_07.jpg",
+        "washington-bee/1908/1908-10-31/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1908-11-07_washington-bee",
+      "date": "1908-11-07",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-11-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1908/1908-11-07/page_01.jpg",
+        "washington-bee/1908/1908-11-07/page_02.jpg",
+        "washington-bee/1908/1908-11-07/page_03.jpg",
+        "washington-bee/1908/1908-11-07/page_04.jpg",
+        "washington-bee/1908/1908-11-07/page_05.jpg",
+        "washington-bee/1908/1908-11-07/page_06.jpg",
+        "washington-bee/1908/1908-11-07/page_07.jpg",
+        "washington-bee/1908/1908-11-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1908-11-07_bee_downloads",
       "date": "1908-11-07",
       "title": "Washington Bee",
@@ -788,6 +2383,25 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:18Z"
+    },
+    {
+      "id": "1908-12-05_washington-bee",
+      "date": "1908-12-05",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1908/1908-12-05/thumb.jpg",
+      "pages": 9,
+      "page_paths": [
+        "washington-bee/1908/1908-12-05/page_01.jpg",
+        "washington-bee/1908/1908-12-05/page_02.jpg",
+        "washington-bee/1908/1908-12-05/page_03.jpg",
+        "washington-bee/1908/1908-12-05/page_04.jpg",
+        "washington-bee/1908/1908-12-05/page_05.jpg",
+        "washington-bee/1908/1908-12-05/page_06.jpg",
+        "washington-bee/1908/1908-12-05/page_07.jpg",
+        "washington-bee/1908/1908-12-05/page_08.jpg",
+        "washington-bee/1908/1908-12-05/page_09.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1908-12-05_bee_downloads",
@@ -812,6 +2426,24 @@
       "uploaded_at": "2025-10-30T21:54:18Z"
     },
     {
+      "id": "1909-01-09_washington-bee",
+      "date": "1909-01-09",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-01-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-01-09/page_01.jpg",
+        "washington-bee/1909/1909-01-09/page_02.jpg",
+        "washington-bee/1909/1909-01-09/page_03.jpg",
+        "washington-bee/1909/1909-01-09/page_04.jpg",
+        "washington-bee/1909/1909-01-09/page_05.jpg",
+        "washington-bee/1909/1909-01-09/page_06.jpg",
+        "washington-bee/1909/1909-01-09/page_07.jpg",
+        "washington-bee/1909/1909-01-09/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1909-01-09_bee_downloads",
       "date": "1909-01-09",
       "title": "Washington Bee",
@@ -831,6 +2463,60 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:35Z"
+    },
+    {
+      "id": "1909-01-30_washington-bee",
+      "date": "1909-01-30",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-01-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-01-30/page_01.jpg",
+        "washington-bee/1909/1909-01-30/page_02.jpg",
+        "washington-bee/1909/1909-01-30/page_03.jpg",
+        "washington-bee/1909/1909-01-30/page_04.jpg",
+        "washington-bee/1909/1909-01-30/page_05.jpg",
+        "washington-bee/1909/1909-01-30/page_06.jpg",
+        "washington-bee/1909/1909-01-30/page_07.jpg",
+        "washington-bee/1909/1909-01-30/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-02-20_washington-bee",
+      "date": "1909-02-20",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-02-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-02-20/page_01.jpg",
+        "washington-bee/1909/1909-02-20/page_02.jpg",
+        "washington-bee/1909/1909-02-20/page_03.jpg",
+        "washington-bee/1909/1909-02-20/page_04.jpg",
+        "washington-bee/1909/1909-02-20/page_05.jpg",
+        "washington-bee/1909/1909-02-20/page_06.jpg",
+        "washington-bee/1909/1909-02-20/page_07.jpg",
+        "washington-bee/1909/1909-02-20/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-04-19_washington-bee",
+      "date": "1909-04-19",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-04-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-04-19/page_01.jpg",
+        "washington-bee/1909/1909-04-19/page_02.jpg",
+        "washington-bee/1909/1909-04-19/page_03.jpg",
+        "washington-bee/1909/1909-04-19/page_04.jpg",
+        "washington-bee/1909/1909-04-19/page_05.jpg",
+        "washington-bee/1909/1909-04-19/page_06.jpg",
+        "washington-bee/1909/1909-04-19/page_07.jpg",
+        "washington-bee/1909/1909-04-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1909-04-19_bee_downloads",
@@ -854,6 +2540,132 @@
       "uploaded_at": "2025-10-30T21:54:35Z"
     },
     {
+      "id": "1909-05-22_washington-bee",
+      "date": "1909-05-22",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-05-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-05-22/page_01.jpg",
+        "washington-bee/1909/1909-05-22/page_02.jpg",
+        "washington-bee/1909/1909-05-22/page_03.jpg",
+        "washington-bee/1909/1909-05-22/page_04.jpg",
+        "washington-bee/1909/1909-05-22/page_05.jpg",
+        "washington-bee/1909/1909-05-22/page_06.jpg",
+        "washington-bee/1909/1909-05-22/page_07.jpg",
+        "washington-bee/1909/1909-05-22/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-05-29_washington-bee",
+      "date": "1909-05-29",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-05-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-05-29/page_01.jpg",
+        "washington-bee/1909/1909-05-29/page_02.jpg",
+        "washington-bee/1909/1909-05-29/page_03.jpg",
+        "washington-bee/1909/1909-05-29/page_04.jpg",
+        "washington-bee/1909/1909-05-29/page_05.jpg",
+        "washington-bee/1909/1909-05-29/page_06.jpg",
+        "washington-bee/1909/1909-05-29/page_07.jpg",
+        "washington-bee/1909/1909-05-29/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-06-05_washington-bee",
+      "date": "1909-06-05",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-06-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-06-05/page_01.jpg",
+        "washington-bee/1909/1909-06-05/page_02.jpg",
+        "washington-bee/1909/1909-06-05/page_03.jpg",
+        "washington-bee/1909/1909-06-05/page_04.jpg",
+        "washington-bee/1909/1909-06-05/page_05.jpg",
+        "washington-bee/1909/1909-06-05/page_06.jpg",
+        "washington-bee/1909/1909-06-05/page_07.jpg",
+        "washington-bee/1909/1909-06-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-06-12_washington-bee",
+      "date": "1909-06-12",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-06-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-06-12/page_01.jpg",
+        "washington-bee/1909/1909-06-12/page_02.jpg",
+        "washington-bee/1909/1909-06-12/page_03.jpg",
+        "washington-bee/1909/1909-06-12/page_04.jpg",
+        "washington-bee/1909/1909-06-12/page_05.jpg",
+        "washington-bee/1909/1909-06-12/page_06.jpg",
+        "washington-bee/1909/1909-06-12/page_07.jpg",
+        "washington-bee/1909/1909-06-12/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-07-10_washington-bee",
+      "date": "1909-07-10",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-07-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-07-10/page_01.jpg",
+        "washington-bee/1909/1909-07-10/page_02.jpg",
+        "washington-bee/1909/1909-07-10/page_03.jpg",
+        "washington-bee/1909/1909-07-10/page_04.jpg",
+        "washington-bee/1909/1909-07-10/page_05.jpg",
+        "washington-bee/1909/1909-07-10/page_06.jpg",
+        "washington-bee/1909/1909-07-10/page_07.jpg",
+        "washington-bee/1909/1909-07-10/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-07-24_washington-bee",
+      "date": "1909-07-24",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-07-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-07-24/page_01.jpg",
+        "washington-bee/1909/1909-07-24/page_02.jpg",
+        "washington-bee/1909/1909-07-24/page_03.jpg",
+        "washington-bee/1909/1909-07-24/page_04.jpg",
+        "washington-bee/1909/1909-07-24/page_05.jpg",
+        "washington-bee/1909/1909-07-24/page_06.jpg",
+        "washington-bee/1909/1909-07-24/page_07.jpg",
+        "washington-bee/1909/1909-07-24/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-07-31_washington-bee",
+      "date": "1909-07-31",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-07-31/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-07-31/page_01.jpg",
+        "washington-bee/1909/1909-07-31/page_02.jpg",
+        "washington-bee/1909/1909-07-31/page_03.jpg",
+        "washington-bee/1909/1909-07-31/page_04.jpg",
+        "washington-bee/1909/1909-07-31/page_05.jpg",
+        "washington-bee/1909/1909-07-31/page_06.jpg",
+        "washington-bee/1909/1909-07-31/page_07.jpg",
+        "washington-bee/1909/1909-07-31/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1909-07-31_bee_downloads",
       "date": "1909-07-31",
       "title": "Washington Bee",
@@ -873,6 +2685,60 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:35Z"
+    },
+    {
+      "id": "1909-08-14_washington-bee",
+      "date": "1909-08-14",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-08-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-08-14/page_01.jpg",
+        "washington-bee/1909/1909-08-14/page_02.jpg",
+        "washington-bee/1909/1909-08-14/page_03.jpg",
+        "washington-bee/1909/1909-08-14/page_04.jpg",
+        "washington-bee/1909/1909-08-14/page_05.jpg",
+        "washington-bee/1909/1909-08-14/page_06.jpg",
+        "washington-bee/1909/1909-08-14/page_07.jpg",
+        "washington-bee/1909/1909-08-14/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-08-21_washington-bee",
+      "date": "1909-08-21",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-08-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-08-21/page_01.jpg",
+        "washington-bee/1909/1909-08-21/page_02.jpg",
+        "washington-bee/1909/1909-08-21/page_03.jpg",
+        "washington-bee/1909/1909-08-21/page_04.jpg",
+        "washington-bee/1909/1909-08-21/page_05.jpg",
+        "washington-bee/1909/1909-08-21/page_06.jpg",
+        "washington-bee/1909/1909-08-21/page_07.jpg",
+        "washington-bee/1909/1909-08-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-08-28_washington-bee",
+      "date": "1909-08-28",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-08-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-08-28/page_01.jpg",
+        "washington-bee/1909/1909-08-28/page_02.jpg",
+        "washington-bee/1909/1909-08-28/page_03.jpg",
+        "washington-bee/1909/1909-08-28/page_04.jpg",
+        "washington-bee/1909/1909-08-28/page_05.jpg",
+        "washington-bee/1909/1909-08-28/page_06.jpg",
+        "washington-bee/1909/1909-08-28/page_07.jpg",
+        "washington-bee/1909/1909-08-28/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1909-08-28_bee_downloads",
@@ -896,6 +2762,24 @@
       "uploaded_at": "2025-10-30T21:54:35Z"
     },
     {
+      "id": "1909-09-04_washington-bee",
+      "date": "1909-09-04",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-09-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-09-04/page_01.jpg",
+        "washington-bee/1909/1909-09-04/page_02.jpg",
+        "washington-bee/1909/1909-09-04/page_03.jpg",
+        "washington-bee/1909/1909-09-04/page_04.jpg",
+        "washington-bee/1909/1909-09-04/page_05.jpg",
+        "washington-bee/1909/1909-09-04/page_06.jpg",
+        "washington-bee/1909/1909-09-04/page_07.jpg",
+        "washington-bee/1909/1909-09-04/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1909-09-04_bee_downloads",
       "date": "1909-09-04",
       "title": "Washington Bee",
@@ -915,6 +2799,42 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:35Z"
+    },
+    {
+      "id": "1909-09-11_washington-bee",
+      "date": "1909-09-11",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-09-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-09-11/page_01.jpg",
+        "washington-bee/1909/1909-09-11/page_02.jpg",
+        "washington-bee/1909/1909-09-11/page_03.jpg",
+        "washington-bee/1909/1909-09-11/page_04.jpg",
+        "washington-bee/1909/1909-09-11/page_05.jpg",
+        "washington-bee/1909/1909-09-11/page_06.jpg",
+        "washington-bee/1909/1909-09-11/page_07.jpg",
+        "washington-bee/1909/1909-09-11/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-09-18_washington-bee",
+      "date": "1909-09-18",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-09-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-09-18/page_01.jpg",
+        "washington-bee/1909/1909-09-18/page_02.jpg",
+        "washington-bee/1909/1909-09-18/page_03.jpg",
+        "washington-bee/1909/1909-09-18/page_04.jpg",
+        "washington-bee/1909/1909-09-18/page_05.jpg",
+        "washington-bee/1909/1909-09-18/page_06.jpg",
+        "washington-bee/1909/1909-09-18/page_07.jpg",
+        "washington-bee/1909/1909-09-18/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1909-09-18_bee_downloads",
@@ -938,6 +2858,24 @@
       "uploaded_at": "2025-10-30T21:54:35Z"
     },
     {
+      "id": "1909-09-25_washington-bee",
+      "date": "1909-09-25",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-09-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-09-25/page_01.jpg",
+        "washington-bee/1909/1909-09-25/page_02.jpg",
+        "washington-bee/1909/1909-09-25/page_03.jpg",
+        "washington-bee/1909/1909-09-25/page_04.jpg",
+        "washington-bee/1909/1909-09-25/page_05.jpg",
+        "washington-bee/1909/1909-09-25/page_06.jpg",
+        "washington-bee/1909/1909-09-25/page_07.jpg",
+        "washington-bee/1909/1909-09-25/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1909-09-25_bee_downloads",
       "date": "1909-09-25",
       "title": "Washington Bee",
@@ -957,6 +2895,42 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:35Z"
+    },
+    {
+      "id": "1909-10-16_washington-bee",
+      "date": "1909-10-16",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-10-16/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-10-16/page_01.jpg",
+        "washington-bee/1909/1909-10-16/page_02.jpg",
+        "washington-bee/1909/1909-10-16/page_03.jpg",
+        "washington-bee/1909/1909-10-16/page_04.jpg",
+        "washington-bee/1909/1909-10-16/page_05.jpg",
+        "washington-bee/1909/1909-10-16/page_06.jpg",
+        "washington-bee/1909/1909-10-16/page_07.jpg",
+        "washington-bee/1909/1909-10-16/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1909-10-30_washington-bee",
+      "date": "1909-10-30",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-10-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-10-30/page_01.jpg",
+        "washington-bee/1909/1909-10-30/page_02.jpg",
+        "washington-bee/1909/1909-10-30/page_03.jpg",
+        "washington-bee/1909/1909-10-30/page_04.jpg",
+        "washington-bee/1909/1909-10-30/page_05.jpg",
+        "washington-bee/1909/1909-10-30/page_06.jpg",
+        "washington-bee/1909/1909-10-30/page_07.jpg",
+        "washington-bee/1909/1909-10-30/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1909-10-30_bee_downloads",
@@ -980,6 +2954,24 @@
       "uploaded_at": "2025-10-30T21:54:35Z"
     },
     {
+      "id": "1909-11-27_washington-bee",
+      "date": "1909-11-27",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-11-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-11-27/page_01.jpg",
+        "washington-bee/1909/1909-11-27/page_02.jpg",
+        "washington-bee/1909/1909-11-27/page_03.jpg",
+        "washington-bee/1909/1909-11-27/page_04.jpg",
+        "washington-bee/1909/1909-11-27/page_05.jpg",
+        "washington-bee/1909/1909-11-27/page_06.jpg",
+        "washington-bee/1909/1909-11-27/page_07.jpg",
+        "washington-bee/1909/1909-11-27/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1909-11-27_bee_downloads",
       "date": "1909-11-27",
       "title": "Washington Bee",
@@ -999,6 +2991,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:35Z"
+    },
+    {
+      "id": "1909-12-04_washington-bee",
+      "date": "1909-12-04",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-12-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-12-04/page_01.jpg",
+        "washington-bee/1909/1909-12-04/page_02.jpg",
+        "washington-bee/1909/1909-12-04/page_03.jpg",
+        "washington-bee/1909/1909-12-04/page_04.jpg",
+        "washington-bee/1909/1909-12-04/page_05.jpg",
+        "washington-bee/1909/1909-12-04/page_06.jpg",
+        "washington-bee/1909/1909-12-04/page_07.jpg",
+        "washington-bee/1909/1909-12-04/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1909-12-04_bee_downloads",
@@ -1022,6 +3032,24 @@
       "uploaded_at": "2025-10-30T21:54:35Z"
     },
     {
+      "id": "1909-12-11_washington-bee",
+      "date": "1909-12-11",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1909/1909-12-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1909/1909-12-11/page_01.jpg",
+        "washington-bee/1909/1909-12-11/page_02.jpg",
+        "washington-bee/1909/1909-12-11/page_03.jpg",
+        "washington-bee/1909/1909-12-11/page_04.jpg",
+        "washington-bee/1909/1909-12-11/page_05.jpg",
+        "washington-bee/1909/1909-12-11/page_06.jpg",
+        "washington-bee/1909/1909-12-11/page_07.jpg",
+        "washington-bee/1909/1909-12-11/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1909-12-11_bee_downloads",
       "date": "1909-12-11",
       "title": "Washington Bee",
@@ -1041,6 +3069,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-30T21:54:35Z"
+    },
+    {
+      "id": "1910-01-01_washington-bee",
+      "date": "1910-01-01",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-01-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-01-01/page_01.jpg",
+        "washington-bee/1910/1910-01-01/page_02.jpg",
+        "washington-bee/1910/1910-01-01/page_03.jpg",
+        "washington-bee/1910/1910-01-01/page_04.jpg",
+        "washington-bee/1910/1910-01-01/page_05.jpg",
+        "washington-bee/1910/1910-01-01/page_06.jpg",
+        "washington-bee/1910/1910-01-01/page_07.jpg",
+        "washington-bee/1910/1910-01-01/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-01-01_bee_downloads",
@@ -1064,6 +3110,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-01-08_washington-bee",
+      "date": "1910-01-08",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-01-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-01-08/page_01.jpg",
+        "washington-bee/1910/1910-01-08/page_02.jpg",
+        "washington-bee/1910/1910-01-08/page_03.jpg",
+        "washington-bee/1910/1910-01-08/page_04.jpg",
+        "washington-bee/1910/1910-01-08/page_05.jpg",
+        "washington-bee/1910/1910-01-08/page_06.jpg",
+        "washington-bee/1910/1910-01-08/page_07.jpg",
+        "washington-bee/1910/1910-01-08/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-01-08_bee_downloads",
       "date": "1910-01-08",
       "title": "Washington Bee",
@@ -1083,6 +3147,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-01-15_washington-bee",
+      "date": "1910-01-15",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-01-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-01-15/page_01.jpg",
+        "washington-bee/1910/1910-01-15/page_02.jpg",
+        "washington-bee/1910/1910-01-15/page_03.jpg",
+        "washington-bee/1910/1910-01-15/page_04.jpg",
+        "washington-bee/1910/1910-01-15/page_05.jpg",
+        "washington-bee/1910/1910-01-15/page_06.jpg",
+        "washington-bee/1910/1910-01-15/page_07.jpg",
+        "washington-bee/1910/1910-01-15/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-01-15_bee_downloads",
@@ -1106,6 +3188,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-01-22_washington-bee",
+      "date": "1910-01-22",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-01-22/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-01-22/page_01.jpg",
+        "washington-bee/1910/1910-01-22/page_02.jpg",
+        "washington-bee/1910/1910-01-22/page_03.jpg",
+        "washington-bee/1910/1910-01-22/page_04.jpg",
+        "washington-bee/1910/1910-01-22/page_05.jpg",
+        "washington-bee/1910/1910-01-22/page_06.jpg",
+        "washington-bee/1910/1910-01-22/page_07.jpg",
+        "washington-bee/1910/1910-01-22/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-01-22_bee_downloads",
       "date": "1910-01-22",
       "title": "Washington Bee",
@@ -1125,6 +3225,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-01-29_washington-bee",
+      "date": "1910-01-29",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-01-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-01-29/page_01.jpg",
+        "washington-bee/1910/1910-01-29/page_02.jpg",
+        "washington-bee/1910/1910-01-29/page_03.jpg",
+        "washington-bee/1910/1910-01-29/page_04.jpg",
+        "washington-bee/1910/1910-01-29/page_05.jpg",
+        "washington-bee/1910/1910-01-29/page_06.jpg",
+        "washington-bee/1910/1910-01-29/page_07.jpg",
+        "washington-bee/1910/1910-01-29/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-01-29_bee_downloads",
@@ -1148,6 +3266,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-02-05_washington-bee",
+      "date": "1910-02-05",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-02-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-02-05/page_01.jpg",
+        "washington-bee/1910/1910-02-05/page_02.jpg",
+        "washington-bee/1910/1910-02-05/page_03.jpg",
+        "washington-bee/1910/1910-02-05/page_04.jpg",
+        "washington-bee/1910/1910-02-05/page_05.jpg",
+        "washington-bee/1910/1910-02-05/page_06.jpg",
+        "washington-bee/1910/1910-02-05/page_07.jpg",
+        "washington-bee/1910/1910-02-05/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-02-05_bee_downloads",
       "date": "1910-02-05",
       "title": "Washington Bee",
@@ -1167,6 +3303,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-02-19_washington-bee",
+      "date": "1910-02-19",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-02-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-02-19/page_01.jpg",
+        "washington-bee/1910/1910-02-19/page_02.jpg",
+        "washington-bee/1910/1910-02-19/page_03.jpg",
+        "washington-bee/1910/1910-02-19/page_04.jpg",
+        "washington-bee/1910/1910-02-19/page_05.jpg",
+        "washington-bee/1910/1910-02-19/page_06.jpg",
+        "washington-bee/1910/1910-02-19/page_07.jpg",
+        "washington-bee/1910/1910-02-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-02-19_bee_downloads",
@@ -1190,6 +3344,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-03-19_washington-bee",
+      "date": "1910-03-19",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-03-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-03-19/page_01.jpg",
+        "washington-bee/1910/1910-03-19/page_02.jpg",
+        "washington-bee/1910/1910-03-19/page_03.jpg",
+        "washington-bee/1910/1910-03-19/page_04.jpg",
+        "washington-bee/1910/1910-03-19/page_05.jpg",
+        "washington-bee/1910/1910-03-19/page_06.jpg",
+        "washington-bee/1910/1910-03-19/page_07.jpg",
+        "washington-bee/1910/1910-03-19/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-03-19_bee_downloads",
       "date": "1910-03-19",
       "title": "Washington Bee",
@@ -1209,6 +3381,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-03-26_washington-bee",
+      "date": "1910-03-26",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-03-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-03-26/page_01.jpg",
+        "washington-bee/1910/1910-03-26/page_02.jpg",
+        "washington-bee/1910/1910-03-26/page_03.jpg",
+        "washington-bee/1910/1910-03-26/page_04.jpg",
+        "washington-bee/1910/1910-03-26/page_05.jpg",
+        "washington-bee/1910/1910-03-26/page_06.jpg",
+        "washington-bee/1910/1910-03-26/page_07.jpg",
+        "washington-bee/1910/1910-03-26/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-03-26_bee_downloads",
@@ -1232,6 +3422,24 @@
       "uploaded_at": "2025-10-24T14:00:39Z"
     },
     {
+      "id": "1910-04-23_washington-bee",
+      "date": "1910-04-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-04-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-04-23/page_01.jpg",
+        "washington-bee/1910/1910-04-23/page_02.jpg",
+        "washington-bee/1910/1910-04-23/page_03.jpg",
+        "washington-bee/1910/1910-04-23/page_04.jpg",
+        "washington-bee/1910/1910-04-23/page_05.jpg",
+        "washington-bee/1910/1910-04-23/page_06.jpg",
+        "washington-bee/1910/1910-04-23/page_07.jpg",
+        "washington-bee/1910/1910-04-23/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-04-23_bee_downloads",
       "date": "1910-04-23",
       "title": "Washington Bee",
@@ -1251,6 +3459,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-04-30_washington-bee",
+      "date": "1910-04-30",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-04-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-04-30/page_01.jpg",
+        "washington-bee/1910/1910-04-30/page_02.jpg",
+        "washington-bee/1910/1910-04-30/page_03.jpg",
+        "washington-bee/1910/1910-04-30/page_04.jpg",
+        "washington-bee/1910/1910-04-30/page_05.jpg",
+        "washington-bee/1910/1910-04-30/page_06.jpg",
+        "washington-bee/1910/1910-04-30/page_07.jpg",
+        "washington-bee/1910/1910-04-30/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-04-30_bee_downloads",
@@ -1274,6 +3500,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-05-28_washington-bee",
+      "date": "1910-05-28",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-05-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-05-28/page_01.jpg",
+        "washington-bee/1910/1910-05-28/page_02.jpg",
+        "washington-bee/1910/1910-05-28/page_03.jpg",
+        "washington-bee/1910/1910-05-28/page_04.jpg",
+        "washington-bee/1910/1910-05-28/page_05.jpg",
+        "washington-bee/1910/1910-05-28/page_06.jpg",
+        "washington-bee/1910/1910-05-28/page_07.jpg",
+        "washington-bee/1910/1910-05-28/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-05-28_bee_downloads",
       "date": "1910-05-28",
       "title": "Washington Bee",
@@ -1293,6 +3537,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:00:39Z"
+    },
+    {
+      "id": "1910-06-04_washington-bee",
+      "date": "1910-06-04",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-06-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-06-04/page_01.jpg",
+        "washington-bee/1910/1910-06-04/page_02.jpg",
+        "washington-bee/1910/1910-06-04/page_03.jpg",
+        "washington-bee/1910/1910-06-04/page_04.jpg",
+        "washington-bee/1910/1910-06-04/page_05.jpg",
+        "washington-bee/1910/1910-06-04/page_06.jpg",
+        "washington-bee/1910/1910-06-04/page_07.jpg",
+        "washington-bee/1910/1910-06-04/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-06-04_bee_downloads",
@@ -1316,6 +3578,24 @@
       "uploaded_at": "2025-10-24T14:00:39Z"
     },
     {
+      "id": "1910-06-11_washington-bee",
+      "date": "1910-06-11",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-06-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-06-11/page_01.jpg",
+        "washington-bee/1910/1910-06-11/page_02.jpg",
+        "washington-bee/1910/1910-06-11/page_03.jpg",
+        "washington-bee/1910/1910-06-11/page_04.jpg",
+        "washington-bee/1910/1910-06-11/page_05.jpg",
+        "washington-bee/1910/1910-06-11/page_06.jpg",
+        "washington-bee/1910/1910-06-11/page_07.jpg",
+        "washington-bee/1910/1910-06-11/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-06-11_bee_downloads",
       "date": "1910-06-11",
       "title": "Washington Bee",
@@ -1335,6 +3615,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-06-18_washington-bee",
+      "date": "1910-06-18",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-06-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-06-18/page_01.jpg",
+        "washington-bee/1910/1910-06-18/page_02.jpg",
+        "washington-bee/1910/1910-06-18/page_03.jpg",
+        "washington-bee/1910/1910-06-18/page_04.jpg",
+        "washington-bee/1910/1910-06-18/page_05.jpg",
+        "washington-bee/1910/1910-06-18/page_06.jpg",
+        "washington-bee/1910/1910-06-18/page_07.jpg",
+        "washington-bee/1910/1910-06-18/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-06-18_bee_downloads",
@@ -1358,6 +3656,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-07-02_washington-bee",
+      "date": "1910-07-02",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-07-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-07-02/page_01.jpg",
+        "washington-bee/1910/1910-07-02/page_02.jpg",
+        "washington-bee/1910/1910-07-02/page_03.jpg",
+        "washington-bee/1910/1910-07-02/page_04.jpg",
+        "washington-bee/1910/1910-07-02/page_05.jpg",
+        "washington-bee/1910/1910-07-02/page_06.jpg",
+        "washington-bee/1910/1910-07-02/page_07.jpg",
+        "washington-bee/1910/1910-07-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-07-02_bee_downloads",
       "date": "1910-07-02",
       "title": "Washington Bee",
@@ -1377,6 +3693,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-07-23_washington-bee",
+      "date": "1910-07-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-07-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-07-23/page_01.jpg",
+        "washington-bee/1910/1910-07-23/page_02.jpg",
+        "washington-bee/1910/1910-07-23/page_03.jpg",
+        "washington-bee/1910/1910-07-23/page_04.jpg",
+        "washington-bee/1910/1910-07-23/page_05.jpg",
+        "washington-bee/1910/1910-07-23/page_06.jpg",
+        "washington-bee/1910/1910-07-23/page_07.jpg",
+        "washington-bee/1910/1910-07-23/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-07-23_bee_downloads",
@@ -1400,6 +3734,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-07-30_washington-bee",
+      "date": "1910-07-30",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-07-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-07-30/page_01.jpg",
+        "washington-bee/1910/1910-07-30/page_02.jpg",
+        "washington-bee/1910/1910-07-30/page_03.jpg",
+        "washington-bee/1910/1910-07-30/page_04.jpg",
+        "washington-bee/1910/1910-07-30/page_05.jpg",
+        "washington-bee/1910/1910-07-30/page_06.jpg",
+        "washington-bee/1910/1910-07-30/page_07.jpg",
+        "washington-bee/1910/1910-07-30/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-07-30_bee_downloads",
       "date": "1910-07-30",
       "title": "Washington Bee",
@@ -1419,6 +3771,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-08-20_washington-bee",
+      "date": "1910-08-20",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-08-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-08-20/page_01.jpg",
+        "washington-bee/1910/1910-08-20/page_02.jpg",
+        "washington-bee/1910/1910-08-20/page_03.jpg",
+        "washington-bee/1910/1910-08-20/page_04.jpg",
+        "washington-bee/1910/1910-08-20/page_05.jpg",
+        "washington-bee/1910/1910-08-20/page_06.jpg",
+        "washington-bee/1910/1910-08-20/page_07.jpg",
+        "washington-bee/1910/1910-08-20/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-08-20_bee_downloads",
@@ -1442,6 +3812,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-09-03_washington-bee",
+      "date": "1910-09-03",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-09-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-09-03/page_01.jpg",
+        "washington-bee/1910/1910-09-03/page_02.jpg",
+        "washington-bee/1910/1910-09-03/page_03.jpg",
+        "washington-bee/1910/1910-09-03/page_04.jpg",
+        "washington-bee/1910/1910-09-03/page_05.jpg",
+        "washington-bee/1910/1910-09-03/page_06.jpg",
+        "washington-bee/1910/1910-09-03/page_07.jpg",
+        "washington-bee/1910/1910-09-03/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-09-03_bee_downloads",
       "date": "1910-09-03",
       "title": "Washington Bee",
@@ -1463,6 +3851,23 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1910-10-15_washington-bee",
+      "date": "1910-10-15",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-10-15/thumb.jpg",
+      "pages": 7,
+      "page_paths": [
+        "washington-bee/1910/1910-10-15/page_01.jpg",
+        "washington-bee/1910/1910-10-15/page_02.jpg",
+        "washington-bee/1910/1910-10-15/page_03.jpg",
+        "washington-bee/1910/1910-10-15/page_04.jpg",
+        "washington-bee/1910/1910-10-15/page_05.jpg",
+        "washington-bee/1910/1910-10-15/page_06.jpg",
+        "washington-bee/1910/1910-10-15/page_07.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-10-15_bee_downloads",
       "date": "1910-10-15",
       "title": "Washington Bee",
@@ -1481,6 +3886,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-11-26_washington-bee",
+      "date": "1910-11-26",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-11-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-11-26/page_01.jpg",
+        "washington-bee/1910/1910-11-26/page_02.jpg",
+        "washington-bee/1910/1910-11-26/page_03.jpg",
+        "washington-bee/1910/1910-11-26/page_04.jpg",
+        "washington-bee/1910/1910-11-26/page_05.jpg",
+        "washington-bee/1910/1910-11-26/page_06.jpg",
+        "washington-bee/1910/1910-11-26/page_07.jpg",
+        "washington-bee/1910/1910-11-26/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-11-26_bee_downloads",
@@ -1504,6 +3927,24 @@
       "uploaded_at": "2025-10-24T14:00:39Z"
     },
     {
+      "id": "1910-12-03_washington-bee",
+      "date": "1910-12-03",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-12-03/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-12-03/page_01.jpg",
+        "washington-bee/1910/1910-12-03/page_02.jpg",
+        "washington-bee/1910/1910-12-03/page_03.jpg",
+        "washington-bee/1910/1910-12-03/page_04.jpg",
+        "washington-bee/1910/1910-12-03/page_05.jpg",
+        "washington-bee/1910/1910-12-03/page_06.jpg",
+        "washington-bee/1910/1910-12-03/page_07.jpg",
+        "washington-bee/1910/1910-12-03/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1910-12-03_bee_downloads",
       "date": "1910-12-03",
       "title": "Washington Bee",
@@ -1523,6 +3964,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T11:01:05Z"
+    },
+    {
+      "id": "1910-12-17_washington-bee",
+      "date": "1910-12-17",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1910/1910-12-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1910/1910-12-17/page_01.jpg",
+        "washington-bee/1910/1910-12-17/page_02.jpg",
+        "washington-bee/1910/1910-12-17/page_03.jpg",
+        "washington-bee/1910/1910-12-17/page_04.jpg",
+        "washington-bee/1910/1910-12-17/page_05.jpg",
+        "washington-bee/1910/1910-12-17/page_06.jpg",
+        "washington-bee/1910/1910-12-17/page_07.jpg",
+        "washington-bee/1910/1910-12-17/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1910-12-17_bee_downloads",
@@ -1546,6 +4005,24 @@
       "uploaded_at": "2025-10-24T11:01:05Z"
     },
     {
+      "id": "1911-01-07_washington-bee",
+      "date": "1911-01-07",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-01-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-01-07/page_01.jpg",
+        "washington-bee/1911/1911-01-07/page_02.jpg",
+        "washington-bee/1911/1911-01-07/page_03.jpg",
+        "washington-bee/1911/1911-01-07/page_04.jpg",
+        "washington-bee/1911/1911-01-07/page_05.jpg",
+        "washington-bee/1911/1911-01-07/page_06.jpg",
+        "washington-bee/1911/1911-01-07/page_07.jpg",
+        "washington-bee/1911/1911-01-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-01-07_bee_downloads",
       "date": "1911-01-07",
       "title": "Washington Bee",
@@ -1565,6 +4042,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-01-14_washington-bee",
+      "date": "1911-01-14",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-01-14/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-01-14/page_01.jpg",
+        "washington-bee/1911/1911-01-14/page_02.jpg",
+        "washington-bee/1911/1911-01-14/page_03.jpg",
+        "washington-bee/1911/1911-01-14/page_04.jpg",
+        "washington-bee/1911/1911-01-14/page_05.jpg",
+        "washington-bee/1911/1911-01-14/page_06.jpg",
+        "washington-bee/1911/1911-01-14/page_07.jpg",
+        "washington-bee/1911/1911-01-14/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-01-14_bee_downloads",
@@ -1588,6 +4083,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-01-21_washington-bee",
+      "date": "1911-01-21",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-01-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-01-21/page_01.jpg",
+        "washington-bee/1911/1911-01-21/page_02.jpg",
+        "washington-bee/1911/1911-01-21/page_03.jpg",
+        "washington-bee/1911/1911-01-21/page_04.jpg",
+        "washington-bee/1911/1911-01-21/page_05.jpg",
+        "washington-bee/1911/1911-01-21/page_06.jpg",
+        "washington-bee/1911/1911-01-21/page_07.jpg",
+        "washington-bee/1911/1911-01-21/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-01-21_bee_downloads",
       "date": "1911-01-21",
       "title": "Washington Bee",
@@ -1607,6 +4120,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-02-04_washington-bee",
+      "date": "1911-02-04",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-02-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-02-04/page_01.jpg",
+        "washington-bee/1911/1911-02-04/page_02.jpg",
+        "washington-bee/1911/1911-02-04/page_03.jpg",
+        "washington-bee/1911/1911-02-04/page_04.jpg",
+        "washington-bee/1911/1911-02-04/page_05.jpg",
+        "washington-bee/1911/1911-02-04/page_06.jpg",
+        "washington-bee/1911/1911-02-04/page_07.jpg",
+        "washington-bee/1911/1911-02-04/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-02-04_bee_downloads",
@@ -1630,6 +4161,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-02-11_washington-bee",
+      "date": "1911-02-11",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-02-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-02-11/page_01.jpg",
+        "washington-bee/1911/1911-02-11/page_02.jpg",
+        "washington-bee/1911/1911-02-11/page_03.jpg",
+        "washington-bee/1911/1911-02-11/page_04.jpg",
+        "washington-bee/1911/1911-02-11/page_05.jpg",
+        "washington-bee/1911/1911-02-11/page_06.jpg",
+        "washington-bee/1911/1911-02-11/page_07.jpg",
+        "washington-bee/1911/1911-02-11/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-02-11_bee_downloads",
       "date": "1911-02-11",
       "title": "Washington Bee",
@@ -1649,6 +4198,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-03-04_washington-bee",
+      "date": "1911-03-04",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-03-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-03-04/page_01.jpg",
+        "washington-bee/1911/1911-03-04/page_02.jpg",
+        "washington-bee/1911/1911-03-04/page_03.jpg",
+        "washington-bee/1911/1911-03-04/page_04.jpg",
+        "washington-bee/1911/1911-03-04/page_05.jpg",
+        "washington-bee/1911/1911-03-04/page_06.jpg",
+        "washington-bee/1911/1911-03-04/page_07.jpg",
+        "washington-bee/1911/1911-03-04/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-03-04_bee_downloads",
@@ -1672,6 +4239,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-03-11_washington-bee",
+      "date": "1911-03-11",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-03-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-03-11/page_01.jpg",
+        "washington-bee/1911/1911-03-11/page_02.jpg",
+        "washington-bee/1911/1911-03-11/page_03.jpg",
+        "washington-bee/1911/1911-03-11/page_04.jpg",
+        "washington-bee/1911/1911-03-11/page_05.jpg",
+        "washington-bee/1911/1911-03-11/page_06.jpg",
+        "washington-bee/1911/1911-03-11/page_07.jpg",
+        "washington-bee/1911/1911-03-11/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-03-11_bee_downloads",
       "date": "1911-03-11",
       "title": "Washington Bee",
@@ -1691,6 +4276,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-03-25_washington-bee",
+      "date": "1911-03-25",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-03-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-03-25/page_01.jpg",
+        "washington-bee/1911/1911-03-25/page_02.jpg",
+        "washington-bee/1911/1911-03-25/page_03.jpg",
+        "washington-bee/1911/1911-03-25/page_04.jpg",
+        "washington-bee/1911/1911-03-25/page_05.jpg",
+        "washington-bee/1911/1911-03-25/page_06.jpg",
+        "washington-bee/1911/1911-03-25/page_07.jpg",
+        "washington-bee/1911/1911-03-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-03-25_bee_downloads",
@@ -1714,6 +4317,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-04-01_washington-bee",
+      "date": "1911-04-01",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-04-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-04-01/page_01.jpg",
+        "washington-bee/1911/1911-04-01/page_02.jpg",
+        "washington-bee/1911/1911-04-01/page_03.jpg",
+        "washington-bee/1911/1911-04-01/page_04.jpg",
+        "washington-bee/1911/1911-04-01/page_05.jpg",
+        "washington-bee/1911/1911-04-01/page_06.jpg",
+        "washington-bee/1911/1911-04-01/page_07.jpg",
+        "washington-bee/1911/1911-04-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-04-01_bee_downloads",
       "date": "1911-04-01",
       "title": "Washington Bee",
@@ -1733,6 +4354,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-04-08_washington-bee",
+      "date": "1911-04-08",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-04-08/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-04-08/page_01.jpg",
+        "washington-bee/1911/1911-04-08/page_02.jpg",
+        "washington-bee/1911/1911-04-08/page_03.jpg",
+        "washington-bee/1911/1911-04-08/page_04.jpg",
+        "washington-bee/1911/1911-04-08/page_05.jpg",
+        "washington-bee/1911/1911-04-08/page_06.jpg",
+        "washington-bee/1911/1911-04-08/page_07.jpg",
+        "washington-bee/1911/1911-04-08/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-04-08_bee_downloads",
@@ -1756,6 +4395,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-04-15_washington-bee",
+      "date": "1911-04-15",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-04-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-04-15/page_01.jpg",
+        "washington-bee/1911/1911-04-15/page_02.jpg",
+        "washington-bee/1911/1911-04-15/page_03.jpg",
+        "washington-bee/1911/1911-04-15/page_04.jpg",
+        "washington-bee/1911/1911-04-15/page_05.jpg",
+        "washington-bee/1911/1911-04-15/page_06.jpg",
+        "washington-bee/1911/1911-04-15/page_07.jpg",
+        "washington-bee/1911/1911-04-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-04-15_bee_downloads",
       "date": "1911-04-15",
       "title": "Washington Bee",
@@ -1775,6 +4432,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-04-29_washington-bee",
+      "date": "1911-04-29",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-04-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-04-29/page_01.jpg",
+        "washington-bee/1911/1911-04-29/page_02.jpg",
+        "washington-bee/1911/1911-04-29/page_03.jpg",
+        "washington-bee/1911/1911-04-29/page_04.jpg",
+        "washington-bee/1911/1911-04-29/page_05.jpg",
+        "washington-bee/1911/1911-04-29/page_06.jpg",
+        "washington-bee/1911/1911-04-29/page_07.jpg",
+        "washington-bee/1911/1911-04-29/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-04-29_bee_downloads",
@@ -1798,6 +4473,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-05-20_washington-bee",
+      "date": "1911-05-20",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-05-20/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-05-20/page_01.jpg",
+        "washington-bee/1911/1911-05-20/page_02.jpg",
+        "washington-bee/1911/1911-05-20/page_03.jpg",
+        "washington-bee/1911/1911-05-20/page_04.jpg",
+        "washington-bee/1911/1911-05-20/page_05.jpg",
+        "washington-bee/1911/1911-05-20/page_06.jpg",
+        "washington-bee/1911/1911-05-20/page_07.jpg",
+        "washington-bee/1911/1911-05-20/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-05-20_bee_downloads",
       "date": "1911-05-20",
       "title": "Washington Bee",
@@ -1817,6 +4510,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-05-27_washington-bee",
+      "date": "1911-05-27",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-05-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-05-27/page_01.jpg",
+        "washington-bee/1911/1911-05-27/page_02.jpg",
+        "washington-bee/1911/1911-05-27/page_03.jpg",
+        "washington-bee/1911/1911-05-27/page_04.jpg",
+        "washington-bee/1911/1911-05-27/page_05.jpg",
+        "washington-bee/1911/1911-05-27/page_06.jpg",
+        "washington-bee/1911/1911-05-27/page_07.jpg",
+        "washington-bee/1911/1911-05-27/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-05-27_bee_downloads",
@@ -1840,6 +4551,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-07-15_washington-bee",
+      "date": "1911-07-15",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-07-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-07-15/page_01.jpg",
+        "washington-bee/1911/1911-07-15/page_02.jpg",
+        "washington-bee/1911/1911-07-15/page_03.jpg",
+        "washington-bee/1911/1911-07-15/page_04.jpg",
+        "washington-bee/1911/1911-07-15/page_05.jpg",
+        "washington-bee/1911/1911-07-15/page_06.jpg",
+        "washington-bee/1911/1911-07-15/page_07.jpg",
+        "washington-bee/1911/1911-07-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-07-15_bee_downloads",
       "date": "1911-07-15",
       "title": "Washington Bee",
@@ -1859,6 +4588,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-07-29_washington-bee",
+      "date": "1911-07-29",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-07-29/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-07-29/page_01.jpg",
+        "washington-bee/1911/1911-07-29/page_02.jpg",
+        "washington-bee/1911/1911-07-29/page_03.jpg",
+        "washington-bee/1911/1911-07-29/page_04.jpg",
+        "washington-bee/1911/1911-07-29/page_05.jpg",
+        "washington-bee/1911/1911-07-29/page_06.jpg",
+        "washington-bee/1911/1911-07-29/page_07.jpg",
+        "washington-bee/1911/1911-07-29/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-07-29_bee_downloads",
@@ -1882,6 +4629,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-08-12_washington-bee",
+      "date": "1911-08-12",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-08-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-08-12/page_01.jpg",
+        "washington-bee/1911/1911-08-12/page_02.jpg",
+        "washington-bee/1911/1911-08-12/page_03.jpg",
+        "washington-bee/1911/1911-08-12/page_04.jpg",
+        "washington-bee/1911/1911-08-12/page_05.jpg",
+        "washington-bee/1911/1911-08-12/page_06.jpg",
+        "washington-bee/1911/1911-08-12/page_07.jpg",
+        "washington-bee/1911/1911-08-12/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-08-12_bee_downloads",
       "date": "1911-08-12",
       "title": "Washington Bee",
@@ -1901,6 +4666,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-08-19_washington-bee",
+      "date": "1911-08-19",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-08-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-08-19/page_01.jpg",
+        "washington-bee/1911/1911-08-19/page_02.jpg",
+        "washington-bee/1911/1911-08-19/page_03.jpg",
+        "washington-bee/1911/1911-08-19/page_04.jpg",
+        "washington-bee/1911/1911-08-19/page_05.jpg",
+        "washington-bee/1911/1911-08-19/page_06.jpg",
+        "washington-bee/1911/1911-08-19/page_07.jpg",
+        "washington-bee/1911/1911-08-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-08-19_bee_downloads",
@@ -1924,6 +4707,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-09-02_washington-bee",
+      "date": "1911-09-02",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-09-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-09-02/page_01.jpg",
+        "washington-bee/1911/1911-09-02/page_02.jpg",
+        "washington-bee/1911/1911-09-02/page_03.jpg",
+        "washington-bee/1911/1911-09-02/page_04.jpg",
+        "washington-bee/1911/1911-09-02/page_05.jpg",
+        "washington-bee/1911/1911-09-02/page_06.jpg",
+        "washington-bee/1911/1911-09-02/page_07.jpg",
+        "washington-bee/1911/1911-09-02/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-09-02_bee_downloads",
       "date": "1911-09-02",
       "title": "Washington Bee",
@@ -1943,6 +4744,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-09-30_washington-bee",
+      "date": "1911-09-30",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-09-30/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-09-30/page_01.jpg",
+        "washington-bee/1911/1911-09-30/page_02.jpg",
+        "washington-bee/1911/1911-09-30/page_03.jpg",
+        "washington-bee/1911/1911-09-30/page_04.jpg",
+        "washington-bee/1911/1911-09-30/page_05.jpg",
+        "washington-bee/1911/1911-09-30/page_06.jpg",
+        "washington-bee/1911/1911-09-30/page_07.jpg",
+        "washington-bee/1911/1911-09-30/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-09-30_bee_downloads",
@@ -1966,6 +4785,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-10-07_washington-bee",
+      "date": "1911-10-07",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-10-07/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-10-07/page_01.jpg",
+        "washington-bee/1911/1911-10-07/page_02.jpg",
+        "washington-bee/1911/1911-10-07/page_03.jpg",
+        "washington-bee/1911/1911-10-07/page_04.jpg",
+        "washington-bee/1911/1911-10-07/page_05.jpg",
+        "washington-bee/1911/1911-10-07/page_06.jpg",
+        "washington-bee/1911/1911-10-07/page_07.jpg",
+        "washington-bee/1911/1911-10-07/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-10-07_bee_downloads",
       "date": "1911-10-07",
       "title": "Washington Bee",
@@ -1985,6 +4822,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1911-11-25_washington-bee",
+      "date": "1911-11-25",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-11-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-11-25/page_01.jpg",
+        "washington-bee/1911/1911-11-25/page_02.jpg",
+        "washington-bee/1911/1911-11-25/page_03.jpg",
+        "washington-bee/1911/1911-11-25/page_04.jpg",
+        "washington-bee/1911/1911-11-25/page_05.jpg",
+        "washington-bee/1911/1911-11-25/page_06.jpg",
+        "washington-bee/1911/1911-11-25/page_07.jpg",
+        "washington-bee/1911/1911-11-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1911-11-25_bee_downloads",
@@ -2008,6 +4863,24 @@
       "uploaded_at": "2025-10-24T14:01:17Z"
     },
     {
+      "id": "1911-12-09_washington-bee",
+      "date": "1911-12-09",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1911/1911-12-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1911/1911-12-09/page_01.jpg",
+        "washington-bee/1911/1911-12-09/page_02.jpg",
+        "washington-bee/1911/1911-12-09/page_03.jpg",
+        "washington-bee/1911/1911-12-09/page_04.jpg",
+        "washington-bee/1911/1911-12-09/page_05.jpg",
+        "washington-bee/1911/1911-12-09/page_06.jpg",
+        "washington-bee/1911/1911-12-09/page_07.jpg",
+        "washington-bee/1911/1911-12-09/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1911-12-09_bee_downloads",
       "date": "1911-12-09",
       "title": "Washington Bee",
@@ -2027,6 +4900,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:17Z"
+    },
+    {
+      "id": "1912-01-27_washington-bee",
+      "date": "1912-01-27",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1912/1912-01-27/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1912/1912-01-27/page_01.jpg",
+        "washington-bee/1912/1912-01-27/page_02.jpg",
+        "washington-bee/1912/1912-01-27/page_03.jpg",
+        "washington-bee/1912/1912-01-27/page_04.jpg",
+        "washington-bee/1912/1912-01-27/page_05.jpg",
+        "washington-bee/1912/1912-01-27/page_06.jpg",
+        "washington-bee/1912/1912-01-27/page_07.jpg",
+        "washington-bee/1912/1912-01-27/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1912-01-27_bee_downloads",
@@ -2050,6 +4941,24 @@
       "uploaded_at": "2025-10-24T14:01:27Z"
     },
     {
+      "id": "1912-02-17_washington-bee",
+      "date": "1912-02-17",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1912/1912-02-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1912/1912-02-17/page_01.jpg",
+        "washington-bee/1912/1912-02-17/page_02.jpg",
+        "washington-bee/1912/1912-02-17/page_03.jpg",
+        "washington-bee/1912/1912-02-17/page_04.jpg",
+        "washington-bee/1912/1912-02-17/page_05.jpg",
+        "washington-bee/1912/1912-02-17/page_06.jpg",
+        "washington-bee/1912/1912-02-17/page_07.jpg",
+        "washington-bee/1912/1912-02-17/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1912-02-17_bee_downloads",
       "date": "1912-02-17",
       "title": "Washington Bee",
@@ -2069,6 +4978,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:27Z"
+    },
+    {
+      "id": "1912-03-02_washington-bee",
+      "date": "1912-03-02",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1912/1912-03-02/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1912/1912-03-02/page_01.jpg",
+        "washington-bee/1912/1912-03-02/page_02.jpg",
+        "washington-bee/1912/1912-03-02/page_03.jpg",
+        "washington-bee/1912/1912-03-02/page_04.jpg",
+        "washington-bee/1912/1912-03-02/page_05.jpg",
+        "washington-bee/1912/1912-03-02/page_06.jpg",
+        "washington-bee/1912/1912-03-02/page_07.jpg",
+        "washington-bee/1912/1912-03-02/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1912-03-02_bee_downloads",
@@ -2092,6 +5019,24 @@
       "uploaded_at": "2025-10-24T14:01:27Z"
     },
     {
+      "id": "1912-03-09_washington-bee",
+      "date": "1912-03-09",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1912/1912-03-09/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1912/1912-03-09/page_01.jpg",
+        "washington-bee/1912/1912-03-09/page_02.jpg",
+        "washington-bee/1912/1912-03-09/page_03.jpg",
+        "washington-bee/1912/1912-03-09/page_04.jpg",
+        "washington-bee/1912/1912-03-09/page_05.jpg",
+        "washington-bee/1912/1912-03-09/page_06.jpg",
+        "washington-bee/1912/1912-03-09/page_07.jpg",
+        "washington-bee/1912/1912-03-09/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "1912-03-09_bee_downloads",
       "date": "1912-03-09",
       "title": "Washington Bee",
@@ -2111,6 +5056,24 @@
       "has_ocr": true,
       "source": "chronicling_america",
       "uploaded_at": "2025-10-24T14:01:27Z"
+    },
+    {
+      "id": "1912-03-23_washington-bee",
+      "date": "1912-03-23",
+      "title": "Washington Bee",
+      "issue_thumb": "washington-bee/1912/1912-03-23/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "washington-bee/1912/1912-03-23/page_01.jpg",
+        "washington-bee/1912/1912-03-23/page_02.jpg",
+        "washington-bee/1912/1912-03-23/page_03.jpg",
+        "washington-bee/1912/1912-03-23/page_04.jpg",
+        "washington-bee/1912/1912-03-23/page_05.jpg",
+        "washington-bee/1912/1912-03-23/page_06.jpg",
+        "washington-bee/1912/1912-03-23/page_07.jpg",
+        "washington-bee/1912/1912-03-23/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "1912-03-23_bee_downloads",

@@ -3,6 +3,24 @@
   "title": "Western Outlook",
   "issues": [
     {
+      "id": "1926-05-15_western-outlook",
+      "date": "1926-05-15",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1926/1926-05-15/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1926/1926-05-15/page_01.jpg",
+        "western-outlook/1926/1926-05-15/page_02.jpg",
+        "western-outlook/1926/1926-05-15/page_03.jpg",
+        "western-outlook/1926/1926-05-15/page_04.jpg",
+        "western-outlook/1926/1926-05-15/page_05.jpg",
+        "western-outlook/1926/1926-05-15/page_06.jpg",
+        "western-outlook/1926/1926-05-15/page_07.jpg",
+        "western-outlook/1926/1926-05-15/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
       "id": "western-outlook_1926-05-15",
       "date": "1926-05-15",
       "title": "Western Outlook",
@@ -19,7 +37,25 @@
         "https://pages.dangerouspress.org/western-outlook/1926/1926-05-15/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1926-06-12_western-outlook",
+      "date": "1926-06-12",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1926/1926-06-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1926/1926-06-12/page_01.jpg",
+        "western-outlook/1926/1926-06-12/page_02.jpg",
+        "western-outlook/1926/1926-06-12/page_03.jpg",
+        "western-outlook/1926/1926-06-12/page_04.jpg",
+        "western-outlook/1926/1926-06-12/page_05.jpg",
+        "western-outlook/1926/1926-06-12/page_06.jpg",
+        "western-outlook/1926/1926-06-12/page_07.jpg",
+        "western-outlook/1926/1926-06-12/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1926-06-12",
@@ -38,7 +74,25 @@
         "https://pages.dangerouspress.org/western-outlook/1926/1926-06-12/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1926-08-21_western-outlook",
+      "date": "1926-08-21",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1926/1926-08-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1926/1926-08-21/page_01.jpg",
+        "western-outlook/1926/1926-08-21/page_02.jpg",
+        "western-outlook/1926/1926-08-21/page_03.jpg",
+        "western-outlook/1926/1926-08-21/page_04.jpg",
+        "western-outlook/1926/1926-08-21/page_05.jpg",
+        "western-outlook/1926/1926-08-21/page_06.jpg",
+        "western-outlook/1926/1926-08-21/page_07.jpg",
+        "western-outlook/1926/1926-08-21/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1926-08-21",
@@ -57,7 +111,25 @@
         "https://pages.dangerouspress.org/western-outlook/1926/1926-08-21/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1926-12-18_western-outlook",
+      "date": "1926-12-18",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1926/1926-12-18/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1926/1926-12-18/page_01.jpg",
+        "western-outlook/1926/1926-12-18/page_02.jpg",
+        "western-outlook/1926/1926-12-18/page_03.jpg",
+        "western-outlook/1926/1926-12-18/page_04.jpg",
+        "western-outlook/1926/1926-12-18/page_05.jpg",
+        "western-outlook/1926/1926-12-18/page_06.jpg",
+        "western-outlook/1926/1926-12-18/page_07.jpg",
+        "western-outlook/1926/1926-12-18/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1926-12-18",
@@ -76,7 +148,27 @@
         "https://pages.dangerouspress.org/western-outlook/1926/1926-12-18/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1927-01-01_western-outlook",
+      "date": "1927-01-01",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1927/1927-01-01/thumb.jpg",
+      "pages": 10,
+      "page_paths": [
+        "western-outlook/1927/1927-01-01/page_01.jpg",
+        "western-outlook/1927/1927-01-01/page_02.jpg",
+        "western-outlook/1927/1927-01-01/page_03.jpg",
+        "western-outlook/1927/1927-01-01/page_04.jpg",
+        "western-outlook/1927/1927-01-01/page_05.jpg",
+        "western-outlook/1927/1927-01-01/page_06.jpg",
+        "western-outlook/1927/1927-01-01/page_07.jpg",
+        "western-outlook/1927/1927-01-01/page_08.jpg",
+        "western-outlook/1927/1927-01-01/page_09.jpg",
+        "western-outlook/1927/1927-01-01/page_10.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1927-01-01",
@@ -97,7 +189,21 @@
         "https://pages.dangerouspress.org/western-outlook/1927/1927-01-01/page_10.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1927-01-08_western-outlook",
+      "date": "1927-01-08",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1927/1927-01-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "western-outlook/1927/1927-01-08/page_01.jpg",
+        "western-outlook/1927/1927-01-08/page_02.jpg",
+        "western-outlook/1927/1927-01-08/page_03.jpg",
+        "western-outlook/1927/1927-01-08/page_04.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1927-01-08",
@@ -112,7 +218,25 @@
         "https://pages.dangerouspress.org/western-outlook/1927/1927-01-08/page_04.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1927-02-12_western-outlook",
+      "date": "1927-02-12",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1927/1927-02-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1927/1927-02-12/page_01.jpg",
+        "western-outlook/1927/1927-02-12/page_02.jpg",
+        "western-outlook/1927/1927-02-12/page_03.jpg",
+        "western-outlook/1927/1927-02-12/page_04.jpg",
+        "western-outlook/1927/1927-02-12/page_05.jpg",
+        "western-outlook/1927/1927-02-12/page_06.jpg",
+        "western-outlook/1927/1927-02-12/page_07.jpg",
+        "western-outlook/1927/1927-02-12/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1927-02-12",
@@ -131,7 +255,25 @@
         "https://pages.dangerouspress.org/western-outlook/1927/1927-02-12/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1927-06-11_western-outlook",
+      "date": "1927-06-11",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1927/1927-06-11/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1927/1927-06-11/page_01.jpg",
+        "western-outlook/1927/1927-06-11/page_02.jpg",
+        "western-outlook/1927/1927-06-11/page_03.jpg",
+        "western-outlook/1927/1927-06-11/page_04.jpg",
+        "western-outlook/1927/1927-06-11/page_05.jpg",
+        "western-outlook/1927/1927-06-11/page_06.jpg",
+        "western-outlook/1927/1927-06-11/page_07.jpg",
+        "western-outlook/1927/1927-06-11/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1927-06-11",
@@ -150,7 +292,25 @@
         "https://pages.dangerouspress.org/western-outlook/1927/1927-06-11/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1927-12-10_western-outlook",
+      "date": "1927-12-10",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1927/1927-12-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1927/1927-12-10/page_01.jpg",
+        "western-outlook/1927/1927-12-10/page_02.jpg",
+        "western-outlook/1927/1927-12-10/page_03.jpg",
+        "western-outlook/1927/1927-12-10/page_04.jpg",
+        "western-outlook/1927/1927-12-10/page_05.jpg",
+        "western-outlook/1927/1927-12-10/page_06.jpg",
+        "western-outlook/1927/1927-12-10/page_07.jpg",
+        "western-outlook/1927/1927-12-10/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1927-12-10",
@@ -169,7 +329,25 @@
         "https://pages.dangerouspress.org/western-outlook/1927/1927-12-10/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1927-12-24_western-outlook",
+      "date": "1927-12-24",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1927/1927-12-24/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1927/1927-12-24/page_01.jpg",
+        "western-outlook/1927/1927-12-24/page_02.jpg",
+        "western-outlook/1927/1927-12-24/page_03.jpg",
+        "western-outlook/1927/1927-12-24/page_04.jpg",
+        "western-outlook/1927/1927-12-24/page_05.jpg",
+        "western-outlook/1927/1927-12-24/page_06.jpg",
+        "western-outlook/1927/1927-12-24/page_07.jpg",
+        "western-outlook/1927/1927-12-24/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1927-12-24",
@@ -188,7 +366,25 @@
         "https://pages.dangerouspress.org/western-outlook/1927/1927-12-24/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:52Z"
+      "uploaded_at": "2025-11-01T19:40:22Z"
+    },
+    {
+      "id": "1928-01-21_western-outlook",
+      "date": "1928-01-21",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-01-21/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-01-21/page_01.jpg",
+        "western-outlook/1928/1928-01-21/page_02.jpg",
+        "western-outlook/1928/1928-01-21/page_03.jpg",
+        "western-outlook/1928/1928-01-21/page_04.jpg",
+        "western-outlook/1928/1928-01-21/page_05.jpg",
+        "western-outlook/1928/1928-01-21/page_06.jpg",
+        "western-outlook/1928/1928-01-21/page_07.jpg",
+        "western-outlook/1928/1928-01-21/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-01-21",
@@ -207,7 +403,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-01-21/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-02-04_western-outlook",
+      "date": "1928-02-04",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-02-04/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-02-04/page_01.jpg",
+        "western-outlook/1928/1928-02-04/page_02.jpg",
+        "western-outlook/1928/1928-02-04/page_03.jpg",
+        "western-outlook/1928/1928-02-04/page_04.jpg",
+        "western-outlook/1928/1928-02-04/page_05.jpg",
+        "western-outlook/1928/1928-02-04/page_06.jpg",
+        "western-outlook/1928/1928-02-04/page_07.jpg",
+        "western-outlook/1928/1928-02-04/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-02-04",
@@ -226,7 +440,21 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-02-04/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-02-18_western-outlook",
+      "date": "1928-02-18",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-02-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "western-outlook/1928/1928-02-18/page_01.jpg",
+        "western-outlook/1928/1928-02-18/page_02.jpg",
+        "western-outlook/1928/1928-02-18/page_03.jpg",
+        "western-outlook/1928/1928-02-18/page_04.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-02-18",
@@ -241,7 +469,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-02-18/page_04.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-02-25_western-outlook",
+      "date": "1928-02-25",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-02-25/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-02-25/page_01.jpg",
+        "western-outlook/1928/1928-02-25/page_02.jpg",
+        "western-outlook/1928/1928-02-25/page_03.jpg",
+        "western-outlook/1928/1928-02-25/page_04.jpg",
+        "western-outlook/1928/1928-02-25/page_05.jpg",
+        "western-outlook/1928/1928-02-25/page_06.jpg",
+        "western-outlook/1928/1928-02-25/page_07.jpg",
+        "western-outlook/1928/1928-02-25/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-02-25",
@@ -260,7 +506,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-02-25/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-03-10_western-outlook",
+      "date": "1928-03-10",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-03-10/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-03-10/page_01.jpg",
+        "western-outlook/1928/1928-03-10/page_02.jpg",
+        "western-outlook/1928/1928-03-10/page_03.jpg",
+        "western-outlook/1928/1928-03-10/page_04.jpg",
+        "western-outlook/1928/1928-03-10/page_05.jpg",
+        "western-outlook/1928/1928-03-10/page_06.jpg",
+        "western-outlook/1928/1928-03-10/page_07.jpg",
+        "western-outlook/1928/1928-03-10/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-03-10",
@@ -279,7 +543,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-03-10/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-03-17_western-outlook",
+      "date": "1928-03-17",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-03-17/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-03-17/page_01.jpg",
+        "western-outlook/1928/1928-03-17/page_02.jpg",
+        "western-outlook/1928/1928-03-17/page_03.jpg",
+        "western-outlook/1928/1928-03-17/page_04.jpg",
+        "western-outlook/1928/1928-03-17/page_05.jpg",
+        "western-outlook/1928/1928-03-17/page_06.jpg",
+        "western-outlook/1928/1928-03-17/page_07.jpg",
+        "western-outlook/1928/1928-03-17/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-03-17",
@@ -298,7 +580,27 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-03-17/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-04-14_western-outlook",
+      "date": "1928-04-14",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-04-14/thumb.jpg",
+      "pages": 10,
+      "page_paths": [
+        "western-outlook/1928/1928-04-14/page_01.jpg",
+        "western-outlook/1928/1928-04-14/page_02.jpg",
+        "western-outlook/1928/1928-04-14/page_03.jpg",
+        "western-outlook/1928/1928-04-14/page_04.jpg",
+        "western-outlook/1928/1928-04-14/page_05.jpg",
+        "western-outlook/1928/1928-04-14/page_06.jpg",
+        "western-outlook/1928/1928-04-14/page_07.jpg",
+        "western-outlook/1928/1928-04-14/page_08.jpg",
+        "western-outlook/1928/1928-04-14/page_09.jpg",
+        "western-outlook/1928/1928-04-14/page_10.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-04-14",
@@ -319,7 +621,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-04-14/page_10.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-04-28_western-outlook",
+      "date": "1928-04-28",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-04-28/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-04-28/page_01.jpg",
+        "western-outlook/1928/1928-04-28/page_02.jpg",
+        "western-outlook/1928/1928-04-28/page_03.jpg",
+        "western-outlook/1928/1928-04-28/page_04.jpg",
+        "western-outlook/1928/1928-04-28/page_05.jpg",
+        "western-outlook/1928/1928-04-28/page_06.jpg",
+        "western-outlook/1928/1928-04-28/page_07.jpg",
+        "western-outlook/1928/1928-04-28/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-04-28",
@@ -338,7 +658,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-04-28/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-05-05_western-outlook",
+      "date": "1928-05-05",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-05-05/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-05-05/page_01.jpg",
+        "western-outlook/1928/1928-05-05/page_02.jpg",
+        "western-outlook/1928/1928-05-05/page_03.jpg",
+        "western-outlook/1928/1928-05-05/page_04.jpg",
+        "western-outlook/1928/1928-05-05/page_05.jpg",
+        "western-outlook/1928/1928-05-05/page_06.jpg",
+        "western-outlook/1928/1928-05-05/page_07.jpg",
+        "western-outlook/1928/1928-05-05/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-05-05",
@@ -357,7 +695,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-05-05/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-05-12_western-outlook",
+      "date": "1928-05-12",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-05-12/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-05-12/page_01.jpg",
+        "western-outlook/1928/1928-05-12/page_02.jpg",
+        "western-outlook/1928/1928-05-12/page_03.jpg",
+        "western-outlook/1928/1928-05-12/page_04.jpg",
+        "western-outlook/1928/1928-05-12/page_05.jpg",
+        "western-outlook/1928/1928-05-12/page_06.jpg",
+        "western-outlook/1928/1928-05-12/page_07.jpg",
+        "western-outlook/1928/1928-05-12/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-05-12",
@@ -376,7 +732,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-05-12/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-05-19_western-outlook",
+      "date": "1928-05-19",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-05-19/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-05-19/page_01.jpg",
+        "western-outlook/1928/1928-05-19/page_02.jpg",
+        "western-outlook/1928/1928-05-19/page_03.jpg",
+        "western-outlook/1928/1928-05-19/page_04.jpg",
+        "western-outlook/1928/1928-05-19/page_05.jpg",
+        "western-outlook/1928/1928-05-19/page_06.jpg",
+        "western-outlook/1928/1928-05-19/page_07.jpg",
+        "western-outlook/1928/1928-05-19/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-05-19",
@@ -395,7 +769,25 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-05-19/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
+    },
+    {
+      "id": "1928-05-26_western-outlook",
+      "date": "1928-05-26",
+      "title": "Western Outlook",
+      "issue_thumb": "western-outlook/1928/1928-05-26/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "western-outlook/1928/1928-05-26/page_01.jpg",
+        "western-outlook/1928/1928-05-26/page_02.jpg",
+        "western-outlook/1928/1928-05-26/page_03.jpg",
+        "western-outlook/1928/1928-05-26/page_04.jpg",
+        "western-outlook/1928/1928-05-26/page_05.jpg",
+        "western-outlook/1928/1928-05-26/page_06.jpg",
+        "western-outlook/1928/1928-05-26/page_07.jpg",
+        "western-outlook/1928/1928-05-26/page_08.jpg"
+      ],
+      "uploaded": false
     },
     {
       "id": "western-outlook_1928-05-26",
@@ -414,7 +806,7 @@
         "https://pages.dangerouspress.org/western-outlook/1928/1928-05-26/page_08.jpg"
       ],
       "uploaded": true,
-      "uploaded_at": "2025-11-01T19:18:53Z"
+      "uploaded_at": "2025-11-01T19:40:23Z"
     }
   ]
 }
