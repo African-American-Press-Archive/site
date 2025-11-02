@@ -80,9 +80,9 @@ function resolveAssetPath(input) {
         return input;
     }
 
-    // R2 path format: paper/year/date/page_*.jpg
-    // Detected by presence of /page_ in the path
-    if (input.includes('/page_')) {
+    // R2 path format: paper/year/date/page_*.jpg or paper/year/date/thumb.jpg
+    // Detected by presence of /page_ or /thumb in the path
+    if (input.includes('/page_') || input.includes('/thumb')) {
         return `https://pages.dangerouspress.org/${input}`;
     }
 
