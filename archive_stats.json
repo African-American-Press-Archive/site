@@ -1,0 +1,270 @@
+{
+  "total_issues": 17603,
+  "total_papers": 37,
+  "total_pages": 124964,
+  "date_range": {
+    "earliest": "1887-10-15",
+    "latest": "1930-12-27"
+  },
+  "by_paper": [
+    {
+      "slug": "athens-republique",
+      "title": "Athens Republique",
+      "issues": 19,
+      "pages": 130,
+      "date_range": "1921-01-15 to 1926-03-27"
+    },
+    {
+      "slug": "baltimore-afro-american",
+      "title": "Baltimore Afro-American",
+      "issues": 497,
+      "pages": 3963,
+      "date_range": "1910-01-01 to 1919-10-31"
+    },
+    {
+      "slug": "broad-ax",
+      "title": "Broad Ax",
+      "issues": 1182,
+      "pages": 5883,
+      "date_range": "1905-01-07 to 1927-09-10"
+    },
+    {
+      "slug": "chicago-defender",
+      "title": "Chicago Defender",
+      "issues": 980,
+      "pages": 11896,
+      "date_range": "1909-07-31 to 1929-12-28"
+    },
+    {
+      "slug": "chicago-whip",
+      "title": "Chicago Whip",
+      "issues": 176,
+      "pages": 1438,
+      "date_range": "1919-06-24 to 1928-06-23"
+    },
+    {
+      "slug": "cleveland-advocate",
+      "title": "Cleveland Advocate",
+      "issues": 532,
+      "pages": 2257,
+      "date_range": "1916-01-07 to 1926-04-23"
+    },
+    {
+      "slug": "cleveland-gazette",
+      "title": null,
+      "issues": 6,
+      "pages": 24,
+      "date_range": "1911-11-14 to 1924-11-02"
+    },
+    {
+      "slug": "cleveland-gazette",
+      "title": "Cleveland Gazette",
+      "issues": 1302,
+      "pages": 5240,
+      "date_range": "1905-01-07 to 1929-12-28"
+    },
+    {
+      "slug": "colorado-statesman",
+      "title": "Colorado Statesman",
+      "issues": 998,
+      "pages": 7964,
+      "date_range": "1905-01-07 to 1924-08-16"
+    },
+    {
+      "slug": "dallas-express",
+      "title": "Dallas Express",
+      "issues": 466,
+      "pages": 4089,
+      "date_range": "1919-01-11 to 1928-12-29"
+    },
+    {
+      "slug": "denver-star",
+      "title": "Denver Star",
+      "issues": 291,
+      "pages": 2331,
+      "date_range": "1913-03-22 to 1918-10-26"
+    },
+    {
+      "slug": "houston-informer",
+      "title": "Houston Informer",
+      "issues": 327,
+      "pages": 2934,
+      "date_range": "1919-06-07 to 1929-12-28"
+    },
+    {
+      "slug": "indianapolis-freeman",
+      "title": "Indianapolis Freeman",
+      "issues": 623,
+      "pages": 5110,
+      "date_range": "1905-01-07 to 1916-12-30"
+    },
+    {
+      "slug": "iowa-bystander",
+      "title": "Iowa Bystander",
+      "issues": 871,
+      "pages": 3994,
+      "date_range": "1905-01-06 to 1921-12-31"
+    },
+    {
+      "slug": "kansas-city-sun",
+      "title": "Kansas City Sun",
+      "issues": 360,
+      "pages": 2906,
+      "date_range": "1914-01-10 to 1920-12-25"
+    },
+    {
+      "slug": "metropolis-weekly-gazette",
+      "title": "Metropolis Weekly Gazette",
+      "issues": 426,
+      "pages": 1723,
+      "date_range": "1911-07-21 to 1922-12-22"
+    },
+    {
+      "slug": "montana-plaindealer",
+      "title": "Montana Plaindealer",
+      "issues": 125,
+      "pages": 504,
+      "date_range": "1906-03-16 to 1911-09-08"
+    },
+    {
+      "slug": "muskogee-cimeter",
+      "title": "Muskogee Cimeter",
+      "issues": 268,
+      "pages": 1788,
+      "date_range": "1905-01-05 to 1920-08-27"
+    },
+    {
+      "slug": "nashville-globe",
+      "title": "Nashville Globe",
+      "issues": 461,
+      "pages": 3816,
+      "date_range": "1907-01-11 to 1918-12-27"
+    },
+    {
+      "slug": "negro-world",
+      "title": "Negro World",
+      "issues": 407,
+      "pages": 4197,
+      "date_range": "1921-02-12 to 1929-12-28"
+    },
+    {
+      "slug": "new-york-age",
+      "title": "New York Age",
+      "issues": 1290,
+      "pages": 11605,
+      "date_range": "1887-10-15 to 1929-12-28"
+    },
+    {
+      "slug": "omaha-monitor",
+      "title": "Omaha Monitor",
+      "issues": 683,
+      "pages": 3786,
+      "date_range": "1915-07-03 to 1928-11-30"
+    },
+    {
+      "slug": "phoenix-tribune",
+      "title": "Phoenix Tribune",
+      "issues": 283,
+      "pages": 1416,
+      "date_range": "1918-08-03 to 1929-12-01"
+    },
+    {
+      "slug": "pittsburgh-courier",
+      "title": "Pittsburgh Courier",
+      "issues": 161,
+      "pages": 1864,
+      "date_range": "1911-03-25 to 1924-12-27"
+    },
+    {
+      "slug": "portland-new-age",
+      "title": "Portland New Age",
+      "issues": 51,
+      "pages": 416,
+      "date_range": "1905-12-23 to 1907-03-30"
+    },
+    {
+      "slug": "raleigh-independent",
+      "title": "Raleigh Independent",
+      "issues": 3,
+      "pages": 12,
+      "date_range": "1918-12-21 to 1920-12-28"
+    },
+    {
+      "slug": "richmond-planet",
+      "title": "Richmond Planet",
+      "issues": 1260,
+      "pages": 10370,
+      "date_range": "1905-01-07 to 1929-12-28"
+    },
+    {
+      "slug": "springfield-forum",
+      "title": "Springfield Forum",
+      "issues": 394,
+      "pages": 2621,
+      "date_range": "1906-02-03 to 1917-06-30"
+    },
+    {
+      "slug": "st-louis-argus",
+      "title": "St. Louis Argus",
+      "issues": 394,
+      "pages": 3793,
+      "date_range": "1915-01-08 to 1925-12-25"
+    },
+    {
+      "slug": "st-paul-appeal",
+      "title": "St. Paul Appeal",
+      "issues": 983,
+      "pages": 4103,
+      "date_range": "1905-01-07 to 1923-11-24"
+    },
+    {
+      "slug": "tulsa-star",
+      "title": "Tulsa Star",
+      "issues": 209,
+      "pages": 1531,
+      "date_range": "1913-04-11 to 1921-01-29"
+    },
+    {
+      "slug": "twin-city-star",
+      "title": "Twin City Star",
+      "issues": 399,
+      "pages": 1983,
+      "date_range": "1910-06-02 to 1919-01-25"
+    },
+    {
+      "slug": "washington-bee",
+      "title": "Washington Bee",
+      "issues": 164,
+      "pages": 1323,
+      "date_range": "1905-01-07 to 1912-03-23"
+    },
+    {
+      "slug": "washington-tribune",
+      "title": "Washington Tribune",
+      "issues": 485,
+      "pages": 4368,
+      "date_range": "1921-05-14 to 1929-12-27"
+    },
+    {
+      "slug": "western-outlook",
+      "title": "Western Outlook",
+      "issues": 22,
+      "pages": 172,
+      "date_range": "1926-05-15 to 1928-05-26"
+    },
+    {
+      "slug": "wichita-searchlight",
+      "title": "Wichita Searchlight",
+      "issues": 362,
+      "pages": 2453,
+      "date_range": "1905-01-07 to 1912-10-26"
+    },
+    {
+      "slug": "wisconsin-weekly-blade",
+      "title": "Wisconsin Weekly Blade",
+      "issues": 143,
+      "pages": 618,
+      "date_range": "1916-06-08 to 1922-09-02"
+    }
+  ]
+}
