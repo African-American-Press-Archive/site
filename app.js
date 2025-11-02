@@ -80,6 +80,12 @@ function resolveAssetPath(input) {
         return input;
     }
 
+    // R2 path format: paper/year/date/page_*.jpg
+    // Detected by presence of /page_ in the path
+    if (input.includes('/page_')) {
+        return `https://pages.dangerouspress.org/${input}`;
+    }
+
     // Path starting with / is already absolute-ish
     if (input.startsWith('/')) {
         return `web_content${input}`;
