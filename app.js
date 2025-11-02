@@ -1376,6 +1376,9 @@ async function openViewer(index) {
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
 
+    // Push a history state so back button closes the viewer
+    history.pushState({ viewerOpen: true }, '', window.location.href);
+
     // Setup UI based on whether we have multiple pages
     setupPageViewer();
 
@@ -1568,6 +1571,13 @@ function updatePageNavigationButtons() {
 }
 
 function closeViewer() {
+    const modal = document.getElementById('viewer-modal');
+
+    // Only close if actually open
+    if (modal.classList.contains('hidden')) {
+        return;
+    }
+
     hideElement('viewer-modal');
     document.body.style.overflow = '';
     hideElement('thumbnail-strip');
@@ -1576,12 +1586,10 @@ function closeViewer() {
     state.currentPages = [];
     state.currentPageIndex = 0;
 
-    // Navigate back to the referrer page if available
-    if (state.referrerUrl) {
-        window.location.href = state.referrerUrl;
-    } else {
-        // Fallback: use browser back button
-        window.history.back();
+    // If we pushed a history state when opening, go back to remove it
+    // This will trigger popstate, but the viewer is already closed so it's fine
+    if (history.state && history.state.viewerOpen) {
+        history.back();
     }
 }
 
@@ -2196,4 +2204,20 @@ function setupEventListeners() {
             }
         }
     }
+
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', (e) => {
+        // If viewer is open and user pressed back, close it
+        const modal = document.getElementById('viewer-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+            // Close without calling history.back() again
+            hideElement('viewer-modal');
+            document.body.style.overflow = '';
+            hideElement('thumbnail-strip');
+            state.thumbnailsVisible = false;
+            resetZoom();
+            state.currentPages = [];
+            state.currentPageIndex = 0;
+        }
+    });
 }
