@@ -1537,6 +1537,18 @@ a:focus-visible {
     border-color: var(--unc-longleaf-pine);
 }
 
+.year-pill.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.year-pill.disabled:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    transform: none;
+}
+
 /* Month Selector */
 .month-selector {
     margin-top: 1.5rem;

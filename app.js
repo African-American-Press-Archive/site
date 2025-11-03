@@ -1183,6 +1183,11 @@ function resetFilters() {
 function applyFilters() {
     refreshTimelineAvailability();
 
+    // Update year grid availability in FilterSystem
+    if (window.FilterSystem && typeof FilterSystem.refreshYearAvailability === 'function') {
+        FilterSystem.refreshYearAvailability();
+    }
+
     state.filteredIssues = state.allIssues.filter(issue => {
         const matchesPaper = state.selectedPapers.size === 0 || state.selectedPapers.has(issue.title);
         const matchesYear = !state.selectedYear || issue.date.startsWith(state.selectedYear);

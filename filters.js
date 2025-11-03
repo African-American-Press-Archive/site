@@ -154,21 +154,54 @@ const FilterSystem = {
     populateYearGrid() {
         if (!this.yearGrid || !state.allIssues) return;
 
-        // Get unique years from issues
+        // Get unique years from all issues
         const years = [...new Set(state.allIssues.map(issue => issue.date.substring(0, 4)))].sort();
 
-        this.yearGrid.innerHTML = years.map(year => `
-            <button class="year-pill" data-year="${year}" role="option">
-                ${year}
-            </button>
-        `).join('');
+        // Get available years based on selected papers
+        const availableYearStrings = new Set(state.availableYears.map(y => String(y)));
+
+        this.yearGrid.innerHTML = years.map(year => {
+            const isAvailable = availableYearStrings.has(year);
+            return `
+                <button
+                    class="year-pill ${!isAvailable ? 'disabled' : ''}"
+                    data-year="${year}"
+                    role="option"
+                    ${!isAvailable ? 'disabled' : ''}
+                >
+                    ${year}
+                </button>
+            `;
+        }).join('');
 
         // Add click handlers
-        this.yearGrid.querySelectorAll('.year-pill').forEach(pill => {
+        this.yearGrid.querySelectorAll('.year-pill:not(.disabled)').forEach(pill => {
             pill.addEventListener('click', () => {
                 const year = pill.dataset.year;
                 this.selectYear(year);
             });
+        });
+    },
+
+    /**
+     * Refresh year grid availability based on selected papers
+     */
+    refreshYearAvailability() {
+        if (!this.yearGrid || !state.allIssues) return;
+
+        const availableYearStrings = new Set(state.availableYears.map(y => String(y)));
+
+        this.yearGrid.querySelectorAll('.year-pill').forEach(pill => {
+            const year = pill.dataset.year;
+            const isAvailable = availableYearStrings.has(year);
+
+            if (isAvailable) {
+                pill.classList.remove('disabled');
+                pill.removeAttribute('disabled');
+            } else {
+                pill.classList.add('disabled');
+                pill.setAttribute('disabled', '');
+            }
         });
     },
 
