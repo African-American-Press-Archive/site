@@ -1581,6 +1581,18 @@ a:focus-visible {
     transform: scale(1.05);
 }
 
+.month-pill.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.month-pill.disabled:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    transform: none;
+}
+
 .month-pill.selected {
     background: var(--unc-tile-teal);
     color: white;

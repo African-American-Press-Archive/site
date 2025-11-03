@@ -240,23 +240,25 @@ const FilterSystem = {
             'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
         ];
 
-        // Get months that have issues in the selected year
+        // Get months that have issues in the selected year for selected papers
+        const relevantIssues = state.allIssues.filter(issue => {
+            const matchesPaper = state.selectedPapers.size === 0 || state.selectedPapers.has(issue.title);
+            return matchesPaper && issue.date.startsWith(year);
+        });
+
         const availableMonths = new Set(
-            state.allIssues
-                .filter(issue => issue.date.startsWith(year))
-                .map(issue => issue.date.substring(5, 7))
+            relevantIssues.map(issue => issue.date.substring(5, 7))
         );
 
         this.monthGrid.innerHTML = months.map((month, index) => {
             const monthNum = String(index + 1).padStart(2, '0');
             const isAvailable = availableMonths.has(monthNum);
-            const disabled = isAvailable ? '' : 'disabled';
 
             return `
                 <button
-                    class="month-pill"
+                    class="month-pill ${!isAvailable ? 'disabled' : ''}"
                     data-month="${monthNum}"
-                    ${disabled}
+                    ${!isAvailable ? 'disabled' : ''}
                     role="option"
                 >
                     ${month}
@@ -264,8 +266,8 @@ const FilterSystem = {
             `;
         }).join('');
 
-        // Add click handlers
-        this.monthGrid.querySelectorAll('.month-pill:not([disabled])').forEach(pill => {
+        // Add click handlers (only for enabled pills)
+        this.monthGrid.querySelectorAll('.month-pill:not(.disabled)').forEach(pill => {
             pill.addEventListener('click', () => {
                 const month = pill.dataset.month;
                 this.selectMonth(month);
