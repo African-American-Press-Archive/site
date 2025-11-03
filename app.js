@@ -97,6 +97,11 @@ function resolveAssetPath(input) {
 
 // ==================== INITIALIZATION ====================
 document.addEventListener('DOMContentLoaded', async () => {
+    // Early exit for static pages - don't load manifest or touch IndexedDB
+    const issueGrid = document.getElementById('issue-grid');
+    if (!issueGrid) {
+        return;
+    }
     await loadManifest();
     setupEventListeners();
     initializeIntersectionObserver();
@@ -1054,7 +1059,14 @@ function initializeFilters() {
     paperTitles.forEach(title => state.selectedPapers.add(title));
 
     const filterList = document.getElementById('paper-list');
-    document.getElementById('filter-count').textContent = paperTitles.length;
+    const filterCount = document.getElementById('filter-count');
+
+    // Exit early if required DOM elements are missing
+    if (!filterList || !filterCount) {
+        return;
+    }
+
+    filterCount.textContent = paperTitles.length;
 
     // Add "All Papers" option
     filterList.innerHTML = `
@@ -1094,7 +1106,10 @@ function initializeFilters() {
     });
 
     // Add event listeners
-    document.getElementById('all-papers-checkbox').addEventListener('change', toggleAllFilters);
+    const allPapersCheckbox = document.getElementById('all-papers-checkbox');
+    if (allPapersCheckbox) {
+        allPapersCheckbox.addEventListener('change', toggleAllFilters);
+    }
 
     filterList.querySelectorAll('.filter-checkbox[data-title]').forEach(checkbox => {
         checkbox.addEventListener('change', () => togglePaperFilter(checkbox.dataset.title));
@@ -1102,6 +1117,11 @@ function initializeFilters() {
 }
 
 function toggleAllFilters(event) {
+    // Exit early if event or target is missing
+    if (!event || !event.target) {
+        return;
+    }
+
     const checked = event.target.checked;
     const allCheckboxes = document.querySelectorAll('.filter-checkbox');
 
@@ -1128,8 +1148,10 @@ function togglePaperFilter(title) {
 
     // Update "All Papers" checkbox
     const allCheckbox = document.getElementById('all-papers-checkbox');
-    const totalPapers = new Set(state.allIssues.map(issue => issue.title)).size;
-    allCheckbox.checked = state.selectedPapers.size === totalPapers;
+    if (allCheckbox) {
+        const totalPapers = new Set(state.allIssues.map(issue => issue.title)).size;
+        allCheckbox.checked = state.selectedPapers.size === totalPapers;
+    }
 
     applyFilters();
 }
@@ -1276,12 +1298,23 @@ function renderGrid(append = false) {
         });
     }
 
-    // Show/hide load more trigger
+    // Show/hide load more trigger and manage observer
     const loadMoreTrigger = document.getElementById('load-more-trigger');
-    if (endIndex < sorted.length) {
-        loadMoreTrigger.classList.remove('hidden');
-    } else {
-        loadMoreTrigger.classList.add('hidden');
+    if (loadMoreTrigger) {
+        const spinner = loadMoreTrigger.querySelector('.loading-spinner');
+        const hasMoreItems = endIndex < sorted.length;
+
+        // Show/hide trigger based on whether more items exist
+        loadMoreTrigger.classList.toggle('hidden', !hasMoreItems);
+        if (spinner) spinner.classList.add('hidden');
+
+        // Manage observer: disconnect when no more items, reconnect when items available
+        if (scrollObserver) {
+            scrollObserver.disconnect();
+            if (hasMoreItems) {
+                scrollObserver.observe(loadMoreTrigger);
+            }
+        }
     }
 }
 
@@ -1335,11 +1368,24 @@ function createIssueCard(issue, index) {
 }
 
 // ==================== INFINITE SCROLL ====================
+let scrollObserver = null;
+
 function initializeIntersectionObserver() {
     const loadMoreTrigger = document.getElementById('load-more-trigger');
-    const spinner = loadMoreTrigger.querySelector('.loading-spinner');
 
-    const observer = new IntersectionObserver((entries) => {
+    // Check if trigger exists before attempting to observe
+    if (!loadMoreTrigger) {
+        return;
+    }
+
+    // Disconnect existing observer if any
+    if (scrollObserver) {
+        scrollObserver.disconnect();
+        scrollObserver = null;
+    }
+
+    // Create new observer
+    scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !state.isLoading) {
                 loadMoreItems();
@@ -1349,7 +1395,10 @@ function initializeIntersectionObserver() {
         rootMargin: '100px'
     });
 
-    observer.observe(loadMoreTrigger);
+    // Only observe if the trigger is visible (not hidden)
+    if (!loadMoreTrigger.classList.contains('hidden')) {
+        scrollObserver.observe(loadMoreTrigger);
+    }
 }
 
 function loadMoreItems() {
@@ -1357,7 +1406,13 @@ function loadMoreItems() {
     const nextPage = state.currentPage + 1;
     const startIndex = nextPage * CONFIG.ITEMS_PER_PAGE;
 
-    if (startIndex >= sorted.length) return;
+    // Early return if no more items - ensure spinner is hidden
+    if (startIndex >= sorted.length) {
+        const spinner = document.querySelector('#load-more-trigger .loading-spinner');
+        if (spinner) spinner.classList.add('hidden');
+        state.isLoading = false;
+        return;
+    }
 
     state.isLoading = true;
     const spinner = document.querySelector('#load-more-trigger .loading-spinner');
@@ -1678,9 +1733,15 @@ function closeViewer() {
         return;
     }
 
+    // Hide main viewer modal
     hideElement('viewer-modal');
     document.body.style.overflow = '';
+
+    // Hide viewer-specific UI elements
     hideElement('thumbnail-strip');
+    hideElement('help-overlay');
+
+    // Reset viewer state
     state.thumbnailsVisible = false;
     resetZoom();
     state.currentPages = [];
@@ -2313,7 +2374,12 @@ function setupEventListeners() {
             // Close without calling history.back() again
             hideElement('viewer-modal');
             document.body.style.overflow = '';
+
+            // Hide viewer-specific UI elements
             hideElement('thumbnail-strip');
+            hideElement('help-overlay');
+
+            // Reset viewer state
             state.thumbnailsVisible = false;
             resetZoom();
             state.currentPages = [];
