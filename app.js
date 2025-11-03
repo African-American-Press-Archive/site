@@ -985,11 +985,16 @@ function createHeroCard(issue) {
     `;
 
     figure.addEventListener('click', () => {
-        // Hero cards can link to issues outside the current grid filters
-        // So search in filteredIssues (all sorted/filtered issues) instead of displayedIssues (current page only)
-        const issueIndex = state.filteredIssues.findIndex(item => item.id === issue.id);
+        // Hero cards can link to issues outside the current grid/filters
+        // Try to find in displayedIssues first (for navigation context)
+        let issueIndex = state.displayedIssues.findIndex(item => item.id === issue.id);
+
         if (issueIndex !== -1) {
+            // Issue is in current displayed set - open normally
             openViewer(issueIndex);
+        } else {
+            // Issue is not in current view - open directly without navigation context
+            openViewerDirect(issue);
         }
     });
 
@@ -1385,6 +1390,52 @@ function updateStats() {
 }
 
 // ==================== VIEWER CONTROLLER ====================
+// Open viewer directly with an issue object (used for "Today in History" when issue not in current view)
+async function openViewerDirect(issue) {
+    if (!issue) return;
+
+    state.currentIssueIndex = -1; // -1 indicates no navigation context
+
+    const modal = document.getElementById('viewer-modal');
+    const title = document.getElementById('viewer-title');
+    const dateEl = document.getElementById('viewer-date');
+
+    // Parse date string directly to avoid timezone issues
+    const [year, month, day] = issue.date.split('-');
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const date = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
+
+    title.textContent = getDisplayTitle(issue.title);
+    dateEl.textContent = date;
+
+    // Show loading
+    showElement('page-loading');
+
+    // Discover pages for this issue
+    state.currentPages = await discoverPages(issue);
+    state.currentPageIndex = 0;
+
+    // Show modal
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
+    // Push a history state so back button closes the viewer
+    history.pushState({ viewerOpen: true }, '', window.location.href);
+
+    // Setup UI based on whether we have multiple pages
+    setupPageViewer();
+
+    // Load first page
+    await loadPage(0, 'fade');
+
+    // Hide prev/next issue buttons (no navigation context)
+    const prevIssueBtn = document.getElementById('viewer-prev-issue');
+    const nextIssueBtn = document.getElementById('viewer-next-issue');
+    if (prevIssueBtn) prevIssueBtn.style.display = 'none';
+    if (nextIssueBtn) nextIssueBtn.style.display = 'none';
+}
+
 async function openViewer(index) {
     if (!state.displayedIssues.length) return;
     const issue = state.displayedIssues[index];
@@ -1432,6 +1483,12 @@ async function openViewer(index) {
     for (let i = 1; i <= CONFIG.PRELOAD_PAGES && i < state.currentPages.length; i++) {
         preloadPage(i);
     }
+
+    // Show prev/next issue buttons (we have navigation context)
+    const prevIssueBtn = document.getElementById('viewer-prev-issue');
+    const nextIssueBtn = document.getElementById('viewer-next-issue');
+    if (prevIssueBtn) prevIssueBtn.style.display = '';
+    if (nextIssueBtn) nextIssueBtn.style.display = '';
 
     resetZoom();
     updateIssueNavigationButtons();
