@@ -43,13 +43,6 @@
       "date_range": "1919-06-24 to 1928-06-23"
     },
     {
-      "slug": "cleveland-advocate",
-      "title": "Cleveland Advocate",
-      "issues": 532,
-      "pages": 2257,
-      "date_range": "1916-01-07 to 1926-04-23"
-    },
-    {
       "slug": "cleveland-gazette",
       "title": null,
       "issues": 6,
@@ -111,6 +104,13 @@
       "issues": 871,
       "pages": 3994,
       "date_range": "1905-01-06 to 1921-12-31"
+    },
+    {
+      "slug": "kansas-city-advocate",
+      "title": "Kansas City Advocate",
+      "issues": 532,
+      "pages": 2257,
+      "date_range": "1916-01-07 to 1926-04-23"
     },
     {
       "slug": "kansas-city-sun",
