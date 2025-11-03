@@ -113,7 +113,7 @@ const DB_VERSION = 1;
 const STORE_NAME = 'manifest';
 const CACHE_KEY = 'manifest_data';
 const VERSION_KEY = 'manifest_version';
-const MANIFEST_SCHEMA_VERSION = 2; // Increment when manifest structure changes
+const MANIFEST_SCHEMA_VERSION = 3; // Increment when manifest structure changes
 
 async function initializeIndexedDB() {
     return new Promise((resolve, reject) => {
