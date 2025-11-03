@@ -113,6 +113,7 @@ const DB_VERSION = 1;
 const STORE_NAME = 'manifest';
 const CACHE_KEY = 'manifest_data';
 const VERSION_KEY = 'manifest_version';
+const MANIFEST_SCHEMA_VERSION = 2; // Increment when manifest structure changes
 
 async function initializeIndexedDB() {
     return new Promise((resolve, reject) => {
@@ -172,9 +173,10 @@ async function setCachedManifest(data, version) {
 
             store.put(data, CACHE_KEY);
             store.put(version, VERSION_KEY);
+            store.put(MANIFEST_SCHEMA_VERSION, 'schema_version');
 
             transaction.oncomplete = () => {
-                console.log('✓ Manifest cached to IndexedDB');
+                console.log(`✓ Manifest cached to IndexedDB (schema v${MANIFEST_SCHEMA_VERSION})`);
                 resolve(true);
             };
 
@@ -213,6 +215,30 @@ async function getCachedManifestVersion() {
     }
 }
 
+async function getCachedSchemaVersion() {
+    try {
+        const db = await initializeIndexedDB();
+        if (!db) return null;
+
+        return new Promise((resolve) => {
+            const transaction = db.transaction([STORE_NAME], 'readonly');
+            const store = transaction.objectStore(STORE_NAME);
+            const request = store.get('schema_version');
+
+            request.onsuccess = () => {
+                resolve(request.result || null);
+            };
+
+            request.onerror = () => {
+                resolve(null);
+            };
+        });
+    } catch (error) {
+        console.warn('Failed to read schema version from IndexedDB:', error);
+        return null;
+    }
+}
+
 // Background update check - doesn't block the UI
 async function checkForManifestUpdates(manifestPath, cachedVersion, currentData) {
     try {
@@ -225,9 +251,16 @@ async function checkForManifestUpdates(manifestPath, cachedVersion, currentData)
         const freshData = await response.json();
         const freshVersion = new Date().toISOString();
 
-        // Check if content actually changed (simple length check)
-        if (freshData.length !== currentData.length) {
+        // Check if content actually changed
+        // Compare length AND check if structure changed (e.g., title field added)
+        const structureChanged = currentData.length > 0 && freshData.length > 0 &&
+            (JSON.stringify(Object.keys(currentData[0]).sort()) !== JSON.stringify(Object.keys(freshData[0]).sort()));
+
+        if (freshData.length !== currentData.length || structureChanged) {
             console.log(`✓ Manifest update available. New: ${freshData.length} issues (was ${currentData.length})`);
+            if (structureChanged) {
+                console.log('✓ Manifest structure changed - updating cache');
+            }
             await setCachedManifest(freshData, freshVersion);
             console.log('⟳ Cache silently updated. Refresh page to see new content.');
         }
@@ -252,16 +285,26 @@ async function loadManifest() {
         console.log(`[DEBUG] Checking IndexedDB cache...`);
         const cachedManifest = await getCachedManifest();
         const cachedVersion = await getCachedManifestVersion();
+        const cachedSchemaVersion = await getCachedSchemaVersion();
 
-        if (cachedManifest && Array.isArray(cachedManifest)) {
-            console.log(`✓ Loaded ${cachedManifest.length} issues from IndexedDB cache (version: ${cachedVersion})`);
+        // Check if schema version matches
+        const schemaMismatch = cachedSchemaVersion !== null && cachedSchemaVersion !== MANIFEST_SCHEMA_VERSION;
+
+        if (schemaMismatch) {
+            console.log(`⚠ Schema version mismatch (cached: ${cachedSchemaVersion}, current: ${MANIFEST_SCHEMA_VERSION}). Invalidating cache...`);
+            // Clear cache and fetch fresh data
+            data = null;
+        } else if (cachedManifest && Array.isArray(cachedManifest)) {
+            console.log(`✓ Loaded ${cachedManifest.length} issues from IndexedDB cache (version: ${cachedVersion}, schema: ${cachedSchemaVersion})`);
 
             // Still check for updates in the background, but use cache immediately
             checkForManifestUpdates(manifestPath, cachedVersion, cachedManifest);
 
             // Use cached data immediately
             data = cachedManifest;
-        } else {
+        }
+
+        if (!data) {
             // No cache, fetch from network
             console.log(`[DEBUG] No cache found. Fetching manifest from network...`);
             const response = await fetch(manifestPath);
