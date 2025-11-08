@@ -87,10 +87,10 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn86056950
-  cleveland-advocate:
-    title: Cleveland Advocate
-    path: cleveland-advocate
-    base_url: https://pages.dangerouspress.org/cleveland-advocate
+  kansas-city-advocate:
+    title: Kansas City Advocate
+    path: kansas-city-advocate
+    base_url: https://pages.dangerouspress.org/kansas-city-advocate
     sources:
     - type: pdf
       folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/cleveland-advoate_pdfs
@@ -307,6 +307,22 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn83025107
+  amsterdam-news:
+    title: Amsterdam News
+    path: amsterdam-news
+    base_url: https://pages.dangerouspress.org/amsterdam-news
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/amsterdam_pdfs_processed
+      sample_filename: Amsterdam_1922-12-06.pdf
+  # inter-state-tattler:
+  #   title: Inter-State Tattler
+  #   path: inter-state-tattler
+  #   base_url: https://pages.dangerouspress.org/inter-state-tattler
+  #   sources:
+  #   - type: pdf
+  #     folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/tattler_pdfs
+  #     sample_filename: inter-state-tattler_1922-10-22.pdf
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
