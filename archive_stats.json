@@ -1,12 +1,19 @@
 {
-  "total_issues": 17745,
+  "total_issues": 18125,
   "total_papers": 38,
-  "total_pages": 127275,
+  "total_pages": 130945,
   "date_range": {
     "earliest": "1887-10-15",
     "latest": "1930-12-27"
   },
   "by_paper": [
+    {
+      "slug": "amsterdam-news",
+      "title": "Amsterdam News",
+      "issues": 298,
+      "pages": 4984,
+      "date_range": "1922-11-29 to 1929-09-18"
+    },
     {
       "slug": "athens-republique",
       "title": "Athens Republique",
@@ -92,13 +99,6 @@
       "date_range": "1905-01-07 to 1916-12-30"
     },
     {
-      "slug": "inter-state-tattler",
-      "title": "Inter-State Tattler",
-      "issues": 142,
-      "pages": 2311,
-      "date_range": "1922-10-22 to 1929-12-27"
-    },
-    {
       "slug": "iowa-bystander",
       "title": "Iowa Bystander",
       "issues": 871,
@@ -108,8 +108,8 @@
     {
       "slug": "kansas-city-advocate",
       "title": "Kansas City Advocate",
-      "issues": 532,
-      "pages": 2257,
+      "issues": 756,
+      "pages": 3254,
       "date_range": "1916-01-07 to 1926-04-23"
     },
     {
