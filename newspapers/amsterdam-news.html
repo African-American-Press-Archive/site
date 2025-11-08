@@ -86,32 +86,54 @@
                     </div>
                 </div>
 
-                <!-- Interactive Calendar Browser -->
-                <div class="glass-card rounded-2xl p-8">
-                    <h3 class="text-2xl font-bold mb-6" style="color: var(--unc-longleaf-pine);">Browse Issues</h3>
+                <!-- Filters -->
+                <section class="glass-card rounded-2xl p-6 mb-8">
+                    <div class="flex flex-wrap gap-4">
+                        <!-- Year Filter -->
+                        <div class="filter-group flex-1 min-w-[200px]">
+                            <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Year</label>
+                            <div id="year-selector" class="flex flex-wrap gap-2">
+                                <button class="filter-btn active" data-year="all">All Years</button>
+                                <!-- Year buttons will be added by JS -->
+                            </div>
+                        </div>
 
-                    <!-- Year Selector -->
-                    <div class="mb-6">
-                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Select Year</label>
-                        <div class="grid grid-cols-5 sm:grid-cols-10 gap-2" id="year-selector">
-                            <!-- Years will be loaded here -->
+                        <!-- Month Filter -->
+                        <div class="filter-group flex-1 min-w-[200px]" id="month-filter-group">
+                            <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Month</label>
+                            <div id="month-selector" class="flex flex-wrap gap-2">
+                                <button class="filter-btn active" data-month="all">All Months</button>
+                                <!-- Month buttons will be added by JS -->
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <!-- Month Selector -->
-                    <div class="mb-6" id="month-selector-container" style="display: none;">
-                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Select Month</label>
-                        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3" id="month-selector">
-                            <!-- Months will be loaded here -->
+                <!-- Issue Grid -->
+                <div id="issue-grid-wrapper">
+                    <div class="mb-4 flex items-center justify-between">
+                        <h3 id="grid-title" class="text-2xl font-bold" style="color: var(--unc-longleaf-pine);">All Issues</h3>
+                        <div class="text-sm" style="color: var(--text-muted);">
+                            Showing <span id="showing-count">0</span> of <span id="total-count">0</span> issues
                         </div>
                     </div>
+                    <div id="issue-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <!-- Issue cards will be populated by JavaScript -->
+                    </div>
+                </div>
 
-                    <!-- Issues Display -->
-                    <div id="issues-container" style="display: none;">
-                        <label class="block text-sm font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);" id="issues-label">Issues</label>
-                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3" id="issues-grid">
-                            <!-- Issues will be loaded here -->
-                        </div>
+                <!-- Loading State -->
+                <div id="loading-state" class="text-center py-20">
+                    <div class="inline-block">
+                        <div class="w-16 h-16 border-4 rounded-full animate-spin" style="border-color: var(--border-color); border-top-color: var(--unc-tile-teal);"></div>
+                        <p class="mt-4" style="color: var(--text-muted);">Loading issues...</p>
+                    </div>
+                </div>
+
+                <!-- Empty State -->
+                <div id="empty-state" class="hidden text-center py-20">
+                    <div class="glass-card rounded-xl p-12">
+                        <p class="text-xl" style="color: var(--text-muted);">No issues found for the selected filters</p>
                     </div>
                 </div>
             </main>
@@ -120,23 +142,13 @@
 
     <script>
         let allIssues = [];
-        let issuesByYearMonth = {};
-        let selectedYear = null;
-        let selectedMonth = null;
+        let filteredIssues = [];
+        let selectedYear = 'all';
+        let selectedMonth = 'all';
 
         const MONTHS = [
-            { num: '01', name: 'January', short: 'Jan' },
-            { num: '02', name: 'February', short: 'Feb' },
-            { num: '03', name: 'March', short: 'Mar' },
-            { num: '04', name: 'April', short: 'Apr' },
-            { num: '05', name: 'May', short: 'May' },
-            { num: '06', name: 'June', short: 'Jun' },
-            { num: '07', name: 'July', short: 'Jul' },
-            { num: '08', name: 'August', short: 'Aug' },
-            { num: '09', name: 'September', short: 'Sep' },
-            { num: '10', name: 'October', short: 'Oct' },
-            { num: '11', name: 'November', short: 'Nov' },
-            { num: '12', name: 'December', short: 'Dec' }
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
         ];
 
         async function loadData() {
@@ -144,146 +156,239 @@
                 const response = await fetch('../web_content/manifest.json');
                 const manifest = await response.json();
 
-                // Filter to Amsterdam News
-                allIssues = manifest.filter(issue =>
-                    issue.title === 'Amsterdam News'
-                );
+                // Filter to Amsterdam News only
+                allIssues = manifest.filter(issue => issue.title === 'Amsterdam News');
 
-                // Group by year and month
-                allIssues.forEach(issue => {
-                    const [year, month] = issue.date.split('-');
-                    const key = `${year}-${month}`;
-                    if (!issuesByYearMonth[key]) {
-                        issuesByYearMonth[key] = [];
-                    }
-                    issuesByYearMonth[key].push(issue);
-                });
+                // Sort by date (oldest first)
+                allIssues.sort((a, b) => a.date.localeCompare(b.date));
 
                 // Update stats
                 const totalPages = allIssues.reduce((sum, issue) => sum + issue.pages, 0);
                 document.getElementById('issue-count').textContent = allIssues.length;
-                document.getElementById('page-count').textContent = totalPages;
+                document.getElementById('page-count').textContent = totalPages.toLocaleString();
+                document.getElementById('total-count').textContent = allIssues.length;
 
-                renderYears();
+                // Build year filter
+                buildYearFilter();
+
+                // Show all issues initially
+                filteredIssues = allIssues;
+                renderIssues();
+
+                // Hide loading
+                document.getElementById('loading-state').style.display = 'none';
+                document.getElementById('issue-grid-wrapper').style.display = 'block';
 
             } catch (error) {
                 console.error('Error loading data:', error);
+                document.getElementById('loading-state').innerHTML = '<p style="color: var(--text-muted);">Error loading issues</p>';
             }
         }
 
-        function renderYears() {
-            const yearSelector = document.getElementById('year-selector');
+        function buildYearFilter() {
             const years = [...new Set(allIssues.map(i => i.date.substring(0, 4)))].sort();
+            const yearSelector = document.getElementById('year-selector');
 
-            yearSelector.innerHTML = years.map(year => {
-                const issueCount = allIssues.filter(i => i.date.startsWith(year)).length;
-                return `
-                    <button onclick="selectYear('${year}')"
-                            class="year-btn px-4 py-3 rounded-lg font-semibold transition-all hover:scale-105"
-                            data-year="${year}"
-                            style="background: var(--bg-hover); border: 2px solid var(--border-color); color: var(--text-primary);">
-                        <div class="text-base">${year}</div>
-                        <div class="text-xs opacity-75">${issueCount}</div>
-                    </button>
-                `;
-            }).join('');
+            years.forEach(year => {
+                const count = allIssues.filter(i => i.date.startsWith(year)).length;
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.dataset.year = year;
+                btn.innerHTML = `${year} <span class="count">(${count})</span>`;
+                btn.onclick = () => selectYear(year);
+                yearSelector.appendChild(btn);
+            });
+        }
+
+        function buildMonthFilter(year) {
+            const monthSelector = document.getElementById('month-selector');
+
+            // Clear existing months (except "All Months")
+            while (monthSelector.children.length > 1) {
+                monthSelector.removeChild(monthSelector.lastChild);
+            }
+
+            if (year === 'all') return;
+
+            // Get issues for this year
+            const yearIssues = allIssues.filter(i => i.date.startsWith(year));
+
+            // Find which months have issues
+            const monthsWithIssues = new Map();
+            yearIssues.forEach(issue => {
+                const monthNum = parseInt(issue.date.substring(5, 7)) - 1;
+                monthsWithIssues.set(monthNum, (monthsWithIssues.get(monthNum) || 0) + 1);
+            });
+
+            // Add month buttons
+            monthsWithIssues.forEach((count, monthIndex) => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.dataset.month = monthIndex;
+                btn.innerHTML = `${MONTHS[monthIndex]} <span class="count">(${count})</span>`;
+                btn.onclick = () => selectMonth(monthIndex);
+                monthSelector.appendChild(btn);
+            });
         }
 
         function selectYear(year) {
             selectedYear = year;
-            selectedMonth = null;
+            selectedMonth = 'all';
 
-            // Update year button styling
-            document.querySelectorAll('.year-btn').forEach(btn => {
-                if (btn.dataset.year === year) {
-                    btn.style.background = 'var(--unc-tile-teal)';
-                    btn.style.borderColor = 'var(--unc-tile-teal)';
-                    btn.style.color = 'white';
-                } else {
-                    btn.style.background = 'var(--bg-hover)';
-                    btn.style.borderColor = 'var(--border-color)';
-                    btn.style.color = 'var(--text-primary)';
-                }
+            // Update button states
+            document.querySelectorAll('[data-year]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.year === year);
             });
 
-            renderMonths(year);
-            document.getElementById('month-selector-container').style.display = 'block';
-            document.getElementById('issues-container').style.display = 'none';
-        }
-
-        function renderMonths(year) {
-            const monthSelector = document.getElementById('month-selector');
-
-            // Find which months have issues
-            const monthsWithIssues = new Set();
-            Object.keys(issuesByYearMonth).forEach(key => {
-                if (key.startsWith(year)) {
-                    const month = key.split('-')[1];
-                    monthsWithIssues.add(month);
-                }
+            // Reset month filter
+            document.querySelectorAll('[data-month]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.month === 'all');
             });
 
-            monthSelector.innerHTML = MONTHS.map(month => {
-                const hasIssues = monthsWithIssues.has(month.num);
-                const issueCount = hasIssues ? issuesByYearMonth[`${year}-${month.num}`].length : 0;
+            // Rebuild month filter for this year
+            buildMonthFilter(year);
 
-                return `
-                    <button onclick="${hasIssues ? `selectMonth('${month.num}')` : 'void(0)'}"
-                            class="month-btn p-4 rounded-lg transition-all ${hasIssues ? 'hover:scale-105 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
-                            data-month="${month.num}"
-                            style="background: var(--bg-hover); border: 2px solid var(--border-color); ${hasIssues ? '' : 'pointer-events: none;'}">
-                        <div class="font-semibold" style="color: var(--text-primary);">${month.short}</div>
-                        ${hasIssues ? `<div class="text-xs mt-1" style="color: var(--text-muted);">${issueCount} issues</div>` : ''}
-                    </button>
-                `;
-            }).join('');
+            // Filter and render
+            applyFilters();
         }
 
         function selectMonth(month) {
             selectedMonth = month;
 
-            // Update month button styling
-            document.querySelectorAll('.month-btn').forEach(btn => {
-                if (btn.dataset.month === month) {
-                    btn.style.background = 'var(--unc-tile-teal)';
-                    btn.style.borderColor = 'var(--unc-tile-teal)';
-                    btn.style.color = 'white';
-                } else {
-                    btn.style.background = 'var(--bg-hover)';
-                    btn.style.borderColor = 'var(--border-color)';
-                    btn.style.color = 'var(--text-primary)';
-                }
+            // Update button states
+            document.querySelectorAll('[data-month]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.month == month);
             });
 
-            renderIssues(selectedYear, month);
+            // Filter and render
+            applyFilters();
         }
 
-        function renderIssues(year, month) {
-            const key = `${year}-${month}`;
-            const issues = issuesByYearMonth[key] || [];
+        function applyFilters() {
+            filteredIssues = allIssues.filter(issue => {
+                const issueYear = issue.date.substring(0, 4);
+                const issueMonth = parseInt(issue.date.substring(5, 7)) - 1;
 
-            const monthName = MONTHS.find(m => m.num === month).name;
-            document.getElementById('issues-label').textContent = `${monthName} ${year}`;
+                const yearMatch = selectedYear === 'all' || issueYear === selectedYear;
+                const monthMatch = selectedMonth === 'all' || issueMonth == selectedMonth;
 
-            const issuesGrid = document.getElementById('issues-grid');
-            issuesGrid.innerHTML = issues.map(issue => {
-                const day = issue.date.split('-')[2];
+                return yearMatch && monthMatch;
+            });
 
-                return `
-                    <a href="../?paper=amsterdam-news&date=${issue.date}"
-                       class="issue-card p-4 rounded-lg text-center transition-all hover:scale-105 hover:shadow-lg"
-                       style="background: var(--bg-hover); border: 2px solid var(--border-color); text-decoration: none; display: block;">
-                        <div class="text-3xl font-bold mb-1" style="color: var(--unc-tile-teal);">${parseInt(day)}</div>
-                        <div class="text-xs" style="color: var(--text-muted);">${issue.pages} pages</div>
-                    </a>
+            renderIssues();
+        }
+
+        function renderIssues() {
+            const grid = document.getElementById('issue-grid');
+            const emptyState = document.getElementById('empty-state');
+            const gridWrapper = document.getElementById('issue-grid-wrapper');
+
+            document.getElementById('showing-count').textContent = filteredIssues.length;
+
+            // Update title
+            let title = 'All Issues';
+            if (selectedYear !== 'all') {
+                title = selectedYear;
+                if (selectedMonth !== 'all') {
+                    title = `${MONTHS[selectedMonth]} ${selectedYear}`;
+                }
+            }
+            document.getElementById('grid-title').textContent = title;
+
+            if (filteredIssues.length === 0) {
+                gridWrapper.style.display = 'none';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            gridWrapper.style.display = 'block';
+
+            // Clear grid
+            grid.innerHTML = '';
+
+            // Render issue cards
+            filteredIssues.forEach(issue => {
+                const card = document.createElement('a');
+                card.href = `../?paper=amsterdam-news&date=${issue.date}`;
+                card.className = 'issue-card glass-card rounded-xl overflow-hidden transition-all hover:scale-105 hover:shadow-lg';
+                card.style.textDecoration = 'none';
+                card.style.display = 'block';
+
+                const thumbUrl = issue.base_url
+                    ? `${issue.base_url}/thumb.jpg`
+                    : `../web_content/amsterdam-news/${issue.date.substring(0, 4)}/${issue.date}/thumb.jpg`;
+
+                const dateObj = new Date(issue.date + 'T00:00:00');
+                const formattedDate = dateObj.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+
+                card.innerHTML = `
+                    <div class="aspect-[3/4] bg-gray-100 overflow-hidden">
+                        <img
+                            src="${thumbUrl}"
+                            alt="${issue.title} - ${formattedDate}"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 400%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22300%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2218%22 fill=%22%236b7280%22%3EImage Not Available%3C/text%3E%3C/svg%3E'"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <div class="text-sm font-semibold mb-1" style="color: var(--unc-tile-teal);">
+                            ${formattedDate}
+                        </div>
+                        <div class="text-xs" style="color: var(--text-muted);">
+                            ${issue.pages} page${issue.pages !== 1 ? 's' : ''}
+                        </div>
+                    </div>
                 `;
-            }).join('');
 
-            document.getElementById('issues-container').style.display = 'block';
+                grid.appendChild(card);
+            });
         }
 
         // Load data on page load
         loadData();
     </script>
+
+    <style>
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background: var(--bg-hover);
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            background: var(--bg-secondary);
+        }
+
+        .filter-btn.active {
+            background: var(--unc-tile-teal);
+            border-color: var(--unc-tile-teal);
+            color: white;
+        }
+
+        .filter-btn .count {
+            opacity: 0.7;
+            font-size: 0.75rem;
+        }
+
+        .issue-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .issue-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
 </body>
 </html>
