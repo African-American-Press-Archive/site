@@ -315,9 +315,10 @@
                 card.style.textDecoration = 'none';
                 card.style.display = 'block';
 
-                const thumbUrl = issue.base_url
-                    ? `${issue.base_url}/thumb.jpg`
-                    : `../web_content/amsterdam-news/${issue.date.substring(0, 4)}/${issue.date}/thumb.jpg`;
+                // Amsterdam News images are on R2
+                const thumbUrl = issue.issue_thumb
+                    ? `https://pages.dangerouspress.org/${issue.issue_thumb}`
+                    : `https://pages.dangerouspress.org/amsterdam-news/${issue.date.substring(0, 4)}/${issue.date}/thumb.jpg`;
 
                 const dateObj = new Date(issue.date + 'T00:00:00');
                 const formattedDate = dateObj.toLocaleDateString('en-US', {
