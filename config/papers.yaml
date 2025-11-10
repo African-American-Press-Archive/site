@@ -315,6 +315,14 @@ papers:
     - type: pdf
       folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/amsterdam_pdfs_processed
       sample_filename: Amsterdam_1922-12-06.pdf
+  norfolk-journal-and-guide:
+    title: Norfolk Journal and Guide
+    path: norfolk-journal-and-guide
+    base_url: https://pages.dangerouspress.org/norfolk-journal-and-guide
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/guide_pdfs_processed
+      sample_filename: Guide_1916-09-30.pdf
   # inter-state-tattler:
   #   title: Inter-State Tattler
   #   path: inter-state-tattler
