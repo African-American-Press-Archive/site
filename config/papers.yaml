@@ -87,10 +87,10 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn86056950
-  kansas-city-advocate:
-    title: Kansas City Advocate
-    path: kansas-city-advocate
-    base_url: https://pages.dangerouspress.org/kansas-city-advocate
+  cleveland-advocate:
+    title: Cleveland Advocate
+    path: cleveland-advocate
+    base_url: https://pages.dangerouspress.org/cleveland-advocate
     sources:
     - type: pdf
       folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/cleveland-advoate_pdfs
