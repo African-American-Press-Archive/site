@@ -1966,12 +1966,38 @@ function downloadCurrentPage() {
     const pagePath = state.currentPages[state.currentPageIndex];
     const fullPath = resolveAssetPath(pagePath);
 
-    const link = document.createElement('a');
-    link.href = fullPath;
-    link.download = `${issue.id}_page_${state.currentPageIndex + 1}.jpg`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Generate filename: paper-name_YYYY-MM-DD_page_NN.jpg
+    // issue.id format is either "YYYY-MM-DD_paper-name" or "paper-name_YYYY-MM-DD"
+    const [part1, part2] = issue.id.split('_');
+    const isDateFirst = /^\d{4}-\d{2}-\d{2}$/.test(part1);
+    const paperName = isDateFirst ? part2 : part1;
+    const date = isDateFirst ? part1 : part2;
+    const pageNum = String(state.currentPageIndex + 1).padStart(2, '0');
+    const filename = `${paperName}_${date}_page_${pageNum}.jpg`;
+
+    // Use fetch to download with custom filename (works better cross-browser, especially Safari)
+    fetch(fullPath)
+        .then(response => response.blob())
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        })
+        .catch(err => {
+            console.error('Download failed:', err);
+            // Fallback to direct link if fetch fails
+            const link = document.createElement('a');
+            link.href = fullPath;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
 }
 
 function toggleFullscreen() {
