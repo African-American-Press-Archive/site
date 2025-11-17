@@ -1975,25 +1975,40 @@ function downloadCurrentPage() {
     const pageNum = String(state.currentPageIndex + 1).padStart(2, '0');
     const filename = `${paperName}_${date}_page_${pageNum}.jpg`;
 
+    console.log('Download initiated:', { fullPath, filename });
+
     // Use fetch to download with custom filename (works better cross-browser, especially Safari)
+    // Note: This may fail locally due to CORS, but works on the live site
     fetch(fullPath)
-        .then(response => response.blob())
+        .then(response => {
+            console.log('Fetch response:', response.status, response.ok);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            return response.blob();
+        })
         .then(blob => {
+            console.log('Blob created:', blob.size, 'bytes');
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
             a.download = filename;
             document.body.appendChild(a);
             a.click();
+            console.log('Download triggered');
             window.URL.revokeObjectURL(url);
             document.body.removeChild(a);
         })
         .catch(err => {
-            console.error('Download failed:', err);
-            // Fallback to direct link if fetch fails
+            console.error('Download failed (likely CORS when testing locally):', err);
+            console.log('Attempting fallback: direct link download');
+            // Fallback to direct link if fetch fails (e.g., CORS issues when testing locally)
+            // This opens the image in a new tab where user can right-click to save
             const link = document.createElement('a');
             link.href = fullPath;
             link.download = filename;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
