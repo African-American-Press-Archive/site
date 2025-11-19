@@ -61,6 +61,7 @@ const state = {
 
     // Viewer state
     currentIssueIndex: 0,
+    currentIssue: null,
     currentPages: [],
     currentPageIndex: 0,
     pageCache: new Map(),
@@ -1455,6 +1456,7 @@ async function openViewerDirect(issue) {
     if (!issue) return;
 
     state.currentIssueIndex = -1; // -1 indicates no navigation context
+    state.currentIssue = issue;
 
     const modal = document.getElementById('viewer-modal');
     const title = document.getElementById('viewer-title');
@@ -1502,6 +1504,7 @@ async function openViewer(index) {
     if (!issue) return;
 
     state.currentIssueIndex = index;
+    state.currentIssue = issue;
 
     // Capture the referrer URL (where we came from)
     state.referrerUrl = document.referrer || null;
@@ -1751,6 +1754,7 @@ function closeViewer() {
     resetZoom();
     state.currentPages = [];
     state.currentPageIndex = 0;
+    state.currentIssue = null;
 
     // If we pushed a history state when opening, go back to remove it
     // This will trigger popstate, but the viewer is already closed so it's fine
@@ -1958,10 +1962,13 @@ function initPanHandlers() {
 
 // ==================== UTILITY FUNCTIONS ====================
 function downloadCurrentPage() {
-    if (state.currentPages.length === 0 || !state.displayedIssues.length) return;
+    if (!state.currentPages.length) return;
 
-    const issue = state.displayedIssues[state.currentIssueIndex];
-    if (!issue) return;
+    const issue = state.currentIssue || state.displayedIssues[state.currentIssueIndex];
+    if (!issue) {
+        console.warn('Download requested without a current issue context');
+        return;
+    }
 
     const pagePath = state.currentPages[state.currentPageIndex];
     const fullPath = resolveAssetPath(pagePath);
@@ -1975,44 +1982,17 @@ function downloadCurrentPage() {
     const pageNum = String(state.currentPageIndex + 1).padStart(2, '0');
     const filename = `${paperName}_${date}_page_${pageNum}.jpg`;
 
-    console.log('Download initiated:', { fullPath, filename });
-
-    // Use fetch to download with custom filename (works better cross-browser, especially Safari)
-    // Note: This may fail locally due to CORS, but works on the live site
-    fetch(fullPath)
-        .then(response => {
-            console.log('Fetch response:', response.status, response.ok);
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
-            }
-            return response.blob();
-        })
-        .then(blob => {
-            console.log('Blob created:', blob.size, 'bytes');
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = filename;
-            document.body.appendChild(a);
-            a.click();
-            console.log('Download triggered');
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
-        })
-        .catch(err => {
-            console.error('Download failed (likely CORS when testing locally):', err);
-            console.log('Attempting fallback: direct link download');
-            // Fallback to direct link if fetch fails (e.g., CORS issues when testing locally)
-            // This opens the image in a new tab where user can right-click to save
-            const link = document.createElement('a');
-            link.href = fullPath;
-            link.download = filename;
-            link.target = '_blank';
-            link.rel = 'noopener noreferrer';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
+    // Rely on R2's Content-Disposition headers for the actual filename.
+    // Using a direct anchor click keeps the browser interaction synchronous
+    // so Safari/Chrome do not block the download gesture.
+    const link = document.createElement('a');
+    link.href = fullPath;
+    link.download = filename;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 function toggleFullscreen() {
