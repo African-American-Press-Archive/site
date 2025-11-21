@@ -290,6 +290,14 @@ papers:
     - type: pdf
       folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/negro-world_pdfs
       sample_filename: 1910-01-01.pdf
+  washington-bee:
+    title: Washington Bee
+    path: washington-bee
+    base_url: https://pages.dangerouspress.org/washington-bee
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press//Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/washington-bee_pdfs
+      sample_filename: washington-bee_1905-01-07.pdf
   pittsburgh-courier:
     title: Pittsburgh Courier
     path: pittsburgh-courier
