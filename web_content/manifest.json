@@ -147422,6 +147422,24 @@
     "uploaded": true
   },
   {
+    "id": "1916-11-04_washington-bee",
+    "date": "1916-11-04",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-11-04/page_01.jpg",
+      "washington-bee/1916/1916-11-04/page_02.jpg",
+      "washington-bee/1916/1916-11-04/page_03.jpg",
+      "washington-bee/1916/1916-11-04/page_04.jpg",
+      "washington-bee/1916/1916-11-04/page_05.jpg",
+      "washington-bee/1916/1916-11-04/page_06.jpg",
+      "washington-bee/1916/1916-11-04/page_07.jpg",
+      "washington-bee/1916/1916-11-04/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-11-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1916-11-09_new-york-age",
     "date": "1916-11-09",
     "title": "New York Age",
@@ -147808,6 +147826,42 @@
     "uploaded": true
   },
   {
+    "id": "1916-11-11_washington-bee",
+    "date": "1916-11-11",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-11-11/page_01.jpg",
+      "washington-bee/1916/1916-11-11/page_02.jpg",
+      "washington-bee/1916/1916-11-11/page_03.jpg",
+      "washington-bee/1916/1916-11-11/page_04.jpg",
+      "washington-bee/1916/1916-11-11/page_05.jpg",
+      "washington-bee/1916/1916-11-11/page_06.jpg",
+      "washington-bee/1916/1916-11-11/page_07.jpg",
+      "washington-bee/1916/1916-11-11/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-11-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1916-11-15_washington-bee",
+    "date": "1916-11-15",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-11-15/page_01.jpg",
+      "washington-bee/1916/1916-11-15/page_02.jpg",
+      "washington-bee/1916/1916-11-15/page_03.jpg",
+      "washington-bee/1916/1916-11-15/page_04.jpg",
+      "washington-bee/1916/1916-11-15/page_05.jpg",
+      "washington-bee/1916/1916-11-15/page_06.jpg",
+      "washington-bee/1916/1916-11-15/page_07.jpg",
+      "washington-bee/1916/1916-11-15/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-11-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1916-11-16_new-york-age",
     "date": "1916-11-16",
     "title": "New York Age",
@@ -148174,6 +148228,24 @@
       "twin-city-star/1916/1916-11-18/page_04.jpg"
     ],
     "issue_thumb": "twin-city-star/1916/1916-11-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1916-11-18_washington-bee",
+    "date": "1916-11-18",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-11-18/page_01.jpg",
+      "washington-bee/1916/1916-11-18/page_02.jpg",
+      "washington-bee/1916/1916-11-18/page_03.jpg",
+      "washington-bee/1916/1916-11-18/page_04.jpg",
+      "washington-bee/1916/1916-11-18/page_05.jpg",
+      "washington-bee/1916/1916-11-18/page_06.jpg",
+      "washington-bee/1916/1916-11-18/page_07.jpg",
+      "washington-bee/1916/1916-11-18/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-11-18/thumb.jpg",
     "uploaded": true
   },
   {
@@ -148854,6 +148926,24 @@
     "uploaded": true
   },
   {
+    "id": "1916-12-02_washington-bee",
+    "date": "1916-12-02",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-12-02/page_01.jpg",
+      "washington-bee/1916/1916-12-02/page_02.jpg",
+      "washington-bee/1916/1916-12-02/page_03.jpg",
+      "washington-bee/1916/1916-12-02/page_04.jpg",
+      "washington-bee/1916/1916-12-02/page_05.jpg",
+      "washington-bee/1916/1916-12-02/page_06.jpg",
+      "washington-bee/1916/1916-12-02/page_07.jpg",
+      "washington-bee/1916/1916-12-02/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-12-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1916-12-03_twin-city-star",
     "date": "1916-12-03",
     "title": "Twin City Star",
@@ -149210,6 +149300,24 @@
       "twin-city-star/1916/1916-12-09/page_04.jpg"
     ],
     "issue_thumb": "twin-city-star/1916/1916-12-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1916-12-09_washington-bee",
+    "date": "1916-12-09",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-12-09/page_01.jpg",
+      "washington-bee/1916/1916-12-09/page_02.jpg",
+      "washington-bee/1916/1916-12-09/page_03.jpg",
+      "washington-bee/1916/1916-12-09/page_04.jpg",
+      "washington-bee/1916/1916-12-09/page_05.jpg",
+      "washington-bee/1916/1916-12-09/page_06.jpg",
+      "washington-bee/1916/1916-12-09/page_07.jpg",
+      "washington-bee/1916/1916-12-09/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-12-09/thumb.jpg",
     "uploaded": true
   },
   {
@@ -149590,6 +149698,24 @@
     "uploaded": true
   },
   {
+    "id": "1916-12-16_washington-bee",
+    "date": "1916-12-16",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-12-16/page_01.jpg",
+      "washington-bee/1916/1916-12-16/page_02.jpg",
+      "washington-bee/1916/1916-12-16/page_03.jpg",
+      "washington-bee/1916/1916-12-16/page_04.jpg",
+      "washington-bee/1916/1916-12-16/page_05.jpg",
+      "washington-bee/1916/1916-12-16/page_06.jpg",
+      "washington-bee/1916/1916-12-16/page_07.jpg",
+      "washington-bee/1916/1916-12-16/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-12-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1916-12-21_new-york-age",
     "date": "1916-12-21",
     "title": "New York Age",
@@ -149966,6 +150092,24 @@
     "uploaded": true
   },
   {
+    "id": "1916-12-23_washington-bee",
+    "date": "1916-12-23",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-12-23/page_01.jpg",
+      "washington-bee/1916/1916-12-23/page_02.jpg",
+      "washington-bee/1916/1916-12-23/page_03.jpg",
+      "washington-bee/1916/1916-12-23/page_04.jpg",
+      "washington-bee/1916/1916-12-23/page_05.jpg",
+      "washington-bee/1916/1916-12-23/page_06.jpg",
+      "washington-bee/1916/1916-12-23/page_07.jpg",
+      "washington-bee/1916/1916-12-23/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-12-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1916-12-28_new-york-age",
     "date": "1916-12-28",
     "title": "New York Age",
@@ -150246,6 +150390,24 @@
       "twin-city-star/1916/1916-12-30/page_04.jpg"
     ],
     "issue_thumb": "twin-city-star/1916/1916-12-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1916-12-30_washington-bee",
+    "date": "1916-12-30",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1916/1916-12-30/page_01.jpg",
+      "washington-bee/1916/1916-12-30/page_02.jpg",
+      "washington-bee/1916/1916-12-30/page_03.jpg",
+      "washington-bee/1916/1916-12-30/page_04.jpg",
+      "washington-bee/1916/1916-12-30/page_05.jpg",
+      "washington-bee/1916/1916-12-30/page_06.jpg",
+      "washington-bee/1916/1916-12-30/page_07.jpg",
+      "washington-bee/1916/1916-12-30/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1916/1916-12-30/thumb.jpg",
     "uploaded": true
   },
   {
@@ -210499,6 +210661,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-07-10_washington-bee",
+    "date": "1920-07-10",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-07-10/page_01.jpg",
+      "washington-bee/1920/1920-07-10/page_02.jpg",
+      "washington-bee/1920/1920-07-10/page_03.jpg",
+      "washington-bee/1920/1920-07-10/page_04.jpg",
+      "washington-bee/1920/1920-07-10/page_05.jpg",
+      "washington-bee/1920/1920-07-10/page_06.jpg",
+      "washington-bee/1920/1920-07-10/page_07.jpg",
+      "washington-bee/1920/1920-07-10/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-07-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-07-15_omaha-monitor",
     "date": "1920-07-15",
     "title": "Omaha Monitor",
@@ -210780,6 +210960,24 @@
       "tulsa-star/1920/1920-07-17/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-07-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-07-17_washington-bee",
+    "date": "1920-07-17",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-07-17/page_01.jpg",
+      "washington-bee/1920/1920-07-17/page_02.jpg",
+      "washington-bee/1920/1920-07-17/page_03.jpg",
+      "washington-bee/1920/1920-07-17/page_04.jpg",
+      "washington-bee/1920/1920-07-17/page_05.jpg",
+      "washington-bee/1920/1920-07-17/page_06.jpg",
+      "washington-bee/1920/1920-07-17/page_07.jpg",
+      "washington-bee/1920/1920-07-17/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-07-17/thumb.jpg",
     "uploaded": true
   },
   {
@@ -211068,6 +211266,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-07-24_washington-bee",
+    "date": "1920-07-24",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-07-24/page_01.jpg",
+      "washington-bee/1920/1920-07-24/page_02.jpg",
+      "washington-bee/1920/1920-07-24/page_03.jpg",
+      "washington-bee/1920/1920-07-24/page_04.jpg",
+      "washington-bee/1920/1920-07-24/page_05.jpg",
+      "washington-bee/1920/1920-07-24/page_06.jpg",
+      "washington-bee/1920/1920-07-24/page_07.jpg",
+      "washington-bee/1920/1920-07-24/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-07-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-07-29_omaha-monitor",
     "date": "1920-07-29",
     "title": "Omaha Monitor",
@@ -211329,6 +211545,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-07-31_washington-bee",
+    "date": "1920-07-31",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-07-31/page_01.jpg",
+      "washington-bee/1920/1920-07-31/page_02.jpg",
+      "washington-bee/1920/1920-07-31/page_03.jpg",
+      "washington-bee/1920/1920-07-31/page_04.jpg",
+      "washington-bee/1920/1920-07-31/page_05.jpg",
+      "washington-bee/1920/1920-07-31/page_06.jpg",
+      "washington-bee/1920/1920-07-31/page_07.jpg",
+      "washington-bee/1920/1920-07-31/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-07-31/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-08-05_omaha-monitor",
     "date": "1920-08-05",
     "title": "Omaha Monitor",
@@ -211581,6 +211815,24 @@
       "tulsa-star/1920/1920-08-07/page_04.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-08-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-08-07_washington-bee",
+    "date": "1920-08-07",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-08-07/page_01.jpg",
+      "washington-bee/1920/1920-08-07/page_02.jpg",
+      "washington-bee/1920/1920-08-07/page_03.jpg",
+      "washington-bee/1920/1920-08-07/page_04.jpg",
+      "washington-bee/1920/1920-08-07/page_05.jpg",
+      "washington-bee/1920/1920-08-07/page_06.jpg",
+      "washington-bee/1920/1920-08-07/page_07.jpg",
+      "washington-bee/1920/1920-08-07/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-08-07/thumb.jpg",
     "uploaded": true
   },
   {
@@ -211840,6 +212092,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-08-14_washington-bee",
+    "date": "1920-08-14",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-08-14/page_01.jpg",
+      "washington-bee/1920/1920-08-14/page_02.jpg",
+      "washington-bee/1920/1920-08-14/page_03.jpg",
+      "washington-bee/1920/1920-08-14/page_04.jpg",
+      "washington-bee/1920/1920-08-14/page_05.jpg",
+      "washington-bee/1920/1920-08-14/page_06.jpg",
+      "washington-bee/1920/1920-08-14/page_07.jpg",
+      "washington-bee/1920/1920-08-14/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-08-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-08-19_iowa-bystander",
     "date": "1920-08-19",
     "title": "Iowa Bystander",
@@ -212092,6 +212362,24 @@
       "tulsa-star/1920/1920-08-21/page_06.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-08-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-08-21_washington-bee",
+    "date": "1920-08-21",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-08-21/page_01.jpg",
+      "washington-bee/1920/1920-08-21/page_02.jpg",
+      "washington-bee/1920/1920-08-21/page_03.jpg",
+      "washington-bee/1920/1920-08-21/page_04.jpg",
+      "washington-bee/1920/1920-08-21/page_05.jpg",
+      "washington-bee/1920/1920-08-21/page_06.jpg",
+      "washington-bee/1920/1920-08-21/page_07.jpg",
+      "washington-bee/1920/1920-08-21/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-08-21/thumb.jpg",
     "uploaded": true
   },
   {
@@ -212377,6 +212665,24 @@
       "tulsa-star/1920/1920-08-28/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-08-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-08-28_washington-bee",
+    "date": "1920-08-28",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-08-28/page_01.jpg",
+      "washington-bee/1920/1920-08-28/page_02.jpg",
+      "washington-bee/1920/1920-08-28/page_03.jpg",
+      "washington-bee/1920/1920-08-28/page_04.jpg",
+      "washington-bee/1920/1920-08-28/page_05.jpg",
+      "washington-bee/1920/1920-08-28/page_06.jpg",
+      "washington-bee/1920/1920-08-28/page_07.jpg",
+      "washington-bee/1920/1920-08-28/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-08-28/thumb.jpg",
     "uploaded": true
   },
   {
@@ -212683,6 +212989,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-09-04_washington-bee",
+    "date": "1920-09-04",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-09-04/page_01.jpg",
+      "washington-bee/1920/1920-09-04/page_02.jpg",
+      "washington-bee/1920/1920-09-04/page_03.jpg",
+      "washington-bee/1920/1920-09-04/page_04.jpg",
+      "washington-bee/1920/1920-09-04/page_05.jpg",
+      "washington-bee/1920/1920-09-04/page_06.jpg",
+      "washington-bee/1920/1920-09-04/page_07.jpg",
+      "washington-bee/1920/1920-09-04/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-09-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-09-09_iowa-bystander",
     "date": "1920-09-09",
     "title": "Iowa Bystander",
@@ -212976,6 +213300,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-09-11_washington-bee",
+    "date": "1920-09-11",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-09-11/page_01.jpg",
+      "washington-bee/1920/1920-09-11/page_02.jpg",
+      "washington-bee/1920/1920-09-11/page_03.jpg",
+      "washington-bee/1920/1920-09-11/page_04.jpg",
+      "washington-bee/1920/1920-09-11/page_05.jpg",
+      "washington-bee/1920/1920-09-11/page_06.jpg",
+      "washington-bee/1920/1920-09-11/page_07.jpg",
+      "washington-bee/1920/1920-09-11/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-09-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-09-16_iowa-bystander",
     "date": "1920-09-16",
     "title": "Iowa Bystander",
@@ -213249,6 +213591,24 @@
       "tulsa-star/1920/1920-09-18/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-09-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-09-18_washington-bee",
+    "date": "1920-09-18",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-09-18/page_01.jpg",
+      "washington-bee/1920/1920-09-18/page_02.jpg",
+      "washington-bee/1920/1920-09-18/page_03.jpg",
+      "washington-bee/1920/1920-09-18/page_04.jpg",
+      "washington-bee/1920/1920-09-18/page_05.jpg",
+      "washington-bee/1920/1920-09-18/page_06.jpg",
+      "washington-bee/1920/1920-09-18/page_07.jpg",
+      "washington-bee/1920/1920-09-18/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-09-18/thumb.jpg",
     "uploaded": true
   },
   {
@@ -213547,6 +213907,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-09-25_washington-bee",
+    "date": "1920-09-25",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-09-25/page_01.jpg",
+      "washington-bee/1920/1920-09-25/page_02.jpg",
+      "washington-bee/1920/1920-09-25/page_03.jpg",
+      "washington-bee/1920/1920-09-25/page_04.jpg",
+      "washington-bee/1920/1920-09-25/page_05.jpg",
+      "washington-bee/1920/1920-09-25/page_06.jpg",
+      "washington-bee/1920/1920-09-25/page_07.jpg",
+      "washington-bee/1920/1920-09-25/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-09-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-09-30_iowa-bystander",
     "date": "1920-09-30",
     "title": "Iowa Bystander",
@@ -213822,6 +214200,24 @@
       "tulsa-star/1920/1920-10-02/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-10-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-10-02_washington-bee",
+    "date": "1920-10-02",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-10-02/page_01.jpg",
+      "washington-bee/1920/1920-10-02/page_02.jpg",
+      "washington-bee/1920/1920-10-02/page_03.jpg",
+      "washington-bee/1920/1920-10-02/page_04.jpg",
+      "washington-bee/1920/1920-10-02/page_05.jpg",
+      "washington-bee/1920/1920-10-02/page_06.jpg",
+      "washington-bee/1920/1920-10-02/page_07.jpg",
+      "washington-bee/1920/1920-10-02/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-10-02/thumb.jpg",
     "uploaded": true
   },
   {
@@ -214105,6 +214501,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-10-09_washington-bee",
+    "date": "1920-10-09",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-10-09/page_01.jpg",
+      "washington-bee/1920/1920-10-09/page_02.jpg",
+      "washington-bee/1920/1920-10-09/page_03.jpg",
+      "washington-bee/1920/1920-10-09/page_04.jpg",
+      "washington-bee/1920/1920-10-09/page_05.jpg",
+      "washington-bee/1920/1920-10-09/page_06.jpg",
+      "washington-bee/1920/1920-10-09/page_07.jpg",
+      "washington-bee/1920/1920-10-09/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-10-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-10-14_iowa-bystander",
     "date": "1920-10-14",
     "title": "Iowa Bystander",
@@ -214319,6 +214733,24 @@
       "tulsa-star/1920/1920-10-16/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-10-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-10-16_washington-bee",
+    "date": "1920-10-16",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-10-16/page_01.jpg",
+      "washington-bee/1920/1920-10-16/page_02.jpg",
+      "washington-bee/1920/1920-10-16/page_03.jpg",
+      "washington-bee/1920/1920-10-16/page_04.jpg",
+      "washington-bee/1920/1920-10-16/page_05.jpg",
+      "washington-bee/1920/1920-10-16/page_06.jpg",
+      "washington-bee/1920/1920-10-16/page_07.jpg",
+      "washington-bee/1920/1920-10-16/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-10-16/thumb.jpg",
     "uploaded": true
   },
   {
@@ -214586,6 +215018,24 @@
       "tulsa-star/1920/1920-10-23/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-10-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-10-23_washington-bee",
+    "date": "1920-10-23",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-10-23/page_01.jpg",
+      "washington-bee/1920/1920-10-23/page_02.jpg",
+      "washington-bee/1920/1920-10-23/page_03.jpg",
+      "washington-bee/1920/1920-10-23/page_04.jpg",
+      "washington-bee/1920/1920-10-23/page_05.jpg",
+      "washington-bee/1920/1920-10-23/page_06.jpg",
+      "washington-bee/1920/1920-10-23/page_07.jpg",
+      "washington-bee/1920/1920-10-23/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-10-23/thumb.jpg",
     "uploaded": true
   },
   {
@@ -214861,6 +215311,24 @@
       "tulsa-star/1920/1920-10-30/page_12.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-10-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-10-30_washington-bee",
+    "date": "1920-10-30",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-10-30/page_01.jpg",
+      "washington-bee/1920/1920-10-30/page_02.jpg",
+      "washington-bee/1920/1920-10-30/page_03.jpg",
+      "washington-bee/1920/1920-10-30/page_04.jpg",
+      "washington-bee/1920/1920-10-30/page_05.jpg",
+      "washington-bee/1920/1920-10-30/page_06.jpg",
+      "washington-bee/1920/1920-10-30/page_07.jpg",
+      "washington-bee/1920/1920-10-30/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-10-30/thumb.jpg",
     "uploaded": true
   },
   {
@@ -215148,6 +215616,24 @@
       "tulsa-star/1920/1920-11-06/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-11-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-11-06_washington-bee",
+    "date": "1920-11-06",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-11-06/page_01.jpg",
+      "washington-bee/1920/1920-11-06/page_02.jpg",
+      "washington-bee/1920/1920-11-06/page_03.jpg",
+      "washington-bee/1920/1920-11-06/page_04.jpg",
+      "washington-bee/1920/1920-11-06/page_05.jpg",
+      "washington-bee/1920/1920-11-06/page_06.jpg",
+      "washington-bee/1920/1920-11-06/page_07.jpg",
+      "washington-bee/1920/1920-11-06/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-11-06/thumb.jpg",
     "uploaded": true
   },
   {
@@ -215443,6 +215929,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-11-13_washington-bee",
+    "date": "1920-11-13",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-11-13/page_01.jpg",
+      "washington-bee/1920/1920-11-13/page_02.jpg",
+      "washington-bee/1920/1920-11-13/page_03.jpg",
+      "washington-bee/1920/1920-11-13/page_04.jpg",
+      "washington-bee/1920/1920-11-13/page_05.jpg",
+      "washington-bee/1920/1920-11-13/page_06.jpg",
+      "washington-bee/1920/1920-11-13/page_07.jpg",
+      "washington-bee/1920/1920-11-13/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-11-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-11-18_iowa-bystander",
     "date": "1920-11-18",
     "title": "Iowa Bystander",
@@ -215728,6 +216232,24 @@
       "tulsa-star/1920/1920-11-20/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-11-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-11-20_washington-bee",
+    "date": "1920-11-20",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-11-20/page_01.jpg",
+      "washington-bee/1920/1920-11-20/page_02.jpg",
+      "washington-bee/1920/1920-11-20/page_03.jpg",
+      "washington-bee/1920/1920-11-20/page_04.jpg",
+      "washington-bee/1920/1920-11-20/page_05.jpg",
+      "washington-bee/1920/1920-11-20/page_06.jpg",
+      "washington-bee/1920/1920-11-20/page_07.jpg",
+      "washington-bee/1920/1920-11-20/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-11-20/thumb.jpg",
     "uploaded": true
   },
   {
@@ -216026,6 +216548,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-11-27_washington-bee",
+    "date": "1920-11-27",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-11-27/page_01.jpg",
+      "washington-bee/1920/1920-11-27/page_02.jpg",
+      "washington-bee/1920/1920-11-27/page_03.jpg",
+      "washington-bee/1920/1920-11-27/page_04.jpg",
+      "washington-bee/1920/1920-11-27/page_05.jpg",
+      "washington-bee/1920/1920-11-27/page_06.jpg",
+      "washington-bee/1920/1920-11-27/page_07.jpg",
+      "washington-bee/1920/1920-11-27/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-11-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-12-02_iowa-bystander",
     "date": "1920-12-02",
     "title": "Iowa Bystander",
@@ -216303,6 +216843,24 @@
       "tulsa-star/1920/1920-12-04/page_08.jpg"
     ],
     "issue_thumb": "tulsa-star/1920/1920-12-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-12-04_washington-bee",
+    "date": "1920-12-04",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-12-04/page_01.jpg",
+      "washington-bee/1920/1920-12-04/page_02.jpg",
+      "washington-bee/1920/1920-12-04/page_03.jpg",
+      "washington-bee/1920/1920-12-04/page_04.jpg",
+      "washington-bee/1920/1920-12-04/page_05.jpg",
+      "washington-bee/1920/1920-12-04/page_06.jpg",
+      "washington-bee/1920/1920-12-04/page_07.jpg",
+      "washington-bee/1920/1920-12-04/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-12-04/thumb.jpg",
     "uploaded": true
   },
   {
@@ -216587,6 +217145,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-12-11_washington-bee",
+    "date": "1920-12-11",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-12-11/page_01.jpg",
+      "washington-bee/1920/1920-12-11/page_02.jpg",
+      "washington-bee/1920/1920-12-11/page_03.jpg",
+      "washington-bee/1920/1920-12-11/page_04.jpg",
+      "washington-bee/1920/1920-12-11/page_05.jpg",
+      "washington-bee/1920/1920-12-11/page_06.jpg",
+      "washington-bee/1920/1920-12-11/page_07.jpg",
+      "washington-bee/1920/1920-12-11/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-12-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-12-16_iowa-bystander",
     "date": "1920-12-16",
     "title": "Iowa Bystander",
@@ -216850,6 +217426,24 @@
     "uploaded": true
   },
   {
+    "id": "1920-12-18_washington-bee",
+    "date": "1920-12-18",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1920/1920-12-18/page_01.jpg",
+      "washington-bee/1920/1920-12-18/page_02.jpg",
+      "washington-bee/1920/1920-12-18/page_03.jpg",
+      "washington-bee/1920/1920-12-18/page_04.jpg",
+      "washington-bee/1920/1920-12-18/page_05.jpg",
+      "washington-bee/1920/1920-12-18/page_06.jpg",
+      "washington-bee/1920/1920-12-18/page_07.jpg",
+      "washington-bee/1920/1920-12-18/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-12-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1920-12-23_iowa-bystander",
     "date": "1920-12-23",
     "title": "Iowa Bystander",
@@ -217107,6 +217701,25 @@
       "st-paul-appeal/1920/1920-12-25/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1920/1920-12-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1920-12-25_washington-bee",
+    "date": "1920-12-25",
+    "title": "Washington Bee",
+    "pages": 9,
+    "page_paths": [
+      "washington-bee/1920/1920-12-25/page_01.jpg",
+      "washington-bee/1920/1920-12-25/page_02.jpg",
+      "washington-bee/1920/1920-12-25/page_03.jpg",
+      "washington-bee/1920/1920-12-25/page_04.jpg",
+      "washington-bee/1920/1920-12-25/page_05.jpg",
+      "washington-bee/1920/1920-12-25/page_06.jpg",
+      "washington-bee/1920/1920-12-25/page_07.jpg",
+      "washington-bee/1920/1920-12-25/page_08.jpg",
+      "washington-bee/1920/1920-12-25/page_09.jpg"
+    ],
+    "issue_thumb": "washington-bee/1920/1920-12-25/thumb.jpg",
     "uploaded": true
   },
   {
@@ -217405,6 +218018,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-01-01_washington-bee",
+    "date": "1921-01-01",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-01-01/page_01.jpg",
+      "washington-bee/1921/1921-01-01/page_02.jpg",
+      "washington-bee/1921/1921-01-01/page_03.jpg",
+      "washington-bee/1921/1921-01-01/page_04.jpg",
+      "washington-bee/1921/1921-01-01/page_05.jpg",
+      "washington-bee/1921/1921-01-01/page_06.jpg",
+      "washington-bee/1921/1921-01-01/page_07.jpg",
+      "washington-bee/1921/1921-01-01/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-01-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-01-06_iowa-bystander",
     "date": "1921-01-06",
     "title": "Iowa Bystander",
@@ -217696,6 +218327,24 @@
       "st-paul-appeal/1921/1921-01-08/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-01-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-01-08_washington-bee",
+    "date": "1921-01-08",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-01-08/page_01.jpg",
+      "washington-bee/1921/1921-01-08/page_02.jpg",
+      "washington-bee/1921/1921-01-08/page_03.jpg",
+      "washington-bee/1921/1921-01-08/page_04.jpg",
+      "washington-bee/1921/1921-01-08/page_05.jpg",
+      "washington-bee/1921/1921-01-08/page_06.jpg",
+      "washington-bee/1921/1921-01-08/page_07.jpg",
+      "washington-bee/1921/1921-01-08/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-01-08/thumb.jpg",
     "uploaded": true
   },
   {
@@ -218005,6 +218654,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-01-15_washington-bee",
+    "date": "1921-01-15",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-01-15/page_01.jpg",
+      "washington-bee/1921/1921-01-15/page_02.jpg",
+      "washington-bee/1921/1921-01-15/page_03.jpg",
+      "washington-bee/1921/1921-01-15/page_04.jpg",
+      "washington-bee/1921/1921-01-15/page_05.jpg",
+      "washington-bee/1921/1921-01-15/page_06.jpg",
+      "washington-bee/1921/1921-01-15/page_07.jpg",
+      "washington-bee/1921/1921-01-15/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-01-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-01-20_iowa-bystander",
     "date": "1921-01-20",
     "title": "Iowa Bystander",
@@ -218295,6 +218962,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-01-22_washington-bee",
+    "date": "1921-01-22",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-01-22/page_01.jpg",
+      "washington-bee/1921/1921-01-22/page_02.jpg",
+      "washington-bee/1921/1921-01-22/page_03.jpg",
+      "washington-bee/1921/1921-01-22/page_04.jpg",
+      "washington-bee/1921/1921-01-22/page_05.jpg",
+      "washington-bee/1921/1921-01-22/page_06.jpg",
+      "washington-bee/1921/1921-01-22/page_07.jpg",
+      "washington-bee/1921/1921-01-22/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-01-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-01-27_iowa-bystander",
     "date": "1921-01-27",
     "title": "Iowa Bystander",
@@ -218582,6 +219267,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-01-29_washington-bee",
+    "date": "1921-01-29",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-01-29/page_01.jpg",
+      "washington-bee/1921/1921-01-29/page_02.jpg",
+      "washington-bee/1921/1921-01-29/page_03.jpg",
+      "washington-bee/1921/1921-01-29/page_04.jpg",
+      "washington-bee/1921/1921-01-29/page_05.jpg",
+      "washington-bee/1921/1921-01-29/page_06.jpg",
+      "washington-bee/1921/1921-01-29/page_07.jpg",
+      "washington-bee/1921/1921-01-29/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-01-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-02-03_iowa-bystander",
     "date": "1921-02-03",
     "title": "Iowa Bystander",
@@ -218852,6 +219555,24 @@
       "richmond-planet/1921/1921-02-06/page_05.jpg"
     ],
     "issue_thumb": "richmond-planet/1921/1921-02-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-02-08_washington-bee",
+    "date": "1921-02-08",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-02-08/page_01.jpg",
+      "washington-bee/1921/1921-02-08/page_02.jpg",
+      "washington-bee/1921/1921-02-08/page_03.jpg",
+      "washington-bee/1921/1921-02-08/page_04.jpg",
+      "washington-bee/1921/1921-02-08/page_05.jpg",
+      "washington-bee/1921/1921-02-08/page_06.jpg",
+      "washington-bee/1921/1921-02-08/page_07.jpg",
+      "washington-bee/1921/1921-02-08/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-02-08/thumb.jpg",
     "uploaded": true
   },
   {
@@ -219130,6 +219851,24 @@
       "st-paul-appeal/1921/1921-02-12/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-02-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-02-12_washington-bee",
+    "date": "1921-02-12",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-02-12/page_01.jpg",
+      "washington-bee/1921/1921-02-12/page_02.jpg",
+      "washington-bee/1921/1921-02-12/page_03.jpg",
+      "washington-bee/1921/1921-02-12/page_04.jpg",
+      "washington-bee/1921/1921-02-12/page_05.jpg",
+      "washington-bee/1921/1921-02-12/page_06.jpg",
+      "washington-bee/1921/1921-02-12/page_07.jpg",
+      "washington-bee/1921/1921-02-12/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-02-12/thumb.jpg",
     "uploaded": true
   },
   {
@@ -219462,6 +220201,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-02-19_washington-bee",
+    "date": "1921-02-19",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-02-19/page_01.jpg",
+      "washington-bee/1921/1921-02-19/page_02.jpg",
+      "washington-bee/1921/1921-02-19/page_03.jpg",
+      "washington-bee/1921/1921-02-19/page_04.jpg",
+      "washington-bee/1921/1921-02-19/page_05.jpg",
+      "washington-bee/1921/1921-02-19/page_06.jpg",
+      "washington-bee/1921/1921-02-19/page_07.jpg",
+      "washington-bee/1921/1921-02-19/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-02-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-02-24_iowa-bystander",
     "date": "1921-02-24",
     "title": "Iowa Bystander",
@@ -219750,6 +220507,24 @@
       "st-paul-appeal/1921/1921-02-26/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-02-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-02-26_washington-bee",
+    "date": "1921-02-26",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-02-26/page_01.jpg",
+      "washington-bee/1921/1921-02-26/page_02.jpg",
+      "washington-bee/1921/1921-02-26/page_03.jpg",
+      "washington-bee/1921/1921-02-26/page_04.jpg",
+      "washington-bee/1921/1921-02-26/page_05.jpg",
+      "washington-bee/1921/1921-02-26/page_06.jpg",
+      "washington-bee/1921/1921-02-26/page_07.jpg",
+      "washington-bee/1921/1921-02-26/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-02-26/thumb.jpg",
     "uploaded": true
   },
   {
@@ -220062,6 +220837,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-03-05_washington-bee",
+    "date": "1921-03-05",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-03-05/page_01.jpg",
+      "washington-bee/1921/1921-03-05/page_02.jpg",
+      "washington-bee/1921/1921-03-05/page_03.jpg",
+      "washington-bee/1921/1921-03-05/page_04.jpg",
+      "washington-bee/1921/1921-03-05/page_05.jpg",
+      "washington-bee/1921/1921-03-05/page_06.jpg",
+      "washington-bee/1921/1921-03-05/page_07.jpg",
+      "washington-bee/1921/1921-03-05/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-03-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-03-10_iowa-bystander",
     "date": "1921-03-10",
     "title": "Iowa Bystander",
@@ -220340,6 +221133,24 @@
       "st-paul-appeal/1921/1921-03-12/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-03-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-03-12_washington-bee",
+    "date": "1921-03-12",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-03-12/page_01.jpg",
+      "washington-bee/1921/1921-03-12/page_02.jpg",
+      "washington-bee/1921/1921-03-12/page_03.jpg",
+      "washington-bee/1921/1921-03-12/page_04.jpg",
+      "washington-bee/1921/1921-03-12/page_05.jpg",
+      "washington-bee/1921/1921-03-12/page_06.jpg",
+      "washington-bee/1921/1921-03-12/page_07.jpg",
+      "washington-bee/1921/1921-03-12/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-03-12/thumb.jpg",
     "uploaded": true
   },
   {
@@ -220632,6 +221443,24 @@
       "st-paul-appeal/1921/1921-03-19/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-03-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-03-19_washington-bee",
+    "date": "1921-03-19",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-03-19/page_01.jpg",
+      "washington-bee/1921/1921-03-19/page_02.jpg",
+      "washington-bee/1921/1921-03-19/page_03.jpg",
+      "washington-bee/1921/1921-03-19/page_04.jpg",
+      "washington-bee/1921/1921-03-19/page_05.jpg",
+      "washington-bee/1921/1921-03-19/page_06.jpg",
+      "washington-bee/1921/1921-03-19/page_07.jpg",
+      "washington-bee/1921/1921-03-19/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-03-19/thumb.jpg",
     "uploaded": true
   },
   {
@@ -220938,6 +221767,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-03-26_washington-bee",
+    "date": "1921-03-26",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-03-26/page_01.jpg",
+      "washington-bee/1921/1921-03-26/page_02.jpg",
+      "washington-bee/1921/1921-03-26/page_03.jpg",
+      "washington-bee/1921/1921-03-26/page_04.jpg",
+      "washington-bee/1921/1921-03-26/page_05.jpg",
+      "washington-bee/1921/1921-03-26/page_06.jpg",
+      "washington-bee/1921/1921-03-26/page_07.jpg",
+      "washington-bee/1921/1921-03-26/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-03-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-03-31_iowa-bystander",
     "date": "1921-03-31",
     "title": "Iowa Bystander",
@@ -221214,6 +222061,24 @@
       "st-paul-appeal/1921/1921-04-02/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-04-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-04-02_washington-bee",
+    "date": "1921-04-02",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-04-02/page_01.jpg",
+      "washington-bee/1921/1921-04-02/page_02.jpg",
+      "washington-bee/1921/1921-04-02/page_03.jpg",
+      "washington-bee/1921/1921-04-02/page_04.jpg",
+      "washington-bee/1921/1921-04-02/page_05.jpg",
+      "washington-bee/1921/1921-04-02/page_06.jpg",
+      "washington-bee/1921/1921-04-02/page_07.jpg",
+      "washington-bee/1921/1921-04-02/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-04-02/thumb.jpg",
     "uploaded": true
   },
   {
@@ -221500,6 +222365,24 @@
       "st-paul-appeal/1921/1921-04-09/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-04-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-04-09_washington-bee",
+    "date": "1921-04-09",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-04-09/page_01.jpg",
+      "washington-bee/1921/1921-04-09/page_02.jpg",
+      "washington-bee/1921/1921-04-09/page_03.jpg",
+      "washington-bee/1921/1921-04-09/page_04.jpg",
+      "washington-bee/1921/1921-04-09/page_05.jpg",
+      "washington-bee/1921/1921-04-09/page_06.jpg",
+      "washington-bee/1921/1921-04-09/page_07.jpg",
+      "washington-bee/1921/1921-04-09/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-04-09/thumb.jpg",
     "uploaded": true
   },
   {
@@ -222078,6 +222961,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-04-23_washington-bee",
+    "date": "1921-04-23",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-04-23/page_01.jpg",
+      "washington-bee/1921/1921-04-23/page_02.jpg",
+      "washington-bee/1921/1921-04-23/page_03.jpg",
+      "washington-bee/1921/1921-04-23/page_04.jpg",
+      "washington-bee/1921/1921-04-23/page_05.jpg",
+      "washington-bee/1921/1921-04-23/page_06.jpg",
+      "washington-bee/1921/1921-04-23/page_07.jpg",
+      "washington-bee/1921/1921-04-23/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-04-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-04-28_iowa-bystander",
     "date": "1921-04-28",
     "title": "Iowa Bystander",
@@ -222359,6 +223260,24 @@
       "st-paul-appeal/1921/1921-04-30/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-04-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-04-30_washington-bee",
+    "date": "1921-04-30",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-04-30/page_01.jpg",
+      "washington-bee/1921/1921-04-30/page_02.jpg",
+      "washington-bee/1921/1921-04-30/page_03.jpg",
+      "washington-bee/1921/1921-04-30/page_04.jpg",
+      "washington-bee/1921/1921-04-30/page_05.jpg",
+      "washington-bee/1921/1921-04-30/page_06.jpg",
+      "washington-bee/1921/1921-04-30/page_07.jpg",
+      "washington-bee/1921/1921-04-30/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-04-30/thumb.jpg",
     "uploaded": true
   },
   {
@@ -222649,6 +223568,24 @@
       "st-paul-appeal/1921/1921-05-07/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-05-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-05-07_washington-bee",
+    "date": "1921-05-07",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-05-07/page_01.jpg",
+      "washington-bee/1921/1921-05-07/page_02.jpg",
+      "washington-bee/1921/1921-05-07/page_03.jpg",
+      "washington-bee/1921/1921-05-07/page_04.jpg",
+      "washington-bee/1921/1921-05-07/page_05.jpg",
+      "washington-bee/1921/1921-05-07/page_06.jpg",
+      "washington-bee/1921/1921-05-07/page_07.jpg",
+      "washington-bee/1921/1921-05-07/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-05-07/thumb.jpg",
     "uploaded": true
   },
   {
@@ -222947,6 +223884,24 @@
       "st-paul-appeal/1921/1921-05-14/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-05-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-05-14_washington-bee",
+    "date": "1921-05-14",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-05-14/page_01.jpg",
+      "washington-bee/1921/1921-05-14/page_02.jpg",
+      "washington-bee/1921/1921-05-14/page_03.jpg",
+      "washington-bee/1921/1921-05-14/page_04.jpg",
+      "washington-bee/1921/1921-05-14/page_05.jpg",
+      "washington-bee/1921/1921-05-14/page_06.jpg",
+      "washington-bee/1921/1921-05-14/page_07.jpg",
+      "washington-bee/1921/1921-05-14/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-05-14/thumb.jpg",
     "uploaded": true
   },
   {
@@ -223261,6 +224216,24 @@
       "st-paul-appeal/1921/1921-05-21/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-05-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-05-21_washington-bee",
+    "date": "1921-05-21",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-05-21/page_01.jpg",
+      "washington-bee/1921/1921-05-21/page_02.jpg",
+      "washington-bee/1921/1921-05-21/page_03.jpg",
+      "washington-bee/1921/1921-05-21/page_04.jpg",
+      "washington-bee/1921/1921-05-21/page_05.jpg",
+      "washington-bee/1921/1921-05-21/page_06.jpg",
+      "washington-bee/1921/1921-05-21/page_07.jpg",
+      "washington-bee/1921/1921-05-21/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-05-21/thumb.jpg",
     "uploaded": true
   },
   {
@@ -223583,6 +224556,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-05-28_washington-bee",
+    "date": "1921-05-28",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-05-28/page_01.jpg",
+      "washington-bee/1921/1921-05-28/page_02.jpg",
+      "washington-bee/1921/1921-05-28/page_03.jpg",
+      "washington-bee/1921/1921-05-28/page_04.jpg",
+      "washington-bee/1921/1921-05-28/page_05.jpg",
+      "washington-bee/1921/1921-05-28/page_06.jpg",
+      "washington-bee/1921/1921-05-28/page_07.jpg",
+      "washington-bee/1921/1921-05-28/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-05-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-05-28_washington-tribune",
     "date": "1921-05-28",
     "title": "Washington Tribune",
@@ -223885,6 +224876,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-06-04_washington-bee",
+    "date": "1921-06-04",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-06-04/page_01.jpg",
+      "washington-bee/1921/1921-06-04/page_02.jpg",
+      "washington-bee/1921/1921-06-04/page_03.jpg",
+      "washington-bee/1921/1921-06-04/page_04.jpg",
+      "washington-bee/1921/1921-06-04/page_05.jpg",
+      "washington-bee/1921/1921-06-04/page_06.jpg",
+      "washington-bee/1921/1921-06-04/page_07.jpg",
+      "washington-bee/1921/1921-06-04/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-06-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-06-04_washington-tribune",
     "date": "1921-06-04",
     "title": "Washington Tribune",
@@ -224178,6 +225187,24 @@
       "st-paul-appeal/1921/1921-06-11/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-06-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-06-11_washington-bee",
+    "date": "1921-06-11",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-06-11/page_01.jpg",
+      "washington-bee/1921/1921-06-11/page_02.jpg",
+      "washington-bee/1921/1921-06-11/page_03.jpg",
+      "washington-bee/1921/1921-06-11/page_04.jpg",
+      "washington-bee/1921/1921-06-11/page_05.jpg",
+      "washington-bee/1921/1921-06-11/page_06.jpg",
+      "washington-bee/1921/1921-06-11/page_07.jpg",
+      "washington-bee/1921/1921-06-11/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-06-11/thumb.jpg",
     "uploaded": true
   },
   {
@@ -224502,6 +225529,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-06-18_washington-bee",
+    "date": "1921-06-18",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-06-18/page_01.jpg",
+      "washington-bee/1921/1921-06-18/page_02.jpg",
+      "washington-bee/1921/1921-06-18/page_03.jpg",
+      "washington-bee/1921/1921-06-18/page_04.jpg",
+      "washington-bee/1921/1921-06-18/page_05.jpg",
+      "washington-bee/1921/1921-06-18/page_06.jpg",
+      "washington-bee/1921/1921-06-18/page_07.jpg",
+      "washington-bee/1921/1921-06-18/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-06-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-06-18_washington-tribune",
     "date": "1921-06-18",
     "title": "Washington Tribune",
@@ -224803,6 +225848,24 @@
       "st-paul-appeal/1921/1921-06-25/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-06-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-06-25_washington-bee",
+    "date": "1921-06-25",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-06-25/page_01.jpg",
+      "washington-bee/1921/1921-06-25/page_02.jpg",
+      "washington-bee/1921/1921-06-25/page_03.jpg",
+      "washington-bee/1921/1921-06-25/page_04.jpg",
+      "washington-bee/1921/1921-06-25/page_05.jpg",
+      "washington-bee/1921/1921-06-25/page_06.jpg",
+      "washington-bee/1921/1921-06-25/page_07.jpg",
+      "washington-bee/1921/1921-06-25/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-06-25/thumb.jpg",
     "uploaded": true
   },
   {
@@ -225125,6 +226188,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-07-02_washington-bee",
+    "date": "1921-07-02",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-07-02/page_01.jpg",
+      "washington-bee/1921/1921-07-02/page_02.jpg",
+      "washington-bee/1921/1921-07-02/page_03.jpg",
+      "washington-bee/1921/1921-07-02/page_04.jpg",
+      "washington-bee/1921/1921-07-02/page_05.jpg",
+      "washington-bee/1921/1921-07-02/page_06.jpg",
+      "washington-bee/1921/1921-07-02/page_07.jpg",
+      "washington-bee/1921/1921-07-02/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-07-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-07-02_washington-tribune",
     "date": "1921-07-02",
     "title": "Washington Tribune",
@@ -225420,6 +226501,24 @@
       "st-paul-appeal/1921/1921-07-09/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-07-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-07-09_washington-bee",
+    "date": "1921-07-09",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-07-09/page_01.jpg",
+      "washington-bee/1921/1921-07-09/page_02.jpg",
+      "washington-bee/1921/1921-07-09/page_03.jpg",
+      "washington-bee/1921/1921-07-09/page_04.jpg",
+      "washington-bee/1921/1921-07-09/page_05.jpg",
+      "washington-bee/1921/1921-07-09/page_06.jpg",
+      "washington-bee/1921/1921-07-09/page_07.jpg",
+      "washington-bee/1921/1921-07-09/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-07-09/thumb.jpg",
     "uploaded": true
   },
   {
@@ -225740,6 +226839,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-07-16_washington-bee",
+    "date": "1921-07-16",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-07-16/page_01.jpg",
+      "washington-bee/1921/1921-07-16/page_02.jpg",
+      "washington-bee/1921/1921-07-16/page_03.jpg",
+      "washington-bee/1921/1921-07-16/page_04.jpg",
+      "washington-bee/1921/1921-07-16/page_05.jpg",
+      "washington-bee/1921/1921-07-16/page_06.jpg",
+      "washington-bee/1921/1921-07-16/page_07.jpg",
+      "washington-bee/1921/1921-07-16/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-07-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-07-16_washington-tribune",
     "date": "1921-07-16",
     "title": "Washington Tribune",
@@ -225986,6 +227103,24 @@
       "st-paul-appeal/1921/1921-07-23/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-07-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-07-23_washington-bee",
+    "date": "1921-07-23",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-07-23/page_01.jpg",
+      "washington-bee/1921/1921-07-23/page_02.jpg",
+      "washington-bee/1921/1921-07-23/page_03.jpg",
+      "washington-bee/1921/1921-07-23/page_04.jpg",
+      "washington-bee/1921/1921-07-23/page_05.jpg",
+      "washington-bee/1921/1921-07-23/page_06.jpg",
+      "washington-bee/1921/1921-07-23/page_07.jpg",
+      "washington-bee/1921/1921-07-23/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-07-23/thumb.jpg",
     "uploaded": true
   },
   {
@@ -226293,6 +227428,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-07-30_washington-bee",
+    "date": "1921-07-30",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-07-30/page_01.jpg",
+      "washington-bee/1921/1921-07-30/page_02.jpg",
+      "washington-bee/1921/1921-07-30/page_03.jpg",
+      "washington-bee/1921/1921-07-30/page_04.jpg",
+      "washington-bee/1921/1921-07-30/page_05.jpg",
+      "washington-bee/1921/1921-07-30/page_06.jpg",
+      "washington-bee/1921/1921-07-30/page_07.jpg",
+      "washington-bee/1921/1921-07-30/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-07-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-07-30_washington-tribune",
     "date": "1921-07-30",
     "title": "Washington Tribune",
@@ -226571,6 +227724,24 @@
       "st-paul-appeal/1921/1921-08-06/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-08-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-08-06_washington-bee",
+    "date": "1921-08-06",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-08-06/page_01.jpg",
+      "washington-bee/1921/1921-08-06/page_02.jpg",
+      "washington-bee/1921/1921-08-06/page_03.jpg",
+      "washington-bee/1921/1921-08-06/page_04.jpg",
+      "washington-bee/1921/1921-08-06/page_05.jpg",
+      "washington-bee/1921/1921-08-06/page_06.jpg",
+      "washington-bee/1921/1921-08-06/page_07.jpg",
+      "washington-bee/1921/1921-08-06/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-08-06/thumb.jpg",
     "uploaded": true
   },
   {
@@ -226894,6 +228065,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-08-13_washington-bee",
+    "date": "1921-08-13",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-08-13/page_01.jpg",
+      "washington-bee/1921/1921-08-13/page_02.jpg",
+      "washington-bee/1921/1921-08-13/page_03.jpg",
+      "washington-bee/1921/1921-08-13/page_04.jpg",
+      "washington-bee/1921/1921-08-13/page_05.jpg",
+      "washington-bee/1921/1921-08-13/page_06.jpg",
+      "washington-bee/1921/1921-08-13/page_07.jpg",
+      "washington-bee/1921/1921-08-13/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-08-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-08-13_washington-tribune",
     "date": "1921-08-13",
     "title": "Washington Tribune",
@@ -227192,6 +228381,24 @@
       "st-paul-appeal/1921/1921-08-20/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-08-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-08-20_washington-bee",
+    "date": "1921-08-20",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-08-20/page_01.jpg",
+      "washington-bee/1921/1921-08-20/page_02.jpg",
+      "washington-bee/1921/1921-08-20/page_03.jpg",
+      "washington-bee/1921/1921-08-20/page_04.jpg",
+      "washington-bee/1921/1921-08-20/page_05.jpg",
+      "washington-bee/1921/1921-08-20/page_06.jpg",
+      "washington-bee/1921/1921-08-20/page_07.jpg",
+      "washington-bee/1921/1921-08-20/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-08-20/thumb.jpg",
     "uploaded": true
   },
   {
@@ -227516,6 +228723,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-08-27_washington-bee",
+    "date": "1921-08-27",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-08-27/page_01.jpg",
+      "washington-bee/1921/1921-08-27/page_02.jpg",
+      "washington-bee/1921/1921-08-27/page_03.jpg",
+      "washington-bee/1921/1921-08-27/page_04.jpg",
+      "washington-bee/1921/1921-08-27/page_05.jpg",
+      "washington-bee/1921/1921-08-27/page_06.jpg",
+      "washington-bee/1921/1921-08-27/page_07.jpg",
+      "washington-bee/1921/1921-08-27/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-08-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-08-27_washington-tribune",
     "date": "1921-08-27",
     "title": "Washington Tribune",
@@ -227821,6 +229046,24 @@
       "st-paul-appeal/1921/1921-09-03/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-09-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-09-03_washington-bee",
+    "date": "1921-09-03",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-09-03/page_01.jpg",
+      "washington-bee/1921/1921-09-03/page_02.jpg",
+      "washington-bee/1921/1921-09-03/page_03.jpg",
+      "washington-bee/1921/1921-09-03/page_04.jpg",
+      "washington-bee/1921/1921-09-03/page_05.jpg",
+      "washington-bee/1921/1921-09-03/page_06.jpg",
+      "washington-bee/1921/1921-09-03/page_07.jpg",
+      "washington-bee/1921/1921-09-03/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-09-03/thumb.jpg",
     "uploaded": true
   },
   {
@@ -228148,6 +229391,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-09-10_washington-bee",
+    "date": "1921-09-10",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-09-10/page_01.jpg",
+      "washington-bee/1921/1921-09-10/page_02.jpg",
+      "washington-bee/1921/1921-09-10/page_03.jpg",
+      "washington-bee/1921/1921-09-10/page_04.jpg",
+      "washington-bee/1921/1921-09-10/page_05.jpg",
+      "washington-bee/1921/1921-09-10/page_06.jpg",
+      "washington-bee/1921/1921-09-10/page_07.jpg",
+      "washington-bee/1921/1921-09-10/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-09-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-09-10_washington-tribune",
     "date": "1921-09-10",
     "title": "Washington Tribune",
@@ -228467,6 +229728,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-09-17_washington-bee",
+    "date": "1921-09-17",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-09-17/page_01.jpg",
+      "washington-bee/1921/1921-09-17/page_02.jpg",
+      "washington-bee/1921/1921-09-17/page_03.jpg",
+      "washington-bee/1921/1921-09-17/page_04.jpg",
+      "washington-bee/1921/1921-09-17/page_05.jpg",
+      "washington-bee/1921/1921-09-17/page_06.jpg",
+      "washington-bee/1921/1921-09-17/page_07.jpg",
+      "washington-bee/1921/1921-09-17/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-09-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-09-17_washington-tribune",
     "date": "1921-09-17",
     "title": "Washington Tribune",
@@ -228764,6 +230043,24 @@
       "st-paul-appeal/1921/1921-09-24/page_05.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-09-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-09-24_washington-bee",
+    "date": "1921-09-24",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-09-24/page_01.jpg",
+      "washington-bee/1921/1921-09-24/page_02.jpg",
+      "washington-bee/1921/1921-09-24/page_03.jpg",
+      "washington-bee/1921/1921-09-24/page_04.jpg",
+      "washington-bee/1921/1921-09-24/page_05.jpg",
+      "washington-bee/1921/1921-09-24/page_06.jpg",
+      "washington-bee/1921/1921-09-24/page_07.jpg",
+      "washington-bee/1921/1921-09-24/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-09-24/thumb.jpg",
     "uploaded": true
   },
   {
@@ -229067,6 +230364,24 @@
       "st-paul-appeal/1921/1921-10-01/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-10-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-10-01_washington-bee",
+    "date": "1921-10-01",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-10-01/page_01.jpg",
+      "washington-bee/1921/1921-10-01/page_02.jpg",
+      "washington-bee/1921/1921-10-01/page_03.jpg",
+      "washington-bee/1921/1921-10-01/page_04.jpg",
+      "washington-bee/1921/1921-10-01/page_05.jpg",
+      "washington-bee/1921/1921-10-01/page_06.jpg",
+      "washington-bee/1921/1921-10-01/page_07.jpg",
+      "washington-bee/1921/1921-10-01/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-10-01/thumb.jpg",
     "uploaded": true
   },
   {
@@ -229692,6 +231007,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-10-15_washington-bee",
+    "date": "1921-10-15",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-10-15/page_01.jpg",
+      "washington-bee/1921/1921-10-15/page_02.jpg",
+      "washington-bee/1921/1921-10-15/page_03.jpg",
+      "washington-bee/1921/1921-10-15/page_04.jpg",
+      "washington-bee/1921/1921-10-15/page_05.jpg",
+      "washington-bee/1921/1921-10-15/page_06.jpg",
+      "washington-bee/1921/1921-10-15/page_07.jpg",
+      "washington-bee/1921/1921-10-15/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-10-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-10-15_washington-tribune",
     "date": "1921-10-15",
     "title": "Washington Tribune",
@@ -229997,6 +231330,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-10-22_washington-bee",
+    "date": "1921-10-22",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-10-22/page_01.jpg",
+      "washington-bee/1921/1921-10-22/page_02.jpg",
+      "washington-bee/1921/1921-10-22/page_03.jpg",
+      "washington-bee/1921/1921-10-22/page_04.jpg",
+      "washington-bee/1921/1921-10-22/page_05.jpg",
+      "washington-bee/1921/1921-10-22/page_06.jpg",
+      "washington-bee/1921/1921-10-22/page_07.jpg",
+      "washington-bee/1921/1921-10-22/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-10-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-10-22_washington-tribune",
     "date": "1921-10-22",
     "title": "Washington Tribune",
@@ -230299,6 +231650,24 @@
       "st-paul-appeal/1921/1921-10-29/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-10-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-10-29_washington-bee",
+    "date": "1921-10-29",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-10-29/page_01.jpg",
+      "washington-bee/1921/1921-10-29/page_02.jpg",
+      "washington-bee/1921/1921-10-29/page_03.jpg",
+      "washington-bee/1921/1921-10-29/page_04.jpg",
+      "washington-bee/1921/1921-10-29/page_05.jpg",
+      "washington-bee/1921/1921-10-29/page_06.jpg",
+      "washington-bee/1921/1921-10-29/page_07.jpg",
+      "washington-bee/1921/1921-10-29/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-10-29/thumb.jpg",
     "uploaded": true
   },
   {
@@ -230625,6 +231994,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-11-05_washington-bee",
+    "date": "1921-11-05",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-11-05/page_01.jpg",
+      "washington-bee/1921/1921-11-05/page_02.jpg",
+      "washington-bee/1921/1921-11-05/page_03.jpg",
+      "washington-bee/1921/1921-11-05/page_04.jpg",
+      "washington-bee/1921/1921-11-05/page_05.jpg",
+      "washington-bee/1921/1921-11-05/page_06.jpg",
+      "washington-bee/1921/1921-11-05/page_07.jpg",
+      "washington-bee/1921/1921-11-05/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-11-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-11-05_washington-tribune",
     "date": "1921-11-05",
     "title": "Washington Tribune",
@@ -230876,6 +232263,24 @@
       "st-paul-appeal/1921/1921-11-12/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-11-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-11-12_washington-bee",
+    "date": "1921-11-12",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-11-12/page_01.jpg",
+      "washington-bee/1921/1921-11-12/page_02.jpg",
+      "washington-bee/1921/1921-11-12/page_03.jpg",
+      "washington-bee/1921/1921-11-12/page_04.jpg",
+      "washington-bee/1921/1921-11-12/page_05.jpg",
+      "washington-bee/1921/1921-11-12/page_06.jpg",
+      "washington-bee/1921/1921-11-12/page_07.jpg",
+      "washington-bee/1921/1921-11-12/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-11-12/thumb.jpg",
     "uploaded": true
   },
   {
@@ -231199,6 +232604,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-11-19_washington-bee",
+    "date": "1921-11-19",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-11-19/page_01.jpg",
+      "washington-bee/1921/1921-11-19/page_02.jpg",
+      "washington-bee/1921/1921-11-19/page_03.jpg",
+      "washington-bee/1921/1921-11-19/page_04.jpg",
+      "washington-bee/1921/1921-11-19/page_05.jpg",
+      "washington-bee/1921/1921-11-19/page_06.jpg",
+      "washington-bee/1921/1921-11-19/page_07.jpg",
+      "washington-bee/1921/1921-11-19/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-11-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-11-19_washington-tribune",
     "date": "1921-11-19",
     "title": "Washington Tribune",
@@ -231519,6 +232942,24 @@
     "uploaded": true
   },
   {
+    "id": "1921-11-26_washington-bee",
+    "date": "1921-11-26",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-11-26/page_01.jpg",
+      "washington-bee/1921/1921-11-26/page_02.jpg",
+      "washington-bee/1921/1921-11-26/page_03.jpg",
+      "washington-bee/1921/1921-11-26/page_04.jpg",
+      "washington-bee/1921/1921-11-26/page_05.jpg",
+      "washington-bee/1921/1921-11-26/page_06.jpg",
+      "washington-bee/1921/1921-11-26/page_07.jpg",
+      "washington-bee/1921/1921-11-26/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-11-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1921-11-26_washington-tribune",
     "date": "1921-11-26",
     "title": "Washington Tribune",
@@ -231821,6 +233262,24 @@
       "st-paul-appeal/1921/1921-12-03/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-12-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-12-03_washington-bee",
+    "date": "1921-12-03",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-12-03/page_01.jpg",
+      "washington-bee/1921/1921-12-03/page_02.jpg",
+      "washington-bee/1921/1921-12-03/page_03.jpg",
+      "washington-bee/1921/1921-12-03/page_04.jpg",
+      "washington-bee/1921/1921-12-03/page_05.jpg",
+      "washington-bee/1921/1921-12-03/page_06.jpg",
+      "washington-bee/1921/1921-12-03/page_07.jpg",
+      "washington-bee/1921/1921-12-03/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-12-03/thumb.jpg",
     "uploaded": true
   },
   {
@@ -232133,6 +233592,24 @@
       "st-paul-appeal/1921/1921-12-10/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-12-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-12-10_washington-bee",
+    "date": "1921-12-10",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-12-10/page_01.jpg",
+      "washington-bee/1921/1921-12-10/page_02.jpg",
+      "washington-bee/1921/1921-12-10/page_03.jpg",
+      "washington-bee/1921/1921-12-10/page_04.jpg",
+      "washington-bee/1921/1921-12-10/page_05.jpg",
+      "washington-bee/1921/1921-12-10/page_06.jpg",
+      "washington-bee/1921/1921-12-10/page_07.jpg",
+      "washington-bee/1921/1921-12-10/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-12-10/thumb.jpg",
     "uploaded": true
   },
   {
@@ -232449,6 +233926,24 @@
       "st-paul-appeal/1921/1921-12-17/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1921/1921-12-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1921-12-17_washington-bee",
+    "date": "1921-12-17",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1921/1921-12-17/page_01.jpg",
+      "washington-bee/1921/1921-12-17/page_02.jpg",
+      "washington-bee/1921/1921-12-17/page_03.jpg",
+      "washington-bee/1921/1921-12-17/page_04.jpg",
+      "washington-bee/1921/1921-12-17/page_05.jpg",
+      "washington-bee/1921/1921-12-17/page_06.jpg",
+      "washington-bee/1921/1921-12-17/page_07.jpg",
+      "washington-bee/1921/1921-12-17/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1921/1921-12-17/thumb.jpg",
     "uploaded": true
   },
   {
@@ -233706,6 +235201,24 @@
     "uploaded": true
   },
   {
+    "id": "1922-01-14_washington-bee",
+    "date": "1922-01-14",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1922/1922-01-14/page_01.jpg",
+      "washington-bee/1922/1922-01-14/page_02.jpg",
+      "washington-bee/1922/1922-01-14/page_03.jpg",
+      "washington-bee/1922/1922-01-14/page_04.jpg",
+      "washington-bee/1922/1922-01-14/page_05.jpg",
+      "washington-bee/1922/1922-01-14/page_06.jpg",
+      "washington-bee/1922/1922-01-14/page_07.jpg",
+      "washington-bee/1922/1922-01-14/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1922/1922-01-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1922-01-14_washington-tribune",
     "date": "1922-01-14",
     "title": "Washington Tribune",
@@ -233994,6 +235507,24 @@
       "st-paul-appeal/1922/1922-01-21/page_04.jpg"
     ],
     "issue_thumb": "st-paul-appeal/1922/1922-01-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1922-01-21_washington-bee",
+    "date": "1922-01-21",
+    "title": "Washington Bee",
+    "pages": 8,
+    "page_paths": [
+      "washington-bee/1922/1922-01-21/page_01.jpg",
+      "washington-bee/1922/1922-01-21/page_02.jpg",
+      "washington-bee/1922/1922-01-21/page_03.jpg",
+      "washington-bee/1922/1922-01-21/page_04.jpg",
+      "washington-bee/1922/1922-01-21/page_05.jpg",
+      "washington-bee/1922/1922-01-21/page_06.jpg",
+      "washington-bee/1922/1922-01-21/page_07.jpg",
+      "washington-bee/1922/1922-01-21/page_08.jpg"
+    ],
+    "issue_thumb": "washington-bee/1922/1922-01-21/thumb.jpg",
     "uploaded": true
   },
   {
