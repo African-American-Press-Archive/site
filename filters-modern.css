@@ -1,0 +1,254 @@
+/* Modern Filter System Styles */
+
+/* Filter Bar */
+.filter-bar-modern {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+}
+
+.filter-bar-modern.sticky-condensed {
+    padding: 0.75rem 1rem;
+}
+
+.filter-bar-modern.sticky-condensed h2 {
+    font-size: 1rem;
+}
+
+/* Filter Chips */
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+    border: 1.5px solid var(--border-color);
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.filter-chip:hover {
+    border-color: var(--unc-tile-teal);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+}
+
+.filter-chip.active {
+    background: var(--unc-tile-teal);
+    border-color: var(--unc-tile-teal);
+    color: white;
+}
+
+.filter-chip.active svg {
+    transform: rotate(180deg);
+}
+
+/* Active Filter Tags */
+#active-filters:not(.empty\:hidden):empty {
+    display: none;
+}
+
+.filter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: var(--unc-carolina-blue);
+    color: white;
+    animation: slideIn 0.2s ease-out;
+}
+
+.filter-tag-remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.filter-tag-remove:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Filter Panels */
+.filter-panel-slide {
+    background: white;
+}
+
+.filter-panel-slide.open {
+    transform: translateX(0);
+}
+
+#filter-backdrop.show {
+    opacity: 1;
+}
+
+/* Year Grid */
+#year-grid button {
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--bg-secondary);
+    border: 2px solid transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+#year-grid button:hover {
+    background: var(--bg-card);
+    border-color: var(--unc-tile-teal);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#year-grid button.selected {
+    background: var(--unc-tile-teal);
+    border-color: var(--unc-tile-teal);
+    color: white;
+    box-shadow: 0 4px 16px rgba(75, 156, 211, 0.3);
+}
+
+#year-grid button.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Month Grid */
+#month-grid button {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--bg-secondary);
+    border: 2px solid transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+#month-grid button:hover {
+    background: var(--bg-card);
+    border-color: var(--unc-carolina-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#month-grid button.selected {
+    background: var(--unc-carolina-blue);
+    border-color: var(--unc-carolina-blue);
+    color: white;
+    box-shadow: 0 4px 16px rgba(123, 175, 212, 0.3);
+}
+
+#month-grid button.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Paper List */
+.paper-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    border-radius: 0.75rem;
+    transition: all 0.15s;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+}
+
+.paper-checkbox-item:hover {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+.paper-checkbox-item.selected {
+    background: rgba(75, 156, 211, 0.08);
+    border-color: var(--unc-tile-teal);
+}
+
+.paper-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.375rem;
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.paper-checkbox-item.selected .paper-checkbox {
+    background: var(--unc-tile-teal);
+    border-color: var(--unc-tile-teal);
+}
+
+.paper-checkbox svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    color: white;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s;
+}
+
+.paper-checkbox-item.selected .paper-checkbox svg {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.paper-name {
+    flex: 1;
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+}
+
+.paper-count {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    background: var(--bg-secondary);
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .filter-panel-slide {
+        max-width: 100%;
+    }
+
+    #year-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #month-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
