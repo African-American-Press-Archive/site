@@ -331,6 +331,14 @@ papers:
   #   - type: pdf
   #     folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/tattler_pdfs
   #     sample_filename: inter-state-tattler_1922-10-22.pdf
+  seattle-caytons-weekly:
+    title: Seattle Cayton's Weekly
+    path: seattle-caytons-weekly
+    base_url: https://pages.dangerouspress.org/seattle-caytons-weekly
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn87093353
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
