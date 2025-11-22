@@ -187,10 +187,19 @@ class ModernFilterSystem {
     populatePaperList(papers) {
         const paperList = document.getElementById('paper-list');
         if (!paperList) return;
-        
+
         this.availablePapers = papers;
+
+        // Remove papers that are no longer available from selection
+        const availableSlugs = new Set(papers.map(p => p.slug));
+        this.selectedPapers.forEach(slug => {
+            if (!availableSlugs.has(slug)) {
+                this.selectedPapers.delete(slug);
+            }
+        });
+
         paperList.innerHTML = '';
-        
+
         papers.forEach(paper => {
             const item = document.createElement('div');
             item.className = 'paper-checkbox-item';
