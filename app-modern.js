@@ -1,5 +1,6 @@
 // Modern Filter Integration with Main App
 // This bridges the new filter UI with the existing app.js functionality
+// Note: Requires app.js and filters-modern.js to be loaded first
 
 // Wait for both the main app and manifest to be ready
 let appReady = false;
