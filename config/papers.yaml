@@ -339,6 +339,14 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn87093353
+  gary-american:
+    title: Gary American
+    path: gary-american
+    base_url: https://pages.dangerouspress.org/gary-american
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn86058053
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
