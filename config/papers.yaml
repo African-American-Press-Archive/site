@@ -347,6 +347,14 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn86058053
+  california-eagle:
+    title: California Eagle
+    path: california-eagle
+    base_url: https://pages.dangerouspress.org/california-eagle
+    sources:
+    - type: jp2
+      root: /Users/nealcaren/Dropbox/california-eagle/
+      lccn: california-eagle
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
