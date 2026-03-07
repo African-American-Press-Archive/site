@@ -1663,6 +1663,9 @@ async function loadPage(pageIndex, transition = 'next') {
             updatePageNavigationButtons();
             updateThumbnailSelection();
 
+            // Load OCR data for this page
+            loadOCRForPage(pagePath);
+
             state.pageCache.set(pagePath, tempImg);
             resolve();
         };
@@ -1748,6 +1751,9 @@ function closeViewer() {
     // Hide viewer-specific UI elements
     hideElement('thumbnail-strip');
     hideElement('help-overlay');
+    hideOCRPanel();
+    document.getElementById('ocr-toggle-btn').classList.add('hidden');
+    ocrState.currentData = null;
 
     // Reset viewer state
     state.thumbnailsVisible = false;
@@ -2349,6 +2355,13 @@ function setupEventListeners() {
                 e.preventDefault();
             }
 
+            if (e.key === 'r' || e.key === 'R') {
+                if (ocrState.currentData) {
+                    toggleOCRPanel();
+                }
+                e.preventDefault();
+            }
+
             if (e.key === '?' || e.key === '/') {
                 toggleHelp();
                 e.preventDefault();
@@ -2413,3 +2426,105 @@ function setupEventListeners() {
         }
     });
 }
+
+// ==================== OCR TEXT PANEL ====================
+const ocrState = {
+    currentData: null,
+    panelVisible: false,
+    activeRegionIdx: -1,
+};
+
+async function loadOCRForPage(pagePath) {
+    const jsonPath = pagePath.replace('.jpg', '.json');
+    const jsonUrl = resolveAssetPath(jsonPath);
+    const toggleBtn = document.getElementById('ocr-toggle-btn');
+
+    try {
+        const resp = await fetch(jsonUrl);
+        if (!resp.ok) {
+            ocrState.currentData = null;
+            toggleBtn.classList.add('hidden');
+            hideOCRPanel();
+            return;
+        }
+        ocrState.currentData = await resp.json();
+        toggleBtn.classList.remove('hidden');
+        if (ocrState.panelVisible) {
+            renderOCRPanel(ocrState.currentData);
+        }
+    } catch {
+        ocrState.currentData = null;
+        toggleBtn.classList.add('hidden');
+        hideOCRPanel();
+    }
+}
+
+function renderOCRPanel(data) {
+    const content = document.getElementById('ocr-panel-content');
+    if (!data || !data.regions) {
+        content.innerHTML = '<p style="color: var(--text-muted);">No OCR data available.</p>';
+        return;
+    }
+    content.innerHTML = data.regions.map((r, i) => {
+        const escaped = r.text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
+        if (r.label === 'doc_title') return `<h2 class="ocr-block-title" data-ocr-idx="${i}">${escaped}</h2>`;
+        if (r.label === 'paragraph_title') return `<h3 class="ocr-block-subtitle" data-ocr-idx="${i}">${escaped}</h3>`;
+        return `<p class="ocr-block-text" data-ocr-idx="${i}">${escaped}</p>`;
+    }).join('');
+
+    // Click handlers for text blocks
+    content.querySelectorAll('[data-ocr-idx]').forEach(el => {
+        el.addEventListener('click', () => {
+            highlightOCRRegion(parseInt(el.dataset.ocrIdx));
+        });
+    });
+}
+
+function highlightOCRRegion(idx) {
+    const content = document.getElementById('ocr-panel-content');
+    // Clear old highlights
+    content.querySelectorAll('.ocr-block-highlight').forEach(el => el.classList.remove('ocr-block-highlight'));
+    // Toggle
+    if (idx === ocrState.activeRegionIdx) {
+        ocrState.activeRegionIdx = -1;
+        return;
+    }
+    ocrState.activeRegionIdx = idx;
+    const block = content.querySelector(`[data-ocr-idx="${idx}"]`);
+    if (block) {
+        block.classList.add('ocr-block-highlight');
+        block.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+}
+
+function showOCRPanel() {
+    const panel = document.getElementById('ocr-panel');
+    const toggleBtn = document.getElementById('ocr-toggle-btn');
+    panel.classList.remove('hidden');
+    toggleBtn.classList.add('active');
+    ocrState.panelVisible = true;
+    if (ocrState.currentData) {
+        renderOCRPanel(ocrState.currentData);
+    }
+}
+
+function hideOCRPanel() {
+    const panel = document.getElementById('ocr-panel');
+    const toggleBtn = document.getElementById('ocr-toggle-btn');
+    panel.classList.add('hidden');
+    toggleBtn.classList.remove('active');
+    ocrState.panelVisible = false;
+    ocrState.activeRegionIdx = -1;
+}
+
+function toggleOCRPanel() {
+    if (ocrState.panelVisible) {
+        hideOCRPanel();
+    } else if (ocrState.currentData) {
+        showOCRPanel();
+    }
+}
+
+// Wire up OCR toggle button and close button
+document.getElementById('ocr-toggle-btn')?.addEventListener('click', toggleOCRPanel);
+document.getElementById('ocr-panel-close')?.addEventListener('click', hideOCRPanel);

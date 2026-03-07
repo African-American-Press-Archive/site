@@ -356,6 +356,15 @@
                 </div>
                 <div class="flex items-center gap-2">
                     <button
+                        id="ocr-toggle-btn"
+                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all hidden"
+                        style="background: var(--unc-basin-slate); color: white;"
+                        data-tooltip="Toggle OCR text (R)"
+                        aria-label="Toggle OCR text panel"
+                    >
+                        <span class="text-sm font-bold">Aa</span>
+                    </button>
+                    <button
                         id="help-btn"
                         class="w-10 h-10 rounded-lg flex items-center justify-center transition-all"
                         style="background: var(--unc-basin-slate); color: white;"
@@ -404,7 +413,7 @@
             <!-- Main Content Area with Page Container -->
             <div class="flex-1 flex flex-col overflow-hidden">
                 <!-- Page Container with Reading Surface -->
-                <div class="flex-1 relative overflow-hidden">
+                <div class="flex-1 relative overflow-hidden flex">
                     <!-- Reading Surface Background -->
                     <div class="absolute inset-0 pointer-events-none">
                         <div class="w-full h-full opacity-20" style="
@@ -426,6 +435,17 @@
                         <!-- Loading indicator -->
                         <div id="page-loading" class="absolute inset-0 flex items-center justify-center rounded-2xl hidden" style="background: rgba(0, 0, 0, 0.6);">
                             <div class="w-12 h-12 border-4 rounded-full animate-spin" style="border-color: rgba(255, 255, 255, 0.2); border-top-color: var(--unc-tile-teal);"></div>
+                        </div>
+                    </div>
+
+                    <!-- OCR Text Panel -->
+                    <div id="ocr-panel" class="hidden">
+                        <div id="ocr-panel-header">
+                            <span class="ocr-panel-title">OCR Text</span>
+                            <button id="ocr-panel-close" aria-label="Close OCR panel">&times;</button>
+                        </div>
+                        <div id="ocr-panel-content">
+                            <!-- OCR text blocks will be populated here -->
                         </div>
                     </div>
                 </div>
@@ -562,6 +582,10 @@
                         <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
                             <span style="color: var(--text-primary);">Download Page</span>
                             <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">D</kbd>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Toggle OCR Text</span>
+                            <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">R</kbd>
                         </div>
                         <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
                             <span style="color: var(--text-primary);">Close Viewer</span>
