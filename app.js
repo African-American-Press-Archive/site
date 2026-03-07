@@ -2291,17 +2291,21 @@ function setupEventListeners() {
         });
 
         viewerImage.addEventListener('click', (e) => {
-            // Only trigger zoom if mouse didn't move much (wasn't a drag)
+            // Only trigger if mouse didn't move much (wasn't a drag)
             const deltaX = Math.abs(e.clientX - clickStartX);
             const deltaY = Math.abs(e.clientY - clickStartY);
             if (deltaX >= 5 || deltaY >= 5) return;
 
-            // Hit-test OCR regions at click point
-            hitTestOCRRegion(e);
+            const hitIdx = hitTestOCRRegion(e);
 
             if (state.zoomLevel === 1) {
+                // At 1x: zoom in, highlight if we hit a region
                 zoomToPoint(e);
+            } else if (hitIdx >= 0) {
+                // Zoomed and clicked a region: pan to it, stay zoomed
+                panToOCRRegion(hitIdx);
             } else {
+                // Zoomed and clicked empty space: zoom out
                 resetZoom();
             }
         });
@@ -2549,15 +2553,15 @@ function clearOCROverlays() {
 }
 
 function hitTestOCRRegion(e) {
-    if (!ocrState.currentData || !ocrState.currentData.regions) return;
+    if (!ocrState.currentData || !ocrState.currentData.regions) return -1;
     const image = document.getElementById('viewer-image');
-    if (!image) return;
+    if (!image) return -1;
     const rect = image.getBoundingClientRect();
     const imgW = image.naturalWidth;
     const imgH = image.naturalHeight;
-    if (!imgW || !imgH) return;
+    if (!imgW || !imgH) return -1;
 
-    // Click position as fraction of displayed image
+    // Click position in image-pixel coordinates
     const clickX = (e.clientX - rect.left) / rect.width * imgW;
     const clickY = (e.clientY - rect.top) / rect.height * imgH;
 
@@ -2576,12 +2580,43 @@ function hitTestOCRRegion(e) {
     });
 
     if (bestIdx >= 0) {
-        // Auto-open panel if needed
         if (!ocrState.panelVisible && ocrState.currentData) {
             showOCRPanel();
         }
         highlightOCRRegion(bestIdx, 'image');
     }
+    return bestIdx;
+}
+
+function panToOCRRegion(idx) {
+    if (!ocrState.currentData || !ocrState.currentData.regions[idx]) return;
+    const container = document.getElementById('image-container');
+    const image = document.getElementById('viewer-image');
+    if (!container || !image) return;
+
+    const [x1, y1, x2, y2] = ocrState.currentData.regions[idx].bbox;
+    const imgW = image.naturalWidth;
+    const imgH = image.naturalHeight;
+    const rect = container.getBoundingClientRect();
+    // Unscaled container size
+    const cw = rect.width / state.zoomLevel;
+    const ch = rect.height / state.zoomLevel;
+
+    // Region center as fraction of image
+    const centerXRatio = ((x1 + x2) / 2) / imgW;
+    const centerYRatio = ((y1 + y2) / 2) / imgH;
+
+    // Translate to center the region (in pre-scale px)
+    const tx = (0.5 - centerXRatio) * cw;
+    const ty = (0.5 - centerYRatio) * ch;
+
+    // Clamp
+    const maxTx = cw * (1 - 1 / state.zoomLevel) / 2;
+    const maxTy = ch * (1 - 1 / state.zoomLevel) / 2;
+
+    panState.translateX = Math.max(-maxTx, Math.min(maxTx, tx));
+    panState.translateY = Math.max(-maxTy, Math.min(maxTy, ty));
+    updateImageTransform();
 }
 
 function highlightOCRRegion(idx, source) {
@@ -2613,9 +2648,9 @@ function highlightOCRRegion(idx, source) {
         const overlay = overlayContainer.querySelector(`[data-ocr-idx="${idx}"]`);
         if (overlay) {
             overlay.classList.add('ocr-overlay-active');
-            // If click came from text panel, scroll image to show the region
-            if (source === 'text') {
-                overlay.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+            // If click came from text panel, pan zoomed image to show the region
+            if (source === 'text' && state.zoomLevel > 1) {
+                panToOCRRegion(idx);
             }
         }
     }
