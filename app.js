@@ -2296,6 +2296,9 @@ function setupEventListeners() {
             const deltaY = Math.abs(e.clientY - clickStartY);
             if (deltaX >= 5 || deltaY >= 5) return;
 
+            // Hit-test OCR regions at click point
+            hitTestOCRRegion(e);
+
             if (state.zoomLevel === 1) {
                 zoomToPoint(e);
             } else {
@@ -2536,10 +2539,6 @@ function renderOCROverlays(data) {
         box.style.top = (y1 / imgH * 100) + '%';
         box.style.width = ((x2 - x1) / imgW * 100) + '%';
         box.style.height = ((y2 - y1) / imgH * 100) + '%';
-        box.addEventListener('click', (e) => {
-            e.stopPropagation();
-            highlightOCRRegion(i, 'image');
-        });
         container.appendChild(box);
     });
 }
@@ -2547,6 +2546,42 @@ function renderOCROverlays(data) {
 function clearOCROverlays() {
     const container = document.getElementById('ocr-overlay-container');
     if (container) container.innerHTML = '';
+}
+
+function hitTestOCRRegion(e) {
+    if (!ocrState.currentData || !ocrState.currentData.regions) return;
+    const image = document.getElementById('viewer-image');
+    if (!image) return;
+    const rect = image.getBoundingClientRect();
+    const imgW = image.naturalWidth;
+    const imgH = image.naturalHeight;
+    if (!imgW || !imgH) return;
+
+    // Click position as fraction of displayed image
+    const clickX = (e.clientX - rect.left) / rect.width * imgW;
+    const clickY = (e.clientY - rect.top) / rect.height * imgH;
+
+    // Find the smallest region containing the click point
+    let bestIdx = -1;
+    let bestArea = Infinity;
+    ocrState.currentData.regions.forEach((r, i) => {
+        const [x1, y1, x2, y2] = r.bbox;
+        if (clickX >= x1 && clickX <= x2 && clickY >= y1 && clickY <= y2) {
+            const area = (x2 - x1) * (y2 - y1);
+            if (area < bestArea) {
+                bestArea = area;
+                bestIdx = i;
+            }
+        }
+    });
+
+    if (bestIdx >= 0) {
+        // Auto-open panel if needed
+        if (!ocrState.panelVisible && ocrState.currentData) {
+            showOCRPanel();
+        }
+        highlightOCRRegion(bestIdx, 'image');
+    }
 }
 
 function highlightOCRRegion(idx, source) {
