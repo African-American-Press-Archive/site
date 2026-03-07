@@ -1863,7 +1863,7 @@ const panState = {
 };
 
 function zoomImage(direction) {
-    const image = document.getElementById('viewer-image');
+    const container = document.getElementById('image-container');
     const wrapper = document.getElementById('image-wrapper');
 
     if (direction > 0) {
@@ -1882,10 +1882,10 @@ function zoomImage(direction) {
 
     // Update cursor and enable/disable dragging
     if (state.zoomLevel > 1) {
-        image.style.cursor = 'grab';
+        container.style.cursor = 'grab';
         wrapper.style.overflow = 'hidden';
     } else {
-        image.style.cursor = 'zoom-in';
+        container.style.cursor = 'zoom-in';
         wrapper.style.overflow = 'auto';
     }
 }
@@ -1895,31 +1895,31 @@ function resetZoom() {
     panState.translateX = 0;
     panState.translateY = 0;
 
-    const image = document.getElementById('viewer-image');
+    const container = document.getElementById('image-container');
     const wrapper = document.getElementById('image-wrapper');
 
     updateImageTransform();
-    image.style.cursor = 'zoom-in';
+    container.style.cursor = 'zoom-in';
     wrapper.style.overflow = 'auto';
 }
 
 function updateImageTransform() {
-    const image = document.getElementById('viewer-image');
-    image.style.transform = `scale(${state.zoomLevel}) translate(${panState.translateX}px, ${panState.translateY}px)`;
+    const container = document.getElementById('image-container');
+    container.style.transform = `scale(${state.zoomLevel}) translate(${panState.translateX}px, ${panState.translateY}px)`;
 }
 
 // Pan handlers
 function initPanHandlers() {
-    const image = document.getElementById('viewer-image');
-    if (!image) return;
+    const container = document.getElementById('image-container');
+    if (!container) return;
 
-    image.addEventListener('mousedown', (e) => {
+    container.addEventListener('mousedown', (e) => {
         if (state.zoomLevel <= 1) return;
 
         panState.isDragging = true;
         panState.startX = e.clientX - panState.translateX;
         panState.startY = e.clientY - panState.translateY;
-        image.style.cursor = 'grabbing';
+        container.style.cursor = 'grabbing';
         e.preventDefault();
     });
 
@@ -1935,15 +1935,15 @@ function initPanHandlers() {
     document.addEventListener('mouseup', () => {
         if (panState.isDragging) {
             panState.isDragging = false;
-            const image = document.getElementById('viewer-image');
-            if (image && state.zoomLevel > 1) {
-                image.style.cursor = 'grab';
+            const container = document.getElementById('image-container');
+            if (container && state.zoomLevel > 1) {
+                container.style.cursor = 'grab';
             }
         }
     });
 
     // Touch support for mobile
-    image.addEventListener('touchstart', (e) => {
+    container.addEventListener('touchstart', (e) => {
         if (state.zoomLevel <= 1 || e.touches.length !== 1) return;
 
         panState.isDragging = true;
@@ -1952,7 +1952,7 @@ function initPanHandlers() {
         e.preventDefault();
     });
 
-    image.addEventListener('touchmove', (e) => {
+    container.addEventListener('touchmove', (e) => {
         if (!panState.isDragging || state.zoomLevel <= 1 || e.touches.length !== 1) return;
 
         panState.translateX = e.touches[0].clientX - panState.startX;
@@ -1961,7 +1961,7 @@ function initPanHandlers() {
         e.preventDefault();
     });
 
-    image.addEventListener('touchend', () => {
+    container.addEventListener('touchend', () => {
         panState.isDragging = false;
     });
 }
@@ -2439,6 +2439,8 @@ async function loadOCRForPage(pagePath) {
     const jsonUrl = resolveAssetPath(jsonPath);
     const toggleBtn = document.getElementById('ocr-toggle-btn');
 
+    clearOCROverlays();
+
     try {
         const resp = await fetch(jsonUrl);
         if (!resp.ok) {
@@ -2449,9 +2451,8 @@ async function loadOCRForPage(pagePath) {
         }
         ocrState.currentData = await resp.json();
         toggleBtn.classList.remove('hidden');
-        if (ocrState.panelVisible) {
-            renderOCRPanel(ocrState.currentData);
-        }
+        // Auto-show panel when OCR data is available
+        showOCRPanel();
     } catch {
         ocrState.currentData = null;
         toggleBtn.classList.add('hidden');
@@ -2472,28 +2473,88 @@ function renderOCRPanel(data) {
         return `<p class="ocr-block-text" data-ocr-idx="${i}">${escaped}</p>`;
     }).join('');
 
-    // Click handlers for text blocks
+    // Click text → highlight on image
     content.querySelectorAll('[data-ocr-idx]').forEach(el => {
         el.addEventListener('click', () => {
-            highlightOCRRegion(parseInt(el.dataset.ocrIdx));
+            highlightOCRRegion(parseInt(el.dataset.ocrIdx), 'text');
         });
+    });
+
+    renderOCROverlays(data);
+}
+
+function renderOCROverlays(data) {
+    clearOCROverlays();
+    const container = document.getElementById('ocr-overlay-container');
+    const image = document.getElementById('viewer-image');
+    if (!container || !image || !data || !data.regions) return;
+
+    // Wait for image to have natural dimensions
+    const imgW = image.naturalWidth;
+    const imgH = image.naturalHeight;
+    if (!imgW || !imgH) return;
+
+    data.regions.forEach((r, i) => {
+        const [x1, y1, x2, y2] = r.bbox;
+        const box = document.createElement('div');
+        box.className = 'ocr-overlay-box';
+        box.dataset.ocrIdx = i;
+        box.style.left = (x1 / imgW * 100) + '%';
+        box.style.top = (y1 / imgH * 100) + '%';
+        box.style.width = ((x2 - x1) / imgW * 100) + '%';
+        box.style.height = ((y2 - y1) / imgH * 100) + '%';
+        box.addEventListener('click', (e) => {
+            e.stopPropagation();
+            highlightOCRRegion(i, 'image');
+        });
+        container.appendChild(box);
     });
 }
 
-function highlightOCRRegion(idx) {
+function clearOCROverlays() {
+    const container = document.getElementById('ocr-overlay-container');
+    if (container) container.innerHTML = '';
+}
+
+function highlightOCRRegion(idx, source) {
     const content = document.getElementById('ocr-panel-content');
+    const overlayContainer = document.getElementById('ocr-overlay-container');
+
     // Clear old highlights
     content.querySelectorAll('.ocr-block-highlight').forEach(el => el.classList.remove('ocr-block-highlight'));
-    // Toggle
+    if (overlayContainer) {
+        overlayContainer.querySelectorAll('.ocr-overlay-active').forEach(el => el.classList.remove('ocr-overlay-active'));
+    }
+
+    // Toggle off if clicking same region
     if (idx === ocrState.activeRegionIdx) {
         ocrState.activeRegionIdx = -1;
         return;
     }
     ocrState.activeRegionIdx = idx;
+
+    // Highlight text block + scroll to it
     const block = content.querySelector(`[data-ocr-idx="${idx}"]`);
     if (block) {
         block.classList.add('ocr-block-highlight');
         block.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // Highlight overlay box on image
+    if (overlayContainer) {
+        const overlay = overlayContainer.querySelector(`[data-ocr-idx="${idx}"]`);
+        if (overlay) {
+            overlay.classList.add('ocr-overlay-active');
+            // If click came from text panel, scroll image to show the region
+            if (source === 'text') {
+                overlay.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+            }
+        }
+    }
+
+    // If click came from image and panel not visible, open it
+    if (source === 'image' && !ocrState.panelVisible && ocrState.currentData) {
+        showOCRPanel();
     }
 }
 
@@ -2515,6 +2576,11 @@ function hideOCRPanel() {
     toggleBtn.classList.remove('active');
     ocrState.panelVisible = false;
     ocrState.activeRegionIdx = -1;
+    // Clear overlay highlights when panel is hidden
+    const overlayContainer = document.getElementById('ocr-overlay-container');
+    if (overlayContainer) {
+        overlayContainer.querySelectorAll('.ocr-overlay-active').forEach(el => el.classList.remove('ocr-overlay-active'));
+    }
 }
 
 function toggleOCRPanel() {

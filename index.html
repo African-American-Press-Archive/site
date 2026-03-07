@@ -425,13 +425,16 @@
 
                     <!-- Page Image Wrapper -->
                     <div id="image-wrapper" class="relative w-full h-full overflow-auto z-10 px-4 md:px-12 py-6 md:py-10">
+                        <div id="image-container" class="relative inline-block w-full transition-transform duration-300 will-change-transform" style="cursor: zoom-in; transform-origin: center center;">
                         <img
                             id="viewer-image"
                             src=""
                             alt="Newspaper page"
-                            class="w-full h-auto object-contain rounded-2xl shadow-2xl transition-transform duration-300 will-change-transform"
-                            style="cursor: zoom-in; opacity: 1;"
+                            class="w-full h-auto object-contain rounded-2xl shadow-2xl"
+                            style="opacity: 1;"
                         />
+                        <div id="ocr-overlay-container" class="absolute inset-0 pointer-events-none" style="border-radius: 1rem;"></div>
+                        </div>
                         <!-- Loading indicator -->
                         <div id="page-loading" class="absolute inset-0 flex items-center justify-center rounded-2xl hidden" style="background: rgba(0, 0, 0, 0.6);">
                             <div class="w-12 h-12 border-4 rounded-full animate-spin" style="border-color: rgba(255, 255, 255, 0.2); border-top-color: var(--unc-tile-teal);"></div>

@@ -2189,6 +2189,23 @@ header.scrolled {
     outline-offset: 2px;
 }
 
+/* OCR image overlays */
+.ocr-overlay-box {
+    position: absolute;
+    pointer-events: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.15s, background 0.15s;
+}
+.ocr-overlay-box:hover {
+    border-color: rgba(0, 165, 173, 0.5);
+    background: rgba(0, 165, 173, 0.08);
+}
+.ocr-overlay-box.ocr-overlay-active {
+    border-color: rgba(0, 165, 173, 0.7);
+    background: rgba(0, 165, 173, 0.15);
+}
+
 /* OCR badge on issue cards */
 .ocr-badge {
     display: inline-block;
