@@ -2570,7 +2570,7 @@ function highlightOCRRegion(idx, source) {
     const block = content.querySelector(`[data-ocr-idx="${idx}"]`);
     if (block) {
         block.classList.add('ocr-block-highlight');
-        block.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        block.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // Highlight overlay box on image
