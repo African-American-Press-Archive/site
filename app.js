@@ -2648,8 +2648,16 @@ function highlightOCRRegion(idx, source) {
         const overlay = overlayContainer.querySelector(`[data-ocr-idx="${idx}"]`);
         if (overlay) {
             overlay.classList.add('ocr-overlay-active');
-            // If click came from text panel, pan zoomed image to show the region
-            if (source === 'text' && state.zoomLevel > 1) {
+            // If click came from text panel, zoom+pan image to center the region
+            if (source === 'text') {
+                if (state.zoomLevel === 1) {
+                    // Zoom in first
+                    const container = document.getElementById('image-container');
+                    const wrapper = document.getElementById('image-wrapper');
+                    state.zoomLevel = 2;
+                    container.style.cursor = 'grab';
+                    wrapper.style.overflow = 'hidden';
+                }
                 panToOCRRegion(idx);
             }
         }
