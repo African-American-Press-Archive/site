@@ -1903,6 +1903,40 @@ function resetZoom() {
     wrapper.style.overflow = 'auto';
 }
 
+function zoomToPoint(e) {
+    const container = document.getElementById('image-container');
+    const wrapper = document.getElementById('image-wrapper');
+    const targetZoom = 2;
+
+    // Get click position relative to the container (0-1 range)
+    const rect = container.getBoundingClientRect();
+    const clickXRatio = (e.clientX - rect.left) / rect.width;
+    const clickYRatio = (e.clientY - rect.top) / rect.height;
+
+    // At scale(2), the container is 2x its size. translate() inside scale()
+    // operates in pre-scale coordinates. We want the clicked point centered
+    // in the wrapper viewport.
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const centerXRatio = 0.5;
+    const centerYRatio = 0.5;
+
+    // Translate needed (in pre-scale px) to move clicked point to center
+    const tx = (centerXRatio - clickXRatio) * rect.width;
+    const ty = (centerYRatio - clickYRatio) * rect.height;
+
+    // Clamp so we don't show empty space beyond edges
+    const maxTx = rect.width * (1 - 1 / targetZoom) / 2;
+    const maxTy = rect.height * (1 - 1 / targetZoom) / 2;
+
+    state.zoomLevel = targetZoom;
+    panState.translateX = Math.max(-maxTx, Math.min(maxTx, tx));
+    panState.translateY = Math.max(-maxTy, Math.min(maxTy, ty));
+
+    updateImageTransform();
+    container.style.cursor = 'grab';
+    wrapper.style.overflow = 'hidden';
+}
+
 function updateImageTransform() {
     const container = document.getElementById('image-container');
     container.style.transform = `scale(${state.zoomLevel}) translate(${panState.translateX}px, ${panState.translateY}px)`;
@@ -2246,7 +2280,7 @@ function setupEventListeners() {
     document.getElementById('zoom-out-btn')?.addEventListener('click', () => zoomImage(-1));
     document.getElementById('zoom-reset-btn')?.addEventListener('click', resetZoom);
 
-    // Image click to zoom (but not after dragging)
+    // Image click to zoom centered on click point
     const viewerImage = document.getElementById('viewer-image');
     if (viewerImage) {
         let clickStartX, clickStartY;
@@ -2260,13 +2294,12 @@ function setupEventListeners() {
             // Only trigger zoom if mouse didn't move much (wasn't a drag)
             const deltaX = Math.abs(e.clientX - clickStartX);
             const deltaY = Math.abs(e.clientY - clickStartY);
+            if (deltaX >= 5 || deltaY >= 5) return;
 
-            if (deltaX < 5 && deltaY < 5) {
-                if (state.zoomLevel === 1) {
-                    zoomImage(1);
-                } else {
-                    resetZoom();
-                }
+            if (state.zoomLevel === 1) {
+                zoomToPoint(e);
+            } else {
+                resetZoom();
             }
         });
 
