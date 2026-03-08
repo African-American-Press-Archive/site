@@ -2298,12 +2298,12 @@ function setupEventListeners() {
 
             const hitIdx = hitTestOCRRegion(e);
 
-            if (state.zoomLevel === 1) {
-                // At 1x: zoom in, highlight if we hit a region
+            if (hitIdx >= 0) {
+                // Clicked on an OCR region: highlight in panel
+                highlightOCRRegion(hitIdx, 'image');
+            } else if (state.zoomLevel === 1) {
+                // No region hit at 1x: zoom in
                 zoomToPoint(e);
-            } else if (hitIdx >= 0) {
-                // Zoomed and clicked a region: pan to it, stay zoomed
-                panToOCRRegion(hitIdx);
             } else {
                 // Zoomed and clicked empty space: zoom out
                 resetZoom();
@@ -2482,18 +2482,22 @@ async function loadOCRForPage(pagePath) {
     clearOCROverlays();
 
     try {
-        const resp = await fetch(jsonUrl);
-        if (!resp.ok) {
-            ocrState.currentData = null;
-            toggleBtn.classList.add('hidden');
-            hideOCRPanel();
-            return;
-        }
+        let resp = await fetch(jsonUrl);
+        if (!resp.ok) throw new Error('not ok');
         ocrState.currentData = await resp.json();
         toggleBtn.classList.remove('hidden');
-        // Auto-show panel when OCR data is available
         showOCRPanel();
     } catch {
+        // Fallback to local path (for local dev when R2 CORS blocks)
+        try {
+            const localResp = await fetch(`web_content/${jsonPath}`);
+            if (localResp.ok) {
+                ocrState.currentData = await localResp.json();
+                toggleBtn.classList.remove('hidden');
+                showOCRPanel();
+                return;
+            }
+        } catch { /* ignore */ }
         ocrState.currentData = null;
         toggleBtn.classList.add('hidden');
         hideOCRPanel();
@@ -2502,10 +2506,13 @@ async function loadOCRForPage(pagePath) {
 
 function renderOCRPanel(data) {
     const content = document.getElementById('ocr-panel-content');
+    const titleEl = document.querySelector('.ocr-panel-title');
     if (!data || !data.regions) {
         content.innerHTML = '<p style="color: var(--text-muted);">No OCR data available.</p>';
+        if (titleEl) titleEl.textContent = 'Page Text';
         return;
     }
+    if (titleEl) titleEl.textContent = `Page Text \u00B7 ${data.regions.length} regions`;
     content.innerHTML = data.regions.map((r, i) => {
         const escaped = r.text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
         if (r.label === 'doc_title') return `<h2 class="ocr-block-title" data-ocr-idx="${i}">${escaped}</h2>`;
@@ -2579,12 +2586,6 @@ function hitTestOCRRegion(e) {
         }
     });
 
-    if (bestIdx >= 0) {
-        if (!ocrState.panelVisible && ocrState.currentData) {
-            showOCRPanel();
-        }
-        highlightOCRRegion(bestIdx, 'image');
-    }
     return bestIdx;
 }
 
@@ -2703,5 +2704,9 @@ function toggleOCRPanel() {
 }
 
 // Wire up OCR toggle button and close button
-document.getElementById('ocr-toggle-btn')?.addEventListener('click', toggleOCRPanel);
+document.getElementById('ocr-toggle-btn')?.addEventListener('click', () => {
+    document.getElementById('ocr-toggle-btn')?.classList.add('seen');
+    toggleOCRPanel();
+});
 document.getElementById('ocr-panel-close')?.addEventListener('click', hideOCRPanel);
+

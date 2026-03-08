@@ -30,7 +30,7 @@
 
     <!-- Tailwind CSS (built locally) -->
     <link rel="stylesheet" href="style-tailwind.css">
-    <link rel="stylesheet" href="style.css?v=20">
+    <link rel="stylesheet" href="style.css?v=21">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -357,12 +357,14 @@
                 <div class="flex items-center gap-2">
                     <button
                         id="ocr-toggle-btn"
-                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all hidden"
-                        style="background: var(--unc-basin-slate); color: white;"
-                        data-tooltip="Toggle OCR text (R)"
+                        class="ocr-toggle-btn hidden"
+                        data-tooltip="Read page text (R)"
                         aria-label="Toggle OCR text panel"
                     >
-                        <span class="text-sm font-bold">Aa</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <span class="ocr-toggle-label">Read Text</span>
                     </button>
                     <button
                         id="help-btn"
@@ -594,6 +596,10 @@
                             <span style="color: var(--text-primary);">Close Viewer</span>
                             <kbd class="px-3 py-1 rounded font-mono" style="background: var(--bg-hover); color: var(--unc-tile-teal);">Esc</kbd>
                         </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--border-color);">
+                            <span style="color: var(--text-primary);">Click Text Region</span>
+                            <span class="text-xs" style="color: var(--unc-tile-teal);">View OCR Text</span>
+                        </div>
                         <div class="flex justify-between items-center py-2">
                             <span style="color: var(--text-primary);">Double-click Image</span>
                             <span class="text-xs" style="color: var(--unc-tile-teal);">Toggle Fullscreen</span>
@@ -625,6 +631,6 @@
     </div>
 
     <script src="filters.js?v=1"></script>
-    <script src="app.js?v=22"></script>
+    <script src="app.js?v=23"></script>
 </body>
 </html>
