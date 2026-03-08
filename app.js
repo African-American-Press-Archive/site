@@ -2607,9 +2607,9 @@ function panToOCRRegion(idx) {
     const centerXRatio = ((x1 + x2) / 2) / imgW;
     const centerYRatio = ((y1 + y2) / 2) / imgH;
 
-    // Translate to center the region (in pre-scale px)
+    // Translate: center horizontally, place near top (25%) vertically
     const tx = (0.5 - centerXRatio) * cw;
-    const ty = (0.5 - centerYRatio) * ch;
+    const ty = (0.25 - centerYRatio) * ch;
 
     // Clamp
     const maxTx = cw * (1 - 1 / state.zoomLevel) / 2;
@@ -2649,18 +2649,15 @@ function highlightOCRRegion(idx, source) {
         const overlay = overlayContainer.querySelector(`[data-ocr-idx="${idx}"]`);
         if (overlay) {
             overlay.classList.add('ocr-overlay-active');
-            // If click came from text panel, zoom+pan image to center the region
-            if (source === 'text') {
-                if (state.zoomLevel === 1) {
-                    // Zoom in first
-                    const container = document.getElementById('image-container');
-                    const wrapper = document.getElementById('image-wrapper');
-                    state.zoomLevel = 2;
-                    container.style.cursor = 'grab';
-                    wrapper.style.overflow = 'hidden';
-                }
-                panToOCRRegion(idx);
+            // Zoom+pan image to show the region
+            if (state.zoomLevel === 1) {
+                const container = document.getElementById('image-container');
+                const wrapper = document.getElementById('image-wrapper');
+                state.zoomLevel = 2;
+                container.style.cursor = 'grab';
+                wrapper.style.overflow = 'hidden';
             }
+            panToOCRRegion(idx);
         }
     }
 
