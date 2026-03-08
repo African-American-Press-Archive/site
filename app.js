@@ -2357,20 +2357,23 @@ function setupEventListeners() {
                 return;
             }
 
-            if (e.key === 'ArrowLeft') {
-                if (state.currentPages.length > 1) {
-                    navigatePage(-1);
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                // When OCR panel is open, arrows navigate regions
+                if (ocrState.panelVisible && ocrState.currentData && ocrState.currentData.regions.length > 0) {
+                    const regionCount = ocrState.currentData.regions.length;
+                    let nextIdx;
+                    if (ocrState.activeRegionIdx < 0) {
+                        nextIdx = e.key === 'ArrowRight' ? 0 : regionCount - 1;
+                    } else if (e.key === 'ArrowRight') {
+                        nextIdx = (ocrState.activeRegionIdx + 1) % regionCount;
+                    } else {
+                        nextIdx = (ocrState.activeRegionIdx - 1 + regionCount) % regionCount;
+                    }
+                    highlightOCRRegion(nextIdx, 'text');
+                } else if (state.currentPages.length > 1) {
+                    navigatePage(e.key === 'ArrowRight' ? 1 : -1);
                 } else {
-                    navigateIssue(-1);
-                }
-                e.preventDefault();
-            }
-
-            if (e.key === 'ArrowRight') {
-                if (state.currentPages.length > 1) {
-                    navigatePage(1);
-                } else {
-                    navigateIssue(1);
+                    navigateIssue(e.key === 'ArrowRight' ? 1 : -1);
                 }
                 e.preventDefault();
             }
@@ -2422,6 +2425,24 @@ function setupEventListeners() {
                     toggleOCRPanel();
                 }
                 e.preventDefault();
+            }
+
+            // Arrow keys navigate OCR regions when panel is open
+            if ((e.key === 'ArrowUp' || e.key === 'ArrowDown') && ocrState.panelVisible && ocrState.currentData) {
+                const regionCount = ocrState.currentData.regions.length;
+                if (regionCount > 0) {
+                    let nextIdx;
+                    if (ocrState.activeRegionIdx < 0) {
+                        // No active region — start at first or last
+                        nextIdx = e.key === 'ArrowDown' ? 0 : regionCount - 1;
+                    } else if (e.key === 'ArrowDown') {
+                        nextIdx = (ocrState.activeRegionIdx + 1) % regionCount;
+                    } else {
+                        nextIdx = (ocrState.activeRegionIdx - 1 + regionCount) % regionCount;
+                    }
+                    highlightOCRRegion(nextIdx, 'text');
+                    e.preventDefault();
+                }
             }
 
             if (e.key === '?' || e.key === '/') {
@@ -2614,28 +2635,31 @@ function hitTestOCRRegion(e) {
 function panToOCRRegion(idx) {
     if (!ocrState.currentData || !ocrState.currentData.regions[idx]) return;
     const container = document.getElementById('image-container');
+    const wrapper = document.getElementById('image-wrapper');
     const image = document.getElementById('viewer-image');
-    if (!container || !image) return;
+    if (!container || !image || !wrapper) return;
 
     const [x1, y1, x2, y2] = ocrState.currentData.regions[idx].bbox;
     const imgW = image.naturalWidth;
     const imgH = image.naturalHeight;
-    const rect = container.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
+    const wrapperRect = wrapper.getBoundingClientRect();
+
     // Unscaled container size
-    const cw = rect.width / state.zoomLevel;
-    const ch = rect.height / state.zoomLevel;
+    const cw = containerRect.width / state.zoomLevel;
+    const ch = containerRect.height / state.zoomLevel;
 
-    // Region center as fraction of image
+    // Region top-center as fraction of image
     const centerXRatio = ((x1 + x2) / 2) / imgW;
-    const centerYRatio = ((y1 + y2) / 2) / imgH;
+    const topYRatio = y1 / imgH;
 
-    // Translate: center horizontally, place near top (25%) vertically
+    // Translate: center horizontally, place region top near 15% from viewport top
     const tx = (0.5 - centerXRatio) * cw;
-    const ty = (0.25 - centerYRatio) * ch;
+    const ty = (0.15 - topYRatio) * ch;
 
-    // Clamp
-    const maxTx = cw * (1 - 1 / state.zoomLevel) / 2;
-    const maxTy = ch * (1 - 1 / state.zoomLevel) / 2;
+    // Clamp so we don't pan past edges
+    const maxTx = Math.max(0, (cw * state.zoomLevel - wrapperRect.width) / (2 * state.zoomLevel));
+    const maxTy = Math.max(0, (ch * state.zoomLevel - wrapperRect.height) / (2 * state.zoomLevel));
 
     panState.translateX = Math.max(-maxTx, Math.min(maxTx, tx));
     panState.translateY = Math.max(-maxTy, Math.min(maxTy, ty));
