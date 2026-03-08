@@ -30,7 +30,7 @@
 
     <!-- Tailwind CSS (built locally) -->
     <link rel="stylesheet" href="style-tailwind.css">
-    <link rel="stylesheet" href="style.css?v=21">
+    <link rel="stylesheet" href="style.css?v=22">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -340,75 +340,106 @@
 
         <div class="modal-content relative w-full h-full flex flex-col">
             <!-- Modal Header -->
-            <div class="glass relative z-10 px-6 py-4 flex items-center justify-between">
-                <div class="flex-1 min-w-0">
-                    <h3 id="viewer-title" class="text-lg md:text-xl font-bold truncate" style="color: var(--unc-longleaf-pine);">
+            <div class="viewer-header glass relative z-10">
+                <!-- Left: Title & Navigation -->
+                <div class="viewer-header-left">
+                    <h3 id="viewer-title" class="viewer-title-text">
                         <!-- Title will be populated -->
                     </h3>
-                    <div class="flex items-center gap-4 mt-1">
-                        <p id="viewer-date" class="text-sm" style="color: var(--text-muted);">
+                    <div class="viewer-subtitle-row">
+                        <p id="viewer-date" class="viewer-date-text">
                             <!-- Date will be populated -->
                         </p>
-                        <div id="page-indicator" class="text-sm font-medium hidden" style="color: var(--unc-tile-teal);">
-                            Page <span id="current-page">1</span> of <span id="total-pages">1</span>
+                        <!-- Integrated page/issue navigator -->
+                        <div id="page-nav-group" class="page-nav-group hidden">
+                            <button id="prev-issue-btn" class="page-nav-arrow" data-tooltip="Previous issue" aria-label="Previous issue">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button id="prev-page-btn" class="page-nav-arrow" data-tooltip="Previous page (←)" aria-label="Previous page">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <span id="page-indicator" class="page-nav-label">
+                                Page <span id="current-page">1</span> of <span id="total-pages">1</span>
+                            </span>
+                            <button id="next-page-btn" class="page-nav-arrow" data-tooltip="Next page (→)" aria-label="Next page">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                            <button id="next-issue-btn" class="page-nav-arrow" data-tooltip="Next issue" aria-label="Next issue">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center gap-2">
-                    <button
-                        id="ocr-toggle-btn"
-                        class="ocr-toggle-btn hidden"
-                        data-tooltip="Read page text (R)"
-                        aria-label="Toggle OCR text panel"
-                    >
+
+                <!-- Center: Zoom controls (inline) -->
+                <div class="viewer-toolbar-group zoom-group">
+                    <button id="zoom-out-btn" class="toolbar-btn" data-tooltip="Zoom out (−)" aria-label="Zoom out">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        <span class="ocr-toggle-label">Read Text</span>
-                    </button>
-                    <button
-                        id="help-btn"
-                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all"
-                        style="background: var(--unc-basin-slate); color: white;"
-                        data-tooltip="Keyboard shortcuts (?)"
-                        aria-label="Show keyboard shortcuts"
-                    >
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
                         </svg>
                     </button>
-                    <button
-                        id="download-btn"
-                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all"
-                        style="background: var(--unc-basin-slate); color: white;"
-                        data-tooltip="Download page (D)"
-                        aria-label="Download current page"
-                    >
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    <button id="zoom-reset-btn" class="toolbar-btn zoom-level-btn" data-tooltip="Reset zoom (0)" aria-label="Reset zoom">
+                        <span id="zoom-level-display">1×</span>
+                    </button>
+                    <button id="zoom-in-btn" class="toolbar-btn" data-tooltip="Zoom in (+)" aria-label="Zoom in">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                         </svg>
                     </button>
-                    <button
-                        id="thumbnails-toggle"
-                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all hidden"
-                        style="background: var(--unc-basin-slate); color: white;"
-                        data-tooltip="Toggle thumbnails (T)"
-                        aria-label="Toggle thumbnails"
-                    >
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                        </svg>
-                    </button>
-                    <button
-                        id="close-viewer-btn"
-                        class="w-10 h-10 rounded-lg flex items-center justify-center transition-all"
-                        style="background: var(--unc-basin-slate); color: white;"
-                        aria-label="Close viewer"
-                    >
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
+                </div>
+
+                <!-- Right: Action buttons -->
+                <div class="viewer-toolbar-actions">
+                    <!-- Content tools -->
+                    <div class="viewer-toolbar-group">
+                        <button
+                            id="ocr-toggle-btn"
+                            class="ocr-toggle-btn hidden"
+                            data-tooltip="Read page text (R)"
+                            aria-label="Toggle OCR text panel"
+                        >
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <span class="ocr-toggle-label">Read Text</span>
+                        </button>
+                        <button id="download-btn" class="toolbar-btn" data-tooltip="Download page (D)" aria-label="Download current page">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                        </button>
+                        <button id="thumbnails-toggle" class="toolbar-btn hidden" data-tooltip="Toggle thumbnails (T)" aria-label="Toggle thumbnails">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Separator -->
+                    <div class="toolbar-separator"></div>
+
+                    <!-- Meta tools -->
+                    <div class="viewer-toolbar-group">
+                        <button id="help-btn" class="toolbar-btn toolbar-btn-ghost" data-tooltip="Keyboard shortcuts (?)" aria-label="Show keyboard shortcuts">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                        <button id="close-viewer-btn" class="toolbar-btn toolbar-btn-close" aria-label="Close viewer (Esc)">
+                            <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="close-label">Esc</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -470,83 +501,25 @@
                 </div>
             </div>
 
-            <!-- Page Navigation Buttons -->
+            <!-- Page Navigation Buttons (large overlay arrows for keyboard/gesture nav) -->
             <button
-                id="prev-page-btn"
-                class="absolute left-4 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full glass hover:bg-gray-700 flex items-center justify-center transition-all group shadow-xl hover:shadow-2xl hidden"
-                data-tooltip="Previous page (←)"
+                id="prev-page-overlay"
+                class="page-overlay-btn page-overlay-prev hidden"
                 aria-label="Previous page"
             >
-                <svg class="w-7 h-7 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
-
             <button
-                id="next-page-btn"
-                class="absolute right-4 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full glass hover:bg-gray-700 flex items-center justify-center transition-all group shadow-xl hover:shadow-2xl hidden"
-                data-tooltip="Next page (→)"
+                id="next-page-overlay"
+                class="page-overlay-btn page-overlay-next hidden"
                 aria-label="Next page"
             >
-                <svg class="w-7 h-7 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
-
-            <!-- Issue Navigation (smaller, bottom corners) -->
-            <button
-                id="prev-issue-btn"
-                class="absolute left-4 bottom-20 w-10 h-10 rounded-full glass hover:bg-gray-700 flex items-center justify-center transition-all group opacity-60 hover:opacity-100"
-                data-tooltip="Previous issue"
-                aria-label="Previous issue"
-            >
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
-                </svg>
-            </button>
-
-            <button
-                id="next-issue-btn"
-                class="absolute right-4 bottom-20 w-10 h-10 rounded-full glass hover:bg-gray-700 flex items-center justify-center transition-all group opacity-60 hover:opacity-100"
-                data-tooltip="Next issue"
-                aria-label="Next issue"
-            >
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-                </svg>
-            </button>
-
-            <!-- Zoom Controls -->
-            <div class="absolute bottom-6 right-6 glass rounded-lg p-2 flex gap-2">
-                <button
-                    id="zoom-out-btn"
-                    class="w-10 h-10 rounded-lg hover:bg-gray-700 flex items-center justify-center transition-all"
-                    data-tooltip="Zoom out (-)"
-                    aria-label="Zoom out"
-                >
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" />
-                    </svg>
-                </button>
-                <button
-                    id="zoom-reset-btn"
-                    class="w-10 h-10 rounded-lg hover:bg-gray-700 flex items-center justify-center transition-all text-xs font-bold"
-                    data-tooltip="Reset zoom (0)"
-                    aria-label="Reset zoom"
-                >
-                    1:1
-                </button>
-                <button
-                    id="zoom-in-btn"
-                    class="w-10 h-10 rounded-lg hover:bg-gray-700 flex items-center justify-center transition-all"
-                    data-tooltip="Zoom in (+)"
-                    aria-label="Zoom in"
-                >
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
-                    </svg>
-                </button>
-            </div>
 
             <!-- Keyboard Shortcuts Help Overlay -->
             <div id="help-overlay" class="hidden absolute inset-0 z-50 flex items-center justify-center">
@@ -631,6 +604,6 @@
     </div>
 
     <script src="filters.js?v=1"></script>
-    <script src="app.js?v=24"></script>
+    <script src="app.js?v=25"></script>
 </body>
 </html>

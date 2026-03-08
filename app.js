@@ -1602,9 +1602,9 @@ function checkImageExists(url) {
 function setupPageViewer() {
     const hasMultiplePages = state.currentPages.length > 1;
 
-    toggleElement('prev-page-btn', hasMultiplePages);
-    toggleElement('next-page-btn', hasMultiplePages);
-    toggleElement('page-indicator', hasMultiplePages);
+    toggleElement('page-nav-group', hasMultiplePages);
+    toggleElement('prev-page-overlay', hasMultiplePages);
+    toggleElement('next-page-overlay', hasMultiplePages);
     toggleElement('thumbnails-toggle', hasMultiplePages);
     toggleElement('progress-bar-container', hasMultiplePages);
 
@@ -1724,15 +1724,29 @@ function updateProgressBar() {
 }
 
 function updatePageNavigationButtons() {
+    const atStart = state.currentPageIndex <= 0;
+    const atEnd = state.currentPageIndex >= state.currentPages.length - 1;
+
+    // Header nav arrows
     const prevBtn = document.getElementById('prev-page-btn');
     const nextBtn = document.getElementById('next-page-btn');
+    if (prevBtn) {
+        prevBtn.style.opacity = atStart ? '0.25' : '1';
+        prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
+    }
+    if (nextBtn) {
+        nextBtn.style.opacity = atEnd ? '0.25' : '1';
+        nextBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
+    }
 
-    if (state.currentPages.length > 1) {
-        prevBtn.style.opacity = state.currentPageIndex > 0 ? '1' : '0.3';
-        prevBtn.style.pointerEvents = state.currentPageIndex > 0 ? 'auto' : 'none';
-
-        nextBtn.style.opacity = state.currentPageIndex < state.currentPages.length - 1 ? '1' : '0.3';
-        nextBtn.style.pointerEvents = state.currentPageIndex < state.currentPages.length - 1 ? 'auto' : 'none';
+    // Overlay arrows
+    const prevOverlay = document.getElementById('prev-page-overlay');
+    const nextOverlay = document.getElementById('next-page-overlay');
+    if (prevOverlay) {
+        prevOverlay.style.display = atStart ? 'none' : '';
+    }
+    if (nextOverlay) {
+        nextOverlay.style.display = atEnd ? 'none' : '';
     }
 }
 
@@ -1784,12 +1798,12 @@ function updateIssueNavigationButtons() {
     const atEnd = state.currentIssueIndex >= state.displayedIssues.length - 1;
 
     if (prevBtn) {
-        prevBtn.style.opacity = atStart ? '0.3' : '1';
+        prevBtn.style.opacity = atStart ? '0.25' : '1';
         prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
     }
 
     if (nextBtn) {
-        nextBtn.style.opacity = atEnd ? '0.3' : '1';
+        nextBtn.style.opacity = atEnd ? '0.25' : '1';
         nextBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
     }
 }
@@ -1940,6 +1954,12 @@ function zoomToPoint(e) {
 function updateImageTransform() {
     const container = document.getElementById('image-container');
     container.style.transform = `scale(${state.zoomLevel}) translate(${panState.translateX}px, ${panState.translateY}px)`;
+    // Update zoom level display
+    const zoomDisplay = document.getElementById('zoom-level-display');
+    if (zoomDisplay) {
+        const pct = Math.round(state.zoomLevel * 100);
+        zoomDisplay.textContent = state.zoomLevel === 1 ? '1\u00D7' : `${pct}%`;
+    }
 }
 
 // Pan handlers
@@ -2274,6 +2294,8 @@ function setupEventListeners() {
     document.getElementById('thumbnails-toggle')?.addEventListener('click', toggleThumbnails);
     document.getElementById('prev-page-btn')?.addEventListener('click', () => navigatePage(-1));
     document.getElementById('next-page-btn')?.addEventListener('click', () => navigatePage(1));
+    document.getElementById('prev-page-overlay')?.addEventListener('click', () => navigatePage(-1));
+    document.getElementById('next-page-overlay')?.addEventListener('click', () => navigatePage(1));
     document.getElementById('prev-issue-btn')?.addEventListener('click', () => navigateIssue(-1));
     document.getElementById('next-issue-btn')?.addEventListener('click', () => navigateIssue(1));
     document.getElementById('zoom-in-btn')?.addEventListener('click', () => zoomImage(1));

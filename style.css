@@ -1070,25 +1070,250 @@ header .deco-link:hover {
     }
 }
 
+/* ==================== VIEWER HEADER TOOLBAR ==================== */
+.viewer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 16px;
+}
+
+.viewer-header-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.viewer-title-text {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--unc-longleaf-pine);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+}
+
+.viewer-subtitle-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 2px;
+}
+
+.viewer-date-text {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* Integrated page/issue navigator */
+.page-nav-group {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: rgba(79, 117, 139, 0.08);
+    border: 1px solid rgba(79, 117, 139, 0.15);
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.page-nav-group.hidden {
+    display: none !important;
+}
+
+.page-nav-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: none;
+    background: transparent;
+    color: var(--unc-basin-slate);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    opacity: 0.6;
+}
+
+.page-nav-arrow:hover {
+    opacity: 1;
+    background: rgba(79, 117, 139, 0.15);
+}
+
+.page-nav-arrow:active {
+    transform: scale(0.9);
+}
+
+.page-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--unc-tile-teal);
+    padding: 0 6px;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+    user-select: none;
+}
+
+/* Toolbar button groups */
+.viewer-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.viewer-toolbar-group {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.toolbar-separator {
+    width: 1px;
+    height: 24px;
+    background: var(--border-color);
+    margin: 0 4px;
+    flex-shrink: 0;
+}
+
+/* Base toolbar button */
+.toolbar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    border: none;
+    background: var(--unc-basin-slate);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.toolbar-btn:hover {
+    background: var(--unc-tile-teal);
+    transform: translateY(-1px);
+}
+
+.toolbar-btn:active {
+    transform: translateY(0) scale(0.95);
+}
+
+/* Ghost variant for less important actions */
+.toolbar-btn-ghost {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+}
+
+.toolbar-btn-ghost:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+    border-color: var(--accent-secondary);
+}
+
+/* Close button — visually distinct */
+.toolbar-btn-close {
+    background: transparent;
+    border: 1px solid rgba(239, 66, 111, 0.25);
+    color: var(--unc-azalea-pink);
+    gap: 4px;
+    width: auto;
+    padding: 0 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.toolbar-btn-close:hover {
+    background: var(--unc-azalea-pink);
+    color: white;
+    border-color: var(--unc-azalea-pink);
+}
+
+.close-label {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 0.65rem;
+    opacity: 0.8;
+}
+
+/* Zoom group specific */
+.zoom-group {
+    background: rgba(79, 117, 139, 0.08);
+    border: 1px solid rgba(79, 117, 139, 0.15);
+    border-radius: 8px;
+    padding: 2px;
+    gap: 1px;
+    flex-shrink: 0;
+}
+
+.zoom-group .toolbar-btn {
+    width: 30px;
+    height: 28px;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--unc-basin-slate);
+}
+
+.zoom-group .toolbar-btn:hover {
+    background: var(--unc-basin-slate);
+    color: white;
+    transform: none;
+}
+
+.zoom-level-btn {
+    width: auto !important;
+    padding: 0 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    letter-spacing: -0.02em;
+}
+
+/* Overlay page arrows (still visible on large screens for mouse nav) */
+.page-overlay-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 20;
+    opacity: 0;
+}
+
+.page-overlay-btn:hover {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.page-overlay-prev { left: 12px; }
+.page-overlay-next { right: 12px; }
+
+/* Show overlay arrows on hover of the image area */
+.modal-content:hover .page-overlay-btn:not(.hidden) {
+    opacity: 0.4;
+}
+
 /* ==================== VIEWER NAVIGATION CONTROLS ==================== */
-/* Ensure navigation buttons appear above the image wrapper (z-10) */
-#prev-page-btn,
-#next-page-btn,
-#prev-issue-btn,
-#next-issue-btn,
 #zoom-in-btn,
 #zoom-out-btn,
 #zoom-reset-btn {
     z-index: 20;
     position: relative;
-}
-
-/* Zoom controls container also needs z-index */
-#prev-page-btn,
-#next-page-btn,
-#prev-issue-btn,
-#next-issue-btn {
-    position: absolute;
 }
 
 /* ==================== PAGE TRANSITIONS ==================== */
@@ -1199,26 +1424,36 @@ header .deco-link:hover {
 [data-tooltip]::before {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 100%;
+    top: 100%;
     left: 50%;
-    transform: translateX(-50%) translateY(-8px);
-    padding: 0.5rem 0.75rem;
+    transform: translateX(-50%) translateY(4px);
+    padding: 5px 10px;
     background: var(--unc-longleaf-pine);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
-    font-size: 0.875rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
     color: white;
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
-    transition: var(--transition-base);
+    transition: opacity 0.15s ease, transform 0.15s ease;
     z-index: 100;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 [data-tooltip]:hover::before {
     opacity: 1;
+    transform: translateX(-50%) translateY(8px);
+}
+
+/* Tooltips above for bottom-positioned elements */
+.page-overlay-btn[data-tooltip]::before {
+    top: auto;
+    bottom: 100%;
     transform: translateX(-50%) translateY(-4px);
+}
+
+.page-overlay-btn[data-tooltip]:hover::before {
+    transform: translateX(-50%) translateY(-8px);
 }
 
 /* ==================== FOCUS STATES ==================== */
@@ -1757,20 +1992,7 @@ a:focus-visible {
     }
 }
 
-/* Modal viewer button hover states */
-#help-btn:hover,
-#download-btn:hover,
-#thumbnails-toggle:hover,
-#close-viewer-btn:hover {
-    background: var(--unc-tile-teal) !important;
-}
-
-#zoom-out-btn:hover,
-#zoom-in-btn:hover,
-#zoom-reset-btn:hover {
-    background: var(--unc-tile-teal) !important;
-    color: white !important;
-}
+/* Toolbar button hover states handled by .toolbar-btn classes */
 
 /* Reset filters button hover */
 #reset-filters-btn:hover {
@@ -2091,16 +2313,15 @@ header.scrolled {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 6px;
-    height: 40px;
-    padding: 0 14px;
-    border-radius: 8px;
+    gap: 5px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 7px;
     border: none;
     background: var(--unc-basin-slate);
     color: white;
-    font-size: 13px;
+    font-size: 0.75rem;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
     cursor: pointer;
     transition: all 0.2s ease;
     white-space: nowrap;
@@ -2322,5 +2543,48 @@ header.scrolled {
     @keyframes panelSlideInMobile {
         from { transform: translateX(100%); }
         to { transform: translateX(0); }
+    }
+
+    /* Compact header on mobile */
+    .viewer-header {
+        padding: 8px 10px;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .viewer-header-left {
+        flex-basis: 100%;
+        order: -1;
+    }
+
+    .viewer-title-text {
+        font-size: 0.9rem;
+    }
+
+    .zoom-group {
+        order: 0;
+    }
+
+    .viewer-toolbar-actions {
+        gap: 4px;
+    }
+
+    .toolbar-separator {
+        display: none;
+    }
+
+    .ocr-toggle-label,
+    .close-label {
+        display: none;
+    }
+
+    .toolbar-btn-close {
+        width: 34px;
+        padding: 0;
+    }
+
+    /* Hide overlay arrows on mobile (use header nav) */
+    .page-overlay-btn {
+        display: none !important;
     }
 }
