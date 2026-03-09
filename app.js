@@ -2642,24 +2642,26 @@ function panToOCRRegion(idx) {
     const [x1, y1, x2, y2] = ocrState.currentData.regions[idx].bbox;
     const imgW = image.naturalWidth;
     const imgH = image.naturalHeight;
-    const containerRect = container.getBoundingClientRect();
-    const wrapperRect = wrapper.getBoundingClientRect();
 
-    // Unscaled container size
-    const cw = containerRect.width / state.zoomLevel;
-    const ch = containerRect.height / state.zoomLevel;
+    // Region position as fraction of image
+    const centerXFrac = ((x1 + x2) / 2) / imgW;
+    const topYFrac = y1 / imgH;
 
-    // Region top-center as fraction of image
-    const centerXRatio = ((x1 + x2) / 2) / imgW;
-    const topYRatio = y1 / imgH;
+    // Unscaled container dimensions (offsetWidth/Height ignore CSS transforms)
+    const baseW = container.offsetWidth;
+    const baseH = container.offsetHeight;
+    const wrapperH = wrapper.clientHeight;
+    const z = state.zoomLevel;
 
-    // Translate: center horizontally, place region top near 15% from viewport top
-    const tx = (0.5 - centerXRatio) * cw;
-    const ty = (0.15 - topYRatio) * ch;
+    // Translate to center region horizontally in the viewport
+    const tx = baseW * (0.5 - centerXFrac);
+
+    // Translate to place region top ~10% from viewport top
+    const ty = baseH * (0.5 - topYFrac) - 0.4 * wrapperH / z;
 
     // Clamp so we don't pan past edges
-    const maxTx = Math.max(0, (cw * state.zoomLevel - wrapperRect.width) / (2 * state.zoomLevel));
-    const maxTy = Math.max(0, (ch * state.zoomLevel - wrapperRect.height) / (2 * state.zoomLevel));
+    const maxTx = baseW * (1 - 1 / z) / 2;
+    const maxTy = baseH * (1 - 1 / z) / 2;
 
     panState.translateX = Math.max(-maxTx, Math.min(maxTx, tx));
     panState.translateY = Math.max(-maxTy, Math.min(maxTy, ty));
@@ -2695,14 +2697,12 @@ function highlightOCRRegion(idx, source) {
         const overlay = overlayContainer.querySelector(`[data-ocr-idx="${idx}"]`);
         if (overlay) {
             overlay.classList.add('ocr-overlay-active');
-            // Zoom+pan image to show the region
-            if (state.zoomLevel === 1) {
-                const container = document.getElementById('image-container');
-                const wrapper = document.getElementById('image-wrapper');
-                state.zoomLevel = 2;
-                container.style.cursor = 'grab';
-                wrapper.style.overflow = 'hidden';
-            }
+            // Always zoom to 2x and pan to the region
+            const container = document.getElementById('image-container');
+            const wrapper = document.getElementById('image-wrapper');
+            state.zoomLevel = 2;
+            container.style.cursor = 'grab';
+            wrapper.style.overflow = 'hidden';
             panToOCRRegion(idx);
         }
     }
