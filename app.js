@@ -2654,14 +2654,15 @@ function panToOCRRegion(idx) {
     const z = state.zoomLevel;
 
     // Translate to center region horizontally in the viewport
+    const wrapperW = wrapper.clientWidth;
     const tx = baseW * (0.5 - centerXFrac);
 
     // Translate to place region top ~10% from viewport top
     const ty = baseH * (0.5 - topYFrac) - 0.4 * wrapperH / z;
 
-    // Clamp so we don't pan past edges
-    const maxTx = baseW * (1 - 1 / z) / 2;
-    const maxTy = baseH * (1 - 1 / z) / 2;
+    // Clamp so container edges don't enter the viewport
+    const maxTx = Math.max(0, baseW / 2 - wrapperW / (2 * z));
+    const maxTy = Math.max(0, baseH / 2 - wrapperH / (2 * z));
 
     panState.translateX = Math.max(-maxTx, Math.min(maxTx, tx));
     panState.translateY = Math.max(-maxTy, Math.min(maxTy, ty));
