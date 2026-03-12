@@ -2495,6 +2495,19 @@ header.scrolled {
     border-left-color: var(--unc-tile-teal) !important;
 }
 
+/* Deep-link highlight for chunk anchoring from external sites */
+.ocr-highlight {
+    background: rgba(245, 158, 11, 0.15) !important;
+    border-left-color: #f59e0b !important;
+    border-left-width: 4px !important;
+    animation: ocr-highlight-pulse 2s ease-in-out;
+}
+
+@keyframes ocr-highlight-pulse {
+    0%, 100% { background: rgba(245, 158, 11, 0.15); }
+    50% { background: rgba(245, 158, 11, 0.3); }
+}
+
 /* ==================== OCR IMAGE OVERLAYS ==================== */
 .ocr-overlay-box {
     position: absolute;

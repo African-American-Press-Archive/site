@@ -357,6 +357,7 @@ async function loadManifest() {
         const urlParams = new URLSearchParams(window.location.search);
         const paperParam = urlParams.get('paper');
         const dateParam = urlParams.get('date');
+        const pageParam = urlParams.get('page');
 
         let urlParamsHandled = false;
 
@@ -396,7 +397,38 @@ async function loadManifest() {
                 // Find and open the viewer for this issue
                 const issueIndex = state.displayedIssues.findIndex(item => item.id.includes(dateParam) && item.title === issue.title);
                 if (issueIndex !== -1) {
-                    openViewer(issueIndex);
+                    await openViewer(issueIndex);
+                } else {
+                    await openViewerDirect(issue);
+                }
+
+                // Navigate to specific page if requested (1-indexed in URL)
+                const targetPage = pageParam ? parseInt(pageParam, 10) - 1 : 0;
+                if (targetPage > 0 && targetPage < state.currentPages.length) {
+                    await loadPage(targetPage, 'fade');
+                }
+
+                // Handle #chunk-N hash to open OCR panel
+                const hash = window.location.hash;
+                if (hash && hash.startsWith('#chunk-')) {
+                    const chunkIdx = parseInt(hash.replace('#chunk-', ''), 10);
+                    if (!isNaN(chunkIdx)) {
+                        // Open OCR panel and highlight the chunk
+                        const ocrBtn = document.getElementById('ocr-toggle-btn');
+                        const ocrPanel = document.getElementById('ocr-panel');
+                        if (ocrBtn && ocrPanel && ocrPanel.classList.contains('hidden')) {
+                            ocrBtn.click();
+                        }
+                        // Wait for OCR to load, then scroll to chunk
+                        setTimeout(() => {
+                            const chunkEl = document.querySelector(`[data-ocr-idx="${chunkIdx}"]`)
+                                || document.querySelectorAll('#ocr-panel-content [data-ocr-idx]')[chunkIdx];
+                            if (chunkEl) {
+                                chunkEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                chunkEl.classList.add('ocr-highlight');
+                            }
+                        }, 800);
+                    }
                 }
 
                 urlParamsHandled = true;
