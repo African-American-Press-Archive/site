@@ -215,105 +215,6 @@
                         </div>
                     </section>
 
-                    <!-- Filter Bar Section -->
-                    <section class="filter-bar-section glass-card rounded-xl p-6 mb-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h2 class="text-xl font-bold" style="color: var(--unc-longleaf-pine);">Browse the Archive</h2>
-                            <button id="filters-reset" class="text-sm transition-colors opacity-0 pointer-events-none deco-link" style="color: var(--unc-tile-teal);">
-                                Clear Filters
-                            </button>
-                        </div>
-
-                        <div class="filter-toggles-container">
-                            <!-- Date Filter Toggle -->
-                            <div class="filter-toggle-group">
-                                <button
-                                    id="date-filter-toggle"
-                                    class="filter-toggle"
-                                    aria-expanded="false"
-                                    aria-controls="date-filter-panel"
-                                >
-                                    <span class="filter-toggle-label" id="date-filter-label">All Years</span>
-                                    <svg class="filter-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </button>
-
-                                <!-- Date Filter Panel -->
-                                <div
-                                    id="date-filter-panel"
-                                    class="filter-panel hidden"
-                                    role="region"
-                                    aria-labelledby="date-filter-toggle"
-                                >
-                                    <div class="filter-panel-content">
-                                        <h3 class="filter-panel-title">Select Year</h3>
-                                        <div id="year-grid" class="year-grid" role="listbox" aria-label="Select year">
-                                            <!-- Year pills will be populated by JavaScript -->
-                                        </div>
-
-                                        <div id="month-selector" class="month-selector hidden">
-                                            <h3 class="filter-panel-title">Select Month (Optional)</h3>
-                                            <div id="month-grid" class="month-grid" role="listbox" aria-label="Select month">
-                                                <!-- Month pills will be populated by JavaScript -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Paper Filter Toggle -->
-                            <div class="filter-toggle-group">
-                                <button
-                                    id="paper-filter-toggle"
-                                    class="filter-toggle"
-                                    aria-expanded="false"
-                                    aria-controls="paper-filter-panel"
-                                >
-                                    <span class="filter-toggle-label" id="paper-filter-label">All Papers</span>
-                                    <svg class="filter-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </button>
-
-                                <!-- Paper Filter Panel -->
-                                <div
-                                    id="paper-filter-panel"
-                                    class="filter-panel hidden"
-                                    role="region"
-                                    aria-labelledby="paper-filter-toggle"
-                                >
-                                    <div class="filter-panel-content">
-                                        <h3 class="filter-panel-title">Select Papers</h3>
-                                        <p class="text-sm mb-3" style="color: var(--text-muted);">
-                                            <span id="filter-count">0</span> papers available
-                                        </p>
-                                        <div class="filter-panel-search">
-                                            <input
-                                                type="text"
-                                                id="paper-search-input"
-                                                placeholder="Search papers..."
-                                                class="filter-search-input"
-                                                aria-label="Search papers"
-                                            />
-                                        </div>
-                                        <div id="paper-list" class="paper-list" role="listbox" aria-label="Select papers" aria-multiselectable="true">
-                                            <!-- Paper checkboxes will be populated by JavaScript -->
-                                        </div>
-                                        <div class="filter-panel-actions">
-                                            <button id="paper-select-all" class="filter-panel-btn filter-panel-btn-secondary">
-                                                Select All
-                                            </button>
-                                            <button id="paper-apply" class="filter-panel-btn filter-panel-btn-primary">
-                                                Apply
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
                     <!-- Loading State -->
                     <div id="loading-state" class="text-center py-20">
                         <div class="inline-block">
@@ -660,7 +561,6 @@
         </div>
     </div>
 
-    <script src="filters.js?v=1"></script>
     <script src="paper-data.js"></script>
     <script src="timeline-scrubber.js"></script>
     <script src="paper-gallery.js"></script>
