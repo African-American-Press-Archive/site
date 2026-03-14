@@ -2601,3 +2601,157 @@ header.scrolled {
         display: none !important;
     }
 }
+
+/* ==================== PAPER GALLERY ==================== */
+
+.paper-gallery-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paper-gallery-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.paper-gallery-masthead img {
+    transition: transform 0.3s ease;
+}
+
+.paper-gallery-card:hover .paper-gallery-masthead img {
+    transform: scale(1.05);
+}
+
+/* ==================== TIMELINE SCRUBBER ==================== */
+
+.timeline-bar-col:hover .timeline-bar {
+    opacity: 0.8;
+}
+
+.timeline-bar-col[data-count="0"] {
+    pointer-events: none;
+}
+
+/* ==================== MONTH PILLS ==================== */
+
+.month-pill:hover {
+    opacity: 0.85;
+}
+
+/* ==================== BREADCRUMB ==================== */
+
+.browse-breadcrumb a {
+    color: var(--unc-tile-teal);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.browse-breadcrumb a:hover {
+    color: var(--unc-longleaf-pine);
+}
+
+.browse-breadcrumb .separator {
+    margin: 0 6px;
+    color: var(--text-muted);
+}
+
+/* ==================== PAPER DETAIL HEADER ==================== */
+
+.paper-detail-header {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.paper-detail-masthead {
+    width: 120px;
+    height: 60px;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid var(--border-color);
+}
+
+.paper-detail-masthead img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* ==================== PAPER FILTER DROPDOWN ==================== */
+
+.paper-filter-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 4px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    z-index: 50;
+    padding: 12px;
+}
+
+.paper-filter-dropdown .paper-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.1s;
+}
+
+.paper-filter-dropdown .paper-filter-item:hover {
+    background: var(--bg-hover);
+}
+
+.paper-filter-dropdown .paper-filter-check {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.paper-filter-dropdown .paper-filter-item.selected .paper-filter-check {
+    background: var(--unc-tile-teal);
+    border-color: var(--unc-tile-teal);
+    color: white;
+}
+
+/* ==================== MOBILE: PAPER FILTER AS FULL-SCREEN OVERLAY ==================== */
+
+@media (max-width: 640px) {
+    .paper-filter-dropdown {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+        z-index: 100;
+        padding: 20px;
+    }
+}
+
+/* ==================== VIEW TRANSITIONS ==================== */
+
+.issue-grid-fade {
+    transition: opacity 0.15s ease;
+}
+
+.issue-grid-fade.fading {
+    opacity: 0.3;
+}
