@@ -162,6 +162,59 @@
                         <div id="hero-grid" class="hero-grid mt-6"></div>
                     </section>
 
+                    <!-- Paper Gallery (default browse view) -->
+                    <section id="paper-gallery-section" class="hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <h2 class="text-xl font-bold" style="color: var(--unc-longleaf-pine);">Browse by Paper</h2>
+                            <a href="#" id="browse-by-date-link" class="text-sm transition-colors deco-link" style="color: var(--unc-tile-teal);">Browse all issues by date →</a>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" id="gallery-search" placeholder="Search papers..."
+                                class="w-full max-w-sm px-4 py-2.5 rounded-lg text-sm transition-all"
+                                style="border: 1px solid var(--border-color); background: white; color: var(--text-primary);" />
+                        </div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span id="gallery-count" class="text-sm" style="color: var(--text-muted);"></span>
+                            <select id="gallery-sort" class="px-3 py-1.5 rounded-lg text-sm" style="border: 1px solid var(--border-color); background: white; color: var(--text-secondary);">
+                                <option value="count">Most Issues</option>
+                                <option value="alpha">Alphabetical</option>
+                            </select>
+                        </div>
+                        <div id="paper-gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+                    </section>
+
+                    <!-- Paper Detail View -->
+                    <section id="paper-detail-section" class="hidden">
+                        <nav id="paper-detail-breadcrumb" class="text-sm mb-4" style="color: var(--text-muted);"></nav>
+                        <div id="paper-detail-header" class="mb-4"></div>
+                        <div id="paper-detail-timeline" class="mb-4"></div>
+                        <div id="paper-detail-months" class="mb-4"></div>
+                        <div id="paper-detail-result-header" class="flex items-center justify-between mb-4"></div>
+                        <div id="paper-detail-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                        <div id="paper-detail-load-more" class="h-20 flex items-center justify-center hidden">
+                            <div class="loading-spinner hidden">
+                                <div class="w-8 h-8 border-4 rounded-full animate-spin" style="border-color: var(--border-color); border-top-color: var(--unc-tile-teal);"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Cross-Paper Date Browse View -->
+                    <section id="date-browse-section" class="hidden">
+                        <nav id="date-browse-breadcrumb" class="text-sm mb-4" style="color: var(--text-muted);"></nav>
+                        <div id="date-browse-timeline" class="mb-4"></div>
+                        <div class="flex justify-between items-start gap-4 flex-wrap mb-4">
+                            <div id="date-browse-months" class="flex-1"></div>
+                            <div id="date-browse-paper-filter" class="relative"></div>
+                        </div>
+                        <div id="date-browse-result-header" class="flex items-center justify-between mb-4"></div>
+                        <div id="date-browse-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                        <div id="date-browse-load-more" class="h-20 flex items-center justify-center hidden">
+                            <div class="loading-spinner hidden">
+                                <div class="w-8 h-8 border-4 rounded-full animate-spin" style="border-color: var(--border-color); border-top-color: var(--unc-tile-teal);"></div>
+                            </div>
+                        </div>
+                    </section>
+
                     <!-- Filter Bar Section -->
                     <section class="filter-bar-section glass-card rounded-xl p-6 mb-6">
                         <div class="flex items-center justify-between mb-4">
@@ -608,6 +661,12 @@
     </div>
 
     <script src="filters.js?v=1"></script>
+    <script src="paper-data.js"></script>
+    <script src="timeline-scrubber.js"></script>
+    <script src="paper-gallery.js"></script>
+    <script src="paper-detail.js"></script>
+    <script src="date-browse.js"></script>
+    <script src="browse-router.js"></script>
     <script src="app.js?v=27"></script>
 </body>
 </html>
