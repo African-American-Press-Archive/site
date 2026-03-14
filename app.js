@@ -98,18 +98,83 @@ function resolveAssetPath(input) {
 
 // ==================== INITIALIZATION ====================
 document.addEventListener('DOMContentLoaded', async () => {
-    // Early exit for static pages - don't load manifest or touch IndexedDB
     const issueGrid = document.getElementById('issue-grid');
-    if (!issueGrid) {
+    if (!issueGrid && !document.getElementById('paper-gallery-grid')) {
         return;
     }
-    await loadManifest();
-    setupEventListeners();
-    initializeIntersectionObserver();
 
-    // Initialize new filter system
-    if (window.FilterSystem) {
-        FilterSystem.init();
+    // Load slug mappings in parallel with manifest
+    await Promise.all([
+        loadManifest(),
+        PaperData.loadSlugs(),
+    ]);
+
+    // Compute per-paper stats from loaded manifest
+    PaperData.computeStats(state.allIssues);
+
+    // Initialize new navigation
+    PaperGallery.init();
+    BrowseRouter.init();
+
+    // Setup event listeners (viewer, keyboard shortcuts, etc.)
+    setupEventListeners();
+
+    // "Browse by date" link
+    document.getElementById('browse-by-date-link')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        BrowseRouter.navigateTo('date');
+    });
+
+    // Handle backward compat: ?paper=X&date=Y opens viewer
+    const urlParams = new URLSearchParams(window.location.search);
+    const paperSlug = urlParams.get('paper');
+    const dateParam = urlParams.get('date');
+    const pageParam = urlParams.get('page');
+
+    if (dateParam) {
+        let issue;
+        if (paperSlug) {
+            const paperTitle = PaperData.slugToTitle.get(paperSlug);
+            if (paperTitle) {
+                issue = state.allIssues.find(i => i.title === paperTitle && i.date === dateParam);
+            }
+        } else {
+            issue = state.allIssues.find(i => i.date === dateParam);
+        }
+
+        if (issue) {
+            const issueIndex = state.displayedIssues.findIndex(item => item.id === issue.id);
+            if (issueIndex !== -1) {
+                await openViewer(issueIndex);
+            } else {
+                await openViewerDirect(issue);
+            }
+
+            const targetPage = pageParam ? parseInt(pageParam, 10) - 1 : 0;
+            if (targetPage > 0 && targetPage < state.currentPages.length) {
+                await loadPage(targetPage, 'fade');
+            }
+
+            const hash = window.location.hash;
+            if (hash && hash.startsWith('#chunk-')) {
+                const chunkIdx = parseInt(hash.replace('#chunk-', ''), 10);
+                if (!isNaN(chunkIdx)) {
+                    const ocrBtn = document.getElementById('ocr-toggle-btn');
+                    const ocrPanel = document.getElementById('ocr-panel');
+                    if (ocrBtn && ocrPanel && ocrPanel.classList.contains('hidden')) {
+                        ocrBtn.click();
+                    }
+                    setTimeout(() => {
+                        const chunkEl = document.querySelector(`[data-ocr-idx="${chunkIdx}"]`)
+                            || document.querySelectorAll('#ocr-panel-content [data-ocr-idx]')[chunkIdx];
+                        if (chunkEl) {
+                            chunkEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            chunkEl.classList.add('ocr-highlight');
+                        }
+                    }, 800);
+                }
+            }
+        }
     }
 });
 
@@ -348,119 +413,6 @@ async function loadManifest() {
 
         // Calculate year counts for timeline
         calculateYearCounts(state.allIssues);
-
-        // Initialize UI
-        initializeFilters();
-        refreshTimelineAvailability();
-
-        // Check for URL parameters (e.g., from newspaper page links)
-        const urlParams = new URLSearchParams(window.location.search);
-        const paperParam = urlParams.get('paper');
-        const dateParam = urlParams.get('date');
-        const pageParam = urlParams.get('page');
-
-        let urlParamsHandled = false;
-
-        if (dateParam) {
-            // If we have a date, filter to that specific issue
-            // If paperParam is also provided, use it to find the correct paper
-            let issue;
-            if (paperParam) {
-                // Convert paper parameter to title format (e.g., "chicago-defender" -> "Chicago Defender")
-                const paperTitle = paperParam.split('-').map(word =>
-                    word.charAt(0).toUpperCase() + word.slice(1)
-                ).join(' ');
-
-                // Find issue matching both date and paper title
-                issue = state.allIssues.find(i =>
-                    i.id.includes(dateParam) && i.title === paperTitle
-                );
-            } else {
-                // No paper specified, find any issue with this date
-                issue = state.allIssues.find(i => i.id.includes(dateParam));
-            }
-
-            if (issue) {
-                // Set filters to match the issue
-                state.selectedPapers.clear();
-                state.selectedPapers.add(issue.title);
-
-                // Extract year and month from date
-                const [year, month] = dateParam.split('-');
-                state.selectedYear = year;
-                state.selectedMonth = month;
-
-                // Update UI
-                updateStats();
-                renderGrid();
-
-                // Find and open the viewer for this issue
-                const issueIndex = state.displayedIssues.findIndex(item => item.id.includes(dateParam) && item.title === issue.title);
-                if (issueIndex !== -1) {
-                    await openViewer(issueIndex);
-                } else {
-                    await openViewerDirect(issue);
-                }
-
-                // Navigate to specific page if requested (1-indexed in URL)
-                const targetPage = pageParam ? parseInt(pageParam, 10) - 1 : 0;
-                if (targetPage > 0 && targetPage < state.currentPages.length) {
-                    await loadPage(targetPage, 'fade');
-                }
-
-                // Handle #chunk-N hash to open OCR panel
-                const hash = window.location.hash;
-                if (hash && hash.startsWith('#chunk-')) {
-                    const chunkIdx = parseInt(hash.replace('#chunk-', ''), 10);
-                    if (!isNaN(chunkIdx)) {
-                        // Open OCR panel and highlight the chunk
-                        const ocrBtn = document.getElementById('ocr-toggle-btn');
-                        const ocrPanel = document.getElementById('ocr-panel');
-                        if (ocrBtn && ocrPanel && ocrPanel.classList.contains('hidden')) {
-                            ocrBtn.click();
-                        }
-                        // Wait for OCR to load, then scroll to chunk
-                        setTimeout(() => {
-                            const chunkEl = document.querySelector(`[data-ocr-idx="${chunkIdx}"]`)
-                                || document.querySelectorAll('#ocr-panel-content [data-ocr-idx]')[chunkIdx];
-                            if (chunkEl) {
-                                chunkEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                                chunkEl.classList.add('ocr-highlight');
-                            }
-                        }, 800);
-                    }
-                }
-
-                urlParamsHandled = true;
-            }
-        } else if (paperParam) {
-            // Just filter by paper
-            const paperTitle = paperParam.split('-').map(word =>
-                word.charAt(0).toUpperCase() + word.slice(1)
-            ).join(' ');
-
-            // Try to find matching paper
-            const matchingIssue = state.allIssues.find(i =>
-                i.title.toLowerCase().replace(/[.\s]/g, '-') === paperParam ||
-                i.title.toLowerCase().includes(paperParam.replace(/-/g, ' '))
-            );
-
-            if (matchingIssue) {
-                state.selectedPapers.clear();
-                state.selectedPapers.add(matchingIssue.title);
-                updateStats();
-                renderGrid();
-                urlParamsHandled = true;
-            }
-        }
-
-        if (!urlParamsHandled) {
-            // Initialize with random year for current month
-            initializeCurrentMonthRandomYear();
-            updateStats();
-            renderGrid();
-            updateTimelineLabel();
-        }
 
         // Hide loading, show content
         hideElement('loading-state');
@@ -862,63 +814,23 @@ function initializeCurrentMonthRandomYear() {
 }
 
 function spinArchive() {
-    // Don't spin if there are no available years
-    if (!state.availableYears || state.availableYears.length === 0) {
-        return;
-    }
+    const papers = PaperData.getSortedPapers('count');
+    if (!papers.length) return;
 
-    const issuesPool = getIssuesForActivePapers();
-    if (!issuesPool.length) {
-        return;
-    }
+    const randomPaper = papers[Math.floor(Math.random() * papers.length)];
+    const years = Array.from(randomPaper.yearCounts.keys());
+    const randomYear = years[Math.floor(Math.random() * years.length)];
 
-    // Randomly select a year
-    const randomYear = state.availableYears[Math.floor(Math.random() * state.availableYears.length)];
-
-    // Get all issues for the selected year
-    const issuesForYear = issuesPool.filter(issue => issue.date.startsWith(String(randomYear)));
-    if (!issuesForYear.length) {
-        return;
-    }
-
-    // Get all available months for that year
-    const monthsWithIssues = new Set();
-    issuesForYear.forEach(issue => {
-        const month = issue.date.slice(5, 7);
-        monthsWithIssues.add(month);
-    });
-
-    // Convert to array and randomly select a month
-    const availableMonths = Array.from(monthsWithIssues);
-    const randomMonth = availableMonths[Math.floor(Math.random() * availableMonths.length)];
-
-    // Update state
-    state.selectedYear = String(randomYear);
-    state.selectedMonth = randomMonth;
-    state.isDefaultLoad = false;
-
-    // Show the reset button
-    const resetBtn = document.getElementById('timeline-reset');
-    if (resetBtn) {
-        resetBtn.style.opacity = '1';
-        resetBtn.style.pointerEvents = 'all';
-    }
-
-    // Add spinning animation to the button
     const spinBtn = document.getElementById('spin-archive-btn');
     if (spinBtn) {
         spinBtn.classList.add('spinning');
-        setTimeout(() => {
-            spinBtn.classList.remove('spinning');
-        }, 600);
+        setTimeout(() => spinBtn.classList.remove('spinning'), 600);
     }
 
-    // Update UI
-    updateTimelineLabel();
-    renderTimelineMonths(String(randomYear));
-    updateTimelineVisuals();
-    applyFilters();
-    scrollYearIntoView(randomYear);
+    BrowseRouter.navigateTo('paper', {
+        paper: randomPaper.slug,
+        year: String(randomYear),
+    });
 }
 
 function scrollYearIntoView(year) {
@@ -2240,60 +2152,10 @@ function setupEventListeners() {
         lastScroll = currentScroll;
     }, 10));
 
-    // Search input
-    const searchInput = document.getElementById('search-input');
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => handleSearch(e.target.value));
-    }
-
-    // Sort select
-    const sortSelect = document.getElementById('sort-select');
-    if (sortSelect) {
-        sortSelect.addEventListener('change', handleSort);
-    }
-
-    // Reset filters button
-    const resetBtn = document.getElementById('reset-filters-btn');
-    if (resetBtn) {
-        resetBtn.addEventListener('click', resetFilters);
-    }
-
     // Spin the Archive button
     const spinArchiveBtn = document.getElementById('spin-archive-btn');
     if (spinArchiveBtn) {
         spinArchiveBtn.addEventListener('click', spinArchive);
-    }
-
-    // Timeline reset button
-    const timelineReset = document.getElementById('timeline-reset');
-    if (timelineReset) {
-        timelineReset.addEventListener('click', () => {
-            state.selectedYear = null;
-            state.selectedMonth = null;
-            renderTimelineMonths(null);
-            updateTimelineVisuals();
-            updateTimelineLabel();
-            applyFilters();
-            timelineReset.style.opacity = '0';
-            timelineReset.style.pointerEvents = 'none';
-        });
-    }
-
-    const heroClearBtn = document.getElementById('hero-clear-btn');
-    if (heroClearBtn) {
-        heroClearBtn.addEventListener('click', () => {
-            state.selectedYear = null;
-            state.selectedMonth = null;
-            renderTimelineMonths(null);
-            updateTimelineVisuals();
-            updateTimelineLabel();
-            applyFilters();
-            heroClearBtn.classList.add('opacity-0', 'pointer-events-none');
-            if (timelineReset) {
-                timelineReset.style.opacity = '0';
-                timelineReset.style.pointerEvents = 'none';
-            }
-        });
     }
 
     const introStartBtn = document.getElementById('intro-start-btn');
