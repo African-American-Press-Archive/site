@@ -117,9 +117,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     BrowseRouter.init();
 
     // Initialize hero section (Today in History) — after router to avoid race
-    console.log('[DEBUG] Calling updateHeroShowcase with', state.allIssues.length, 'issues');
     updateHeroShowcase(state.allIssues, true);
-    console.log('[DEBUG] Hero hidden?', document.getElementById('newsstand-hero')?.classList.contains('hidden'));
 
     // Setup event listeners (viewer, keyboard shortcuts, etc.)
     setupEventListeners();
