@@ -79,10 +79,12 @@ const PaperGallery = {
                          style="width:100%;height:200%;object-fit:cover;object-position:top;" />
                 </div>
                 <div class="p-4">
-                    <h3 class="text-base font-semibold mb-1" style="color: var(--text-primary); font-family: var(--font-display);">
-                        ${paper.title}
-                    </h3>
-                    <p class="text-sm mb-3" style="color: var(--text-muted);">${paper.location}</p>
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-base font-semibold" style="color: var(--text-primary); font-family: var(--font-display);">
+                            ${paper.title}
+                        </h3>
+                        <span class="text-xs ml-2 flex-shrink-0" style="color: var(--text-muted);">${paper.location}</span>
+                    </div>
                     <div class="flex justify-between items-center">
                         <span class="text-xs font-medium" style="color: var(--unc-longleaf-pine);">${paper.dateRange}</span>
                         <span class="text-xs px-2 py-0.5 rounded-full" style="background: var(--bg-hover); color: var(--text-muted);">

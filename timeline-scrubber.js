@@ -57,7 +57,7 @@ const TimelineScrubber = {
                 <div class="timeline-bar" style="width:100%;border-radius:2px 2px 0 0;height:${heightPx}px;background:${barColor};transition:background 0.15s,height 0.15s;"></div>
             </div>`;
 
-            labelsHtml += `<div style="flex:1;text-align:center;font-size:10px;${labelColor}">${yearShort}</div>`;
+            labelsHtml += `<div style="flex:1;text-align:center;font-size:9px;${labelColor}">${year}</div>`;
         }
 
         container.innerHTML = `
