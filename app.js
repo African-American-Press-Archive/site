@@ -1613,6 +1613,9 @@ async function loadPage(pageIndex, transition = 'next') {
             // Load OCR data for this page
             loadOCRForPage(pagePath);
 
+            // Update URL to reflect current issue and page
+            updateViewerURL();
+
             state.pageCache.set(pagePath, tempImg);
             resolve();
         };
@@ -1625,6 +1628,19 @@ async function loadPage(pageIndex, transition = 'next') {
 
         tempImg.src = fullPath;
     });
+}
+
+function updateViewerURL() {
+    if (!state.currentIssue) return;
+    const issue = state.currentIssue;
+    const slug = PaperData.titleToSlug.get(issue.title) || '';
+    const page = state.currentPageIndex + 1; // 1-indexed in URL
+    const url = new URL(window.location.href);
+    url.search = '';
+    if (slug) url.searchParams.set('paper', slug);
+    url.searchParams.set('date', issue.date);
+    if (page > 1) url.searchParams.set('page', String(page));
+    history.replaceState(history.state, '', url.pathname + url.search);
 }
 
 function navigatePage(direction) {
