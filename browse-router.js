@@ -1,6 +1,7 @@
 // browse-router.js — URL routing, history management, view transitions
 
-const BrowseRouter = {
+// Using var so BrowseRouter attaches to window (const doesn't in non-module scripts)
+var BrowseRouter = {
     currentView: null,  // 'gallery' | 'paper' | 'date'
     galleryScrollY: 0,
 
