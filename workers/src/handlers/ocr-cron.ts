@@ -54,7 +54,7 @@ function extractText(data: OcrData): string {
     .join('\n');
 }
 
-export async function handleOcrCron(env: Env): Promise<string> {
+export async function handleOcrCron(env: Env, limitOverride?: number): Promise<string> {
   const db = env.DB;
   const r2 = env.R2;
 
@@ -67,7 +67,7 @@ export async function handleOcrCron(env: Env): Promise<string> {
        ORDER BY p.issue_id, p.page_num
        LIMIT ?`
     )
-    .bind(BATCH_LIMIT)
+    .bind(limitOverride ?? BATCH_LIMIT)
     .all<PageRow>();
 
   if (pages.length === 0) {

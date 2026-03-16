@@ -56,6 +56,16 @@ app.get('/admin/ocr-status', async (c) => {
   });
 });
 
+// Manually trigger OCR cron (smaller batch for HTTP request time limits)
+app.get('/admin/ocr-run', async (c) => {
+  try {
+    const result = await handleOcrCron(c.env, 100);
+    return c.json({ result });
+  } catch (e: any) {
+    return c.json({ error: e.message, stack: e.stack }, 500);
+  }
+});
+
 app.notFound((c) => c.html(notFoundPage(), 404));
 app.onError((err, c) => {
   console.error('Unhandled error:', err);
