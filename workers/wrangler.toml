@@ -9,7 +9,7 @@ binding = "ASSETS"
 [[d1_databases]]
 binding = "DB"
 database_name = "dangerouspress-db"
-database_id = "<to-be-created>"
+database_id = "399bcc68-1807-49c8-8d15-c8cc6ae57f13"
 
 [[r2_buckets]]
 binding = "R2"

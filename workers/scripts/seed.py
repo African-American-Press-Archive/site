@@ -27,6 +27,8 @@ MANIFEST_PATH = os.path.join(REPO_ROOT, "manifest.json")
 WORKERS_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
 
 BATCH_SIZE = 500  # SQL statements per wrangler invocation
+REMOTE = "--remote" in sys.argv  # Use remote D1 if --remote flag is passed
+LOCATION_FLAG = "--remote" if REMOTE else "--local"
 
 TITLE_OVERRIDES = {
     "Broad Ax": "Chicago Broad Ax",
@@ -115,7 +117,7 @@ def run_sql_batch(statements: list[str]) -> None:
                 "d1",
                 "execute",
                 "dangerouspress-db",
-                "--local",
+                LOCATION_FLAG,
                 f"--file={tmp_path}",
             ],
             cwd=WORKERS_DIR,
@@ -148,7 +150,7 @@ def query_count(table: str) -> int:
             "d1",
             "execute",
             "dangerouspress-db",
-            "--local",
+            LOCATION_FLAG,
             "--command",
             f"SELECT COUNT(*) as cnt FROM {table};",
             "--json",
