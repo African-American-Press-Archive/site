@@ -436,7 +436,9 @@
   // ── OCR functions ────────────────────────────────────────────────────────
   function loadOCRForPage(imageUrl) {
     // Derive JSON URL from image URL: replace extension with .json
-    var jsonUrl = imageUrl.replace(/\.[^.]+$/, '.json');
+    // Proxy through /ocr/ route to avoid CORS issues
+    var r2Path = imageUrl.replace('https://pages.dangerouspress.org/', '');
+    var jsonUrl = '/ocr/' + r2Path.replace(/\.[^.]+$/, '.json');
 
     // Check cache
     if (ocrState.ocrCache[jsonUrl]) {
@@ -444,6 +446,7 @@
       renderOCRPanel(ocrState.currentData);
       renderOCROverlays(ocrState.currentData);
       ocrToggleBtn.classList.remove('hidden');
+      if (!ocrState.panelVisible) showOCRPanel();
       return;
     }
 
@@ -464,6 +467,7 @@
         renderOCRPanel(data);
         renderOCROverlays(data);
         ocrToggleBtn.classList.remove('hidden');
+        if (!ocrState.panelVisible) showOCRPanel();
       })
       .catch(function () {
         ocrState.currentData = null;
@@ -770,5 +774,8 @@
 
   // ── Wire up the open button ───────────────────────────────────────────────
   openBtn.addEventListener('click', openViewer);
+
+  // Auto-open the viewer on page load
+  openViewer();
 
 })();

@@ -17,6 +17,19 @@ app.route('/about', about);
 app.route('/search', search);
 app.route('/', sitemap);
 
+// Proxy OCR JSON from R2 (avoids CORS issues when viewer fetches from workers.dev)
+app.get('/ocr/*', async (c) => {
+  const path = c.req.path.replace('/ocr/', '');
+  const r2Url = `https://pages.dangerouspress.org/${path}`;
+  const resp = await fetch(r2Url);
+  if (!resp.ok) return c.json({ error: 'not found' }, 404);
+  const data = await resp.json();
+  return c.json(data, 200, {
+    'Cache-Control': 'public, max-age=86400',
+    'Access-Control-Allow-Origin': '*',
+  });
+});
+
 app.notFound((c) => c.html(notFoundPage(), 404));
 app.onError((err, c) => {
   console.error('Unhandled error:', err);
