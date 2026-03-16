@@ -314,8 +314,12 @@
   function zoomToRegion(bbox, imgW, imgH) {
     var targetZoom = 2;
     var rect = imgEl.getBoundingClientRect();
+    // Center horizontally on region
     var cx = ((bbox[0] + bbox[2]) / 2) / imgW;
-    var cy = ((bbox[1] + bbox[3]) / 2) / imgH;
+    // Vertically: place the top of the region about 20% from viewport top
+    // so the start of the text is always visible even for tall regions
+    var topY = bbox[1] / imgH;
+    var cy = topY + 0.1; // bias slightly below top edge
 
     var tx = (0.5 - cx) * rect.width;
     var ty = (0.5 - cy) * rect.height;
@@ -562,11 +566,11 @@
     clearOCRHighlight();
     ocrState.activeRegionIdx = idx;
 
-    // Highlight text block in panel
+    // Highlight text block in panel — top of selection always visible
     var textBlock = ocrPanelContent.querySelector('[data-ocr-idx="' + idx + '"]');
     if (textBlock) {
       textBlock.classList.add('ocr-block-highlight');
-      textBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      textBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // Highlight overlay box
@@ -575,13 +579,17 @@
       overlayBox.classList.add('ocr-overlay-active');
     }
 
-    // If clicked from image, auto-zoom and show panel
+    // Always zoom/pan image to center on the selected region
+    var data = ocrState.currentData;
+    if (data && data.regions[idx] && data.regions[idx].bbox) {
+      zoomToRegion(data.regions[idx].bbox, data.width, data.height);
+    }
+
+    // Show panel if not visible
+    if (!ocrState.panelVisible) showOCRPanel();
+
+    // (keep existing source === 'image' block empty since we now always zoom)
     if (source === 'image') {
-      var data = ocrState.currentData;
-      if (data && data.regions[idx] && data.regions[idx].bbox) {
-        zoomToRegion(data.regions[idx].bbox, data.width, data.height);
-      }
-      if (!ocrState.panelVisible) showOCRPanel();
     }
   }
 
