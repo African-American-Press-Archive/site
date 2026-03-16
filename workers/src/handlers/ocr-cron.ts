@@ -11,7 +11,7 @@
 import type { Env } from '../types';
 
 // Process up to this many pages per cron run to stay within CPU limits
-const BATCH_LIMIT = 500;
+const BATCH_LIMIT = 2000;
 const EXCERPT_LEN = 300;
 
 interface PageRow {

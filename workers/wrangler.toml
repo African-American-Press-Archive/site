@@ -17,4 +17,4 @@ bucket_name = "dangerouspress-pages"
 
 # Run OCR indexer every 6 hours — picks up new OCR JSONs from R2
 [triggers]
-crons = ["0 */6 * * *"]
+crons = ["0 * * * *"]
