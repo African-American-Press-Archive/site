@@ -128,14 +128,29 @@ python3 scripts/ingest.py add-ocr --paper pittsburgh-courier --remote
 ## Workflow for new OCR going forward
 
 1. **Your OCR script** processes pages and uploads JSON to R2 (same as now)
-2. **After a batch is done**, run:
-   ```bash
-   cd workers && python3 scripts/ingest.py add-ocr --paper <slug> --remote
-   ```
-3. The text appears in search immediately (FTS triggers handle indexing)
-4. The interactive OCR viewer on issue pages fetches the JSON from R2 on demand — no extra step needed for that
+2. **That's it.** A cron job on the Worker automatically picks up new OCR every 6 hours.
 
-**That's it.** Upload JSON to R2, run the ingest command, done.
+### How the automatic indexing works
+
+A Cloudflare Cron Trigger runs every 6 hours on the Worker. It:
+- Queries D1 for pages where `ocr_text IS NULL`
+- Reads the OCR JSON directly from R2 (fast — no HTTP, uses the R2 binding)
+- Updates `pages.ocr_text` (FTS search triggers fire automatically)
+- Updates `issues.ocr_excerpt` for front pages
+- Processes up to 500 pages per run
+
+So: **upload JSON to R2, and it appears in search within 6 hours.** No manual step needed.
+
+### If you want it indexed immediately
+
+Run this after uploading:
+```bash
+cd workers && python3 scripts/ingest.py add-ocr --paper <slug> --remote
+```
+
+### The interactive OCR viewer
+
+The viewer on issue pages fetches the JSON from R2 on demand when a user opens a page. No indexing step needed for that — as soon as the JSON exists on R2, the viewer can display it.
 
 ---
 
