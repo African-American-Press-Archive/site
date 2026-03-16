@@ -642,19 +642,29 @@
 
   function autoHighlightSearchQuery(data) {
     if (!searchQuery || !data || !data.regions) return;
-    // Find the first region whose text contains any of the search terms
-    // Strip quotes and punctuation from search terms
-    var terms = searchQuery.toLowerCase().replace(/["'""'']/g, '').split(/\s+/).filter(Boolean);
+    // Strip quotes/punctuation, split into terms
+    var terms = searchQuery.toLowerCase().replace(/["'\u201c\u201d\u2018\u2019]/g, '').split(/\s+/).filter(Boolean);
+    if (!terms.length) return;
+
+    // Score each region by how many search terms it contains — pick the best match
+    var bestIdx = -1;
+    var bestScore = 0;
     for (var i = 0; i < data.regions.length; i++) {
       var regionText = (data.regions[i].text || '').toLowerCase();
-      var match = terms.some(function (term) { return regionText.indexOf(term) >= 0; });
-      if (match) {
-        // Small delay to let the panel render
-        setTimeout(function () { highlightOCRRegion(i, 'text'); }, 300);
-        // Clear the query so it doesn't re-trigger on page nav
-        searchQuery = null;
-        return;
+      var score = 0;
+      for (var t = 0; t < terms.length; t++) {
+        if (regionText.indexOf(terms[t]) >= 0) score++;
       }
+      if (score > bestScore) {
+        bestScore = score;
+        bestIdx = i;
+      }
+    }
+
+    if (bestIdx >= 0) {
+      var idx = bestIdx;
+      setTimeout(function () { highlightOCRRegion(idx, 'text'); }, 300);
+      searchQuery = null;
     }
   }
 
