@@ -643,7 +643,8 @@
   function autoHighlightSearchQuery(data) {
     if (!searchQuery || !data || !data.regions) return;
     // Find the first region whose text contains any of the search terms
-    var terms = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+    // Strip quotes and punctuation from search terms
+    var terms = searchQuery.toLowerCase().replace(/["'""'']/g, '').split(/\s+/).filter(Boolean);
     for (var i = 0; i < data.regions.length; i++) {
       var regionText = (data.regions[i].text || '').toLowerCase();
       var match = terms.some(function (term) { return regionText.indexOf(term) >= 0; });
