@@ -180,12 +180,16 @@ def extract_text(ocr_data: dict) -> str:
 # Core logic
 # ---------------------------------------------------------------------------
 
-def get_front_pages_needing_ocr(paper_slug: str | None, remote: bool) -> list[dict]:
+def get_pages_needing_ocr(paper_slug: str | None, remote: bool, all_pages: bool = False) -> list[dict]:
     """
-    Query D1 for front pages (page_num=1) that have no ocr_text yet.
+    Query D1 for pages that have no ocr_text yet.
+    By default only front pages (page_num=1). Pass all_pages=True for all pages.
     Returns list of dicts with keys: page_id, issue_id, image_url.
     """
-    where_clause = "p.page_num = 1 AND (p.ocr_text IS NULL OR p.ocr_text = '')"
+    if all_pages:
+        where_clause = "(p.ocr_text IS NULL OR p.ocr_text = '')"
+    else:
+        where_clause = "p.page_num = 1 AND (p.ocr_text IS NULL OR p.ocr_text = '')"
     if paper_slug:
         where_clause += f" AND i.paper_slug = {escape_sql(paper_slug)}"
 
@@ -239,6 +243,12 @@ def main() -> None:
         help="Run against remote D1 (default: local --local)",
     )
     parser.add_argument(
+        "--all-pages",
+        action="store_true",
+        default=False,
+        help="Index all pages, not just front pages (page_num=1)",
+    )
+    parser.add_argument(
         "--rebuild-fts",
         action="store_true",
         default=False,
@@ -251,7 +261,7 @@ def main() -> None:
 
     # 1. Find front pages that need OCR
     print("\nQuerying front pages without OCR text...")
-    rows = get_front_pages_needing_ocr(args.paper, args.remote)
+    rows = get_pages_needing_ocr(args.paper, args.remote, all_pages=args.all_pages)
     total = len(rows)
     print(f"  Found {total} front page(s) needing OCR.")
 
@@ -261,12 +271,25 @@ def main() -> None:
             rebuild_fts(args.remote)
         return
 
-    # 2. Fetch OCR JSON and build UPDATE statements
-    page_updates: list[str] = []      # UPDATE pages SET ocr_text = ...
-    issue_updates: dict[str, str] = {}  # issue_id -> excerpt
+    # 2. Fetch OCR JSON and write to D1 incrementally
+    page_updates: list[str] = []
+    issue_updates: list[str] = []
 
     skipped = 0
     processed = 0
+    flushed = 0
+
+    def flush_batch():
+        nonlocal page_updates, issue_updates, flushed
+        if not page_updates:
+            return
+        stmts = page_updates + issue_updates
+        batch_num = flushed // BATCH_SIZE + 1
+        print(f"  Writing batch {batch_num} ({len(page_updates)} pages, {len(issue_updates)} excerpts) to D1...")
+        run_sql_batch(stmts, args.remote)
+        flushed += len(page_updates)
+        page_updates = []
+        issue_updates = []
 
     for idx, row in enumerate(rows, start=1):
         page_id = row["page_id"]
@@ -291,26 +314,19 @@ def main() -> None:
         page_updates.append(
             f"UPDATE pages SET ocr_text = {escape_sql(text)} WHERE id = {page_id};"
         )
-        issue_updates[issue_id] = excerpt
+        issue_updates.append(
+            f"UPDATE issues SET ocr_excerpt = {escape_sql(excerpt)} WHERE id = {escape_sql(issue_id)};"
+        )
         processed += 1
 
+        # Flush every BATCH_SIZE pages
+        if len(page_updates) >= BATCH_SIZE:
+            flush_batch()
+
+    # Final flush
+    flush_batch()
+
     print(f"\n  Processed: {processed}, Skipped (no OCR / empty): {skipped}")
-
-    # 3. Build issue excerpt UPDATE statements
-    issue_update_stmts: list[str] = [
-        f"UPDATE issues SET ocr_excerpt = {escape_sql(excerpt)} WHERE id = {escape_sql(issue_id)};"
-        for issue_id, excerpt in issue_updates.items()
-    ]
-
-    # 4. Execute page updates (FTS triggers fire automatically)
-    if page_updates:
-        print(f"\nUpdating {len(page_updates)} page ocr_text rows...")
-        execute_batches(page_updates, args.remote, label="pages")
-
-    # 5. Execute issue excerpt updates
-    if issue_update_stmts:
-        print(f"\nUpdating {len(issue_update_stmts)} issue ocr_excerpt rows...")
-        execute_batches(issue_update_stmts, args.remote, label="issues")
 
     # 6. Optionally rebuild FTS
     if args.rebuild_fts:
