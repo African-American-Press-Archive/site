@@ -73,7 +73,9 @@ export async function getMonthStats(db: D1Database, year: number, slug?: string)
 }
 
 export async function searchOCR(db: D1Database, query: string, filters: SearchFilters = {}): Promise<{
-  results: SearchResult[]; total: number; paperCounts: Map<string, { title: string; count: number }>;
+  results: SearchResult[]; total: number;
+  paperCounts: Map<string, { title: string; count: number }>;
+  yearCounts: { year: number; count: number }[];
 }> {
   const { fromYear = 1905, toYear = 1929, papers, sort = 'relevance', page = 1 } = filters;
   const offset = (page - 1) * ITEMS_PER_PAGE;
@@ -85,7 +87,7 @@ export async function searchOCR(db: D1Database, query: string, filters: SearchFi
     filterParams.push(...papers);
   }
   const orderBy = sort === 'date-asc' ? 'ORDER BY i.date ASC' : sort === 'date-desc' ? 'ORDER BY i.date DESC' : 'ORDER BY rank';
-  const [mainResult, countResult, facetResult] = await Promise.all([
+  const [mainResult, countResult, facetResult, yearResult] = await Promise.all([
     db.prepare(
       `SELECT snippet(ocr_search, 0, '<mark>', '</mark>', '...', 30) as excerpt,
               i.id as issue_id, i.date, i.thumbnail_url, i.ocr_excerpt, i.paper_slug,
@@ -104,10 +106,17 @@ export async function searchOCR(db: D1Database, query: string, filters: SearchFi
        JOIN papers p ON p.slug = i.paper_slug WHERE ocr_search MATCH ? AND i.year BETWEEN ? AND ?
        GROUP BY i.paper_slug ORDER BY count DESC`
     ).bind(query, fromYear, toYear).all<{ paper_slug: string; title: string; count: number }>(),
+    // Year histogram — counts across full range regardless of year filter
+    db.prepare(
+      `SELECT i.year, COUNT(*) as count FROM ocr_search
+       JOIN pages pg ON pg.id = ocr_search.rowid JOIN issues i ON i.id = pg.issue_id
+       WHERE ocr_search MATCH ? AND i.year BETWEEN 1905 AND 1929
+       GROUP BY i.year ORDER BY i.year`
+    ).bind(query).all<{ year: number; count: number }>(),
   ]);
   const paperCounts = new Map<string, { title: string; count: number }>();
   for (const row of facetResult.results) { paperCounts.set(row.paper_slug, { title: row.title, count: row.count }); }
-  return { results: mainResult.results, total: countResult?.total ?? 0, paperCounts };
+  return { results: mainResult.results, total: countResult?.total ?? 0, paperCounts, yearCounts: yearResult.results };
 }
 
 export async function getIssueUrlsForPaper(db: D1Database, slug: string): Promise<{ slug: string; date: string }[]> {

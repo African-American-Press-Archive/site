@@ -1298,33 +1298,93 @@ main {
   margin-bottom: 0.75rem;
 }
 
-.filter-date-range {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.4rem;
-  align-items: center;
+/* Year histogram */
+.year-histogram { margin-bottom: 0.5rem; }
+
+.year-histogram-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 54px;
+  padding: 0 1px;
 }
 
-.filter-label {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  font-weight: 600;
-  white-space: nowrap;
+.year-bar-col {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.filter-year-input {
+.year-bar {
   width: 100%;
-  padding: 0.35rem 0.5rem;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  font-size: 0.875rem;
+  min-height: 0;
+  border-radius: 2px 2px 0 0;
+  transition: background 0.15s;
 }
 
-.filter-year-input:focus {
-  outline: none;
-  border-color: var(--accent-primary);
+.year-bar-active .year-bar { background: var(--unc-longleaf-pine, #00594C); }
+.year-bar-dim .year-bar { background: rgba(139, 115, 85, 0.2); }
+
+.year-histogram-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+}
+
+.year-label {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+}
+
+/* Dual range slider */
+.year-histogram-range {
+  position: relative;
+  height: 20px;
+  margin: 0.25rem 0;
+}
+
+.year-range-input {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  pointer-events: none;
+  margin: 0;
+}
+
+.year-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 2px solid var(--unc-longleaf-pine, #00594C);
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.year-range-input::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 2px solid var(--unc-longleaf-pine, #00594C);
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.year-range-display {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .filter-sort {

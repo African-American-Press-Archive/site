@@ -62,20 +62,48 @@ export function searchResultsPage(
   filters: SearchFilters,
   paperCounts: Map<string, { title: string; count: number }>,
   allPapers: Array<{ slug: string; title: string }>,
+  yearCounts: { year: number; count: number }[] = [],
 ): string {
   const { fromYear = 1905, toYear = 1929, papers: selectedPapers = [], sort = 'relevance', page = 1 } = filters;
 
   const baseSearchUrl = buildSearchUrl(query, filters, { page: 1 });
 
-  // Sidebar: date range
+  // Build year histogram — always show all years 1905-1929
+  const yearMap = new Map(yearCounts.map((y) => [y.year, y.count]));
+  const maxCount = Math.max(1, ...yearCounts.map((y) => y.count));
+  const allYears = Array.from({ length: 25 }, (_, i) => 1905 + i);
+  const histogramBars = allYears.map((year) => {
+    const count = yearMap.get(year) ?? 0;
+    const heightPct = count > 0 ? Math.max(4, Math.round((count / maxCount) * 50)) : 0;
+    const inRange = year >= fromYear && year <= toYear;
+    const activeClass = inRange ? 'year-bar-active' : 'year-bar-dim';
+    const tooltip = count > 0 ? `${year}: ${count} result${count !== 1 ? 's' : ''}` : `${year}: 0`;
+    return `<div class="year-bar-col ${activeClass}" title="${tooltip}" data-year="${year}">
+      <div class="year-bar" style="height:${heightPct}px"></div>
+    </div>`;
+  }).join('');
+
+  const yearLabels = allYears
+    .filter((y) => y % 5 === 0 || y === 1929)
+    .map((y) => `<span class="year-label">${y}</span>`)
+    .join('');
+
+  // Sidebar: date range histogram + hidden inputs
   const dateRangeSidebar = `<div class="filter-section">
   <h3 class="filter-heading">Date Range</h3>
-  <div class="filter-date-range">
-    <label class="filter-label" for="from-year">From</label>
-    <input type="number" id="from-year" name="from" value="${fromYear}" min="1905" max="1929" class="filter-year-input">
-    <label class="filter-label" for="to-year">To</label>
-    <input type="number" id="to-year" name="to" value="${toYear}" min="1905" max="1929" class="filter-year-input">
+  <div class="year-histogram">
+    <div class="year-histogram-bars">${histogramBars}</div>
+    <div class="year-histogram-labels">${yearLabels}</div>
+    <div class="year-histogram-range">
+      <input type="range" id="from-year-range" min="1905" max="1929" value="${fromYear}" class="year-range-input">
+      <input type="range" id="to-year-range" min="1905" max="1929" value="${toYear}" class="year-range-input">
+    </div>
+    <div class="year-range-display">
+      <span id="from-year-display">${fromYear}</span> – <span id="to-year-display">${toYear}</span>
+    </div>
   </div>
+  <input type="hidden" id="from-year" name="from" value="${fromYear}">
+  <input type="hidden" id="to-year" name="to" value="${toYear}">
 </div>`;
 
   // Sidebar: sort

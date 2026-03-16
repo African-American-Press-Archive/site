@@ -27,12 +27,12 @@ search.get('/', async (c) => {
   };
 
   try {
-    const [{ results, total, paperCounts }, allPapers] = await Promise.all([
+    const [{ results, total, paperCounts, yearCounts }, allPapers] = await Promise.all([
       searchOCR(c.env.DB, query, filters),
       getAllPapers(c.env.DB),
     ]);
 
-    const html = searchResultsPage(query, results, total, filters, paperCounts, allPapers);
+    const html = searchResultsPage(query, results, total, filters, paperCounts, allPapers, yearCounts);
 
     return c.html(html, 200, {
       'Cache-Control': 'public, max-age=3600',
