@@ -31,7 +31,7 @@ function buildSearchUrl(
   return `/search?${params.toString()}`;
 }
 
-function resultCard(result: SearchResult): string {
+function resultCard(result: SearchResult, query: string): string {
   const issueUrl = `/papers/${result.paper_slug}/${result.date}`;
   const dateLabel = formatDate(result.date);
   const thumb = result.thumbnail_url
@@ -50,7 +50,7 @@ function resultCard(result: SearchResult): string {
       <span class="search-result-page">p.${result.page_num}</span>
     </div>
     <p class="search-result-excerpt">${result.excerpt}</p>
-    <a href="${escapeAttr(issueUrl)}?page=${result.page_num}" class="search-result-link">View page →</a>
+    <a href="${escapeAttr(issueUrl)}?page=${result.page_num}&q=${encodeURIComponent(query)}" class="search-result-link">View page →</a>
   </div>
 </article>`;
 }
@@ -114,7 +114,7 @@ export function searchResultsPage(
 </div>`;
 
   // Results
-  const resultCards = results.map(resultCard).join('\n');
+  const resultCards = results.map((r) => resultCard(r, query)).join('\n');
   const paginationHtml = pagination(baseSearchUrl.replace('&page=1', '').replace('?page=1', ''), page, total, ITEMS_PER_PAGE);
 
   const resultCountText = total === 0

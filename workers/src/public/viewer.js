@@ -472,6 +472,7 @@
         renderOCROverlays(data);
         ocrToggleBtn.classList.remove('hidden');
         if (!ocrState.panelVisible) showOCRPanel();
+        autoHighlightSearchQuery(data);
       })
       .catch(function () {
         ocrState.currentData = null;
@@ -634,6 +635,26 @@
       if (next >= count) next = 0;
     }
     highlightOCRRegion(next, 'text');
+  }
+
+  // ── Search query auto-highlight ──────────────────────────────────────────
+  var searchQuery = new URLSearchParams(window.location.search).get('q');
+
+  function autoHighlightSearchQuery(data) {
+    if (!searchQuery || !data || !data.regions) return;
+    // Find the first region whose text contains any of the search terms
+    var terms = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+    for (var i = 0; i < data.regions.length; i++) {
+      var regionText = (data.regions[i].text || '').toLowerCase();
+      var match = terms.some(function (term) { return regionText.indexOf(term) >= 0; });
+      if (match) {
+        // Small delay to let the panel render
+        setTimeout(function () { highlightOCRRegion(i, 'text'); }, 300);
+        // Clear the query so it doesn't re-trigger on page nav
+        searchQuery = null;
+        return;
+      }
+    }
   }
 
   // ── Event binding ────────────────────────────────────────────────────────
