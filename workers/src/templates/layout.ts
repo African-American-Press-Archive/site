@@ -5,10 +5,11 @@ export interface LayoutOptions {
   canonicalUrl?: string;
   jsonLd?: object;
   bodyClass?: string;
+  hideNav?: boolean;
 }
 
 export function layout(options: LayoutOptions, content: string): string {
-  const { title, description, ogImage, canonicalUrl, jsonLd, bodyClass } = options;
+  const { title, description, ogImage, canonicalUrl, jsonLd, bodyClass, hideNav } = options;
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +27,7 @@ export function layout(options: LayoutOptions, content: string): string {
   <link rel="icon" href="/favicon.svg">
 </head>
 <body class="${bodyClass ?? ''}">
-  <nav class="site-nav">
+  ${hideNav ? '' : `<nav class="site-nav">
     <div class="site-nav-inner">
       <a href="/" class="site-logo">Dangerous Press</a>
       <div class="site-nav-links">
@@ -37,7 +38,7 @@ export function layout(options: LayoutOptions, content: string): string {
         </form>
       </div>
     </div>
-  </nav>
+  </nav>`}
   <main>${content}</main>
   <footer class="site-footer">
     <p>Dangerous Press Archive — African American Newspapers, 1905–1929</p>
