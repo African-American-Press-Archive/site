@@ -1357,3 +1357,51 @@ main {
     width: 60px;
   }
 }
+
+/* ── Range slider (search.js progressive enhancement) ── */
+.range-slider {
+  margin-top: 0.5rem;
+}
+
+.range-track {
+  position: relative;
+  height: 6px;
+  background: var(--border-color, #ccc);
+  border-radius: 3px;
+  margin: 1rem 0 0.5rem;
+}
+
+.range-fill {
+  position: absolute;
+  height: 100%;
+  background: var(--unc-hyperlink-blue, #4b9cd3);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.range-handle {
+  position: absolute;
+  top: -5px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 2px solid var(--unc-hyperlink-blue, #4b9cd3);
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  transition: box-shadow 0.15s ease;
+}
+
+.range-handle:hover,
+.range-handle:focus {
+  box-shadow: 0 0 0 3px rgba(75, 156, 211, 0.3);
+  outline: none;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted, #666);
+}
