@@ -31,11 +31,11 @@ export function issuePage(
     </a>`;
   }).join('');
 
-  // OCR text from the requested page (hidden from search snippets)
+  // OCR text from the requested page (hidden from search snippets, visible in details for SEO)
   const activePage = pages.find((p) => p.page_num === pageNum) ?? pages[0];
   const ocrText = activePage?.ocr_text ?? '';
   const ocrHtml = ocrText
-    ? `<div class="ocr-text" data-nosnippet>${escapeHtml(ocrText)}</div>`
+    ? `<details class="ocr-text-seo" data-nosnippet><summary class="ocr-text-seo-toggle">Page text (machine-generated)</summary><div class="ocr-text-seo-content">${escapeHtml(ocrText)}</div></details>`
     : '';
 
   // Prev/next navigation
@@ -68,6 +68,12 @@ export function issuePage(
           ${pageThumbs}
         </div>
       </div>
+    </div>
+    <div class="issue-actions">
+      <button id="open-viewer" class="open-viewer-btn" data-initial-page="${pageNum}">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+        Open Viewer
+      </button>
     </div>
     <nav class="issue-nav">
       ${prevHtml}

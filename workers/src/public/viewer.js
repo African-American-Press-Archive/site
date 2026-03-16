@@ -1,6 +1,6 @@
 /**
  * viewer.js — Progressive enhancement for issue pages.
- * Creates a full-screen image viewer modal when the user clicks "Open Viewer".
+ * Creates a full-screen image viewer modal with interactive OCR panel.
  */
 (function () {
   'use strict';
@@ -44,6 +44,9 @@
     translateY: 0,
   };
 
+  // ── OCR state ────────────────────────────────────────────────────────────
+  var ocrState = { currentData: null, panelVisible: false, activeRegionIdx: -1, ocrCache: {} };
+
   // ── Build modal DOM ───────────────────────────────────────────────────────
   function buildModal() {
     var modal = document.createElement('div');
@@ -80,23 +83,42 @@
           '<button id="dpv-zoom-reset" title="Reset zoom (0)" aria-label="Reset zoom" style="background:none;border:none;color:#aaa;font-size:0.75rem;cursor:pointer;padding:0.25rem 0.5rem;">Fit</button>',
         '</div>',
         '<div style="display:flex;align-items:center;gap:0.25rem;">',
+          '<button id="dpv-ocr-toggle" class="ocr-toggle-btn" title="Read Text (R)" aria-label="Toggle OCR text panel">',
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+            '<span>Read Text</span>',
+          '</button>',
           '<button id="dpv-thumbs-toggle" title="Thumbnails (T)" aria-label="Toggle thumbnails" style="background:none;border:none;color:#fff;font-size:0.8rem;cursor:pointer;padding:0.25rem 0.5rem;border:1px solid #555;border-radius:3px;">Pages</button>',
           '<button id="dpv-fullscreen" title="Fullscreen (F)" aria-label="Toggle fullscreen" style="background:none;border:none;color:#fff;font-size:1rem;cursor:pointer;padding:0.25rem 0.5rem;">&#x26F6;</button>',
           '<button id="dpv-download" title="Download (D)" aria-label="Download page" style="background:none;border:none;color:#fff;font-size:1rem;cursor:pointer;padding:0.25rem 0.5rem;">&#x2193;</button>',
         '</div>',
       '</div>',
 
-      /* Image area */
-      '<div id="dpv-image-wrapper" style="flex:1;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;cursor:zoom-in;">',
-        '<div id="dpv-image-container" style="transform-origin:center center;transition:transform 0.15s ease;display:flex;align-items:center;justify-content:center;">',
-          '<img id="dpv-image" alt="Page image" style="max-width:100%;max-height:calc(100vh - 120px);object-fit:contain;user-select:none;-webkit-user-drag:none;display:block;" />',
+      /* Body: image area + OCR panel side by side */
+      '<div id="dpv-body" style="flex:1;display:flex;overflow:hidden;">',
+
+        /* Image area */
+        '<div id="dpv-image-wrapper" style="flex:1;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;cursor:zoom-in;">',
+          '<div id="dpv-image-container" style="transform-origin:center center;transition:transform 0.15s ease;display:flex;align-items:center;justify-content:center;position:relative;">',
+            '<img id="dpv-image" alt="Page image" style="max-width:100%;max-height:calc(100vh - 120px);object-fit:contain;user-select:none;-webkit-user-drag:none;display:block;" />',
+            '<div id="dpv-ocr-overlays" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;"></div>',
+          '</div>',
+          '<div id="dpv-loading" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);">',
+            '<div style="width:40px;height:40px;border:3px solid #555;border-top-color:#fff;border-radius:50%;animation:dpv-spin 0.8s linear infinite;"></div>',
+          '</div>',
+          /* Overlay nav arrows */
+          '<button id="dpv-prev-overlay" aria-label="Previous page" style="position:absolute;left:0;top:0;bottom:0;width:60px;background:linear-gradient(to right,rgba(0,0,0,0.4),transparent);border:none;color:#fff;font-size:2rem;cursor:pointer;display:flex;align-items:center;justify-content:flex-start;padding-left:0.75rem;">&#x2039;</button>',
+          '<button id="dpv-next-overlay" aria-label="Next page" style="position:absolute;right:0;top:0;bottom:0;width:60px;background:linear-gradient(to left,rgba(0,0,0,0.4),transparent);border:none;color:#fff;font-size:2rem;cursor:pointer;display:flex;align-items:center;justify-content:flex-end;padding-right:0.75rem;">&#x203A;</button>',
         '</div>',
-        '<div id="dpv-loading" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);">',
-          '<div style="width:40px;height:40px;border:3px solid #555;border-top-color:#fff;border-radius:50%;animation:dpv-spin 0.8s linear infinite;"></div>',
+
+        /* OCR Panel */
+        '<div id="ocr-panel" class="hidden">',
+          '<div id="ocr-panel-header">',
+            '<span class="ocr-panel-title">Page Text</span>',
+            '<button id="ocr-panel-close" title="Close panel">&times;</button>',
+          '</div>',
+          '<div id="ocr-panel-content"></div>',
         '</div>',
-        /* Overlay nav arrows */
-        '<button id="dpv-prev-overlay" aria-label="Previous page" style="position:absolute;left:0;top:0;bottom:0;width:60px;background:linear-gradient(to right,rgba(0,0,0,0.4),transparent);border:none;color:#fff;font-size:2rem;cursor:pointer;display:flex;align-items:center;justify-content:flex-start;padding-left:0.75rem;">&#x2039;</button>',
-        '<button id="dpv-next-overlay" aria-label="Next page" style="position:absolute;right:0;top:0;bottom:0;width:60px;background:linear-gradient(to left,rgba(0,0,0,0.4),transparent);border:none;color:#fff;font-size:2rem;cursor:pointer;display:flex;align-items:center;justify-content:flex-end;padding-right:0.75rem;">&#x203A;</button>',
+
       '</div>',
 
       /* Thumbnail strip */
@@ -125,6 +147,7 @@
   var prevPageBtn, nextPageBtn, prevOverlay, nextOverlay;
   var thumbStrip, thumbContainer;
   var zoomLabel;
+  var ocrToggleBtn, ocrPanel, ocrPanelContent, ocrOverlays;
 
   // ── Open / close ─────────────────────────────────────────────────────────
   function openViewer() {
@@ -141,6 +164,10 @@
       thumbStrip = document.getElementById('dpv-thumb-strip');
       thumbContainer = document.getElementById('dpv-thumb-container');
       zoomLabel = document.getElementById('dpv-zoom-label');
+      ocrToggleBtn = document.getElementById('dpv-ocr-toggle');
+      ocrPanel = document.getElementById('ocr-panel');
+      ocrPanelContent = document.getElementById('ocr-panel-content');
+      ocrOverlays = document.getElementById('dpv-ocr-overlays');
 
       bindEvents();
       buildThumbnails();
@@ -152,6 +179,12 @@
     panState.translateY = 0;
     state.thumbnailsVisible = false;
     thumbStrip.style.display = 'none';
+
+    ocrState.panelVisible = false;
+    ocrState.activeRegionIdx = -1;
+    ocrState.currentData = null;
+    ocrPanel.classList.add('hidden');
+    ocrToggleBtn.classList.remove('active');
 
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
@@ -171,6 +204,7 @@
     modal.style.display = 'none';
     document.body.style.overflow = '';
     state.thumbnailsVisible = false;
+    hideOCRPanel();
     if (history.state && history.state.dpViewerOpen) {
       history.back();
     }
@@ -186,11 +220,18 @@
     var page = pages[index];
     var url = page.imageUrl;
 
+    // Clear OCR overlays for new page
+    ocrState.currentData = null;
+    ocrState.activeRegionIdx = -1;
+    ocrOverlays.innerHTML = '';
+    ocrPanelContent.innerHTML = '';
+
     if (state.pageCache[url]) {
       imgEl.src = url;
       imgEl.style.opacity = '1';
       showLoading(false);
       updateUI();
+      loadOCRForPage(url);
       return;
     }
 
@@ -202,6 +243,7 @@
       imgEl.style.opacity = '1';
       showLoading(false);
       updateUI();
+      loadOCRForPage(url);
     };
     tmp.onerror = function () {
       showLoading(false);
@@ -259,6 +301,24 @@
 
     var tx = (0.5 - clickXRatio) * rect.width;
     var ty = (0.5 - clickYRatio) * rect.height;
+    var maxTx = rect.width * (1 - 1 / targetZoom) / 2;
+    var maxTy = rect.height * (1 - 1 / targetZoom) / 2;
+
+    state.zoomLevel = targetZoom;
+    panState.translateX = Math.max(-maxTx, Math.min(maxTx, tx));
+    panState.translateY = Math.max(-maxTy, Math.min(maxTy, ty));
+    applyTransform();
+    imgWrapper.style.cursor = 'grab';
+  }
+
+  function zoomToRegion(bbox, imgW, imgH) {
+    var targetZoom = 2;
+    var rect = imgEl.getBoundingClientRect();
+    var cx = ((bbox[0] + bbox[2]) / 2) / imgW;
+    var cy = ((bbox[1] + bbox[3]) / 2) / imgH;
+
+    var tx = (0.5 - cx) * rect.width;
+    var ty = (0.5 - cy) * rect.height;
     var maxTx = rect.width * (1 - 1 / targetZoom) / 2;
     var maxTy = rect.height * (1 - 1 / targetZoom) / 2;
 
@@ -373,6 +433,197 @@
     }
   }
 
+  // ── OCR functions ────────────────────────────────────────────────────────
+  function loadOCRForPage(imageUrl) {
+    // Derive JSON URL from image URL: replace extension with .json
+    var jsonUrl = imageUrl.replace(/\.[^.]+$/, '.json');
+
+    // Check cache
+    if (ocrState.ocrCache[jsonUrl]) {
+      ocrState.currentData = ocrState.ocrCache[jsonUrl];
+      renderOCRPanel(ocrState.currentData);
+      renderOCROverlays(ocrState.currentData);
+      ocrToggleBtn.classList.remove('hidden');
+      return;
+    }
+
+    fetch(jsonUrl)
+      .then(function (resp) {
+        if (!resp.ok) throw new Error('No OCR data');
+        return resp.json();
+      })
+      .then(function (data) {
+        if (!data || !data.regions || !data.regions.length) {
+          ocrState.currentData = null;
+          ocrToggleBtn.classList.add('hidden');
+          if (ocrState.panelVisible) hideOCRPanel();
+          return;
+        }
+        ocrState.ocrCache[jsonUrl] = data;
+        ocrState.currentData = data;
+        renderOCRPanel(data);
+        renderOCROverlays(data);
+        ocrToggleBtn.classList.remove('hidden');
+      })
+      .catch(function () {
+        ocrState.currentData = null;
+        ocrToggleBtn.classList.add('hidden');
+        if (ocrState.panelVisible) hideOCRPanel();
+      });
+  }
+
+  function renderOCRPanel(data) {
+    if (!data || !data.regions) { ocrPanelContent.innerHTML = ''; return; }
+    var html = '';
+    data.regions.forEach(function (region, idx) {
+      var tag, cls;
+      switch (region.type) {
+        case 'doc_title':
+          tag = 'h2'; cls = 'ocr-block-title'; break;
+        case 'paragraph_title':
+          tag = 'h3'; cls = 'ocr-block-subtitle'; break;
+        default:
+          tag = 'p'; cls = 'ocr-block-text'; break;
+      }
+      html += '<' + tag + ' class="' + cls + '" data-ocr-idx="' + idx + '">' + escapeHtml(region.text) + '</' + tag + '>';
+    });
+    ocrPanelContent.innerHTML = html;
+
+    // Bind click handlers
+    var blocks = ocrPanelContent.querySelectorAll('[data-ocr-idx]');
+    blocks.forEach(function (block) {
+      block.addEventListener('click', function () {
+        var idx = parseInt(block.dataset.ocrIdx, 10);
+        highlightOCRRegion(idx, 'text');
+      });
+    });
+  }
+
+  function renderOCROverlays(data) {
+    ocrOverlays.innerHTML = '';
+    if (!data || !data.regions || !data.image_width || !data.image_height) return;
+    var imgW = data.image_width;
+    var imgH = data.image_height;
+
+    data.regions.forEach(function (region, idx) {
+      if (!region.bbox || region.bbox.length < 4) return;
+      var x1 = region.bbox[0], y1 = region.bbox[1], x2 = region.bbox[2], y2 = region.bbox[3];
+      var box = document.createElement('div');
+      box.className = 'ocr-overlay-box';
+      box.dataset.ocrIdx = idx;
+      box.style.left = (x1 / imgW * 100) + '%';
+      box.style.top = (y1 / imgH * 100) + '%';
+      box.style.width = ((x2 - x1) / imgW * 100) + '%';
+      box.style.height = ((y2 - y1) / imgH * 100) + '%';
+      ocrOverlays.appendChild(box);
+    });
+  }
+
+  function hitTestOCRRegion(e) {
+    if (!ocrState.currentData || !ocrState.currentData.regions) return -1;
+    var data = ocrState.currentData;
+    var imgW = data.image_width;
+    var imgH = data.image_height;
+    if (!imgW || !imgH) return -1;
+
+    var rect = imgEl.getBoundingClientRect();
+    var clickX = (e.clientX - rect.left) / rect.width * imgW;
+    var clickY = (e.clientY - rect.top) / rect.height * imgH;
+
+    var bestIdx = -1;
+    var bestArea = Infinity;
+
+    data.regions.forEach(function (region, idx) {
+      if (!region.bbox || region.bbox.length < 4) return;
+      var x1 = region.bbox[0], y1 = region.bbox[1], x2 = region.bbox[2], y2 = region.bbox[3];
+      if (clickX >= x1 && clickX <= x2 && clickY >= y1 && clickY <= y2) {
+        var area = (x2 - x1) * (y2 - y1);
+        if (area < bestArea) {
+          bestArea = area;
+          bestIdx = idx;
+        }
+      }
+    });
+
+    return bestIdx;
+  }
+
+  function highlightOCRRegion(idx, source) {
+    // Toggle off if clicking same region
+    if (idx === ocrState.activeRegionIdx) {
+      clearOCRHighlight();
+      return;
+    }
+
+    clearOCRHighlight();
+    ocrState.activeRegionIdx = idx;
+
+    // Highlight text block in panel
+    var textBlock = ocrPanelContent.querySelector('[data-ocr-idx="' + idx + '"]');
+    if (textBlock) {
+      textBlock.classList.add('ocr-block-highlight');
+      textBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // Highlight overlay box
+    var overlayBox = ocrOverlays.querySelector('[data-ocr-idx="' + idx + '"]');
+    if (overlayBox) {
+      overlayBox.classList.add('ocr-overlay-active');
+    }
+
+    // If clicked from image, auto-zoom and show panel
+    if (source === 'image') {
+      var data = ocrState.currentData;
+      if (data && data.regions[idx] && data.regions[idx].bbox) {
+        zoomToRegion(data.regions[idx].bbox, data.image_width, data.image_height);
+      }
+      if (!ocrState.panelVisible) showOCRPanel();
+    }
+  }
+
+  function clearOCRHighlight() {
+    ocrState.activeRegionIdx = -1;
+    var highlighted = ocrPanelContent.querySelectorAll('.ocr-block-highlight');
+    highlighted.forEach(function (el) { el.classList.remove('ocr-block-highlight'); });
+    var activeOverlays = ocrOverlays.querySelectorAll('.ocr-overlay-active');
+    activeOverlays.forEach(function (el) { el.classList.remove('ocr-overlay-active'); });
+  }
+
+  function toggleOCRPanel() {
+    if (ocrState.panelVisible) {
+      hideOCRPanel();
+    } else {
+      showOCRPanel();
+    }
+  }
+
+  function showOCRPanel() {
+    ocrState.panelVisible = true;
+    ocrPanel.classList.remove('hidden');
+    ocrToggleBtn.classList.add('active');
+  }
+
+  function hideOCRPanel() {
+    ocrState.panelVisible = false;
+    ocrPanel.classList.add('hidden');
+    ocrToggleBtn.classList.remove('active');
+    clearOCRHighlight();
+  }
+
+  function navigateOCRRegion(dir) {
+    if (!ocrState.currentData || !ocrState.currentData.regions.length) return;
+    var count = ocrState.currentData.regions.length;
+    var next;
+    if (ocrState.activeRegionIdx < 0) {
+      next = dir > 0 ? 0 : count - 1;
+    } else {
+      next = ocrState.activeRegionIdx + dir;
+      if (next < 0) next = count - 1;
+      if (next >= count) next = 0;
+    }
+    highlightOCRRegion(next, 'text');
+  }
+
   // ── Event binding ────────────────────────────────────────────────────────
   function bindEvents() {
     // Header buttons
@@ -388,7 +639,11 @@
     document.getElementById('dpv-fullscreen').addEventListener('click', toggleFullscreen);
     document.getElementById('dpv-download').addEventListener('click', downloadPage);
 
-    // Click-to-zoom on image
+    // OCR buttons
+    ocrToggleBtn.addEventListener('click', toggleOCRPanel);
+    document.getElementById('ocr-panel-close').addEventListener('click', hideOCRPanel);
+
+    // Click-to-zoom on image (with OCR hit-test)
     var clickStartX, clickStartY;
     imgEl.addEventListener('mousedown', function (e) {
       clickStartX = e.clientX;
@@ -398,6 +653,17 @@
       var dx = Math.abs(e.clientX - clickStartX);
       var dy = Math.abs(e.clientY - clickStartY);
       if (dx >= 5 || dy >= 5) return; // was a drag
+
+      // Try OCR hit test first
+      if (ocrState.currentData) {
+        var hitIdx = hitTestOCRRegion(e);
+        if (hitIdx >= 0) {
+          highlightOCRRegion(hitIdx, 'image');
+          return;
+        }
+      }
+
+      // Normal zoom behavior
       if (state.zoomLevel === 1) {
         zoomToPoint(e);
       } else {
@@ -463,6 +729,14 @@
     // Keyboard
     document.addEventListener('keydown', function (e) {
       if (!modal || modal.style.display === 'none') return;
+
+      // Arrow up/down for OCR navigation when panel is open
+      if (ocrState.panelVisible && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
+        navigateOCRRegion(e.key === 'ArrowDown' ? 1 : -1);
+        e.preventDefault();
+        return;
+      }
+
       switch (e.key) {
         case 'Escape':     closeViewer();       e.preventDefault(); break;
         case 'ArrowLeft':  navigatePage(-1);    e.preventDefault(); break;
@@ -478,6 +752,8 @@
         case 'D':          downloadPage();      e.preventDefault(); break;
         case 't':
         case 'T':          if (pages.length > 1) toggleThumbnails(); e.preventDefault(); break;
+        case 'r':
+        case 'R':          if (ocrState.currentData) toggleOCRPanel(); e.preventDefault(); break;
       }
     });
 
@@ -487,6 +763,7 @@
         modal.style.display = 'none';
         document.body.style.overflow = '';
         state.thumbnailsVisible = false;
+        hideOCRPanel();
       }
     });
   }

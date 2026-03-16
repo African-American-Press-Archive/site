@@ -856,18 +856,56 @@ main {
   color: var(--text-secondary);
 }
 
-/* OCR text */
-.ocr-text {
+/* OCR text (SEO-visible collapsed section) */
+.ocr-text-seo {
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+.ocr-text-seo-toggle {
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  list-style: none;
+}
+.ocr-text-seo-toggle::-webkit-details-marker { display: none; }
+.ocr-text-seo-toggle::before { content: '\25B6  '; font-size: 0.65rem; }
+.ocr-text-seo[open] .ocr-text-seo-toggle::before { content: '\25BC  '; }
+.ocr-text-seo-content {
   font-size: 0.875rem;
   line-height: 1.8;
   color: var(--text-secondary);
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 1.25rem 1.5rem;
-  margin-top: 1.5rem;
+  padding: 0 1.25rem 1.25rem;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+}
+
+/* Open Viewer button */
+.issue-actions {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.open-viewer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  background: var(--accent-gradient);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.open-viewer-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ==================== SEARCH PAGE ==================== */
@@ -1404,4 +1442,34 @@ main {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-muted, #666);
+}
+
+/* ==================== OCR PANEL (viewer modal) ==================== */
+#ocr-panel { width: 400px; display: flex; flex-direction: column; background: var(--bg-card); border-left: 1px solid var(--border-color); }
+#ocr-panel.hidden { display: none; }
+#ocr-panel-header { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
+.ocr-panel-title { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 600; }
+#ocr-panel-close { background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--text-muted); padding: 0 0.25rem; }
+#ocr-panel-content { flex: 1; overflow-y: auto; padding: 1rem; font-family: Georgia, serif; font-size: 0.95rem; line-height: 1.6; }
+
+/* OCR text blocks */
+.ocr-block-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; margin: 0 0 0.5rem; padding: 0.5rem 0.75rem; border-left: 4px solid var(--accent-primary); cursor: pointer; }
+.ocr-block-subtitle { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; margin: 0 0 0.4rem; padding: 0.4rem 0.75rem; border-left: 3px solid var(--accent-secondary); cursor: pointer; }
+.ocr-block-text { margin: 0 0 0.5rem; padding: 0.4rem 0.75rem; border-left: 3px solid transparent; cursor: pointer; border-radius: 0 4px 4px 0; }
+.ocr-block-title:hover, .ocr-block-subtitle:hover, .ocr-block-text:hover { background: rgba(0, 165, 173, 0.08); border-left-color: var(--unc-tile-teal); }
+.ocr-block-highlight { background: rgba(0, 165, 173, 0.15) !important; border-left-color: var(--unc-tile-teal) !important; }
+
+/* OCR image overlays */
+.ocr-overlay-box { position: absolute; border: 1.5px dashed rgba(0, 165, 173, 0.4); pointer-events: none; border-radius: 2px; transition: all 0.2s; }
+.ocr-overlay-active { border: 2px solid var(--unc-tile-teal); background: rgba(0, 165, 173, 0.1); box-shadow: 0 0 8px rgba(0, 165, 173, 0.3); }
+
+/* OCR toggle button */
+.ocr-toggle-btn { display: flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-card); cursor: pointer; font-size: 0.8rem; color: var(--text-secondary); }
+.ocr-toggle-btn:hover { background: var(--bg-hover); }
+.ocr-toggle-btn.active { background: var(--unc-tile-teal); color: white; border-color: var(--unc-tile-teal); }
+.ocr-toggle-btn.hidden { display: none; }
+
+/* Mobile OCR */
+@media (max-width: 768px) {
+  #ocr-panel { position: absolute; right: 0; top: 0; bottom: 0; width: 85vw; max-width: 400px; z-index: 10; box-shadow: -4px 0 20px rgba(0,0,0,0.3); }
 }
