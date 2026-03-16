@@ -106,22 +106,21 @@ export function searchResultsPage(
   <input type="hidden" id="to-year" name="to" value="${toYear}">
 </div>`;
 
-  // Sidebar: sort — compact inline buttons
+  // Sort — standalone links above the filter form (instant, no Apply needed)
   const sortOptions = [
     { value: 'relevance', label: 'Best' },
     { value: 'date-desc', label: 'Newest' },
     { value: 'date-asc', label: 'Oldest' },
   ];
-  const sortButtons = sortOptions.map((opt) => {
+  const sortLinks = sortOptions.map((opt) => {
     const active = sort === opt.value ? ' filter-sort-btn--active' : '';
-    return `<label class="filter-sort-btn${active}">
-      <input type="radio" name="sort" value="${opt.value}" ${sort === opt.value ? 'checked' : ''}> ${opt.label}
-    </label>`;
+    const href = buildSearchUrl(query, filters, { sort: opt.value as any, page: 1 });
+    return `<a href="${escapeAttr(href)}" class="filter-sort-btn${active}">${opt.label}</a>`;
   }).join('');
 
-  const sortSidebar = `<div class="filter-section">
-  <h3 class="filter-heading">Sort</h3>
-  <div class="filter-sort-inline">${sortButtons}</div>
+  const sortBar = `<div class="sort-bar">
+  <span class="sort-bar-label">Sort:</span>
+  <div class="filter-sort-inline">${sortLinks}</div>
 </div>`;
 
   // Sidebar: newspapers — collapsible, only show papers with results by default
@@ -184,12 +183,13 @@ export function searchResultsPage(
     </form>
     <p class="search-result-count">${resultCountText}</p>
   </div>
+  ${sortBar}
   <div class="search-layout">
     <aside class="search-sidebar">
       <form action="/search" method="get" id="search-filters-form">
         <input type="hidden" name="q" value="${escapeAttr(query)}">
+        <input type="hidden" name="sort" value="${sort}">
         ${dateRangeSidebar}
-        ${sortSidebar}
         ${papersSidebar}
         <button type="submit" class="filter-apply-btn">Apply Filters</button>
       </form>
