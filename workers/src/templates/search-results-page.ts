@@ -106,39 +106,65 @@ export function searchResultsPage(
   <input type="hidden" id="to-year" name="to" value="${toYear}">
 </div>`;
 
-  // Sidebar: sort
+  // Sidebar: sort — compact inline buttons
+  const sortOptions = [
+    { value: 'relevance', label: 'Best' },
+    { value: 'date-desc', label: 'Newest' },
+    { value: 'date-asc', label: 'Oldest' },
+  ];
+  const sortButtons = sortOptions.map((opt) => {
+    const active = sort === opt.value ? ' filter-sort-btn--active' : '';
+    return `<label class="filter-sort-btn${active}">
+      <input type="radio" name="sort" value="${opt.value}" ${sort === opt.value ? 'checked' : ''}> ${opt.label}
+    </label>`;
+  }).join('');
+
   const sortSidebar = `<div class="filter-section">
-  <h3 class="filter-heading">Sort By</h3>
-  <div class="filter-sort">
-    <label class="filter-radio">
-      <input type="radio" name="sort" value="relevance" ${sort === 'relevance' ? 'checked' : ''}> Relevance
-    </label>
-    <label class="filter-radio">
-      <input type="radio" name="sort" value="date-asc" ${sort === 'date-asc' ? 'checked' : ''}> Oldest first
-    </label>
-    <label class="filter-radio">
-      <input type="radio" name="sort" value="date-desc" ${sort === 'date-desc' ? 'checked' : ''}> Newest first
-    </label>
-  </div>
+  <h3 class="filter-heading">Sort</h3>
+  <div class="filter-sort-inline">${sortButtons}</div>
 </div>`;
 
-  // Sidebar: paper checkboxes (show all with counts from facets)
-  const paperCheckboxes = allPapers
+  // Sidebar: newspapers — collapsible, only show papers with results by default
+  const papersWithResults = allPapers.filter((p) => (paperCounts.get(p.slug)?.count ?? 0) > 0);
+  const papersWithoutResults = allPapers.filter((p) => (paperCounts.get(p.slug)?.count ?? 0) === 0);
+  const selectedCount = selectedPapers.length;
+
+  const paperCheckboxes = papersWithResults
     .map((p) => {
       const count = paperCounts.get(p.slug)?.count ?? 0;
       const checked = selectedPapers.includes(p.slug) ? 'checked' : '';
-      const countBadge = count > 0 ? `<span class="filter-count">${count}</span>` : '';
-      return `<label class="filter-checkbox ${count === 0 ? 'filter-checkbox--empty' : ''}">
-      <input type="checkbox" name="paper" value="${escapeAttr(p.slug)}" ${checked}> ${escapeHtml(p.title)} ${countBadge}
+      return `<label class="filter-checkbox">
+      <input type="checkbox" name="paper" value="${escapeAttr(p.slug)}" ${checked}>
+      <span class="filter-checkbox-label">${escapeHtml(p.title)}</span>
+      <span class="filter-count">${count}</span>
+    </label>`;
+    })
+    .join('\n');
+
+  const emptyPaperCheckboxes = papersWithoutResults
+    .map((p) => {
+      const checked = selectedPapers.includes(p.slug) ? 'checked' : '';
+      return `<label class="filter-checkbox filter-checkbox--empty">
+      <input type="checkbox" name="paper" value="${escapeAttr(p.slug)}" ${checked}>
+      <span class="filter-checkbox-label">${escapeHtml(p.title)}</span>
     </label>`;
     })
     .join('\n');
 
   const papersSidebar = `<div class="filter-section">
-  <h3 class="filter-heading">Newspapers</h3>
-  <div class="filter-papers">
-    ${paperCheckboxes}
-  </div>
+  <h3 class="filter-heading">Newspapers${selectedCount > 0 ? ` (${selectedCount} selected)` : ''}</h3>
+  <details class="filter-papers-details">
+    <summary class="filter-papers-toggle">${papersWithResults.length} papers with results</summary>
+    <div class="filter-papers">
+      ${paperCheckboxes}
+      ${papersWithoutResults.length > 0 ? `
+        <details class="filter-papers-empty-details">
+          <summary class="filter-papers-empty-toggle">${papersWithoutResults.length} more without results</summary>
+          ${emptyPaperCheckboxes}
+        </details>
+      ` : ''}
+    </div>
+  </details>
 </div>`;
 
   // Results
