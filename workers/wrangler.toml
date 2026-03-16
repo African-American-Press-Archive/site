@@ -14,3 +14,7 @@ database_id = "399bcc68-1807-49c8-8d15-c8cc6ae57f13"
 [[r2_buckets]]
 binding = "R2"
 bucket_name = "dangerouspress-pages"
+
+# Run OCR indexer every 6 hours — picks up new OCR JSONs from R2
+[triggers]
+crons = ["0 */6 * * *"]

@@ -6,6 +6,7 @@ import dateBrowse from './handlers/date-browse';
 import about from './handlers/about';
 import sitemap from './handlers/sitemap';
 import search from './handlers/search';
+import { handleOcrCron } from './handlers/ocr-cron';
 import { notFoundPage, errorPage } from './templates/error-page';
 
 const app = new Hono<{ Bindings: Env }>();
@@ -36,4 +37,9 @@ app.onError((err, c) => {
   return c.html(errorPage(), 500);
 });
 
-export default app;
+export default {
+  fetch: app.fetch,
+  async scheduled(event: ScheduledEvent, env: Env, ctx: ExecutionContext) {
+    ctx.waitUntil(handleOcrCron(env).then((msg) => console.log(msg)));
+  },
+};
