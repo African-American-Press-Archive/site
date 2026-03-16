@@ -58,42 +58,60 @@ Pagination via query params: `/papers/chicago-defender?page=2`, `/search?q=riot&
 | date | TEXT NOT NULL | "1919-07-26" |
 | year | INTEGER NOT NULL | For fast filtering |
 | month | INTEGER NOT NULL | For fast filtering |
-| pages | INTEGER NOT NULL | Page count |
+| page_count | INTEGER NOT NULL | Number of pages |
 | thumbnail_url | TEXT | R2 URL |
-| page_paths | TEXT NOT NULL | JSON array of R2 image URLs |
+| ocr_excerpt | TEXT | First ~300 chars of front-page OCR, used for meta descriptions, og:tags, issue cards, and search previews. Populated during OCR ingestion. |
 
-### ocr_pages
+### pages
 | Column | Type | Notes |
 |--------|------|-------|
 | id | INTEGER PK | Autoincrement |
 | issue_id | TEXT NOT NULL | FK → issues.id |
-| page_num | INTEGER NOT NULL | 1 for front page |
-| ocr_text | TEXT | Raw OCR text |
+| page_num | INTEGER NOT NULL | 1-indexed |
+| image_url | TEXT NOT NULL | R2 URL for full page image |
+| thumbnail_url | TEXT | R2 URL for page thumbnail (nullable, future use) |
+| ocr_text | TEXT | OCR text for this page (nullable — populated when available) |
 | | UNIQUE | (issue_id, page_num) |
 
-Initially ~20,900 rows (front pages only). Expandable to all pages later without schema changes.
+Normalized page-level table replacing the previous `page_paths` JSON array and separate `ocr_pages` table. Each page image and its OCR text live in the same row. Initially ~20,900 rows have `ocr_text` populated (front pages only). Adding OCR for remaining pages is just an UPDATE on existing rows. Future page-level metadata (annotations, bounding boxes, layout info) can be added as columns without schema redesign.
 
 ### ocr_search (FTS5 virtual table)
 ```sql
 CREATE VIRTUAL TABLE ocr_search USING fts5(
   ocr_text,
+  content=pages,
+  content_rowid=id,
   tokenize='porter unicode61'
 );
 ```
 
-Standalone FTS table (no `content=` directive) — rows are inserted directly with the OCR text during ingestion. Each FTS row's `rowid` maps to `ocr_pages.id` for joining back to issue metadata.
+External-content FTS table backed by the `pages` table. The FTS index references `pages.id` as its rowid, so search results join directly back to page records without text duplication. Requires triggers to keep the index in sync with `pages`:
 
-Porter stemming handles "lynching" → "lynch", "riots" → "riot".
+```sql
+CREATE TRIGGER pages_ai AFTER INSERT ON pages BEGIN
+  INSERT INTO ocr_search(rowid, ocr_text) VALUES (new.id, new.ocr_text);
+END;
+CREATE TRIGGER pages_ad AFTER DELETE ON pages BEGIN
+  INSERT INTO ocr_search(ocr_search, rowid, ocr_text) VALUES ('delete', old.id, old.ocr_text);
+END;
+CREATE TRIGGER pages_au AFTER UPDATE ON pages BEGIN
+  INSERT INTO ocr_search(ocr_search, rowid, ocr_text) VALUES ('delete', old.id, old.ocr_text);
+  INSERT INTO ocr_search(rowid, ocr_text) VALUES (new.id, new.ocr_text);
+END;
+```
+
+Porter stemming handles "lynching" → "lynch", "riots" → "riot". Only rows where `ocr_text IS NOT NULL` produce FTS entries (triggers fire but empty text is harmless).
 
 **Search query patterns:**
 
 Main results query:
 ```sql
 SELECT snippet(ocr_search, 0, '<mark>', '</mark>', '...', 30) as excerpt,
-       i.id, i.date, i.thumbnail_url, i.paper_slug, p.title, p.location
+       i.id, i.date, i.thumbnail_url, i.ocr_excerpt, i.paper_slug,
+       pg.page_num, p.title, p.location
 FROM ocr_search
-JOIN ocr_pages op ON op.id = ocr_search.rowid
-JOIN issues i ON i.id = op.issue_id
+JOIN pages pg ON pg.id = ocr_search.rowid
+JOIN issues i ON i.id = pg.issue_id
 JOIN papers p ON p.slug = i.paper_slug
 WHERE ocr_search MATCH ?
   AND i.year BETWEEN ? AND ?          -- date range filter
@@ -106,14 +124,16 @@ Paper counts query (for sidebar, runs alongside main query):
 ```sql
 SELECT i.paper_slug, p.title, COUNT(*) as count
 FROM ocr_search
-JOIN ocr_pages op ON op.id = ocr_search.rowid
-JOIN issues i ON i.id = op.issue_id
+JOIN pages pg ON pg.id = ocr_search.rowid
+JOIN issues i ON i.id = pg.issue_id
 JOIN papers p ON p.slug = i.paper_slug
 WHERE ocr_search MATCH ?
   AND i.year BETWEEN ? AND ?
 GROUP BY i.paper_slug
 ORDER BY count DESC;
 ```
+
+**Facet query performance:** At current scale (~20,900 pages with OCR), the facet query runs fast. As the index grows, the facet query can be cached separately (keyed on query + date range, `max-age=3600`). If performance becomes an issue, facets can be deferred to a secondary async request or simplified to show only total count without per-paper breakdown.
 
 **SearchFilters type:**
 ```typescript
@@ -139,7 +159,8 @@ The primary SEO target — what Google indexes and people share.
 - OCR text rendered in the HTML (indexable by search engines)
 - "Open Viewer" button — JS progressively enhances to zoom/pan viewer
 - Previous/next issue links (for users and crawlers)
-- Meta tags: og:title, og:image (thumbnail), og:description (OCR excerpt), canonical URL, JSON-LD structured data (Newspaper schema)
+- Meta tags: og:title, og:image (thumbnail), og:description (`ocr_excerpt` from issues table), canonical URL
+- JSON-LD structured data: `NewsArticle` schema on issue pages (datePublished, publisher, image, description). `Dataset` schema on the about page describing the archive as a whole. These align with Google's supported rich result types.
 
 ### Search Results (`/search?q=...`)
 
@@ -181,8 +202,9 @@ workers/
 │   ├── db/
 │   │   ├── queries.ts         # All D1 queries
 │   │   └── schema.sql         # CREATE TABLE statements
-│   └── static/
+│   └── public/                    # Workers Static Assets directory
 │       ├── viewer.js          # Client-side viewer (zoom/pan/keyboard)
+│       ├── search.js          # Date range slider, filter updates
 │       └── style.css
 ├── scripts/
 │   ├── ingest.py              # CLI: add papers, issues, OCR to D1
@@ -200,9 +222,10 @@ Templates are TypeScript functions returning HTML strings — no template engine
 | `getAllPapers()` | `Paper[]` | home, papers |
 | `getPaper(slug)` | `Paper \| null` | papers, issue |
 | `getIssuesByPaper(slug, year?, month?, page?)` | `{ issues: Issue[], total: number }` | papers |
-| `getIssue(slug, date)` | `Issue \| null` (with page_paths) | issue |
+| `getIssue(slug, date)` | `Issue \| null` (with ocr_excerpt) | issue |
+| `getPages(issueId)` | `Page[]` (image_url, page_num, ocr_text) | issue |
 | `getAdjacentIssues(slug, date)` | `{ prev: Issue \| null, next: Issue \| null }` | issue |
-| `searchOCR(query, filters)` | `{ results: SearchResult[], total: number, paperCounts: Map }` | search |
+| `searchOCR(query, filters)` | `{ results: SearchResult[], total: number, paperCounts: Map<string, { title: string, count: number }> }` | search |
 | `getIssuesByDate(date)` | `Issue[]` (with paper info) | date-browse |
 | `getYearStats(slug)` | `{ year: number, count: number }[]` | papers (timeline) |
 
@@ -220,18 +243,18 @@ Inserts row into `papers` table. Paper appears in gallery with 0 issues.
 ```
 python scripts/ingest.py add-issues --paper chicago-whip --source ./newspapers/chicago-whip/
 ```
-Reads a source directory of already-processed JPGs (matching the existing R2 structure), uploads to R2, and inserts issue rows into D1. Updates paper stats. Image processing (JP2/PDF → JPG conversion, thumbnail generation) is handled by the existing `merge_manifests.py` pipeline — `ingest.py` assumes images are ready for upload.
+Reads a source directory of already-processed JPGs (matching the existing R2 structure), uploads to R2, inserts issue row + page rows into D1, and updates paper stats. Image processing (JP2/PDF → JPG conversion, thumbnail generation) is handled by the existing `merge_manifests.py` pipeline — `ingest.py` assumes images are ready for upload.
 
 ### Add OCR
 ```
 python scripts/ingest.py add-ocr --paper chicago-whip
 ```
-Fetches OCR JSON files from R2 → inserts into `ocr_pages` → rebuilds FTS5 index. Can target a single paper or the whole archive.
+Fetches OCR JSON files from R2 → updates `pages.ocr_text` for matching page rows → FTS triggers keep the search index in sync automatically. Also computes and sets `issues.ocr_excerpt` (first ~300 chars of front-page OCR). Can target a single paper or the whole archive. A `--rebuild-fts` flag drops and recreates the FTS table + triggers for full reindexing if needed.
 
 ### Initial seed (one-time migration)
 ```
 python scripts/seed.py              # manifest.json → D1 papers + issues tables
-python scripts/ocr-index.py         # R2 OCR JSONs → D1 ocr_pages + FTS index
+python scripts/ocr-index.py         # R2 OCR JSONs → D1 pages.ocr_text + issues.ocr_excerpt
 ```
 
 ## Migration Phases
@@ -268,13 +291,13 @@ python scripts/ocr-index.py         # R2 OCR JSONs → D1 ocr_pages + FTS index
 ## Technical Notes
 
 - ~20,900 issues across 41 papers, 1905–1929 — well within D1 limits
-- OCR currently front pages only; schema supports expanding to all pages by adding rows to `ocr_pages`
+- OCR currently front pages only; schema supports expanding to all pages by updating `ocr_text` on existing page rows
 - Images stay on R2 at `pages.dangerouspress.org` — no migration needed
 - Two client-side JS bundles: `viewer.js` (issue page zoom/pan/keyboard nav) and `search.js` (date range slider, filter updates). All pages work without JS — these are progressive enhancements.
-- **Static asset serving:** `viewer.js`, `search.js`, and `style.css` are served by the Worker via explicit routes (`/static/*`). Assets are inlined in the Worker bundle at build time or served from R2. Small enough that inlining is practical.
+- **Static asset serving:** Uses [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/) — files in `src/public/` are bundled with the Worker deployment and served automatically with content-hashing, cache headers, and no custom route logic needed. Configured via `assets` in `wrangler.toml`.
 - **Error handling:** 404 pages render a styled "Issue not found" page with search bar and link to gallery. D1 errors return a minimal 500 page. Workers will use `try/catch` around all D1 calls.
 - **Caching:** Workers set `Cache-Control: public, max-age=86400` on browse pages (content is archival/static). Search results use `Cache-Control: public, max-age=3600`. Issue images served from R2 already have long cache headers.
 - **Sitemap:** Worker route at `/sitemap.xml` generates a sitemap index. Individual sitemaps per paper at `/sitemap/:slug.xml` list all issue URLs for that paper. Only issue-level URLs are included (not individual page URLs). Generated dynamically from D1 on each request (cached by Cloudflare CDN). At ~20,900 issues + 41 paper pages, well within sitemap limits.
-- **FTS index updates:** `add-ocr` inserts new rows incrementally into the standalone FTS table — it does not drop/rebuild the full index. A `--rebuild` flag is available for full reindexing if needed.
-- **D1 storage:** OCR text is stored in both `ocr_pages` (for display) and `ocr_search` (for FTS). At ~20,900 front pages, estimated total DB size is under 500MB, well within D1's 5GB limit. Expanding to all pages (~150K rows) would increase this but remain within limits.
-- `page_paths` stored as JSON array in TEXT is intentional — avoids a separate pages table for what is always read as a unit. If per-page metadata grows beyond OCR, a `pages` table can be added later.
+- **FTS index updates:** The FTS table uses external content backed by the `pages` table with triggers. Normal inserts/updates to `pages.ocr_text` automatically update the FTS index. A `--rebuild-fts` flag on `ingest.py` drops and recreates the FTS table for full reindexing.
+- **D1 storage:** OCR text is stored once in `pages.ocr_text`; the FTS table is a lightweight index over it (not a full copy). At ~20,900 front pages, estimated total DB size is under 300MB. Expanding to all pages (~150K rows) remains well within D1's 5GB limit.
+- **`ocr_excerpt` on issues:** A denormalized ~300-character excerpt from the front page OCR. Used for meta descriptions, og:tags, issue cards in gallery/detail views, and search result previews when a full FTS snippet isn't needed. Set during OCR ingestion.
