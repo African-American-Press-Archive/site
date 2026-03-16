@@ -505,9 +505,9 @@
 
   function renderOCROverlays(data) {
     ocrOverlays.innerHTML = '';
-    if (!data || !data.regions || !data.image_width || !data.image_height) return;
-    var imgW = data.image_width;
-    var imgH = data.image_height;
+    if (!data || !data.regions || !data.width || !data.height) return;
+    var imgW = data.width;
+    var imgH = data.height;
 
     data.regions.forEach(function (region, idx) {
       if (!region.bbox || region.bbox.length < 4) return;
@@ -526,8 +526,8 @@
   function hitTestOCRRegion(e) {
     if (!ocrState.currentData || !ocrState.currentData.regions) return -1;
     var data = ocrState.currentData;
-    var imgW = data.image_width;
-    var imgH = data.image_height;
+    var imgW = data.width;
+    var imgH = data.height;
     if (!imgW || !imgH) return -1;
 
     var rect = imgEl.getBoundingClientRect();
@@ -579,7 +579,7 @@
     if (source === 'image') {
       var data = ocrState.currentData;
       if (data && data.regions[idx] && data.regions[idx].bbox) {
-        zoomToRegion(data.regions[idx].bbox, data.image_width, data.image_height);
+        zoomToRegion(data.regions[idx].bbox, data.width, data.height);
       }
       if (!ocrState.panelVisible) showOCRPanel();
     }
