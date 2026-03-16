@@ -751,8 +751,20 @@
 
       switch (e.key) {
         case 'Escape':     closeViewer();       e.preventDefault(); break;
-        case 'ArrowLeft':  navigatePage(-1);    e.preventDefault(); break;
-        case 'ArrowRight': navigatePage(1);     e.preventDefault(); break;
+        case 'ArrowLeft':
+          if (ocrState.panelVisible && ocrState.currentData && ocrState.currentData.regions.length > 0) {
+            navigateOCRRegion(-1);
+          } else {
+            navigatePage(-1);
+          }
+          e.preventDefault(); break;
+        case 'ArrowRight':
+          if (ocrState.panelVisible && ocrState.currentData && ocrState.currentData.regions.length > 0) {
+            navigateOCRRegion(1);
+          } else {
+            navigatePage(1);
+          }
+          e.preventDefault(); break;
         case '+':
         case '=':          zoomImage(1);        e.preventDefault(); break;
         case '-':
