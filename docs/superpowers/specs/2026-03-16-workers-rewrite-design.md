@@ -58,6 +58,7 @@ Pagination via query params: `/papers/chicago-defender?page=2`, `/search?q=riot&
 | date | TEXT NOT NULL | "1919-07-26" |
 | year | INTEGER NOT NULL | For fast filtering |
 | month | INTEGER NOT NULL | For fast filtering |
+| seq | INTEGER NOT NULL | Position within paper, ordered by date. Enables O(1) prev/next navigation: `seq - 1` / `seq + 1`. |
 | page_count | INTEGER NOT NULL | Number of pages |
 | thumbnail_url | TEXT | R2 URL |
 | ocr_excerpt | TEXT | First ~300 chars of front-page OCR, used for meta descriptions, og:tags, issue cards, and search previews. Populated during OCR ingestion. |
@@ -75,28 +76,46 @@ Pagination via query params: `/papers/chicago-defender?page=2`, `/search?q=riot&
 
 Normalized page-level table replacing the previous `page_paths` JSON array and separate `ocr_pages` table. Each page image and its OCR text live in the same row. Initially ~20,900 rows have `ocr_text` populated (front pages only). Adding OCR for remaining pages is just an UPDATE on existing rows. Future page-level metadata (annotations, bounding boxes, layout info) can be added as columns without schema redesign.
 
+### Indexes
+```sql
+-- Issues: filter by year, paper, date
+CREATE INDEX idx_issues_year ON issues(year);
+CREATE INDEX idx_issues_paper ON issues(paper_slug);
+CREATE INDEX idx_issues_date ON issues(date);
+
+-- Issues: paginated listing by paper, ordered by date (covers WHERE paper_slug=? ORDER BY date)
+CREATE INDEX idx_issues_paper_date ON issues(paper_slug, date);
+
+-- Issues: prev/next navigation by sequence within a paper
+CREATE INDEX idx_issues_paper_seq ON issues(paper_slug, seq);
+
+-- Pages: lookup by issue, ordered by page number (also enforces uniqueness)
+CREATE UNIQUE INDEX idx_pages_issue_page ON pages(issue_id, page_num);
+```
+
 ### ocr_search (FTS5 virtual table)
 ```sql
 CREATE VIRTUAL TABLE ocr_search USING fts5(
   ocr_text,
+  issue_id UNINDEXED,
   content=pages,
   content_rowid=id,
   tokenize='porter unicode61'
 );
 ```
 
-External-content FTS table backed by the `pages` table. The FTS index references `pages.id` as its rowid, so search results join directly back to page records without text duplication. Requires triggers to keep the index in sync with `pages`:
+External-content FTS table backed by the `pages` table. The FTS index references `pages.id` as its rowid. `issue_id` is stored as an `UNINDEXED` column — not searchable, but available in results for direct joins to `issues` without going through `pages`. Requires triggers to keep the index in sync with `pages`:
 
 ```sql
 CREATE TRIGGER pages_ai AFTER INSERT ON pages BEGIN
-  INSERT INTO ocr_search(rowid, ocr_text) VALUES (new.id, new.ocr_text);
+  INSERT INTO ocr_search(rowid, ocr_text, issue_id) VALUES (new.id, new.ocr_text, new.issue_id);
 END;
 CREATE TRIGGER pages_ad AFTER DELETE ON pages BEGIN
-  INSERT INTO ocr_search(ocr_search, rowid, ocr_text) VALUES ('delete', old.id, old.ocr_text);
+  INSERT INTO ocr_search(ocr_search, rowid, ocr_text, issue_id) VALUES ('delete', old.id, old.ocr_text, old.issue_id);
 END;
 CREATE TRIGGER pages_au AFTER UPDATE ON pages BEGIN
-  INSERT INTO ocr_search(ocr_search, rowid, ocr_text) VALUES ('delete', old.id, old.ocr_text);
-  INSERT INTO ocr_search(rowid, ocr_text) VALUES (new.id, new.ocr_text);
+  INSERT INTO ocr_search(ocr_search, rowid, ocr_text, issue_id) VALUES ('delete', old.id, old.ocr_text, old.issue_id);
+  INSERT INTO ocr_search(rowid, ocr_text, issue_id) VALUES (new.id, new.ocr_text, new.issue_id);
 END;
 ```
 
@@ -156,7 +175,7 @@ The primary SEO target — what Google indexes and people share.
 - Breadcrumb: Papers › Chicago Defender › 1919 › July 26, 1919
 - Issue header: paper name, formatted date, location, page count
 - Front page thumbnail + all page thumbnails
-- OCR text rendered in the HTML (indexable by search engines)
+- OCR text rendered in the HTML (indexable by search engines). Bulk OCR body wrapped in `<div class="ocr-text" data-nosnippet>` so Google indexes the text but prefers `ocr_excerpt` (via meta description) for search result snippets — avoids noisy OCR in Google's snippet display.
 - "Open Viewer" button — JS progressively enhances to zoom/pan viewer
 - Previous/next issue links (for users and crawlers)
 - Meta tags: og:title, og:image (thumbnail), og:description (`ocr_excerpt` from issues table), canonical URL
@@ -224,7 +243,7 @@ Templates are TypeScript functions returning HTML strings — no template engine
 | `getIssuesByPaper(slug, year?, month?, page?)` | `{ issues: Issue[], total: number }` | papers |
 | `getIssue(slug, date)` | `Issue \| null` (with ocr_excerpt) | issue |
 | `getPages(issueId)` | `Page[]` (image_url, page_num, ocr_text) | issue |
-| `getAdjacentIssues(slug, date)` | `{ prev: Issue \| null, next: Issue \| null }` | issue |
+| `getAdjacentIssues(slug, seq)` | `{ prev: Issue \| null, next: Issue \| null }` | issue (uses `seq - 1` / `seq + 1`) |
 | `searchOCR(query, filters)` | `{ results: SearchResult[], total: number, paperCounts: Map<string, { title: string, count: number }> }` | search |
 | `getIssuesByDate(date)` | `Issue[]` (with paper info) | date-browse |
 | `getYearStats(slug)` | `{ year: number, count: number }[]` | papers (timeline) |
@@ -297,7 +316,7 @@ python scripts/ocr-index.py         # R2 OCR JSONs → D1 pages.ocr_text + issue
 - **Static asset serving:** Uses [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/) — files in `src/public/` are bundled with the Worker deployment and served automatically with content-hashing, cache headers, and no custom route logic needed. Configured via `assets` in `wrangler.toml`.
 - **Error handling:** 404 pages render a styled "Issue not found" page with search bar and link to gallery. D1 errors return a minimal 500 page. Workers will use `try/catch` around all D1 calls.
 - **Caching:** Workers set `Cache-Control: public, max-age=86400` on browse pages (content is archival/static). Search results use `Cache-Control: public, max-age=3600`. Issue images served from R2 already have long cache headers.
-- **Sitemap:** Worker route at `/sitemap.xml` generates a sitemap index. Individual sitemaps per paper at `/sitemap/:slug.xml` list all issue URLs for that paper. Only issue-level URLs are included (not individual page URLs). Generated dynamically from D1 on each request (cached by Cloudflare CDN). At ~20,900 issues + 41 paper pages, well within sitemap limits.
+- **Sitemap:** Worker route at `/sitemap.xml` generates a sitemap index. Individual sitemaps per paper at `/sitemap/:slug.xml` list all issue URLs for that paper. Only issue-level URLs are included (not individual page URLs). Generated dynamically from D1 with `Cache-Control: public, max-age=604800` (7 days) — archive content rarely changes. At ~20,900 issues + 41 paper pages, well within sitemap limits.
 - **FTS index updates:** The FTS table uses external content backed by the `pages` table with triggers. Normal inserts/updates to `pages.ocr_text` automatically update the FTS index. A `--rebuild-fts` flag on `ingest.py` drops and recreates the FTS table for full reindexing.
 - **D1 storage:** OCR text is stored once in `pages.ocr_text`; the FTS table is a lightweight index over it (not a full copy). At ~20,900 front pages, estimated total DB size is under 300MB. Expanding to all pages (~150K rows) remains well within D1's 5GB limit.
 - **`ocr_excerpt` on issues:** A denormalized ~300-character excerpt from the front page OCR. Used for meta descriptions, og:tags, issue cards in gallery/detail views, and search result previews when a full FTS snippet isn't needed. Set during OCR ingestion.
