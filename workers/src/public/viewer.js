@@ -653,7 +653,14 @@
       var regionText = (data.regions[i].text || '').toLowerCase();
       var score = 0;
       for (var t = 0; t < terms.length; t++) {
-        if (regionText.indexOf(terms[t]) >= 0) score++;
+        var term = terms[t];
+        if (term.endsWith('*')) {
+          // Prefix/wildcard match: "corner*" matches "corner", "corners", "cornered", etc.
+          var prefix = term.slice(0, -1);
+          if (prefix && regionText.indexOf(prefix) >= 0) score++;
+        } else {
+          if (regionText.indexOf(term) >= 0) score++;
+        }
       }
       if (score > bestScore) {
         bestScore = score;
