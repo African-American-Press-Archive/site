@@ -40,12 +40,19 @@ app.get('/admin/ocr-status', async (c) => {
     db.prepare('SELECT COUNT(*) as n FROM pages WHERE ocr_text IS NULL').first<{ n: number }>(),
   ]);
   const excerpts = await db.prepare('SELECT COUNT(*) as n FROM issues WHERE ocr_excerpt IS NOT NULL').first<{ n: number }>();
+  const lastRun = await db.prepare("SELECT value FROM ocr_stats WHERE key = 'last_run'").first<{ value: string }>().catch(() => null);
+  const r2Totals = await db.prepare("SELECT value FROM ocr_stats WHERE key = 'r2_totals'").first<{ value: string }>().catch(() => null);
+
   return c.json({
     total_pages: total?.n ?? 0,
     pages_with_ocr: indexed?.n ?? 0,
     pages_missing_ocr: missing?.n ?? 0,
     issues_with_excerpt: excerpts?.n ?? 0,
     pct_indexed: total?.n ? Math.round((indexed?.n ?? 0) / total.n * 100) : 0,
+    cron: {
+      last_run: lastRun ? JSON.parse(lastRun.value) : null,
+      r2_totals: r2Totals ? JSON.parse(r2Totals.value) : null,
+    },
   });
 });
 

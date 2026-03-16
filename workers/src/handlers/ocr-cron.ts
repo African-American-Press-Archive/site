@@ -127,6 +127,21 @@ export async function handleOcrCron(env: Env): Promise<string> {
       .run();
   }
 
+  // 6. Update stats
+  const now = new Date().toISOString();
+  await db.prepare(
+    `INSERT OR REPLACE INTO ocr_stats (key, value, updated_at) VALUES (?, ?, ?)`
+  ).bind('last_run', JSON.stringify({ indexed, skipped, checked: pages.length, at: now }), now).run();
+
+  // Accumulate running totals for R2 availability
+  const prev = await db.prepare(`SELECT value FROM ocr_stats WHERE key = 'r2_totals'`).first<{ value: string }>();
+  const totals = prev ? JSON.parse(prev.value) : { found: 0, not_found: 0 };
+  totals.found += indexed;
+  totals.not_found += skipped;
+  await db.prepare(
+    `INSERT OR REPLACE INTO ocr_stats (key, value, updated_at) VALUES (?, ?, ?)`
+  ).bind('r2_totals', JSON.stringify(totals), now).run();
+
   const msg = `OCR cron: indexed ${indexed}, skipped ${skipped} (no JSON on R2), ${pages.length - indexed - skipped} errors. ${issueExcerpts.size} issue excerpts updated.`;
   console.log(msg);
   return msg;
