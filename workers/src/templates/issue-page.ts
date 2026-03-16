@@ -20,34 +20,36 @@ export function issuePage(
     { label: displayDateMedium },
   ]);
 
-  // Page thumbnails with data-image-url for viewer JS
-  const pageThumbs = pages.map((p) => {
-    const isActive = p.page_num === pageNum;
-    const href = `/papers/${paper.slug}/${issue.date}${p.page_num > 1 ? `?page=${p.page_num}` : ''}`;
+  // Preserve search query for deep-linking into viewer
+  const queryParam = typeof globalThis !== 'undefined' ? '' : '';
+
+  // Page cards — playing-card sized thumbnails in a grid
+  const pageCards = pages.map((p) => {
     const thumb = p.thumbnail_url ?? p.image_url;
-    return `<a href="${escapeAttr(href)}" class="page-thumb${isActive ? ' active' : ''}" data-page="${p.page_num}" data-image-url="${escapeAttr(p.image_url)}">
-      <img src="${escapeAttr(thumb)}" alt="Page ${p.page_num}" loading="lazy">
-      <span class="page-thumb-num">${p.page_num}</span>
+    return `<a href="/papers/${paper.slug}/${issue.date}?page=${p.page_num}" class="issue-page-card" data-page="${p.page_num}" data-image-url="${escapeAttr(p.image_url)}">
+      <div class="issue-page-card-img">
+        <img src="${escapeAttr(thumb)}" alt="Page ${p.page_num}" loading="lazy">
+      </div>
+      <span class="issue-page-card-label">Page ${p.page_num}</span>
     </a>`;
   }).join('');
 
-  // OCR text from the requested page (hidden from search snippets, visible in details for SEO)
-  const activePage = pages.find((p) => p.page_num === pageNum) ?? pages[0];
-  const ocrText = activePage?.ocr_text ?? '';
-  const ocrHtml = ocrText
-    ? `<details class="ocr-text-seo" data-nosnippet><summary class="ocr-text-seo-toggle">Page text (machine-generated)</summary><div class="ocr-text-seo-content">${escapeHtml(ocrText)}</div></details>`
+  // OCR text for SEO (hidden, accessible to crawlers)
+  const allOcrText = pages
+    .filter((p) => p.ocr_text)
+    .map((p) => p.ocr_text)
+    .join('\n\n');
+  const ocrHtml = allOcrText
+    ? `<details class="ocr-text-seo" data-nosnippet><summary class="ocr-text-seo-toggle">Page text (machine-generated)</summary><div class="ocr-text-seo-content">${escapeHtml(allOcrText)}</div></details>`
     : '';
 
   // Prev/next navigation
   const prevHtml = prev
-    ? `<a href="/papers/${paper.slug}/${prev.date}" class="issue-nav-link prev">← ${formatDateMedium(prev.date)}</a>`
+    ? `<a href="/papers/${paper.slug}/${prev.date}" class="issue-nav-link prev">\u2190 ${formatDateMedium(prev.date)}</a>`
     : '<span class="issue-nav-link prev disabled"></span>';
   const nextHtml = next
-    ? `<a href="/papers/${paper.slug}/${next.date}" class="issue-nav-link next">${formatDateMedium(next.date)} →</a>`
+    ? `<a href="/papers/${paper.slug}/${next.date}" class="issue-nav-link next">${formatDateMedium(next.date)} \u2192</a>`
     : '<span class="issue-nav-link next disabled"></span>';
-
-  // Active page image
-  const activeImageUrl = activePage?.image_url ?? '';
 
   const content = `
     ${crumbs}
@@ -55,25 +57,12 @@ export function issuePage(
       <div class="issue-header-text">
         <h1>${escapeHtml(paper.title)}</h1>
         <p class="issue-date">${displayDate}</p>
+        ${paper.location ? `<p class="issue-location">${escapeHtml(paper.location)}</p>` : ''}
         <p class="issue-meta">${issue.page_count} page${issue.page_count !== 1 ? 's' : ''}</p>
       </div>
-      ${paper.thumbnail_url ? `<div class="paper-masthead-small"><img src="${escapeAttr(paper.thumbnail_url)}" alt="${escapeAttr(paper.title)}" loading="lazy"></div>` : ''}
     </div>
-    <div class="issue-viewer" id="issue-viewer" data-paper="${escapeAttr(paper.slug)}" data-date="${escapeAttr(issue.date)}" data-page="${pageNum}" data-page-count="${issue.page_count}">
-      <div class="viewer-main">
-        <div class="viewer-image-wrap">
-          <img id="viewer-image" src="${escapeAttr(activeImageUrl)}" alt="${escapeAttr(paper.title)}, ${escapeAttr(displayDate)}, page ${pageNum}" class="viewer-image">
-        </div>
-        <div class="viewer-thumbs" id="viewer-thumbs">
-          ${pageThumbs}
-        </div>
-      </div>
-    </div>
-    <div class="issue-actions">
-      <button id="open-viewer" class="open-viewer-btn" data-initial-page="${pageNum}">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-        Open Viewer
-      </button>
+    <div class="issue-page-grid">
+      ${pageCards}
     </div>
     <nav class="issue-nav">
       ${prevHtml}
@@ -81,18 +70,18 @@ export function issuePage(
       ${nextHtml}
     </nav>
     ${ocrHtml}
+    <button id="open-viewer" class="open-viewer-btn hidden" data-initial-page="${pageNum}"></button>
     <script src="/viewer.js" defer></script>
   `;
 
-  const ogImage = activePage?.thumbnail_url ?? activePage?.image_url ?? paper.thumbnail_url ?? undefined;
-  const description = `${paper.title}, ${displayDate}. ${issue.page_count} pages. ${issue.ocr_excerpt ? issue.ocr_excerpt.slice(0, 120) + '…' : ''}`;
-
-  const canonicalUrl = `https://dangerouspress.com/papers/${paper.slug}/${issue.date}`;
+  const ogImage = pages[0]?.thumbnail_url ?? pages[0]?.image_url ?? paper.thumbnail_url ?? undefined;
+  const description = `${paper.title}, ${displayDate}. ${issue.page_count} pages. ${issue.ocr_excerpt ? issue.ocr_excerpt.slice(0, 120) + '\u2026' : ''}`;
+  const canonicalUrl = `https://dangerouspress.org/papers/${paper.slug}/${issue.date}`;
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
-    headline: `${paper.title} — ${displayDate}`,
+    headline: `${paper.title} \u2014 ${displayDate}`,
     datePublished: issue.date,
     isPartOf: {
       '@type': 'Periodical',
@@ -109,7 +98,7 @@ export function issuePage(
 
   return layout(
     {
-      title: `${paper.title} — ${displayDateMedium}`,
+      title: `${paper.title} \u2014 ${displayDateMedium}`,
       description,
       ogImage,
       canonicalUrl,

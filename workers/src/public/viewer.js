@@ -6,22 +6,22 @@
   'use strict';
 
   // ── DOM setup ────────────────────────────────────────────────────────────
-  const openBtn = document.getElementById('open-viewer');
-  if (!openBtn) return;
-
-  const pageThumbs = Array.from(document.querySelectorAll('.page-thumb'));
+  // Read page data from either .issue-page-card (new layout) or .page-thumb (legacy)
+  var pageCards = Array.from(document.querySelectorAll('.issue-page-card'));
+  var pageThumbs = pageCards.length ? pageCards : Array.from(document.querySelectorAll('.page-thumb'));
   if (!pageThumbs.length) return;
 
-  const pages = pageThumbs.map(function (el) {
+  var pages = pageThumbs.map(function (el) {
     return {
       num: parseInt(el.dataset.page, 10),
       imageUrl: el.dataset.imageUrl,
     };
   });
 
-  const issueTitleEl = document.querySelector('.issue-header h1');
-  const issueTitle = issueTitleEl ? issueTitleEl.textContent.trim() : '';
-  const initialPage = parseInt(openBtn.dataset.initialPage || '1', 10);
+  var openBtn = document.getElementById('open-viewer');
+  var issueTitleEl = document.querySelector('.issue-header h1');
+  var issueTitle = issueTitleEl ? issueTitleEl.textContent.trim() : '';
+  var initialPage = openBtn ? parseInt(openBtn.dataset.initialPage || '1', 10) : 1;
 
   // ── Viewer state ─────────────────────────────────────────────────────────
   const ZOOM_MIN = 1;
@@ -831,10 +831,22 @@
     });
   }
 
-  // ── Wire up the open button ───────────────────────────────────────────────
-  openBtn.addEventListener('click', openViewer);
+  // ── Wire up the open button (if it exists) ──────────────────────────────
+  if (openBtn) openBtn.addEventListener('click', openViewer);
 
-  // Auto-open the viewer on page load
-  openViewer();
+  // Wire up page card clicks — open viewer on that page
+  pageCards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      e.preventDefault();
+      var pageNum = parseInt(card.dataset.page, 10);
+      initialPage = pageNum;
+      openViewer();
+    });
+  });
+
+  // Auto-open if ?q= is present (coming from search results)
+  if (searchQuery) {
+    openViewer();
+  }
 
 })();
