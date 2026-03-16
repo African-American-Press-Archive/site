@@ -56,6 +56,59 @@ app.get('/admin/ocr-status', async (c) => {
   });
 });
 
+// Webhook: index a single OCR JSON from R2 into D1
+// Called by OCR pipeline after uploading to R2
+// POST /admin/ocr-index { "key": "chicago-defender/1919/1919-07-26/page_01.json" }
+app.post('/admin/ocr-index', async (c) => {
+  try {
+    const body = await c.req.json<{ key?: string; keys?: string[] }>();
+    const keys = body.keys ?? (body.key ? [body.key] : []);
+    if (!keys.length) return c.json({ error: 'Provide "key" or "keys"' }, 400);
+
+    const db = c.env.DB;
+    const r2 = c.env.R2;
+    let indexed = 0;
+    let skipped = 0;
+
+    for (const key of keys) {
+      const imageUrl = 'https://pages.dangerouspress.org/' + key.replace(/\.json$/, '.jpg');
+
+      // Find matching page in D1
+      const page = await db
+        .prepare('SELECT p.id, p.issue_id, p.page_num FROM pages p WHERE p.image_url = ?')
+        .bind(imageUrl)
+        .first<{ id: number; issue_id: string; page_num: number }>();
+      if (!page) { skipped++; continue; }
+
+      // Fetch OCR JSON from R2
+      const obj = await r2.get(key);
+      if (!obj) { skipped++; continue; }
+
+      let data: any;
+      try { data = await obj.json(); } catch { skipped++; continue; }
+
+      const text = (data.regions ?? [])
+        .filter((r: any) => r.status === 'ok' && r.text?.trim())
+        .map((r: any) => r.text.trim())
+        .join('\n');
+      if (!text) { skipped++; continue; }
+
+      // Update page OCR text (FTS triggers fire automatically)
+      await db.prepare('UPDATE pages SET ocr_text = ? WHERE id = ?').bind(text, page.id).run();
+
+      // Update issue excerpt for front pages
+      if (page.page_num === 1) {
+        const excerpt = text.length > 300 ? text.slice(0, 300).replace(/\s+\S*$/, '') : text;
+        await db.prepare('UPDATE issues SET ocr_excerpt = ? WHERE id = ?').bind(excerpt, page.issue_id).run();
+      }
+      indexed++;
+    }
+    return c.json({ indexed, skipped, total: keys.length });
+  } catch (e: any) {
+    return c.json({ error: e.message }, 500);
+  }
+});
+
 // Manually trigger OCR cron (smaller batch for HTTP request time limits)
 app.get('/admin/ocr-run', async (c) => {
   try {
