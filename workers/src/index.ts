@@ -31,6 +31,24 @@ app.get('/ocr/*', async (c) => {
   });
 });
 
+// OCR indexing status
+app.get('/admin/ocr-status', async (c) => {
+  const db = c.env.DB;
+  const [total, indexed, missing] = await Promise.all([
+    db.prepare('SELECT COUNT(*) as n FROM pages').first<{ n: number }>(),
+    db.prepare('SELECT COUNT(*) as n FROM pages WHERE ocr_text IS NOT NULL').first<{ n: number }>(),
+    db.prepare('SELECT COUNT(*) as n FROM pages WHERE ocr_text IS NULL').first<{ n: number }>(),
+  ]);
+  const excerpts = await db.prepare('SELECT COUNT(*) as n FROM issues WHERE ocr_excerpt IS NOT NULL').first<{ n: number }>();
+  return c.json({
+    total_pages: total?.n ?? 0,
+    pages_with_ocr: indexed?.n ?? 0,
+    pages_missing_ocr: missing?.n ?? 0,
+    issues_with_excerpt: excerpts?.n ?? 0,
+    pct_indexed: total?.n ? Math.round((indexed?.n ?? 0) / total.n * 100) : 0,
+  });
+});
+
 app.notFound((c) => c.html(notFoundPage(), 404));
 app.onError((err, c) => {
   console.error('Unhandled error:', err);
