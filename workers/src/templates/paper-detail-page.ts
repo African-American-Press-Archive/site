@@ -52,6 +52,11 @@ export function paperDetailPage(
       </div>
       ${paper.thumbnail_url ? `<div class="paper-detail-masthead"><img src="${escapeHtml(paper.thumbnail_url)}" alt="${escapeHtml(paper.title)}" loading="lazy"></div>` : ''}
     </div>
+    ${paper.description ? `<div class="paper-about">
+      ${paper.description_source ? `<p class="paper-about-credit">This description is from ${paper.description_source}.</p>` : ''}
+      <div class="paper-about-text">${paper.description}</div>
+      ${paper.image_source ? `<p class="paper-about-credit">About these images: The digitized newspaper pages are provided by ${paper.image_source}.</p>` : ''}
+    </div>` : ''}
     <div class="paper-detail-timeline">
       ${timelineHtml}
       ${monthPillsHtml}

@@ -24,7 +24,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 WORKERS_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
 DB_NAME = "dangerouspress-db"
 R2_BASE = "https://pages.dangerouspress.org"
-BATCH_SIZE = 200
+BATCH_SIZE = 20
 EXCERPT_LEN = 300
 
 
@@ -62,12 +62,13 @@ def fetch_ocr(r2_key):
     url = f"{R2_BASE}/{r2_key}"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "dp-ocr-indexer/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req, timeout=60) as resp:
             data = json.loads(resp.read())
         regions = data.get("regions", [])
         texts = [r["text"].strip() for r in regions if r.get("status") == "ok" and r.get("text", "").strip()]
         return "\n".join(texts)
-    except Exception:
+    except Exception as e:
+        print(f"  SKIP {r2_key}: {e}", flush=True)
         return None
 
 

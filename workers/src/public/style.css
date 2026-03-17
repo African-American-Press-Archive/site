@@ -812,6 +812,48 @@ main {
   height: auto;
 }
 
+.paper-about {
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  background: var(--bg-hover);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+.paper-about-text {
+  color: var(--text-primary);
+  line-height: 1.8;
+}
+.paper-about-text p {
+  margin-bottom: 1rem;
+}
+.paper-about-text p:last-child {
+  margin-bottom: 0;
+}
+.paper-about-text em {
+  font-style: italic;
+}
+.paper-about-text a {
+  color: var(--unc-tile-teal);
+  text-decoration: underline;
+}
+.paper-about-credit {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid var(--unc-tile-teal);
+  background: rgba(0,0,0,0.02);
+  border-radius: 0 4px 4px 0;
+}
+.paper-about-credit:last-child {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.paper-about-credit a {
+  color: var(--unc-tile-teal);
+  text-decoration: underline;
+}
+
 .paper-detail-timeline {
   margin-bottom: 1.5rem;
 }

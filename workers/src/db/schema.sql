@@ -6,7 +6,10 @@ CREATE TABLE IF NOT EXISTS papers (
   issue_count INTEGER DEFAULT 0,
   first_date TEXT,
   last_date TEXT,
-  thumbnail_url TEXT
+  thumbnail_url TEXT,
+  description TEXT,
+  description_source TEXT,
+  image_source TEXT
 );
 
 -- Issues table

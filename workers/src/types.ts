@@ -12,6 +12,9 @@ export interface Paper {
   first_date: string | null;
   last_date: string | null;
   thumbnail_url: string | null;
+  description: string | null;
+  description_source: string | null;
+  image_source: string | null;
 }
 
 export interface Issue {

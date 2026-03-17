@@ -8,9 +8,9 @@ routes = [
   { pattern = "beta.dangerouspress.org", custom_domain = true }
 ]
 
-# Cron disabled — webhook handles indexing now
-# [triggers]
-# crons = ["0 * * * *"]
+# Cron: hourly scan of R2 for new OCR files (backstop for webhook)
+[triggers]
+crons = ["0 * * * *"]
 
 [assets]
 directory = "./src/public/"

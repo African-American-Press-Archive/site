@@ -1,0 +1,9 @@
+---
+slug: athens-republique
+description_source: "[Digital Library of Georgia](https://gahistoricnewspapers.galileo.usg.edu/lccn/2012233098/)"
+image_source: "[Digital Library of Georgia](https://gahistoricnewspapers.galileo.usg.edu/lccn/2012233098/issues/)"
+---
+
+Recent World War I veteran Julian Lucasse Brown began publishing the *Athens Republique* in November 1919 in Athens, Georgia. According to its masthead, the paper was "Devoted to the Religious, the Economic, and the Industrial Development of the Colored Race." The *Republique* was also the official organ for the local Jeruel Baptist Association, which ran the Jeruel Academy, a private school for Black students in the city. The *Republique* circulated weekly on Saturdays and covered stories on the affairs of the African-American community in Athens. The paper also regularly featured national reports of efforts to fight the Ku Klux Klan and lynchings across the country. Additionally, Brown devoted multiple pages of each issue to societal news in Athens and surrounding towns, including weddings, deaths, illnesses, and church events often ignored by the white-run press.
+
+In 1923, Brown relocated the paper to an office on Hull Street in an area known as the "Hot Corner" in downtown Athens. The Hot Corner supported a thriving African-American business community and was home to the celebrated Morton Theatre, one of the first black-owned and operated vaudeville theatres in the country. Brown supplemented his journalistic endeavor by working as a notary, serving as secretary of the Allied National Farm Association (also headquartered on Hull Street), and selling printed materials out of his office. By 1927, the *Athens Republique* was no longer in business. In the decade that followed, Brown and his wife Katherine moved to Alabama, where he served as a teacher and printer at the Tuskegee Institute.
