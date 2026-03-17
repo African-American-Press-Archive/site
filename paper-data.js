@@ -49,6 +49,7 @@ const PaperData = {
         'Washington Bee': 'Washington, D.C.',
         'Washington Tribune': 'Washington, D.C.',
         'Western Outlook': 'Oakland, California',
+        'Voice of the People': 'Laurel, Mississippi',
         'Wichita Searchlight': 'Wichita, Kansas',
         'Wisconsin Weekly Blade': 'Milwaukee, Wisconsin',
     }),
