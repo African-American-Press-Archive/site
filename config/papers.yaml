@@ -355,6 +355,10 @@ papers:
     - type: jp2
       root: /Users/nealcaren/Dropbox/california-eagle/
       lccn: california-eagle
+  voice-of-the-people:
+    title: Voice of the People
+    path: voice-of-the-people
+    base_url: https://pages.dangerouspress.org/voice-of-the-people
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
