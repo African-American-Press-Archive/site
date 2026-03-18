@@ -1,0 +1,2415 @@
+// ==================== CONFIG / CONSTANTS ====================
+const CONFIG = {
+    YEARS: { MIN: 1905, MAX: 1929 },
+    ITEMS_PER_PAGE: 12,
+    PRELOAD_PAGES: 2,
+    DEBOUNCE_DELAY: 300,
+    SPRING_DAMPING: 0.8,
+    SPRING_STIFFNESS: 0.3,
+};
+
+const MONTHS = [
+    { value: '01', label: 'Jan', full: 'January' },
+    { value: '02', label: 'Feb', full: 'February' },
+    { value: '03', label: 'Mar', full: 'March' },
+    { value: '04', label: 'Apr', full: 'April' },
+    { value: '05', label: 'May', full: 'May' },
+    { value: '06', label: 'Jun', full: 'June' },
+    { value: '07', label: 'Jul', full: 'July' },
+    { value: '08', label: 'Aug', full: 'August' },
+    { value: '09', label: 'Sep', full: 'September' },
+    { value: '10', label: 'Oct', full: 'October' },
+    { value: '11', label: 'Nov', full: 'November' },
+    { value: '12', label: 'Dec', full: 'December' },
+];
+
+const INTRO_STORAGE_KEY = 'bpa_intro_seen_v1';
+
+const PAPER_TITLE_OVERRIDES = Object.freeze({
+    'Broad Ax': 'Chicago Broad Ax',
+});
+
+function getDisplayTitle(title) {
+    const override = PAPER_TITLE_OVERRIDES[title];
+    if (!override) {
+        return title;
+    }
+
+    const normalizedOverride = override.trim().toLowerCase();
+    const normalizedTitle = title.trim().toLowerCase();
+
+    if (normalizedTitle === normalizedOverride || normalizedTitle.startsWith(normalizedOverride)) {
+        return title;
+    }
+
+    return override;
+}
+
+// ==================== STATE MANAGEMENT ====================
+const state = {
+    allIssues: [],
+    filteredIssues: [],
+    displayedIssues: [],
+    selectedPapers: new Set(),
+    selectedYear: null,
+    selectedMonth: null,
+    currentSort: 'date-asc',
+    currentPage: 0,
+    isLoading: false,
+    searchQuery: '',
+    isDefaultLoad: true,  // Track if we're in initial default state
+
+    // Viewer state
+    currentIssueIndex: 0,
+    currentIssue: null,
+    currentPages: [],
+    currentPageIndex: 0,
+    pageCache: new Map(),
+    thumbnailsVisible: false,
+    zoomLevel: 1,
+    referrerUrl: null,  // Store the page we came from
+
+    // Timeline state
+    yearCounts: new Map(),
+    availableYears: [],
+};
+
+function resolveAssetPath(input) {
+    if (!input) return '';
+    // Already a full URL
+    if (/^https?:\/\//i.test(input)) {
+        return input;
+    }
+
+    // R2 path format: paper/year/date/page_*.jpg or paper/year/date/thumb.jpg
+    // Detected by presence of /page_ or /thumb in the path
+    if (input.includes('/page_') || input.includes('/thumb')) {
+        return `https://pages.dangerouspress.org/${input}`;
+    }
+
+    // Path starting with / is already absolute-ish
+    if (input.startsWith('/')) {
+        return `web_content${input}`;
+    }
+
+    // Relative path - prepend web_content
+    return `web_content/${input}`;
+}
+
+// ==================== INITIALIZATION ====================
+document.addEventListener('DOMContentLoaded', async () => {
+    // Early exit for static pages - don't load manifest or touch IndexedDB
+    const issueGrid = document.getElementById('issue-grid');
+    if (!issueGrid) {
+        return;
+    }
+    await loadManifest();
+    setupEventListeners();
+    initializeIntersectionObserver();
+
+    // Initialize new filter system
+    if (window.FilterSystem) {
+        FilterSystem.init();
+    }
+});
+
+// ==================== INDEXEDDB MANIFEST CACHING ====================
+const DB_NAME = 'DangerousPressArchive';
+const DB_VERSION = 1;
+const STORE_NAME = 'manifest';
+const CACHE_KEY = 'manifest_data';
+const VERSION_KEY = 'manifest_version';
+const MANIFEST_SCHEMA_VERSION = 4; // Increment when manifest structure changes
+
+async function initializeIndexedDB() {
+    return new Promise((resolve, reject) => {
+        const request = indexedDB.open(DB_NAME, DB_VERSION);
+
+        request.onerror = () => {
+            console.warn('IndexedDB error:', request.error);
+            resolve(null);
+        };
+
+        request.onsuccess = () => {
+            resolve(request.result);
+        };
+
+        request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            if (!db.objectStoreNames.contains(STORE_NAME)) {
+                db.createObjectStore(STORE_NAME);
+            }
+        };
+    });
+}
+
+async function getCachedManifest() {
+    try {
+        const db = await initializeIndexedDB();
+        if (!db) return null;
+
+        return new Promise((resolve) => {
+            const transaction = db.transaction([STORE_NAME], 'readonly');
+            const store = transaction.objectStore(STORE_NAME);
+            const request = store.get(CACHE_KEY);
+
+            request.onsuccess = () => {
+                resolve(request.result);
+            };
+
+            request.onerror = () => {
+                console.warn('Failed to read from IndexedDB');
+                resolve(null);
+            };
+        });
+    } catch (error) {
+        console.warn('IndexedDB cache read failed:', error);
+        return null;
+    }
+}
+
+async function setCachedManifest(data, version) {
+    try {
+        const db = await initializeIndexedDB();
+        if (!db) return false;
+
+        return new Promise((resolve) => {
+            const transaction = db.transaction([STORE_NAME], 'readwrite');
+            const store = transaction.objectStore(STORE_NAME);
+
+            store.put(data, CACHE_KEY);
+            store.put(version, VERSION_KEY);
+            store.put(MANIFEST_SCHEMA_VERSION, 'schema_version');
+
+            transaction.oncomplete = () => {
+                console.log(`✓ Manifest cached to IndexedDB (schema v${MANIFEST_SCHEMA_VERSION})`);
+                resolve(true);
+            };
+
+            transaction.onerror = () => {
+                console.warn('Failed to cache manifest to IndexedDB');
+                resolve(false);
+            };
+        });
+    } catch (error) {
+        console.warn('IndexedDB cache write failed:', error);
+        return false;
+    }
+}
+
+async function getCachedManifestVersion() {
+    try {
+        const db = await initializeIndexedDB();
+        if (!db) return null;
+
+        return new Promise((resolve) => {
+            const transaction = db.transaction([STORE_NAME], 'readonly');
+            const store = transaction.objectStore(STORE_NAME);
+            const request = store.get(VERSION_KEY);
+
+            request.onsuccess = () => {
+                resolve(request.result || null);
+            };
+
+            request.onerror = () => {
+                resolve(null);
+            };
+        });
+    } catch (error) {
+        console.warn('Failed to read version from IndexedDB:', error);
+        return null;
+    }
+}
+
+async function getCachedSchemaVersion() {
+    try {
+        const db = await initializeIndexedDB();
+        if (!db) return null;
+
+        return new Promise((resolve) => {
+            const transaction = db.transaction([STORE_NAME], 'readonly');
+            const store = transaction.objectStore(STORE_NAME);
+            const request = store.get('schema_version');
+
+            request.onsuccess = () => {
+                resolve(request.result || null);
+            };
+
+            request.onerror = () => {
+                resolve(null);
+            };
+        });
+    } catch (error) {
+        console.warn('Failed to read schema version from IndexedDB:', error);
+        return null;
+    }
+}
+
+// Background update check - doesn't block the UI
+async function checkForManifestUpdates(manifestPath, cachedVersion, currentData) {
+    try {
+        // Wait a bit to not compete with initial page load
+        await new Promise(resolve => setTimeout(resolve, 3000));
+
+        const response = await fetch(manifestPath, { cache: 'no-store' });
+        if (!response.ok) return;
+
+        const freshData = await response.json();
+        const freshVersion = new Date().toISOString();
+
+        // Check if content actually changed
+        // Compare length AND check if structure changed (e.g., title field added)
+        const structureChanged = currentData.length > 0 && freshData.length > 0 &&
+            (JSON.stringify(Object.keys(currentData[0]).sort()) !== JSON.stringify(Object.keys(freshData[0]).sort()));
+
+        if (freshData.length !== currentData.length || structureChanged) {
+            console.log(`✓ Manifest update available. New: ${freshData.length} issues (was ${currentData.length})`);
+            if (structureChanged) {
+                console.log('✓ Manifest structure changed - updating cache');
+            }
+            await setCachedManifest(freshData, freshVersion);
+            console.log('⟳ Cache silently updated. Refresh page to see new content.');
+        }
+    } catch (error) {
+        console.warn('Background manifest update check failed:', error);
+    }
+}
+
+// ==================== DATA LOADING ====================
+async function loadManifest() {
+    try {
+        const manifestPath = 'web_content/manifest.json';
+        const fullUrl = new URL(manifestPath, window.location.href).href;
+
+        console.log(`[DEBUG] Current URL: ${window.location.href}`);
+        console.log(`[DEBUG] Manifest path: ${manifestPath}`);
+        console.log(`[DEBUG] Full manifest URL: ${fullUrl}`);
+
+        let data;
+
+        // Try to use cached manifest first
+        console.log(`[DEBUG] Checking IndexedDB cache...`);
+        const cachedManifest = await getCachedManifest();
+        const cachedVersion = await getCachedManifestVersion();
+        const cachedSchemaVersion = await getCachedSchemaVersion();
+
+        // Check if schema version matches
+        const schemaMismatch = cachedSchemaVersion !== null && cachedSchemaVersion !== MANIFEST_SCHEMA_VERSION;
+
+        if (schemaMismatch) {
+            console.log(`⚠ Schema version mismatch (cached: ${cachedSchemaVersion}, current: ${MANIFEST_SCHEMA_VERSION}). Invalidating cache...`);
+            // Clear cache and fetch fresh data
+            data = null;
+        } else if (cachedManifest && Array.isArray(cachedManifest)) {
+            console.log(`✓ Loaded ${cachedManifest.length} issues from IndexedDB cache (version: ${cachedVersion}, schema: ${cachedSchemaVersion})`);
+
+            // Still check for updates in the background, but use cache immediately
+            checkForManifestUpdates(manifestPath, cachedVersion, cachedManifest);
+
+            // Use cached data immediately
+            data = cachedManifest;
+        }
+
+        if (!data) {
+            // No cache, fetch from network
+            console.log(`[DEBUG] No cache found. Fetching manifest from network...`);
+            const response = await fetch(manifestPath);
+
+            console.log(`[DEBUG] Response status: ${response.status}`);
+            console.log(`[DEBUG] Response OK: ${response.ok}`);
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            console.log(`[DEBUG] Parsing JSON...`);
+            data = await response.json();
+            console.log(`✓ Loaded ${data.length} issues from network`);
+
+            // Cache the manifest
+            const timestamp = new Date().toISOString();
+            await setCachedManifest(data, timestamp);
+        }
+
+        // Continue with the rest of the function using 'data'
+        if (!data) {
+            throw new Error('Failed to load manifest data');
+        }
+
+        // Filter to only 1910-1929
+        state.allIssues = data.filter(issue => {
+            const year = parseInt(issue.date.split('-')[0]);
+            return year >= CONFIG.YEARS.MIN && year <= CONFIG.YEARS.MAX;
+        });
+
+        // Sort by date ascending (oldest first)
+        state.allIssues.sort((a, b) => new Date(a.date) - new Date(b.date));
+        state.filteredIssues = [...state.allIssues];
+
+        // Calculate year counts for timeline
+        calculateYearCounts(state.allIssues);
+
+        // Initialize UI
+        initializeFilters();
+        refreshTimelineAvailability();
+
+        // Check for URL parameters (e.g., from newspaper page links)
+        const urlParams = new URLSearchParams(window.location.search);
+        const paperParam = urlParams.get('paper');
+        const dateParam = urlParams.get('date');
+
+        let urlParamsHandled = false;
+
+        if (dateParam) {
+            // If we have a date, filter to that specific issue
+            // If paperParam is also provided, use it to find the correct paper
+            let issue;
+            if (paperParam) {
+                // Convert paper parameter to title format (e.g., "chicago-defender" -> "Chicago Defender")
+                const paperTitle = paperParam.split('-').map(word =>
+                    word.charAt(0).toUpperCase() + word.slice(1)
+                ).join(' ');
+
+                // Find issue matching both date and paper title
+                issue = state.allIssues.find(i =>
+                    i.id.includes(dateParam) && i.title === paperTitle
+                );
+            } else {
+                // No paper specified, find any issue with this date
+                issue = state.allIssues.find(i => i.id.includes(dateParam));
+            }
+
+            if (issue) {
+                // Set filters to match the issue
+                state.selectedPapers.clear();
+                state.selectedPapers.add(issue.title);
+
+                // Extract year and month from date
+                const [year, month] = dateParam.split('-');
+                state.selectedYear = year;
+                state.selectedMonth = month;
+
+                // Update UI
+                updateStats();
+                renderGrid();
+
+                // Find and open the viewer for this issue
+                const issueIndex = state.displayedIssues.findIndex(item => item.id.includes(dateParam) && item.title === issue.title);
+                if (issueIndex !== -1) {
+                    openViewer(issueIndex);
+                }
+
+                urlParamsHandled = true;
+            }
+        } else if (paperParam) {
+            // Just filter by paper
+            const paperTitle = paperParam.split('-').map(word =>
+                word.charAt(0).toUpperCase() + word.slice(1)
+            ).join(' ');
+
+            // Try to find matching paper
+            const matchingIssue = state.allIssues.find(i =>
+                i.title.toLowerCase().replace(/[.\s]/g, '-') === paperParam ||
+                i.title.toLowerCase().includes(paperParam.replace(/-/g, ' '))
+            );
+
+            if (matchingIssue) {
+                state.selectedPapers.clear();
+                state.selectedPapers.add(matchingIssue.title);
+                updateStats();
+                renderGrid();
+                urlParamsHandled = true;
+            }
+        }
+
+        if (!urlParamsHandled) {
+            // Initialize with random year for current month
+            initializeCurrentMonthRandomYear();
+            updateStats();
+            renderGrid();
+            updateTimelineLabel();
+        }
+
+        // Hide loading, show content
+        hideElement('loading-state');
+        showElement('grid-header');
+        showElement('issue-grid-wrapper');
+        maybeShowIntroOverlay();
+
+    } catch (error) {
+        console.error('Error loading manifest:', error);
+        hideElement('loading-state');
+        showElement('error-state');
+    }
+}
+
+// ==================== TIMELINE CONTROLLER ====================
+function initializeTimeline() {
+    const slider = document.getElementById('timeline-slider');
+    const markersContainer = document.getElementById('timeline-markers');
+    const years = state.availableYears;
+
+    if (!slider || !markersContainer) {
+        return;
+    }
+
+    markersContainer.innerHTML = '';
+
+    if (!years.length) {
+        slider.classList.add('hidden');
+        return;
+    }
+
+    slider.classList.remove('hidden');
+
+    years.forEach((year, index) => {
+        const marker = createTimelineMarker(year, state.yearCounts.get(year) || 0);
+        marker.addEventListener('click', () => selectYear(year));
+        marker.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                selectYear(year);
+            }
+        });
+        markersContainer.appendChild(marker);
+    });
+
+    updateTimelineVisuals();
+    renderTimelineMonths(state.selectedYear);
+    updateTimelineLabel();
+    if (state.selectedYear) {
+        scrollYearIntoView(state.selectedYear);
+    }
+}
+
+function createTimelineMarker(year, count) {
+    const yearStr = String(year);
+    const marker = document.createElement('button');
+    marker.type = 'button';
+    marker.className = 'timeline-year-pill';
+    marker.dataset.year = yearStr;
+    marker.dataset.count = count;
+    marker.tabIndex = 0;
+    marker.setAttribute('role', 'option');
+    marker.setAttribute('aria-label', `${year} (${count} issues)`);
+    const isActive = state.selectedYear === yearStr;
+    marker.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    marker.classList.toggle('active', isActive);
+    marker.textContent = yearStr;
+    return marker;
+}
+
+function selectYear(year, options = {}) {
+    const { toggle = true } = options;
+    const yearStr = year !== null && year !== undefined ? String(year) : null;
+    const timelineReset = document.getElementById('timeline-reset');
+    let selectionChanged = false;
+
+    if (yearStr === null) {
+        if (state.selectedYear !== null) {
+            state.selectedYear = null;
+            state.selectedMonth = null;
+            selectionChanged = true;
+        }
+    } else if (toggle && state.selectedYear === yearStr) {
+        state.selectedYear = null;
+        state.selectedMonth = null;
+        selectionChanged = true;
+    } else if (state.selectedYear !== yearStr) {
+        state.selectedYear = yearStr;
+        state.selectedMonth = null;
+        selectionChanged = true;
+    }
+
+    if (state.selectedYear) {
+        renderTimelineMonths(state.selectedYear);
+        if (timelineReset) {
+            timelineReset.style.opacity = '1';
+            timelineReset.style.pointerEvents = 'all';
+        }
+    } else {
+        renderTimelineMonths(null);
+        if (timelineReset) {
+            timelineReset.style.opacity = '0';
+            timelineReset.style.pointerEvents = 'none';
+        }
+        const slider = document.getElementById('timeline-slider');
+        if (slider) {
+            slider.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+    }
+
+    updateTimelineLabel();
+    updateTimelineVisuals();
+
+    if (selectionChanged) {
+        state.isDefaultLoad = false;
+        if (state.selectedYear) {
+            scrollYearIntoView(state.selectedYear);
+        }
+        applyFilters();
+    }
+}
+
+function updateTimelineVisuals() {
+    const ticks = document.querySelectorAll('.timeline-year-pill');
+    const selectedYear = state.selectedYear ? Number(state.selectedYear) : null;
+
+    ticks.forEach((tick) => {
+        const tickYear = Number(tick.dataset.year);
+        const isActive = selectedYear !== null && tickYear === selectedYear;
+        tick.classList.toggle('active', isActive);
+        tick.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+}
+
+function renderTimelineMonths(yearStr) {
+    const container = document.getElementById('timeline-months');
+    const monthCaption = document.getElementById('month-carousel-year');
+    const monthCarousel = document.querySelector('.month-carousel');
+    if (!container) return;
+
+    container.innerHTML = '';
+
+    if (!yearStr) {
+        if (monthCaption) {
+            monthCaption.textContent = 'All Years';
+        }
+        if (monthCarousel) {
+            monthCarousel.classList.add('month-carousel--disabled');
+        }
+        return;
+    }
+
+    const issuesPool = getIssuesForActivePapers();
+    const issuesForYear = issuesPool.filter(issue => issue.date.startsWith(String(yearStr)));
+    const monthCounts = new Map();
+    issuesForYear.forEach(issue => {
+        const month = issue.date.slice(5, 7);
+        monthCounts.set(month, (monthCounts.get(month) || 0) + 1);
+    });
+
+    const activeMonths = MONTHS.filter(({ value }) => monthCounts.get(value));
+
+    if (monthCaption) {
+        monthCaption.textContent = yearStr;
+    }
+    if (monthCarousel) {
+        monthCarousel.classList.remove('month-carousel--disabled');
+    }
+
+    if (!activeMonths.length) {
+        if (monthCarousel) {
+            monthCarousel.classList.add('month-carousel--disabled');
+        }
+        return;
+    }
+
+    const totalIssues = issuesForYear.length;
+
+    const createMonthTile = ({ value, label, full }, count) => {
+        const tile = document.createElement('span');
+        tile.className = 'month-tile';
+        tile.dataset.month = value;
+        tile.dataset.count = count;
+        tile.textContent = label;
+        tile.tabIndex = 0;
+        tile.setAttribute('role', 'option');
+        tile.setAttribute('aria-label', `${full} ${yearStr} (${count} issues)`);
+        const isActive = state.selectedMonth === value;
+        tile.classList.toggle('active', isActive);
+        tile.setAttribute('aria-selected', isActive ? 'true' : 'false');
+
+        const toggleSelection = () => {
+            state.selectedMonth = state.selectedMonth === value ? null : value;
+            updateTimelineLabel();
+            renderTimelineMonths(yearStr);
+            applyFilters();
+        };
+
+        tile.addEventListener('click', toggleSelection);
+        tile.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleSelection();
+            }
+        });
+
+        return tile;
+    };
+
+    const allTile = document.createElement('span');
+    allTile.className = 'month-tile';
+    allTile.dataset.month = 'all';
+    allTile.dataset.count = totalIssues;
+    allTile.textContent = 'All';
+    allTile.tabIndex = 0;
+    allTile.setAttribute('role', 'option');
+    const isAllActive = !state.selectedMonth;
+    allTile.classList.toggle('active', isAllActive);
+    allTile.setAttribute('aria-selected', isAllActive ? 'true' : 'false');
+    allTile.setAttribute('aria-label', `All months ${yearStr}`);
+    allTile.addEventListener('click', () => {
+        state.selectedMonth = null;
+        updateTimelineLabel();
+        renderTimelineMonths(yearStr);
+        applyFilters();
+    });
+    allTile.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            state.selectedMonth = null;
+            updateTimelineLabel();
+            renderTimelineMonths(yearStr);
+            applyFilters();
+        }
+    });
+
+    container.appendChild(allTile);
+
+    activeMonths.forEach(monthInfo => {
+        const count = monthCounts.get(monthInfo.value);
+        container.appendChild(createMonthTile(monthInfo, count));
+    });
+
+    scrollMonthIntoView(state.selectedMonth || 'all');
+}
+
+function scrollMonthIntoView(monthValue) {
+    const container = document.getElementById('timeline-months');
+    if (!container) return;
+
+    const targetValue = monthValue && monthValue !== 'all' ? monthValue : 'all';
+    const tile = container.querySelector(`.month-tile[data-month="${targetValue}"]`);
+    if (!tile) return;
+
+    const viewport = tile.closest('.month-scroll-viewport');
+    if (viewport) {
+        const scrollLeft = tile.offsetLeft - (viewport.clientWidth / 2) + (tile.offsetWidth / 2);
+        viewport.scrollTo({
+            left: Math.max(scrollLeft, 0),
+            behavior: 'smooth'
+        });
+    } else {
+        tile.scrollIntoView({
+            behavior: 'smooth',
+            inline: 'center',
+            block: 'nearest'
+        });
+    }
+}
+
+function updateTimelineLabel() {
+    const gridTitle = document.getElementById('grid-title');
+    if (!gridTitle) {
+        return;
+    }
+
+    if (!state.selectedYear) {
+        // Show today's date for "Today in History" grid
+        const today = new Date();
+        const monthInfo = MONTHS.find(m => m.value === String(today.getMonth() + 1).padStart(2, '0'));
+        const monthName = monthInfo ? monthInfo.full : '';
+        const day = today.getDate();
+        gridTitle.textContent = `${monthName} ${day}`;
+        return;
+    }
+
+    if (state.selectedMonth) {
+        const monthInfo = MONTHS.find(m => m.value === state.selectedMonth);
+        const monthName = monthInfo ? monthInfo.full : state.selectedMonth;
+        gridTitle.textContent = `Issues from ${monthName} ${state.selectedYear}`;
+    } else {
+        gridTitle.textContent = `Issues from ${state.selectedYear}`;
+    }
+}
+
+function getIssuesForActivePapers() {
+    if (state.selectedPapers.size === 0) {
+        return state.allIssues;
+    }
+    return state.allIssues.filter(issue => state.selectedPapers.has(issue.title));
+}
+
+function calculateYearCounts(issues = state.allIssues) {
+    state.yearCounts.clear();
+
+    issues.forEach(issue => {
+        const year = parseInt(issue.date.slice(0, 4), 10);
+        if (!Number.isNaN(year)) {
+            state.yearCounts.set(year, (state.yearCounts.get(year) || 0) + 1);
+        }
+    });
+
+    state.availableYears = Array.from(state.yearCounts.keys()).sort((a, b) => a - b);
+}
+
+function refreshTimelineAvailability() {
+    const relevantIssues = getIssuesForActivePapers();
+    calculateYearCounts(relevantIssues);
+
+    const availableYearStrings = new Set(state.availableYears.map(year => String(year)));
+    if (state.selectedYear && !availableYearStrings.has(state.selectedYear)) {
+        state.selectedYear = null;
+        state.selectedMonth = null;
+    }
+
+    if (state.selectedYear) {
+        const months = new Set();
+        relevantIssues.forEach(issue => {
+            if (issue.date.startsWith(`${state.selectedYear}-`)) {
+                months.add(issue.date.slice(5, 7));
+            }
+        });
+        if (state.selectedMonth && !months.has(state.selectedMonth)) {
+            state.selectedMonth = null;
+        }
+    }
+}
+
+function initializeRandomDefaultView() {
+    if (!state.allIssues.length) {
+        return false;
+    }
+
+    const randomIssue = state.allIssues[Math.floor(Math.random() * state.allIssues.length)];
+    if (!randomIssue || !randomIssue.date) {
+        return false;
+    }
+
+    // Update state
+    const [year, month] = randomIssue.date.split('-');
+    state.selectedYear = year;
+    state.selectedMonth = month;
+
+    // Initialize new filter system with random issue
+    if (window.FilterSystem) {
+        FilterSystem.setInitialStateFromRandomIssue(randomIssue);
+    }
+
+    applyFilters();
+    updateTimelineLabel();  // Ensure heading shows selected month/year on initial load
+
+    return true;
+}
+
+function initializeCurrentMonthRandomYear() {
+    // Initialize with a random year for the current month
+    const today = new Date();
+    const currentMonth = String(today.getMonth() + 1).padStart(2, '0');
+
+    // Find all issues in current month
+    const currentMonthIssues = state.allIssues.filter(issue =>
+        issue.date.substring(5, 7) === currentMonth
+    );
+
+    if (!currentMonthIssues.length) {
+        // No issues in current month, fall back to all issues
+        return;
+    }
+
+    // Get unique years for current month
+    const yearsInMonth = [...new Set(currentMonthIssues.map(issue => issue.date.substring(0, 4)))];
+
+    if (yearsInMonth.length === 0) {
+        return;
+    }
+
+    // Pick random year
+    const randomYear = yearsInMonth[Math.floor(Math.random() * yearsInMonth.length)];
+
+    // Set filter state
+    state.selectedYear = randomYear;
+    state.selectedMonth = currentMonth;
+
+    // Update filter system
+    if (window.FilterSystem) {
+        FilterSystem.selectYear(randomYear);
+        FilterSystem.selectMonth(currentMonth);
+    }
+}
+
+function spinArchive() {
+    // Don't spin if there are no available years
+    if (!state.availableYears || state.availableYears.length === 0) {
+        return;
+    }
+
+    const issuesPool = getIssuesForActivePapers();
+    if (!issuesPool.length) {
+        return;
+    }
+
+    // Randomly select a year
+    const randomYear = state.availableYears[Math.floor(Math.random() * state.availableYears.length)];
+
+    // Get all issues for the selected year
+    const issuesForYear = issuesPool.filter(issue => issue.date.startsWith(String(randomYear)));
+    if (!issuesForYear.length) {
+        return;
+    }
+
+    // Get all available months for that year
+    const monthsWithIssues = new Set();
+    issuesForYear.forEach(issue => {
+        const month = issue.date.slice(5, 7);
+        monthsWithIssues.add(month);
+    });
+
+    // Convert to array and randomly select a month
+    const availableMonths = Array.from(monthsWithIssues);
+    const randomMonth = availableMonths[Math.floor(Math.random() * availableMonths.length)];
+
+    // Update state
+    state.selectedYear = String(randomYear);
+    state.selectedMonth = randomMonth;
+    state.isDefaultLoad = false;
+
+    // Show the reset button
+    const resetBtn = document.getElementById('timeline-reset');
+    if (resetBtn) {
+        resetBtn.style.opacity = '1';
+        resetBtn.style.pointerEvents = 'all';
+    }
+
+    // Add spinning animation to the button
+    const spinBtn = document.getElementById('spin-archive-btn');
+    if (spinBtn) {
+        spinBtn.classList.add('spinning');
+        setTimeout(() => {
+            spinBtn.classList.remove('spinning');
+        }, 600);
+    }
+
+    // Update UI
+    updateTimelineLabel();
+    renderTimelineMonths(String(randomYear));
+    updateTimelineVisuals();
+    applyFilters();
+    scrollYearIntoView(randomYear);
+}
+
+function scrollYearIntoView(year) {
+    const slider = document.getElementById('timeline-slider');
+    if (!slider) return;
+
+    const pill = slider.querySelector(`.timeline-year-pill[data-year="${year}"]`);
+    if (!pill) return;
+
+    const scrollLeft = pill.offsetLeft - (slider.clientWidth / 2) + (pill.offsetWidth / 2);
+
+    slider.scrollTo({
+        left: Math.max(scrollLeft, 0),
+        behavior: 'smooth'
+    });
+}
+
+function getHeroPeriodLabel() {
+    if (state.selectedYear && state.selectedMonth) {
+        const monthInfo = MONTHS.find(m => m.value === state.selectedMonth);
+        const monthName = monthInfo ? monthInfo.full : state.selectedMonth;
+        return `${monthName} ${state.selectedYear}`;
+    }
+    if (state.selectedYear) {
+        return `${state.selectedYear}`;
+    }
+    // When no filters applied, show today's month and day
+    const today = new Date();
+    const monthInfo = MONTHS.find(m => m.value === String(today.getMonth() + 1).padStart(2, '0'));
+    const monthName = monthInfo ? monthInfo.full : '';
+    const day = today.getDate();
+    return `${monthName} ${day}`;
+}
+
+function selectHeroIssues(sortedIssues) {
+    if (!sortedIssues || !sortedIssues.length) {
+        return [];
+    }
+
+    // Hero section always shows "Today in History" - issues published on this exact date (month-day) across different years
+    // This is independent of the main grid filters (selectedYear, selectedMonth)
+    const today = new Date();
+    const currentMonth = String(today.getMonth() + 1).padStart(2, '0');
+    const currentDay = String(today.getDate()).padStart(2, '0');
+    const todayMonthDay = `${currentMonth}-${currentDay}`;
+
+    // Get issues from today's date (any year) - strict matching, no fallback
+    let pool = sortedIssues.filter(issue => {
+        const monthDay = issue.date.substring(5, 10); // Extract MM-DD from YYYY-MM-DD
+        return monthDay === todayMonthDay;
+    });
+
+    // If still no matches, use all issues
+    if (!pool.length) {
+        pool = sortedIssues;
+    }
+
+    // Group issues by newspaper
+    const issuesByPaper = new Map();
+    for (const issue of pool) {
+        if (!issuesByPaper.has(issue.title)) {
+            issuesByPaper.set(issue.title, []);
+        }
+        issuesByPaper.get(issue.title).push(issue);
+    }
+
+    // Select one random issue from each newspaper
+    const selectedIssues = [];
+    for (const [title, issues] of issuesByPaper) {
+        const randomIndex = Math.floor(Math.random() * issues.length);
+        selectedIssues.push(issues[randomIndex]);
+    }
+
+    // Shuffle and limit to desired number
+    const maxItems = Math.min(6, selectedIssues.length);
+    const minItems = Math.min(3, selectedIssues.length);
+    const desired = Math.max(minItems, Math.min(5, maxItems));
+
+    const shuffled = [...selectedIssues].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, desired);
+}
+
+function createHeroCard(issue) {
+    const figure = document.createElement('figure');
+    figure.className = 'hero-card';
+
+    const thumbPath = resolveAssetPath(issue.issue_thumb);
+    const displayTitle = getDisplayTitle(issue.title);
+
+    // Parse date string directly to avoid timezone issues
+    const [year, month, day] = issue.date.split('-');
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const date = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
+
+    figure.innerHTML = `
+        <img src="${thumbPath}" alt="${displayTitle} - ${date}" loading="lazy" />
+        <figcaption>
+            <div class="hero-card-meta">${date}</div>
+            <div class="hero-card-title">${displayTitle}</div>
+        </figcaption>
+    `;
+
+    figure.addEventListener('click', () => {
+        // Hero cards can link to issues outside the current grid/filters
+        // Try to find in displayedIssues first (for navigation context)
+        let issueIndex = state.displayedIssues.findIndex(item => item.id === issue.id);
+
+        if (issueIndex !== -1) {
+            // Issue is in current displayed set - open normally
+            openViewer(issueIndex);
+        } else {
+            // Issue is not in current view - open directly without navigation context
+            openViewerDirect(issue);
+        }
+    });
+
+    return figure;
+}
+
+function updateHeroShowcase(sortedIssues, forceRefresh = false) {
+    const heroSection = document.getElementById('newsstand-hero');
+    const heroGrid = document.getElementById('hero-grid');
+    const heroLabel = document.getElementById('hero-period-label');
+    const heroKicker = document.getElementById('hero-kicker');
+    const heroClear = document.getElementById('hero-clear-btn');
+
+    if (!heroSection || !heroGrid || !heroLabel) {
+        return;
+    }
+
+    // Hero section always shows "Today in History" from ALL issues, independent of filters
+    // The isDefaultLoad flag only controls the LABEL, not the content
+    let showcaseIssues = selectHeroIssues(state.allIssues);
+
+    heroGrid.innerHTML = '';
+
+    if (!showcaseIssues.length) {
+        heroSection.classList.add('hidden');
+        return;
+    }
+
+    heroSection.classList.remove('hidden');
+    heroSection.dataset.initialized = 'true';
+
+    // Hero section always shows "Today in History" - independent of main grid filters
+    // The content always comes from all available issues for this exact date (month-day)
+    const today = new Date();
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const monthName = monthNames[today.getMonth()];
+    const day = today.getDate();
+    heroLabel.textContent = `${monthName} ${day}`;
+    if (heroKicker) {
+        heroKicker.textContent = 'Today in History';
+    }
+
+    showcaseIssues.forEach(issue => {
+        heroGrid.appendChild(createHeroCard(issue));
+    });
+
+    // Hero clear button never shown (hero is always independent of main grid filter)
+    if (heroClear) {
+        heroClear.classList.add('opacity-0', 'pointer-events-none');
+    }
+}
+
+// ==================== FILTERS ====================
+function initializeFilters() {
+    const paperTitles = [...new Set(state.allIssues.map(issue => issue.title))].sort();
+    paperTitles.forEach(title => state.selectedPapers.add(title));
+
+    const filterList = document.getElementById('paper-list');
+    const filterCount = document.getElementById('filter-count');
+
+    // Exit early if required DOM elements are missing
+    if (!filterList || !filterCount) {
+        return;
+    }
+
+    filterCount.textContent = paperTitles.length;
+
+    // Add "All Papers" option
+    filterList.innerHTML = `
+        <label class="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all" style="hover:background: var(--bg-hover);">
+            <input
+                type="checkbox"
+                checked
+                id="all-papers-checkbox"
+                class="filter-checkbox w-4 h-4 rounded"
+                style="border-color: var(--unc-basin-slate); accent-color: var(--unc-tile-teal);"
+            />
+            <span class="text-sm font-semibold" style="color: var(--unc-tile-teal);">All Papers</span>
+        </label>
+    `;
+
+    // Add individual paper filters
+    paperTitles.forEach(title => {
+        const count = state.allIssues.filter(issue => issue.title === title).length;
+        const filterId = `filter-${title.toLowerCase().replace(/\s+/g, '-')}`;
+
+        const filterEl = document.createElement('label');
+        filterEl.className = 'filter-label flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all border border-transparent';
+        filterEl.style.cssText = 'color: var(--text-secondary);';
+        filterEl.innerHTML = `
+            <input
+                type="checkbox"
+                id="${filterId}"
+                checked
+                class="filter-checkbox w-4 h-4 rounded"
+                style="border-color: var(--unc-basin-slate); accent-color: var(--unc-tile-teal);"
+                data-title="${title}"
+            />
+            <span class="flex-1 text-sm" style="color: var(--text-primary);">${getDisplayTitle(title)}</span>
+            <span class="text-xs px-2 py-0.5 rounded-full" style="background: var(--bg-hover); color: var(--text-muted);">${count}</span>
+        `;
+        filterList.appendChild(filterEl);
+    });
+
+    // Add event listeners
+    const allPapersCheckbox = document.getElementById('all-papers-checkbox');
+    if (allPapersCheckbox) {
+        allPapersCheckbox.addEventListener('change', toggleAllFilters);
+    }
+
+    filterList.querySelectorAll('.filter-checkbox[data-title]').forEach(checkbox => {
+        checkbox.addEventListener('change', () => togglePaperFilter(checkbox.dataset.title));
+    });
+}
+
+function toggleAllFilters(event) {
+    // Exit early if event or target is missing
+    if (!event || !event.target) {
+        return;
+    }
+
+    const checked = event.target.checked;
+    const allCheckboxes = document.querySelectorAll('.filter-checkbox');
+
+    allCheckboxes.forEach(cb => cb.checked = checked);
+
+    if (checked) {
+        const paperTitles = [...new Set(state.allIssues.map(issue => issue.title))];
+        paperTitles.forEach(title => state.selectedPapers.add(title));
+    } else {
+        state.selectedPapers.clear();
+    }
+
+    applyFilters();
+}
+
+function togglePaperFilter(title) {
+    if (state.selectedPapers.has(title)) {
+        state.selectedPapers.delete(title);
+    } else {
+        state.selectedPapers.add(title);
+    }
+
+    state.isDefaultLoad = false;
+
+    // Update "All Papers" checkbox
+    const allCheckbox = document.getElementById('all-papers-checkbox');
+    if (allCheckbox) {
+        const totalPapers = new Set(state.allIssues.map(issue => issue.title)).size;
+        allCheckbox.checked = state.selectedPapers.size === totalPapers;
+    }
+
+    applyFilters();
+}
+
+function resetFilters() {
+    state.selectedYear = null;
+    state.selectedMonth = null;
+    state.isDefaultLoad = true;  // Reset to default state
+    const paperTitles = [...new Set(state.allIssues.map(issue => issue.title))];
+    state.selectedPapers.clear();
+    paperTitles.forEach(title => state.selectedPapers.add(title));
+
+    // Reset all checkboxes
+    document.querySelectorAll('.filter-checkbox').forEach(cb => cb.checked = true);
+
+    // Reset timeline
+    const timelineReset = document.getElementById('timeline-reset');
+    if (timelineReset) {
+        timelineReset.style.opacity = '0';
+        timelineReset.style.pointerEvents = 'none';
+    }
+
+    renderTimelineMonths(null);
+    updateTimelineLabel();
+    updateTimelineVisuals();
+    applyFilters();
+}
+
+function applyFilters() {
+    refreshTimelineAvailability();
+
+    // Update year grid availability in FilterSystem
+    if (window.FilterSystem && typeof FilterSystem.refreshYearAvailability === 'function') {
+        FilterSystem.refreshYearAvailability();
+    }
+
+    state.filteredIssues = state.allIssues.filter(issue => {
+        const matchesPaper = state.selectedPapers.size === 0 || state.selectedPapers.has(issue.title);
+        const matchesYear = !state.selectedYear || issue.date.startsWith(state.selectedYear);
+        const matchesMonth = !state.selectedMonth || !state.selectedYear ||
+            issue.date.startsWith(`${state.selectedYear}-${state.selectedMonth}`);
+        const displayTitle = getDisplayTitle(issue.title);
+        const matchesSearch = !state.searchQuery ||
+            displayTitle.toLowerCase().includes(state.searchQuery.toLowerCase()) ||
+            issue.title.toLowerCase().includes(state.searchQuery.toLowerCase()) ||
+            issue.date.includes(state.searchQuery);
+
+        return matchesPaper && matchesYear && matchesMonth && matchesSearch;
+    });
+
+    state.currentPage = 0;
+    initializeTimeline();
+    updateTimelineLabel();  // Ensure heading reflects current selected date range
+    updateStats();
+    renderGrid();
+}
+
+// ==================== SEARCH ====================
+let searchTimeout = null;
+
+function handleSearch(query) {
+    state.searchQuery = query.trim();
+    state.isDefaultLoad = false;
+
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        applyFilters();
+    }, CONFIG.DEBOUNCE_DELAY);
+}
+
+// ==================== SORTING ====================
+function handleSort() {
+    state.currentSort = document.getElementById('sort-select').value;
+    renderGrid();
+}
+
+function sortIssues(issues) {
+    const sorted = [...issues];
+
+    switch (state.currentSort) {
+        case 'date-desc':
+            sorted.sort((a, b) => new Date(b.date) - new Date(a.date));
+            break;
+        case 'date-asc':
+            sorted.sort((a, b) => new Date(a.date) - new Date(b.date));
+            break;
+        case 'title':
+            sorted.sort((a, b) => getDisplayTitle(a.title).localeCompare(getDisplayTitle(b.title)));
+            break;
+    }
+
+    return sorted;
+}
+
+// ==================== GRID CONTROLLER ====================
+function renderGrid(append = false) {
+    const grid = document.getElementById('issue-grid');
+    const wrapper = document.getElementById('issue-grid-wrapper');
+    const emptyState = document.getElementById('empty-state');
+
+    if (!grid || !wrapper) return;
+
+    const previousHeight = !append ? grid.offsetHeight : 0;
+
+    if (state.filteredIssues.length === 0) {
+        grid.style.minHeight = '';
+        wrapper.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        return;
+    }
+
+    wrapper.classList.remove('hidden');
+    emptyState.classList.add('hidden');
+
+    const sorted = sortIssues(state.filteredIssues);
+    const shouldRefreshHero = !append;
+
+    if (!append) {
+        state.currentPage = 0;
+    }
+
+    const startIndex = state.currentPage * CONFIG.ITEMS_PER_PAGE;
+    const endIndex = startIndex + CONFIG.ITEMS_PER_PAGE;
+    const itemsToRender = sorted.slice(startIndex, endIndex);
+
+    state.displayedIssues = sorted;
+
+    if (!append && previousHeight > 0) {
+        grid.style.minHeight = `${previousHeight}px`;
+    }
+
+    if (!append) {
+        grid.innerHTML = '';
+    }
+
+    itemsToRender.forEach((issue, index) => {
+        const globalIndex = startIndex + index;
+        const card = createIssueCard(issue, globalIndex);
+        grid.appendChild(card);
+    });
+
+    if (shouldRefreshHero) {
+        updateHeroShowcase(sorted, true);
+    }
+
+    if (!append) {
+        requestAnimationFrame(() => {
+            grid.style.minHeight = '';
+        });
+    }
+
+    // Show/hide load more trigger and manage observer
+    const loadMoreTrigger = document.getElementById('load-more-trigger');
+    if (loadMoreTrigger) {
+        const spinner = loadMoreTrigger.querySelector('.loading-spinner');
+        const hasMoreItems = endIndex < sorted.length;
+
+        // Show/hide trigger based on whether more items exist
+        loadMoreTrigger.classList.toggle('hidden', !hasMoreItems);
+        if (spinner) spinner.classList.add('hidden');
+
+        // Manage observer: disconnect when no more items, reconnect when items available
+        if (scrollObserver) {
+            scrollObserver.disconnect();
+            if (hasMoreItems) {
+                scrollObserver.observe(loadMoreTrigger);
+            }
+        }
+    }
+}
+
+function createIssueCard(issue, index) {
+    const card = document.createElement('article');
+    card.className = 'issue-card glass-card rounded-2xl overflow-hidden cursor-pointer';
+    card.style.animationDelay = `${(index % CONFIG.ITEMS_PER_PAGE) * 0.05}s`;
+
+    const thumbPath = resolveAssetPath(issue.issue_thumb);
+    const displayTitle = getDisplayTitle(issue.title);
+
+    // Parse date string directly to avoid timezone issues
+    const [year, month, day] = issue.date.split('-');
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const date = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
+
+    card.innerHTML = `
+        <div class="aspect-[3/4] skeleton newsstand-thumbnail overflow-hidden" style="background: rgba(79, 117, 139, 0.1);">
+            <img
+                src="${thumbPath}"
+                alt="${displayTitle} - ${date}"
+                class="w-full h-full object-cover transition-transform duration-500"
+                loading="lazy"
+                data-loaded="false"
+            />
+        </div>
+        <div class="p-4 space-y-2">
+            <h3 class="issue-card-title transition-colors" style="color: var(--unc-longleaf-pine);">
+                ${displayTitle}
+            </h3>
+            <p class="issue-card-date" style="color: var(--text-muted);">${date}</p>
+        </div>
+    `;
+
+    // Image lazy loading
+    const img = card.querySelector('img');
+    img.addEventListener('load', () => {
+        img.setAttribute('data-loaded', 'true');
+        img.parentElement.classList.remove('skeleton');
+    });
+
+    img.addEventListener('error', () => {
+        img.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%231E2238' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%239CA3B4' font-family='sans-serif'%3EImage unavailable%3C/text%3E%3C/svg%3E`;
+        img.setAttribute('data-loaded', 'true');
+        img.parentElement.classList.remove('skeleton');
+    });
+
+    card.addEventListener('click', () => openViewer(index));
+
+    return card;
+}
+
+// ==================== INFINITE SCROLL ====================
+let scrollObserver = null;
+
+function initializeIntersectionObserver() {
+    const loadMoreTrigger = document.getElementById('load-more-trigger');
+
+    // Check if trigger exists before attempting to observe
+    if (!loadMoreTrigger) {
+        return;
+    }
+
+    // Disconnect existing observer if any
+    if (scrollObserver) {
+        scrollObserver.disconnect();
+        scrollObserver = null;
+    }
+
+    // Create new observer
+    scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !state.isLoading) {
+                loadMoreItems();
+            }
+        });
+    }, {
+        rootMargin: '100px'
+    });
+
+    // Only observe if the trigger is visible (not hidden)
+    if (!loadMoreTrigger.classList.contains('hidden')) {
+        scrollObserver.observe(loadMoreTrigger);
+    }
+}
+
+function loadMoreItems() {
+    const sorted = sortIssues(state.filteredIssues);
+    const nextPage = state.currentPage + 1;
+    const startIndex = nextPage * CONFIG.ITEMS_PER_PAGE;
+
+    // Early return if no more items - ensure spinner is hidden
+    if (startIndex >= sorted.length) {
+        const spinner = document.querySelector('#load-more-trigger .loading-spinner');
+        if (spinner) spinner.classList.add('hidden');
+        state.isLoading = false;
+        return;
+    }
+
+    state.isLoading = true;
+    const spinner = document.querySelector('#load-more-trigger .loading-spinner');
+    if (spinner) spinner.classList.remove('hidden');
+
+    // Simulate loading delay for smooth UX
+    setTimeout(() => {
+        state.currentPage = nextPage;
+        renderGrid(true);
+        state.isLoading = false;
+        if (spinner) spinner.classList.add('hidden');
+    }, 300);
+}
+
+// ==================== STATS ====================
+function updateStats() {
+    const issuesEl = document.getElementById('stat-issues');
+    const papersEl = document.getElementById('stat-papers');
+    const filteredEl = document.getElementById('stat-filtered');
+
+    if (!issuesEl || !papersEl || !filteredEl) {
+        return;
+    }
+
+    const paperCount = new Set(state.allIssues.map(issue => issue.title)).size;
+
+    issuesEl.textContent = state.allIssues.length;
+    papersEl.textContent = paperCount;
+    filteredEl.textContent = state.filteredIssues.length;
+}
+
+// ==================== VIEWER CONTROLLER ====================
+// Open viewer directly with an issue object (used for "Today in History" when issue not in current view)
+async function openViewerDirect(issue) {
+    if (!issue) return;
+
+    state.currentIssueIndex = -1; // -1 indicates no navigation context
+    state.currentIssue = issue;
+
+    const modal = document.getElementById('viewer-modal');
+    const title = document.getElementById('viewer-title');
+    const dateEl = document.getElementById('viewer-date');
+
+    // Parse date string directly to avoid timezone issues
+    const [year, month, day] = issue.date.split('-');
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const date = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
+
+    title.textContent = getDisplayTitle(issue.title);
+    dateEl.textContent = date;
+
+    // Show loading
+    showElement('page-loading');
+
+    // Discover pages for this issue
+    state.currentPages = await discoverPages(issue);
+    state.currentPageIndex = 0;
+
+    // Show modal
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
+    // Push a history state so back button closes the viewer
+    history.pushState({ viewerOpen: true }, '', window.location.href);
+
+    // Setup UI based on whether we have multiple pages
+    setupPageViewer();
+
+    // Load first page
+    await loadPage(0, 'fade');
+
+    // Hide prev/next issue buttons (no navigation context)
+    const prevIssueBtn = document.getElementById('viewer-prev-issue');
+    const nextIssueBtn = document.getElementById('viewer-next-issue');
+    if (prevIssueBtn) prevIssueBtn.style.display = 'none';
+    if (nextIssueBtn) nextIssueBtn.style.display = 'none';
+}
+
+async function openViewer(index) {
+    if (!state.displayedIssues.length) return;
+    const issue = state.displayedIssues[index];
+    if (!issue) return;
+
+    state.currentIssueIndex = index;
+    state.currentIssue = issue;
+
+    // Capture the referrer URL (where we came from)
+    state.referrerUrl = document.referrer || null;
+
+    const modal = document.getElementById('viewer-modal');
+    const title = document.getElementById('viewer-title');
+    const dateEl = document.getElementById('viewer-date');
+
+    // Parse date string directly to avoid timezone issues
+    const [year, month, day] = issue.date.split('-');
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const date = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
+
+    title.textContent = getDisplayTitle(issue.title);
+    dateEl.textContent = date;
+
+    // Show loading
+    showElement('page-loading');
+
+    // Discover pages for this issue
+    state.currentPages = await discoverPages(issue);
+    state.currentPageIndex = 0;
+
+    // Show modal
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
+    // Push a history state so back button closes the viewer
+    history.pushState({ viewerOpen: true }, '', window.location.href);
+
+    // Setup UI based on whether we have multiple pages
+    setupPageViewer();
+
+    // Load first page
+    await loadPage(0, 'fade');
+
+    // Preload next pages
+    for (let i = 1; i <= CONFIG.PRELOAD_PAGES && i < state.currentPages.length; i++) {
+        preloadPage(i);
+    }
+
+    // Show prev/next issue buttons (we have navigation context)
+    const prevIssueBtn = document.getElementById('viewer-prev-issue');
+    const nextIssueBtn = document.getElementById('viewer-next-issue');
+    if (prevIssueBtn) prevIssueBtn.style.display = '';
+    if (nextIssueBtn) nextIssueBtn.style.display = '';
+
+    resetZoom();
+    updateIssueNavigationButtons();
+}
+
+async function discoverPages(issue) {
+    if (Array.isArray(issue.page_paths) && issue.page_paths.length) {
+        return issue.page_paths;
+    }
+
+    const issueDir = issue.issue_thumb.substring(0, issue.issue_thumb.lastIndexOf('/'));
+    const pages = [];
+
+    for (let i = 1; i <= 50; i++) {
+        const pageNum = String(i).padStart(2, '0');
+        const pagePath = `${issueDir}/page_${pageNum}.jpg`;
+        const fullPath = resolveAssetPath(pagePath);
+
+        try {
+            const exists = await checkImageExists(fullPath);
+            if (exists) {
+                pages.push(pagePath);
+            } else {
+                break;
+            }
+        } catch (e) {
+            break;
+        }
+    }
+
+    if (pages.length === 0) {
+        pages.push(issue.issue_thumb);
+    }
+
+    return pages;
+}
+
+function checkImageExists(url) {
+    return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(true);
+        img.onerror = () => resolve(false);
+        img.src = url;
+        setTimeout(() => resolve(false), 500);
+    });
+}
+
+function setupPageViewer() {
+    const hasMultiplePages = state.currentPages.length > 1;
+
+    toggleElement('prev-page-btn', hasMultiplePages);
+    toggleElement('next-page-btn', hasMultiplePages);
+    toggleElement('page-indicator', hasMultiplePages);
+    toggleElement('thumbnails-toggle', hasMultiplePages);
+    toggleElement('progress-bar-container', hasMultiplePages);
+
+    if (hasMultiplePages) {
+        generateThumbnails();
+    } else {
+        hideElement('thumbnail-strip');
+        state.thumbnailsVisible = false;
+    }
+
+    updatePageIndicator();
+    updateProgressBar();
+}
+
+async function loadPage(pageIndex, transition = 'next') {
+    if (pageIndex < 0 || pageIndex >= state.currentPages.length) return;
+
+    // Reset zoom and pan when changing pages
+    resetZoom();
+
+    state.currentPageIndex = pageIndex;
+    const pagePath = state.currentPages[pageIndex];
+    const fullPath = resolveAssetPath(pagePath);
+
+    const image = document.getElementById('viewer-image');
+
+    showElement('page-loading');
+
+    // Remove old transition classes
+    image.classList.remove('page-transition-next', 'page-transition-prev', 'page-transition-fade');
+
+    // Fade out current image
+    image.style.opacity = '0';
+
+    await new Promise(resolve => setTimeout(resolve, 150));
+
+    return new Promise((resolve) => {
+        const tempImg = new Image();
+        tempImg.onload = () => {
+            image.src = tempImg.src;
+
+            // Add transition class
+            if (transition === 'next') {
+                image.classList.add('page-transition-next');
+            } else if (transition === 'prev') {
+                image.classList.add('page-transition-prev');
+            } else {
+                image.classList.add('page-transition-fade');
+            }
+
+            image.style.opacity = '1';
+            hideElement('page-loading');
+
+            updatePageIndicator();
+            updateProgressBar();
+            updatePageNavigationButtons();
+            updateThumbnailSelection();
+
+            state.pageCache.set(pagePath, tempImg);
+            resolve();
+        };
+
+        tempImg.onerror = () => {
+            console.error('Failed to load page:', fullPath);
+            hideElement('page-loading');
+            resolve();
+        };
+
+        tempImg.src = fullPath;
+    });
+}
+
+function navigatePage(direction) {
+    const newIndex = state.currentPageIndex + direction;
+    if (newIndex >= 0 && newIndex < state.currentPages.length) {
+        const transition = direction > 0 ? 'next' : 'prev';
+        loadPage(newIndex, transition);
+
+        // Preload adjacent pages
+        if (direction > 0 && newIndex + 1 < state.currentPages.length) {
+            preloadPage(newIndex + 1);
+        } else if (direction < 0 && newIndex - 1 >= 0) {
+            preloadPage(newIndex - 1);
+        }
+    }
+}
+
+function preloadPage(pageIndex) {
+    if (pageIndex < 0 || pageIndex >= state.currentPages.length) return;
+
+    const pagePath = state.currentPages[pageIndex];
+    if (state.pageCache.has(pagePath)) return;
+
+    const fullPath = resolveAssetPath(pagePath);
+    const img = new Image();
+    img.onload = () => {
+        state.pageCache.set(pagePath, img);
+    };
+    img.src = fullPath;
+}
+
+function updatePageIndicator() {
+    if (state.currentPages.length > 1) {
+        document.getElementById('current-page').textContent = state.currentPageIndex + 1;
+        document.getElementById('total-pages').textContent = state.currentPages.length;
+    }
+}
+
+function updateProgressBar() {
+    if (state.currentPages.length > 1) {
+        const progress = ((state.currentPageIndex + 1) / state.currentPages.length) * 100;
+        document.getElementById('progress-bar').style.width = `${progress}%`;
+    }
+}
+
+function updatePageNavigationButtons() {
+    const prevBtn = document.getElementById('prev-page-btn');
+    const nextBtn = document.getElementById('next-page-btn');
+
+    if (state.currentPages.length > 1) {
+        prevBtn.style.opacity = state.currentPageIndex > 0 ? '1' : '0.3';
+        prevBtn.style.pointerEvents = state.currentPageIndex > 0 ? 'auto' : 'none';
+
+        nextBtn.style.opacity = state.currentPageIndex < state.currentPages.length - 1 ? '1' : '0.3';
+        nextBtn.style.pointerEvents = state.currentPageIndex < state.currentPages.length - 1 ? 'auto' : 'none';
+    }
+}
+
+function closeViewer() {
+    const modal = document.getElementById('viewer-modal');
+
+    // Only close if actually open
+    if (modal.classList.contains('hidden')) {
+        return;
+    }
+
+    // Hide main viewer modal
+    hideElement('viewer-modal');
+    document.body.style.overflow = '';
+
+    // Hide viewer-specific UI elements
+    hideElement('thumbnail-strip');
+    hideElement('help-overlay');
+
+    // Reset viewer state
+    state.thumbnailsVisible = false;
+    resetZoom();
+    state.currentPages = [];
+    state.currentPageIndex = 0;
+    state.currentIssue = null;
+
+    // If we pushed a history state when opening, go back to remove it
+    // This will trigger popstate, but the viewer is already closed so it's fine
+    if (history.state && history.state.viewerOpen) {
+        history.back();
+    }
+}
+
+function navigateIssue(direction) {
+    if (!state.displayedIssues.length) return;
+    const newIndex = state.currentIssueIndex + direction;
+    if (newIndex >= 0 && newIndex < state.displayedIssues.length) {
+        openViewer(newIndex);
+    }
+}
+
+function updateIssueNavigationButtons() {
+    const prevBtn = document.getElementById('prev-issue-btn');
+    const nextBtn = document.getElementById('next-issue-btn');
+    const atStart = state.currentIssueIndex <= 0;
+    const atEnd = state.currentIssueIndex >= state.displayedIssues.length - 1;
+
+    if (prevBtn) {
+        prevBtn.style.opacity = atStart ? '0.3' : '1';
+        prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
+    }
+
+    if (nextBtn) {
+        nextBtn.style.opacity = atEnd ? '0.3' : '1';
+        nextBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
+    }
+}
+
+// ==================== THUMBNAILS ====================
+function generateThumbnails() {
+    const container = document.getElementById('thumbnail-container');
+    container.innerHTML = '';
+
+    state.currentPages.forEach((pagePath, index) => {
+        const thumb = document.createElement('div');
+        thumb.className = 'thumbnail-item rounded-lg overflow-hidden bg-gray-800';
+        thumb.style.width = '80px';
+        thumb.style.height = '100px';
+        thumb.style.flexShrink = '0';
+        thumb.style.position = 'relative';
+
+        const img = document.createElement('img');
+        img.src = resolveAssetPath(pagePath);
+        img.className = 'w-full h-full object-cover';
+        img.alt = `Page ${index + 1}`;
+        img.loading = 'lazy';
+
+        thumb.appendChild(img);
+
+        const overlay = document.createElement('div');
+        overlay.className = 'absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-xs text-center py-1';
+        overlay.textContent = index + 1;
+        thumb.appendChild(overlay);
+
+        thumb.addEventListener('click', () => {
+            loadPage(index, 'fade');
+        });
+
+        container.appendChild(thumb);
+    });
+
+    updateThumbnailSelection();
+}
+
+function updateThumbnailSelection() {
+    const thumbnails = document.querySelectorAll('.thumbnail-item');
+    thumbnails.forEach((thumb, index) => {
+        thumb.classList.toggle('active', index === state.currentPageIndex);
+    });
+
+    const activeThumb = thumbnails[state.currentPageIndex];
+    if (activeThumb && state.thumbnailsVisible) {
+        activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+}
+
+function toggleThumbnails() {
+    state.thumbnailsVisible = !state.thumbnailsVisible;
+    const strip = document.getElementById('thumbnail-strip');
+    strip.classList.toggle('hidden', !state.thumbnailsVisible);
+
+    if (state.thumbnailsVisible) {
+        updateThumbnailSelection();
+    }
+}
+
+// ==================== ZOOM CONTROLS ====================
+// Pan state
+const panState = {
+    isDragging: false,
+    startX: 0,
+    startY: 0,
+    translateX: 0,
+    translateY: 0
+};
+
+function zoomImage(direction) {
+    const image = document.getElementById('viewer-image');
+    const wrapper = document.getElementById('image-wrapper');
+
+    if (direction > 0) {
+        state.zoomLevel = Math.min(state.zoomLevel * 1.25, 3);
+    } else {
+        state.zoomLevel = Math.max(state.zoomLevel / 1.25, 1);
+    }
+
+    // Reset pan when zooming out to 1x
+    if (state.zoomLevel === 1) {
+        panState.translateX = 0;
+        panState.translateY = 0;
+    }
+
+    updateImageTransform();
+
+    // Update cursor and enable/disable dragging
+    if (state.zoomLevel > 1) {
+        image.style.cursor = 'grab';
+        wrapper.style.overflow = 'hidden';
+    } else {
+        image.style.cursor = 'zoom-in';
+        wrapper.style.overflow = 'auto';
+    }
+}
+
+function resetZoom() {
+    state.zoomLevel = 1;
+    panState.translateX = 0;
+    panState.translateY = 0;
+
+    const image = document.getElementById('viewer-image');
+    const wrapper = document.getElementById('image-wrapper');
+
+    updateImageTransform();
+    image.style.cursor = 'zoom-in';
+    wrapper.style.overflow = 'auto';
+}
+
+function updateImageTransform() {
+    const image = document.getElementById('viewer-image');
+    image.style.transform = `scale(${state.zoomLevel}) translate(${panState.translateX}px, ${panState.translateY}px)`;
+}
+
+// Pan handlers
+function initPanHandlers() {
+    const image = document.getElementById('viewer-image');
+    if (!image) return;
+
+    image.addEventListener('mousedown', (e) => {
+        if (state.zoomLevel <= 1) return;
+
+        panState.isDragging = true;
+        panState.startX = e.clientX - panState.translateX;
+        panState.startY = e.clientY - panState.translateY;
+        image.style.cursor = 'grabbing';
+        e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (!panState.isDragging || state.zoomLevel <= 1) return;
+
+        panState.translateX = e.clientX - panState.startX;
+        panState.translateY = e.clientY - panState.startY;
+        updateImageTransform();
+        e.preventDefault();
+    });
+
+    document.addEventListener('mouseup', () => {
+        if (panState.isDragging) {
+            panState.isDragging = false;
+            const image = document.getElementById('viewer-image');
+            if (image && state.zoomLevel > 1) {
+                image.style.cursor = 'grab';
+            }
+        }
+    });
+
+    // Touch support for mobile
+    image.addEventListener('touchstart', (e) => {
+        if (state.zoomLevel <= 1 || e.touches.length !== 1) return;
+
+        panState.isDragging = true;
+        panState.startX = e.touches[0].clientX - panState.translateX;
+        panState.startY = e.touches[0].clientY - panState.translateY;
+        e.preventDefault();
+    });
+
+    image.addEventListener('touchmove', (e) => {
+        if (!panState.isDragging || state.zoomLevel <= 1 || e.touches.length !== 1) return;
+
+        panState.translateX = e.touches[0].clientX - panState.startX;
+        panState.translateY = e.touches[0].clientY - panState.startY;
+        updateImageTransform();
+        e.preventDefault();
+    });
+
+    image.addEventListener('touchend', () => {
+        panState.isDragging = false;
+    });
+}
+
+// ==================== UTILITY FUNCTIONS ====================
+function downloadCurrentPage() {
+    if (!state.currentPages.length) return;
+
+    const issue = state.currentIssue || state.displayedIssues[state.currentIssueIndex];
+    if (!issue) {
+        console.warn('Download requested without a current issue context');
+        return;
+    }
+
+    const pagePath = state.currentPages[state.currentPageIndex];
+    const fullPath = resolveAssetPath(pagePath);
+
+    // Generate filename: paper-name_YYYY-MM-DD_page_NN.jpg
+    // issue.id format is either "YYYY-MM-DD_paper-name" or "paper-name_YYYY-MM-DD"
+    const [part1, part2] = issue.id.split('_');
+    const isDateFirst = /^\d{4}-\d{2}-\d{2}$/.test(part1);
+    const paperName = isDateFirst ? part2 : part1;
+    const date = isDateFirst ? part1 : part2;
+    const pageNum = String(state.currentPageIndex + 1).padStart(2, '0');
+    const filename = `${paperName}_${date}_page_${pageNum}.jpg`;
+
+    // Rely on R2's Content-Disposition headers for the actual filename.
+    // Using a direct anchor click keeps the browser interaction synchronous
+    // so Safari/Chrome do not block the download gesture.
+    const link = document.createElement('a');
+    link.href = fullPath;
+    link.download = filename;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+function toggleFullscreen() {
+    const elem = document.getElementById('viewer-modal');
+
+    if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch(err => {
+            console.error('Error attempting to enable fullscreen:', err);
+        });
+    } else {
+        document.exitFullscreen();
+    }
+}
+
+function toggleHelp() {
+    const helpOverlay = document.getElementById('help-overlay');
+    helpOverlay.classList.toggle('hidden');
+}
+
+function showElement(id) {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('hidden');
+}
+
+function hideElement(id) {
+    const el = document.getElementById(id);
+    if (el) el.classList.add('hidden');
+}
+
+function toggleElement(id, show) {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('hidden', !show);
+}
+
+// ==================== INTRO OVERLAY ====================
+function showIntroOverlay() {
+    const overlay = document.getElementById('intro-overlay');
+    if (!overlay) return;
+
+    overlay.classList.remove('hidden');
+    requestAnimationFrame(() => {
+        overlay.classList.add('active');
+    });
+    document.body.style.overflow = 'hidden';
+}
+
+function hideIntroOverlay(persist = true) {
+    const overlay = document.getElementById('intro-overlay');
+    if (!overlay) return;
+
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+
+    setTimeout(() => {
+        overlay.classList.add('hidden');
+    }, 250);
+
+    if (persist) {
+        try {
+            localStorage.setItem(INTRO_STORAGE_KEY, '1');
+        } catch (error) {
+            console.warn('Unable to persist intro overlay state:', error);
+        }
+    }
+}
+
+function maybeShowIntroOverlay() {
+    const overlay = document.getElementById('intro-overlay');
+    if (!overlay) return;
+
+    try {
+        if (localStorage.getItem(INTRO_STORAGE_KEY)) {
+            overlay.classList.add('hidden');
+            return;
+        }
+    } catch (error) {
+        console.warn('Unable to access intro overlay preference:', error);
+    }
+
+    showIntroOverlay();
+}
+
+// Debounce utility
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// ==================== COLLAPSIBLE FILTER TOGGLE ====================
+function setupFilterToggle() {
+    const filterToggle = document.getElementById('filter-toggle');
+    const filterSidebar = document.getElementById('filter-sidebar');
+    const filterOverlay = document.getElementById('filter-overlay');
+    const closeButton = document.querySelector('#filter-sidebar .close-filters');
+
+    function openFilters() {
+        filterSidebar.classList.add('open');
+        filterOverlay.classList.add('visible');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeFilters() {
+        filterSidebar.classList.remove('open');
+        filterOverlay.classList.remove('visible');
+        document.body.style.overflow = '';
+    }
+
+    if (filterToggle) {
+        filterToggle.addEventListener('click', openFilters);
+    }
+
+    if (filterOverlay) {
+        filterOverlay.addEventListener('click', closeFilters);
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener('click', closeFilters);
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && filterSidebar.classList.contains('open')) {
+            closeFilters();
+        }
+    });
+}
+
+// ==================== EVENT LISTENERS ====================
+function setupEventListeners() {
+    // Old sidebar filter toggle (no longer needed with new filter system)
+    // setupFilterToggle();
+
+    // Header shrink on scroll with parallax
+    let lastScroll = 0;
+    const header = document.getElementById('main-header');
+
+    window.addEventListener('scroll', debounce(() => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+    }, 10));
+
+    // Search input
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => handleSearch(e.target.value));
+    }
+
+    // Sort select
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', handleSort);
+    }
+
+    // Reset filters button
+    const resetBtn = document.getElementById('reset-filters-btn');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', resetFilters);
+    }
+
+    // Spin the Archive button
+    const spinArchiveBtn = document.getElementById('spin-archive-btn');
+    if (spinArchiveBtn) {
+        spinArchiveBtn.addEventListener('click', spinArchive);
+    }
+
+    // Timeline reset button
+    const timelineReset = document.getElementById('timeline-reset');
+    if (timelineReset) {
+        timelineReset.addEventListener('click', () => {
+            state.selectedYear = null;
+            state.selectedMonth = null;
+            renderTimelineMonths(null);
+            updateTimelineVisuals();
+            updateTimelineLabel();
+            applyFilters();
+            timelineReset.style.opacity = '0';
+            timelineReset.style.pointerEvents = 'none';
+        });
+    }
+
+    const heroClearBtn = document.getElementById('hero-clear-btn');
+    if (heroClearBtn) {
+        heroClearBtn.addEventListener('click', () => {
+            state.selectedYear = null;
+            state.selectedMonth = null;
+            renderTimelineMonths(null);
+            updateTimelineVisuals();
+            updateTimelineLabel();
+            applyFilters();
+            heroClearBtn.classList.add('opacity-0', 'pointer-events-none');
+            if (timelineReset) {
+                timelineReset.style.opacity = '0';
+                timelineReset.style.pointerEvents = 'none';
+            }
+        });
+    }
+
+    const introStartBtn = document.getElementById('intro-start-btn');
+    if (introStartBtn) {
+        introStartBtn.addEventListener('click', () => hideIntroOverlay(true));
+    }
+
+    const introCloseBtn = document.getElementById('intro-close-btn');
+    if (introCloseBtn) {
+        introCloseBtn.addEventListener('click', () => hideIntroOverlay(true));
+    }
+
+    const introBackdrop = document.querySelector('#intro-overlay .intro-backdrop');
+    if (introBackdrop) {
+        introBackdrop.addEventListener('click', () => hideIntroOverlay(true));
+    }
+
+    // Retry button
+    const retryBtn = document.getElementById('retry-btn');
+    if (retryBtn) {
+        retryBtn.addEventListener('click', () => location.reload());
+    }
+
+    // Viewer controls
+    document.getElementById('close-viewer-btn')?.addEventListener('click', closeViewer);
+    document.getElementById('viewer-backdrop')?.addEventListener('click', closeViewer);
+    document.getElementById('help-btn')?.addEventListener('click', toggleHelp);
+    document.getElementById('close-help-btn')?.addEventListener('click', toggleHelp);
+    document.getElementById('download-btn')?.addEventListener('click', downloadCurrentPage);
+    document.getElementById('thumbnails-toggle')?.addEventListener('click', toggleThumbnails);
+    document.getElementById('prev-page-btn')?.addEventListener('click', () => navigatePage(-1));
+    document.getElementById('next-page-btn')?.addEventListener('click', () => navigatePage(1));
+    document.getElementById('prev-issue-btn')?.addEventListener('click', () => navigateIssue(-1));
+    document.getElementById('next-issue-btn')?.addEventListener('click', () => navigateIssue(1));
+    document.getElementById('zoom-in-btn')?.addEventListener('click', () => zoomImage(1));
+    document.getElementById('zoom-out-btn')?.addEventListener('click', () => zoomImage(-1));
+    document.getElementById('zoom-reset-btn')?.addEventListener('click', resetZoom);
+
+    // Image click to zoom (but not after dragging)
+    const viewerImage = document.getElementById('viewer-image');
+    if (viewerImage) {
+        let clickStartX, clickStartY;
+
+        viewerImage.addEventListener('mousedown', (e) => {
+            clickStartX = e.clientX;
+            clickStartY = e.clientY;
+        });
+
+        viewerImage.addEventListener('click', (e) => {
+            // Only trigger zoom if mouse didn't move much (wasn't a drag)
+            const deltaX = Math.abs(e.clientX - clickStartX);
+            const deltaY = Math.abs(e.clientY - clickStartY);
+
+            if (deltaX < 5 && deltaY < 5) {
+                if (state.zoomLevel === 1) {
+                    zoomImage(1);
+                } else {
+                    resetZoom();
+                }
+            }
+        });
+
+        viewerImage.addEventListener('dblclick', toggleFullscreen);
+
+        // Initialize pan handlers
+        initPanHandlers();
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        const introOverlay = document.getElementById('intro-overlay');
+        const overlayActive = introOverlay && introOverlay.classList.contains('active') && !introOverlay.classList.contains('hidden');
+        if (overlayActive) {
+            if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') {
+                hideIntroOverlay(true);
+            }
+            e.preventDefault();
+            return;
+        }
+
+        const modal = document.getElementById('viewer-modal');
+        if (!modal.classList.contains('hidden')) {
+            if (e.key === 'Escape') {
+                closeViewer();
+                return;
+            }
+
+            if (e.key === 'ArrowLeft') {
+                if (state.currentPages.length > 1) {
+                    navigatePage(-1);
+                } else {
+                    navigateIssue(-1);
+                }
+                e.preventDefault();
+            }
+
+            if (e.key === 'ArrowRight') {
+                if (state.currentPages.length > 1) {
+                    navigatePage(1);
+                } else {
+                    navigateIssue(1);
+                }
+                e.preventDefault();
+            }
+
+            if (e.key === 'Home' && state.currentPages.length > 1) {
+                loadPage(0, 'fade');
+                e.preventDefault();
+            }
+
+            if (e.key === 'End' && state.currentPages.length > 1) {
+                loadPage(state.currentPages.length - 1, 'fade');
+                e.preventDefault();
+            }
+
+            if (e.key === '+' || e.key === '=') {
+                zoomImage(1);
+                e.preventDefault();
+            }
+
+            if (e.key === '-' || e.key === '_') {
+                zoomImage(-1);
+                e.preventDefault();
+            }
+
+            if (e.key === '0') {
+                resetZoom();
+                e.preventDefault();
+            }
+
+            if (e.key === 't' || e.key === 'T') {
+                if (state.currentPages.length > 1) {
+                    toggleThumbnails();
+                }
+                e.preventDefault();
+            }
+
+            if (e.key === 'f' || e.key === 'F') {
+                toggleFullscreen();
+                e.preventDefault();
+            }
+
+            if (e.key === 'd' || e.key === 'D') {
+                downloadCurrentPage();
+                e.preventDefault();
+            }
+
+            if (e.key === '?' || e.key === '/') {
+                toggleHelp();
+                e.preventDefault();
+            }
+        }
+    });
+
+    // Swipe gestures for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    viewerImage?.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    viewerImage?.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swipe left - next page
+                if (state.currentPages.length > 1) {
+                    navigatePage(1);
+                } else {
+                    navigateIssue(1);
+                }
+            } else {
+                // Swipe right - previous page
+                if (state.currentPages.length > 1) {
+                    navigatePage(-1);
+                } else {
+                    navigateIssue(-1);
+                }
+            }
+        }
+    }
+
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', (e) => {
+        // If viewer is open and user pressed back, close it
+        const modal = document.getElementById('viewer-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+            // Close without calling history.back() again
+            hideElement('viewer-modal');
+            document.body.style.overflow = '';
+
+            // Hide viewer-specific UI elements
+            hideElement('thumbnail-strip');
+            hideElement('help-overlay');
+
+            // Reset viewer state
+            state.thumbnailsVisible = false;
+            resetZoom();
+            state.currentPages = [];
+            state.currentPageIndex = 0;
+        }
+    });
+}

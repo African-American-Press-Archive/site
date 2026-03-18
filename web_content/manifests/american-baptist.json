@@ -1,0 +1,524 @@
+{
+  "manifest_version": 1,
+  "title": "American Baptist",
+  "issues": [
+    {
+      "id": "1903-04-10_american-baptist",
+      "date": "1903-04-10",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-04-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-04-10/page_01.jpg",
+        "american-baptist/1903/1903-04-10/page_02.jpg",
+        "american-baptist/1903/1903-04-10/page_03.jpg",
+        "american-baptist/1903/1903-04-10/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-06-12_american-baptist",
+      "date": "1903-06-12",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-06-12/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-06-12/page_01.jpg",
+        "american-baptist/1903/1903-06-12/page_02.jpg",
+        "american-baptist/1903/1903-06-12/page_03.jpg",
+        "american-baptist/1903/1903-06-12/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-06-26_american-baptist",
+      "date": "1903-06-26",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-06-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-06-26/page_01.jpg",
+        "american-baptist/1903/1903-06-26/page_02.jpg",
+        "american-baptist/1903/1903-06-26/page_03.jpg",
+        "american-baptist/1903/1903-06-26/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-07-03_american-baptist",
+      "date": "1903-07-03",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-07-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-07-03/page_01.jpg",
+        "american-baptist/1903/1903-07-03/page_02.jpg",
+        "american-baptist/1903/1903-07-03/page_03.jpg",
+        "american-baptist/1903/1903-07-03/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-07-31_american-baptist",
+      "date": "1903-07-31",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-07-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-07-31/page_01.jpg",
+        "american-baptist/1903/1903-07-31/page_02.jpg",
+        "american-baptist/1903/1903-07-31/page_03.jpg",
+        "american-baptist/1903/1903-07-31/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-08-07_american-baptist",
+      "date": "1903-08-07",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-08-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-08-07/page_01.jpg",
+        "american-baptist/1903/1903-08-07/page_02.jpg",
+        "american-baptist/1903/1903-08-07/page_03.jpg",
+        "american-baptist/1903/1903-08-07/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-08-14_american-baptist",
+      "date": "1903-08-14",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-08-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-08-14/page_01.jpg",
+        "american-baptist/1903/1903-08-14/page_02.jpg",
+        "american-baptist/1903/1903-08-14/page_03.jpg",
+        "american-baptist/1903/1903-08-14/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-08-21_american-baptist",
+      "date": "1903-08-21",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-08-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-08-21/page_01.jpg",
+        "american-baptist/1903/1903-08-21/page_02.jpg",
+        "american-baptist/1903/1903-08-21/page_03.jpg",
+        "american-baptist/1903/1903-08-21/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-08-28_american-baptist",
+      "date": "1903-08-28",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-08-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-08-28/page_01.jpg",
+        "american-baptist/1903/1903-08-28/page_02.jpg",
+        "american-baptist/1903/1903-08-28/page_03.jpg",
+        "american-baptist/1903/1903-08-28/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-11-13_american-baptist",
+      "date": "1903-11-13",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-11-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-11-13/page_01.jpg",
+        "american-baptist/1903/1903-11-13/page_02.jpg",
+        "american-baptist/1903/1903-11-13/page_03.jpg",
+        "american-baptist/1903/1903-11-13/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-12-04_american-baptist",
+      "date": "1903-12-04",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-12-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-12-04/page_01.jpg",
+        "american-baptist/1903/1903-12-04/page_02.jpg",
+        "american-baptist/1903/1903-12-04/page_03.jpg",
+        "american-baptist/1903/1903-12-04/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1903-12-18_american-baptist",
+      "date": "1903-12-18",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1903/1903-12-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1903/1903-12-18/page_01.jpg",
+        "american-baptist/1903/1903-12-18/page_02.jpg",
+        "american-baptist/1903/1903-12-18/page_03.jpg",
+        "american-baptist/1903/1903-12-18/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-01-01_american-baptist",
+      "date": "1904-01-01",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-01-01/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-01-01/page_01.jpg",
+        "american-baptist/1904/1904-01-01/page_02.jpg",
+        "american-baptist/1904/1904-01-01/page_03.jpg",
+        "american-baptist/1904/1904-01-01/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-01-08_american-baptist",
+      "date": "1904-01-08",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-01-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-01-08/page_01.jpg",
+        "american-baptist/1904/1904-01-08/page_02.jpg",
+        "american-baptist/1904/1904-01-08/page_03.jpg",
+        "american-baptist/1904/1904-01-08/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-01-22_american-baptist",
+      "date": "1904-01-22",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-01-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-01-22/page_01.jpg",
+        "american-baptist/1904/1904-01-22/page_02.jpg",
+        "american-baptist/1904/1904-01-22/page_03.jpg",
+        "american-baptist/1904/1904-01-22/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-01-29_american-baptist",
+      "date": "1904-01-29",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-01-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-01-29/page_01.jpg",
+        "american-baptist/1904/1904-01-29/page_02.jpg",
+        "american-baptist/1904/1904-01-29/page_03.jpg",
+        "american-baptist/1904/1904-01-29/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-02-05_american-baptist",
+      "date": "1904-02-05",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-02-05/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-02-05/page_01.jpg",
+        "american-baptist/1904/1904-02-05/page_02.jpg",
+        "american-baptist/1904/1904-02-05/page_03.jpg",
+        "american-baptist/1904/1904-02-05/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-02-12_american-baptist",
+      "date": "1904-02-12",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-02-12/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-02-12/page_01.jpg",
+        "american-baptist/1904/1904-02-12/page_02.jpg",
+        "american-baptist/1904/1904-02-12/page_03.jpg",
+        "american-baptist/1904/1904-02-12/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-02-19_american-baptist",
+      "date": "1904-02-19",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-02-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-02-19/page_01.jpg",
+        "american-baptist/1904/1904-02-19/page_02.jpg",
+        "american-baptist/1904/1904-02-19/page_03.jpg",
+        "american-baptist/1904/1904-02-19/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-02-26_american-baptist",
+      "date": "1904-02-26",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-02-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-02-26/page_01.jpg",
+        "american-baptist/1904/1904-02-26/page_02.jpg",
+        "american-baptist/1904/1904-02-26/page_03.jpg",
+        "american-baptist/1904/1904-02-26/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-03-04_american-baptist",
+      "date": "1904-03-04",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-03-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-03-04/page_01.jpg",
+        "american-baptist/1904/1904-03-04/page_02.jpg",
+        "american-baptist/1904/1904-03-04/page_03.jpg",
+        "american-baptist/1904/1904-03-04/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-03-18_american-baptist",
+      "date": "1904-03-18",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-03-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-03-18/page_01.jpg",
+        "american-baptist/1904/1904-03-18/page_02.jpg",
+        "american-baptist/1904/1904-03-18/page_03.jpg",
+        "american-baptist/1904/1904-03-18/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-03-25_american-baptist",
+      "date": "1904-03-25",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-03-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-03-25/page_01.jpg",
+        "american-baptist/1904/1904-03-25/page_02.jpg",
+        "american-baptist/1904/1904-03-25/page_03.jpg",
+        "american-baptist/1904/1904-03-25/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-04-01_american-baptist",
+      "date": "1904-04-01",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-04-01/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-04-01/page_01.jpg",
+        "american-baptist/1904/1904-04-01/page_02.jpg",
+        "american-baptist/1904/1904-04-01/page_03.jpg",
+        "american-baptist/1904/1904-04-01/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-04-08_american-baptist",
+      "date": "1904-04-08",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-04-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-04-08/page_01.jpg",
+        "american-baptist/1904/1904-04-08/page_02.jpg",
+        "american-baptist/1904/1904-04-08/page_03.jpg",
+        "american-baptist/1904/1904-04-08/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-04-15_american-baptist",
+      "date": "1904-04-15",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-04-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-04-15/page_01.jpg",
+        "american-baptist/1904/1904-04-15/page_02.jpg",
+        "american-baptist/1904/1904-04-15/page_03.jpg",
+        "american-baptist/1904/1904-04-15/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-09-09_american-baptist",
+      "date": "1904-09-09",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-09-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-09-09/page_01.jpg",
+        "american-baptist/1904/1904-09-09/page_02.jpg",
+        "american-baptist/1904/1904-09-09/page_03.jpg",
+        "american-baptist/1904/1904-09-09/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-09-16_american-baptist",
+      "date": "1904-09-16",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-09-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-09-16/page_01.jpg",
+        "american-baptist/1904/1904-09-16/page_02.jpg",
+        "american-baptist/1904/1904-09-16/page_03.jpg",
+        "american-baptist/1904/1904-09-16/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-09-23_american-baptist",
+      "date": "1904-09-23",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-09-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-09-23/page_01.jpg",
+        "american-baptist/1904/1904-09-23/page_02.jpg",
+        "american-baptist/1904/1904-09-23/page_03.jpg",
+        "american-baptist/1904/1904-09-23/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-10-21_american-baptist",
+      "date": "1904-10-21",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-10-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-10-21/page_01.jpg",
+        "american-baptist/1904/1904-10-21/page_02.jpg",
+        "american-baptist/1904/1904-10-21/page_03.jpg",
+        "american-baptist/1904/1904-10-21/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-11-04_american-baptist",
+      "date": "1904-11-04",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-11-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-11-04/page_01.jpg",
+        "american-baptist/1904/1904-11-04/page_02.jpg",
+        "american-baptist/1904/1904-11-04/page_03.jpg",
+        "american-baptist/1904/1904-11-04/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-11-11_american-baptist",
+      "date": "1904-11-11",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-11-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-11-11/page_01.jpg",
+        "american-baptist/1904/1904-11-11/page_02.jpg",
+        "american-baptist/1904/1904-11-11/page_03.jpg",
+        "american-baptist/1904/1904-11-11/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-11-18_american-baptist",
+      "date": "1904-11-18",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-11-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-11-18/page_01.jpg",
+        "american-baptist/1904/1904-11-18/page_02.jpg",
+        "american-baptist/1904/1904-11-18/page_03.jpg",
+        "american-baptist/1904/1904-11-18/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-12-02_american-baptist",
+      "date": "1904-12-02",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-12-02/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-12-02/page_01.jpg",
+        "american-baptist/1904/1904-12-02/page_02.jpg",
+        "american-baptist/1904/1904-12-02/page_03.jpg",
+        "american-baptist/1904/1904-12-02/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-12-09_american-baptist",
+      "date": "1904-12-09",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-12-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-12-09/page_01.jpg",
+        "american-baptist/1904/1904-12-09/page_02.jpg",
+        "american-baptist/1904/1904-12-09/page_03.jpg",
+        "american-baptist/1904/1904-12-09/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-12-16_american-baptist",
+      "date": "1904-12-16",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-12-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-12-16/page_01.jpg",
+        "american-baptist/1904/1904-12-16/page_02.jpg",
+        "american-baptist/1904/1904-12-16/page_03.jpg",
+        "american-baptist/1904/1904-12-16/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1904-12-23_american-baptist",
+      "date": "1904-12-23",
+      "title": "American Baptist",
+      "issue_thumb": "american-baptist/1904/1904-12-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "american-baptist/1904/1904-12-23/page_01.jpg",
+        "american-baptist/1904/1904-12-23/page_02.jpg",
+        "american-baptist/1904/1904-12-23/page_03.jpg",
+        "american-baptist/1904/1904-12-23/page_04.jpg"
+      ],
+      "uploaded": false
+    }
+  ]
+}

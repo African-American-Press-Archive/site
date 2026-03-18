@@ -1,0 +1,76 @@
+{
+  "manifest_version": 1,
+  "title": "Lexington Standard",
+  "issues": [
+    {
+      "id": "1900-01-27_lexington-standard",
+      "date": "1900-01-27",
+      "title": "Lexington Standard",
+      "issue_thumb": "lexington-standard/1900/1900-01-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "lexington-standard/1900/1900-01-27/page_01.jpg",
+        "lexington-standard/1900/1900-01-27/page_02.jpg",
+        "lexington-standard/1900/1900-01-27/page_03.jpg",
+        "lexington-standard/1900/1900-01-27/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1911-10-21_lexington-standard",
+      "date": "1911-10-21",
+      "title": "Lexington Standard",
+      "issue_thumb": "lexington-standard/1911/1911-10-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "lexington-standard/1911/1911-10-21/page_01.jpg",
+        "lexington-standard/1911/1911-10-21/page_02.jpg",
+        "lexington-standard/1911/1911-10-21/page_03.jpg",
+        "lexington-standard/1911/1911-10-21/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1911-10-28_lexington-standard",
+      "date": "1911-10-28",
+      "title": "Lexington Standard",
+      "issue_thumb": "lexington-standard/1911/1911-10-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "lexington-standard/1911/1911-10-28/page_01.jpg",
+        "lexington-standard/1911/1911-10-28/page_02.jpg",
+        "lexington-standard/1911/1911-10-28/page_03.jpg",
+        "lexington-standard/1911/1911-10-28/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1911-11-04_lexington-standard",
+      "date": "1911-11-04",
+      "title": "Lexington Standard",
+      "issue_thumb": "lexington-standard/1911/1911-11-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "lexington-standard/1911/1911-11-04/page_01.jpg",
+        "lexington-standard/1911/1911-11-04/page_02.jpg",
+        "lexington-standard/1911/1911-11-04/page_03.jpg",
+        "lexington-standard/1911/1911-11-04/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1911-12-16_lexington-standard",
+      "date": "1911-12-16",
+      "title": "Lexington Standard",
+      "issue_thumb": "lexington-standard/1911/1911-12-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "lexington-standard/1911/1911-12-16/page_01.jpg",
+        "lexington-standard/1911/1911-12-16/page_02.jpg",
+        "lexington-standard/1911/1911-12-16/page_03.jpg",
+        "lexington-standard/1911/1911-12-16/page_04.jpg"
+      ],
+      "uploaded": false
+    }
+  ]
+}

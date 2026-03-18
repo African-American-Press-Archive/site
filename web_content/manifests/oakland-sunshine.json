@@ -1,0 +1,384 @@
+{
+  "manifest_version": 1,
+  "title": "Oakland Sunshine",
+  "issues": [
+    {
+      "id": "1915-03-20_oakland-sunshine",
+      "date": "1915-03-20",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-03-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-03-20/page_01.jpg",
+        "oakland-sunshine/1915/1915-03-20/page_02.jpg",
+        "oakland-sunshine/1915/1915-03-20/page_03.jpg",
+        "oakland-sunshine/1915/1915-03-20/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-03-27_oakland-sunshine",
+      "date": "1915-03-27",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-03-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-03-27/page_01.jpg",
+        "oakland-sunshine/1915/1915-03-27/page_02.jpg",
+        "oakland-sunshine/1915/1915-03-27/page_03.jpg",
+        "oakland-sunshine/1915/1915-03-27/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-05-29_oakland-sunshine",
+      "date": "1915-05-29",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-05-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-05-29/page_01.jpg",
+        "oakland-sunshine/1915/1915-05-29/page_02.jpg",
+        "oakland-sunshine/1915/1915-05-29/page_03.jpg",
+        "oakland-sunshine/1915/1915-05-29/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-06-05_oakland-sunshine",
+      "date": "1915-06-05",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-06-05/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-06-05/page_01.jpg",
+        "oakland-sunshine/1915/1915-06-05/page_02.jpg",
+        "oakland-sunshine/1915/1915-06-05/page_03.jpg",
+        "oakland-sunshine/1915/1915-06-05/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-06-12_oakland-sunshine",
+      "date": "1915-06-12",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-06-12/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-06-12/page_01.jpg",
+        "oakland-sunshine/1915/1915-06-12/page_02.jpg",
+        "oakland-sunshine/1915/1915-06-12/page_03.jpg",
+        "oakland-sunshine/1915/1915-06-12/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-06-19_oakland-sunshine",
+      "date": "1915-06-19",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-06-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-06-19/page_01.jpg",
+        "oakland-sunshine/1915/1915-06-19/page_02.jpg",
+        "oakland-sunshine/1915/1915-06-19/page_03.jpg",
+        "oakland-sunshine/1915/1915-06-19/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-06-26_oakland-sunshine",
+      "date": "1915-06-26",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-06-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-06-26/page_01.jpg",
+        "oakland-sunshine/1915/1915-06-26/page_02.jpg",
+        "oakland-sunshine/1915/1915-06-26/page_03.jpg",
+        "oakland-sunshine/1915/1915-06-26/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-07-03_oakland-sunshine",
+      "date": "1915-07-03",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-07-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-07-03/page_01.jpg",
+        "oakland-sunshine/1915/1915-07-03/page_02.jpg",
+        "oakland-sunshine/1915/1915-07-03/page_03.jpg",
+        "oakland-sunshine/1915/1915-07-03/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-07-17_oakland-sunshine",
+      "date": "1915-07-17",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-07-17/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-07-17/page_01.jpg",
+        "oakland-sunshine/1915/1915-07-17/page_02.jpg",
+        "oakland-sunshine/1915/1915-07-17/page_03.jpg",
+        "oakland-sunshine/1915/1915-07-17/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-07-24_oakland-sunshine",
+      "date": "1915-07-24",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-07-24/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-07-24/page_01.jpg",
+        "oakland-sunshine/1915/1915-07-24/page_02.jpg",
+        "oakland-sunshine/1915/1915-07-24/page_03.jpg",
+        "oakland-sunshine/1915/1915-07-24/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-07-31_oakland-sunshine",
+      "date": "1915-07-31",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-07-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-07-31/page_01.jpg",
+        "oakland-sunshine/1915/1915-07-31/page_02.jpg",
+        "oakland-sunshine/1915/1915-07-31/page_03.jpg",
+        "oakland-sunshine/1915/1915-07-31/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-08-07_oakland-sunshine",
+      "date": "1915-08-07",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-08-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-08-07/page_01.jpg",
+        "oakland-sunshine/1915/1915-08-07/page_02.jpg",
+        "oakland-sunshine/1915/1915-08-07/page_03.jpg",
+        "oakland-sunshine/1915/1915-08-07/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-08-14_oakland-sunshine",
+      "date": "1915-08-14",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-08-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-08-14/page_01.jpg",
+        "oakland-sunshine/1915/1915-08-14/page_02.jpg",
+        "oakland-sunshine/1915/1915-08-14/page_03.jpg",
+        "oakland-sunshine/1915/1915-08-14/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-08-21_oakland-sunshine",
+      "date": "1915-08-21",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-08-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-08-21/page_01.jpg",
+        "oakland-sunshine/1915/1915-08-21/page_02.jpg",
+        "oakland-sunshine/1915/1915-08-21/page_03.jpg",
+        "oakland-sunshine/1915/1915-08-21/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-08-28_oakland-sunshine",
+      "date": "1915-08-28",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-08-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-08-28/page_01.jpg",
+        "oakland-sunshine/1915/1915-08-28/page_02.jpg",
+        "oakland-sunshine/1915/1915-08-28/page_03.jpg",
+        "oakland-sunshine/1915/1915-08-28/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-09-04_oakland-sunshine",
+      "date": "1915-09-04",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-09-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-09-04/page_01.jpg",
+        "oakland-sunshine/1915/1915-09-04/page_02.jpg",
+        "oakland-sunshine/1915/1915-09-04/page_03.jpg",
+        "oakland-sunshine/1915/1915-09-04/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-09-18_oakland-sunshine",
+      "date": "1915-09-18",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-09-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-09-18/page_01.jpg",
+        "oakland-sunshine/1915/1915-09-18/page_02.jpg",
+        "oakland-sunshine/1915/1915-09-18/page_03.jpg",
+        "oakland-sunshine/1915/1915-09-18/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-09-25_oakland-sunshine",
+      "date": "1915-09-25",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-09-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-09-25/page_01.jpg",
+        "oakland-sunshine/1915/1915-09-25/page_02.jpg",
+        "oakland-sunshine/1915/1915-09-25/page_03.jpg",
+        "oakland-sunshine/1915/1915-09-25/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-10-02_oakland-sunshine",
+      "date": "1915-10-02",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-10-02/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-10-02/page_01.jpg",
+        "oakland-sunshine/1915/1915-10-02/page_02.jpg",
+        "oakland-sunshine/1915/1915-10-02/page_03.jpg",
+        "oakland-sunshine/1915/1915-10-02/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-10-08_oakland-sunshine",
+      "date": "1915-10-08",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-10-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-10-08/page_01.jpg",
+        "oakland-sunshine/1915/1915-10-08/page_02.jpg",
+        "oakland-sunshine/1915/1915-10-08/page_03.jpg",
+        "oakland-sunshine/1915/1915-10-08/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-10-16_oakland-sunshine",
+      "date": "1915-10-16",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-10-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-10-16/page_01.jpg",
+        "oakland-sunshine/1915/1915-10-16/page_02.jpg",
+        "oakland-sunshine/1915/1915-10-16/page_03.jpg",
+        "oakland-sunshine/1915/1915-10-16/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-10-23_oakland-sunshine",
+      "date": "1915-10-23",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-10-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-10-23/page_01.jpg",
+        "oakland-sunshine/1915/1915-10-23/page_02.jpg",
+        "oakland-sunshine/1915/1915-10-23/page_03.jpg",
+        "oakland-sunshine/1915/1915-10-23/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-10-30_oakland-sunshine",
+      "date": "1915-10-30",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-10-30/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-10-30/page_01.jpg",
+        "oakland-sunshine/1915/1915-10-30/page_02.jpg",
+        "oakland-sunshine/1915/1915-10-30/page_03.jpg",
+        "oakland-sunshine/1915/1915-10-30/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-11-06_oakland-sunshine",
+      "date": "1915-11-06",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-11-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-11-06/page_01.jpg",
+        "oakland-sunshine/1915/1915-11-06/page_02.jpg",
+        "oakland-sunshine/1915/1915-11-06/page_03.jpg",
+        "oakland-sunshine/1915/1915-11-06/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1915-12-11_oakland-sunshine",
+      "date": "1915-12-11",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1915/1915-12-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1915/1915-12-11/page_01.jpg",
+        "oakland-sunshine/1915/1915-12-11/page_02.jpg",
+        "oakland-sunshine/1915/1915-12-11/page_03.jpg",
+        "oakland-sunshine/1915/1915-12-11/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1920-12-18_oakland-sunshine",
+      "date": "1920-12-18",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1920/1920-12-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1920/1920-12-18/page_01.jpg",
+        "oakland-sunshine/1920/1920-12-18/page_02.jpg",
+        "oakland-sunshine/1920/1920-12-18/page_03.jpg",
+        "oakland-sunshine/1920/1920-12-18/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1922-02-25_oakland-sunshine",
+      "date": "1922-02-25",
+      "title": "Oakland Sunshine",
+      "issue_thumb": "oakland-sunshine/1922/1922-02-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "oakland-sunshine/1922/1922-02-25/page_01.jpg",
+        "oakland-sunshine/1922/1922-02-25/page_02.jpg",
+        "oakland-sunshine/1922/1922-02-25/page_03.jpg",
+        "oakland-sunshine/1922/1922-02-25/page_04.jpg"
+      ],
+      "uploaded": false
+    }
+  ]
+}

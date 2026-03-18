@@ -1,0 +1,132 @@
+{
+  "manifest_version": 1,
+  "title": "Hot Springs Echo",
+  "issues": [
+    {
+      "id": "1905-08-12_hot-springs-echo",
+      "date": "1905-08-12",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1905/1905-08-12/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1905/1905-08-12/page_01.jpg",
+        "hot-springs-echo/1905/1905-08-12/page_02.jpg",
+        "hot-springs-echo/1905/1905-08-12/page_03.jpg",
+        "hot-springs-echo/1905/1905-08-12/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1918-04-20_hot-springs-echo",
+      "date": "1918-04-20",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1918/1918-04-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1918/1918-04-20/page_01.jpg",
+        "hot-springs-echo/1918/1918-04-20/page_02.jpg",
+        "hot-springs-echo/1918/1918-04-20/page_03.jpg",
+        "hot-springs-echo/1918/1918-04-20/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1918-10-19_hot-springs-echo",
+      "date": "1918-10-19",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1918/1918-10-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1918/1918-10-19/page_01.jpg",
+        "hot-springs-echo/1918/1918-10-19/page_02.jpg",
+        "hot-springs-echo/1918/1918-10-19/page_03.jpg",
+        "hot-springs-echo/1918/1918-10-19/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1918-10-26_hot-springs-echo",
+      "date": "1918-10-26",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1918/1918-10-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1918/1918-10-26/page_01.jpg",
+        "hot-springs-echo/1918/1918-10-26/page_02.jpg",
+        "hot-springs-echo/1918/1918-10-26/page_03.jpg",
+        "hot-springs-echo/1918/1918-10-26/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1919-05-03_hot-springs-echo",
+      "date": "1919-05-03",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1919/1919-05-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1919/1919-05-03/page_01.jpg",
+        "hot-springs-echo/1919/1919-05-03/page_02.jpg",
+        "hot-springs-echo/1919/1919-05-03/page_03.jpg",
+        "hot-springs-echo/1919/1919-05-03/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1926-08-21_hot-springs-echo",
+      "date": "1926-08-21",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1926/1926-08-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1926/1926-08-21/page_01.jpg",
+        "hot-springs-echo/1926/1926-08-21/page_02.jpg",
+        "hot-springs-echo/1926/1926-08-21/page_03.jpg",
+        "hot-springs-echo/1926/1926-08-21/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1926-10-02_hot-springs-echo",
+      "date": "1926-10-02",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1926/1926-10-02/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1926/1926-10-02/page_01.jpg",
+        "hot-springs-echo/1926/1926-10-02/page_02.jpg",
+        "hot-springs-echo/1926/1926-10-02/page_03.jpg",
+        "hot-springs-echo/1926/1926-10-02/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1927-09-17_hot-springs-echo",
+      "date": "1927-09-17",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1927/1927-09-17/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1927/1927-09-17/page_01.jpg",
+        "hot-springs-echo/1927/1927-09-17/page_02.jpg",
+        "hot-springs-echo/1927/1927-09-17/page_03.jpg",
+        "hot-springs-echo/1927/1927-09-17/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1928-07-21_hot-springs-echo",
+      "date": "1928-07-21",
+      "title": "Hot Springs Echo",
+      "issue_thumb": "hot-springs-echo/1928/1928-07-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "hot-springs-echo/1928/1928-07-21/page_01.jpg",
+        "hot-springs-echo/1928/1928-07-21/page_02.jpg",
+        "hot-springs-echo/1928/1928-07-21/page_03.jpg",
+        "hot-springs-echo/1928/1928-07-21/page_04.jpg"
+      ],
+      "uploaded": false
+    }
+  ]
+}

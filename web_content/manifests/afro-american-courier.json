@@ -1,0 +1,194 @@
+{
+  "manifest_version": 1,
+  "title": "Afro-American Courier",
+  "issues": [
+    {
+      "id": "1926-08-01_afro-american-courier",
+      "date": "1926-08-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1926/1926-08-01/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "afro-american-courier/1926/1926-08-01/page_01.jpg",
+        "afro-american-courier/1926/1926-08-01/page_02.jpg",
+        "afro-american-courier/1926/1926-08-01/page_03.jpg",
+        "afro-american-courier/1926/1926-08-01/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1926-10-01_afro-american-courier",
+      "date": "1926-10-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1926/1926-10-01/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "afro-american-courier/1926/1926-10-01/page_01.jpg",
+        "afro-american-courier/1926/1926-10-01/page_02.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1927-10-01_afro-american-courier",
+      "date": "1927-10-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1927/1927-10-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "afro-american-courier/1927/1927-10-01/page_01.jpg",
+        "afro-american-courier/1927/1927-10-01/page_02.jpg",
+        "afro-american-courier/1927/1927-10-01/page_03.jpg",
+        "afro-american-courier/1927/1927-10-01/page_04.jpg",
+        "afro-american-courier/1927/1927-10-01/page_05.jpg",
+        "afro-american-courier/1927/1927-10-01/page_06.jpg",
+        "afro-american-courier/1927/1927-10-01/page_07.jpg",
+        "afro-american-courier/1927/1927-10-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1927-11-01_afro-american-courier",
+      "date": "1927-11-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1927/1927-11-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "afro-american-courier/1927/1927-11-01/page_01.jpg",
+        "afro-american-courier/1927/1927-11-01/page_02.jpg",
+        "afro-american-courier/1927/1927-11-01/page_03.jpg",
+        "afro-american-courier/1927/1927-11-01/page_04.jpg",
+        "afro-american-courier/1927/1927-11-01/page_05.jpg",
+        "afro-american-courier/1927/1927-11-01/page_06.jpg",
+        "afro-american-courier/1927/1927-11-01/page_07.jpg",
+        "afro-american-courier/1927/1927-11-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1927-12-01_afro-american-courier",
+      "date": "1927-12-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1927/1927-12-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "afro-american-courier/1927/1927-12-01/page_01.jpg",
+        "afro-american-courier/1927/1927-12-01/page_02.jpg",
+        "afro-american-courier/1927/1927-12-01/page_03.jpg",
+        "afro-american-courier/1927/1927-12-01/page_04.jpg",
+        "afro-american-courier/1927/1927-12-01/page_05.jpg",
+        "afro-american-courier/1927/1927-12-01/page_06.jpg",
+        "afro-american-courier/1927/1927-12-01/page_07.jpg",
+        "afro-american-courier/1927/1927-12-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1928-08-01_afro-american-courier",
+      "date": "1928-08-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1928/1928-08-01/thumb.jpg",
+      "pages": 6,
+      "page_paths": [
+        "afro-american-courier/1928/1928-08-01/page_01.jpg",
+        "afro-american-courier/1928/1928-08-01/page_02.jpg",
+        "afro-american-courier/1928/1928-08-01/page_03.jpg",
+        "afro-american-courier/1928/1928-08-01/page_04.jpg",
+        "afro-american-courier/1928/1928-08-01/page_05.jpg",
+        "afro-american-courier/1928/1928-08-01/page_06.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1928-12-01_afro-american-courier",
+      "date": "1928-12-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1928/1928-12-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "afro-american-courier/1928/1928-12-01/page_01.jpg",
+        "afro-american-courier/1928/1928-12-01/page_02.jpg",
+        "afro-american-courier/1928/1928-12-01/page_03.jpg",
+        "afro-american-courier/1928/1928-12-01/page_04.jpg",
+        "afro-american-courier/1928/1928-12-01/page_05.jpg",
+        "afro-american-courier/1928/1928-12-01/page_06.jpg",
+        "afro-american-courier/1928/1928-12-01/page_07.jpg",
+        "afro-american-courier/1928/1928-12-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1929-04-01_afro-american-courier",
+      "date": "1929-04-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1929/1929-04-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "afro-american-courier/1929/1929-04-01/page_01.jpg",
+        "afro-american-courier/1929/1929-04-01/page_02.jpg",
+        "afro-american-courier/1929/1929-04-01/page_03.jpg",
+        "afro-american-courier/1929/1929-04-01/page_04.jpg",
+        "afro-american-courier/1929/1929-04-01/page_05.jpg",
+        "afro-american-courier/1929/1929-04-01/page_06.jpg",
+        "afro-american-courier/1929/1929-04-01/page_07.jpg",
+        "afro-american-courier/1929/1929-04-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1929-05-01_afro-american-courier",
+      "date": "1929-05-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1929/1929-05-01/thumb.jpg",
+      "pages": 8,
+      "page_paths": [
+        "afro-american-courier/1929/1929-05-01/page_01.jpg",
+        "afro-american-courier/1929/1929-05-01/page_02.jpg",
+        "afro-american-courier/1929/1929-05-01/page_03.jpg",
+        "afro-american-courier/1929/1929-05-01/page_04.jpg",
+        "afro-american-courier/1929/1929-05-01/page_05.jpg",
+        "afro-american-courier/1929/1929-05-01/page_06.jpg",
+        "afro-american-courier/1929/1929-05-01/page_07.jpg",
+        "afro-american-courier/1929/1929-05-01/page_08.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1930-03-01_afro-american-courier",
+      "date": "1930-03-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1930/1930-03-01/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "afro-american-courier/1930/1930-03-01/page_01.jpg",
+        "afro-american-courier/1930/1930-03-01/page_02.jpg",
+        "afro-american-courier/1930/1930-03-01/page_03.jpg",
+        "afro-american-courier/1930/1930-03-01/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1930-04-01_afro-american-courier",
+      "date": "1930-04-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1930/1930-04-01/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "afro-american-courier/1930/1930-04-01/page_01.jpg",
+        "afro-american-courier/1930/1930-04-01/page_02.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1930-11-01_afro-american-courier",
+      "date": "1930-11-01",
+      "title": "Afro-American Courier",
+      "issue_thumb": "afro-american-courier/1930/1930-11-01/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "afro-american-courier/1930/1930-11-01/page_01.jpg",
+        "afro-american-courier/1930/1930-11-01/page_02.jpg"
+      ],
+      "uploaded": false
+    }
+  ]
+}

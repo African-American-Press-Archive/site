@@ -1,0 +1,66 @@
+{
+  "manifest_version": 1,
+  "title": "Arizona Gleam",
+  "issues": [
+    {
+      "id": "1929-12-15_arizona-gleam",
+      "date": "1929-12-15",
+      "title": "Arizona Gleam",
+      "issue_thumb": "arizona-gleam/1929/1929-12-15/thumb.jpg",
+      "pages": 6,
+      "page_paths": [
+        "arizona-gleam/1929/1929-12-15/page_01.jpg",
+        "arizona-gleam/1929/1929-12-15/page_02.jpg",
+        "arizona-gleam/1929/1929-12-15/page_03.jpg",
+        "arizona-gleam/1929/1929-12-15/page_04.jpg",
+        "arizona-gleam/1929/1929-12-15/page_05.jpg",
+        "arizona-gleam/1929/1929-12-15/page_06.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1930-02-15_arizona-gleam",
+      "date": "1930-02-15",
+      "title": "Arizona Gleam",
+      "issue_thumb": "arizona-gleam/1930/1930-02-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "arizona-gleam/1930/1930-02-15/page_01.jpg",
+        "arizona-gleam/1930/1930-02-15/page_02.jpg",
+        "arizona-gleam/1930/1930-02-15/page_03.jpg",
+        "arizona-gleam/1930/1930-02-15/page_04.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1930-03-01_arizona-gleam",
+      "date": "1930-03-01",
+      "title": "Arizona Gleam",
+      "issue_thumb": "arizona-gleam/1930/1930-03-01/thumb.jpg",
+      "pages": 6,
+      "page_paths": [
+        "arizona-gleam/1930/1930-03-01/page_01.jpg",
+        "arizona-gleam/1930/1930-03-01/page_02.jpg",
+        "arizona-gleam/1930/1930-03-01/page_03.jpg",
+        "arizona-gleam/1930/1930-03-01/page_04.jpg",
+        "arizona-gleam/1930/1930-03-01/page_05.jpg",
+        "arizona-gleam/1930/1930-03-01/page_06.jpg"
+      ],
+      "uploaded": false
+    },
+    {
+      "id": "1930-03-15_arizona-gleam",
+      "date": "1930-03-15",
+      "title": "Arizona Gleam",
+      "issue_thumb": "arizona-gleam/1930/1930-03-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "arizona-gleam/1930/1930-03-15/page_01.jpg",
+        "arizona-gleam/1930/1930-03-15/page_02.jpg",
+        "arizona-gleam/1930/1930-03-15/page_03.jpg",
+        "arizona-gleam/1930/1930-03-15/page_04.jpg"
+      ],
+      "uploaded": false
+    }
+  ]
+}

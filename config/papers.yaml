@@ -359,6 +359,334 @@ papers:
     title: Voice of the People
     path: voice-of-the-people
     base_url: https://pages.dangerouspress.org/voice-of-the-people
+  seattle-republican:
+    title: Seattle Republican
+    path: seattle-republican
+    base_url: https://pages.dangerouspress.org/seattle-republican
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84025811
+  franklins-paper-the-statesman:
+    title: Franklin's Paper the Statesman
+    path: franklins-paper-the-statesman
+    base_url: https://pages.dangerouspress.org/franklins-paper-the-statesman
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn91052311
+  pioneer-press:
+    title: Pioneer Press
+    path: pioneer-press
+    base_url: https://pages.dangerouspress.org/pioneer-press
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025146
+  advocate:
+    title: The Advocate
+    path: advocate
+    base_url: https://pages.dangerouspress.org/advocate
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn85059812
+  american-citizen:
+    title: American Citizen
+    path: american-citizen
+    base_url: https://pages.dangerouspress.org/american-citizen
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn85032031
+  mcdowell-times:
+    title: McDowell Times
+    path: mcdowell-times
+    base_url: https://pages.dangerouspress.org/mcdowell-times
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn86092050
+  sedalia-weekly-conservator:
+    title: Sedalia Weekly Conservator
+    path: sedalia-weekly-conservator
+    base_url: https://pages.dangerouspress.org/sedalia-weekly-conservator
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn89067598
+  colored-american:
+    title: Colored American
+    path: colored-american
+    base_url: https://pages.dangerouspress.org/colored-american
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83027091
+  st-louis-palladium:
+    title: St. Louis Palladium
+    path: st-louis-palladium
+    base_url: https://pages.dangerouspress.org/st-louis-palladium
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84020235
+  rising-son:
+    title: Rising Son
+    path: rising-son
+    base_url: https://pages.dangerouspress.org/rising-son
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025494
+  omaha-guide:
+    title: Omaha Guide
+    path: omaha-guide
+    base_url: https://pages.dangerouspress.org/omaha-guide
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn93062828
+  professional-world:
+    title: Professional World
+    path: professional-world
+    base_url: https://pages.dangerouspress.org/professional-world
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn89066321
+  northwestern-bulletin:
+    title: Northwestern Bulletin
+    path: northwestern-bulletin
+    base_url: https://pages.dangerouspress.org/northwestern-bulletin
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn90060931
+  sedalia-times:
+    title: Sedalia Times
+    path: sedalia-times
+    base_url: https://pages.dangerouspress.org/sedalia-times
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84020293
+  st-paul-echo:
+    title: St. Paul Echo
+    path: st-paul-echo
+    base_url: https://pages.dangerouspress.org/st-paul-echo
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn90059272
+  tribune-independent:
+    title: Tribune Independent of Michigan
+    path: tribune-independent
+    base_url: https://pages.dangerouspress.org/tribune-independent
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn96076588
+  northwestern-bulletin-appeal:
+    title: Northwestern Bulletin-Appeal
+    path: northwestern-bulletin-appeal
+    base_url: https://pages.dangerouspress.org/northwestern-bulletin-appeal
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn90060932
+  minneapolis-spokesman:
+    title: Minneapolis Spokesman
+    path: minneapolis-spokesman
+    base_url: https://pages.dangerouspress.org/minneapolis-spokesman
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025247
+  arizona-gleam:
+    title: Arizona Gleam
+    path: arizona-gleam
+    base_url: https://pages.dangerouspress.org/arizona-gleam
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn95060626
+  statesman:
+    title: The Statesman
+    path: statesman
+    base_url: https://pages.dangerouspress.org/statesman
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025516
+  weekly-echo:
+    title: Weekly Echo
+    path: weekly-echo
+    base_url: https://pages.dangerouspress.org/weekly-echo
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn87065408
+  indianapolis-recorder:
+    title: Indianapolis Recorder
+    path: indianapolis-recorder
+    base_url: https://pages.dangerouspress.org/indianapolis-recorder
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84025902
+  atlanta-world:
+    title: Atlanta World
+    path: atlanta-world
+    base_url: https://pages.dangerouspress.org/atlanta-world
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn85047544
+  st-paul-recorder:
+    title: St. Paul Recorder
+    path: st-paul-recorder
+    base_url: https://pages.dangerouspress.org/st-paul-recorder
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83016804
+  afro-american-advance:
+    title: Afro-American Advance
+    path: afro-american-advance
+    base_url: https://pages.dangerouspress.org/afro-american-advance
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn86058061
+  detroit-tribune:
+    title: Detroit Tribune
+    path: detroit-tribune
+    base_url: https://pages.dangerouspress.org/detroit-tribune
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83016294
+  american-baptist:
+    title: American Baptist
+    path: american-baptist
+    base_url: https://pages.dangerouspress.org/american-baptist
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn93062854
+  new-age-butte:
+    title: The New Age (Butte)
+    path: new-age-butte
+    base_url: https://pages.dangerouspress.org/new-age-butte
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84036148
+  oakland-sunshine:
+    title: Oakland Sunshine
+    path: oakland-sunshine
+    base_url: https://pages.dangerouspress.org/oakland-sunshine
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84025837
+  southern-indicator:
+    title: Southern Indicator
+    path: southern-indicator
+    base_url: https://pages.dangerouspress.org/southern-indicator
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025803
+  afro-american-courier:
+    title: Afro-American Courier
+    path: afro-american-courier
+    base_url: https://pages.dangerouspress.org/afro-american-courier
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn88067171
+  palladium:
+    title: The Palladium
+    path: palladium
+    base_url: https://pages.dangerouspress.org/palladium
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84020234
+  national-forum:
+    title: National Forum
+    path: national-forum
+    base_url: https://pages.dangerouspress.org/national-forum
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn82015056
+  hot-springs-echo:
+    title: Hot Springs Echo
+    path: hot-springs-echo
+    base_url: https://pages.dangerouspress.org/hot-springs-echo
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn89051273
+  weekly-review:
+    title: Weekly Review
+    path: weekly-review
+    base_url: https://pages.dangerouspress.org/weekly-review
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: "2019270504"
+  commonwealth:
+    title: The Commonwealth
+    path: commonwealth
+    base_url: https://pages.dangerouspress.org/commonwealth
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83027090
+  lexington-standard:
+    title: Lexington Standard
+    path: lexington-standard
+    base_url: https://pages.dangerouspress.org/lexington-standard
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn83025729
+  atlanta-daily-world:
+    title: Atlanta Daily World
+    path: atlanta-daily-world
+    base_url: https://pages.dangerouspress.org/atlanta-daily-world
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn82015425
+  twin-city-herald:
+    title: Twin-City Herald
+    path: twin-city-herald
+    base_url: https://pages.dangerouspress.org/twin-city-herald
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn90060227
+  wisconsin-weekly-advocate:
+    title: Wisconsin Weekly Advocate
+    path: wisconsin-weekly-advocate
+    base_url: https://pages.dangerouspress.org/wisconsin-weekly-advocate
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84025861
+  dayton-forum:
+    title: Dayton Forum
+    path: dayton-forum
+    base_url: https://pages.dangerouspress.org/dayton-forum
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn84024234
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive
