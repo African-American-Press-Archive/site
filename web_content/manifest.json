@@ -15,6 +15,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-01-06_cleveland-gazette",
+    "date": "1900-01-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-01-06/page_01.jpg",
+      "cleveland-gazette/1900/1900-01-06/page_02.jpg",
+      "cleveland-gazette/1900/1900-01-06/page_03.jpg",
+      "cleveland-gazette/1900/1900-01-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-01-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-01-13_broad-ax",
     "date": "1900-01-13",
     "title": "Broad Ax",
@@ -27,6 +41,20 @@
       "broad-ax/1900/1900-01-13/page_05.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-01-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-01-13_cleveland-gazette",
+    "date": "1900-01-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-01-13/page_01.jpg",
+      "cleveland-gazette/1900/1900-01-13/page_02.jpg",
+      "cleveland-gazette/1900/1900-01-13/page_03.jpg",
+      "cleveland-gazette/1900/1900-01-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-01-13/thumb.jpg",
     "uploaded": true
   },
   {
@@ -62,6 +90,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-01-20_cleveland-gazette",
+    "date": "1900-01-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-01-20/page_01.jpg",
+      "cleveland-gazette/1900/1900-01-20/page_02.jpg",
+      "cleveland-gazette/1900/1900-01-20/page_03.jpg",
+      "cleveland-gazette/1900/1900-01-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-01-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-01-27_broad-ax",
     "date": "1900-01-27",
     "title": "Broad Ax",
@@ -74,6 +116,20 @@
       "broad-ax/1900/1900-01-27/page_05.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-01-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-01-27_cleveland-gazette",
+    "date": "1900-01-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-01-27/page_01.jpg",
+      "cleveland-gazette/1900/1900-01-27/page_02.jpg",
+      "cleveland-gazette/1900/1900-01-27/page_03.jpg",
+      "cleveland-gazette/1900/1900-01-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-01-27/thumb.jpg",
     "uploaded": true
   },
   {
@@ -92,6 +148,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-02-03_cleveland-gazette",
+    "date": "1900-02-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-02-03/page_01.jpg",
+      "cleveland-gazette/1900/1900-02-03/page_02.jpg",
+      "cleveland-gazette/1900/1900-02-03/page_03.jpg",
+      "cleveland-gazette/1900/1900-02-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-02-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-02-10_broad-ax",
     "date": "1900-02-10",
     "title": "Broad Ax",
@@ -103,6 +173,20 @@
       "broad-ax/1900/1900-02-10/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-02-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-02-10_cleveland-gazette",
+    "date": "1900-02-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-02-10/page_01.jpg",
+      "cleveland-gazette/1900/1900-02-10/page_02.jpg",
+      "cleveland-gazette/1900/1900-02-10/page_03.jpg",
+      "cleveland-gazette/1900/1900-02-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-02-10/thumb.jpg",
     "uploaded": true
   },
   {
@@ -120,6 +204,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-02-17_cleveland-gazette",
+    "date": "1900-02-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-02-17/page_01.jpg",
+      "cleveland-gazette/1900/1900-02-17/page_02.jpg",
+      "cleveland-gazette/1900/1900-02-17/page_03.jpg",
+      "cleveland-gazette/1900/1900-02-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-02-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-02-24_broad-ax",
     "date": "1900-02-24",
     "title": "Broad Ax",
@@ -131,6 +229,20 @@
       "broad-ax/1900/1900-02-24/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-02-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-02-24_cleveland-gazette",
+    "date": "1900-02-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-02-24/page_01.jpg",
+      "cleveland-gazette/1900/1900-02-24/page_02.jpg",
+      "cleveland-gazette/1900/1900-02-24/page_03.jpg",
+      "cleveland-gazette/1900/1900-02-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-02-24/thumb.jpg",
     "uploaded": true
   },
   {
@@ -148,6 +260,34 @@
     "uploaded": true
   },
   {
+    "id": "1900-03-03_cleveland-gazette",
+    "date": "1900-03-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-03-03/page_01.jpg",
+      "cleveland-gazette/1900/1900-03-03/page_02.jpg",
+      "cleveland-gazette/1900/1900-03-03/page_03.jpg",
+      "cleveland-gazette/1900/1900-03-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-03-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-03-10_cleveland-gazette",
+    "date": "1900-03-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-03-10/page_01.jpg",
+      "cleveland-gazette/1900/1900-03-10/page_02.jpg",
+      "cleveland-gazette/1900/1900-03-10/page_03.jpg",
+      "cleveland-gazette/1900/1900-03-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-03-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-03-17_broad-ax",
     "date": "1900-03-17",
     "title": "Broad Ax",
@@ -159,6 +299,20 @@
       "broad-ax/1900/1900-03-17/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-03-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-03-17_cleveland-gazette",
+    "date": "1900-03-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-03-17/page_01.jpg",
+      "cleveland-gazette/1900/1900-03-17/page_02.jpg",
+      "cleveland-gazette/1900/1900-03-17/page_03.jpg",
+      "cleveland-gazette/1900/1900-03-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-03-17/thumb.jpg",
     "uploaded": true
   },
   {
@@ -176,6 +330,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-03-24_cleveland-gazette",
+    "date": "1900-03-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-03-24/page_01.jpg",
+      "cleveland-gazette/1900/1900-03-24/page_02.jpg",
+      "cleveland-gazette/1900/1900-03-24/page_03.jpg",
+      "cleveland-gazette/1900/1900-03-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-03-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-03-31_broad-ax",
     "date": "1900-03-31",
     "title": "Broad Ax",
@@ -187,6 +355,20 @@
       "broad-ax/1900/1900-03-31/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-03-31/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-03-31_cleveland-gazette",
+    "date": "1900-03-31",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-03-31/page_01.jpg",
+      "cleveland-gazette/1900/1900-03-31/page_02.jpg",
+      "cleveland-gazette/1900/1900-03-31/page_03.jpg",
+      "cleveland-gazette/1900/1900-03-31/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-03-31/thumb.jpg",
     "uploaded": true
   },
   {
@@ -204,6 +386,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-04-07_cleveland-gazette",
+    "date": "1900-04-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-04-07/page_01.jpg",
+      "cleveland-gazette/1900/1900-04-07/page_02.jpg",
+      "cleveland-gazette/1900/1900-04-07/page_03.jpg",
+      "cleveland-gazette/1900/1900-04-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-04-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-04-14_broad-ax",
     "date": "1900-04-14",
     "title": "Broad Ax",
@@ -215,6 +411,20 @@
       "broad-ax/1900/1900-04-14/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-04-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-04-14_cleveland-gazette",
+    "date": "1900-04-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-04-14/page_01.jpg",
+      "cleveland-gazette/1900/1900-04-14/page_02.jpg",
+      "cleveland-gazette/1900/1900-04-14/page_03.jpg",
+      "cleveland-gazette/1900/1900-04-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-04-14/thumb.jpg",
     "uploaded": true
   },
   {
@@ -232,6 +442,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-04-21_cleveland-gazette",
+    "date": "1900-04-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-04-21/page_01.jpg",
+      "cleveland-gazette/1900/1900-04-21/page_02.jpg",
+      "cleveland-gazette/1900/1900-04-21/page_03.jpg",
+      "cleveland-gazette/1900/1900-04-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-04-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-04-28_broad-ax",
     "date": "1900-04-28",
     "title": "Broad Ax",
@@ -246,6 +470,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-04-28_cleveland-gazette",
+    "date": "1900-04-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-04-28/page_01.jpg",
+      "cleveland-gazette/1900/1900-04-28/page_02.jpg",
+      "cleveland-gazette/1900/1900-04-28/page_03.jpg",
+      "cleveland-gazette/1900/1900-04-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-04-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-05-05_broad-ax",
     "date": "1900-05-05",
     "title": "Broad Ax",
@@ -257,6 +495,34 @@
       "broad-ax/1900/1900-05-05/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-05-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-05-05_cleveland-gazette",
+    "date": "1900-05-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-05-05/page_01.jpg",
+      "cleveland-gazette/1900/1900-05-05/page_02.jpg",
+      "cleveland-gazette/1900/1900-05-05/page_03.jpg",
+      "cleveland-gazette/1900/1900-05-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-05-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-05-12_cleveland-gazette",
+    "date": "1900-05-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-05-12/page_01.jpg",
+      "cleveland-gazette/1900/1900-05-12/page_02.jpg",
+      "cleveland-gazette/1900/1900-05-12/page_03.jpg",
+      "cleveland-gazette/1900/1900-05-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-05-12/thumb.jpg",
     "uploaded": true
   },
   {
@@ -288,6 +554,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-05-19_cleveland-gazette",
+    "date": "1900-05-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-05-19/page_01.jpg",
+      "cleveland-gazette/1900/1900-05-19/page_02.jpg",
+      "cleveland-gazette/1900/1900-05-19/page_03.jpg",
+      "cleveland-gazette/1900/1900-05-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-05-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-05-26_broad-ax",
     "date": "1900-05-26",
     "title": "Broad Ax",
@@ -299,6 +579,20 @@
       "broad-ax/1900/1900-05-26/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-05-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-05-26_cleveland-gazette",
+    "date": "1900-05-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-05-26/page_01.jpg",
+      "cleveland-gazette/1900/1900-05-26/page_02.jpg",
+      "cleveland-gazette/1900/1900-05-26/page_03.jpg",
+      "cleveland-gazette/1900/1900-05-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-05-26/thumb.jpg",
     "uploaded": true
   },
   {
@@ -316,6 +610,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-06-02_cleveland-gazette",
+    "date": "1900-06-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-06-02/page_01.jpg",
+      "cleveland-gazette/1900/1900-06-02/page_02.jpg",
+      "cleveland-gazette/1900/1900-06-02/page_03.jpg",
+      "cleveland-gazette/1900/1900-06-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-06-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-06-09_broad-ax",
     "date": "1900-06-09",
     "title": "Broad Ax",
@@ -327,6 +635,20 @@
       "broad-ax/1900/1900-06-09/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-06-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-06-09_cleveland-gazette",
+    "date": "1900-06-09",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-06-09/page_01.jpg",
+      "cleveland-gazette/1900/1900-06-09/page_02.jpg",
+      "cleveland-gazette/1900/1900-06-09/page_03.jpg",
+      "cleveland-gazette/1900/1900-06-09/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-06-09/thumb.jpg",
     "uploaded": true
   },
   {
@@ -344,6 +666,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-06-16_cleveland-gazette",
+    "date": "1900-06-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-06-16/page_01.jpg",
+      "cleveland-gazette/1900/1900-06-16/page_02.jpg",
+      "cleveland-gazette/1900/1900-06-16/page_03.jpg",
+      "cleveland-gazette/1900/1900-06-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-06-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-06-23_broad-ax",
     "date": "1900-06-23",
     "title": "Broad Ax",
@@ -355,6 +691,20 @@
       "broad-ax/1900/1900-06-23/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-06-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-06-23_cleveland-gazette",
+    "date": "1900-06-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-06-23/page_01.jpg",
+      "cleveland-gazette/1900/1900-06-23/page_02.jpg",
+      "cleveland-gazette/1900/1900-06-23/page_03.jpg",
+      "cleveland-gazette/1900/1900-06-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-06-23/thumb.jpg",
     "uploaded": true
   },
   {
@@ -372,6 +722,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-06-30_cleveland-gazette",
+    "date": "1900-06-30",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-06-30/page_01.jpg",
+      "cleveland-gazette/1900/1900-06-30/page_02.jpg",
+      "cleveland-gazette/1900/1900-06-30/page_03.jpg",
+      "cleveland-gazette/1900/1900-06-30/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-06-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-07-07_broad-ax",
     "date": "1900-07-07",
     "title": "Broad Ax",
@@ -383,6 +747,20 @@
       "broad-ax/1900/1900-07-07/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-07-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-07-07_cleveland-gazette",
+    "date": "1900-07-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-07-07/page_01.jpg",
+      "cleveland-gazette/1900/1900-07-07/page_02.jpg",
+      "cleveland-gazette/1900/1900-07-07/page_03.jpg",
+      "cleveland-gazette/1900/1900-07-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-07-07/thumb.jpg",
     "uploaded": true
   },
   {
@@ -400,6 +778,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-07-14_cleveland-gazette",
+    "date": "1900-07-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-07-14/page_01.jpg",
+      "cleveland-gazette/1900/1900-07-14/page_02.jpg",
+      "cleveland-gazette/1900/1900-07-14/page_03.jpg",
+      "cleveland-gazette/1900/1900-07-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-07-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-07-21_broad-ax",
     "date": "1900-07-21",
     "title": "Broad Ax",
@@ -411,6 +803,20 @@
       "broad-ax/1900/1900-07-21/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-07-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-07-21_cleveland-gazette",
+    "date": "1900-07-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-07-21/page_01.jpg",
+      "cleveland-gazette/1900/1900-07-21/page_02.jpg",
+      "cleveland-gazette/1900/1900-07-21/page_03.jpg",
+      "cleveland-gazette/1900/1900-07-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-07-21/thumb.jpg",
     "uploaded": true
   },
   {
@@ -428,6 +834,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-07-28_cleveland-gazette",
+    "date": "1900-07-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-07-28/page_01.jpg",
+      "cleveland-gazette/1900/1900-07-28/page_02.jpg",
+      "cleveland-gazette/1900/1900-07-28/page_03.jpg",
+      "cleveland-gazette/1900/1900-07-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-07-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-08-04_broad-ax",
     "date": "1900-08-04",
     "title": "Broad Ax",
@@ -439,6 +859,20 @@
       "broad-ax/1900/1900-08-04/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-08-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-08-04_cleveland-gazette",
+    "date": "1900-08-04",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-08-04/page_01.jpg",
+      "cleveland-gazette/1900/1900-08-04/page_02.jpg",
+      "cleveland-gazette/1900/1900-08-04/page_03.jpg",
+      "cleveland-gazette/1900/1900-08-04/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-08-04/thumb.jpg",
     "uploaded": true
   },
   {
@@ -456,6 +890,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-08-11_cleveland-gazette",
+    "date": "1900-08-11",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-08-11/page_01.jpg",
+      "cleveland-gazette/1900/1900-08-11/page_02.jpg",
+      "cleveland-gazette/1900/1900-08-11/page_03.jpg",
+      "cleveland-gazette/1900/1900-08-11/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-08-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-08-18_broad-ax",
     "date": "1900-08-18",
     "title": "Broad Ax",
@@ -467,6 +915,20 @@
       "broad-ax/1900/1900-08-18/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-08-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-08-18_cleveland-gazette",
+    "date": "1900-08-18",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-08-18/page_01.jpg",
+      "cleveland-gazette/1900/1900-08-18/page_02.jpg",
+      "cleveland-gazette/1900/1900-08-18/page_03.jpg",
+      "cleveland-gazette/1900/1900-08-18/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-08-18/thumb.jpg",
     "uploaded": true
   },
   {
@@ -484,6 +946,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-08-25_cleveland-gazette",
+    "date": "1900-08-25",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-08-25/page_01.jpg",
+      "cleveland-gazette/1900/1900-08-25/page_02.jpg",
+      "cleveland-gazette/1900/1900-08-25/page_03.jpg",
+      "cleveland-gazette/1900/1900-08-25/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-08-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-09-01_broad-ax",
     "date": "1900-09-01",
     "title": "Broad Ax",
@@ -495,6 +971,20 @@
       "broad-ax/1900/1900-09-01/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-09-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-09-01_cleveland-gazette",
+    "date": "1900-09-01",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-09-01/page_01.jpg",
+      "cleveland-gazette/1900/1900-09-01/page_02.jpg",
+      "cleveland-gazette/1900/1900-09-01/page_03.jpg",
+      "cleveland-gazette/1900/1900-09-01/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-09-01/thumb.jpg",
     "uploaded": true
   },
   {
@@ -512,6 +1002,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-09-08_cleveland-gazette",
+    "date": "1900-09-08",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-09-08/page_01.jpg",
+      "cleveland-gazette/1900/1900-09-08/page_02.jpg",
+      "cleveland-gazette/1900/1900-09-08/page_03.jpg",
+      "cleveland-gazette/1900/1900-09-08/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-09-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-09-15_broad-ax",
     "date": "1900-09-15",
     "title": "Broad Ax",
@@ -523,6 +1027,20 @@
       "broad-ax/1900/1900-09-15/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-09-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-09-15_cleveland-gazette",
+    "date": "1900-09-15",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-09-15/page_01.jpg",
+      "cleveland-gazette/1900/1900-09-15/page_02.jpg",
+      "cleveland-gazette/1900/1900-09-15/page_03.jpg",
+      "cleveland-gazette/1900/1900-09-15/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-09-15/thumb.jpg",
     "uploaded": true
   },
   {
@@ -540,6 +1058,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-09-22_cleveland-gazette",
+    "date": "1900-09-22",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-09-22/page_01.jpg",
+      "cleveland-gazette/1900/1900-09-22/page_02.jpg",
+      "cleveland-gazette/1900/1900-09-22/page_03.jpg",
+      "cleveland-gazette/1900/1900-09-22/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-09-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-09-29_broad-ax",
     "date": "1900-09-29",
     "title": "Broad Ax",
@@ -551,6 +1083,20 @@
       "broad-ax/1900/1900-09-29/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-09-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-09-29_cleveland-gazette",
+    "date": "1900-09-29",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-09-29/page_01.jpg",
+      "cleveland-gazette/1900/1900-09-29/page_02.jpg",
+      "cleveland-gazette/1900/1900-09-29/page_03.jpg",
+      "cleveland-gazette/1900/1900-09-29/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-09-29/thumb.jpg",
     "uploaded": true
   },
   {
@@ -568,6 +1114,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-10-06_cleveland-gazette",
+    "date": "1900-10-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-10-06/page_01.jpg",
+      "cleveland-gazette/1900/1900-10-06/page_02.jpg",
+      "cleveland-gazette/1900/1900-10-06/page_03.jpg",
+      "cleveland-gazette/1900/1900-10-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-10-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-10-13_broad-ax",
     "date": "1900-10-13",
     "title": "Broad Ax",
@@ -582,6 +1142,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-10-13_cleveland-gazette",
+    "date": "1900-10-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-10-13/page_01.jpg",
+      "cleveland-gazette/1900/1900-10-13/page_02.jpg",
+      "cleveland-gazette/1900/1900-10-13/page_03.jpg",
+      "cleveland-gazette/1900/1900-10-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-10-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-10-20_broad-ax",
     "date": "1900-10-20",
     "title": "Broad Ax",
@@ -593,6 +1167,20 @@
       "broad-ax/1900/1900-10-20/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-10-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-10-20_cleveland-gazette",
+    "date": "1900-10-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-10-20/page_01.jpg",
+      "cleveland-gazette/1900/1900-10-20/page_02.jpg",
+      "cleveland-gazette/1900/1900-10-20/page_03.jpg",
+      "cleveland-gazette/1900/1900-10-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-10-20/thumb.jpg",
     "uploaded": true
   },
   {
@@ -612,6 +1200,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-10-27_cleveland-gazette",
+    "date": "1900-10-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-10-27/page_01.jpg",
+      "cleveland-gazette/1900/1900-10-27/page_02.jpg",
+      "cleveland-gazette/1900/1900-10-27/page_03.jpg",
+      "cleveland-gazette/1900/1900-10-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-10-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-11-03_broad-ax",
     "date": "1900-11-03",
     "title": "Broad Ax",
@@ -623,6 +1225,20 @@
       "broad-ax/1900/1900-11-03/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-11-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-11-03_cleveland-gazette",
+    "date": "1900-11-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-11-03/page_01.jpg",
+      "cleveland-gazette/1900/1900-11-03/page_02.jpg",
+      "cleveland-gazette/1900/1900-11-03/page_03.jpg",
+      "cleveland-gazette/1900/1900-11-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-11-03/thumb.jpg",
     "uploaded": true
   },
   {
@@ -640,6 +1256,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-11-10_cleveland-gazette",
+    "date": "1900-11-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-11-10/page_01.jpg",
+      "cleveland-gazette/1900/1900-11-10/page_02.jpg",
+      "cleveland-gazette/1900/1900-11-10/page_03.jpg",
+      "cleveland-gazette/1900/1900-11-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-11-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-11-17_broad-ax",
     "date": "1900-11-17",
     "title": "Broad Ax",
@@ -651,6 +1281,20 @@
       "broad-ax/1900/1900-11-17/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-11-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-11-17_cleveland-gazette",
+    "date": "1900-11-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-11-17/page_01.jpg",
+      "cleveland-gazette/1900/1900-11-17/page_02.jpg",
+      "cleveland-gazette/1900/1900-11-17/page_03.jpg",
+      "cleveland-gazette/1900/1900-11-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-11-17/thumb.jpg",
     "uploaded": true
   },
   {
@@ -668,6 +1312,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-11-24_cleveland-gazette",
+    "date": "1900-11-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-11-24/page_01.jpg",
+      "cleveland-gazette/1900/1900-11-24/page_02.jpg",
+      "cleveland-gazette/1900/1900-11-24/page_03.jpg",
+      "cleveland-gazette/1900/1900-11-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-11-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-12-01_broad-ax",
     "date": "1900-12-01",
     "title": "Broad Ax",
@@ -679,6 +1337,20 @@
       "broad-ax/1900/1900-12-01/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-12-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-12-01_cleveland-gazette",
+    "date": "1900-12-01",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-12-01/page_01.jpg",
+      "cleveland-gazette/1900/1900-12-01/page_02.jpg",
+      "cleveland-gazette/1900/1900-12-01/page_03.jpg",
+      "cleveland-gazette/1900/1900-12-01/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-12-01/thumb.jpg",
     "uploaded": true
   },
   {
@@ -696,6 +1368,20 @@
     "uploaded": true
   },
   {
+    "id": "1900-12-08_cleveland-gazette",
+    "date": "1900-12-08",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-12-08/page_01.jpg",
+      "cleveland-gazette/1900/1900-12-08/page_02.jpg",
+      "cleveland-gazette/1900/1900-12-08/page_03.jpg",
+      "cleveland-gazette/1900/1900-12-08/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-12-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1900-12-15_broad-ax",
     "date": "1900-12-15",
     "title": "Broad Ax",
@@ -707,6 +1393,20 @@
       "broad-ax/1900/1900-12-15/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1900/1900-12-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-12-15_cleveland-gazette",
+    "date": "1900-12-15",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-12-15/page_01.jpg",
+      "cleveland-gazette/1900/1900-12-15/page_02.jpg",
+      "cleveland-gazette/1900/1900-12-15/page_03.jpg",
+      "cleveland-gazette/1900/1900-12-15/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-12-15/thumb.jpg",
     "uploaded": true
   },
   {
@@ -724,6 +1424,34 @@
     "uploaded": true
   },
   {
+    "id": "1900-12-22_cleveland-gazette",
+    "date": "1900-12-22",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-12-22/page_01.jpg",
+      "cleveland-gazette/1900/1900-12-22/page_02.jpg",
+      "cleveland-gazette/1900/1900-12-22/page_03.jpg",
+      "cleveland-gazette/1900/1900-12-22/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-12-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1900-12-29_cleveland-gazette",
+    "date": "1900-12-29",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1900/1900-12-29/page_01.jpg",
+      "cleveland-gazette/1900/1900-12-29/page_02.jpg",
+      "cleveland-gazette/1900/1900-12-29/page_03.jpg",
+      "cleveland-gazette/1900/1900-12-29/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1900/1900-12-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-01-05_broad-ax",
     "date": "1901-01-05",
     "title": "Broad Ax",
@@ -735,6 +1463,20 @@
       "broad-ax/1901/1901-01-05/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-01-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-01-05_cleveland-gazette",
+    "date": "1901-01-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-01-05/page_01.jpg",
+      "cleveland-gazette/1901/1901-01-05/page_02.jpg",
+      "cleveland-gazette/1901/1901-01-05/page_03.jpg",
+      "cleveland-gazette/1901/1901-01-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-01-05/thumb.jpg",
     "uploaded": true
   },
   {
@@ -753,6 +1495,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-01-12_cleveland-gazette",
+    "date": "1901-01-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-01-12/page_01.jpg",
+      "cleveland-gazette/1901/1901-01-12/page_02.jpg",
+      "cleveland-gazette/1901/1901-01-12/page_03.jpg",
+      "cleveland-gazette/1901/1901-01-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-01-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-01-19_broad-ax",
     "date": "1901-01-19",
     "title": "Broad Ax",
@@ -765,6 +1521,20 @@
       "broad-ax/1901/1901-01-19/page_05.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-01-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-01-19_cleveland-gazette",
+    "date": "1901-01-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-01-19/page_01.jpg",
+      "cleveland-gazette/1901/1901-01-19/page_02.jpg",
+      "cleveland-gazette/1901/1901-01-19/page_03.jpg",
+      "cleveland-gazette/1901/1901-01-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-01-19/thumb.jpg",
     "uploaded": true
   },
   {
@@ -783,6 +1553,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-01-26_cleveland-gazette",
+    "date": "1901-01-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-01-26/page_01.jpg",
+      "cleveland-gazette/1901/1901-01-26/page_02.jpg",
+      "cleveland-gazette/1901/1901-01-26/page_03.jpg",
+      "cleveland-gazette/1901/1901-01-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-01-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-02-02_broad-ax",
     "date": "1901-02-02",
     "title": "Broad Ax",
@@ -794,6 +1578,20 @@
       "broad-ax/1901/1901-02-02/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-02-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-02-02_cleveland-gazette",
+    "date": "1901-02-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-02-02/page_01.jpg",
+      "cleveland-gazette/1901/1901-02-02/page_02.jpg",
+      "cleveland-gazette/1901/1901-02-02/page_03.jpg",
+      "cleveland-gazette/1901/1901-02-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-02-02/thumb.jpg",
     "uploaded": true
   },
   {
@@ -811,6 +1609,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-02-09_cleveland-gazette",
+    "date": "1901-02-09",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-02-09/page_01.jpg",
+      "cleveland-gazette/1901/1901-02-09/page_02.jpg",
+      "cleveland-gazette/1901/1901-02-09/page_03.jpg",
+      "cleveland-gazette/1901/1901-02-09/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-02-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-02-16_broad-ax",
     "date": "1901-02-16",
     "title": "Broad Ax",
@@ -822,6 +1634,20 @@
       "broad-ax/1901/1901-02-16/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-02-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-02-16_cleveland-gazette",
+    "date": "1901-02-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-02-16/page_01.jpg",
+      "cleveland-gazette/1901/1901-02-16/page_02.jpg",
+      "cleveland-gazette/1901/1901-02-16/page_03.jpg",
+      "cleveland-gazette/1901/1901-02-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-02-16/thumb.jpg",
     "uploaded": true
   },
   {
@@ -840,6 +1666,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-02-23_cleveland-gazette",
+    "date": "1901-02-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-02-23/page_01.jpg",
+      "cleveland-gazette/1901/1901-02-23/page_02.jpg",
+      "cleveland-gazette/1901/1901-02-23/page_03.jpg",
+      "cleveland-gazette/1901/1901-02-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-02-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-03-02_broad-ax",
     "date": "1901-03-02",
     "title": "Broad Ax",
@@ -851,6 +1691,20 @@
       "broad-ax/1901/1901-03-02/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-03-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-03-02_cleveland-gazette",
+    "date": "1901-03-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-03-02/page_01.jpg",
+      "cleveland-gazette/1901/1901-03-02/page_02.jpg",
+      "cleveland-gazette/1901/1901-03-02/page_03.jpg",
+      "cleveland-gazette/1901/1901-03-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-03-02/thumb.jpg",
     "uploaded": true
   },
   {
@@ -868,6 +1722,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-03-09_cleveland-gazette",
+    "date": "1901-03-09",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-03-09/page_01.jpg",
+      "cleveland-gazette/1901/1901-03-09/page_02.jpg",
+      "cleveland-gazette/1901/1901-03-09/page_03.jpg",
+      "cleveland-gazette/1901/1901-03-09/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-03-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-03-16_broad-ax",
     "date": "1901-03-16",
     "title": "Broad Ax",
@@ -879,6 +1747,20 @@
       "broad-ax/1901/1901-03-16/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-03-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-03-16_cleveland-gazette",
+    "date": "1901-03-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-03-16/page_01.jpg",
+      "cleveland-gazette/1901/1901-03-16/page_02.jpg",
+      "cleveland-gazette/1901/1901-03-16/page_03.jpg",
+      "cleveland-gazette/1901/1901-03-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-03-16/thumb.jpg",
     "uploaded": true
   },
   {
@@ -894,6 +1776,20 @@
       "broad-ax/1901/1901-03-22/page_05.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-03-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-03-23_cleveland-gazette",
+    "date": "1901-03-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-03-23/page_01.jpg",
+      "cleveland-gazette/1901/1901-03-23/page_02.jpg",
+      "cleveland-gazette/1901/1901-03-23/page_03.jpg",
+      "cleveland-gazette/1901/1901-03-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-03-23/thumb.jpg",
     "uploaded": true
   },
   {
@@ -913,6 +1809,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-03-30_cleveland-gazette",
+    "date": "1901-03-30",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-03-30/page_01.jpg",
+      "cleveland-gazette/1901/1901-03-30/page_02.jpg",
+      "cleveland-gazette/1901/1901-03-30/page_03.jpg",
+      "cleveland-gazette/1901/1901-03-30/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-03-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-04-06_broad-ax",
     "date": "1901-04-06",
     "title": "Broad Ax",
@@ -924,6 +1834,20 @@
       "broad-ax/1901/1901-04-06/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-04-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-04-06_cleveland-gazette",
+    "date": "1901-04-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-04-06/page_01.jpg",
+      "cleveland-gazette/1901/1901-04-06/page_02.jpg",
+      "cleveland-gazette/1901/1901-04-06/page_03.jpg",
+      "cleveland-gazette/1901/1901-04-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-04-06/thumb.jpg",
     "uploaded": true
   },
   {
@@ -941,6 +1865,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-04-13_cleveland-gazette",
+    "date": "1901-04-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-04-13/page_01.jpg",
+      "cleveland-gazette/1901/1901-04-13/page_02.jpg",
+      "cleveland-gazette/1901/1901-04-13/page_03.jpg",
+      "cleveland-gazette/1901/1901-04-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-04-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-04-20_broad-ax",
     "date": "1901-04-20",
     "title": "Broad Ax",
@@ -952,6 +1890,20 @@
       "broad-ax/1901/1901-04-20/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-04-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-04-20_cleveland-gazette",
+    "date": "1901-04-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-04-20/page_01.jpg",
+      "cleveland-gazette/1901/1901-04-20/page_02.jpg",
+      "cleveland-gazette/1901/1901-04-20/page_03.jpg",
+      "cleveland-gazette/1901/1901-04-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-04-20/thumb.jpg",
     "uploaded": true
   },
   {
@@ -969,6 +1921,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-04-27_cleveland-gazette",
+    "date": "1901-04-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-04-27/page_01.jpg",
+      "cleveland-gazette/1901/1901-04-27/page_02.jpg",
+      "cleveland-gazette/1901/1901-04-27/page_03.jpg",
+      "cleveland-gazette/1901/1901-04-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-04-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-05-04_broad-ax",
     "date": "1901-05-04",
     "title": "Broad Ax",
@@ -980,6 +1946,20 @@
       "broad-ax/1901/1901-05-04/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-05-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-05-04_cleveland-gazette",
+    "date": "1901-05-04",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-05-04/page_01.jpg",
+      "cleveland-gazette/1901/1901-05-04/page_02.jpg",
+      "cleveland-gazette/1901/1901-05-04/page_03.jpg",
+      "cleveland-gazette/1901/1901-05-04/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-05-04/thumb.jpg",
     "uploaded": true
   },
   {
@@ -997,6 +1977,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-05-11_cleveland-gazette",
+    "date": "1901-05-11",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-05-11/page_01.jpg",
+      "cleveland-gazette/1901/1901-05-11/page_02.jpg",
+      "cleveland-gazette/1901/1901-05-11/page_03.jpg",
+      "cleveland-gazette/1901/1901-05-11/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-05-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-05-18_broad-ax",
     "date": "1901-05-18",
     "title": "Broad Ax",
@@ -1008,6 +2002,20 @@
       "broad-ax/1901/1901-05-18/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-05-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-05-18_cleveland-gazette",
+    "date": "1901-05-18",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-05-18/page_01.jpg",
+      "cleveland-gazette/1901/1901-05-18/page_02.jpg",
+      "cleveland-gazette/1901/1901-05-18/page_03.jpg",
+      "cleveland-gazette/1901/1901-05-18/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-05-18/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1025,6 +2033,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-05-25_cleveland-gazette",
+    "date": "1901-05-25",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-05-25/page_01.jpg",
+      "cleveland-gazette/1901/1901-05-25/page_02.jpg",
+      "cleveland-gazette/1901/1901-05-25/page_03.jpg",
+      "cleveland-gazette/1901/1901-05-25/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-05-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-06-01_broad-ax",
     "date": "1901-06-01",
     "title": "Broad Ax",
@@ -1036,6 +2058,20 @@
       "broad-ax/1901/1901-06-01/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-06-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-06-01_cleveland-gazette",
+    "date": "1901-06-01",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-06-01/page_01.jpg",
+      "cleveland-gazette/1901/1901-06-01/page_02.jpg",
+      "cleveland-gazette/1901/1901-06-01/page_03.jpg",
+      "cleveland-gazette/1901/1901-06-01/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-06-01/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1053,6 +2089,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-06-08_cleveland-gazette",
+    "date": "1901-06-08",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-06-08/page_01.jpg",
+      "cleveland-gazette/1901/1901-06-08/page_02.jpg",
+      "cleveland-gazette/1901/1901-06-08/page_03.jpg",
+      "cleveland-gazette/1901/1901-06-08/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-06-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-06-15_broad-ax",
     "date": "1901-06-15",
     "title": "Broad Ax",
@@ -1064,6 +2114,20 @@
       "broad-ax/1901/1901-06-15/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-06-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-06-15_cleveland-gazette",
+    "date": "1901-06-15",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-06-15/page_01.jpg",
+      "cleveland-gazette/1901/1901-06-15/page_02.jpg",
+      "cleveland-gazette/1901/1901-06-15/page_03.jpg",
+      "cleveland-gazette/1901/1901-06-15/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-06-15/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1081,6 +2145,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-06-22_cleveland-gazette",
+    "date": "1901-06-22",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-06-22/page_01.jpg",
+      "cleveland-gazette/1901/1901-06-22/page_02.jpg",
+      "cleveland-gazette/1901/1901-06-22/page_03.jpg",
+      "cleveland-gazette/1901/1901-06-22/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-06-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-06-29_broad-ax",
     "date": "1901-06-29",
     "title": "Broad Ax",
@@ -1092,6 +2170,20 @@
       "broad-ax/1901/1901-06-29/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-06-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-06-29_cleveland-gazette",
+    "date": "1901-06-29",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-06-29/page_01.jpg",
+      "cleveland-gazette/1901/1901-06-29/page_02.jpg",
+      "cleveland-gazette/1901/1901-06-29/page_03.jpg",
+      "cleveland-gazette/1901/1901-06-29/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-06-29/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1109,6 +2201,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-07-06_cleveland-gazette",
+    "date": "1901-07-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-07-06/page_01.jpg",
+      "cleveland-gazette/1901/1901-07-06/page_02.jpg",
+      "cleveland-gazette/1901/1901-07-06/page_03.jpg",
+      "cleveland-gazette/1901/1901-07-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-07-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-07-13_broad-ax",
     "date": "1901-07-13",
     "title": "Broad Ax",
@@ -1120,6 +2226,20 @@
       "broad-ax/1901/1901-07-13/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-07-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-07-13_cleveland-gazette",
+    "date": "1901-07-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-07-13/page_01.jpg",
+      "cleveland-gazette/1901/1901-07-13/page_02.jpg",
+      "cleveland-gazette/1901/1901-07-13/page_03.jpg",
+      "cleveland-gazette/1901/1901-07-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-07-13/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1137,6 +2257,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-07-20_cleveland-gazette",
+    "date": "1901-07-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-07-20/page_01.jpg",
+      "cleveland-gazette/1901/1901-07-20/page_02.jpg",
+      "cleveland-gazette/1901/1901-07-20/page_03.jpg",
+      "cleveland-gazette/1901/1901-07-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-07-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-07-27_broad-ax",
     "date": "1901-07-27",
     "title": "Broad Ax",
@@ -1148,6 +2282,20 @@
       "broad-ax/1901/1901-07-27/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-07-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-07-27_cleveland-gazette",
+    "date": "1901-07-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-07-27/page_01.jpg",
+      "cleveland-gazette/1901/1901-07-27/page_02.jpg",
+      "cleveland-gazette/1901/1901-07-27/page_03.jpg",
+      "cleveland-gazette/1901/1901-07-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-07-27/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1165,6 +2313,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-08-03_cleveland-gazette",
+    "date": "1901-08-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-08-03/page_01.jpg",
+      "cleveland-gazette/1901/1901-08-03/page_02.jpg",
+      "cleveland-gazette/1901/1901-08-03/page_03.jpg",
+      "cleveland-gazette/1901/1901-08-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-08-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-08-10_broad-ax",
     "date": "1901-08-10",
     "title": "Broad Ax",
@@ -1179,6 +2341,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-08-10_cleveland-gazette",
+    "date": "1901-08-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-08-10/page_01.jpg",
+      "cleveland-gazette/1901/1901-08-10/page_02.jpg",
+      "cleveland-gazette/1901/1901-08-10/page_03.jpg",
+      "cleveland-gazette/1901/1901-08-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-08-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-08-17_broad-ax",
     "date": "1901-08-17",
     "title": "Broad Ax",
@@ -1188,6 +2364,20 @@
       "broad-ax/1901/1901-08-17/page_02.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-08-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-08-17_cleveland-gazette",
+    "date": "1901-08-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-08-17/page_01.jpg",
+      "cleveland-gazette/1901/1901-08-17/page_02.jpg",
+      "cleveland-gazette/1901/1901-08-17/page_03.jpg",
+      "cleveland-gazette/1901/1901-08-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-08-17/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1205,6 +2395,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-08-24_cleveland-gazette",
+    "date": "1901-08-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-08-24/page_01.jpg",
+      "cleveland-gazette/1901/1901-08-24/page_02.jpg",
+      "cleveland-gazette/1901/1901-08-24/page_03.jpg",
+      "cleveland-gazette/1901/1901-08-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-08-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-08-31_broad-ax",
     "date": "1901-08-31",
     "title": "Broad Ax",
@@ -1219,6 +2423,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-08-31_cleveland-gazette",
+    "date": "1901-08-31",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-08-31/page_01.jpg",
+      "cleveland-gazette/1901/1901-08-31/page_02.jpg",
+      "cleveland-gazette/1901/1901-08-31/page_03.jpg",
+      "cleveland-gazette/1901/1901-08-31/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-08-31/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-09-07_broad-ax",
     "date": "1901-09-07",
     "title": "Broad Ax",
@@ -1228,6 +2446,20 @@
       "broad-ax/1901/1901-09-07/page_02.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-09-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-09-07_cleveland-gazette",
+    "date": "1901-09-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-09-07/page_01.jpg",
+      "cleveland-gazette/1901/1901-09-07/page_02.jpg",
+      "cleveland-gazette/1901/1901-09-07/page_03.jpg",
+      "cleveland-gazette/1901/1901-09-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-09-07/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1245,6 +2477,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-09-14_cleveland-gazette",
+    "date": "1901-09-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-09-14/page_01.jpg",
+      "cleveland-gazette/1901/1901-09-14/page_02.jpg",
+      "cleveland-gazette/1901/1901-09-14/page_03.jpg",
+      "cleveland-gazette/1901/1901-09-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-09-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-09-21_broad-ax",
     "date": "1901-09-21",
     "title": "Broad Ax",
@@ -1256,6 +2502,20 @@
       "broad-ax/1901/1901-09-21/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-09-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-09-21_cleveland-gazette",
+    "date": "1901-09-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-09-21/page_01.jpg",
+      "cleveland-gazette/1901/1901-09-21/page_02.jpg",
+      "cleveland-gazette/1901/1901-09-21/page_03.jpg",
+      "cleveland-gazette/1901/1901-09-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-09-21/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1273,6 +2533,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-09-28_cleveland-gazette",
+    "date": "1901-09-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-09-28/page_01.jpg",
+      "cleveland-gazette/1901/1901-09-28/page_02.jpg",
+      "cleveland-gazette/1901/1901-09-28/page_03.jpg",
+      "cleveland-gazette/1901/1901-09-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-09-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-10-05_broad-ax",
     "date": "1901-10-05",
     "title": "Broad Ax",
@@ -1284,6 +2558,20 @@
       "broad-ax/1901/1901-10-05/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-10-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-10-05_cleveland-gazette",
+    "date": "1901-10-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-10-05/page_01.jpg",
+      "cleveland-gazette/1901/1901-10-05/page_02.jpg",
+      "cleveland-gazette/1901/1901-10-05/page_03.jpg",
+      "cleveland-gazette/1901/1901-10-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-10-05/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1301,6 +2589,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-10-12_cleveland-gazette",
+    "date": "1901-10-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-10-12/page_01.jpg",
+      "cleveland-gazette/1901/1901-10-12/page_02.jpg",
+      "cleveland-gazette/1901/1901-10-12/page_03.jpg",
+      "cleveland-gazette/1901/1901-10-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-10-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-10-19_broad-ax",
     "date": "1901-10-19",
     "title": "Broad Ax",
@@ -1312,6 +2614,20 @@
       "broad-ax/1901/1901-10-19/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-10-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-10-19_cleveland-gazette",
+    "date": "1901-10-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-10-19/page_01.jpg",
+      "cleveland-gazette/1901/1901-10-19/page_02.jpg",
+      "cleveland-gazette/1901/1901-10-19/page_03.jpg",
+      "cleveland-gazette/1901/1901-10-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-10-19/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1330,6 +2646,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-10-26_cleveland-gazette",
+    "date": "1901-10-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-10-26/page_01.jpg",
+      "cleveland-gazette/1901/1901-10-26/page_02.jpg",
+      "cleveland-gazette/1901/1901-10-26/page_03.jpg",
+      "cleveland-gazette/1901/1901-10-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-10-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-11-02_broad-ax",
     "date": "1901-11-02",
     "title": "Broad Ax",
@@ -1341,6 +2671,20 @@
       "broad-ax/1901/1901-11-02/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-11-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-11-02_cleveland-gazette",
+    "date": "1901-11-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-11-02/page_01.jpg",
+      "cleveland-gazette/1901/1901-11-02/page_02.jpg",
+      "cleveland-gazette/1901/1901-11-02/page_03.jpg",
+      "cleveland-gazette/1901/1901-11-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-11-02/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1372,6 +2716,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-11-16_cleveland-gazette",
+    "date": "1901-11-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-11-16/page_01.jpg",
+      "cleveland-gazette/1901/1901-11-16/page_02.jpg",
+      "cleveland-gazette/1901/1901-11-16/page_03.jpg",
+      "cleveland-gazette/1901/1901-11-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-11-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-11-23_broad-ax",
     "date": "1901-11-23",
     "title": "Broad Ax",
@@ -1383,6 +2741,20 @@
       "broad-ax/1901/1901-11-23/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-11-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-11-23_cleveland-gazette",
+    "date": "1901-11-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-11-23/page_01.jpg",
+      "cleveland-gazette/1901/1901-11-23/page_02.jpg",
+      "cleveland-gazette/1901/1901-11-23/page_03.jpg",
+      "cleveland-gazette/1901/1901-11-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-11-23/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1400,6 +2772,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-11-30_cleveland-gazette",
+    "date": "1901-11-30",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-11-30/page_01.jpg",
+      "cleveland-gazette/1901/1901-11-30/page_02.jpg",
+      "cleveland-gazette/1901/1901-11-30/page_03.jpg",
+      "cleveland-gazette/1901/1901-11-30/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-11-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-12-07_broad-ax",
     "date": "1901-12-07",
     "title": "Broad Ax",
@@ -1411,6 +2797,20 @@
       "broad-ax/1901/1901-12-07/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-12-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-12-07_cleveland-gazette",
+    "date": "1901-12-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-12-07/page_01.jpg",
+      "cleveland-gazette/1901/1901-12-07/page_02.jpg",
+      "cleveland-gazette/1901/1901-12-07/page_03.jpg",
+      "cleveland-gazette/1901/1901-12-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-12-07/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1428,6 +2828,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-12-14_cleveland-gazette",
+    "date": "1901-12-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-12-14/page_01.jpg",
+      "cleveland-gazette/1901/1901-12-14/page_02.jpg",
+      "cleveland-gazette/1901/1901-12-14/page_03.jpg",
+      "cleveland-gazette/1901/1901-12-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-12-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1901-12-21_broad-ax",
     "date": "1901-12-21",
     "title": "Broad Ax",
@@ -1439,6 +2853,20 @@
       "broad-ax/1901/1901-12-21/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1901/1901-12-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1901-12-21_cleveland-gazette",
+    "date": "1901-12-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-12-21/page_01.jpg",
+      "cleveland-gazette/1901/1901-12-21/page_02.jpg",
+      "cleveland-gazette/1901/1901-12-21/page_03.jpg",
+      "cleveland-gazette/1901/1901-12-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-12-21/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1456,6 +2884,20 @@
     "uploaded": true
   },
   {
+    "id": "1901-12-28_cleveland-gazette",
+    "date": "1901-12-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1901/1901-12-28/page_01.jpg",
+      "cleveland-gazette/1901/1901-12-28/page_02.jpg",
+      "cleveland-gazette/1901/1901-12-28/page_03.jpg",
+      "cleveland-gazette/1901/1901-12-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1901/1901-12-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-01-04_broad-ax",
     "date": "1902-01-04",
     "title": "Broad Ax",
@@ -1467,6 +2909,20 @@
       "broad-ax/1902/1902-01-04/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-01-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-01-04_cleveland-gazette",
+    "date": "1902-01-04",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-01-04/page_01.jpg",
+      "cleveland-gazette/1902/1902-01-04/page_02.jpg",
+      "cleveland-gazette/1902/1902-01-04/page_03.jpg",
+      "cleveland-gazette/1902/1902-01-04/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-01-04/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1484,6 +2940,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-01-11_cleveland-gazette",
+    "date": "1902-01-11",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-01-11/page_01.jpg",
+      "cleveland-gazette/1902/1902-01-11/page_02.jpg",
+      "cleveland-gazette/1902/1902-01-11/page_03.jpg",
+      "cleveland-gazette/1902/1902-01-11/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-01-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-01-18_broad-ax",
     "date": "1902-01-18",
     "title": "Broad Ax",
@@ -1495,6 +2965,20 @@
       "broad-ax/1902/1902-01-18/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-01-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-01-18_cleveland-gazette",
+    "date": "1902-01-18",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-01-18/page_01.jpg",
+      "cleveland-gazette/1902/1902-01-18/page_02.jpg",
+      "cleveland-gazette/1902/1902-01-18/page_03.jpg",
+      "cleveland-gazette/1902/1902-01-18/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-01-18/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1512,6 +2996,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-01-25_cleveland-gazette",
+    "date": "1902-01-25",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-01-25/page_01.jpg",
+      "cleveland-gazette/1902/1902-01-25/page_02.jpg",
+      "cleveland-gazette/1902/1902-01-25/page_03.jpg",
+      "cleveland-gazette/1902/1902-01-25/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-01-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-02-01_broad-ax",
     "date": "1902-02-01",
     "title": "Broad Ax",
@@ -1523,6 +3021,20 @@
       "broad-ax/1902/1902-02-01/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-02-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-02-01_cleveland-gazette",
+    "date": "1902-02-01",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-02-01/page_01.jpg",
+      "cleveland-gazette/1902/1902-02-01/page_02.jpg",
+      "cleveland-gazette/1902/1902-02-01/page_03.jpg",
+      "cleveland-gazette/1902/1902-02-01/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-02-01/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1540,6 +3052,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-02-08_cleveland-gazette",
+    "date": "1902-02-08",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-02-08/page_01.jpg",
+      "cleveland-gazette/1902/1902-02-08/page_02.jpg",
+      "cleveland-gazette/1902/1902-02-08/page_03.jpg",
+      "cleveland-gazette/1902/1902-02-08/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-02-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-02-15_broad-ax",
     "date": "1902-02-15",
     "title": "Broad Ax",
@@ -1551,6 +3077,20 @@
       "broad-ax/1902/1902-02-15/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-02-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-02-15_cleveland-gazette",
+    "date": "1902-02-15",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-02-15/page_01.jpg",
+      "cleveland-gazette/1902/1902-02-15/page_02.jpg",
+      "cleveland-gazette/1902/1902-02-15/page_03.jpg",
+      "cleveland-gazette/1902/1902-02-15/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-02-15/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1568,6 +3108,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-02-22_cleveland-gazette",
+    "date": "1902-02-22",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-02-22/page_01.jpg",
+      "cleveland-gazette/1902/1902-02-22/page_02.jpg",
+      "cleveland-gazette/1902/1902-02-22/page_03.jpg",
+      "cleveland-gazette/1902/1902-02-22/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-02-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-03-01_broad-ax",
     "date": "1902-03-01",
     "title": "Broad Ax",
@@ -1579,6 +3133,20 @@
       "broad-ax/1902/1902-03-01/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-03-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-03-01_cleveland-gazette",
+    "date": "1902-03-01",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-03-01/page_01.jpg",
+      "cleveland-gazette/1902/1902-03-01/page_02.jpg",
+      "cleveland-gazette/1902/1902-03-01/page_03.jpg",
+      "cleveland-gazette/1902/1902-03-01/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-03-01/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1596,6 +3164,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-03-08_cleveland-gazette",
+    "date": "1902-03-08",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-03-08/page_01.jpg",
+      "cleveland-gazette/1902/1902-03-08/page_02.jpg",
+      "cleveland-gazette/1902/1902-03-08/page_03.jpg",
+      "cleveland-gazette/1902/1902-03-08/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-03-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-03-15_broad-ax",
     "date": "1902-03-15",
     "title": "Broad Ax",
@@ -1607,6 +3189,20 @@
       "broad-ax/1902/1902-03-15/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-03-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-03-15_cleveland-gazette",
+    "date": "1902-03-15",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-03-15/page_01.jpg",
+      "cleveland-gazette/1902/1902-03-15/page_02.jpg",
+      "cleveland-gazette/1902/1902-03-15/page_03.jpg",
+      "cleveland-gazette/1902/1902-03-15/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-03-15/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1624,6 +3220,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-03-22_cleveland-gazette",
+    "date": "1902-03-22",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-03-22/page_01.jpg",
+      "cleveland-gazette/1902/1902-03-22/page_02.jpg",
+      "cleveland-gazette/1902/1902-03-22/page_03.jpg",
+      "cleveland-gazette/1902/1902-03-22/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-03-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-03-29_broad-ax",
     "date": "1902-03-29",
     "title": "Broad Ax",
@@ -1635,6 +3245,20 @@
       "broad-ax/1902/1902-03-29/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-03-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-03-29_cleveland-gazette",
+    "date": "1902-03-29",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-03-29/page_01.jpg",
+      "cleveland-gazette/1902/1902-03-29/page_02.jpg",
+      "cleveland-gazette/1902/1902-03-29/page_03.jpg",
+      "cleveland-gazette/1902/1902-03-29/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-03-29/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1652,6 +3276,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-04-05_cleveland-gazette",
+    "date": "1902-04-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-04-05/page_01.jpg",
+      "cleveland-gazette/1902/1902-04-05/page_02.jpg",
+      "cleveland-gazette/1902/1902-04-05/page_03.jpg",
+      "cleveland-gazette/1902/1902-04-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-04-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-04-12_broad-ax",
     "date": "1902-04-12",
     "title": "Broad Ax",
@@ -1663,6 +3301,20 @@
       "broad-ax/1902/1902-04-12/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-04-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-04-12_cleveland-gazette",
+    "date": "1902-04-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-04-12/page_01.jpg",
+      "cleveland-gazette/1902/1902-04-12/page_02.jpg",
+      "cleveland-gazette/1902/1902-04-12/page_03.jpg",
+      "cleveland-gazette/1902/1902-04-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-04-12/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1680,6 +3332,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-04-19_cleveland-gazette",
+    "date": "1902-04-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-04-19/page_01.jpg",
+      "cleveland-gazette/1902/1902-04-19/page_02.jpg",
+      "cleveland-gazette/1902/1902-04-19/page_03.jpg",
+      "cleveland-gazette/1902/1902-04-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-04-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-04-26_broad-ax",
     "date": "1902-04-26",
     "title": "Broad Ax",
@@ -1691,6 +3357,20 @@
       "broad-ax/1902/1902-04-26/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-04-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-04-26_cleveland-gazette",
+    "date": "1902-04-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-04-26/page_01.jpg",
+      "cleveland-gazette/1902/1902-04-26/page_02.jpg",
+      "cleveland-gazette/1902/1902-04-26/page_03.jpg",
+      "cleveland-gazette/1902/1902-04-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-04-26/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1708,6 +3388,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-05-03_cleveland-gazette",
+    "date": "1902-05-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-05-03/page_01.jpg",
+      "cleveland-gazette/1902/1902-05-03/page_02.jpg",
+      "cleveland-gazette/1902/1902-05-03/page_03.jpg",
+      "cleveland-gazette/1902/1902-05-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-05-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-05-10_broad-ax",
     "date": "1902-05-10",
     "title": "Broad Ax",
@@ -1719,6 +3413,20 @@
       "broad-ax/1902/1902-05-10/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-05-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-05-10_cleveland-gazette",
+    "date": "1902-05-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-05-10/page_01.jpg",
+      "cleveland-gazette/1902/1902-05-10/page_02.jpg",
+      "cleveland-gazette/1902/1902-05-10/page_03.jpg",
+      "cleveland-gazette/1902/1902-05-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-05-10/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1736,6 +3444,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-05-17_cleveland-gazette",
+    "date": "1902-05-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-05-17/page_01.jpg",
+      "cleveland-gazette/1902/1902-05-17/page_02.jpg",
+      "cleveland-gazette/1902/1902-05-17/page_03.jpg",
+      "cleveland-gazette/1902/1902-05-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-05-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-05-24_broad-ax",
     "date": "1902-05-24",
     "title": "Broad Ax",
@@ -1747,6 +3469,20 @@
       "broad-ax/1902/1902-05-24/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-05-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-05-24_cleveland-gazette",
+    "date": "1902-05-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-05-24/page_01.jpg",
+      "cleveland-gazette/1902/1902-05-24/page_02.jpg",
+      "cleveland-gazette/1902/1902-05-24/page_03.jpg",
+      "cleveland-gazette/1902/1902-05-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-05-24/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1764,6 +3500,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-05-31_cleveland-gazette",
+    "date": "1902-05-31",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-05-31/page_01.jpg",
+      "cleveland-gazette/1902/1902-05-31/page_02.jpg",
+      "cleveland-gazette/1902/1902-05-31/page_03.jpg",
+      "cleveland-gazette/1902/1902-05-31/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-05-31/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-06-07_broad-ax",
     "date": "1902-06-07",
     "title": "Broad Ax",
@@ -1775,6 +3525,20 @@
       "broad-ax/1902/1902-06-07/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-06-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-06-07_cleveland-gazette",
+    "date": "1902-06-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-06-07/page_01.jpg",
+      "cleveland-gazette/1902/1902-06-07/page_02.jpg",
+      "cleveland-gazette/1902/1902-06-07/page_03.jpg",
+      "cleveland-gazette/1902/1902-06-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-06-07/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1792,6 +3556,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-06-14_cleveland-gazette",
+    "date": "1902-06-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-06-14/page_01.jpg",
+      "cleveland-gazette/1902/1902-06-14/page_02.jpg",
+      "cleveland-gazette/1902/1902-06-14/page_03.jpg",
+      "cleveland-gazette/1902/1902-06-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-06-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-06-21_broad-ax",
     "date": "1902-06-21",
     "title": "Broad Ax",
@@ -1803,6 +3581,20 @@
       "broad-ax/1902/1902-06-21/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-06-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-06-21_cleveland-gazette",
+    "date": "1902-06-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-06-21/page_01.jpg",
+      "cleveland-gazette/1902/1902-06-21/page_02.jpg",
+      "cleveland-gazette/1902/1902-06-21/page_03.jpg",
+      "cleveland-gazette/1902/1902-06-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-06-21/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1820,6 +3612,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-06-28_cleveland-gazette",
+    "date": "1902-06-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-06-28/page_01.jpg",
+      "cleveland-gazette/1902/1902-06-28/page_02.jpg",
+      "cleveland-gazette/1902/1902-06-28/page_03.jpg",
+      "cleveland-gazette/1902/1902-06-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-06-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-07-05_broad-ax",
     "date": "1902-07-05",
     "title": "Broad Ax",
@@ -1831,6 +3637,20 @@
       "broad-ax/1902/1902-07-05/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-07-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-07-05_cleveland-gazette",
+    "date": "1902-07-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-07-05/page_01.jpg",
+      "cleveland-gazette/1902/1902-07-05/page_02.jpg",
+      "cleveland-gazette/1902/1902-07-05/page_03.jpg",
+      "cleveland-gazette/1902/1902-07-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-07-05/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1848,6 +3668,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-07-12_cleveland-gazette",
+    "date": "1902-07-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-07-12/page_01.jpg",
+      "cleveland-gazette/1902/1902-07-12/page_02.jpg",
+      "cleveland-gazette/1902/1902-07-12/page_03.jpg",
+      "cleveland-gazette/1902/1902-07-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-07-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-07-19_broad-ax",
     "date": "1902-07-19",
     "title": "Broad Ax",
@@ -1859,6 +3693,20 @@
       "broad-ax/1902/1902-07-19/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-07-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-07-19_cleveland-gazette",
+    "date": "1902-07-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-07-19/page_01.jpg",
+      "cleveland-gazette/1902/1902-07-19/page_02.jpg",
+      "cleveland-gazette/1902/1902-07-19/page_03.jpg",
+      "cleveland-gazette/1902/1902-07-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-07-19/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1876,6 +3724,34 @@
     "uploaded": true
   },
   {
+    "id": "1902-07-26_cleveland-gazette",
+    "date": "1902-07-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-07-26/page_01.jpg",
+      "cleveland-gazette/1902/1902-07-26/page_02.jpg",
+      "cleveland-gazette/1902/1902-07-26/page_03.jpg",
+      "cleveland-gazette/1902/1902-07-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-07-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-08-02_cleveland-gazette",
+    "date": "1902-08-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-08-02/page_01.jpg",
+      "cleveland-gazette/1902/1902-08-02/page_02.jpg",
+      "cleveland-gazette/1902/1902-08-02/page_03.jpg",
+      "cleveland-gazette/1902/1902-08-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-08-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-08-09_broad-ax",
     "date": "1902-08-09",
     "title": "Broad Ax",
@@ -1890,6 +3766,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-08-09_cleveland-gazette",
+    "date": "1902-08-09",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-08-09/page_01.jpg",
+      "cleveland-gazette/1902/1902-08-09/page_02.jpg",
+      "cleveland-gazette/1902/1902-08-09/page_03.jpg",
+      "cleveland-gazette/1902/1902-08-09/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-08-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-08-16_broad-ax",
     "date": "1902-08-16",
     "title": "Broad Ax",
@@ -1899,6 +3789,20 @@
       "broad-ax/1902/1902-08-16/page_02.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-08-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-08-16_cleveland-gazette",
+    "date": "1902-08-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-08-16/page_01.jpg",
+      "cleveland-gazette/1902/1902-08-16/page_02.jpg",
+      "cleveland-gazette/1902/1902-08-16/page_03.jpg",
+      "cleveland-gazette/1902/1902-08-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-08-16/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1916,6 +3820,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-08-23_cleveland-gazette",
+    "date": "1902-08-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-08-23/page_01.jpg",
+      "cleveland-gazette/1902/1902-08-23/page_02.jpg",
+      "cleveland-gazette/1902/1902-08-23/page_03.jpg",
+      "cleveland-gazette/1902/1902-08-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-08-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-08-30_broad-ax",
     "date": "1902-08-30",
     "title": "Broad Ax",
@@ -1927,6 +3845,20 @@
       "broad-ax/1902/1902-08-30/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-08-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-08-30_cleveland-gazette",
+    "date": "1902-08-30",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-08-30/page_01.jpg",
+      "cleveland-gazette/1902/1902-08-30/page_02.jpg",
+      "cleveland-gazette/1902/1902-08-30/page_03.jpg",
+      "cleveland-gazette/1902/1902-08-30/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-08-30/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1944,6 +3876,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-09-06_cleveland-gazette",
+    "date": "1902-09-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-09-06/page_01.jpg",
+      "cleveland-gazette/1902/1902-09-06/page_02.jpg",
+      "cleveland-gazette/1902/1902-09-06/page_03.jpg",
+      "cleveland-gazette/1902/1902-09-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-09-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-09-13_broad-ax",
     "date": "1902-09-13",
     "title": "Broad Ax",
@@ -1955,6 +3901,20 @@
       "broad-ax/1902/1902-09-13/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-09-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-09-13_cleveland-gazette",
+    "date": "1902-09-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-09-13/page_01.jpg",
+      "cleveland-gazette/1902/1902-09-13/page_02.jpg",
+      "cleveland-gazette/1902/1902-09-13/page_03.jpg",
+      "cleveland-gazette/1902/1902-09-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-09-13/thumb.jpg",
     "uploaded": true
   },
   {
@@ -1972,6 +3932,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-09-20_cleveland-gazette",
+    "date": "1902-09-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-09-20/page_01.jpg",
+      "cleveland-gazette/1902/1902-09-20/page_02.jpg",
+      "cleveland-gazette/1902/1902-09-20/page_03.jpg",
+      "cleveland-gazette/1902/1902-09-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-09-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-09-27_broad-ax",
     "date": "1902-09-27",
     "title": "Broad Ax",
@@ -1983,6 +3957,20 @@
       "broad-ax/1902/1902-09-27/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-09-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-09-27_cleveland-gazette",
+    "date": "1902-09-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-09-27/page_01.jpg",
+      "cleveland-gazette/1902/1902-09-27/page_02.jpg",
+      "cleveland-gazette/1902/1902-09-27/page_03.jpg",
+      "cleveland-gazette/1902/1902-09-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-09-27/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2000,6 +3988,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-10-04_cleveland-gazette",
+    "date": "1902-10-04",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-10-04/page_01.jpg",
+      "cleveland-gazette/1902/1902-10-04/page_02.jpg",
+      "cleveland-gazette/1902/1902-10-04/page_03.jpg",
+      "cleveland-gazette/1902/1902-10-04/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-10-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-10-11_broad-ax",
     "date": "1902-10-11",
     "title": "Broad Ax",
@@ -2011,6 +4013,20 @@
       "broad-ax/1902/1902-10-11/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-10-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-10-11_cleveland-gazette",
+    "date": "1902-10-11",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-10-11/page_01.jpg",
+      "cleveland-gazette/1902/1902-10-11/page_02.jpg",
+      "cleveland-gazette/1902/1902-10-11/page_03.jpg",
+      "cleveland-gazette/1902/1902-10-11/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-10-11/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2028,6 +4044,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-10-18_cleveland-gazette",
+    "date": "1902-10-18",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-10-18/page_01.jpg",
+      "cleveland-gazette/1902/1902-10-18/page_02.jpg",
+      "cleveland-gazette/1902/1902-10-18/page_03.jpg",
+      "cleveland-gazette/1902/1902-10-18/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-10-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-10-25_broad-ax",
     "date": "1902-10-25",
     "title": "Broad Ax",
@@ -2039,6 +4069,20 @@
       "broad-ax/1902/1902-10-25/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-10-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-10-25_cleveland-gazette",
+    "date": "1902-10-25",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-10-25/page_01.jpg",
+      "cleveland-gazette/1902/1902-10-25/page_02.jpg",
+      "cleveland-gazette/1902/1902-10-25/page_03.jpg",
+      "cleveland-gazette/1902/1902-10-25/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-10-25/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2056,6 +4100,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-11-01_cleveland-gazette",
+    "date": "1902-11-01",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-11-01/page_01.jpg",
+      "cleveland-gazette/1902/1902-11-01/page_02.jpg",
+      "cleveland-gazette/1902/1902-11-01/page_03.jpg",
+      "cleveland-gazette/1902/1902-11-01/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-11-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-11-08_broad-ax",
     "date": "1902-11-08",
     "title": "Broad Ax",
@@ -2067,6 +4125,20 @@
       "broad-ax/1902/1902-11-08/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-11-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-11-08_cleveland-gazette",
+    "date": "1902-11-08",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-11-08/page_01.jpg",
+      "cleveland-gazette/1902/1902-11-08/page_02.jpg",
+      "cleveland-gazette/1902/1902-11-08/page_03.jpg",
+      "cleveland-gazette/1902/1902-11-08/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-11-08/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2084,6 +4156,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-11-15_cleveland-gazette",
+    "date": "1902-11-15",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-11-15/page_01.jpg",
+      "cleveland-gazette/1902/1902-11-15/page_02.jpg",
+      "cleveland-gazette/1902/1902-11-15/page_03.jpg",
+      "cleveland-gazette/1902/1902-11-15/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-11-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-11-22_broad-ax",
     "date": "1902-11-22",
     "title": "Broad Ax",
@@ -2095,6 +4181,20 @@
       "broad-ax/1902/1902-11-22/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-11-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-11-22_cleveland-gazette",
+    "date": "1902-11-22",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-11-22/page_01.jpg",
+      "cleveland-gazette/1902/1902-11-22/page_02.jpg",
+      "cleveland-gazette/1902/1902-11-22/page_03.jpg",
+      "cleveland-gazette/1902/1902-11-22/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-11-22/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2112,6 +4212,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-11-29_cleveland-gazette",
+    "date": "1902-11-29",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-11-29/page_01.jpg",
+      "cleveland-gazette/1902/1902-11-29/page_02.jpg",
+      "cleveland-gazette/1902/1902-11-29/page_03.jpg",
+      "cleveland-gazette/1902/1902-11-29/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-11-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-12-06_broad-ax",
     "date": "1902-12-06",
     "title": "Broad Ax",
@@ -2123,6 +4237,20 @@
       "broad-ax/1902/1902-12-06/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-12-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-12-06_cleveland-gazette",
+    "date": "1902-12-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-12-06/page_01.jpg",
+      "cleveland-gazette/1902/1902-12-06/page_02.jpg",
+      "cleveland-gazette/1902/1902-12-06/page_03.jpg",
+      "cleveland-gazette/1902/1902-12-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-12-06/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2140,6 +4268,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-12-13_cleveland-gazette",
+    "date": "1902-12-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-12-13/page_01.jpg",
+      "cleveland-gazette/1902/1902-12-13/page_02.jpg",
+      "cleveland-gazette/1902/1902-12-13/page_03.jpg",
+      "cleveland-gazette/1902/1902-12-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-12-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1902-12-20_broad-ax",
     "date": "1902-12-20",
     "title": "Broad Ax",
@@ -2151,6 +4293,20 @@
       "broad-ax/1902/1902-12-20/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1902/1902-12-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1902-12-20_cleveland-gazette",
+    "date": "1902-12-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-12-20/page_01.jpg",
+      "cleveland-gazette/1902/1902-12-20/page_02.jpg",
+      "cleveland-gazette/1902/1902-12-20/page_03.jpg",
+      "cleveland-gazette/1902/1902-12-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-12-20/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2172,6 +4328,20 @@
     "uploaded": true
   },
   {
+    "id": "1902-12-27_cleveland-gazette",
+    "date": "1902-12-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1902/1902-12-27/page_01.jpg",
+      "cleveland-gazette/1902/1902-12-27/page_02.jpg",
+      "cleveland-gazette/1902/1902-12-27/page_03.jpg",
+      "cleveland-gazette/1902/1902-12-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1902/1902-12-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-01-03_broad-ax",
     "date": "1903-01-03",
     "title": "Broad Ax",
@@ -2183,6 +4353,20 @@
       "broad-ax/1903/1903-01-03/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-01-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-01-03_cleveland-gazette",
+    "date": "1903-01-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-01-03/page_01.jpg",
+      "cleveland-gazette/1903/1903-01-03/page_02.jpg",
+      "cleveland-gazette/1903/1903-01-03/page_03.jpg",
+      "cleveland-gazette/1903/1903-01-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-01-03/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2200,6 +4384,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-01-10_cleveland-gazette",
+    "date": "1903-01-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-01-10/page_01.jpg",
+      "cleveland-gazette/1903/1903-01-10/page_02.jpg",
+      "cleveland-gazette/1903/1903-01-10/page_03.jpg",
+      "cleveland-gazette/1903/1903-01-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-01-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-01-17_broad-ax",
     "date": "1903-01-17",
     "title": "Broad Ax",
@@ -2211,6 +4409,20 @@
       "broad-ax/1903/1903-01-17/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-01-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-01-17_cleveland-gazette",
+    "date": "1903-01-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-01-17/page_01.jpg",
+      "cleveland-gazette/1903/1903-01-17/page_02.jpg",
+      "cleveland-gazette/1903/1903-01-17/page_03.jpg",
+      "cleveland-gazette/1903/1903-01-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-01-17/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2228,6 +4440,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-01-24_cleveland-gazette",
+    "date": "1903-01-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-01-24/page_01.jpg",
+      "cleveland-gazette/1903/1903-01-24/page_02.jpg",
+      "cleveland-gazette/1903/1903-01-24/page_03.jpg",
+      "cleveland-gazette/1903/1903-01-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-01-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-01-31_broad-ax",
     "date": "1903-01-31",
     "title": "Broad Ax",
@@ -2239,6 +4465,20 @@
       "broad-ax/1903/1903-01-31/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-01-31/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-01-31_cleveland-gazette",
+    "date": "1903-01-31",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-01-31/page_01.jpg",
+      "cleveland-gazette/1903/1903-01-31/page_02.jpg",
+      "cleveland-gazette/1903/1903-01-31/page_03.jpg",
+      "cleveland-gazette/1903/1903-01-31/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-01-31/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2256,6 +4496,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-02-07_cleveland-gazette",
+    "date": "1903-02-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-02-07/page_01.jpg",
+      "cleveland-gazette/1903/1903-02-07/page_02.jpg",
+      "cleveland-gazette/1903/1903-02-07/page_03.jpg",
+      "cleveland-gazette/1903/1903-02-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-02-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-02-14_broad-ax",
     "date": "1903-02-14",
     "title": "Broad Ax",
@@ -2267,6 +4521,20 @@
       "broad-ax/1903/1903-02-14/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-02-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-02-14_cleveland-gazette",
+    "date": "1903-02-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-02-14/page_01.jpg",
+      "cleveland-gazette/1903/1903-02-14/page_02.jpg",
+      "cleveland-gazette/1903/1903-02-14/page_03.jpg",
+      "cleveland-gazette/1903/1903-02-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-02-14/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2284,6 +4552,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-02-21_cleveland-gazette",
+    "date": "1903-02-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-02-21/page_01.jpg",
+      "cleveland-gazette/1903/1903-02-21/page_02.jpg",
+      "cleveland-gazette/1903/1903-02-21/page_03.jpg",
+      "cleveland-gazette/1903/1903-02-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-02-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-02-28_broad-ax",
     "date": "1903-02-28",
     "title": "Broad Ax",
@@ -2295,6 +4577,20 @@
       "broad-ax/1903/1903-02-28/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-02-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-02-28_cleveland-gazette",
+    "date": "1903-02-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-02-28/page_01.jpg",
+      "cleveland-gazette/1903/1903-02-28/page_02.jpg",
+      "cleveland-gazette/1903/1903-02-28/page_03.jpg",
+      "cleveland-gazette/1903/1903-02-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-02-28/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2312,6 +4608,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-03-07_cleveland-gazette",
+    "date": "1903-03-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-03-07/page_01.jpg",
+      "cleveland-gazette/1903/1903-03-07/page_02.jpg",
+      "cleveland-gazette/1903/1903-03-07/page_03.jpg",
+      "cleveland-gazette/1903/1903-03-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-03-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-03-14_broad-ax",
     "date": "1903-03-14",
     "title": "Broad Ax",
@@ -2323,6 +4633,20 @@
       "broad-ax/1903/1903-03-14/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-03-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-03-14_cleveland-gazette",
+    "date": "1903-03-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-03-14/page_01.jpg",
+      "cleveland-gazette/1903/1903-03-14/page_02.jpg",
+      "cleveland-gazette/1903/1903-03-14/page_03.jpg",
+      "cleveland-gazette/1903/1903-03-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-03-14/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2340,6 +4664,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-03-21_cleveland-gazette",
+    "date": "1903-03-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-03-21/page_01.jpg",
+      "cleveland-gazette/1903/1903-03-21/page_02.jpg",
+      "cleveland-gazette/1903/1903-03-21/page_03.jpg",
+      "cleveland-gazette/1903/1903-03-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-03-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-03-28_broad-ax",
     "date": "1903-03-28",
     "title": "Broad Ax",
@@ -2354,6 +4692,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-03-28_cleveland-gazette",
+    "date": "1903-03-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-03-28/page_01.jpg",
+      "cleveland-gazette/1903/1903-03-28/page_02.jpg",
+      "cleveland-gazette/1903/1903-03-28/page_03.jpg",
+      "cleveland-gazette/1903/1903-03-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-03-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-04-04_broad-ax",
     "date": "1903-04-04",
     "title": "Broad Ax",
@@ -2365,6 +4717,20 @@
       "broad-ax/1903/1903-04-04/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-04-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-04-04_cleveland-gazette",
+    "date": "1903-04-04",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-04-04/page_01.jpg",
+      "cleveland-gazette/1903/1903-04-04/page_02.jpg",
+      "cleveland-gazette/1903/1903-04-04/page_03.jpg",
+      "cleveland-gazette/1903/1903-04-04/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-04-04/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2383,6 +4749,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-04-11_cleveland-gazette",
+    "date": "1903-04-11",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-04-11/page_01.jpg",
+      "cleveland-gazette/1903/1903-04-11/page_02.jpg",
+      "cleveland-gazette/1903/1903-04-11/page_03.jpg",
+      "cleveland-gazette/1903/1903-04-11/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-04-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-04-18_broad-ax",
     "date": "1903-04-18",
     "title": "Broad Ax",
@@ -2395,6 +4775,20 @@
       "broad-ax/1903/1903-04-18/page_05.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-04-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-04-18_cleveland-gazette",
+    "date": "1903-04-18",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-04-18/page_01.jpg",
+      "cleveland-gazette/1903/1903-04-18/page_02.jpg",
+      "cleveland-gazette/1903/1903-04-18/page_03.jpg",
+      "cleveland-gazette/1903/1903-04-18/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-04-18/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2412,6 +4806,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-04-25_cleveland-gazette",
+    "date": "1903-04-25",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-04-25/page_01.jpg",
+      "cleveland-gazette/1903/1903-04-25/page_02.jpg",
+      "cleveland-gazette/1903/1903-04-25/page_03.jpg",
+      "cleveland-gazette/1903/1903-04-25/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-04-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-05-02_broad-ax",
     "date": "1903-05-02",
     "title": "Broad Ax",
@@ -2426,6 +4834,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-05-02_cleveland-gazette",
+    "date": "1903-05-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-05-02/page_01.jpg",
+      "cleveland-gazette/1903/1903-05-02/page_02.jpg",
+      "cleveland-gazette/1903/1903-05-02/page_03.jpg",
+      "cleveland-gazette/1903/1903-05-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-05-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-05-09_broad-ax",
     "date": "1903-05-09",
     "title": "Broad Ax",
@@ -2437,6 +4859,20 @@
       "broad-ax/1903/1903-05-09/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-05-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-05-09_cleveland-gazette",
+    "date": "1903-05-09",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-05-09/page_01.jpg",
+      "cleveland-gazette/1903/1903-05-09/page_02.jpg",
+      "cleveland-gazette/1903/1903-05-09/page_03.jpg",
+      "cleveland-gazette/1903/1903-05-09/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-05-09/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2456,6 +4892,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-05-16_cleveland-gazette",
+    "date": "1903-05-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-05-16/page_01.jpg",
+      "cleveland-gazette/1903/1903-05-16/page_02.jpg",
+      "cleveland-gazette/1903/1903-05-16/page_03.jpg",
+      "cleveland-gazette/1903/1903-05-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-05-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-05-23_broad-ax",
     "date": "1903-05-23",
     "title": "Broad Ax",
@@ -2467,6 +4917,20 @@
       "broad-ax/1903/1903-05-23/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-05-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-05-23_cleveland-gazette",
+    "date": "1903-05-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-05-23/page_01.jpg",
+      "cleveland-gazette/1903/1903-05-23/page_02.jpg",
+      "cleveland-gazette/1903/1903-05-23/page_03.jpg",
+      "cleveland-gazette/1903/1903-05-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-05-23/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2484,6 +4948,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-05-30_cleveland-gazette",
+    "date": "1903-05-30",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-05-30/page_01.jpg",
+      "cleveland-gazette/1903/1903-05-30/page_02.jpg",
+      "cleveland-gazette/1903/1903-05-30/page_03.jpg",
+      "cleveland-gazette/1903/1903-05-30/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-05-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-06-06_broad-ax",
     "date": "1903-06-06",
     "title": "Broad Ax",
@@ -2495,6 +4973,20 @@
       "broad-ax/1903/1903-06-06/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-06-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-06-06_cleveland-gazette",
+    "date": "1903-06-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-06-06/page_01.jpg",
+      "cleveland-gazette/1903/1903-06-06/page_02.jpg",
+      "cleveland-gazette/1903/1903-06-06/page_03.jpg",
+      "cleveland-gazette/1903/1903-06-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-06-06/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2512,6 +5004,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-06-13_cleveland-gazette",
+    "date": "1903-06-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-06-13/page_01.jpg",
+      "cleveland-gazette/1903/1903-06-13/page_02.jpg",
+      "cleveland-gazette/1903/1903-06-13/page_03.jpg",
+      "cleveland-gazette/1903/1903-06-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-06-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-06-20_broad-ax",
     "date": "1903-06-20",
     "title": "Broad Ax",
@@ -2523,6 +5029,20 @@
       "broad-ax/1903/1903-06-20/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-06-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-06-20_cleveland-gazette",
+    "date": "1903-06-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-06-20/page_01.jpg",
+      "cleveland-gazette/1903/1903-06-20/page_02.jpg",
+      "cleveland-gazette/1903/1903-06-20/page_03.jpg",
+      "cleveland-gazette/1903/1903-06-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-06-20/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2540,6 +5060,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-06-27_cleveland-gazette",
+    "date": "1903-06-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-06-27/page_01.jpg",
+      "cleveland-gazette/1903/1903-06-27/page_02.jpg",
+      "cleveland-gazette/1903/1903-06-27/page_03.jpg",
+      "cleveland-gazette/1903/1903-06-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-06-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-07-04_broad-ax",
     "date": "1903-07-04",
     "title": "Broad Ax",
@@ -2551,6 +5085,20 @@
       "broad-ax/1903/1903-07-04/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-07-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-07-04_cleveland-gazette",
+    "date": "1903-07-04",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-07-04/page_01.jpg",
+      "cleveland-gazette/1903/1903-07-04/page_02.jpg",
+      "cleveland-gazette/1903/1903-07-04/page_03.jpg",
+      "cleveland-gazette/1903/1903-07-04/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-07-04/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2568,6 +5116,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-07-11_cleveland-gazette",
+    "date": "1903-07-11",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-07-11/page_01.jpg",
+      "cleveland-gazette/1903/1903-07-11/page_02.jpg",
+      "cleveland-gazette/1903/1903-07-11/page_03.jpg",
+      "cleveland-gazette/1903/1903-07-11/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-07-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-07-18_broad-ax",
     "date": "1903-07-18",
     "title": "Broad Ax",
@@ -2579,6 +5141,20 @@
       "broad-ax/1903/1903-07-18/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-07-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-07-18_cleveland-gazette",
+    "date": "1903-07-18",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-07-18/page_01.jpg",
+      "cleveland-gazette/1903/1903-07-18/page_02.jpg",
+      "cleveland-gazette/1903/1903-07-18/page_03.jpg",
+      "cleveland-gazette/1903/1903-07-18/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-07-18/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2596,6 +5172,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-07-25_cleveland-gazette",
+    "date": "1903-07-25",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-07-25/page_01.jpg",
+      "cleveland-gazette/1903/1903-07-25/page_02.jpg",
+      "cleveland-gazette/1903/1903-07-25/page_03.jpg",
+      "cleveland-gazette/1903/1903-07-25/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-07-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-08-01_broad-ax",
     "date": "1903-08-01",
     "title": "Broad Ax",
@@ -2607,6 +5197,20 @@
       "broad-ax/1903/1903-08-01/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-08-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-08-01_cleveland-gazette",
+    "date": "1903-08-01",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-08-01/page_01.jpg",
+      "cleveland-gazette/1903/1903-08-01/page_02.jpg",
+      "cleveland-gazette/1903/1903-08-01/page_03.jpg",
+      "cleveland-gazette/1903/1903-08-01/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-08-01/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2624,6 +5228,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-08-08_cleveland-gazette",
+    "date": "1903-08-08",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-08-08/page_01.jpg",
+      "cleveland-gazette/1903/1903-08-08/page_02.jpg",
+      "cleveland-gazette/1903/1903-08-08/page_03.jpg",
+      "cleveland-gazette/1903/1903-08-08/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-08-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-08-15_broad-ax",
     "date": "1903-08-15",
     "title": "Broad Ax",
@@ -2635,6 +5253,20 @@
       "broad-ax/1903/1903-08-15/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-08-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-08-15_cleveland-gazette",
+    "date": "1903-08-15",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-08-15/page_01.jpg",
+      "cleveland-gazette/1903/1903-08-15/page_02.jpg",
+      "cleveland-gazette/1903/1903-08-15/page_03.jpg",
+      "cleveland-gazette/1903/1903-08-15/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-08-15/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2652,6 +5284,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-08-22_cleveland-gazette",
+    "date": "1903-08-22",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-08-22/page_01.jpg",
+      "cleveland-gazette/1903/1903-08-22/page_02.jpg",
+      "cleveland-gazette/1903/1903-08-22/page_03.jpg",
+      "cleveland-gazette/1903/1903-08-22/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-08-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-08-29_broad-ax",
     "date": "1903-08-29",
     "title": "Broad Ax",
@@ -2663,6 +5309,20 @@
       "broad-ax/1903/1903-08-29/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-08-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-08-29_cleveland-gazette",
+    "date": "1903-08-29",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-08-29/page_01.jpg",
+      "cleveland-gazette/1903/1903-08-29/page_02.jpg",
+      "cleveland-gazette/1903/1903-08-29/page_03.jpg",
+      "cleveland-gazette/1903/1903-08-29/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-08-29/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2680,6 +5340,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-09-05_cleveland-gazette",
+    "date": "1903-09-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-09-05/page_01.jpg",
+      "cleveland-gazette/1903/1903-09-05/page_02.jpg",
+      "cleveland-gazette/1903/1903-09-05/page_03.jpg",
+      "cleveland-gazette/1903/1903-09-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-09-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-09-12_broad-ax",
     "date": "1903-09-12",
     "title": "Broad Ax",
@@ -2691,6 +5365,20 @@
       "broad-ax/1903/1903-09-12/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-09-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-09-12_cleveland-gazette",
+    "date": "1903-09-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-09-12/page_01.jpg",
+      "cleveland-gazette/1903/1903-09-12/page_02.jpg",
+      "cleveland-gazette/1903/1903-09-12/page_03.jpg",
+      "cleveland-gazette/1903/1903-09-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-09-12/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2708,6 +5396,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-09-19_cleveland-gazette",
+    "date": "1903-09-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-09-19/page_01.jpg",
+      "cleveland-gazette/1903/1903-09-19/page_02.jpg",
+      "cleveland-gazette/1903/1903-09-19/page_03.jpg",
+      "cleveland-gazette/1903/1903-09-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-09-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-09-26_broad-ax",
     "date": "1903-09-26",
     "title": "Broad Ax",
@@ -2719,6 +5421,20 @@
       "broad-ax/1903/1903-09-26/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-09-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-09-26_cleveland-gazette",
+    "date": "1903-09-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-09-26/page_01.jpg",
+      "cleveland-gazette/1903/1903-09-26/page_02.jpg",
+      "cleveland-gazette/1903/1903-09-26/page_03.jpg",
+      "cleveland-gazette/1903/1903-09-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-09-26/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2736,6 +5452,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-10-03_cleveland-gazette",
+    "date": "1903-10-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-10-03/page_01.jpg",
+      "cleveland-gazette/1903/1903-10-03/page_02.jpg",
+      "cleveland-gazette/1903/1903-10-03/page_03.jpg",
+      "cleveland-gazette/1903/1903-10-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-10-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-10-10_broad-ax",
     "date": "1903-10-10",
     "title": "Broad Ax",
@@ -2747,6 +5477,20 @@
       "broad-ax/1903/1903-10-10/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-10-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-10-10_cleveland-gazette",
+    "date": "1903-10-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-10-10/page_01.jpg",
+      "cleveland-gazette/1903/1903-10-10/page_02.jpg",
+      "cleveland-gazette/1903/1903-10-10/page_03.jpg",
+      "cleveland-gazette/1903/1903-10-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-10-10/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2764,6 +5508,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-10-17_cleveland-gazette",
+    "date": "1903-10-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-10-17/page_01.jpg",
+      "cleveland-gazette/1903/1903-10-17/page_02.jpg",
+      "cleveland-gazette/1903/1903-10-17/page_03.jpg",
+      "cleveland-gazette/1903/1903-10-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-10-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-10-24_broad-ax",
     "date": "1903-10-24",
     "title": "Broad Ax",
@@ -2775,6 +5533,20 @@
       "broad-ax/1903/1903-10-24/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-10-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-10-24_cleveland-gazette",
+    "date": "1903-10-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-10-24/page_01.jpg",
+      "cleveland-gazette/1903/1903-10-24/page_02.jpg",
+      "cleveland-gazette/1903/1903-10-24/page_03.jpg",
+      "cleveland-gazette/1903/1903-10-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-10-24/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2792,6 +5564,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-10-31_cleveland-gazette",
+    "date": "1903-10-31",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-10-31/page_01.jpg",
+      "cleveland-gazette/1903/1903-10-31/page_02.jpg",
+      "cleveland-gazette/1903/1903-10-31/page_03.jpg",
+      "cleveland-gazette/1903/1903-10-31/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-10-31/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-11-07_broad-ax",
     "date": "1903-11-07",
     "title": "Broad Ax",
@@ -2803,6 +5589,20 @@
       "broad-ax/1903/1903-11-07/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-11-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-11-07_cleveland-gazette",
+    "date": "1903-11-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-11-07/page_01.jpg",
+      "cleveland-gazette/1903/1903-11-07/page_02.jpg",
+      "cleveland-gazette/1903/1903-11-07/page_03.jpg",
+      "cleveland-gazette/1903/1903-11-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-11-07/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2820,6 +5620,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-11-14_cleveland-gazette",
+    "date": "1903-11-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-11-14/page_01.jpg",
+      "cleveland-gazette/1903/1903-11-14/page_02.jpg",
+      "cleveland-gazette/1903/1903-11-14/page_03.jpg",
+      "cleveland-gazette/1903/1903-11-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-11-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-11-21_broad-ax",
     "date": "1903-11-21",
     "title": "Broad Ax",
@@ -2831,6 +5645,20 @@
       "broad-ax/1903/1903-11-21/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-11-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-11-21_cleveland-gazette",
+    "date": "1903-11-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-11-21/page_01.jpg",
+      "cleveland-gazette/1903/1903-11-21/page_02.jpg",
+      "cleveland-gazette/1903/1903-11-21/page_03.jpg",
+      "cleveland-gazette/1903/1903-11-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-11-21/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2848,6 +5676,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-11-28_cleveland-gazette",
+    "date": "1903-11-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-11-28/page_01.jpg",
+      "cleveland-gazette/1903/1903-11-28/page_02.jpg",
+      "cleveland-gazette/1903/1903-11-28/page_03.jpg",
+      "cleveland-gazette/1903/1903-11-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-11-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-12-05_broad-ax",
     "date": "1903-12-05",
     "title": "Broad Ax",
@@ -2859,6 +5701,20 @@
       "broad-ax/1903/1903-12-05/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-12-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-12-05_cleveland-gazette",
+    "date": "1903-12-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-12-05/page_01.jpg",
+      "cleveland-gazette/1903/1903-12-05/page_02.jpg",
+      "cleveland-gazette/1903/1903-12-05/page_03.jpg",
+      "cleveland-gazette/1903/1903-12-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-12-05/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2876,6 +5732,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-12-12_cleveland-gazette",
+    "date": "1903-12-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-12-12/page_01.jpg",
+      "cleveland-gazette/1903/1903-12-12/page_02.jpg",
+      "cleveland-gazette/1903/1903-12-12/page_03.jpg",
+      "cleveland-gazette/1903/1903-12-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-12-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-12-19_broad-ax",
     "date": "1903-12-19",
     "title": "Broad Ax",
@@ -2890,6 +5760,20 @@
     "uploaded": true
   },
   {
+    "id": "1903-12-19_cleveland-gazette",
+    "date": "1903-12-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-12-19/page_01.jpg",
+      "cleveland-gazette/1903/1903-12-19/page_02.jpg",
+      "cleveland-gazette/1903/1903-12-19/page_03.jpg",
+      "cleveland-gazette/1903/1903-12-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-12-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1903-12-26_broad-ax",
     "date": "1903-12-26",
     "title": "Broad Ax",
@@ -2901,6 +5785,20 @@
       "broad-ax/1903/1903-12-26/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1903/1903-12-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1903-12-26_cleveland-gazette",
+    "date": "1903-12-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1903/1903-12-26/page_01.jpg",
+      "cleveland-gazette/1903/1903-12-26/page_02.jpg",
+      "cleveland-gazette/1903/1903-12-26/page_03.jpg",
+      "cleveland-gazette/1903/1903-12-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1903/1903-12-26/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2922,6 +5820,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-01-02_cleveland-gazette",
+    "date": "1904-01-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-01-02/page_01.jpg",
+      "cleveland-gazette/1904/1904-01-02/page_02.jpg",
+      "cleveland-gazette/1904/1904-01-02/page_03.jpg",
+      "cleveland-gazette/1904/1904-01-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-01-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-01-09_broad-ax",
     "date": "1904-01-09",
     "title": "Broad Ax",
@@ -2933,6 +5845,20 @@
       "broad-ax/1904/1904-01-09/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-01-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-01-09_cleveland-gazette",
+    "date": "1904-01-09",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-01-09/page_01.jpg",
+      "cleveland-gazette/1904/1904-01-09/page_02.jpg",
+      "cleveland-gazette/1904/1904-01-09/page_03.jpg",
+      "cleveland-gazette/1904/1904-01-09/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-01-09/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2950,6 +5876,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-01-16_cleveland-gazette",
+    "date": "1904-01-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-01-16/page_01.jpg",
+      "cleveland-gazette/1904/1904-01-16/page_02.jpg",
+      "cleveland-gazette/1904/1904-01-16/page_03.jpg",
+      "cleveland-gazette/1904/1904-01-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-01-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-01-23_broad-ax",
     "date": "1904-01-23",
     "title": "Broad Ax",
@@ -2961,6 +5901,20 @@
       "broad-ax/1904/1904-01-23/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-01-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-01-23_cleveland-gazette",
+    "date": "1904-01-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-01-23/page_01.jpg",
+      "cleveland-gazette/1904/1904-01-23/page_02.jpg",
+      "cleveland-gazette/1904/1904-01-23/page_03.jpg",
+      "cleveland-gazette/1904/1904-01-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-01-23/thumb.jpg",
     "uploaded": true
   },
   {
@@ -2978,6 +5932,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-01-30_cleveland-gazette",
+    "date": "1904-01-30",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-01-30/page_01.jpg",
+      "cleveland-gazette/1904/1904-01-30/page_02.jpg",
+      "cleveland-gazette/1904/1904-01-30/page_03.jpg",
+      "cleveland-gazette/1904/1904-01-30/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-01-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-02-06_broad-ax",
     "date": "1904-02-06",
     "title": "Broad Ax",
@@ -2989,6 +5957,20 @@
       "broad-ax/1904/1904-02-06/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-02-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-02-06_cleveland-gazette",
+    "date": "1904-02-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-02-06/page_01.jpg",
+      "cleveland-gazette/1904/1904-02-06/page_02.jpg",
+      "cleveland-gazette/1904/1904-02-06/page_03.jpg",
+      "cleveland-gazette/1904/1904-02-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-02-06/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3006,6 +5988,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-02-13_cleveland-gazette",
+    "date": "1904-02-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-02-13/page_01.jpg",
+      "cleveland-gazette/1904/1904-02-13/page_02.jpg",
+      "cleveland-gazette/1904/1904-02-13/page_03.jpg",
+      "cleveland-gazette/1904/1904-02-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-02-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-02-20_broad-ax",
     "date": "1904-02-20",
     "title": "Broad Ax",
@@ -3017,6 +6013,20 @@
       "broad-ax/1904/1904-02-20/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-02-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-02-20_cleveland-gazette",
+    "date": "1904-02-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-02-20/page_01.jpg",
+      "cleveland-gazette/1904/1904-02-20/page_02.jpg",
+      "cleveland-gazette/1904/1904-02-20/page_03.jpg",
+      "cleveland-gazette/1904/1904-02-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-02-20/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3034,6 +6044,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-02-27_cleveland-gazette",
+    "date": "1904-02-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-02-27/page_01.jpg",
+      "cleveland-gazette/1904/1904-02-27/page_02.jpg",
+      "cleveland-gazette/1904/1904-02-27/page_03.jpg",
+      "cleveland-gazette/1904/1904-02-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-02-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-03-05_broad-ax",
     "date": "1904-03-05",
     "title": "Broad Ax",
@@ -3045,6 +6069,20 @@
       "broad-ax/1904/1904-03-05/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-03-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-03-05_cleveland-gazette",
+    "date": "1904-03-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-03-05/page_01.jpg",
+      "cleveland-gazette/1904/1904-03-05/page_02.jpg",
+      "cleveland-gazette/1904/1904-03-05/page_03.jpg",
+      "cleveland-gazette/1904/1904-03-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-03-05/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3062,6 +6100,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-03-12_cleveland-gazette",
+    "date": "1904-03-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-03-12/page_01.jpg",
+      "cleveland-gazette/1904/1904-03-12/page_02.jpg",
+      "cleveland-gazette/1904/1904-03-12/page_03.jpg",
+      "cleveland-gazette/1904/1904-03-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-03-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-03-19_broad-ax",
     "date": "1904-03-19",
     "title": "Broad Ax",
@@ -3073,6 +6125,20 @@
       "broad-ax/1904/1904-03-19/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-03-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-03-19_cleveland-gazette",
+    "date": "1904-03-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-03-19/page_01.jpg",
+      "cleveland-gazette/1904/1904-03-19/page_02.jpg",
+      "cleveland-gazette/1904/1904-03-19/page_03.jpg",
+      "cleveland-gazette/1904/1904-03-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-03-19/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3090,6 +6156,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-03-26_cleveland-gazette",
+    "date": "1904-03-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-03-26/page_01.jpg",
+      "cleveland-gazette/1904/1904-03-26/page_02.jpg",
+      "cleveland-gazette/1904/1904-03-26/page_03.jpg",
+      "cleveland-gazette/1904/1904-03-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-03-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-04-02_broad-ax",
     "date": "1904-04-02",
     "title": "Broad Ax",
@@ -3102,6 +6182,20 @@
       "broad-ax/1904/1904-04-02/page_05.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-04-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-04-02_cleveland-gazette",
+    "date": "1904-04-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-04-02/page_01.jpg",
+      "cleveland-gazette/1904/1904-04-02/page_02.jpg",
+      "cleveland-gazette/1904/1904-04-02/page_03.jpg",
+      "cleveland-gazette/1904/1904-04-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-04-02/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3121,6 +6215,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-04-09_cleveland-gazette",
+    "date": "1904-04-09",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-04-09/page_01.jpg",
+      "cleveland-gazette/1904/1904-04-09/page_02.jpg",
+      "cleveland-gazette/1904/1904-04-09/page_03.jpg",
+      "cleveland-gazette/1904/1904-04-09/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-04-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-04-16_broad-ax",
     "date": "1904-04-16",
     "title": "Broad Ax",
@@ -3132,6 +6240,20 @@
       "broad-ax/1904/1904-04-16/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-04-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-04-16_cleveland-gazette",
+    "date": "1904-04-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-04-16/page_01.jpg",
+      "cleveland-gazette/1904/1904-04-16/page_02.jpg",
+      "cleveland-gazette/1904/1904-04-16/page_03.jpg",
+      "cleveland-gazette/1904/1904-04-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-04-16/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3150,6 +6272,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-04-23_cleveland-gazette",
+    "date": "1904-04-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-04-23/page_01.jpg",
+      "cleveland-gazette/1904/1904-04-23/page_02.jpg",
+      "cleveland-gazette/1904/1904-04-23/page_03.jpg",
+      "cleveland-gazette/1904/1904-04-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-04-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-04-30_broad-ax",
     "date": "1904-04-30",
     "title": "Broad Ax",
@@ -3161,6 +6297,20 @@
       "broad-ax/1904/1904-04-30/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-04-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-04-30_cleveland-gazette",
+    "date": "1904-04-30",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-04-30/page_01.jpg",
+      "cleveland-gazette/1904/1904-04-30/page_02.jpg",
+      "cleveland-gazette/1904/1904-04-30/page_03.jpg",
+      "cleveland-gazette/1904/1904-04-30/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-04-30/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3178,6 +6328,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-05-07_cleveland-gazette",
+    "date": "1904-05-07",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-05-07/page_01.jpg",
+      "cleveland-gazette/1904/1904-05-07/page_02.jpg",
+      "cleveland-gazette/1904/1904-05-07/page_03.jpg",
+      "cleveland-gazette/1904/1904-05-07/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-05-07/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-05-14_broad-ax",
     "date": "1904-05-14",
     "title": "Broad Ax",
@@ -3192,6 +6356,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-05-14_cleveland-gazette",
+    "date": "1904-05-14",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-05-14/page_01.jpg",
+      "cleveland-gazette/1904/1904-05-14/page_02.jpg",
+      "cleveland-gazette/1904/1904-05-14/page_03.jpg",
+      "cleveland-gazette/1904/1904-05-14/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-05-14/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-05-21_broad-ax",
     "date": "1904-05-21",
     "title": "Broad Ax",
@@ -3203,6 +6381,20 @@
       "broad-ax/1904/1904-05-21/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-05-21/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-05-21_cleveland-gazette",
+    "date": "1904-05-21",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-05-21/page_01.jpg",
+      "cleveland-gazette/1904/1904-05-21/page_02.jpg",
+      "cleveland-gazette/1904/1904-05-21/page_03.jpg",
+      "cleveland-gazette/1904/1904-05-21/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-05-21/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3221,6 +6413,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-05-28_cleveland-gazette",
+    "date": "1904-05-28",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-05-28/page_01.jpg",
+      "cleveland-gazette/1904/1904-05-28/page_02.jpg",
+      "cleveland-gazette/1904/1904-05-28/page_03.jpg",
+      "cleveland-gazette/1904/1904-05-28/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-05-28/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-06-04_broad-ax",
     "date": "1904-06-04",
     "title": "Broad Ax",
@@ -3233,6 +6439,20 @@
       "broad-ax/1904/1904-06-04/page_05.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-06-04/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-06-04_cleveland-gazette",
+    "date": "1904-06-04",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-06-04/page_01.jpg",
+      "cleveland-gazette/1904/1904-06-04/page_02.jpg",
+      "cleveland-gazette/1904/1904-06-04/page_03.jpg",
+      "cleveland-gazette/1904/1904-06-04/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-06-04/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3250,6 +6470,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-06-11_cleveland-gazette",
+    "date": "1904-06-11",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-06-11/page_01.jpg",
+      "cleveland-gazette/1904/1904-06-11/page_02.jpg",
+      "cleveland-gazette/1904/1904-06-11/page_03.jpg",
+      "cleveland-gazette/1904/1904-06-11/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-06-11/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-06-18_broad-ax",
     "date": "1904-06-18",
     "title": "Broad Ax",
@@ -3261,6 +6495,20 @@
       "broad-ax/1904/1904-06-18/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-06-18/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-06-18_cleveland-gazette",
+    "date": "1904-06-18",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-06-18/page_01.jpg",
+      "cleveland-gazette/1904/1904-06-18/page_02.jpg",
+      "cleveland-gazette/1904/1904-06-18/page_03.jpg",
+      "cleveland-gazette/1904/1904-06-18/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-06-18/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3278,6 +6526,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-06-25_cleveland-gazette",
+    "date": "1904-06-25",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-06-25/page_01.jpg",
+      "cleveland-gazette/1904/1904-06-25/page_02.jpg",
+      "cleveland-gazette/1904/1904-06-25/page_03.jpg",
+      "cleveland-gazette/1904/1904-06-25/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-06-25/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-07-02_broad-ax",
     "date": "1904-07-02",
     "title": "Broad Ax",
@@ -3289,6 +6551,20 @@
       "broad-ax/1904/1904-07-02/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-07-02/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-07-02_cleveland-gazette",
+    "date": "1904-07-02",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-07-02/page_01.jpg",
+      "cleveland-gazette/1904/1904-07-02/page_02.jpg",
+      "cleveland-gazette/1904/1904-07-02/page_03.jpg",
+      "cleveland-gazette/1904/1904-07-02/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-07-02/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3306,6 +6582,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-07-09_cleveland-gazette",
+    "date": "1904-07-09",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-07-09/page_01.jpg",
+      "cleveland-gazette/1904/1904-07-09/page_02.jpg",
+      "cleveland-gazette/1904/1904-07-09/page_03.jpg",
+      "cleveland-gazette/1904/1904-07-09/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-07-09/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-07-16_broad-ax",
     "date": "1904-07-16",
     "title": "Broad Ax",
@@ -3317,6 +6607,20 @@
       "broad-ax/1904/1904-07-16/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-07-16/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-07-16_cleveland-gazette",
+    "date": "1904-07-16",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-07-16/page_01.jpg",
+      "cleveland-gazette/1904/1904-07-16/page_02.jpg",
+      "cleveland-gazette/1904/1904-07-16/page_03.jpg",
+      "cleveland-gazette/1904/1904-07-16/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-07-16/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3334,6 +6638,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-07-23_cleveland-gazette",
+    "date": "1904-07-23",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-07-23/page_01.jpg",
+      "cleveland-gazette/1904/1904-07-23/page_02.jpg",
+      "cleveland-gazette/1904/1904-07-23/page_03.jpg",
+      "cleveland-gazette/1904/1904-07-23/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-07-23/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-07-30_broad-ax",
     "date": "1904-07-30",
     "title": "Broad Ax",
@@ -3345,6 +6663,20 @@
       "broad-ax/1904/1904-07-30/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-07-30/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-07-30_cleveland-gazette",
+    "date": "1904-07-30",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-07-30/page_01.jpg",
+      "cleveland-gazette/1904/1904-07-30/page_02.jpg",
+      "cleveland-gazette/1904/1904-07-30/page_03.jpg",
+      "cleveland-gazette/1904/1904-07-30/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-07-30/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3362,6 +6694,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-08-06_cleveland-gazette",
+    "date": "1904-08-06",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-08-06/page_01.jpg",
+      "cleveland-gazette/1904/1904-08-06/page_02.jpg",
+      "cleveland-gazette/1904/1904-08-06/page_03.jpg",
+      "cleveland-gazette/1904/1904-08-06/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-08-06/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-08-13_broad-ax",
     "date": "1904-08-13",
     "title": "Broad Ax",
@@ -3373,6 +6719,20 @@
       "broad-ax/1904/1904-08-13/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-08-13/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-08-13_cleveland-gazette",
+    "date": "1904-08-13",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-08-13/page_01.jpg",
+      "cleveland-gazette/1904/1904-08-13/page_02.jpg",
+      "cleveland-gazette/1904/1904-08-13/page_03.jpg",
+      "cleveland-gazette/1904/1904-08-13/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-08-13/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3390,6 +6750,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-08-20_cleveland-gazette",
+    "date": "1904-08-20",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-08-20/page_01.jpg",
+      "cleveland-gazette/1904/1904-08-20/page_02.jpg",
+      "cleveland-gazette/1904/1904-08-20/page_03.jpg",
+      "cleveland-gazette/1904/1904-08-20/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-08-20/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-08-27_broad-ax",
     "date": "1904-08-27",
     "title": "Broad Ax",
@@ -3401,6 +6775,20 @@
       "broad-ax/1904/1904-08-27/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-08-27/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-08-27_cleveland-gazette",
+    "date": "1904-08-27",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-08-27/page_01.jpg",
+      "cleveland-gazette/1904/1904-08-27/page_02.jpg",
+      "cleveland-gazette/1904/1904-08-27/page_03.jpg",
+      "cleveland-gazette/1904/1904-08-27/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-08-27/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3418,6 +6806,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-09-03_cleveland-gazette",
+    "date": "1904-09-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-09-03/page_01.jpg",
+      "cleveland-gazette/1904/1904-09-03/page_02.jpg",
+      "cleveland-gazette/1904/1904-09-03/page_03.jpg",
+      "cleveland-gazette/1904/1904-09-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-09-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-09-10_broad-ax",
     "date": "1904-09-10",
     "title": "Broad Ax",
@@ -3429,6 +6831,20 @@
       "broad-ax/1904/1904-09-10/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-09-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-09-10_cleveland-gazette",
+    "date": "1904-09-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-09-10/page_01.jpg",
+      "cleveland-gazette/1904/1904-09-10/page_02.jpg",
+      "cleveland-gazette/1904/1904-09-10/page_03.jpg",
+      "cleveland-gazette/1904/1904-09-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-09-10/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3446,6 +6862,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-09-17_cleveland-gazette",
+    "date": "1904-09-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-09-17/page_01.jpg",
+      "cleveland-gazette/1904/1904-09-17/page_02.jpg",
+      "cleveland-gazette/1904/1904-09-17/page_03.jpg",
+      "cleveland-gazette/1904/1904-09-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-09-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-09-24_broad-ax",
     "date": "1904-09-24",
     "title": "Broad Ax",
@@ -3457,6 +6887,20 @@
       "broad-ax/1904/1904-09-24/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-09-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-09-24_cleveland-gazette",
+    "date": "1904-09-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-09-24/page_01.jpg",
+      "cleveland-gazette/1904/1904-09-24/page_02.jpg",
+      "cleveland-gazette/1904/1904-09-24/page_03.jpg",
+      "cleveland-gazette/1904/1904-09-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-09-24/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3474,6 +6918,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-10-01_cleveland-gazette",
+    "date": "1904-10-01",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-10-01/page_01.jpg",
+      "cleveland-gazette/1904/1904-10-01/page_02.jpg",
+      "cleveland-gazette/1904/1904-10-01/page_03.jpg",
+      "cleveland-gazette/1904/1904-10-01/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-10-01/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-10-08_broad-ax",
     "date": "1904-10-08",
     "title": "Broad Ax",
@@ -3485,6 +6943,20 @@
       "broad-ax/1904/1904-10-08/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-10-08/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-10-08_cleveland-gazette",
+    "date": "1904-10-08",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-10-08/page_01.jpg",
+      "cleveland-gazette/1904/1904-10-08/page_02.jpg",
+      "cleveland-gazette/1904/1904-10-08/page_03.jpg",
+      "cleveland-gazette/1904/1904-10-08/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-10-08/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3504,6 +6976,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-10-15_cleveland-gazette",
+    "date": "1904-10-15",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-10-15/page_01.jpg",
+      "cleveland-gazette/1904/1904-10-15/page_02.jpg",
+      "cleveland-gazette/1904/1904-10-15/page_03.jpg",
+      "cleveland-gazette/1904/1904-10-15/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-10-15/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-10-22_broad-ax",
     "date": "1904-10-22",
     "title": "Broad Ax",
@@ -3517,6 +7003,20 @@
       "broad-ax/1904/1904-10-22/page_06.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-10-22/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-10-22_cleveland-gazette",
+    "date": "1904-10-22",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-10-22/page_01.jpg",
+      "cleveland-gazette/1904/1904-10-22/page_02.jpg",
+      "cleveland-gazette/1904/1904-10-22/page_03.jpg",
+      "cleveland-gazette/1904/1904-10-22/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-10-22/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3534,6 +7034,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-10-29_cleveland-gazette",
+    "date": "1904-10-29",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-10-29/page_01.jpg",
+      "cleveland-gazette/1904/1904-10-29/page_02.jpg",
+      "cleveland-gazette/1904/1904-10-29/page_03.jpg",
+      "cleveland-gazette/1904/1904-10-29/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-10-29/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-11-05_broad-ax",
     "date": "1904-11-05",
     "title": "Broad Ax",
@@ -3545,6 +7059,20 @@
       "broad-ax/1904/1904-11-05/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-11-05/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-11-05_cleveland-gazette",
+    "date": "1904-11-05",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-11-05/page_01.jpg",
+      "cleveland-gazette/1904/1904-11-05/page_02.jpg",
+      "cleveland-gazette/1904/1904-11-05/page_03.jpg",
+      "cleveland-gazette/1904/1904-11-05/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-11-05/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3562,6 +7090,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-11-12_cleveland-gazette",
+    "date": "1904-11-12",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-11-12/page_01.jpg",
+      "cleveland-gazette/1904/1904-11-12/page_02.jpg",
+      "cleveland-gazette/1904/1904-11-12/page_03.jpg",
+      "cleveland-gazette/1904/1904-11-12/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-11-12/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-11-19_broad-ax",
     "date": "1904-11-19",
     "title": "Broad Ax",
@@ -3573,6 +7115,20 @@
       "broad-ax/1904/1904-11-19/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-11-19/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-11-19_cleveland-gazette",
+    "date": "1904-11-19",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-11-19/page_01.jpg",
+      "cleveland-gazette/1904/1904-11-19/page_02.jpg",
+      "cleveland-gazette/1904/1904-11-19/page_03.jpg",
+      "cleveland-gazette/1904/1904-11-19/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-11-19/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3590,6 +7146,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-11-26_cleveland-gazette",
+    "date": "1904-11-26",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-11-26/page_01.jpg",
+      "cleveland-gazette/1904/1904-11-26/page_02.jpg",
+      "cleveland-gazette/1904/1904-11-26/page_03.jpg",
+      "cleveland-gazette/1904/1904-11-26/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-11-26/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-12-03_broad-ax",
     "date": "1904-12-03",
     "title": "Broad Ax",
@@ -3601,6 +7171,20 @@
       "broad-ax/1904/1904-12-03/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-12-03/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-12-03_cleveland-gazette",
+    "date": "1904-12-03",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-12-03/page_01.jpg",
+      "cleveland-gazette/1904/1904-12-03/page_02.jpg",
+      "cleveland-gazette/1904/1904-12-03/page_03.jpg",
+      "cleveland-gazette/1904/1904-12-03/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-12-03/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3618,6 +7202,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-12-10_cleveland-gazette",
+    "date": "1904-12-10",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-12-10/page_01.jpg",
+      "cleveland-gazette/1904/1904-12-10/page_02.jpg",
+      "cleveland-gazette/1904/1904-12-10/page_03.jpg",
+      "cleveland-gazette/1904/1904-12-10/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-12-10/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-12-17_broad-ax",
     "date": "1904-12-17",
     "title": "Broad Ax",
@@ -3632,6 +7230,20 @@
     "uploaded": true
   },
   {
+    "id": "1904-12-17_cleveland-gazette",
+    "date": "1904-12-17",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-12-17/page_01.jpg",
+      "cleveland-gazette/1904/1904-12-17/page_02.jpg",
+      "cleveland-gazette/1904/1904-12-17/page_03.jpg",
+      "cleveland-gazette/1904/1904-12-17/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-12-17/thumb.jpg",
+    "uploaded": true
+  },
+  {
     "id": "1904-12-24_broad-ax",
     "date": "1904-12-24",
     "title": "Broad Ax",
@@ -3643,6 +7255,20 @@
       "broad-ax/1904/1904-12-24/page_04.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-12-24/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-12-24_cleveland-gazette",
+    "date": "1904-12-24",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-12-24/page_01.jpg",
+      "cleveland-gazette/1904/1904-12-24/page_02.jpg",
+      "cleveland-gazette/1904/1904-12-24/page_03.jpg",
+      "cleveland-gazette/1904/1904-12-24/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-12-24/thumb.jpg",
     "uploaded": true
   },
   {
@@ -3661,6 +7287,20 @@
       "broad-ax/1904/1904-12-31/page_08.jpg"
     ],
     "issue_thumb": "broad-ax/1904/1904-12-31/thumb.jpg",
+    "uploaded": true
+  },
+  {
+    "id": "1904-12-31_cleveland-gazette",
+    "date": "1904-12-31",
+    "title": "Cleveland Gazette",
+    "pages": 4,
+    "page_paths": [
+      "cleveland-gazette/1904/1904-12-31/page_01.jpg",
+      "cleveland-gazette/1904/1904-12-31/page_02.jpg",
+      "cleveland-gazette/1904/1904-12-31/page_03.jpg",
+      "cleveland-gazette/1904/1904-12-31/page_04.jpg"
+    ],
+    "issue_thumb": "cleveland-gazette/1904/1904-12-31/thumb.jpg",
     "uploaded": true
   },
   {
