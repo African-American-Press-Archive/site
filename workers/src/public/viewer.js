@@ -436,11 +436,12 @@
     var issueDate = parts[2] || '';
     var pageStr = ('0' + page.num).slice(-2);
     var filename = paperSlug + '_' + issueDate + '_' + pageStr + '.' + ext;
+    // Use same-origin download proxy so Content-Disposition triggers a save
+    var r2Path = url.replace('https://pages.dangerouspress.org/', '');
+    var downloadUrl = '/download/' + r2Path + '?fn=' + encodeURIComponent(filename);
     var a = document.createElement('a');
-    a.href = url;
+    a.href = downloadUrl;
     a.download = filename;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

@@ -18,6 +18,21 @@ app.route('/about', about);
 app.route('/search', search);
 app.route('/', sitemap);
 
+// Serve image download with Content-Disposition via R2 binding (no extra external fetch)
+app.get('/download/*', async (c) => {
+  const path = c.req.path.replace('/download/', '');
+  const obj = await c.env.R2.get(path);
+  if (!obj) return c.text('not found', 404);
+  const filename = c.req.query('fn') || 'page.jpg';
+  const headers: Record<string, string> = {
+    'Content-Type': obj.httpMetadata?.contentType || 'image/jpeg',
+    'Content-Disposition': `attachment; filename="${filename}"`,
+    'Cache-Control': 'public, max-age=86400',
+  };
+  if (obj.size) headers['Content-Length'] = String(obj.size);
+  return new Response(obj.body, { headers });
+});
+
 // Proxy OCR JSON from R2 (avoids CORS issues when viewer fetches from workers.dev)
 app.get('/ocr/*', async (c) => {
   const path = c.req.path.replace('/ocr/', '');
