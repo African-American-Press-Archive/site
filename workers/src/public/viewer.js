@@ -25,7 +25,7 @@
 
   // ── Viewer state ─────────────────────────────────────────────────────────
   const ZOOM_MIN = 1;
-  const ZOOM_MAX = 3;
+  const ZOOM_MAX = 6;
   const ZOOM_STEP = 1.25;
   const PRELOAD_AHEAD = 2;
 
@@ -294,7 +294,7 @@
   }
 
   function zoomToPoint(e) {
-    var targetZoom = 2;
+    var targetZoom = Math.max(2, state.zoomLevel);
     var rect = imgContainer.getBoundingClientRect();
     var clickXRatio = (e.clientX - rect.left) / rect.width;
     var clickYRatio = (e.clientY - rect.top) / rect.height;
@@ -312,19 +312,32 @@
   }
 
   function zoomToRegion(bbox, imgW, imgH) {
-    var targetZoom = 2;
-    var rect = imgEl.getBoundingClientRect();
-    // Center horizontally on region
-    var cx = ((bbox[0] + bbox[2]) / 2) / imgW;
-    // Vertically: place the top of the region about 20% from viewport top
-    // so the start of the text is always visible even for tall regions
-    var topY = bbox[1] / imgH;
-    var cy = topY + 0.1; // bias slightly below top edge
+    var targetZoom = Math.max(2, state.zoomLevel);
+    // Use the natural (unscaled) image dimensions for calculation
+    var natW = imgEl.naturalWidth || imgEl.width;
+    var natH = imgEl.naturalHeight || imgEl.height;
+    var wrapRect = imgWrapper.getBoundingClientRect();
+    // Displayed image size at 1x (fit to wrapper)
+    var baseW = wrapRect.width;
+    var baseH = (natH / natW) * baseW;
+    if (baseH > wrapRect.height) {
+      baseH = wrapRect.height;
+      baseW = (natW / natH) * baseH;
+    }
 
-    var tx = (0.5 - cx) * rect.width;
-    var ty = (0.5 - cy) * rect.height;
-    var maxTx = rect.width * (1 - 1 / targetZoom) / 2;
-    var maxTy = rect.height * (1 - 1 / targetZoom) / 2;
+    // Center of region as fraction of image
+    var cx = ((bbox[0] + bbox[2]) / 2) / imgW;
+    // Place top of region ~30% from viewport top so text starts visible
+    var regionTopFrac = bbox[1] / imgH;
+    var regionBotFrac = bbox[3] / imgH;
+    var cy = regionTopFrac + (regionBotFrac - regionTopFrac) * 0.3;
+
+    // Translate to center that point in the wrapper
+    var tx = (0.5 - cx) * baseW;
+    var ty = (0.5 - cy) * baseH;
+    // Clamp so image edges don't pull past wrapper center
+    var maxTx = baseW * (targetZoom - 1) / (2 * targetZoom);
+    var maxTy = baseH * (targetZoom - 1) / (2 * targetZoom);
 
     state.zoomLevel = targetZoom;
     panState.translateX = Math.max(-maxTx, Math.min(maxTx, tx));
@@ -417,7 +430,12 @@
     var page = pages[state.currentPageIndex];
     if (!page) return;
     var url = page.imageUrl;
-    var filename = url.split('/').pop() || ('page_' + (state.currentPageIndex + 1) + '.jpg');
+    var ext = (url.split('/').pop() || '').split('.').pop() || 'jpg';
+    var parts = window.location.pathname.split('/').filter(Boolean); // ["papers", slug, "YYYY-MM-DD"]
+    var paperSlug = parts[1] || 'paper';
+    var issueDate = parts[2] || '';
+    var pageStr = ('0' + page.num).slice(-2);
+    var filename = paperSlug + '_' + issueDate + '_' + pageStr + '.' + ext;
     var a = document.createElement('a');
     a.href = url;
     a.download = filename;
