@@ -1,20 +1,6 @@
-# robots.txt for Dangerous Press - African American Newspapers Archive
+# Archive of the old dangerouspress.org site.
+# The live site moved to https://dangerouspress.org (served by Cloudflare Workers).
+# Disallow crawling here to avoid duplicate-content confusion with the live site.
 
 User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: https://dangerouspress.org/sitemap.xml
-
-# Allow all bots to crawl the archive
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-# Crawl delay for politeness
-Crawl-delay: 1
+Disallow: /
