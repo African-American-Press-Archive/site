@@ -1,0 +1,1941 @@
+{
+  "manifest_version": 1,
+  "title": "State Ledger",
+  "issues": [
+    {
+      "id": "1900-01-06_state-ledger",
+      "date": "1900-01-06",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-01-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-06/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-06/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-06/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-06/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-01-13_state-ledger",
+      "date": "1900-01-13",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-01-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-13/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-13/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-13/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-01-27_state-ledger",
+      "date": "1900-01-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-01-27/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-01-27/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-02-03_state-ledger",
+      "date": "1900-02-03",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-02-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-03/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-03/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-03/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-03/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-02-10_state-ledger",
+      "date": "1900-02-10",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-02-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-10/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-10/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-10/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-10/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-02-17_state-ledger",
+      "date": "1900-02-17",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-02-17/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-17/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-17/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-02-27_state-ledger",
+      "date": "1900-02-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-02-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-27/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-27/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-02-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-03-06_state-ledger",
+      "date": "1900-03-06",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-03-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-06/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-06/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-06/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-06/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-03-13_state-ledger",
+      "date": "1900-03-13",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-03-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-13/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-13/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-13/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-03-20_state-ledger",
+      "date": "1900-03-20",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-03-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-20/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-20/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-20/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-03-27_state-ledger",
+      "date": "1900-03-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-03-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-27/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-27/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-03-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-04-03_state-ledger",
+      "date": "1900-04-03",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-04-03/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-03/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-03/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-03/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-03/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-04-10_state-ledger",
+      "date": "1900-04-10",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-04-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-10/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-10/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-10/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-10/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-04-24_state-ledger",
+      "date": "1900-04-24",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-04-24/thumb.jpg",
+      "pages": 6,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-24/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-24/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-24/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-24/page_04.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-24/page_05.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-04-24/page_06.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-05-08_state-ledger",
+      "date": "1900-05-08",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-05-08/thumb.jpg",
+      "pages": 6,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-08/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-08/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-08/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-08/page_04.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-08/page_05.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-08/page_06.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-05-26_state-ledger",
+      "date": "1900-05-26",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-05-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-26/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-26/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-26/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-05-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-06-09_state-ledger",
+      "date": "1900-06-09",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-06-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-09/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-09/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-09/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-09/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-06-20_state-ledger",
+      "date": "1900-06-20",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-06-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-20/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-20/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-20/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-06-30_state-ledger",
+      "date": "1900-06-30",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-06-30/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-30/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-30/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-30/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-06-30/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-07-14_state-ledger",
+      "date": "1900-07-14",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-07-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-07-14/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-07-14/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-07-14/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-07-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-07-28_state-ledger",
+      "date": "1900-07-28",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-07-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-07-28/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-07-28/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-07-28/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-07-28/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-08-11_state-ledger",
+      "date": "1900-08-11",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-08-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-11/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-11/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-11/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-11/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-08-20_state-ledger",
+      "date": "1900-08-20",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-08-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-20/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-20/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-20/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-08-31_state-ledger",
+      "date": "1900-08-31",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-08-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-31/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-31/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-31/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-08-31/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-09-15_state-ledger",
+      "date": "1900-09-15",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-09-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-09-15/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-09-15/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-09-15/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-09-15/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-10-04_state-ledger",
+      "date": "1900-10-04",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-10-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-04/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-04/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-04/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-10-15_state-ledger",
+      "date": "1900-10-15",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-10-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-15/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-15/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-15/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-15/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-10-29_state-ledger",
+      "date": "1900-10-29",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-10-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-29/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-29/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-29/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-10-29/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-11-27_state-ledger",
+      "date": "1900-11-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-11-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-11-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-11-27/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-11-27/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-11-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-12-12_state-ledger",
+      "date": "1900-12-12",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-12-12/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-12-12/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-12-12/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-12-12/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-12-12/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1900-12-25_state-ledger",
+      "date": "1900-12-25",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1900/1900-12-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-12-25/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-12-25/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-12-25/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1900/1900-12-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:27Z"
+    },
+    {
+      "id": "1901-01-22_state-ledger",
+      "date": "1901-01-22",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-01-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-01-22/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-01-22/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-01-22/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-01-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-01-29_state-ledger",
+      "date": "1901-01-29",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-01-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-01-29/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-01-29/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-01-29/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-01-29/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-02-06_state-ledger",
+      "date": "1901-02-06",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-02-06/thumb.jpg",
+      "pages": 6,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-06/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-06/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-06/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-06/page_04.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-06/page_05.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-06/page_06.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-02-23_state-ledger",
+      "date": "1901-02-23",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-02-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-23/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-23/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-23/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-02-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-03-05_state-ledger",
+      "date": "1901-03-05",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-03-05/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-05/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-05/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-03-20_state-ledger",
+      "date": "1901-03-20",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-03-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-20/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-20/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-20/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-03-27_state-ledger",
+      "date": "1901-03-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-03-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-27/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-27/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-03-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-04-15_state-ledger",
+      "date": "1901-04-15",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-04-15/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-04-15/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-04-15/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-04-23_state-ledger",
+      "date": "1901-04-23",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-04-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-04-23/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-04-23/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-04-23/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-04-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-05-11_state-ledger",
+      "date": "1901-05-11",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-05-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-05-11/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-05-11/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-05-11/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-05-11/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-05-25_state-ledger",
+      "date": "1901-05-25",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-05-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-05-25/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-05-25/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-05-25/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-05-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-06-08_state-ledger",
+      "date": "1901-06-08",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-06-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-08/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-08/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-08/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-06-15_state-ledger",
+      "date": "1901-06-15",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-06-15/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-15/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-15/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-15/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-15/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-06-22_state-ledger",
+      "date": "1901-06-22",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-06-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-22/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-22/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-22/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-06-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-07-06_state-ledger",
+      "date": "1901-07-06",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-07-06/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-06/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-06/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-06/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-06/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-07-20_state-ledger",
+      "date": "1901-07-20",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-07-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-20/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-20/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-20/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-07-27_state-ledger",
+      "date": "1901-07-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-07-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-27/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-27/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-07-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-08-17_state-ledger",
+      "date": "1901-08-17",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-08-17/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-08-17/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-08-17/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-08-17/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-08-17/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-08-31_state-ledger",
+      "date": "1901-08-31",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-08-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-08-31/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-08-31/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-08-31/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-08-31/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-09-21_state-ledger",
+      "date": "1901-09-21",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-09-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-09-21/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-09-21/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-09-21/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-09-21/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-10-05_state-ledger",
+      "date": "1901-10-05",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-10-05/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-10-05/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-10-05/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-10-05/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-10-05/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-10-19_state-ledger",
+      "date": "1901-10-19",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-10-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-10-19/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-10-19/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-10-19/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-10-19/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-11-02_state-ledger",
+      "date": "1901-11-02",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-11-02/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-11-02/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-11-02/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-11-02/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-11-02/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-11-23_state-ledger",
+      "date": "1901-11-23",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-11-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-11-23/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-11-23/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-11-23/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-11-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-12-07_state-ledger",
+      "date": "1901-12-07",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-12-07/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-12-07/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-12-07/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1901-12-21_state-ledger",
+      "date": "1901-12-21",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1901/1901-12-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-12-21/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-12-21/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-12-21/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1901/1901-12-21/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:40Z"
+    },
+    {
+      "id": "1902-01-04_state-ledger",
+      "date": "1902-01-04",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-01-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-04/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-04/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-04/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-01-18_state-ledger",
+      "date": "1902-01-18",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-01-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-18/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-18/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-18/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-01-25_state-ledger",
+      "date": "1902-01-25",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-01-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-25/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-25/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-25/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-01-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-02-08_state-ledger",
+      "date": "1902-02-08",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-02-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-02-08/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-02-08/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-02-08/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-02-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-02-22_state-ledger",
+      "date": "1902-02-22",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-02-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-02-22/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-02-22/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-02-22/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-02-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-03-08_state-ledger",
+      "date": "1902-03-08",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-03-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-03-08/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-03-08/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-03-08/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-03-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-03-22_state-ledger",
+      "date": "1902-03-22",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-03-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-03-22/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-03-22/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-03-22/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-03-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-04-12_state-ledger",
+      "date": "1902-04-12",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-04-12/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-04-12/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-04-12/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-04-26_state-ledger",
+      "date": "1902-04-26",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-04-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-04-26/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-04-26/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-04-26/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-04-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-05-10_state-ledger",
+      "date": "1902-05-10",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-05-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-05-10/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-05-10/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-05-10/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-05-10/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-05-24_state-ledger",
+      "date": "1902-05-24",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-05-24/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-05-24/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-05-24/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-05-24/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-05-24/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-06-07_state-ledger",
+      "date": "1902-06-07",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-06-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-06-07/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-06-07/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-06-07/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-06-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-06-21_state-ledger",
+      "date": "1902-06-21",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-06-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-06-21/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-06-21/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-06-21/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-06-21/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-07-05_state-ledger",
+      "date": "1902-07-05",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-07-05/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-05/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-05/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-05/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-05/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-07-19_state-ledger",
+      "date": "1902-07-19",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-07-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-19/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-19/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-19/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-19/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-07-26_state-ledger",
+      "date": "1902-07-26",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-07-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-26/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-26/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-26/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-07-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-08-09_state-ledger",
+      "date": "1902-08-09",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-08-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-09/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-09/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-09/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-09/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-08-16_state-ledger",
+      "date": "1902-08-16",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-08-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-16/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-16/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-16/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-08-30_state-ledger",
+      "date": "1902-08-30",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-08-30/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-30/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-30/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-30/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-08-30/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-09-13_state-ledger",
+      "date": "1902-09-13",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-09-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-09-13/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-09-13/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-09-13/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-09-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-09-27_state-ledger",
+      "date": "1902-09-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-09-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-09-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-09-27/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-09-27/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-09-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-10-04_state-ledger",
+      "date": "1902-10-04",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-10-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-10-04/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-10-04/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-10-04/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-10-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-10-18_state-ledger",
+      "date": "1902-10-18",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-10-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-10-18/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-10-18/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-10-18/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-10-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-11-01_state-ledger",
+      "date": "1902-11-01",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-11-01/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-01/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-01/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-11-08_state-ledger",
+      "date": "1902-11-08",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-11-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-08/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-08/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-08/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-11-22_state-ledger",
+      "date": "1902-11-22",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-11-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-22/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-22/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-22/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-11-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-12-16_state-ledger",
+      "date": "1902-12-16",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-12-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-12-16/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-12-16/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-12-16/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-12-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1902-12-24_state-ledger",
+      "date": "1902-12-24",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1902/1902-12-24/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-12-24/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-12-24/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-12-24/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1902/1902-12-24/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:31:53Z"
+    },
+    {
+      "id": "1903-01-10_state-ledger",
+      "date": "1903-01-10",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-01-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-10/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-10/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-10/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-10/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-01-20_state-ledger",
+      "date": "1903-01-20",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-01-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-20/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-20/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-20/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-01-31_state-ledger",
+      "date": "1903-01-31",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-01-31/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-31/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-01-31/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-02-07_state-ledger",
+      "date": "1903-02-07",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-02-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-07/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-07/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-07/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-02-14_state-ledger",
+      "date": "1903-02-14",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-02-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-14/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-14/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-14/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-02-28_state-ledger",
+      "date": "1903-02-28",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-02-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-28/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-28/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-28/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-02-28/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-03-07_state-ledger",
+      "date": "1903-03-07",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-03-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-07/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-07/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-07/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-03-21_state-ledger",
+      "date": "1903-03-21",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-03-21/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-21/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-21/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-03-28_state-ledger",
+      "date": "1903-03-28",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-03-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-28/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-28/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-28/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-03-28/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-04-18_state-ledger",
+      "date": "1903-04-18",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-04-18/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-04-18/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-04-18/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-04-18/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-04-18/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-04-25_state-ledger",
+      "date": "1903-04-25",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-04-25/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-04-25/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-04-25/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-04-25/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-04-25/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-05-23_state-ledger",
+      "date": "1903-05-23",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-05-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-05-23/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-05-23/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-05-23/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-05-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-06-27_state-ledger",
+      "date": "1903-06-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-06-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-06-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-06-27/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-06-27/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-06-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-08-22_state-ledger",
+      "date": "1903-08-22",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-08-22/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-08-22/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-08-22/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-08-22/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-08-22/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-09-26_state-ledger",
+      "date": "1903-09-26",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-09-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-09-26/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-09-26/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-09-26/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-09-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-10-17_state-ledger",
+      "date": "1903-10-17",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-10-17/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-10-17/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-10-17/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-10-17/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-10-17/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-10-31_state-ledger",
+      "date": "1903-10-31",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-10-31/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-10-31/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-10-31/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-10-31/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-10-31/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-11-14_state-ledger",
+      "date": "1903-11-14",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-11-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-11-14/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-11-14/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-11-14/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-11-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1903-12-19_state-ledger",
+      "date": "1903-12-19",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1903/1903-12-19/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-12-19/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-12-19/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-12-19/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1903/1903-12-19/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:03Z"
+    },
+    {
+      "id": "1904-01-09_state-ledger",
+      "date": "1904-01-09",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-01-09/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-01-09/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-01-09/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-01-09/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-01-09/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-01-16_state-ledger",
+      "date": "1904-01-16",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-01-16/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-01-16/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-01-16/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-01-23_state-ledger",
+      "date": "1904-01-23",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-01-23/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-01-23/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-01-23/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-02-13_state-ledger",
+      "date": "1904-02-13",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-02-13/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-02-13/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-02-13/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-02-13/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-02-13/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-03-12_state-ledger",
+      "date": "1904-03-12",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-03-12/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-03-12/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-03-12/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-03-26_state-ledger",
+      "date": "1904-03-26",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-03-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-03-26/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-03-26/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-03-26/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-03-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-04-09_state-ledger",
+      "date": "1904-04-09",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-04-09/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-04-09/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-04-09/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-05-14_state-ledger",
+      "date": "1904-05-14",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-05-14/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-05-14/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-05-14/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-05-14/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-05-14/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-06-11_state-ledger",
+      "date": "1904-06-11",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-06-11/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-06-11/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-06-11/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-06-11/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-06-11/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-07-02_state-ledger",
+      "date": "1904-07-02",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-07-02/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-07-02/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-07-02/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-07-02/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-07-02/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-07-23_state-ledger",
+      "date": "1904-07-23",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-07-23/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-07-23/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-07-23/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-07-23/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-07-23/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-08-20_state-ledger",
+      "date": "1904-08-20",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-08-20/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-08-20/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-08-20/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-08-20/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-08-20/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-09-10_state-ledger",
+      "date": "1904-09-10",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-09-10/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-09-10/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-09-10/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-09-10/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-09-10/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-10-29_state-ledger",
+      "date": "1904-10-29",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-10-29/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-10-29/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-10-29/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-10-29/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-10-29/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1904-11-05_state-ledger",
+      "date": "1904-11-05",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1904/1904-11-05/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-11-05/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1904/1904-11-05/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:10Z"
+    },
+    {
+      "id": "1905-01-21_state-ledger",
+      "date": "1905-01-21",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-01-21/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-01-21/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-01-21/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-01-21/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-01-21/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-01-28_state-ledger",
+      "date": "1905-01-28",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-01-28/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-01-28/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-01-28/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-01-28/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-01-28/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-02-26_state-ledger",
+      "date": "1905-02-26",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-02-26/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-02-26/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-02-26/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-02-26/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-02-26/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-03-04_state-ledger",
+      "date": "1905-03-04",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-03-04/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-03-04/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-03-04/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-03-04/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-03-04/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-03-18_state-ledger",
+      "date": "1905-03-18",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-03-18/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-03-18/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-03-18/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-04-08_state-ledger",
+      "date": "1905-04-08",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-04-08/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-04-08/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-04-08/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-04-08/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-04-08/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-04-22_state-ledger",
+      "date": "1905-04-22",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-04-22/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-04-22/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-04-22/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-05-06_state-ledger",
+      "date": "1905-05-06",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-05-06/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-05-06/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-05-06/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-05-27_state-ledger",
+      "date": "1905-05-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-05-27/thumb.jpg",
+      "pages": 2,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-05-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-05-27/page_02.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1905-10-07_state-ledger",
+      "date": "1905-10-07",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1905/1905-10-07/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-10-07/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-10-07/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-10-07/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1905/1905-10-07/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:15Z"
+    },
+    {
+      "id": "1906-01-27_state-ledger",
+      "date": "1906-01-27",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1906/1906-01-27/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1906/1906-01-27/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1906/1906-01-27/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1906/1906-01-27/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1906/1906-01-27/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:17Z"
+    },
+    {
+      "id": "1906-06-16_state-ledger",
+      "date": "1906-06-16",
+      "title": "State Ledger",
+      "issue_thumb": "https://pages.dangerouspress.org/state-ledger/1906/1906-06-16/thumb.jpg",
+      "pages": 4,
+      "page_paths": [
+        "https://pages.dangerouspress.org/state-ledger/1906/1906-06-16/page_01.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1906/1906-06-16/page_02.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1906/1906-06-16/page_03.jpg",
+        "https://pages.dangerouspress.org/state-ledger/1906/1906-06-16/page_04.jpg"
+      ],
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:32:17Z"
+    }
+  ]
+}

@@ -6,37 +6,39 @@
       "id": "1900-01-27_colorado-statesman",
       "date": "1900-01-27",
       "title": "Colorado Statesman",
-      "issue_thumb": "colorado-statesman/1900/1900-01-27/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/thumb.jpg",
       "pages": 8,
       "page_paths": [
-        "colorado-statesman/1900/1900-01-27/page_01.jpg",
-        "colorado-statesman/1900/1900-01-27/page_02.jpg",
-        "colorado-statesman/1900/1900-01-27/page_03.jpg",
-        "colorado-statesman/1900/1900-01-27/page_04.jpg",
-        "colorado-statesman/1900/1900-01-27/page_05.jpg",
-        "colorado-statesman/1900/1900-01-27/page_06.jpg",
-        "colorado-statesman/1900/1900-01-27/page_07.jpg",
-        "colorado-statesman/1900/1900-01-27/page_08.jpg"
+        "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/page_01.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/page_02.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/page_03.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/page_04.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/page_05.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/page_06.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/page_07.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1900/1900-01-27/page_08.jpg"
       ],
-      "uploaded": false
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:06:44.196049+00:00"
     },
     {
       "id": "1904-10-29_colorado-statesman",
       "date": "1904-10-29",
       "title": "Colorado Statesman",
-      "issue_thumb": "colorado-statesman/1904/1904-10-29/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/thumb.jpg",
       "pages": 8,
       "page_paths": [
-        "colorado-statesman/1904/1904-10-29/page_01.jpg",
-        "colorado-statesman/1904/1904-10-29/page_02.jpg",
-        "colorado-statesman/1904/1904-10-29/page_03.jpg",
-        "colorado-statesman/1904/1904-10-29/page_04.jpg",
-        "colorado-statesman/1904/1904-10-29/page_05.jpg",
-        "colorado-statesman/1904/1904-10-29/page_06.jpg",
-        "colorado-statesman/1904/1904-10-29/page_07.jpg",
-        "colorado-statesman/1904/1904-10-29/page_08.jpg"
+        "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/page_01.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/page_02.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/page_03.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/page_04.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/page_05.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/page_06.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/page_07.jpg",
+        "https://pages.dangerouspress.org/colorado-statesman/1904/1904-10-29/page_08.jpg"
       ],
-      "uploaded": false
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:06:44.196049+00:00"
     },
     {
       "id": "1905-01-07_colorado-statesman",

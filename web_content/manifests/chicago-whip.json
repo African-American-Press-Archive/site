@@ -6930,23 +6930,24 @@
       "id": "1931-10-10_chicago-whip",
       "date": "1931-10-10",
       "title": "Chicago Whip",
-      "issue_thumb": "chicago-whip/1931/1931-10-10/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/thumb.jpg",
       "pages": 12,
       "page_paths": [
-        "chicago-whip/1931/1931-10-10/page_01.jpg",
-        "chicago-whip/1931/1931-10-10/page_02.jpg",
-        "chicago-whip/1931/1931-10-10/page_03.jpg",
-        "chicago-whip/1931/1931-10-10/page_04.jpg",
-        "chicago-whip/1931/1931-10-10/page_05.jpg",
-        "chicago-whip/1931/1931-10-10/page_06.jpg",
-        "chicago-whip/1931/1931-10-10/page_07.jpg",
-        "chicago-whip/1931/1931-10-10/page_08.jpg",
-        "chicago-whip/1931/1931-10-10/page_09.jpg",
-        "chicago-whip/1931/1931-10-10/page_10.jpg",
-        "chicago-whip/1931/1931-10-10/page_11.jpg",
-        "chicago-whip/1931/1931-10-10/page_12.jpg"
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_01.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_02.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_03.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_04.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_05.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_06.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_07.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_08.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_09.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_10.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_11.jpg",
+        "https://pages.dangerouspress.org/chicago-whip/1931/1931-10-10/page_12.jpg"
       ],
-      "uploaded": false
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:06:44.196049+00:00"
     }
   ]
 }

@@ -135,6 +135,30 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn90061556
+  plaindealer:
+    title: Plaindealer
+    path: plaindealer
+    base_url: https://pages.dangerouspress.org/plaindealer
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/plaindealer_pdfs
+      sample_filename: plaindealer_1900-01-05.pdf
+  savannah-tribune:
+    title: Savannah Tribune
+    path: savannah-tribune
+    base_url: https://pages.dangerouspress.org/savannah-tribune
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/savannah-tribune_pdfs
+      sample_filename: savannah-tribune_1900-01-06.pdf
+  negro-star:
+    title: Negro Star
+    path: negro-star
+    base_url: https://pages.dangerouspress.org/negro-star
+    sources:
+    - type: pdf
+      folder: /Users/nealcaren/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/black-press/negro-star_pdfs
+      sample_filename: negro-star_1920-05-07.pdf
   new-york-age:
     title: New York Age
     path: new-york-age
@@ -687,6 +711,14 @@ papers:
     - type: jp2
       root: /Volumes/Lightning/chronicling-america/loc_downloads/
       lccn: sn84024234
+  state-ledger:
+    title: State Ledger
+    path: state-ledger
+    base_url: https://pages.dangerouspress.org/state-ledger
+    sources:
+    - type: jp2
+      root: /Volumes/Lightning/chronicling-america/loc_downloads/
+      lccn: sn85067106
 storage:
   provider: cloudflare-r2
   bucket: african-american-press-archive

@@ -6,61 +6,65 @@
       "id": "1929-12-15_arizona-gleam",
       "date": "1929-12-15",
       "title": "Arizona Gleam",
-      "issue_thumb": "arizona-gleam/1929/1929-12-15/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/arizona-gleam/1929/1929-12-15/thumb.jpg",
       "pages": 6,
       "page_paths": [
-        "arizona-gleam/1929/1929-12-15/page_01.jpg",
-        "arizona-gleam/1929/1929-12-15/page_02.jpg",
-        "arizona-gleam/1929/1929-12-15/page_03.jpg",
-        "arizona-gleam/1929/1929-12-15/page_04.jpg",
-        "arizona-gleam/1929/1929-12-15/page_05.jpg",
-        "arizona-gleam/1929/1929-12-15/page_06.jpg"
+        "https://pages.dangerouspress.org/arizona-gleam/1929/1929-12-15/page_01.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1929/1929-12-15/page_02.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1929/1929-12-15/page_03.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1929/1929-12-15/page_04.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1929/1929-12-15/page_05.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1929/1929-12-15/page_06.jpg"
       ],
-      "uploaded": false
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:06:44.196049+00:00"
     },
     {
       "id": "1930-02-15_arizona-gleam",
       "date": "1930-02-15",
       "title": "Arizona Gleam",
-      "issue_thumb": "arizona-gleam/1930/1930-02-15/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/arizona-gleam/1930/1930-02-15/thumb.jpg",
       "pages": 4,
       "page_paths": [
-        "arizona-gleam/1930/1930-02-15/page_01.jpg",
-        "arizona-gleam/1930/1930-02-15/page_02.jpg",
-        "arizona-gleam/1930/1930-02-15/page_03.jpg",
-        "arizona-gleam/1930/1930-02-15/page_04.jpg"
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-02-15/page_01.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-02-15/page_02.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-02-15/page_03.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-02-15/page_04.jpg"
       ],
-      "uploaded": false
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:06:44.196049+00:00"
     },
     {
       "id": "1930-03-01_arizona-gleam",
       "date": "1930-03-01",
       "title": "Arizona Gleam",
-      "issue_thumb": "arizona-gleam/1930/1930-03-01/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-01/thumb.jpg",
       "pages": 6,
       "page_paths": [
-        "arizona-gleam/1930/1930-03-01/page_01.jpg",
-        "arizona-gleam/1930/1930-03-01/page_02.jpg",
-        "arizona-gleam/1930/1930-03-01/page_03.jpg",
-        "arizona-gleam/1930/1930-03-01/page_04.jpg",
-        "arizona-gleam/1930/1930-03-01/page_05.jpg",
-        "arizona-gleam/1930/1930-03-01/page_06.jpg"
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-01/page_01.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-01/page_02.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-01/page_03.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-01/page_04.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-01/page_05.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-01/page_06.jpg"
       ],
-      "uploaded": false
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:06:44.196049+00:00"
     },
     {
       "id": "1930-03-15_arizona-gleam",
       "date": "1930-03-15",
       "title": "Arizona Gleam",
-      "issue_thumb": "arizona-gleam/1930/1930-03-15/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-15/thumb.jpg",
       "pages": 4,
       "page_paths": [
-        "arizona-gleam/1930/1930-03-15/page_01.jpg",
-        "arizona-gleam/1930/1930-03-15/page_02.jpg",
-        "arizona-gleam/1930/1930-03-15/page_03.jpg",
-        "arizona-gleam/1930/1930-03-15/page_04.jpg"
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-15/page_01.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-15/page_02.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-15/page_03.jpg",
+        "https://pages.dangerouspress.org/arizona-gleam/1930/1930-03-15/page_04.jpg"
       ],
-      "uploaded": false
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:06:44.196049+00:00"
     }
   ]
 }

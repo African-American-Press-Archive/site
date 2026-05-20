@@ -9347,19 +9347,20 @@
       "id": "1931-03-01_phoenix-tribune",
       "date": "1931-03-01",
       "title": "Phoenix Tribune",
-      "issue_thumb": "phoenix-tribune/1931/1931-03-01/thumb.jpg",
+      "issue_thumb": "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/thumb.jpg",
       "pages": 8,
       "page_paths": [
-        "phoenix-tribune/1931/1931-03-01/page_01.jpg",
-        "phoenix-tribune/1931/1931-03-01/page_02.jpg",
-        "phoenix-tribune/1931/1931-03-01/page_03.jpg",
-        "phoenix-tribune/1931/1931-03-01/page_04.jpg",
-        "phoenix-tribune/1931/1931-03-01/page_05.jpg",
-        "phoenix-tribune/1931/1931-03-01/page_06.jpg",
-        "phoenix-tribune/1931/1931-03-01/page_07.jpg",
-        "phoenix-tribune/1931/1931-03-01/page_08.jpg"
+        "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/page_01.jpg",
+        "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/page_02.jpg",
+        "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/page_03.jpg",
+        "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/page_04.jpg",
+        "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/page_05.jpg",
+        "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/page_06.jpg",
+        "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/page_07.jpg",
+        "https://pages.dangerouspress.org/phoenix-tribune/1931/1931-03-01/page_08.jpg"
       ],
-      "uploaded": false
+      "uploaded": true,
+      "uploaded_at": "2026-05-20T20:06:44.196049+00:00"
     }
   ]
 }
